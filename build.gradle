@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        ivy { url '../fluttify-core/build/plugin' }
+        jcenter()
+    }
+
+    dependencies {
+//        classpath('com.github.yohom:fluttify-core:0.2.0')
+        classpath('me.yohom:fluttify-core:0.2.0')
+    }
+}
+
+apply plugin: 'me.yohom.fluttify'
+
+fluttify {
+    transitiveDependencies = [
+            "android": [],
+            "iOS"    : ["QuartzCore.framework",
+                        "CoreLocation.framework",
+                        "SystemConfiguration.framework",
+                        "CoreTelephony.framework",
+                        "Security.framework",
+                        "OpenGLES.framework",
+                        "CoreText.framework",
+                        "CoreGraphics.framework",
+                        "GLKit.framework",
+                        "libz.tbd",
+                        "libc++.tbd"]
+    ]
+    outputOrg = "me.yohom"
+    outputProjectName = "amap_base_flutter"
+}

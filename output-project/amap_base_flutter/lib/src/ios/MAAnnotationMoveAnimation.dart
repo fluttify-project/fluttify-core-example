@@ -1,0 +1,81 @@
+import 'dart:typed_data';
+
+import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:flutter/services.dart';
+
+// ignore_for_file: non_constant_identifier_names, camel_case_types
+class MAAnnotationMoveAnimation {
+  MAAnnotationMoveAnimation.withRefId(this.refId);
+
+  final int refId;
+
+  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
+
+  // 生成getters
+  
+
+  // 生成setters
+  
+
+  // 生成方法们
+   Future<String> name() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::name', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> cancel() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::cancel', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<bool> isCancelled() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::isCancelled', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<int> passedPointCount() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::passedPointCount', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+}
