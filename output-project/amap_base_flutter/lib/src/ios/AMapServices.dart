@@ -34,6 +34,10 @@ class AMapServices {
   
 
   // 生成setters
+  Future<void> set_apiKey(String apiKey) async {
+    await _channel.invokeMethod('AMapServices::set_apiKey', {'refId': refId, "apiKey": apiKey});
+  }
+  
   Future<void> set_enableHTTPS(bool enableHTTPS) async {
     await _channel.invokeMethod('AMapServices::set_enableHTTPS', {'refId': refId, "enableHTTPS": enableHTTPS});
   }
@@ -44,5 +48,19 @@ class AMapServices {
   
 
   // 生成方法们
+  static Future<AMapServices> sharedServices() async {
+    // 日志打印
+    print('fluttify-dart: AMapServices::sharedServices([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('AMapServices::sharedServices', );
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return AMapServices.withRefId(result);
+  }
   
 }

@@ -18,6 +18,21 @@ class MATraceManager {
   
 
   // 生成方法们
+  static Future<MATraceManager> sharedInstance() async {
+    // 日志打印
+    print('fluttify-dart: MATraceManager::sharedInstance([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MATraceManager::sharedInstance', );
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MATraceManager.withRefId(result);
+  }
+  
    Future<String> stopTrace() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::stopTrace([])');

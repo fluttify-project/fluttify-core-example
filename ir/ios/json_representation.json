@@ -205,7 +205,7 @@
           "fields": [
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -221,7 +221,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -287,7 +287,7 @@
           "fields": [
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -303,7 +303,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -417,7 +417,7 @@
           "fields": [
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -433,7 +433,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -449,7 +449,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -541,7 +541,7 @@
           "fields": [
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -1901,7 +1901,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -1917,7 +1917,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -4610,7 +4610,7 @@
           "fields": [
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -4626,7 +4626,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -7111,7 +7111,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -7127,7 +7127,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -7143,7 +7143,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSString",
@@ -8352,7 +8352,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSDictionary\u003cNSNumber*,UIColor*\u003e",
@@ -8624,7 +8624,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSRunLoopMode",
@@ -9494,7 +9494,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSArray",

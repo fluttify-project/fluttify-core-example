@@ -1,7 +1,11 @@
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  await AmapService.init('7c9daac55e90a439f7b4304b465297fa');
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override

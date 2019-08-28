@@ -24,6 +24,13 @@ class AMapRouteConfig {
   
 
   // 生成setters
+  Future<void> set_appScheme(String appScheme) async {
+    await _channel.invokeMethod('AMapRouteConfig::set_appScheme', {'refId': refId, "appScheme": appScheme});
+  }
+  
+  Future<void> set_appName(String appName) async {
+    await _channel.invokeMethod('AMapRouteConfig::set_appName', {'refId': refId, "appName": appName});
+  }
   
 
   // 生成方法们

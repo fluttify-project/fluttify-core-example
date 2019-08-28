@@ -29,6 +29,17 @@ class MAMultiPointItem {
   
 
   // 生成setters
+  Future<void> set_customID(String customID) async {
+    await _channel.invokeMethod('MAMultiPointItem::set_customID', {'refId': refId, "customID": customID});
+  }
+  
+  Future<void> set_title(String title) async {
+    await _channel.invokeMethod('MAMultiPointItem::set_title', {'refId': refId, "title": title});
+  }
+  
+  Future<void> set_subtitle(String subtitle) async {
+    await _channel.invokeMethod('MAMultiPointItem::set_subtitle', {'refId': refId, "subtitle": subtitle});
+  }
   
 
   // 生成方法们

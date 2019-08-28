@@ -22,6 +22,21 @@ class MAOfflineMap {
   
 
   // 生成方法们
+  static Future<MAOfflineMap> sharedOfflineMap() async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap::sharedOfflineMap([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::sharedOfflineMap', );
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAOfflineMap.withRefId(result);
+  }
+  
    Future<String> setupWithCompletionBlock() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');

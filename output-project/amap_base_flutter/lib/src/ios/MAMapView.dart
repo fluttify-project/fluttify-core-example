@@ -120,6 +120,21 @@ class MAMapView {
   
 
   // 生成方法们
+   Future<MAMapStatus> getMapStatus() async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::getMapStatus([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::getMapStatus', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAMapStatus.withRefId(result);
+  }
+  
    Future<String> reloadMap() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::reloadMap([])');
