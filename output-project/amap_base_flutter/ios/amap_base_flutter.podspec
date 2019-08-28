@@ -38,5 +38,7 @@ A new flutter plugin project.
         "z",
 		"c++"
   ]
+  # 需要引入的资源文件
+  s.resource = "MAMapKit.framework/AMap.bundle"
 end
 

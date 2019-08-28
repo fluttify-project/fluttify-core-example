@@ -35,7 +35,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     REF_MAP = @{}.mutableCopy;
 
     _handlerMap = @{
-         @"handleAMapURLSearch_getLatestAMapApp": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"AMapURLSearch::getLatestAMapApp": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -52,7 +52,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAAnimatedAnnotation_setNeedsStart": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnimatedAnnotation::setNeedsStart": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -70,7 +70,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMultiTexturePolylineRenderer_loadStrokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMultiTexturePolylineRenderer::loadStrokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* textureImages = (NSArray*) args[@"textureImages"];
@@ -89,7 +89,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@(result));
          },
          
-         @"handleMATileOverlayRenderer_reloadData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MATileOverlayRenderer::reloadData": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -107,7 +107,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMATraceManager_stopTrace": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MATraceManager::stopTrace": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -125,7 +125,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMATraceManager_start": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MATraceManager::start": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -143,7 +143,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMATraceManager_stop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MATraceManager::stop": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -161,7 +161,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAAnnotationMoveAnimation_name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationMoveAnimation::name": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -179,7 +179,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(result);
          },
          
-         @"handleMAAnnotationMoveAnimation_cancel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationMoveAnimation::cancel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -197,7 +197,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAAnnotationMoveAnimation_isCancelled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationMoveAnimation::isCancelled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -215,7 +215,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@(result));
          },
          
-         @"handleMAAnnotationMoveAnimation_passedPointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationMoveAnimation::passedPointCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -233,7 +233,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@(result));
          },
          
-         @"handleMAAnnotationView_setSelected": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationView::setSelected": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              BOOL selected = (BOOL) args[@"selected"];
@@ -254,7 +254,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAAnnotationView_prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationView::prepareForReuse": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -272,7 +272,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAAnnotationView_setDragState": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAAnnotationView::setDragState": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // 枚举参数
              MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) args[@"newDragState"];
@@ -293,7 +293,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAOfflineMap_setupWithCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAOfflineMap::setupWithCompletionBlock": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -330,7 +330,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAOfflineMap_cancelAll": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAOfflineMap::cancelAll": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -348,7 +348,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAOfflineMap_clearDisk": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAOfflineMap::clearDisk": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -366,7 +366,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_reloadMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::reloadMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -384,7 +384,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_clearDisk": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::clearDisk": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -402,7 +402,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_reloadInternalTexture": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::reloadInternalTexture": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -420,7 +420,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_mapContentApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::mapContentApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -438,7 +438,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(result);
          },
          
-         @"handleMAMapView_satelliteImageApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::satelliteImageApprovalNumber": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -456,7 +456,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(result);
          },
          
-         @"handleMAMapView_forceRefresh": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::forceRefresh": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
@@ -474,7 +474,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_addAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::addAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* annotations = (NSArray*) args[@"annotations"];
@@ -493,7 +493,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_removeAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::removeAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* annotations = (NSArray*) args[@"annotations"];
@@ -512,7 +512,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_showAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::showAnnotations": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* annotations = (NSArray*) args[@"annotations"];
@@ -533,7 +533,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_setUserTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::setUserTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // 枚举参数
              MAUserTrackingMode mode = (MAUserTrackingMode) args[@"mode"];
@@ -554,7 +554,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // 枚举参数
              MAOverlayLevel level = (MAOverlayLevel) args[@"level"];
@@ -573,7 +573,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(result);
          },
          
-         @"handleMAMapView_addOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::addOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* overlays = (NSArray*) args[@"overlays"];
@@ -592,7 +592,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_removeOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::removeOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* overlays = (NSArray*) args[@"overlays"];
@@ -611,7 +611,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_showOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::showOverlays": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSArray* overlays = (NSArray*) args[@"overlays"];
@@ -632,7 +632,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_setCurrentIndoorMapFloorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::setCurrentIndoorMapFloorIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
              // jsonable参数
              NSInteger floorIndex = (NSInteger) args[@"floorIndex"];
@@ -651,7 +651,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
              methodResult(@"success");
          },
          
-         @"handleMAMapView_clearIndoorMapCache": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+         @"MAMapView::clearIndoorMapCache": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
              // 参数
          
          
