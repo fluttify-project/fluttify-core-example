@@ -1,0 +1,15 @@
+package com.amap.api.mapcore.util;
+
+class ft$1$2 implements Runnable {
+   ft$1$2(ft$1 var1, int var2, int var3) {
+      this.c = var1;
+      this.a = var2;
+      this.b = var3;
+   }
+
+   public void run() {
+      this.c.a.smoothScrollTo(0, ft.a(this.c.a) - this.a);
+      this.c.a.b = this.b + ft.c(this.c.a);
+      ft.d(this.c.a);
+   }
+}

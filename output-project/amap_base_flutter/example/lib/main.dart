@@ -17,9 +17,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: MAMapView_iOS(
-            onViewCreated: (controller) {},
-          ),
+          child: AmapView(),
         ),
       ),
     );
