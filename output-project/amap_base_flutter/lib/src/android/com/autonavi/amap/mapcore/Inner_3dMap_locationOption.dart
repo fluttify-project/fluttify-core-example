@@ -213,65 +213,65 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption {
     return result;
   }
   
-//   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
-//    // 日志打印
-//    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
-//
-//    // 调用原生方法
-//    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
-//
-//
-//    // 接受原生回调
-//
-//
-//    // 返回值
-//    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result];
-//  }
-//
-//   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
-//    // 日志打印
-//    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
-//
-//    // 调用原生方法
-//    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
-//
-//
-//    // 接受原生回调
-//
-//
-//    // 返回值
-//    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result];
-//  }
-//
-//   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
-//    // 日志打印
-//    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
-//
-//    // 调用原生方法
-//    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
-//
-//
-//    // 接受原生回调
-//
-//
-//    // 返回值
-//    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
-//  }
-//
-//  static Future<String> setLocationProtocol(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol var0) async {
-//    // 日志打印
-//    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol([])');
-//
-//    // 调用原生方法
-//    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
-//
-//
-//    // 接受原生回调
-//
-//
-//    // 返回值
-//    return result;
-//  }
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationMode', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result];
+  }
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getLocationProtocol', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result];
+  }
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationMode', {"var1": var1.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
+  }
+  
+  static Future<String> setLocationProtocol(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol var0) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationProtocol', {"var0": var0.index});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
    Future<bool> isKillProcess() async {
     // 日志打印

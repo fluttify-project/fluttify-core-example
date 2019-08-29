@@ -14,14 +14,14 @@ class AmapController {
     return platform(
       android: () async {
         final map = await androidMap?.getMap();
-        final locationStyle =
-            await ObjectFactory.createcom_amap_api_maps_model_MyLocationStyle();
+        final locationStyle = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_MyLocationStyle();
         await locationStyle?.showMyLocation(showOrNot);
         await map?.setMyLocationStyle(locationStyle);
-        await map?.setMyLocationEnabled(true);
+        await map?.setMyLocationEnabled(showOrNot);
       },
       ios: () async {
-        await iosMap?.set_showsUserLocation(true);
+        await iosMap?.set_showsUserLocation(showOrNot);
         await iosMap?.setUserTrackingMode(
             MAUserTrackingMode.MAUserTrackingModeFollow, true);
       },

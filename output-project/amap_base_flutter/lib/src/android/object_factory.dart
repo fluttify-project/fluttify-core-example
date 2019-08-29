@@ -2,7 +2,7 @@ import 'package:flutter/services.dart';
 
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 
-class ObjectFactory {
+class ObjectFactory_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   static Future<com_autonavi_ae_gmap_glinterface_MapLabelItem> createcom_autonavi_ae_gmap_glinterface_MapLabelItem() async {
