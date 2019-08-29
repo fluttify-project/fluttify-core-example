@@ -41,6 +41,7 @@ class _ControlInteractionScreenState extends State<ControlInteractionScreen> {
           ),
           Flexible(
             child: DecoratedColumn(
+              scrollable: true,
               children: <Widget>[
                 BooleanSetting(
                   head: '是否显示缩放按钮',
@@ -60,33 +61,10 @@ class _ControlInteractionScreenState extends State<ControlInteractionScreen> {
                     _controller?.showLocateControl(value);
                   },
                 ),
-                DiscreteSetting(
-                  head: '切换地图图层',
-                  options: ['正常视图', '卫星视图', '黑夜视图', '导航视图', '公交视图'],
-                  onSelected: (value) {
-                    switch (value) {
-                      case '正常视图':
-                        _controller?.setMapType(MapType.Standard);
-                        break;
-                      case '卫星视图':
-                        _controller?.setMapType(MapType.Satellite);
-                        break;
-                      case '黑夜视图':
-                        _controller?.setMapType(MapType.Night);
-                        break;
-                      case '导航视图':
-                        _controller?.setMapType(MapType.Navi);
-                        break;
-                      case '公交视图':
-                        _controller?.setMapType(MapType.Bus);
-                        break;
-                    }
-                  },
-                ),
                 BooleanSetting(
-                  head: '是否显示路况信息',
+                  head: '是否显示比例尺',
                   onSelected: (value) {
-                    _controller?.showTraffic(value);
+                    _controller?.showScaleControl(value);
                   },
                 ),
               ],

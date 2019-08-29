@@ -146,4 +146,18 @@ class AmapController {
       },
     );
   }
+
+  /// 显示比例尺控件
+  Future showScaleControl(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setScaleControlsEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_showsScale(enable);
+      },
+    );
+  }
 }
