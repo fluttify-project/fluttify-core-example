@@ -67,6 +67,12 @@ class _ShowLocationScreenState extends State<ShowLocationScreen> {
                     }
                   },
                 ),
+                BooleanSetting(
+                  head: '是否显示路况信息',
+                  onSelected: (value) {
+                    _controller?.setTrafficEnabled(value);
+                  },
+                ),
               ],
             ),
           ),

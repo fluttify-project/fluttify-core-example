@@ -20,14 +20,14 @@ class AmapController {
         final locationStyle = await ObjectFactory_Android
             .createcom_amap_api_maps_model_MyLocationStyle();
         await locationStyle?.showMyLocation(show);
-        await map?.setMyLocationStyle(locationStyle);
-        await map?.setMyLocationEnabled(show);
+        await map.setMyLocationStyle(locationStyle);
+        await map.setMyLocationEnabled(show);
       },
       ios: () async {
-        await iosController?.set_showsUserLocation(show);
+        await iosController.set_showsUserLocation(show);
 
         if (show) {
-          await iosController?.setUserTrackingMode(
+          await iosController.setUserTrackingMode(
               MAUserTrackingMode.MAUserTrackingModeFollow, true);
         }
       },
@@ -39,10 +39,10 @@ class AmapController {
     return platform(
       android: () async {
         final map = await androidController?.getMap();
-        await map?.showIndoorMap(show);
+        await map.showIndoorMap(show);
       },
       ios: () async {
-        await iosController?.set_showsIndoorMap(show);
+        await iosController.set_showsIndoorMap(show);
       },
     );
   }
@@ -53,40 +53,52 @@ class AmapController {
         final map = await androidController?.getMap();
         switch (mapType) {
           case MapType.Standard:
-            await map?.setMapType(1);
+            await map.setMapType(1);
             break;
           case MapType.Satellite:
-            await map?.setMapType(2);
+            await map.setMapType(2);
             break;
           case MapType.Night:
-            await map?.setMapType(3);
+            await map.setMapType(3);
             break;
           case MapType.Navi:
-            await map?.setMapType(4);
+            await map.setMapType(4);
             break;
           case MapType.Bus:
-            await map?.setMapType(5);
+            await map.setMapType(5);
             break;
         }
       },
       ios: () async {
         switch (mapType) {
           case MapType.Standard:
-            await iosController?.set_mapType(MAMapType.MAMapTypeStandard);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandard);
             break;
           case MapType.Satellite:
-            await iosController?.set_mapType(MAMapType.MAMapTypeSatellite);
+            await iosController.set_mapType(MAMapType.MAMapTypeSatellite);
             break;
           case MapType.Night:
-            await iosController?.set_mapType(MAMapType.MAMapTypeStandardNight);
+            await iosController.set_mapType(MAMapType.MAMapTypeStandardNight);
             break;
           case MapType.Navi:
-            await iosController?.set_mapType(MAMapType.MAMapTypeNavi);
+            await iosController.set_mapType(MAMapType.MAMapTypeNavi);
             break;
           case MapType.Bus:
-            await iosController?.set_mapType(MAMapType.MAMapTypeBus);
+            await iosController.set_mapType(MAMapType.MAMapTypeBus);
             break;
         }
+      },
+    );
+  }
+
+  Future setTrafficEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController?.getMap();
+        await map.setTrafficEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_showTraffic(enable);
       },
     );
   }
