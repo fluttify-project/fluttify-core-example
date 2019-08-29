@@ -1606,7 +1606,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -2582,7 +2582,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -4820,7 +4820,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -4836,7 +4836,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -4852,7 +4852,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -4916,7 +4916,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8346,7 +8346,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8362,7 +8362,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8378,7 +8378,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8394,7 +8394,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8410,7 +8410,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8426,7 +8426,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8442,7 +8442,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8458,7 +8458,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -8762,7 +8762,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "NSNumber",
@@ -9050,7 +9050,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",
@@ -9066,7 +9066,7 @@
             },
             {
               "isPublic": true,
-              "isFinal": true,
+              "isFinal": false,
               "isStatic": false,
               "variable": {
                 "typeName": "BOOL",

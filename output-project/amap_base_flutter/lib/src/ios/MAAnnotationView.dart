@@ -53,8 +53,24 @@ class MAAnnotationView {
     await _channel.invokeMethod('MAAnnotationView::set_zIndex', {'refId': refId, "zIndex": zIndex});
   }
   
+  Future<void> set_enabled(bool enabled) async {
+    await _channel.invokeMethod('MAAnnotationView::set_enabled', {'refId': refId, "enabled": enabled});
+  }
+  
+  Future<void> set_highlighted(bool highlighted) async {
+    await _channel.invokeMethod('MAAnnotationView::set_highlighted', {'refId': refId, "highlighted": highlighted});
+  }
+  
+  Future<void> set_selected(bool selected) async {
+    await _channel.invokeMethod('MAAnnotationView::set_selected', {'refId': refId, "selected": selected});
+  }
+  
   Future<void> set_canShowCallout(bool canShowCallout) async {
     await _channel.invokeMethod('MAAnnotationView::set_canShowCallout', {'refId': refId, "canShowCallout": canShowCallout});
+  }
+  
+  Future<void> set_draggable(bool draggable) async {
+    await _channel.invokeMethod('MAAnnotationView::set_draggable', {'refId': refId, "draggable": draggable});
   }
   
 

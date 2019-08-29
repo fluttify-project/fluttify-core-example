@@ -4,7 +4,6 @@ import 'package:amap_base_flutter_example/widgets/function_item.widget.dart';
 import 'package:flutter/material.dart';
 
 import 'create_map/custom_map.screen.dart';
-import 'create_map/show_indoor_map.screen.dart';
 import 'create_map/show_location.screen.dart';
 import 'create_map/show_map.screen.dart';
 import 'create_map/switch_map_layer.screen.dart';
@@ -35,11 +34,6 @@ class MapDemo extends StatelessWidget {
               label: '显示定位蓝点',
               sublabel: 'ShowLocationScreen',
               target: ShowLocationScreen(),
-            ),
-            FunctionItem(
-              label: '显示室内地图',
-              sublabel: 'ShowsIndoorMapScreen',
-              target: ShowsIndoorMapScreen(),
             ),
             FunctionItem(
               label: '切换地图图层',

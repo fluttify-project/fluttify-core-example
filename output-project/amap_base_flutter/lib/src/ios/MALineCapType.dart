@@ -1,1 +1,3 @@
-enum MALineCapType { a }
+enum MALineCapType {
+  
+}

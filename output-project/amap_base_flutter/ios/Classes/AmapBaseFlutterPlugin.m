@@ -1176,14 +1176,14 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(ref.version);
     },
     
-//    @"MAOfflineMap::get_": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-//        // 引用对象
-//        NSInteger refId = [args[@"refId"] integerValue];
-//        MAOfflineMap* ref = (MAOfflineMap*) REF_MAP[@(refId)];
-//    
-//        methodResult(ref.);
-//    },
-//    
+    @"MAOfflineMap::get_": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAOfflineMap* ref = (MAOfflineMap*) REF_MAP[@(refId)];
+    
+        methodResult(ref.);
+    },
+    
     @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
@@ -1668,6 +1668,16 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(@"success");
     },
     
+    @"MAPointAnnotation::set_lockedToScreen": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL lockedToScreen = (BOOL) args[@"lockedToScreen"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAPointAnnotation* ref = (MAPointAnnotation*) REF_MAP[@(refId)];
+    
+        ref.lockedToScreen = lockedToScreen;
+        methodResult(@"success");
+    },
+    
     @"MAMapCustomStyleOptions::set_styleId": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         NSString * styleId = (NSString *) args[@"styleId"];
     
@@ -1675,6 +1685,16 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         MAMapCustomStyleOptions* ref = (MAMapCustomStyleOptions*) REF_MAP[@(refId)];
     
         ref.styleId = styleId;
+        methodResult(@"success");
+    },
+    
+    @"MAMultiColoredPolylineRenderer::set_gradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL gradient = (BOOL) args[@"gradient"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMultiColoredPolylineRenderer* ref = (MAMultiColoredPolylineRenderer*) REF_MAP[@(refId)];
+    
+        ref.gradient = gradient;
         methodResult(@"success");
     },
     
@@ -1728,6 +1748,36 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(@"success");
     },
     
+    @"MAAnnotationView::set_enabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL enabled = (BOOL) args[@"enabled"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAAnnotationView* ref = (MAAnnotationView*) REF_MAP[@(refId)];
+    
+        ref.enabled = enabled;
+        methodResult(@"success");
+    },
+    
+    @"MAAnnotationView::set_highlighted": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL highlighted = (BOOL) args[@"highlighted"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAAnnotationView* ref = (MAAnnotationView*) REF_MAP[@(refId)];
+    
+        ref.highlighted = highlighted;
+        methodResult(@"success");
+    },
+    
+    @"MAAnnotationView::set_selected": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL selected = (BOOL) args[@"selected"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAAnnotationView* ref = (MAAnnotationView*) REF_MAP[@(refId)];
+    
+        ref.selected = selected;
+        methodResult(@"success");
+    },
+    
     @"MAAnnotationView::set_canShowCallout": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         BOOL canShowCallout = (BOOL) args[@"canShowCallout"];
     
@@ -1735,6 +1785,16 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         MAAnnotationView* ref = (MAAnnotationView*) REF_MAP[@(refId)];
     
         ref.canShowCallout = canShowCallout;
+        methodResult(@"success");
+    },
+    
+    @"MAAnnotationView::set_draggable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL draggable = (BOOL) args[@"draggable"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAAnnotationView* ref = (MAAnnotationView*) REF_MAP[@(refId)];
+    
+        ref.draggable = draggable;
         methodResult(@"success");
     },
     
@@ -1918,6 +1978,86 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(@"success");
     },
     
+    @"MAMapView::set_zoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL zoomEnabled = (BOOL) args[@"zoomEnabled"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.zoomEnabled = zoomEnabled;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_scrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL scrollEnabled = (BOOL) args[@"scrollEnabled"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.scrollEnabled = scrollEnabled;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_rotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL rotateEnabled = (BOOL) args[@"rotateEnabled"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.rotateEnabled = rotateEnabled;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_rotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL rotateCameraEnabled = (BOOL) args[@"rotateCameraEnabled"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.rotateCameraEnabled = rotateCameraEnabled;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_skyModelEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL skyModelEnable = (BOOL) args[@"skyModelEnable"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.skyModelEnable = skyModelEnable;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_showsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL showsBuildings = (BOOL) args[@"showsBuildings"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.showsBuildings = showsBuildings;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_showsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL showsLabels = (BOOL) args[@"showsLabels"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.showsLabels = showsLabels;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_showTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL showTraffic = (BOOL) args[@"showTraffic"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.showTraffic = showTraffic;
+        methodResult(@"success");
+    },
+    
     @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         BOOL touchPOIEnabled = (BOOL) args[@"touchPOIEnabled"];
     
@@ -2025,6 +2165,26 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
     
         ref.allowsBackgroundLocationUpdates = allowsBackgroundLocationUpdates;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_showsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL showsIndoorMap = (BOOL) args[@"showsIndoorMap"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.showsIndoorMap = showsIndoorMap;
+        methodResult(@"success");
+    },
+    
+    @"MAMapView::set_showsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        BOOL showsIndoorMapControl = (BOOL) args[@"showsIndoorMapControl"];
+    
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView*) REF_MAP[@(refId)];
+    
+        ref.showsIndoorMapControl = showsIndoorMapControl;
         methodResult(@"success");
     },
     

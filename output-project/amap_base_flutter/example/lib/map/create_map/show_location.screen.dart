@@ -38,6 +38,12 @@ class _ShowLocationScreenState extends State<ShowLocationScreen> {
                     _controller?.showMyLocation(value);
                   },
                 ),
+                BooleanSetting(
+                  head: '是否显示室内地图',
+                  onSelected: (value) {
+                    _controller?.showIndoorMap(value);
+                  },
+                ),
               ],
             ),
           ),

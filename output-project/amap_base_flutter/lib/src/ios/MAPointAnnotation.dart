@@ -19,6 +19,9 @@ class MAPointAnnotation {
   
 
   // 生成setters
+  Future<void> set_lockedToScreen(bool lockedToScreen) async {
+    await _channel.invokeMethod('MAPointAnnotation::set_lockedToScreen', {'refId': refId, "lockedToScreen": lockedToScreen});
+  }
   
 
   // 生成方法们

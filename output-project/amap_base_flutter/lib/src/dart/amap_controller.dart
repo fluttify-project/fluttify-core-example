@@ -31,4 +31,17 @@ class AmapController {
       },
     );
   }
+
+  /// 是否显示室内地图
+  Future showIndoorMap(bool show) {
+    return platform(
+      android: () async {
+        final map = await androidController?.getMap();
+        await map?.showIndoorMap(show);
+      },
+      ios: () async {
+        await iosController?.set_showsIndoorMap(show);
+      },
+    );
+  }
 }

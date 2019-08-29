@@ -158,6 +158,38 @@ class MAMapView {
     await _channel.invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint', {'refId': refId, "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint});
   }
   
+  Future<void> set_zoomEnabled(bool zoomEnabled) async {
+    await _channel.invokeMethod('MAMapView::set_zoomEnabled', {'refId': refId, "zoomEnabled": zoomEnabled});
+  }
+  
+  Future<void> set_scrollEnabled(bool scrollEnabled) async {
+    await _channel.invokeMethod('MAMapView::set_scrollEnabled', {'refId': refId, "scrollEnabled": scrollEnabled});
+  }
+  
+  Future<void> set_rotateEnabled(bool rotateEnabled) async {
+    await _channel.invokeMethod('MAMapView::set_rotateEnabled', {'refId': refId, "rotateEnabled": rotateEnabled});
+  }
+  
+  Future<void> set_rotateCameraEnabled(bool rotateCameraEnabled) async {
+    await _channel.invokeMethod('MAMapView::set_rotateCameraEnabled', {'refId': refId, "rotateCameraEnabled": rotateCameraEnabled});
+  }
+  
+  Future<void> set_skyModelEnable(bool skyModelEnable) async {
+    await _channel.invokeMethod('MAMapView::set_skyModelEnable', {'refId': refId, "skyModelEnable": skyModelEnable});
+  }
+  
+  Future<void> set_showsBuildings(bool showsBuildings) async {
+    await _channel.invokeMethod('MAMapView::set_showsBuildings', {'refId': refId, "showsBuildings": showsBuildings});
+  }
+  
+  Future<void> set_showsLabels(bool showsLabels) async {
+    await _channel.invokeMethod('MAMapView::set_showsLabels', {'refId': refId, "showsLabels": showsLabels});
+  }
+  
+  Future<void> set_showTraffic(bool showTraffic) async {
+    await _channel.invokeMethod('MAMapView::set_showTraffic', {'refId': refId, "showTraffic": showTraffic});
+  }
+  
   Future<void> set_touchPOIEnabled(bool touchPOIEnabled) async {
     await _channel.invokeMethod('MAMapView::set_touchPOIEnabled', {'refId': refId, "touchPOIEnabled": touchPOIEnabled});
   }
@@ -200,6 +232,14 @@ class MAMapView {
   
   Future<void> set_allowsBackgroundLocationUpdates(bool allowsBackgroundLocationUpdates) async {
     await _channel.invokeMethod('MAMapView::set_allowsBackgroundLocationUpdates', {'refId': refId, "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates});
+  }
+  
+  Future<void> set_showsIndoorMap(bool showsIndoorMap) async {
+    await _channel.invokeMethod('MAMapView::set_showsIndoorMap', {'refId': refId, "showsIndoorMap": showsIndoorMap});
+  }
+  
+  Future<void> set_showsIndoorMapControl(bool showsIndoorMapControl) async {
+    await _channel.invokeMethod('MAMapView::set_showsIndoorMapControl', {'refId': refId, "showsIndoorMapControl": showsIndoorMapControl});
   }
   
   Future<void> set_customMapStyleEnabled(bool customMapStyleEnabled) async {

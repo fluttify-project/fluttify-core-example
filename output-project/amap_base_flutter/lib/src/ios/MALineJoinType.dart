@@ -1,1 +1,3 @@
-enum MALineJoinType { a }
+enum MALineJoinType {
+  
+}
