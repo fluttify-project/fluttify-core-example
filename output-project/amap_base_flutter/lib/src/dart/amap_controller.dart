@@ -160,4 +160,77 @@ class AmapController {
       },
     );
   }
+
+  /// 缩放手势使能
+  Future setZoomGesturesEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setZoomGesturesEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_zoomEnabled(enable);
+      },
+    );
+  }
+
+  /// 滑动手势使能
+  Future setScrollGesturesEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setScrollGesturesEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_scrollEnabled(enable);
+      },
+    );
+  }
+
+  /// 旋转手势使能
+  Future setRotateGesturesEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setRotateGesturesEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_rotateEnabled(enable);
+      },
+    );
+  }
+
+  /// 旋转手势使能
+  Future setTiltGesturesEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setTiltGesturesEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_rotateCameraEnabled(enable);
+      },
+    );
+  }
+
+  /// 所有手势使能
+  Future setAllGesturesEnabled(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setAllGesturesEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_zoomEnabled(enable);
+        await iosController.set_scrollEnabled(enable);
+        await iosController.set_rotateEnabled(enable);
+        await iosController.set_rotateCameraEnabled(enable);
+      },
+    );
+  }
 }
