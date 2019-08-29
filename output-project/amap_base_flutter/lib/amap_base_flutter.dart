@@ -332,3 +332,4 @@ export 'src/ios/object_factory.dart';
 export 'src/ios/platformview/MAAnnotationView.dart';
 export 'src/ios/platformview/MACustomCalloutView.dart';
 export 'src/ios/platformview/MAMapView.dart';
+export 'src/dart/enums.dart';

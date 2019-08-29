@@ -47,6 +47,11 @@ class MAAnnotationView {
     return result;
   }
   
+  Future<MAAnnotationViewDragState> get_dragState() async {
+    final result = await _channel.invokeMethod("MAAnnotationView::get_dragState", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_zIndex(int zIndex) async {
@@ -71,6 +76,10 @@ class MAAnnotationView {
   
   Future<void> set_draggable(bool draggable) async {
     await _channel.invokeMethod('MAAnnotationView::set_draggable', {'refId': refId, "draggable": draggable});
+  }
+  
+  Future<void> set_dragState(MAAnnotationViewDragState dragState) async {
+    await _channel.invokeMethod('MAAnnotationView::set_dragState', {'refId': refId, "dragState": dragState.index});
   }
   
 

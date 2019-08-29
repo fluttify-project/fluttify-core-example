@@ -32,6 +32,11 @@ class MAOfflineItem {
     return result;
   }
   
+  Future<MAOfflineItemStatus> get_itemStatus() async {
+    final result = await _channel.invokeMethod("MAOfflineItem::get_itemStatus", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   

@@ -22,6 +22,11 @@ class AMapNaviConfig {
     return result;
   }
   
+  Future<AMapDrivingStrategy> get_strategy() async {
+    final result = await _channel.invokeMethod("AMapNaviConfig::get_strategy", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_appScheme(String appScheme) async {
@@ -30,6 +35,10 @@ class AMapNaviConfig {
   
   Future<void> set_appName(String appName) async {
     await _channel.invokeMethod('AMapNaviConfig::set_appName', {'refId': refId, "appName": appName});
+  }
+  
+  Future<void> set_strategy(AMapDrivingStrategy strategy) async {
+    await _channel.invokeMethod('AMapNaviConfig::set_strategy', {'refId': refId, "strategy": strategy.index});
   }
   
 

@@ -44,6 +44,29 @@ class _ShowLocationScreenState extends State<ShowLocationScreen> {
                     _controller?.showIndoorMap(value);
                   },
                 ),
+                DiscreteSetting(
+                  head: '切换地图图层',
+                  options: ['正常视图', '卫星视图', '黑夜视图', '导航视图', '公交视图'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '正常视图':
+                        _controller?.setMapType(MapType.Standard);
+                        break;
+                      case '卫星视图':
+                        _controller?.setMapType(MapType.Satellite);
+                        break;
+                      case '黑夜视图':
+                        _controller?.setMapType(MapType.Night);
+                        break;
+                      case '导航视图':
+                        _controller?.setMapType(MapType.Navi);
+                        break;
+                      case '公交视图':
+                        _controller?.setMapType(MapType.Bus);
+                        break;
+                    }
+                  },
+                ),
               ],
             ),
           ),

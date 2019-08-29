@@ -12,6 +12,11 @@ class MAMapView {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMapType> get_mapType() async {
+    final result = await _channel.invokeMethod("MAMapView::get_mapType", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_zoomingInPivotsAroundAnchorPoint() async {
     final result = await _channel.invokeMethod("MAMapView::get_zoomingInPivotsAroundAnchorPoint", {'refId': refId});
     return result;
@@ -117,6 +122,11 @@ class MAMapView {
     return result;
   }
   
+  Future<MAUserTrackingMode> get_userTrackingMode() async {
+    final result = await _channel.invokeMethod("MAMapView::get_userTrackingMode", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_userLocationVisible() async {
     final result = await _channel.invokeMethod("MAMapView::get_isUserLocationVisible", {'refId': refId});
     return result;
@@ -154,6 +164,10 @@ class MAMapView {
   
 
   // 生成setters
+  Future<void> set_mapType(MAMapType mapType) async {
+    await _channel.invokeMethod('MAMapView::set_mapType', {'refId': refId, "mapType": mapType.index});
+  }
+  
   Future<void> set_zoomingInPivotsAroundAnchorPoint(bool zoomingInPivotsAroundAnchorPoint) async {
     await _channel.invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint', {'refId': refId, "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint});
   }
@@ -224,6 +238,10 @@ class MAMapView {
   
   Future<void> set_customizeUserLocationAccuracyCircleRepresentation(bool customizeUserLocationAccuracyCircleRepresentation) async {
     await _channel.invokeMethod('MAMapView::set_customizeUserLocationAccuracyCircleRepresentation', {'refId': refId, "customizeUserLocationAccuracyCircleRepresentation": customizeUserLocationAccuracyCircleRepresentation});
+  }
+  
+  Future<void> set_userTrackingMode(MAUserTrackingMode userTrackingMode) async {
+    await _channel.invokeMethod('MAMapView::set_userTrackingMode', {'refId': refId, "userTrackingMode": userTrackingMode.index});
   }
   
   Future<void> set_pausesLocationUpdatesAutomatically(bool pausesLocationUpdatesAutomatically) async {
