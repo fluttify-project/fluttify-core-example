@@ -12,6 +12,16 @@ class MACustomBuildingOverlayOption {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<double> get_height() async {
+    final result = await _channel.invokeMethod("MACustomBuildingOverlayOption::get_height", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_heightScale() async {
+    final result = await _channel.invokeMethod("MACustomBuildingOverlayOption::get_heightScale", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_visibile() async {
     final result = await _channel.invokeMethod("MACustomBuildingOverlayOption::get_visibile", {'refId': refId});
     return result;
@@ -19,6 +29,14 @@ class MACustomBuildingOverlayOption {
   
 
   // 生成setters
+  Future<void> set_height(double height) async {
+    await _channel.invokeMethod('MACustomBuildingOverlayOption::set_height', {'refId': refId, "height": height});
+  }
+  
+  Future<void> set_heightScale(double heightScale) async {
+    await _channel.invokeMethod('MACustomBuildingOverlayOption::set_heightScale', {'refId': refId, "heightScale": heightScale});
+  }
+  
   Future<void> set_visibile(bool visibile) async {
     await _channel.invokeMethod('MACustomBuildingOverlayOption::set_visibile', {'refId': refId, "visibile": visibile});
   }

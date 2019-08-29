@@ -33,6 +33,36 @@ class MAAnnotationMoveAnimation {
     return result;
   }
   
+   Future<double> duration() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::duration', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<double> elapsedTime() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::elapsedTime', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<String> cancel() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');

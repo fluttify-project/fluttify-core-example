@@ -17,6 +17,11 @@ class MAHeatMapTileOverlay {
     return result;
   }
   
+  Future<double> get_opacity() async {
+    final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_opacity", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_allowRetinaAdapting() async {
     final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_allowRetinaAdapting", {'refId': refId});
     return result;
@@ -26,6 +31,10 @@ class MAHeatMapTileOverlay {
   // 生成setters
   Future<void> set_radius(int radius) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_radius', {'refId': refId, "radius": radius});
+  }
+  
+  Future<void> set_opacity(double opacity) async {
+    await _channel.invokeMethod('MAHeatMapTileOverlay::set_opacity', {'refId': refId, "opacity": opacity});
   }
   
   Future<void> set_allowRetinaAdapting(bool allowRetinaAdapting) async {

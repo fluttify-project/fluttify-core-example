@@ -1667,12 +1667,12 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.style.StyleElement::set_opacity" to { registrar, args, methodResult ->
-                    val opacity = args["opacity"] as Float
+                    val opacity = args["opacity"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.style.StyleElement
                 
-                    ref.opacity = opacity
+                    ref.opacity = opacity.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.style.StyleElement::set_lineWidth" to { registrar, args, methodResult ->
@@ -1748,30 +1748,30 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale" to { registrar, args, methodResult ->
-                    val screenScale = args["screenScale"] as Float
+                    val screenScale = args["screenScale"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
                 
-                    ref.screenScale = screenScale
+                    ref.screenScale = screenScale.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale" to { registrar, args, methodResult ->
-                    val textScale = args["textScale"] as Float
+                    val textScale = args["textScale"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
                 
-                    ref.textScale = textScale
+                    ref.textScale = textScale.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale" to { registrar, args, methodResult ->
-                    val mapZoomScale = args["mapZoomScale"] as Float
+                    val mapZoomScale = args["mapZoomScale"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
                 
-                    ref.mapZoomScale = mapZoomScale
+                    ref.mapZoomScale = mapZoomScale.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureState" to { registrar, args, methodResult ->
@@ -1802,30 +1802,30 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale" to { registrar, args, methodResult ->
-                    val mScale = args["mScale"] as Float
+                    val mScale = args["mScale"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
                 
-                    ref.mScale = mScale
+                    ref.mScale = mScale.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation" to { registrar, args, methodResult ->
-                    val mRotation = args["mRotation"] as Float
+                    val mRotation = args["mRotation"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
                 
-                    ref.mRotation = mRotation
+                    ref.mRotation = mRotation.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat" to { registrar, args, methodResult ->
-                    val mVeLocityFloat = args["mVeLocityFloat"] as Float
+                    val mVeLocityFloat = args["mVeLocityFloat"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
                 
-                    ref.mVeLocityFloat = mVeLocityFloat
+                    ref.mVeLocityFloat = mVeLocityFloat.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint" to { registrar, args, methodResult ->
@@ -1865,21 +1865,21 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio" to { registrar, args, methodResult ->
-                    val mXRatio = args["mXRatio"] as Float
+                    val mXRatio = args["mXRatio"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLTextureProperty
                 
-                    ref.mXRatio = mXRatio
+                    ref.mXRatio = mXRatio.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio" to { registrar, args, methodResult ->
-                    val mYRatio = args["mYRatio"] as Float
+                    val mYRatio = args["mYRatio"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLTextureProperty
                 
-                    ref.mYRatio = mYRatio
+                    ref.mYRatio = mYRatio.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_isGenMimps" to { registrar, args, methodResult ->
@@ -2045,147 +2045,147 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1" to { registrar, args, methodResult ->
-                    val mX1 = args["mX1"] as Float
+                    val mX1 = args["mX1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mX1 = mX1
+                    ref.mX1 = mX1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1" to { registrar, args, methodResult ->
-                    val mY1 = args["mY1"] as Float
+                    val mY1 = args["mY1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mY1 = mY1
+                    ref.mY1 = mY1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2" to { registrar, args, methodResult ->
-                    val mX2 = args["mX2"] as Float
+                    val mX2 = args["mX2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mX2 = mX2
+                    ref.mX2 = mX2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2" to { registrar, args, methodResult ->
-                    val mY2 = args["mY2"] as Float
+                    val mY2 = args["mY2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mY2 = mY2
+                    ref.mY2 = mY2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart" to { registrar, args, methodResult ->
-                    val mGLStart = args["mGLStart"] as Float
+                    val mGLStart = args["mGLStart"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mGLStart = mGLStart
+                    ref.mGLStart = mGLStart.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen" to { registrar, args, methodResult ->
-                    val mTextureLen = args["mTextureLen"] as Float
+                    val mTextureLen = args["mTextureLen"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mTextureLen = mTextureLen
+                    ref.mTextureLen = mTextureLen.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1" to { registrar, args, methodResult ->
-                    val mSimple3DX1 = args["mSimple3DX1"] as Float
+                    val mSimple3DX1 = args["mSimple3DX1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DX1 = mSimple3DX1
+                    ref.mSimple3DX1 = mSimple3DX1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1" to { registrar, args, methodResult ->
-                    val mSimple3DY1 = args["mSimple3DY1"] as Float
+                    val mSimple3DY1 = args["mSimple3DY1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DY1 = mSimple3DY1
+                    ref.mSimple3DY1 = mSimple3DY1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2" to { registrar, args, methodResult ->
-                    val mSimple3DX2 = args["mSimple3DX2"] as Float
+                    val mSimple3DX2 = args["mSimple3DX2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DX2 = mSimple3DX2
+                    ref.mSimple3DX2 = mSimple3DX2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2" to { registrar, args, methodResult ->
-                    val mSimple3DY2 = args["mSimple3DY2"] as Float
+                    val mSimple3DY2 = args["mSimple3DY2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DY2 = mSimple3DY2
+                    ref.mSimple3DY2 = mSimple3DY2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart" to { registrar, args, methodResult ->
-                    val mSimple3DGLStart = args["mSimple3DGLStart"] as Float
+                    val mSimple3DGLStart = args["mSimple3DGLStart"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DGLStart = mSimple3DGLStart
+                    ref.mSimple3DGLStart = mSimple3DGLStart.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen" to { registrar, args, methodResult ->
-                    val mSimple3DTextureLen = args["mSimple3DTextureLen"] as Float
+                    val mSimple3DTextureLen = args["mSimple3DTextureLen"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mSimple3DTextureLen = mSimple3DTextureLen
+                    ref.mSimple3DTextureLen = mSimple3DTextureLen.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1" to { registrar, args, methodResult ->
-                    val mCapX1 = args["mCapX1"] as Float
+                    val mCapX1 = args["mCapX1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mCapX1 = mCapX1
+                    ref.mCapX1 = mCapX1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1" to { registrar, args, methodResult ->
-                    val mCapY1 = args["mCapY1"] as Float
+                    val mCapY1 = args["mCapY1"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mCapY1 = mCapY1
+                    ref.mCapY1 = mCapY1.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2" to { registrar, args, methodResult ->
-                    val mCapX2 = args["mCapX2"] as Float
+                    val mCapX2 = args["mCapX2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mCapX2 = mCapX2
+                    ref.mCapX2 = mCapX2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2" to { registrar, args, methodResult ->
-                    val mCapY2 = args["mCapY2"] as Float
+                    val mCapY2 = args["mCapY2"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
                 
-                    ref.mCapY2 = mCapY2
+                    ref.mCapY2 = mCapY2.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_isLineExtract" to { registrar, args, methodResult ->
@@ -2288,21 +2288,21 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio" to { registrar, args, methodResult ->
-                    val mAnchorXRatio = args["mAnchorXRatio"] as Float
+                    val mAnchorXRatio = args["mAnchorXRatio"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlayTexture
                 
-                    ref.mAnchorXRatio = mAnchorXRatio
+                    ref.mAnchorXRatio = mAnchorXRatio.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio" to { registrar, args, methodResult ->
-                    val mAnchorYRatio = args["mAnchorYRatio"] as Float
+                    val mAnchorYRatio = args["mAnchorYRatio"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlayTexture
                 
-                    ref.mAnchorYRatio = mAnchorYRatio
+                    ref.mAnchorYRatio = mAnchorYRatio.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchor" to { registrar, args, methodResult ->
@@ -2486,30 +2486,30 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha" to { registrar, args, methodResult ->
-                    val mFromAlpha = args["mFromAlpha"] as Float
+                    val mFromAlpha = args["mFromAlpha"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
                 
-                    ref.mFromAlpha = mFromAlpha
+                    ref.mFromAlpha = mFromAlpha.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha" to { registrar, args, methodResult ->
-                    val mToAlpha = args["mToAlpha"] as Float
+                    val mToAlpha = args["mToAlpha"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
                 
-                    ref.mToAlpha = mToAlpha
+                    ref.mToAlpha = mToAlpha.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha" to { registrar, args, methodResult ->
-                    val mCurAlpha = args["mCurAlpha"] as Float
+                    val mCurAlpha = args["mCurAlpha"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
                 
-                    ref.mCurAlpha = mCurAlpha
+                    ref.mCurAlpha = mCurAlpha.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.animation.GLTransformation::set_alpha" to { registrar, args, methodResult ->
@@ -2549,57 +2549,57 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel" to { registrar, args, methodResult ->
-                    val maxZoomLevel = args["maxZoomLevel"] as Float
+                    val maxZoomLevel = args["maxZoomLevel"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.MapConfig
                 
-                    ref.maxZoomLevel = maxZoomLevel
+                    ref.maxZoomLevel = maxZoomLevel.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel" to { registrar, args, methodResult ->
-                    val minZoomLevel = args["minZoomLevel"] as Float
+                    val minZoomLevel = args["minZoomLevel"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.MapConfig
                 
-                    ref.minZoomLevel = minZoomLevel
+                    ref.minZoomLevel = minZoomLevel.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta" to { registrar, args, methodResult ->
-                    val angleDelta = args["angleDelta"] as Float
+                    val angleDelta = args["angleDelta"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.HoverGestureMapMessage
                 
-                    ref.angleDelta = angleDelta
+                    ref.angleDelta = angleDelta.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX" to { registrar, args, methodResult ->
-                    val touchDeltaX = args["touchDeltaX"] as Float
+                    val touchDeltaX = args["touchDeltaX"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
                 
-                    ref.touchDeltaX = touchDeltaX
+                    ref.touchDeltaX = touchDeltaX.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY" to { registrar, args, methodResult ->
-                    val touchDeltaY = args["touchDeltaY"] as Float
+                    val touchDeltaY = args["touchDeltaY"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
                 
-                    ref.touchDeltaY = touchDeltaY
+                    ref.touchDeltaY = touchDeltaY.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta" to { registrar, args, methodResult ->
-                    val scaleDelta = args["scaleDelta"] as Float
+                    val scaleDelta = args["scaleDelta"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.ScaleGestureMapMessage
                 
-                    ref.scaleDelta = scaleDelta
+                    ref.scaleDelta = scaleDelta.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_pivotX" to { registrar, args, methodResult ->
@@ -2693,48 +2693,48 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta" to { registrar, args, methodResult ->
-                    val angleDelta = args["angleDelta"] as Float
+                    val angleDelta = args["angleDelta"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.RotateGestureMapMessage
                 
-                    ref.angleDelta = angleDelta
+                    ref.angleDelta = angleDelta.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.Rectangle::set_left" to { registrar, args, methodResult ->
-                    val left = args["left"] as Float
+                    val left = args["left"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
                 
-                    ref.left = left
+                    ref.left = left.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.Rectangle::set_right" to { registrar, args, methodResult ->
-                    val right = args["right"] as Float
+                    val right = args["right"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
                 
-                    ref.right = right
+                    ref.right = right.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.Rectangle::set_bottom" to { registrar, args, methodResult ->
-                    val bottom = args["bottom"] as Float
+                    val bottom = args["bottom"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
                 
-                    ref.bottom = bottom
+                    ref.bottom = bottom.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.Rectangle::set_top" to { registrar, args, methodResult ->
-                    val top = args["top"] as Float
+                    val top = args["top"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
                 
-                    ref.top = top
+                    ref.top = top.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.FPoint3::set_colorIndex" to { registrar, args, methodResult ->
@@ -2747,57 +2747,57 @@ class AmapBaseFlutterPlugin {
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel" to { registrar, args, methodResult ->
-                    val xPixel = args["xPixel"] as Float
+                    val xPixel = args["xPixel"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.xPixel = xPixel
+                    ref.xPixel = xPixel.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel" to { registrar, args, methodResult ->
-                    val yPixel = args["yPixel"] as Float
+                    val yPixel = args["yPixel"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.yPixel = yPixel
+                    ref.yPixel = yPixel.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount" to { registrar, args, methodResult ->
-                    val amount = args["amount"] as Float
+                    val amount = args["amount"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.amount = amount
+                    ref.amount = amount.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom" to { registrar, args, methodResult ->
-                    val zoom = args["zoom"] as Float
+                    val zoom = args["zoom"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.zoom = zoom
+                    ref.zoom = zoom.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt" to { registrar, args, methodResult ->
-                    val tilt = args["tilt"] as Float
+                    val tilt = args["tilt"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.tilt = tilt
+                    ref.tilt = tilt.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing" to { registrar, args, methodResult ->
-                    val bearing = args["bearing"] as Float
+                    val bearing = args["bearing"] as Double
                 
                     val refId = args["refId"] as Int
                     val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
                 
-                    ref.bearing = bearing
+                    ref.bearing = bearing.toFloat()
                     methodResult.success("success")
                 },
                 "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_isUseAnchor" to { registrar, args, methodResult ->
@@ -3764,7 +3764,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var2 = args["var2"] as Int
                     // jsonable参数
-                    val var3 = args["var3"] as Float
+                    val var3 = args["var3"] as Double
                     // jsonable参数
                     val var4 = args["var4"] as Int
                     // jsonable参数
@@ -3784,7 +3784,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::addGroupAnimation([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7])")
                 
                     // 开始调用
-                    ref.addGroupAnimation(var1, var2, var3, var4, var5, var6, var7, var8)
+                    ref.addGroupAnimation(var1, var2, var3.toFloat(), var4, var5, var6, var7, var8)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -4556,7 +4556,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var7 = args["var7"] as Int
                     // jsonable参数
-                    val var8 = args["var8"] as Float
+                    val var8 = args["var8"] as Double
                     // jsonable参数
                     val var9 = args["var9"] as Int
                     // jsonable参数
@@ -4574,7 +4574,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::updateNativeArrowOverlay([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12])")
                 
                     // 开始调用
-                    ref.updateNativeArrowOverlay(var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12)
+                    ref.updateNativeArrowOverlay(var1, var2, var3, var4, var5, var6, var7, var8.toFloat(), var9, var10, var11, var12)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -4973,9 +4973,9 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglMapAnimFling::setPositionAndVelocity" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -4985,7 +4985,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setPositionAndVelocity(var1, var2)
+                    ref.setPositionAndVelocity(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5044,9 +5044,9 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglAnimation1V::setAnimationValue" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as Int
                 
@@ -5058,7 +5058,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglAnimation1V@$refId::setAnimationValue([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
                 
                     // 开始调用
-                    ref.setAnimationValue(var1, var2, var3)
+                    ref.setAnimationValue(var1.toFloat(), var2.toFloat(), var3)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5185,7 +5185,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam::setNormalizedTime" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -5195,7 +5195,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setNormalizedTime([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setNormalizedTime(var1)
+                    ref.setNormalizedTime(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5205,7 +5205,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -5215,7 +5215,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam@$refId::setInterpolatorType([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setInterpolatorType(var1, var2)
+                    ref.setInterpolatorType(var1, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5274,7 +5274,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setFromValue" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -5284,7 +5284,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setFromValue(var1)
+                    ref.setFromValue(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5292,7 +5292,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V::setToValue" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -5302,7 +5302,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setToValue(var1)
+                    ref.setToValue(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5430,7 +5430,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
                     val var2 = args["var2"] as Int
                 
@@ -5442,7 +5442,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapAngle([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setToMapAngle(var1, var2)
+                    ref.setToMapAngle(var1.toFloat(), var2)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5472,7 +5472,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToMapLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
                     val var2 = args["var2"] as Int
                 
@@ -5484,7 +5484,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setToMapLevel(var1, var2)
+                    ref.setToMapLevel(var1.toFloat(), var2)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5492,7 +5492,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::setToCameraDegree" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
                     val var2 = args["var2"] as Int
                 
@@ -5504,7 +5504,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToCameraDegree([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setToCameraDegree(var1, var2)
+                    ref.setToCameraDegree(var1.toFloat(), var2)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -5512,7 +5512,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -5521,7 +5521,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::checkLevel([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(var0)
+                    val result = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup.checkLevel(var0.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -5834,7 +5834,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.GLMapRender::setRenderFps" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -5844,7 +5844,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRenderFps(var1)
+                    ref.setRenderFps(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6039,7 +6039,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.GLMapState::setCameraDegree" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -6049,7 +6049,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setCameraDegree(var1)
+                    ref.setCameraDegree(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6057,7 +6057,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.GLMapState::setMapAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -6067,7 +6067,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMapAngle(var1)
+                    ref.setMapAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6075,7 +6075,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.GLMapState::setMapZoomer" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -6085,7 +6085,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMapZoomer(var1)
+                    ref.setMapZoomer(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6384,7 +6384,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Long
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -6393,7 +6393,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer([\"var0\":$var0, \"var2\":$var2])")
                 
                     // 开始调用
-                    com.autonavi.ae.gmap.GLMapState.nativeSetMapZoomer(var0, var2)
+                    com.autonavi.ae.gmap.GLMapState.nativeSetMapZoomer(var0, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6403,7 +6403,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Long
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -6412,7 +6412,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle([\"var0\":$var0, \"var2\":$var2])")
                 
                     // 开始调用
-                    com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, var2)
+                    com.autonavi.ae.gmap.GLMapState.nativeSetMapAngle(var0, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6456,7 +6456,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Long
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -6465,7 +6465,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree([\"var0\":$var0, \"var2\":$var2])")
                 
                     // 开始调用
-                    com.autonavi.ae.gmap.GLMapState.nativeSetCameraDegree(var0, var2)
+                    com.autonavi.ae.gmap.GLMapState.nativeSetCameraDegree(var0, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -6585,7 +6585,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -6594,7 +6594,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapState::nativeCalMapZoomScalefactor([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = com.autonavi.ae.gmap.GLMapState.nativeCalMapZoomScalefactor(var0, var1, var2)
+                    val result = com.autonavi.ae.gmap.GLMapState.nativeCalMapZoomScalefactor(var0, var1, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -7217,7 +7217,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.gloverlay.GLOverlay::setMinDisplayLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -7227,7 +7227,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMinDisplayLevel(var1)
+                    ref.setMinDisplayLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -7235,7 +7235,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.ae.gmap.gloverlay.GLOverlay::setMaxDisplayLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -7245,7 +7245,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMaxDisplayLevel(var1)
+                    ref.setMaxDisplayLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -7575,6 +7575,23 @@ class AmapBaseFlutterPlugin {
                 
                     // 调用结果
                     methodResult.success("success")
+                },
+                "com.autonavi.amap.mapcore.Inner_3dMap_locationOption.Inner_3dMap_Enum_LocationProtocol::getValue" to { registrar, args, methodResult ->
+                    // 参数
+                
+                
+                    // 调用对象引用
+                    val refId = args["refId"] as Int
+                    val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Inner_3dMap_locationOption.Inner_3dMap_Enum_LocationProtocol
+                
+                    // 日志打印
+                    println("fluttify-kotlin: com.autonavi.amap.mapcore.Inner_3dMap_locationOption.Inner_3dMap_Enum_LocationProtocol@$refId::getValue([])")
+                
+                    // 开始调用
+                    val result = ref.getValue()
+                
+                    // 调用结果
+                    methodResult.success(result)
                 },
                 "com.autonavi.amap.mapcore.tools.TextTextureGenerator::getNearstSize2N" to { registrar, args, methodResult ->
                     // 参数
@@ -8266,19 +8283,19 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var3 = args["var3"] as Int
                     // jsonable参数
-                    val var4 = args["var4"] as Float
+                    val var4 = args["var4"] as Double
                     // jsonable参数
                     val var5 = args["var5"] as Int
                     // jsonable参数
-                    val var6 = args["var6"] as Float
+                    val var6 = args["var6"] as Double
                     // jsonable参数
-                    val var7 = args["var7"] as Float
+                    val var7 = args["var7"] as Double
                     // jsonable参数
-                    val var8 = args["var8"] as Float
+                    val var8 = args["var8"] as Double
                     // jsonable参数
-                    val var9 = args["var9"] as Float
+                    val var9 = args["var9"] as Double
                     // jsonable参数
-                    val var10 = args["var10"] as Float
+                    val var10 = args["var10"] as Double
                     // jsonable参数
                     val var11 = args["var11"] as Boolean
                     // jsonable参数
@@ -8299,7 +8316,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID([\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12, \"var13\":$var13, \"var14\":$var14, \"var15\":$var15, \"var16\":$var16])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativePolyline.nativeDrawLineByTextureID(var0, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16)
+                    com.autonavi.amap.mapcore.AMapNativePolyline.nativeDrawLineByTextureID(var0, var2, var3, var4.toFloat(), var5, var6.toFloat(), var7.toFloat(), var8.toFloat(), var9.toFloat(), var10.toFloat(), var11, var12, var13, var14, var15, var16)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -8399,7 +8416,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as IntArray
                     // jsonable参数
@@ -8409,7 +8426,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var6 = args["var6"] as Int
                     // jsonable参数
-                    val var7 = args["var7"] as Float
+                    val var7 = args["var7"] as Double
                     // jsonable参数
                     val var8 = args["var8"] as FloatArray
                     // jsonable参数
@@ -8424,7 +8441,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiTextureID([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiTextureID(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10)
+                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiTextureID(var0, var1, var2.toFloat(), var3, var4, var5, var6, var7.toFloat(), var8, var9, var10)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -8436,7 +8453,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as Int
                     // jsonable参数
@@ -8461,7 +8478,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByMultiColor([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiColor(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10)
+                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByMultiColor(var0, var1, var2.toFloat(), var3, var4, var5, var6, var7, var8, var9, var10)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -8473,7 +8490,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as IntArray
                     // jsonable参数
@@ -8498,7 +8515,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawGradientColorLine([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawGradientColorLine(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10)
+                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawGradientColorLine(var0, var1, var2.toFloat(), var3, var4, var5, var6, var7, var8, var9, var10)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -8526,19 +8543,19 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as Int
                     // jsonable参数
-                    val var4 = args["var4"] as Float
+                    val var4 = args["var4"] as Double
                     // jsonable参数
-                    val var5 = args["var5"] as Float
+                    val var5 = args["var5"] as Double
                     // jsonable参数
-                    val var6 = args["var6"] as Float
+                    val var6 = args["var6"] as Double
                     // jsonable参数
-                    val var7 = args["var7"] as Float
+                    val var7 = args["var7"] as Double
                     // jsonable参数
-                    val var8 = args["var8"] as Float
+                    val var8 = args["var8"] as Double
                     // jsonable参数
                     val var9 = args["var9"] as Boolean
                     // jsonable参数
@@ -8559,7 +8576,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineByTextureID([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8, \"var9\":$var9, \"var10\":$var10, \"var11\":$var11, \"var12\":$var12, \"var13\":$var13, \"var14\":$var14])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByTextureID(var0, var1, var2, var3, var4, var5, var6, var7, var8, var9, var10, var11, var12, var13, var14)
+                    com.autonavi.amap.mapcore.AMapNativeRenderer.nativeDrawLineByTextureID(var0, var1, var2.toFloat(), var3, var4.toFloat(), var5.toFloat(), var6.toFloat(), var7.toFloat(), var8.toFloat(), var9, var10, var11, var12, var13, var14)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -9032,7 +9049,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.animation.GLAnimationSet::scaleCurrentDuration" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -9042,7 +9059,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimationSet@$refId::scaleCurrentDuration([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.scaleCurrentDuration(var1)
+                    ref.scaleCurrentDuration(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -9297,7 +9314,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.animation.GLAnimation::scaleCurrentDuration" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -9307,7 +9324,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::scaleCurrentDuration([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.scaleCurrentDuration(var1)
+                    ref.scaleCurrentDuration(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10315,7 +10332,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setSZ" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10325,7 +10342,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSZ([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setSZ(var1)
+                    ref.setSZ(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10350,7 +10367,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setSC" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10360,7 +10377,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSC([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setSC(var1)
+                    ref.setSC(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10385,7 +10402,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setSR" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10395,7 +10412,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSR([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setSR(var1)
+                    ref.setSR(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10423,7 +10440,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setMaxZoomLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10433,7 +10450,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMaxZoomLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMaxZoomLevel(var1)
+                    ref.setMaxZoomLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10441,7 +10458,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setMinZoomLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10451,7 +10468,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMinZoomLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMinZoomLevel(var1)
+                    ref.setMinZoomLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10583,7 +10600,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setMapPerPixelUnitLength" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10593,7 +10610,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapPerPixelUnitLength([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMapPerPixelUnitLength(var1)
+                    ref.setMapPerPixelUnitLength(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -10968,7 +10985,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setMapZoomScale" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -10978,7 +10995,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setMapZoomScale([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMapZoomScale(var1)
+                    ref.setMapZoomScale(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -11195,7 +11212,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.MapConfig::setSkyHeight" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -11205,7 +11222,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.MapConfig@$refId::setSkyHeight([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setSkyHeight(var1)
+                    ref.setSkyHeight(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -11300,7 +11317,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Int
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                 
@@ -11309,7 +11326,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.message.HoverGestureMapMessage::obtain([\"var0\":$var0, \"var1\":$var1])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.message.HoverGestureMapMessage.obtain(var0, var1)
+                    val result = com.autonavi.amap.mapcore.message.HoverGestureMapMessage.obtain(var0, var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -11373,9 +11390,9 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Int
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -11384,7 +11401,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::obtain([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.message.MoveGestureMapMessage.obtain(var0, var1, var2)
+                    val result = com.autonavi.amap.mapcore.message.MoveGestureMapMessage.obtain(var0, var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -11448,7 +11465,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Int
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
                     val var2 = args["var2"] as Int
                     // jsonable参数
@@ -11461,7 +11478,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::obtain([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.obtain(var0, var1, var2, var3)
+                    val result = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage.obtain(var0, var1.toFloat(), var2, var3)
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -11612,7 +11629,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Int
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
                     val var2 = args["var2"] as Int
                     // jsonable参数
@@ -11625,7 +11642,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.message.RotateGestureMapMessage::obtain([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.message.RotateGestureMapMessage.obtain(var0, var1, var2, var3)
+                    val result = com.autonavi.amap.mapcore.message.RotateGestureMapMessage.obtain(var0, var1.toFloat(), var2, var3)
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -13534,11 +13551,11 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var5 = args["var5"] as Int
                     // jsonable参数
-                    val var6 = args["var6"] as Float
+                    val var6 = args["var6"] as Double
                     // jsonable参数
-                    val var7 = args["var7"] as Float
+                    val var7 = args["var7"] as Double
                     // jsonable参数
-                    val var8 = args["var8"] as Float
+                    val var8 = args["var8"] as Double
                 
                     // 调用对象引用
                 
@@ -13547,7 +13564,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeRender([\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7, \"var8\":$var8])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeRender(var0, var2, var3, var4, var5, var6, var7, var8)
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeRender(var0, var2, var3, var4, var5, var6.toFloat(), var7.toFloat(), var8.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -13557,9 +13574,9 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var0 = args["var0"] as Long
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
-                    val var3 = args["var3"] as Float
+                    val var3 = args["var3"] as Double
                 
                     // 调用对象引用
                 
@@ -13568,7 +13585,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize([\"var0\":$var0, \"var2\":$var2, \"var3\":$var3])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setStartParticleSize(var0, var2, var3)
+                    com.autonavi.amap.mapcore.AMapNativeParticleSystem.setStartParticleSize(var0, var2.toFloat(), var3.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -13821,11 +13838,11 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
                     val var3 = args["var3"] as Boolean
                 
@@ -13836,7 +13853,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateSinglePointParticleShape([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(var0, var1, var2, var3)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateSinglePointParticleShape(var0.toFloat(), var1.toFloat(), var2.toFloat(), var3)
                 
                     // 调用结果
                     methodResult.success(result)
@@ -13844,13 +13861,13 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
-                    val var3 = args["var3"] as Float
+                    val var3 = args["var3"] as Double
                     // jsonable参数
                     val var4 = args["var4"] as Boolean
                 
@@ -13861,7 +13878,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRectParticleShape([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(var0, var1, var2, var3, var4)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRectParticleShape(var0.toFloat(), var1.toFloat(), var2.toFloat(), var3.toFloat(), var4)
                 
                     // 调用结果
                     methodResult.success(result)
@@ -13869,21 +13886,21 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
-                    val var3 = args["var3"] as Float
+                    val var3 = args["var3"] as Double
                     // jsonable参数
-                    val var4 = args["var4"] as Float
+                    val var4 = args["var4"] as Double
                     // jsonable参数
-                    val var5 = args["var5"] as Float
+                    val var5 = args["var5"] as Double
                     // jsonable参数
-                    val var6 = args["var6"] as Float
+                    val var6 = args["var6"] as Double
                     // jsonable参数
-                    val var7 = args["var7"] as Float
+                    val var7 = args["var7"] as Double
                 
                     // 调用对象引用
                 
@@ -13892,7 +13909,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomColorBetWeenTwoConstants([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(var0, var1, var2, var3, var4, var5, var6, var7)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomColorBetWeenTwoConstants(var0.toFloat(), var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat(), var6.toFloat(), var7.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -13916,7 +13933,7 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -13925,7 +13942,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateConstantRotationOverLife([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(var0)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateConstantRotationOverLife(var0.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -13933,17 +13950,17 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                     // jsonable参数
-                    val var3 = args["var3"] as Float
+                    val var3 = args["var3"] as Double
                     // jsonable参数
-                    val var4 = args["var4"] as Float
+                    val var4 = args["var4"] as Double
                     // jsonable参数
-                    val var5 = args["var5"] as Float
+                    val var5 = args["var5"] as Double
                 
                     // 调用对象引用
                 
@@ -13952,7 +13969,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateRandomVelocityBetweenTwoConstants([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(var0, var1, var2, var3, var4, var5)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateRandomVelocityBetweenTwoConstants(var0.toFloat(), var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -13960,11 +13977,11 @@ class AmapBaseFlutterPlugin {
                 "com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                 
@@ -13973,7 +13990,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeCreateCurveSizeOverLife([\"var0\":$var0, \"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(var0, var1, var2)
+                    val result = com.autonavi.amap.mapcore.AMapNativeParticleSystem.nativeCreateCurveSizeOverLife(var0.toFloat(), var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -14256,7 +14273,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var5 = args["var5"] as Int
                     // jsonable参数
-                    val var6 = args["var6"] as Float
+                    val var6 = args["var6"] as Double
                     // jsonable参数
                     val var7 = args["var7"] as IntArray
                 
@@ -14267,7 +14284,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render([\"var0\":$var0, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6, \"var7\":$var7])")
                 
                     // 开始调用
-                    com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.render(var0, var2, var3, var4, var5, var6, var7)
+                    com.autonavi.amap.mapcore.AMapNativeBuildingRenderer.render(var0, var2, var3, var4, var5, var6.toFloat(), var7)
                 
                     // 调用结果
                     methodResult.success("success")
@@ -15041,7 +15058,7 @@ class AmapBaseFlutterPlugin {
                     // jsonable参数
                     val var1 = args["var1"] as Int
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -15051,7 +15068,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.UiSettings@$refId::setLogoMarginRate([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setLogoMarginRate(var1, var2)
+                    ref.setLogoMarginRate(var1, var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -15274,9 +15291,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::scrollBy" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                 
@@ -15285,7 +15302,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::scrollBy([\"var0\":$var0, \"var1\":$var1])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.scrollBy(var0, var1)
+                    val result = com.amap.api.maps.CameraUpdateFactory.scrollBy(var0.toFloat(), var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15296,7 +15313,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::zoomTo" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -15305,7 +15322,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomTo([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.zoomTo(var0)
+                    val result = com.amap.api.maps.CameraUpdateFactory.zoomTo(var0.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15316,7 +15333,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::zoomBy" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -15325,7 +15342,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::zoomBy([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.zoomBy(var0)
+                    val result = com.amap.api.maps.CameraUpdateFactory.zoomBy(var0.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15378,7 +15395,7 @@ class AmapBaseFlutterPlugin {
                     // 引用参数
                     val var0 = REF_MAP[args["var0"] as Int] as com.amap.api.maps.model.LatLng
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                 
@@ -15387,7 +15404,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::newLatLngZoom([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, var1)
+                    val result = com.amap.api.maps.CameraUpdateFactory.newLatLngZoom(var0, var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15440,7 +15457,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::changeBearing" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -15449,7 +15466,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeBearing([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.changeBearing(var0)
+                    val result = com.amap.api.maps.CameraUpdateFactory.changeBearing(var0.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15460,7 +15477,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                     // 引用参数
                     val var1 = REF_MAP[args["var1"] as Int] as com.autonavi.amap.mapcore.IPoint
                 
@@ -15471,7 +15488,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.changeBearingGeoCenter(var0, var1)
+                    val result = com.amap.api.maps.CameraUpdateFactory.changeBearingGeoCenter(var0.toFloat(), var1)
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -15482,7 +15499,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.CameraUpdateFactory::changeTilt" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var0 = args["var0"] as Float
+                    val var0 = args["var0"] as Double
                 
                     // 调用对象引用
                 
@@ -15491,7 +15508,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.CameraUpdateFactory::changeTilt([\"var0\":$var0])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.CameraUpdateFactory.changeTilt(var0)
+                    val result = com.amap.api.maps.CameraUpdateFactory.changeTilt(var0.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -16245,7 +16262,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.utils.overlay.MovingPointOverlay::setRotate" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -16255,7 +16272,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotate(var1)
+                    ref.setRotate(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -16513,7 +16530,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setRotate" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -16523,7 +16540,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setRotate([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotate(var1)
+                    ref.setRotate(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -18160,7 +18177,7 @@ class AmapBaseFlutterPlugin {
                     // 引用参数
                     val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -18170,7 +18187,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.Projection@$refId::getMapBounds([\"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.getMapBounds(var1, var2)
+                    val result = ref.getMapBounds(var1, var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -18271,7 +18288,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polygon::setStrokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -18281,7 +18298,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setStrokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setStrokeWidth(var1)
+                    ref.setStrokeWidth(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -18376,7 +18393,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polygon::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -18386,7 +18403,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -18631,9 +18648,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MyLocationStyle::anchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -18643,7 +18660,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.anchor(var1, var2)
+                    val result = ref.anchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -18696,7 +18713,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MyLocationStyle::strokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -18706,7 +18723,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.strokeWidth(var1)
+                    val result = ref.strokeWidth(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -19367,7 +19384,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Text::setRotate" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -19377,7 +19394,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setRotate([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotate(var1)
+                    ref.setRotate(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -19402,7 +19419,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Text::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -19412,7 +19429,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Text@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -19499,7 +19516,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.NavigateArrowOptions::width" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -19509,7 +19526,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::width([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.width(var1)
+                    val result = ref.width(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -19562,7 +19579,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.NavigateArrowOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -19572,7 +19589,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrowOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -19922,9 +19939,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MultiPointOverlayOptions::anchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -19934,7 +19951,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.anchor(var1, var2)
+                    val result = ref.anchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20293,7 +20310,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolylineOptions::width" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20303,7 +20320,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::width([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.width(var1)
+                    val result = ref.width(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20335,7 +20352,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolylineOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20345,7 +20362,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20624,7 +20641,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolylineOptions::transparency" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20634,7 +20651,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::transparency([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.transparency(var1)
+                    val result = ref.transparency(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20735,7 +20752,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolylineOptions::setShownRatio" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20745,7 +20762,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setShownRatio([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.setShownRatio(var1)
+                    val result = ref.setShownRatio(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20756,9 +20773,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolylineOptions::setShownRange" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20768,7 +20785,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions@$refId::setShownRange([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.setShownRange(var1, var2)
+                    val result = ref.setShownRange(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -20855,7 +20872,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GL3DModel::setAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -20865,7 +20882,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setAngle(var1)
+                    ref.setAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -21032,7 +21049,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GL3DModel::setRotateAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21042,7 +21059,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setRotateAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotateAngle(var1)
+                    ref.setRotateAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -21067,7 +21084,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GL3DModel::setZoomLimit" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21077,7 +21094,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GL3DModel@$refId::setZoomLimit([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZoomLimit(var1)
+                    ref.setZoomLimit(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -21301,9 +21318,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlayOptions::anchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21313,7 +21330,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::anchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.anchor(var1, var2)
+                    val result = ref.anchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21326,7 +21343,7 @@ class AmapBaseFlutterPlugin {
                     // 引用参数
                     val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21336,7 +21353,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::position([\"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.position(var1, var2)
+                    val result = ref.position(var1, var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21368,7 +21385,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlayOptions::bearing" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21378,7 +21395,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::bearing([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.bearing(var1)
+                    val result = ref.bearing(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21389,7 +21406,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlayOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21399,7 +21416,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21431,7 +21448,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlayOptions::transparency" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21441,7 +21458,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlayOptions@$refId::transparency([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.transparency(var1)
+                    val result = ref.transparency(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21713,7 +21730,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GL3DModelOptions::angle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21723,7 +21740,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::angle([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.angle(var1)
+                    val result = ref.angle(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -21901,7 +21918,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlay::setDimensions" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -21911,7 +21928,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setDimensions(var1)
+                    ref.setDimensions(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -22009,7 +22026,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlay::setBearing" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22019,7 +22036,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setBearing(var1)
+                    ref.setBearing(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -22044,7 +22061,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlay::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22054,7 +22071,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -22114,7 +22131,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.GroundOverlay::setTransparency" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22124,7 +22141,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setTransparency(var1)
+                    ref.setTransparency(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -22323,7 +22340,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MyTrafficStyle::setRatio" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22333,7 +22350,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRatio(var1)
+                    ref.setRatio(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -22378,7 +22395,7 @@ class AmapBaseFlutterPlugin {
                     // 引用参数
                     val var0 = REF_MAP[args["var0"] as Int] as com.amap.api.maps.model.LatLng
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                 
@@ -22387,7 +22404,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.CameraPosition::fromLatLngZoom([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = com.amap.api.maps.model.CameraPosition.fromLatLngZoom(var0, var1)
+                    val result = com.amap.api.maps.model.CameraPosition.fromLatLngZoom(var0, var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -22513,7 +22530,7 @@ class AmapBaseFlutterPlugin {
                     // 引用参数
                     val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22523,7 +22540,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::rotatingIcons([\"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.rotatingIcons(ArrayList(var1), var2)
+                    val result = ref.rotatingIcons(ArrayList(var1), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -22707,9 +22724,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MarkerOptions::anchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -22719,7 +22736,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::anchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    val result = ref.anchor(var1, var2)
+                    val result = ref.anchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -23068,7 +23085,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MarkerOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -23078,7 +23095,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -23106,7 +23123,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MarkerOptions::alpha" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -23116,7 +23133,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::alpha([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.alpha(var1)
+                    val result = ref.alpha(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -23220,7 +23237,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MarkerOptions::rotateAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -23230,7 +23247,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MarkerOptions@$refId::rotateAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.rotateAngle(var1)
+                    val result = ref.rotateAngle(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -23445,7 +23462,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.NavigateArrow::setWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -23455,7 +23472,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setWidth(var1)
+                    ref.setWidth(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -23533,7 +23550,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.NavigateArrow::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -23543,7 +23560,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -24319,7 +24336,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.BuildingOverlayOptions::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -24329,7 +24346,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -24640,6 +24657,43 @@ class AmapBaseFlutterPlugin {
                 
                     methodResult.success(returnRefId)
                 },
+                "com.amap.api.maps.model.PolylineOptions.LineCapType::valueOf" to { registrar, args, methodResult ->
+                    // 参数
+                    // jsonable参数
+                    val var0 = args["var0"] as Int
+                
+                    // 调用对象引用
+                
+                
+                    // 日志打印
+                    println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineCapType::valueOf([\"var0\":$var0])")
+                
+                    // 开始调用
+                    val result = com.amap.api.maps.model.PolylineOptions.LineCapType.valueOf(var0)
+                
+                    // 调用结果
+                    val returnRefId = result.hashCode()
+                    REF_MAP[returnRefId] = result
+                
+                    methodResult.success(returnRefId)
+                },
+                "com.amap.api.maps.model.PolylineOptions.LineCapType::getTypeValue" to { registrar, args, methodResult ->
+                    // 参数
+                
+                
+                    // 调用对象引用
+                    val refId = args["refId"] as Int
+                    val ref = REF_MAP[refId] as com.amap.api.maps.model.PolylineOptions.LineCapType
+                
+                    // 日志打印
+                    println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineCapType@$refId::getTypeValue([])")
+                
+                    // 开始调用
+                    val result = ref.getTypeValue()
+                
+                    // 调用结果
+                    methodResult.success(result)
+                },
                 "com.amap.api.maps.model.BasePointOverlay::getPosition" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -24803,7 +24857,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.BasePointOverlay::setRotateAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -24813,7 +24867,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotateAngle(var1)
+                    ref.setRotateAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -24976,7 +25030,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Arc::setStrokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -24986,7 +25040,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setStrokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setStrokeWidth(var1)
+                    ref.setStrokeWidth(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -25046,7 +25100,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Arc::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -25056,7 +25110,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Arc@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -25325,7 +25379,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Circle::setStrokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -25335,7 +25389,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setStrokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setStrokeWidth(var1)
+                    ref.setStrokeWidth(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -25430,7 +25484,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Circle::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -25440,7 +25494,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -25670,7 +25724,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolygonOptions::strokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -25680,7 +25734,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.strokeWidth(var1)
+                    val result = ref.strokeWidth(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -25733,7 +25787,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.PolygonOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -25743,7 +25797,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -26066,7 +26120,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.ArcOptions::strokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -26076,7 +26130,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.strokeWidth(var1)
+                    val result = ref.strokeWidth(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -26108,7 +26162,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.ArcOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -26118,7 +26172,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -26320,7 +26374,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.CircleOptions::strokeWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -26330,7 +26384,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.strokeWidth(var1)
+                    val result = ref.strokeWidth(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -26383,7 +26437,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.CircleOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -26393,7 +26447,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -26603,6 +26657,43 @@ class AmapBaseFlutterPlugin {
                     // 调用结果
                     methodResult.success(result)
                 },
+                "com.amap.api.maps.model.PolylineOptions.LineJoinType::getTypeValue" to { registrar, args, methodResult ->
+                    // 参数
+                
+                
+                    // 调用对象引用
+                    val refId = args["refId"] as Int
+                    val ref = REF_MAP[refId] as com.amap.api.maps.model.PolylineOptions.LineJoinType
+                
+                    // 日志打印
+                    println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineJoinType@$refId::getTypeValue([])")
+                
+                    // 开始调用
+                    val result = ref.getTypeValue()
+                
+                    // 调用结果
+                    methodResult.success(result)
+                },
+                "com.amap.api.maps.model.PolylineOptions.LineJoinType::valueOf" to { registrar, args, methodResult ->
+                    // 参数
+                    // jsonable参数
+                    val var0 = args["var0"] as Int
+                
+                    // 调用对象引用
+                
+                
+                    // 日志打印
+                    println("fluttify-kotlin: com.amap.api.maps.model.PolylineOptions.LineJoinType::valueOf([\"var0\":$var0])")
+                
+                    // 开始调用
+                    val result = com.amap.api.maps.model.PolylineOptions.LineJoinType.valueOf(var0)
+                
+                    // 调用结果
+                    val returnRefId = result.hashCode()
+                    REF_MAP[returnRefId] = result
+                
+                    methodResult.success(returnRefId)
+                },
                 "com.amap.api.maps.model.AMapGLOverlay::destroy" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -26661,9 +26752,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.MultiPointOverlay::setAnchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -26673,7 +26764,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setAnchor(var1, var2)
+                    ref.setAnchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -26998,9 +27089,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Marker::setAnchor" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27010,7 +27101,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAnchor([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setAnchor(var1, var2)
+                    ref.setAnchor(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -27139,7 +27230,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Marker::setRotateAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27149,7 +27240,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotateAngle(var1)
+                    ref.setRotateAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -27284,7 +27375,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Marker::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27294,7 +27385,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -27389,7 +27480,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Marker::setAlpha" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27399,7 +27490,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setAlpha([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setAlpha(var1)
+                    ref.setAlpha(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -27638,7 +27729,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Marker::setRotateAngleNotUpdate" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27648,7 +27739,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setRotateAngleNotUpdate(var1)
+                    ref.setRotateAngleNotUpdate(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -27729,7 +27820,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.TileOverlayOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -27739,7 +27830,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.TileOverlayOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -28560,7 +28651,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeX" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28570,7 +28661,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeX([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeX(var1)
+                    val result = ref.getSizeX(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -28578,7 +28669,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeY" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28588,7 +28679,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeY([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeY(var1)
+                    val result = ref.getSizeY(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -28596,7 +28687,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.CurveSizeOverLife::getSizeZ" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28606,7 +28697,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.CurveSizeOverLife@$refId::getSizeZ([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeZ(var1)
+                    val result = ref.getSizeZ(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -28631,7 +28722,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.SizeOverLife::getSizeX" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28641,7 +28732,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeX([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeX(var1)
+                    val result = ref.getSizeX(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -28649,7 +28740,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.SizeOverLife::getSizeY" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28659,7 +28750,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeY([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeY(var1)
+                    val result = ref.getSizeY(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -28667,7 +28758,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.SizeOverLife::getSizeZ" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -28677,7 +28768,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.SizeOverLife@$refId::getSizeZ([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.getSizeZ(var1)
+                    val result = ref.getSizeZ(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success(result)
@@ -29327,7 +29418,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.particle.ParticleOverlayOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -29337,7 +29428,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -29700,7 +29791,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.TextOptions::zIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -29710,7 +29801,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::zIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.zIndex(var1)
+                    val result = ref.zIndex(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -29721,7 +29812,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.TextOptions::rotate" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -29731,7 +29822,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.TextOptions@$refId::rotate([\"var1\":$var1])")
                 
                     // 开始调用
-                    val result = ref.rotate(var1)
+                    val result = ref.rotate(var1.toFloat())
                 
                     // 调用结果
                     val returnRefId = result.hashCode()
@@ -30052,7 +30143,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.TileOverlay::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30062,7 +30153,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30244,7 +30335,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polyline::setWidth" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30254,7 +30345,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setWidth([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setWidth(var1)
+                    ref.setWidth(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30314,7 +30405,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polyline::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30324,7 +30415,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30405,7 +30496,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polyline::setTransparency" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30415,7 +30506,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setTransparency([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setTransparency(var1)
+                    ref.setTransparency(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30515,7 +30606,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polyline::setShownRatio" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30525,7 +30616,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setShownRatio([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setShownRatio(var1)
+                    ref.setShownRatio(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30533,9 +30624,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.Polyline::setShownRange" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30545,7 +30636,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.Polyline@$refId::setShownRange([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setShownRange(var1, var2)
+                    ref.setShownRange(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -30678,7 +30769,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.model.BuildingOverlay::setZIndex" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -30688,7 +30779,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setZIndex(var1)
+                    ref.setZIndex(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -31328,9 +31419,9 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowBackScale" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                     // jsonable参数
-                    val var2 = args["var2"] as Float
+                    val var2 = args["var2"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -31340,7 +31431,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale([\"var1\":$var1, \"var2\":$var2])")
                 
                     // 开始调用
-                    ref.setInfoWindowBackScale(var1, var2)
+                    ref.setInfoWindowBackScale(var1.toFloat(), var2.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -32280,7 +32371,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.AMap::setMyLocationRotateAngle" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -32290,7 +32381,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationRotateAngle([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMyLocationRotateAngle(var1)
+                    ref.setMyLocationRotateAngle(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -32967,7 +33058,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.AMap::setMaxZoomLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -32977,7 +33068,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMaxZoomLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMaxZoomLevel(var1)
+                    ref.setMaxZoomLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -32985,7 +33076,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.maps.AMap::setMinZoomLevel" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -32995,7 +33086,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMinZoomLevel([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setMinZoomLevel(var1)
+                    ref.setMinZoomLevel(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -33538,7 +33629,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.trace.TraceLocation::setSpeed" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -33548,7 +33639,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setSpeed([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setSpeed(var1)
+                    ref.setSpeed(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")
@@ -33573,7 +33664,7 @@ class AmapBaseFlutterPlugin {
                 "com.amap.api.trace.TraceLocation::setBearing" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
-                    val var1 = args["var1"] as Float
+                    val var1 = args["var1"] as Double
                 
                     // 调用对象引用
                     val refId = args["refId"] as Int
@@ -33583,7 +33674,7 @@ class AmapBaseFlutterPlugin {
                     println("fluttify-kotlin: com.amap.api.trace.TraceLocation@$refId::setBearing([\"var1\":$var1])")
                 
                     // 开始调用
-                    ref.setBearing(var1)
+                    ref.setBearing(var1.toFloat())
                 
                     // 调用结果
                     methodResult.success("success")

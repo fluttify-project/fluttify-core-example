@@ -22,6 +22,11 @@ class MAUserLocationRepresentation {
     return result;
   }
   
+  Future<double> get_lineWidth() async {
+    final result = await _channel.invokeMethod("MAUserLocationRepresentation::get_lineWidth", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_enablePulseAnnimation() async {
     final result = await _channel.invokeMethod("MAUserLocationRepresentation::get_enablePulseAnnimation", {'refId': refId});
     return result;
@@ -35,6 +40,10 @@ class MAUserLocationRepresentation {
   
   Future<void> set_showsHeadingIndicator(bool showsHeadingIndicator) async {
     await _channel.invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator', {'refId': refId, "showsHeadingIndicator": showsHeadingIndicator});
+  }
+  
+  Future<void> set_lineWidth(double lineWidth) async {
+    await _channel.invokeMethod('MAUserLocationRepresentation::set_lineWidth', {'refId': refId, "lineWidth": lineWidth});
   }
   
   Future<void> set_enablePulseAnnimation(bool enablePulseAnnimation) async {

@@ -17,6 +17,31 @@ class MAMapView {
     return result;
   }
   
+  Future<double> get_zoomLevel() async {
+    final result = await _channel.invokeMethod("MAMapView::get_zoomLevel", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_minZoomLevel() async {
+    final result = await _channel.invokeMethod("MAMapView::get_minZoomLevel", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_maxZoomLevel() async {
+    final result = await _channel.invokeMethod("MAMapView::get_maxZoomLevel", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_rotationDegree() async {
+    final result = await _channel.invokeMethod("MAMapView::get_rotationDegree", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_cameraDegree() async {
+    final result = await _channel.invokeMethod("MAMapView::get_cameraDegree", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_zoomingInPivotsAroundAnchorPoint() async {
     final result = await _channel.invokeMethod("MAMapView::get_zoomingInPivotsAroundAnchorPoint", {'refId': refId});
     return result;
@@ -59,6 +84,11 @@ class MAMapView {
   
   Future<bool> get_showTraffic() async {
     final result = await _channel.invokeMethod("MAMapView::get_isShowTraffic", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_trafficRatio() async {
+    final result = await _channel.invokeMethod("MAMapView::get_trafficRatio", {'refId': refId});
     return result;
   }
   
@@ -153,6 +183,26 @@ class MAMapView {
     await _channel.invokeMethod('MAMapView::set_mapType', {'refId': refId, "mapType": mapType.index});
   }
   
+  Future<void> set_zoomLevel(double zoomLevel) async {
+    await _channel.invokeMethod('MAMapView::set_zoomLevel', {'refId': refId, "zoomLevel": zoomLevel});
+  }
+  
+  Future<void> set_minZoomLevel(double minZoomLevel) async {
+    await _channel.invokeMethod('MAMapView::set_minZoomLevel', {'refId': refId, "minZoomLevel": minZoomLevel});
+  }
+  
+  Future<void> set_maxZoomLevel(double maxZoomLevel) async {
+    await _channel.invokeMethod('MAMapView::set_maxZoomLevel', {'refId': refId, "maxZoomLevel": maxZoomLevel});
+  }
+  
+  Future<void> set_rotationDegree(double rotationDegree) async {
+    await _channel.invokeMethod('MAMapView::set_rotationDegree', {'refId': refId, "rotationDegree": rotationDegree});
+  }
+  
+  Future<void> set_cameraDegree(double cameraDegree) async {
+    await _channel.invokeMethod('MAMapView::set_cameraDegree', {'refId': refId, "cameraDegree": cameraDegree});
+  }
+  
   Future<void> set_zoomingInPivotsAroundAnchorPoint(bool zoomingInPivotsAroundAnchorPoint) async {
     await _channel.invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint', {'refId': refId, "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint});
   }
@@ -187,6 +237,10 @@ class MAMapView {
   
   Future<void> set_showTraffic(bool showTraffic) async {
     await _channel.invokeMethod('MAMapView::set_showTraffic', {'refId': refId, "showTraffic": showTraffic});
+  }
+  
+  Future<void> set_trafficRatio(double trafficRatio) async {
+    await _channel.invokeMethod('MAMapView::set_trafficRatio', {'refId': refId, "trafficRatio": trafficRatio});
   }
   
   Future<void> set_touchPOIEnabled(bool touchPOIEnabled) async {
@@ -247,6 +301,21 @@ class MAMapView {
   
 
   // 生成方法们
+   Future<String> setZoomLevel(bool animated, double zoomLevel) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setZoomLevel', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<MAMapStatus> getMapStatus() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::getMapStatus([])');
@@ -260,6 +329,21 @@ class MAMapView {
   
     // 返回值
     return MAMapStatus.withRefId(result);
+  }
+  
+   Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::metersPerPointForZoomLevel', {"zoomLevel": zoomLevel, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
   }
   
    Future<String> reloadMap() async {

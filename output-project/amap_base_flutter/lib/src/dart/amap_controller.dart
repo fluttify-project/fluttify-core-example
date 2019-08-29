@@ -233,4 +233,18 @@ class AmapController {
       },
     );
   }
+
+  /// 设置缩放大小
+  Future setZoomLevel(double level) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        await map.animateCamera(
+            await com_amap_api_maps_CameraUpdateFactory.zoomTo(level));
+      },
+      ios: () async {
+        await iosController.setZoomLevel(true, level);
+      },
+    );
+  }
 }
