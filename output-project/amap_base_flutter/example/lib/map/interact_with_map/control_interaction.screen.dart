@@ -49,9 +49,9 @@ class _ControlInteractionScreenState extends State<ControlInteractionScreen> {
                   },
                 ),
                 BooleanSetting(
-                  head: '是否显示室内地图',
+                  head: '是否显示指南针',
                   onSelected: (value) {
-                    _controller?.showIndoorMap(value);
+                    _controller?.showCompass(value);
                   },
                 ),
                 DiscreteSetting(

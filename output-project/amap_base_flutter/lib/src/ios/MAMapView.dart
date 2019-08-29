@@ -97,16 +97,6 @@ class MAMapView {
     return result;
   }
   
-  Future<List> get_annotations() async {
-    final result = await _channel.invokeMethod("MAMapView::get_annotations", {'refId': refId});
-    return result;
-  }
-  
-  Future<List> get_selectedAnnotations() async {
-    final result = await _channel.invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
-    return result;
-  }
-  
   Future<bool> get_allowsAnnotationViewSorting() async {
     final result = await _channel.invokeMethod("MAMapView::get_allowsAnnotationViewSorting", {'refId': refId});
     return result;
@@ -139,11 +129,6 @@ class MAMapView {
   
   Future<bool> get_allowsBackgroundLocationUpdates() async {
     final result = await _channel.invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
-    return result;
-  }
-  
-  Future<List> get_overlays() async {
-    final result = await _channel.invokeMethod("MAMapView::get_overlays", {'refId': refId});
     return result;
   }
   
@@ -222,10 +207,6 @@ class MAMapView {
   
   Future<void> set_openGLESDisabled(bool openGLESDisabled) async {
     await _channel.invokeMethod('MAMapView::set_openGLESDisabled', {'refId': refId, "openGLESDisabled": openGLESDisabled});
-  }
-  
-  Future<void> set_selectedAnnotations(List selectedAnnotations) async {
-    await _channel.invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations});
   }
   
   Future<void> set_allowsAnnotationViewSorting(bool allowsAnnotationViewSorting) async {
@@ -371,36 +352,6 @@ class MAMapView {
     return result;
   }
   
-   Future<String> addAnnotations(List annotations) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::addAnnotations([\'annotations\':$annotations])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addAnnotations', {"annotations": annotations, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> removeAnnotations(List annotations) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::removeAnnotations([\'annotations\':$annotations])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
@@ -414,21 +365,6 @@ class MAMapView {
   
     // 返回值
     return MAAnnotationView.withRefId(result);
-  }
-  
-   Future<String> showAnnotations(List annotations, bool animated) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'annotations\':$annotations, \'animated\':$animated])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::showAnnotations', {"annotations": annotations, "animated": animated, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
   }
   
    Future<String> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
@@ -458,52 +394,7 @@ class MAMapView {
   
   
     // 返回值
-    return result;
-  }
-  
-   Future<String> addOverlays(List overlays) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::addOverlays([\'overlays\':$overlays])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addOverlays', {"overlays": overlays, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> removeOverlays(List overlays) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::removeOverlays([\'overlays\':$overlays])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeOverlays', {"overlays": overlays, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> showOverlays(List overlays, bool animated) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::showOverlays([\'overlays\':$overlays, \'animated\':$animated])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::showOverlays', {"overlays": overlays, "animated": animated, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
+    return (result as List).cast<List>();
   }
   
    Future<String> setCurrentIndoorMapFloorIndex(int floorIndex) async {

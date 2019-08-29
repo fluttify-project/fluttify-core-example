@@ -115,4 +115,17 @@ class AmapController {
       },
     );
   }
+
+  Future showCompass(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setCompassEnabled(enable);
+      },
+      ios: () async {
+        await iosController.set_showsCompass(enable);
+      },
+    );
+  }
 }
