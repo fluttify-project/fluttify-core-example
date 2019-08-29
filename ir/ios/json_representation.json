@@ -139,15 +139,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "AMapDrivingStrategyFastest",
-            "AMapDrivingStrategyMinFare",
-            "AMapDrivingStrategyShortest",
-            "AMapDrivingStrategyNoHighways",
-            "AMapDrivingStrategyAvoidCongestion",
-            "AMapDrivingStrategyAvoidHighwaysAndFare",
-            "AMapDrivingStrategyAvoidHighwaysAndCongestion",
-            "AMapDrivingStrategyAvoidFareAndCongestion",
-            "AMapDrivingStrategyAvoidHighwaysAndFareAndCongestion",
             "AMapTransitStrategyFastest",
             "AMapTransitStrategyMinFare",
             "AMapTransitStrategyMinTransfer",
@@ -173,21 +164,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "AMapDrivingStrategyFastest",
-            "AMapDrivingStrategyMinFare",
-            "AMapDrivingStrategyShortest",
-            "AMapDrivingStrategyNoHighways",
-            "AMapDrivingStrategyAvoidCongestion",
-            "AMapDrivingStrategyAvoidHighwaysAndFare",
-            "AMapDrivingStrategyAvoidHighwaysAndCongestion",
-            "AMapDrivingStrategyAvoidFareAndCongestion",
-            "AMapDrivingStrategyAvoidHighwaysAndFareAndCongestion",
-            "AMapTransitStrategyFastest",
-            "AMapTransitStrategyMinFare",
-            "AMapTransitStrategyMinTransfer",
-            "AMapTransitStrategyMinWalk",
-            "AMapTransitStrategyMostComfortable",
-            "AMapTransitStrategyAvoidSubway",
             "AMapRouteSearchTypeDriving",
             "AMapRouteSearchTypeTransit",
             "AMapRouteSearchTypeWalking"
@@ -1140,11 +1116,7 @@
             }
           ],
           "methods": [],
-          "constants": [
-            "MAPinAnnotationColorRed",
-            "MAPinAnnotationColorGreen",
-            "MAPinAnnotationColorPurple"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -3253,12 +3225,7 @@
             }
           ],
           "methods": [],
-          "constants": [
-            "MAOfflineItemStatusNone",
-            "MAOfflineItemStatusCached",
-            "MAOfflineItemStatusInstalled",
-            "MAOfflineItemStatusExpired"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -3298,11 +3265,7 @@
           "constructors": [],
           "fields": [],
           "methods": [],
-          "constants": [
-            "kMALineJoinBevel",
-            "kMALineJoinMiter",
-            "kMALineJoinRound"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -3321,9 +3284,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "kMALineJoinBevel",
-            "kMALineJoinMiter",
-            "kMALineJoinRound",
             "kMALineCapButt",
             "kMALineCapSquare",
             "kMALineCapArrow",
@@ -3346,15 +3306,7 @@
           "constructors": [],
           "fields": [],
           "methods": [],
-          "constants": [
-            "kMALineJoinBevel",
-            "kMALineJoinMiter",
-            "kMALineJoinRound",
-            "kMALineCapButt",
-            "kMALineCapSquare",
-            "kMALineCapArrow",
-            "kMALineCapRound"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -5100,13 +5052,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAAnnotationViewDragStateNone",
-            "MAAnnotationViewDragStateStarting",
-            "MAAnnotationViewDragStateDragging",
-            "MAAnnotationViewDragStateCanceling",
-            "MAAnnotationViewDragStateEnding"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -5486,14 +5432,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "MAOfflineMapDownloadStatusWaiting",
-            "MAOfflineMapDownloadStatusStart",
-            "MAOfflineMapDownloadStatusProgress",
-            "MAOfflineMapDownloadStatusCompleted",
-            "MAOfflineMapDownloadStatusCancelled",
-            "MAOfflineMapDownloadStatusUnzip",
-            "MAOfflineMapDownloadStatusFinished",
-            "MAOfflineMapDownloadStatusError",
             "MAOfflineMapErrorUnknown",
             "MAOfflineMapErrorCannotWriteToTmp",
             "MAOfflineMapErrorCannotOpenZipFile",
@@ -5904,20 +5842,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAOfflineMapDownloadStatusWaiting",
-            "MAOfflineMapDownloadStatusStart",
-            "MAOfflineMapDownloadStatusProgress",
-            "MAOfflineMapDownloadStatusCompleted",
-            "MAOfflineMapDownloadStatusCancelled",
-            "MAOfflineMapDownloadStatusUnzip",
-            "MAOfflineMapDownloadStatusFinished",
-            "MAOfflineMapDownloadStatusError",
-            "MAOfflineMapErrorUnknown",
-            "MAOfflineMapErrorCannotWriteToTmp",
-            "MAOfflineMapErrorCannotOpenZipFile",
-            "MAOfflineMapErrorCannotExpand"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6129,12 +6054,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6224,12 +6144,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6258,12 +6173,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6373,12 +6283,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6407,12 +6312,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6452,12 +6352,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6539,12 +6434,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6604,12 +6494,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6659,12 +6544,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6703,12 +6583,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6778,12 +6653,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6863,12 +6733,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -6971,12 +6836,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -7187,12 +7047,7 @@
             }
           ],
           "methods": [],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -7232,12 +7087,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAParticleOverlayTypeSunny",
-            "MAParticleOverlayTypeRain",
-            "MAParticleOverlayTypeSnowy",
-            "MAParticleOverlayTypeHaze"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -7294,11 +7144,7 @@
             }
           ],
           "methods": [],
-          "constants": [
-            "kMALineDashTypeNone",
-            "kMALineDashTypeSquare",
-            "kMALineDashTypeDot"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -8226,11 +8072,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
             "MAUserTrackingModeNone",
             "MAUserTrackingModeFollow",
             "MAUserTrackingModeFollowWithHeading"
@@ -8253,14 +8094,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
-            "MAUserTrackingModeNone",
-            "MAUserTrackingModeFollow",
-            "MAUserTrackingModeFollowWithHeading",
             "MATrafficStatusSmooth",
             "MATrafficStatusSlow",
             "MATrafficStatusJam",
@@ -8284,18 +8117,6 @@
           "fields": [],
           "methods": [],
           "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
-            "MAUserTrackingModeNone",
-            "MAUserTrackingModeFollow",
-            "MAUserTrackingModeFollowWithHeading",
-            "MATrafficStatusSmooth",
-            "MATrafficStatusSlow",
-            "MATrafficStatusJam",
-            "MATrafficStatusSeriousJam",
             "MAOverlayLevelAboveRoads",
             "MAOverlayLevelAboveLabels"
           ],
@@ -11053,22 +10874,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
-            "MAUserTrackingModeNone",
-            "MAUserTrackingModeFollow",
-            "MAUserTrackingModeFollowWithHeading",
-            "MATrafficStatusSmooth",
-            "MATrafficStatusSlow",
-            "MATrafficStatusJam",
-            "MATrafficStatusSeriousJam",
-            "MAOverlayLevelAboveRoads",
-            "MAOverlayLevelAboveLabels"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false
@@ -12163,22 +11969,7 @@
               "isDeprecated": false
             }
           ],
-          "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
-            "MAUserTrackingModeNone",
-            "MAUserTrackingModeFollow",
-            "MAUserTrackingModeFollowWithHeading",
-            "MATrafficStatusSmooth",
-            "MATrafficStatusSlow",
-            "MATrafficStatusJam",
-            "MATrafficStatusSeriousJam",
-            "MAOverlayLevelAboveRoads",
-            "MAOverlayLevelAboveLabels"
-          ],
+          "constants": [],
           "returnType": "",
           "formalParams": [],
           "deprecated": false

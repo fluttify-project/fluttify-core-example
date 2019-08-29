@@ -1176,14 +1176,14 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(ref.version);
     },
     
-    @"MAOfflineMap::get_": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-        // 引用对象
-        NSInteger refId = [args[@"refId"] integerValue];
-        MAOfflineMap* ref = (MAOfflineMap*) REF_MAP[@(refId)];
-    
-        methodResult(ref.);
-    },
-    
+//    @"MAOfflineMap::get_": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+//        // 引用对象
+//        NSInteger refId = [args[@"refId"] integerValue];
+//        MAOfflineMap* ref = (MAOfflineMap*) REF_MAP[@(refId)];
+//    
+//        methodResult(ref.);
+//    },
+//    
     @"MAParticleOverlayOptions::get_visibile": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];

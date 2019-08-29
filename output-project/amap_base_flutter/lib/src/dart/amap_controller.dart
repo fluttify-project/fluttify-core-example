@@ -21,7 +21,9 @@ class AmapController {
         await map?.setMyLocationEnabled(true);
       },
       ios: () async {
-//        iosMap?.s
+        await iosMap?.set_showsUserLocation(true);
+        await iosMap?.setUserTrackingMode(
+            MAUserTrackingMode.MAUserTrackingModeFollow, true);
       },
     );
   }

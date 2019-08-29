@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'map/map.screen.dart';
 
 void main() async {
-  await AmapService.init('7c9daac55e90a439f7b4304b465297fa');
+  await AmapService.init('7a04506d15fdb7585707f7091d715ef4');
 
   runApp(MyApp());
 }

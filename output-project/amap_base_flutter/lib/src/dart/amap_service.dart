@@ -8,13 +8,14 @@ typedef Future FutureCallback();
 class AmapService {
   /// 设置ios端的key, android端需要在manifest里面设置, 无法通过代码设置
   static Future init(String iosKey) async {
-    platform(
+    return platform(
       android: () async {
         print('android端需要在Manifest里面设置');
       },
       ios: () async {
         final service = await AMapServices.sharedServices();
         await service.set_apiKey(iosKey);
+        await service.set_enableHTTPS(true);
       },
     );
   }
