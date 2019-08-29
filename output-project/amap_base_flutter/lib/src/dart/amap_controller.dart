@@ -16,7 +16,7 @@ class AmapController {
   Future showMyLocation(bool show) async {
     return platform(
       android: () async {
-        final map = await androidController?.getMap();
+        final map = await androidController.getMap();
         final locationStyle = await ObjectFactory_Android
             .createcom_amap_api_maps_model_MyLocationStyle();
         await locationStyle?.showMyLocation(show);
@@ -38,7 +38,7 @@ class AmapController {
   Future showIndoorMap(bool show) {
     return platform(
       android: () async {
-        final map = await androidController?.getMap();
+        final map = await androidController.getMap();
         await map.showIndoorMap(show);
       },
       ios: () async {
@@ -50,7 +50,7 @@ class AmapController {
   Future setMapType(MapType mapType) async {
     return platform(
       android: () async {
-        final map = await androidController?.getMap();
+        final map = await androidController.getMap();
         switch (mapType) {
           case MapType.Standard:
             await map.setMapType(1);
@@ -91,14 +91,27 @@ class AmapController {
     );
   }
 
-  Future setTrafficEnabled(bool enable) {
+  Future showTraffic(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController?.getMap();
+        final map = await androidController.getMap();
         await map.setTrafficEnabled(enable);
       },
       ios: () async {
         await iosController.set_showTraffic(enable);
+      },
+    );
+  }
+
+  Future showZoomControl(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setZoomControlsEnabled(enable);
+      },
+      ios: () async {
+        print('ios端不支持显示缩放控件');
       },
     );
   }

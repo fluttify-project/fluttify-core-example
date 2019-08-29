@@ -4,12 +4,12 @@ import 'package:amap_base_flutter_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
-class ShowLocationScreen extends StatefulWidget {
+class CreateMapScreen extends StatefulWidget {
   @override
-  _ShowLocationScreenState createState() => _ShowLocationScreenState();
+  _CreateMapScreenState createState() => _CreateMapScreenState();
 }
 
-class _ShowLocationScreenState extends State<ShowLocationScreen> {
+class _CreateMapScreenState extends State<CreateMapScreen> {
   AmapController _controller;
 
   @override
@@ -70,7 +70,7 @@ class _ShowLocationScreenState extends State<ShowLocationScreen> {
                 BooleanSetting(
                   head: '是否显示路况信息',
                   onSelected: (value) {
-                    _controller?.setTrafficEnabled(value);
+                    _controller?.showTraffic(value);
                   },
                 ),
               ],

@@ -3,10 +3,7 @@ import 'package:amap_base_flutter_example/widgets/function_group.widget.dart';
 import 'package:amap_base_flutter_example/widgets/function_item.widget.dart';
 import 'package:flutter/material.dart';
 
-import 'create_map/custom_map.screen.dart';
-import 'create_map/show_location.screen.dart';
-import 'create_map/show_map.screen.dart';
-import 'create_map/switch_map_layer.screen.dart';
+import 'create_map/create_map.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
 import 'draw_on_map/draw_polygon.screen.dart';
 import 'draw_on_map/draw_polyline.screen.dart';
@@ -27,35 +24,9 @@ class MapDemo extends StatelessWidget {
           children: <Widget>[
             FunctionItem(
               label: '显示地图',
-              sublabel: 'ShowMapScreen',
-              target: ShowMapScreen(),
+              sublabel: 'CreateMapScreen',
+              target: CreateMapScreen(),
             ),
-            FunctionItem(
-              label: '显示定位蓝点',
-              sublabel: 'ShowLocationScreen',
-              target: ShowLocationScreen(),
-            ),
-            FunctionItem(
-              label: '切换地图图层',
-              sublabel: 'SwitchMapLayerScreen',
-              target: SwitchMapLayerScreen(),
-            ),
-            FunctionItem(
-              label: '自定义地图',
-              sublabel: 'CustomMapScreen',
-              target: CustomMapScreen(),
-            ),
-//            Column(
-//              children: <Widget>[
-//                ListTile(
-//                  title: Text('使用离线地图'),
-//                  subtitle: Text('使用离线地图'),
-//                  trailing: Icon(Icons.keyboard_arrow_right),
-//                  onTap: () => OfflineManager().openOfflineManager(),
-//                ),
-//                Divider(height: 1, indent: 16),
-//              ],
-//            ),
           ],
         ),
         SPACE_BIG,
