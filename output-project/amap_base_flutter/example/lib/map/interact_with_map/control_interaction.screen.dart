@@ -54,6 +54,12 @@ class _ControlInteractionScreenState extends State<ControlInteractionScreen> {
                     _controller?.showCompass(value);
                   },
                 ),
+                BooleanSetting(
+                  head: '是否显示定位按钮',
+                  onSelected: (value) {
+                    _controller?.showLocateControl(value);
+                  },
+                ),
                 DiscreteSetting(
                   head: '切换地图图层',
                   options: ['正常视图', '卫星视图', '黑夜视图', '导航视图', '公交视图'],

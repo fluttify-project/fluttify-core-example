@@ -47,6 +47,7 @@ class AmapController {
     );
   }
 
+  /// 选择显示图层
   Future setMapType(MapType mapType) async {
     return platform(
       android: () async {
@@ -91,6 +92,7 @@ class AmapController {
     );
   }
 
+  /// 显示路况信息
   Future showTraffic(bool enable) {
     return platform(
       android: () async {
@@ -103,6 +105,7 @@ class AmapController {
     );
   }
 
+  /// 显示缩放控件
   Future showZoomControl(bool enable) {
     return platform(
       android: () async {
@@ -116,6 +119,7 @@ class AmapController {
     );
   }
 
+  /// 显示指南针
   Future showCompass(bool enable) {
     return platform(
       android: () async {
@@ -125,6 +129,20 @@ class AmapController {
       },
       ios: () async {
         await iosController.set_showsCompass(enable);
+      },
+    );
+  }
+
+  /// 显示定位按钮
+  Future showLocateControl(bool enable) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final uiSetting = await map.getUiSettings();
+        await uiSetting.setMyLocationButtonEnabled(enable);
+      },
+      ios: () async {
+        print('ios端不支持显示定位按钮');
       },
     );
   }
