@@ -20,7 +20,9 @@ class AmapController {
         await map?.setMyLocationStyle(locationStyle);
         await map?.setMyLocationEnabled(true);
       },
-      ios: () async {},
+      ios: () async {
+//        iosMap?.s
+      },
     );
   }
 }

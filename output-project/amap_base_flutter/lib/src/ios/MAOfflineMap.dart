@@ -17,6 +17,11 @@ class MAOfflineMap {
     return result;
   }
   
+  Future<List> get_() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   

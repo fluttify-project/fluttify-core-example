@@ -92,6 +92,66 @@ class MAMapView {
     return result;
   }
   
+  Future<List> get_annotations() async {
+    final result = await _channel.invokeMethod("MAMapView::get_annotations", {'refId': refId});
+    return result;
+  }
+  
+  Future<List> get_selectedAnnotations() async {
+    final result = await _channel.invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_allowsAnnotationViewSorting() async {
+    final result = await _channel.invokeMethod("MAMapView::get_allowsAnnotationViewSorting", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_showsUserLocation() async {
+    final result = await _channel.invokeMethod("MAMapView::get_showsUserLocation", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_customizeUserLocationAccuracyCircleRepresentation() async {
+    final result = await _channel.invokeMethod("MAMapView::get_customizeUserLocationAccuracyCircleRepresentation", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_userLocationVisible() async {
+    final result = await _channel.invokeMethod("MAMapView::get_isUserLocationVisible", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_pausesLocationUpdatesAutomatically() async {
+    final result = await _channel.invokeMethod("MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_allowsBackgroundLocationUpdates() async {
+    final result = await _channel.invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
+    return result;
+  }
+  
+  Future<List> get_overlays() async {
+    final result = await _channel.invokeMethod("MAMapView::get_overlays", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_showsIndoorMap() async {
+    final result = await _channel.invokeMethod("MAMapView::get_isShowsIndoorMap", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_showsIndoorMapControl() async {
+    final result = await _channel.invokeMethod("MAMapView::get_isShowsIndoorMapControl", {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> get_customMapStyleEnabled() async {
+    final result = await _channel.invokeMethod("MAMapView::get_customMapStyleEnabled", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_zoomingInPivotsAroundAnchorPoint(bool zoomingInPivotsAroundAnchorPoint) async {
@@ -116,6 +176,34 @@ class MAMapView {
   
   Future<void> set_openGLESDisabled(bool openGLESDisabled) async {
     await _channel.invokeMethod('MAMapView::set_openGLESDisabled', {'refId': refId, "openGLESDisabled": openGLESDisabled});
+  }
+  
+  Future<void> set_selectedAnnotations(List selectedAnnotations) async {
+    await _channel.invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations});
+  }
+  
+  Future<void> set_allowsAnnotationViewSorting(bool allowsAnnotationViewSorting) async {
+    await _channel.invokeMethod('MAMapView::set_allowsAnnotationViewSorting', {'refId': refId, "allowsAnnotationViewSorting": allowsAnnotationViewSorting});
+  }
+  
+  Future<void> set_showsUserLocation(bool showsUserLocation) async {
+    await _channel.invokeMethod('MAMapView::set_showsUserLocation', {'refId': refId, "showsUserLocation": showsUserLocation});
+  }
+  
+  Future<void> set_customizeUserLocationAccuracyCircleRepresentation(bool customizeUserLocationAccuracyCircleRepresentation) async {
+    await _channel.invokeMethod('MAMapView::set_customizeUserLocationAccuracyCircleRepresentation', {'refId': refId, "customizeUserLocationAccuracyCircleRepresentation": customizeUserLocationAccuracyCircleRepresentation});
+  }
+  
+  Future<void> set_pausesLocationUpdatesAutomatically(bool pausesLocationUpdatesAutomatically) async {
+    await _channel.invokeMethod('MAMapView::set_pausesLocationUpdatesAutomatically', {'refId': refId, "pausesLocationUpdatesAutomatically": pausesLocationUpdatesAutomatically});
+  }
+  
+  Future<void> set_allowsBackgroundLocationUpdates(bool allowsBackgroundLocationUpdates) async {
+    await _channel.invokeMethod('MAMapView::set_allowsBackgroundLocationUpdates', {'refId': refId, "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates});
+  }
+  
+  Future<void> set_customMapStyleEnabled(bool customMapStyleEnabled) async {
+    await _channel.invokeMethod('MAMapView::set_customMapStyleEnabled', {'refId': refId, "customMapStyleEnabled": customMapStyleEnabled});
   }
   
 
@@ -216,6 +304,171 @@ class MAMapView {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('MAMapView::forceRefresh', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> addAnnotations(List annotations) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addAnnotations([\'annotations\':$annotations])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::addAnnotations', {"annotations": annotations, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> removeAnnotations(List annotations) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeAnnotations([\'annotations\':$annotations])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::dequeueReusableAnnotationViewWithIdentifier', {"identifier": identifier, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAAnnotationView.withRefId(result);
+  }
+  
+   Future<String> showAnnotations(List annotations, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'annotations\':$annotations, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::showAnnotations', {"annotations": annotations, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setUserTrackingMode', {"mode": mode.index, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<List> overlaysInLevel(MAOverlayLevel level) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::overlaysInLevel', {"level": level.index, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> addOverlays(List overlays) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addOverlays([\'overlays\':$overlays])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::addOverlays', {"overlays": overlays, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> removeOverlays(List overlays) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeOverlays([\'overlays\':$overlays])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::removeOverlays', {"overlays": overlays, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> showOverlays(List overlays, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showOverlays([\'overlays\':$overlays, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::showOverlays', {"overlays": overlays, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> setCurrentIndoorMapFloorIndex(int floorIndex) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setCurrentIndoorMapFloorIndex([\'floorIndex\':$floorIndex])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setCurrentIndoorMapFloorIndex', {"floorIndex": floorIndex, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> clearIndoorMapCache() async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::clearIndoorMapCache([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::clearIndoorMapCache', {"refId": refId});
   
   
     // 接受原生回调

@@ -11,6 +11,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -102,6 +103,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -129,6 +131,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -162,6 +165,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -198,6 +202,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -280,6 +285,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -410,6 +416,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -508,6 +515,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -534,6 +542,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -632,6 +641,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOfflineItem",
@@ -666,6 +676,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOfflineCity",
@@ -683,6 +694,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -781,6 +793,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -1008,6 +1021,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayPathRenderer",
@@ -1064,6 +1078,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -1085,6 +1100,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAAnnotationView",
@@ -1139,6 +1155,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -1189,6 +1206,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -1271,6 +1289,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MATileOverlay",
@@ -1369,6 +1388,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -1590,6 +1610,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -1656,6 +1677,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -1822,6 +1844,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayPathRenderer",
@@ -1878,6 +1901,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -1966,6 +1990,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -2035,6 +2060,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "UIViewController",
@@ -2080,6 +2106,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -2162,6 +2189,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAMultiPoint",
@@ -2321,6 +2349,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -2398,6 +2427,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAMultiPoint",
@@ -2540,6 +2570,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAPolylineRenderer",
@@ -2628,6 +2659,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAPointAnnotation",
@@ -2815,6 +2847,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -2865,6 +2898,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAPolylineRenderer",
@@ -2974,6 +3008,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOfflineItem",
@@ -3008,6 +3043,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
@@ -3074,6 +3110,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3096,6 +3133,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -3231,6 +3269,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3252,6 +3291,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3273,6 +3313,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3298,6 +3339,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3323,6 +3365,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAPolyline",
@@ -3465,6 +3508,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -3531,6 +3575,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOfflineCity",
@@ -3548,6 +3593,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAPolyline",
@@ -3747,6 +3793,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -3847,6 +3894,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -4004,6 +4052,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -4053,6 +4102,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
@@ -4173,6 +4223,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -4255,6 +4306,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -4417,6 +4469,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayPathRenderer",
@@ -4505,6 +4558,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -4603,6 +4657,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -4653,6 +4708,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -4676,6 +4732,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "UIView",
@@ -5060,6 +5117,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -5199,6 +5257,79 @@
               "className": "MATileOverlay",
               "platform": "iOS",
               "isDeprecated": false
+            },
+            {
+              "returnType": "NSURL*",
+              "name": "URLForTilePath",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MATileOverlayPath",
+                    "name": "path",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MATileOverlay",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "loadTileAtPath",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MATileOverlayPath",
+                    "name": "path",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "result",
+                  "variable": {
+                    "typeName": "void|NSData tileData, NSError error",
+                    "name": "result",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MATileOverlay",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "cancelLoadOfTileAtPath",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MATileOverlayPath",
+                    "name": "path",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MATileOverlay",
+              "platform": "iOS",
+              "isDeprecated": false
             }
           ],
           "constants": [],
@@ -5212,6 +5343,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "UIView",
@@ -5284,6 +5416,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOfflineCity",
@@ -5318,6 +5451,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -5344,6 +5478,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -5374,6 +5509,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -5456,6 +5592,22 @@
               "className": "MAOfflineMap",
               "getterName": "version",
               "setterName": "version",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSArray",
+                "name": "*",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAOfflineMap",
+              "getterName": "",
+              "setterName": "",
               "platform": "iOS",
               "isDeprecated": false
             }
@@ -5636,6 +5788,120 @@
               "className": "MAOfflineMap",
               "platform": "iOS",
               "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "downloadCity",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAOfflineCity*",
+                    "name": "city",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "downloadBlock",
+                  "variable": {
+                    "typeName": "MAOfflineMapDownloadBlock",
+                    "name": "downloadBlock",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOfflineMap",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "downloadCity",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAOfflineCity*",
+                    "name": "city",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "shouldContinueWhenAppEntersBackground",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "shouldContinueWhenAppEntersBackground",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "downloadBlock",
+                  "variable": {
+                    "typeName": "MAOfflineMapDownloadBlock",
+                    "name": "downloadBlock",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOfflineMap",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "BOOL",
+              "name": "isDownloadingForCity",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAOfflineCity*",
+                    "name": "city",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOfflineMap",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "pause",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAOfflineCity*",
+                    "name": "city",
+                    "isList": false,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOfflineMap",
+              "platform": "iOS",
+              "isDeprecated": false
             }
           ],
           "constants": [
@@ -5662,6 +5928,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayPathRenderer",
@@ -5718,6 +5985,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
@@ -5774,6 +6042,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -5799,6 +6068,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -5821,6 +6091,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -5874,6 +6145,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -5968,6 +6240,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -6001,6 +6274,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6115,6 +6389,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -6148,6 +6423,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6192,6 +6468,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -6278,6 +6555,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6342,6 +6620,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6396,6 +6675,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -6439,6 +6719,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6513,6 +6794,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6597,6 +6879,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6704,6 +6987,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6919,6 +7203,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -6963,6 +7248,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -6984,6 +7270,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -7022,6 +7309,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAAnimatedAnnotation",
@@ -7088,6 +7376,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -7170,6 +7459,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -7226,6 +7516,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAMultiPoint",
@@ -7387,6 +7678,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -7480,6 +7772,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -7530,6 +7823,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -7612,6 +7906,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAShape",
@@ -7736,6 +8031,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "NSObject",
@@ -7898,6 +8194,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7921,6 +8218,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7947,6 +8245,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7977,6 +8276,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -8009,6 +8309,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "UIView",
@@ -8667,6 +8968,326 @@
               "className": "MAMapView",
               "getterName": "mapLanguage",
               "setterName": "mapLanguage",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSArray",
+                "name": "*annotations",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "annotations",
+              "setterName": "annotations",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSArray",
+                "name": "*selectedAnnotations",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "selectedAnnotations",
+              "setterName": "selectedAnnotations",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CGRect",
+                "name": "annotationVisibleRect",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "annotationVisibleRect",
+              "setterName": "annotationVisibleRect",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "allowsAnnotationViewSorting",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "allowsAnnotationViewSorting",
+              "setterName": "allowsAnnotationViewSorting",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "showsUserLocation",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "showsUserLocation",
+              "setterName": "showsUserLocation",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "MAUserLocation",
+                "name": "*userLocation",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "userLocation",
+              "setterName": "userLocation",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "customizeUserLocationAccuracyCircleRepresentation",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "customizeUserLocationAccuracyCircleRepresentation",
+              "setterName": "customizeUserLocationAccuracyCircleRepresentation",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "MACircle",
+                "name": "*userLocationAccuracyCircle",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "userLocationAccuracyCircle",
+              "setterName": "userLocationAccuracyCircle",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "MAUserTrackingMode",
+                "name": "userTrackingMode",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "userTrackingMode",
+              "setterName": "userTrackingMode",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "userLocationVisible",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "isUserLocationVisible",
+              "setterName": "userLocationVisible",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CLLocationDistance",
+                "name": "distanceFilter",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "distanceFilter",
+              "setterName": "distanceFilter",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CLLocationAccuracy",
+                "name": "desiredAccuracy",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "desiredAccuracy",
+              "setterName": "desiredAccuracy",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CLLocationDegrees",
+                "name": "headingFilter",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "headingFilter",
+              "setterName": "headingFilter",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "pausesLocationUpdatesAutomatically",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "pausesLocationUpdatesAutomatically",
+              "setterName": "pausesLocationUpdatesAutomatically",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "allowsBackgroundLocationUpdates",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "allowsBackgroundLocationUpdates",
+              "setterName": "allowsBackgroundLocationUpdates",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSArray",
+                "name": "*overlays",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "overlays",
+              "setterName": "overlays",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "showsIndoorMap",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "isShowsIndoorMap",
+              "setterName": "showsIndoorMap",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "showsIndoorMapControl",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "isShowsIndoorMapControl",
+              "setterName": "showsIndoorMapControl",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CGSize",
+                "name": "indoorMapControlSize",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "indoorMapControlSize",
+              "setterName": "indoorMapControlSize",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "BOOL",
+                "name": "customMapStyleEnabled",
+                "isList": false,
+                "platform": "iOS"
+              },
+              "className": "MAMapView",
+              "getterName": "customMapStyleEnabled",
+              "setterName": "customMapStyleEnabled",
               "platform": "iOS",
               "isDeprecated": false
             }
@@ -9443,361 +10064,7 @@
               "className": "MAMapView",
               "platform": "iOS",
               "isDeprecated": false
-            }
-          ],
-          "constants": [
-            "MAMapTypeStandard",
-            "MAMapTypeSatellite",
-            "MAMapTypeStandardNight",
-            "MAMapTypeNavi",
-            "MAMapTypeBus",
-            "MAUserTrackingModeNone",
-            "MAUserTrackingModeFollow",
-            "MAUserTrackingModeFollowWithHeading",
-            "MATrafficStatusSmooth",
-            "MATrafficStatusSlow",
-            "MATrafficStatusJam",
-            "MATrafficStatusSeriousJam",
-            "MAOverlayLevelAboveRoads",
-            "MAOverlayLevelAboveLabels"
-          ],
-          "returnType": "",
-          "formalParams": [],
-          "deprecated": false
-        },
-        {
-          "platform": "iOS",
-          "name": "MAMapViewDelegate",
-          "genericTypes": [],
-          "typeType": "Interface",
-          "isPublic": true,
-          "isInnerClass": false,
-          "isPrimitive": false,
-          "superClass": "",
-          "constructors": [],
-          "fields": [
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "NSArray",
-                "name": "*annotations",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "annotations",
-              "setterName": "annotations",
-              "platform": "iOS",
-              "isDeprecated": false
             },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "NSArray",
-                "name": "*selectedAnnotations",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "selectedAnnotations",
-              "setterName": "selectedAnnotations",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "CGRect",
-                "name": "annotationVisibleRect",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "annotationVisibleRect",
-              "setterName": "annotationVisibleRect",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "allowsAnnotationViewSorting",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "allowsAnnotationViewSorting",
-              "setterName": "allowsAnnotationViewSorting",
-              "platform": "iOS",
-              "isDeprecated": true
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "showsUserLocation",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "showsUserLocation",
-              "setterName": "showsUserLocation",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "MAUserLocation",
-                "name": "*userLocation",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "userLocation",
-              "setterName": "userLocation",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "customizeUserLocationAccuracyCircleRepresentation",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "customizeUserLocationAccuracyCircleRepresentation",
-              "setterName": "customizeUserLocationAccuracyCircleRepresentation",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "MACircle",
-                "name": "*userLocationAccuracyCircle",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "userLocationAccuracyCircle",
-              "setterName": "userLocationAccuracyCircle",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "MAUserTrackingMode",
-                "name": "userTrackingMode",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "userTrackingMode",
-              "setterName": "userTrackingMode",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "userLocationVisible",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "isUserLocationVisible",
-              "setterName": "userLocationVisible",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "CLLocationDistance",
-                "name": "distanceFilter",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "distanceFilter",
-              "setterName": "distanceFilter",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "CLLocationAccuracy",
-                "name": "desiredAccuracy",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "desiredAccuracy",
-              "setterName": "desiredAccuracy",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "CLLocationDegrees",
-                "name": "headingFilter",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "headingFilter",
-              "setterName": "headingFilter",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "pausesLocationUpdatesAutomatically",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "pausesLocationUpdatesAutomatically",
-              "setterName": "pausesLocationUpdatesAutomatically",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "allowsBackgroundLocationUpdates",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "allowsBackgroundLocationUpdates",
-              "setterName": "allowsBackgroundLocationUpdates",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "NSArray",
-                "name": "*overlays",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "overlays",
-              "setterName": "overlays",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "showsIndoorMap",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "isShowsIndoorMap",
-              "setterName": "showsIndoorMap",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "showsIndoorMapControl",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "isShowsIndoorMapControl",
-              "setterName": "showsIndoorMapControl",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": true,
-              "isStatic": false,
-              "variable": {
-                "typeName": "CGSize",
-                "name": "indoorMapControlSize",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "indoorMapControlSize",
-              "setterName": "indoorMapControlSize",
-              "platform": "iOS",
-              "isDeprecated": false
-            },
-            {
-              "isPublic": true,
-              "isFinal": false,
-              "isStatic": false,
-              "variable": {
-                "typeName": "BOOL",
-                "name": "customMapStyleEnabled",
-                "isList": false,
-                "platform": "iOS"
-              },
-              "className": "MAMapView",
-              "getterName": "customMapStyleEnabled",
-              "setterName": "customMapStyleEnabled",
-              "platform": "iOS",
-              "isDeprecated": false
-            }
-          ],
-          "methods": [
             {
               "returnType": "void",
               "name": "addAnnotation",
@@ -10784,7 +11051,41 @@
               "className": "MAMapView",
               "platform": "iOS",
               "isDeprecated": false
-            },
+            }
+          ],
+          "constants": [
+            "MAMapTypeStandard",
+            "MAMapTypeSatellite",
+            "MAMapTypeStandardNight",
+            "MAMapTypeNavi",
+            "MAMapTypeBus",
+            "MAUserTrackingModeNone",
+            "MAUserTrackingModeFollow",
+            "MAUserTrackingModeFollowWithHeading",
+            "MATrafficStatusSmooth",
+            "MATrafficStatusSlow",
+            "MATrafficStatusJam",
+            "MATrafficStatusSeriousJam",
+            "MAOverlayLevelAboveRoads",
+            "MAOverlayLevelAboveLabels"
+          ],
+          "returnType": "",
+          "formalParams": [],
+          "deprecated": false
+        },
+        {
+          "platform": "iOS",
+          "name": "MAMapViewDelegate",
+          "genericTypes": [],
+          "typeType": "Interface",
+          "isPublic": true,
+          "isAbstract": true,
+          "isInnerClass": false,
+          "isPrimitive": false,
+          "superClass": "",
+          "constructors": [],
+          "fields": [],
+          "methods": [
             {
               "returnType": "void",
               "name": "mapViewRegionChanged",
@@ -11888,6 +12189,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
@@ -12034,6 +12336,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
@@ -12090,6 +12393,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "MAOverlayRenderer",
