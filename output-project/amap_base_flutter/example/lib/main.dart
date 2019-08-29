@@ -1,6 +1,8 @@
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/material.dart';
 
+import 'map/map.screen.dart';
+
 void main() async {
   await AmapService.init('7c9daac55e90a439f7b4304b465297fa');
 
@@ -18,11 +20,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('AMaps examples'),
+          backgroundColor: Colors.black,
+          centerTitle: true,
         ),
-        body: Center(
-          child: AmapView(),
-        ),
+        backgroundColor: Colors.grey.shade200,
+        body: MapDemo(),
       ),
     );
   }
