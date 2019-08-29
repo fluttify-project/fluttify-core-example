@@ -25,7 +25,9 @@
 }
 
 - (UIView *)view {
-  return [[MAMapView alloc] init];
+  MAMapView *view = [[MAMapView alloc] init];
+  REF_MAP[@(_viewId)] = view;
+  return view;
 }
 
 - (void)dealloc {

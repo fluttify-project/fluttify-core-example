@@ -25,7 +25,9 @@
 }
 
 - (UIView *)view {
-  return [[MACustomCalloutView alloc] init];
+  MACustomCalloutView *view = [[MACustomCalloutView alloc] init];
+  REF_MAP[@(_viewId)] = view;
+  return view;
 }
 
 - (void)dealloc {

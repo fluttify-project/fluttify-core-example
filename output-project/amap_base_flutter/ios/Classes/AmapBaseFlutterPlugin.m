@@ -286,7 +286,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     @"MAAnnotationView::setDragState": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
         // 枚举参数
-        MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) args[@"newDragState"];
+        MAAnnotationViewDragState newDragState = (MAAnnotationViewDragState) [args[@"newDragState"] integerValue];
         // jsonable参数
         BOOL animated = (BOOL) args[@"animated"];
     
@@ -594,7 +594,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     @"MAMapView::setUserTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
         // 枚举参数
-        MAUserTrackingMode mode = (MAUserTrackingMode) args[@"mode"];
+        MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
         // jsonable参数
         BOOL animated = (BOOL) args[@"animated"];
     
@@ -614,7 +614,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     @"MAMapView::overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
         // 枚举参数
-        MAOverlayLevel level = (MAOverlayLevel) args[@"level"];
+        MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
     
         // 调用对象引用
         NSInteger refId = [args[@"refId"] integerValue];

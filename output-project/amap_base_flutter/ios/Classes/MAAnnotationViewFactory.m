@@ -25,7 +25,9 @@
 }
 
 - (UIView *)view {
-  return [[MAAnnotationView alloc] init];
+  MAAnnotationView *view = [[MAAnnotationView alloc] init];
+  REF_MAP[@(_viewId)] = view;
+  return view;
 }
 
 - (void)dealloc {
