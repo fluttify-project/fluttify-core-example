@@ -376,40 +376,36 @@ class com_amap_api_maps_model_PolylineOptions {
     return com_amap_api_maps_model_PolylineOptions.withRefId(result);
   }
 
-//  Future<com_amap_api_maps_model_PolylineOptions> lineCapType(
-//      com_amap_api_maps_model_PolylineOptions_LineCapType var1) async {
+//   Future<com_amap_api_maps_model_PolylineOptions> lineCapType(com_amap_api_maps_model_PolylineOptions_LineCapType var1) async {
 //    // 日志打印
-//    print(
-//        'fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineCapType([])');
+//    print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineCapType([])');
 //
 //    // 调用原生方法
-//    final result = await _channel.invokeMethod(
-//        'com.amap.api.maps.model.PolylineOptions::lineCapType',
-//        {"var1": var1.index, "refId": refId});
+//    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::lineCapType', {"var1": var1.index, "refId": refId});
+//
 //
 //    // 接受原生回调
+//
 //
 //    // 返回值
 //    return com_amap_api_maps_model_PolylineOptions.withRefId(result);
 //  }
-
-//  Future<com_amap_api_maps_model_PolylineOptions> lineJoinType(
-//      com_amap_api_maps_model_PolylineOptions_LineJoinType var1) async {
+//
+//   Future<com_amap_api_maps_model_PolylineOptions> lineJoinType(com_amap_api_maps_model_PolylineOptions_LineJoinType var1) async {
 //    // 日志打印
-//    print(
-//        'fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineJoinType([])');
+//    print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::lineJoinType([])');
 //
 //    // 调用原生方法
-//    final result = await _channel.invokeMethod(
-//        'com.amap.api.maps.model.PolylineOptions::lineJoinType',
-//        {"var1": var1.index, "refId": refId});
+//    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::lineJoinType', {"var1": var1.index, "refId": refId});
+//
 //
 //    // 接受原生回调
+//
 //
 //    // 返回值
 //    return com_amap_api_maps_model_PolylineOptions.withRefId(result);
 //  }
-
+//
 //   Future<com_amap_api_maps_model_PolylineOptions_LineCapType> getLineCapType() async {
 //    // 日志打印
 //    print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getLineCapType([])');
@@ -440,21 +436,20 @@ class com_amap_api_maps_model_PolylineOptions {
 //    return com_amap_api_maps_model_PolylineOptions_LineJoinType.values[result];
 //  }
 //
-  Future<int> getDottedLineType() async {
-    // 日志打印
-    print(
-        'fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getDottedLineType([])');
-
-    // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.amap.api.maps.model.PolylineOptions::getDottedLineType',
-        {"refId": refId});
-
-    // 接受原生回调
-
-    // 返回值
-    return result;
-  }
+//   Future<int> getDottedLineType() async {
+//    // 日志打印
+//    print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::getDottedLineType([])');
+//
+//    // 调用原生方法
+//    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::getDottedLineType', {"refId": refId});
+//
+//
+//    // 接受原生回调
+//
+//
+//    // 返回值
+//    return result;
+//  }
 
   Future<double> getWidth() async {
     // 日志打印

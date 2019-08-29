@@ -21,6 +21,7 @@
           ],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -85,6 +86,7 @@
           ],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -216,6 +218,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -242,6 +245,7 @@
           ],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -324,6 +328,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -460,6 +465,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -714,7 +720,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.GLMapState",
+                "typeName": "GLMapState",
                 "name": "copyGLMapState",
                 "isList": false,
                 "platform": "Android"
@@ -858,7 +864,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.GLMapState",
+                "typeName": "GLMapState",
                 "name": "state",
                 "isList": false,
                 "platform": "Android"
@@ -6925,6 +6931,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7009,6 +7016,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7110,6 +7118,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7519,6 +7528,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -7713,6 +7723,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -7753,9 +7764,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AdglAnimation2V",
@@ -7777,7 +7789,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V",
+                "typeName": "AbstractAdglAnimationParam2V",
                 "name": "v2Param",
                 "isList": false,
                 "platform": "Android"
@@ -7933,6 +7945,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -8294,9 +8307,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AdglMapAnimFling",
@@ -8378,7 +8392,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V",
+                "typeName": "AbstractAdglAnimationParam2V",
                 "name": "moveParam",
                 "isList": false,
                 "platform": "Android"
@@ -8608,6 +8622,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -8886,9 +8901,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AdglAnimation1V",
@@ -8910,7 +8926,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "v1Param",
                 "isList": false,
                 "platform": "Android"
@@ -9059,9 +9075,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AdglMapAnimPivotZoom",
@@ -9227,7 +9244,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "zoomParam",
                 "isList": false,
                 "platform": "Android"
@@ -9349,6 +9366,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -9634,9 +9652,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam",
+          "superClass": "",
           "constructors": [
             {
               "name": "AbstractAdglAnimationParam1V",
@@ -9791,9 +9810,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AdglMapAnimGroup",
@@ -9927,7 +9947,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "zoomStartParam",
                 "isList": false,
                 "platform": "Android"
@@ -9943,7 +9963,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "zoomEndParam",
                 "isList": false,
                 "platform": "Android"
@@ -10023,7 +10043,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V",
+                "typeName": "AbstractAdglAnimationParam2V",
                 "name": "moveParam",
                 "isList": false,
                 "platform": "Android"
@@ -10055,7 +10075,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "rotateMapParam",
                 "isList": false,
                 "platform": "Android"
@@ -10087,7 +10107,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V",
+                "typeName": "AbstractAdglAnimationParam1V",
                 "name": "rotateCameraParam",
                 "isList": false,
                 "platform": "Android"
@@ -10498,9 +10518,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam",
+          "superClass": "",
           "constructors": [
             {
               "name": "AbstractAdglAnimationParam2V",
@@ -10740,6 +10761,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -10924,6 +10946,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -11045,6 +11068,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -11718,6 +11742,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -11871,6 +11896,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -12008,6 +12034,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -13396,6 +13423,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -13579,26 +13607,14 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
           "constructors": [
             {
               "name": "GLRouteProperty$EAMapRouteTexture",
-              "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                }
-              ],
+              "formalParams": [],
               "isPublic": false,
               "platform": "Android"
             }
@@ -13633,6 +13649,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -13786,9 +13803,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.ae.gmap.gloverlay.GLOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLCrossVector",
@@ -14383,6 +14401,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -14458,6 +14477,7 @@
           ],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -15479,6 +15499,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -15619,6 +15640,7 @@
           ],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -16040,6 +16062,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -16442,26 +16465,14 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
           "constructors": [
             {
               "name": "GLOverlay$EAMapOverlayTpye",
-              "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                }
-              ],
+              "formalParams": [],
               "isPublic": false,
               "platform": "Android"
             }
@@ -16489,6 +16500,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -17440,6 +17452,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -17945,6 +17958,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -18166,6 +18180,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -18271,6 +18286,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -18392,6 +18408,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -18564,6 +18581,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -18604,6 +18622,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "com.amap.api.mapcore.util.eh",
@@ -18779,6 +18798,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -19228,6 +19248,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -19337,6 +19358,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -19344,18 +19366,6 @@
             {
               "name": "Inner_3dMap_locationOption$Inner_3dMap_Enum_LocationProtocol",
               "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                },
                 {
                   "typeName": "int",
                   "name": "var3",
@@ -19412,6 +19422,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -19813,6 +19824,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -20022,6 +20034,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -20556,6 +20569,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -24053,6 +24067,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -24598,6 +24613,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -24699,6 +24715,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -24740,6 +24757,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -24815,6 +24833,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -24999,6 +25018,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -25261,6 +25281,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -25389,6 +25410,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.graphics.Point",
@@ -25515,6 +25537,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -25573,6 +25596,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -25613,6 +25637,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -25760,6 +25785,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -26324,6 +26350,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -26722,6 +26749,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -27111,9 +27139,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLTranslateAnimation",
@@ -27294,9 +27323,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLRotateAnimation",
@@ -27415,9 +27445,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLAlphaAnimation",
@@ -27534,9 +27565,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLScaleAnimation",
@@ -27713,6 +27745,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -27814,9 +27847,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLAnimationSet",
@@ -28030,7 +28064,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.animation.GLTransformation",
+                "typeName": "GLTransformation",
                 "name": "mTempTransformation",
                 "isList": false,
                 "platform": "Android"
@@ -28465,9 +28499,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.animation.GLAnimation",
+          "superClass": "",
           "constructors": [
             {
               "name": "GLEmergeAnimation",
@@ -28546,6 +28581,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -29091,7 +29127,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.animation.GLTransformation",
+                "typeName": "GLTransformation",
                 "name": "mPreviousTransformation",
                 "isList": false,
                 "platform": "Android"
@@ -30171,6 +30207,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -30515,7 +30552,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.Rectangle",
+                "typeName": "Rectangle",
                 "name": "geoRectangle",
                 "isList": false,
                 "platform": "Android"
@@ -30643,7 +30680,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.IPoint",
+                "typeName": "IPoint",
                 "name": "mapGeoCenter",
                 "isList": false,
                 "platform": "Android"
@@ -32758,9 +32795,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.message.AbstractGestureMapMessage",
+          "superClass": "",
           "constructors": [
             {
               "name": "HoverGestureMapMessage",
@@ -32948,9 +32986,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.message.AbstractGestureMapMessage",
+          "superClass": "",
           "constructors": [
             {
               "name": "MoveGestureMapMessage",
@@ -33196,9 +33235,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.message.AbstractGestureMapMessage",
+          "superClass": "",
           "constructors": [
             {
               "name": "ScaleGestureMapMessage",
@@ -33492,6 +33532,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.ae.gmap.AbstractMapMessage",
@@ -33808,9 +33849,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.message.AbstractGestureMapMessage",
+          "superClass": "",
           "constructors": [
             {
               "name": "RotateGestureMapMessage",
@@ -34082,6 +34124,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -34153,7 +34196,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.FPoint",
+                "typeName": "FPoint",
                 "name": "southwest",
                 "isList": false,
                 "platform": "Android"
@@ -34169,7 +34212,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.FPoint",
+                "typeName": "FPoint",
                 "name": "northeast",
                 "isList": false,
                 "platform": "Android"
@@ -34392,6 +34435,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -34449,6 +34493,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -35009,6 +35054,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -35439,6 +35485,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -35928,6 +35975,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.location.Location",
@@ -37681,6 +37729,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -38170,26 +38219,14 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
           "constructors": [
             {
               "name": "Inner_3dMap_locationOption$Inner_3dMap_Enum_LocationMode",
-              "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                }
-              ],
+              "formalParams": [],
               "isPublic": false,
               "platform": "Android"
             }
@@ -38211,9 +38248,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.autonavi.amap.mapcore.FPoint",
+          "superClass": "",
           "constructors": [
             {
               "name": "FPoint3",
@@ -38300,6 +38338,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -38347,6 +38386,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -38492,6 +38532,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -39340,6 +39381,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.graphics.PointF",
@@ -39488,6 +39530,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -40667,26 +40710,14 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
           "constructors": [
             {
               "name": "AbstractCameraUpdateMessage$Type",
-              "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                }
-              ],
+              "formalParams": [],
               "isPublic": false,
               "platform": "Android"
             }
@@ -40720,6 +40751,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -40760,6 +40792,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -41017,7 +41050,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.autonavi.amap.mapcore.MapConfig",
+                "typeName": "MapConfig",
                 "name": "mapConfig",
                 "isList": false,
                 "platform": "Android"
@@ -41384,6 +41417,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -41642,6 +41676,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -42421,6 +42456,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -42656,6 +42692,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -42839,6 +42876,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlayImage",
@@ -43076,6 +43114,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -43149,6 +43188,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -43508,6 +43548,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -43592,6 +43633,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -44203,6 +44245,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -44517,6 +44560,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -44700,6 +44744,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -44948,6 +44993,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -45339,6 +45385,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlayImage",
@@ -45818,6 +45865,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -45975,6 +46023,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -46178,6 +46227,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -46350,6 +46400,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -46552,6 +46603,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -46823,6 +46875,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -49438,6 +49491,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -49727,6 +49781,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -50053,6 +50108,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.interfaces.IOverlay",
@@ -50258,6 +50314,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -50320,6 +50377,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.app.Activity",
@@ -50415,6 +50473,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -50455,6 +50514,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -50517,6 +50577,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -50568,6 +50629,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.support.v4.app.Fragment",
@@ -50908,6 +50970,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -50948,6 +51011,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -50988,6 +51052,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -51580,6 +51645,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -51620,6 +51686,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -51745,6 +51812,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -51935,6 +52003,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -52410,6 +52479,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -52450,6 +52520,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -52772,6 +52843,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -52844,6 +52916,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -52861,7 +52934,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.AMapOptionsCreator",
+                "typeName": "AMapOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -53420,6 +53493,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53449,6 +53523,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -53518,6 +53593,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53558,6 +53634,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -53677,6 +53754,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53739,6 +53817,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53779,6 +53858,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53819,6 +53899,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "com.amap.api.maps.AMap.InfoWindowAdapter",
@@ -53848,6 +53929,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -53932,6 +54014,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -54294,6 +54377,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -54334,6 +54418,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -54930,6 +55015,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -54970,6 +55056,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -55625,6 +55712,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.support.v4.app.Fragment",
@@ -55965,6 +56053,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -56008,6 +56097,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.app.Fragment",
@@ -56337,6 +56427,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.opengl.GLSurfaceView.Renderer",
@@ -56366,6 +56457,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -56463,6 +56555,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -56503,6 +56596,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.RelativeLayout",
@@ -56658,6 +56752,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -56996,6 +57091,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -57229,9 +57325,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.offlinemap.Province",
+          "superClass": "",
           "constructors": [
             {
               "name": "OfflineMapProvince",
@@ -57536,6 +57633,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -57670,6 +57768,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.view.View",
@@ -57790,6 +57889,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -58020,6 +58120,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -58435,9 +58536,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.offlinemap.City",
+          "superClass": "",
           "constructors": [
             {
               "name": "OfflineMapCity",
@@ -58698,6 +58800,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.amap.api.offlineservice.AMapPermissionActivity",
@@ -58920,6 +59023,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -59183,6 +59287,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.ListView",
@@ -59266,6 +59371,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.ExpandableListView",
@@ -59349,6 +59455,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -59378,6 +59485,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.ExpandableListView",
@@ -59461,6 +59569,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -59501,6 +59610,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -59541,6 +59651,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -59779,6 +59890,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "com.amap.api.maps.AMap.InfoWindowAdapter",
@@ -59863,9 +59975,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "Polygon",
@@ -59922,7 +60035,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.PolygonOptions",
+                "typeName": "PolygonOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -60293,6 +60406,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -60354,7 +60468,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptorCreator",
+                "typeName": "BitmapDescriptorCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -60537,9 +60651,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseHoleOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "PolygonHoleOptions",
@@ -60684,6 +60799,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -60770,6 +60886,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -60806,7 +60923,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.PoiCreator",
+                "typeName": "PoiCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -60838,7 +60955,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "coordinate",
                 "isList": false,
                 "platform": "Android"
@@ -60999,6 +61116,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -61016,7 +61134,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.MyLocationStyleCreator",
+                "typeName": "MyLocationStyleCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -61080,7 +61198,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptor",
+                "typeName": "BitmapDescriptor",
                 "name": "mMyLocationIcon",
                 "isList": false,
                 "platform": "Android"
@@ -61689,6 +61807,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -61805,6 +61924,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -61896,7 +62016,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.VisibleRegionCreator",
+                "typeName": "VisibleRegionCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -61928,7 +62048,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "nearLeft",
                 "isList": false,
                 "platform": "Android"
@@ -61944,7 +62064,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "nearRight",
                 "isList": false,
                 "platform": "Android"
@@ -61960,7 +62080,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "farLeft",
                 "isList": false,
                 "platform": "Android"
@@ -61976,7 +62096,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "farRight",
                 "isList": false,
                 "platform": "Android"
@@ -61992,7 +62112,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLngBounds",
+                "typeName": "LatLngBounds",
                 "name": "latLngBounds",
                 "isList": false,
                 "platform": "Android"
@@ -62104,6 +62224,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -62190,9 +62311,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseHoleOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "CircleHoleOptions",
@@ -62220,7 +62342,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "point",
                 "isList": false,
                 "platform": "Android"
@@ -62386,6 +62508,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -62981,6 +63104,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -63104,9 +63228,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "NavigateArrowOptions",
@@ -63121,7 +63246,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.NavigateArrowOptionsCreator",
+                "typeName": "NavigateArrowOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -63662,6 +63787,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -64056,6 +64182,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -64106,6 +64233,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -64283,6 +64411,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -64300,7 +64429,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptor",
+                "typeName": "BitmapDescriptor",
                 "name": "bitmapDescriptor",
                 "isList": false,
                 "platform": "Android"
@@ -64444,9 +64573,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "BuildingOverlay$BuildingOverlayTotalOptions",
@@ -64540,6 +64670,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -64609,9 +64740,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "PolylineOptions",
@@ -64626,7 +64758,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.PolylineOptionsCreator",
+                "typeName": "PolylineOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -64754,7 +64886,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptor",
+                "typeName": "BitmapDescriptor",
                 "name": "customTexture",
                 "isList": false,
                 "platform": "Android"
@@ -66001,6 +66133,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -66068,7 +66201,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.b",
+                "typeName": "b",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -66269,9 +66402,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BasePointOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "GL3DModel",
@@ -66692,6 +66826,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -66869,6 +67004,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -66951,6 +67087,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -67128,7 +67265,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -67219,9 +67356,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "GroundOverlayOptions",
@@ -67331,7 +67469,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.GroundOverlayOptionsCreator",
+                "typeName": "GroundOverlayOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -67379,7 +67517,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptor",
+                "typeName": "BitmapDescriptor",
                 "name": "bitmapDescriptor",
                 "isList": false,
                 "platform": "Android"
@@ -67395,7 +67533,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -67443,7 +67581,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLngBounds",
+                "typeName": "LatLngBounds",
                 "name": "latlngBounds",
                 "isList": false,
                 "platform": "Android"
@@ -67587,7 +67725,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "southwest",
                 "isList": false,
                 "platform": "Android"
@@ -67603,7 +67741,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "northeast",
                 "isList": false,
                 "platform": "Android"
@@ -68062,6 +68200,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -68095,7 +68234,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -68143,7 +68282,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BitmapDescriptor",
+                "typeName": "BitmapDescriptor",
                 "name": "bitmapDescriptor",
                 "isList": false,
                 "platform": "Android"
@@ -68370,9 +68509,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "GroundOverlay",
@@ -68445,7 +68585,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.GroundOverlayOptions",
+                "typeName": "GroundOverlayOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -68477,7 +68617,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "point",
                 "isList": false,
                 "platform": "Android"
@@ -68896,6 +69036,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -69216,6 +69357,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -69274,7 +69416,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.CameraPositionCreator",
+                "typeName": "CameraPositionCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -69290,7 +69432,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "target",
                 "isList": false,
                 "platform": "Android"
@@ -69531,6 +69673,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -69600,6 +69743,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -69617,7 +69761,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "center",
                 "isList": false,
                 "platform": "Android"
@@ -69724,6 +69868,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -69741,7 +69886,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.MarkerOptionsCreator",
+                "typeName": "MarkerOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -69757,7 +69902,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -70897,6 +71042,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -70985,7 +71131,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.Gradient",
+                "typeName": "Gradient",
                 "name": "DEFAULT_GRADIENT",
                 "isList": false,
                 "platform": "Android"
@@ -71113,7 +71259,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.a",
+                "typeName": "a",
                 "name": "mTree",
                 "isList": false,
                 "platform": "Android"
@@ -71177,7 +71323,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.Gradient",
+                "typeName": "Gradient",
                 "name": "mGradient",
                 "isList": false,
                 "platform": "Android"
@@ -71330,9 +71476,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "NavigateArrow",
@@ -71405,7 +71552,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.NavigateArrowOptions",
+                "typeName": "NavigateArrowOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -71732,9 +71879,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AnimationSet",
@@ -71841,9 +71989,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "RotateAnimation",
@@ -71960,9 +72109,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "TranslateAnimation",
@@ -72036,6 +72186,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -72076,6 +72227,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -72363,9 +72515,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "EmergeAnimation",
@@ -72439,9 +72592,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "AlphaAnimation",
@@ -72521,9 +72675,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.animation.Animation",
+          "superClass": "",
           "constructors": [
             {
               "name": "ScaleAnimation",
@@ -72615,6 +72770,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -72686,7 +72842,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLngBoundsCreator",
+                "typeName": "LatLngBoundsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -72718,7 +72874,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "southwest",
                 "isList": false,
                 "platform": "Android"
@@ -72734,7 +72890,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "northeast",
                 "isList": false,
                 "platform": "Android"
@@ -72945,6 +73101,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -73363,9 +73520,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "BuildingOverlayOptions",
@@ -73759,6 +73917,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -73867,6 +74026,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -73953,6 +74113,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -74008,7 +74169,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLngCreator",
+                "typeName": "LatLngCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -74163,6 +74324,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -74381,6 +74543,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -74454,6 +74617,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -74484,7 +74648,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "target",
                 "isList": false,
                 "platform": "Android"
@@ -74656,6 +74820,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -74663,18 +74828,6 @@
             {
               "name": "PolylineOptions$LineCapType",
               "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                },
                 {
                   "typeName": "int",
                   "name": "var3",
@@ -74755,6 +74908,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -75077,6 +75231,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -75146,9 +75301,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "Arc",
@@ -75221,7 +75377,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.ArcOptions",
+                "typeName": "ArcOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -75449,6 +75605,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -75685,9 +75842,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "Circle",
@@ -75760,7 +75918,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.CircleOptions",
+                "typeName": "CircleOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -76159,9 +76317,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "PolygonOptions",
@@ -76176,7 +76335,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.PolygonOptionsCreator",
+                "typeName": "PolygonOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -76761,6 +76920,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -76852,7 +77012,7 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -76888,6 +77048,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -76957,6 +77118,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -77026,6 +77188,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -77050,7 +77213,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "latLng",
                 "isList": false,
                 "platform": "Android"
@@ -77386,6 +77549,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -77472,9 +77636,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "ArcOptions",
@@ -77489,7 +77654,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.ArcOptionsCreator",
+                "typeName": "ArcOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -77505,7 +77670,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "startpoint",
                 "isList": false,
                 "platform": "Android"
@@ -77521,7 +77686,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "passedpoint",
                 "isList": false,
                 "platform": "Android"
@@ -77537,7 +77702,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "endpoint",
                 "isList": false,
                 "platform": "Android"
@@ -77892,6 +78057,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -77961,9 +78127,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "CircleOptions",
@@ -77978,7 +78145,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.CircleOptionsCreator",
+                "typeName": "CircleOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -77994,7 +78161,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "point",
                 "isList": false,
                 "platform": "Android"
@@ -78573,6 +78740,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -78642,6 +78810,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -78895,6 +79064,7 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -78902,18 +79072,6 @@
             {
               "name": "PolylineOptions$LineJoinType",
               "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                },
                 {
                   "typeName": "int",
                   "name": "var3",
@@ -78993,6 +79151,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -79054,6 +79213,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.amap.api.mapcore.util.ct",
@@ -79090,6 +79250,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -79139,7 +79300,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.Gradient",
+                "typeName": "Gradient",
                 "name": "gradient",
                 "isList": false,
                 "platform": "Android"
@@ -79301,6 +79462,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -79431,6 +79593,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -79533,6 +79696,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -79602,6 +79766,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -79720,9 +79885,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BasePointOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "Marker",
@@ -80768,6 +80934,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -80816,7 +80983,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.TileOverlayOptionsCreator",
+                "typeName": "TileOverlayOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -80848,7 +81015,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.TileProvider",
+                "typeName": "TileProvider",
                 "name": "mTileProvider",
                 "isList": false,
                 "platform": "Android"
@@ -81292,6 +81459,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -81341,7 +81509,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "startPoint",
                 "isList": false,
                 "platform": "Android"
@@ -81357,7 +81525,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "endPoint",
                 "isList": false,
                 "platform": "Android"
@@ -81612,6 +81780,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -81681,6 +81850,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -81750,6 +81920,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -81909,6 +82080,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -82019,7 +82191,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.VelocityGenerate",
+                "typeName": "VelocityGenerate",
                 "name": "overLife",
                 "isList": false,
                 "platform": "Android"
@@ -82035,7 +82207,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.VelocityGenerate",
+                "typeName": "VelocityGenerate",
                 "name": "velocityOverLife",
                 "isList": false,
                 "platform": "Android"
@@ -82051,7 +82223,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.RotationOverLife",
+                "typeName": "RotationOverLife",
                 "name": "rotateOverLife",
                 "isList": false,
                 "platform": "Android"
@@ -82067,7 +82239,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.SizeOverLife",
+                "typeName": "SizeOverLife",
                 "name": "sizeOverLife",
                 "isList": false,
                 "platform": "Android"
@@ -82083,7 +82255,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ColorGenerate",
+                "typeName": "ColorGenerate",
                 "name": "colorGenerate",
                 "isList": false,
                 "platform": "Android"
@@ -82325,9 +82497,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.RotationOverLife",
+          "superClass": "",
           "constructors": [
             {
               "name": "ConstantRotationOverLife",
@@ -82396,9 +82569,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.ParticleShapeModule",
+          "superClass": "",
           "constructors": [
             {
               "name": "SinglePointParticleShape",
@@ -82510,9 +82684,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.VelocityGenerate",
+          "superClass": "",
           "constructors": [
             {
               "name": "RandomVelocityBetweenTwoConstants",
@@ -82729,9 +82904,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.SizeOverLife",
+          "superClass": "",
           "constructors": [
             {
               "name": "CurveSizeOverLife",
@@ -82850,6 +83026,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -82943,6 +83120,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -83110,9 +83288,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.ParticleShapeModule",
+          "superClass": "",
           "constructors": [
             {
               "name": "RectParticleShape",
@@ -83253,6 +83432,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -83349,6 +83529,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -83467,6 +83648,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -83563,9 +83745,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.particle.ColorGenerate",
+          "superClass": "",
           "constructors": [
             {
               "name": "RandomColorBetWeenTwoConstants",
@@ -83756,6 +83939,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.autonavi.amap.mapcore.AbstractNativeInstance",
@@ -83895,6 +84079,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -84007,6 +84192,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.amap.api.maps.model.BaseOptions",
@@ -84133,7 +84319,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ParticleEmissionModule",
+                "typeName": "ParticleEmissionModule",
                 "name": "particleEmissionModule",
                 "isList": false,
                 "platform": "Android"
@@ -84149,7 +84335,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ParticleShapeModule",
+                "typeName": "ParticleShapeModule",
                 "name": "particleShapeModule",
                 "isList": false,
                 "platform": "Android"
@@ -84165,7 +84351,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.VelocityGenerate",
+                "typeName": "VelocityGenerate",
                 "name": "startSpeed",
                 "isList": false,
                 "platform": "Android"
@@ -84181,7 +84367,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ColorGenerate",
+                "typeName": "ColorGenerate",
                 "name": "startColor",
                 "isList": false,
                 "platform": "Android"
@@ -84197,7 +84383,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ParticleOverLifeModule",
+                "typeName": "ParticleOverLifeModule",
                 "name": "particleOverLifeModule",
                 "isList": false,
                 "platform": "Android"
@@ -84891,6 +85077,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "com.amap.api.maps.model.BaseOverlay",
@@ -84966,7 +85153,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.particle.ParticleOverlayOptions",
+                "typeName": "ParticleOverlayOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -85281,9 +85468,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOptions",
+          "superClass": "",
           "constructors": [
             {
               "name": "BaseHoleOptions",
@@ -85322,6 +85510,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -85339,7 +85528,7 @@
               "isFinal": true,
               "isStatic": true,
               "variable": {
-                "typeName": "com.amap.api.maps.model.TextOptionsCreator",
+                "typeName": "TextOptionsCreator",
                 "name": "CREATOR",
                 "isList": false,
                 "platform": "Android"
@@ -85355,7 +85544,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.LatLng",
+                "typeName": "LatLng",
                 "name": "position",
                 "isList": false,
                 "platform": "Android"
@@ -85983,6 +86172,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -86164,6 +86354,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -86250,6 +86441,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -86319,6 +86511,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -86405,6 +86598,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -86510,9 +86704,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "Polyline",
@@ -86594,7 +86789,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.PolylineOptions",
+                "typeName": "PolylineOptions",
                 "name": "options",
                 "isList": false,
                 "platform": "Android"
@@ -87173,9 +87368,10 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
-          "superClass": "com.amap.api.maps.model.BaseOverlay",
+          "superClass": "",
           "constructors": [
             {
               "name": "BuildingOverlay",
@@ -87242,7 +87438,7 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "com.amap.api.maps.model.BuildingOverlayOptions",
+                "typeName": "BuildingOverlayOptions",
                 "name": "mDefaultOptions",
                 "isList": false,
                 "platform": "Android"
@@ -87453,6 +87649,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -87536,6 +87733,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.FrameLayout",
@@ -87763,6 +87961,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -88297,26 +88496,14 @@
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
           "constructors": [
             {
               "name": "CoordinateConverter$CoordType",
-              "formalParams": [
-                {
-                  "typeName": "String",
-                  "name": "var1",
-                  "isList": false,
-                  "platform": "Android"
-                },
-                {
-                  "typeName": "int",
-                  "name": "var2",
-                  "isList": false,
-                  "platform": "Android"
-                }
-              ],
+              "formalParams": [],
               "isPublic": false,
               "platform": "Android"
             }
@@ -88342,6 +88529,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.app.Fragment",
@@ -88671,6 +88859,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -88711,6 +88900,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -88751,6 +88941,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -88791,6 +88982,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -89008,6 +89200,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -89048,6 +89241,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.view.ViewGroup",
@@ -89467,6 +89661,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": true,
           "isPrimitive": false,
           "superClass": "",
@@ -89507,6 +89702,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -91756,6 +91952,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -92012,6 +92209,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "android.widget.FrameLayout",
@@ -92271,6 +92469,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -92429,6 +92628,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -92489,6 +92689,7 @@
           "genericTypes": [],
           "typeType": "Interface",
           "isPublic": true,
+          "isAbstract": true,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -92633,6 +92834,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -92882,6 +93084,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -93135,6 +93338,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",
@@ -93416,6 +93620,7 @@
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
+          "isAbstract": false,
           "isInnerClass": false,
           "isPrimitive": false,
           "superClass": "",

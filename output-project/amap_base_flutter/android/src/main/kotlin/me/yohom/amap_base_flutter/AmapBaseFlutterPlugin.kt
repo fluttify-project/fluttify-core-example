@@ -33913,6 +33913,797 @@ class AmapBaseFlutterPlugin {
                 
                     // 调用结果
                     methodResult.success("success")
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.glinterface.MapLabelItem()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.style.StyleElement()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.gloverlay.GLTextureProperty()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.gloverlay.GLRouteProperty()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.ae.gmap.GLMapEngine.InitParam()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.maploader.NetworkState()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.MapProjection()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.tools.TextTextureGenerator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.tools.GLFileUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.tools.GlMapUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.tools.GLMapStaticValue()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.tools.GLConvertUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.MsgProcessor()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AbstractNativeInstance()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.LinkInfo()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapNativePolyline()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.IPoint()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.DPoint()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapNativeRenderer()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.FileUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.animation.GLTransformation()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.animation.GLAnimation()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.CoordUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AeUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.VirtualEarthProjection()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.Rectangle()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapEngineUtils()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.FPoint3()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapEtaDecoder()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.FPointBounds.Builder()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.Inner_3dMap_locationOption()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.FPoint()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapNativeParticleSystem()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.AMapNativeBuildingRenderer()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_autonavi_amap_mapcore_Convert" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.autonavi.amap.mapcore.Convert()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.offlineservice.AMapPermissionActivity()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_InfoWindowParams" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.InfoWindowParams()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.CameraUpdateFactory()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_AMapException" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.AMapException()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.AMapOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.AMapOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.utils.SpatialRelationUtil()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_MapFragment" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.MapFragment()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_MapsInitializer" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.MapsInitializer()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.OfflineMapStatus()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.OfflineMapProvince()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_Province" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.Province()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.OfflineMapCity()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.OfflineMapActivity()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_offlinemap_City" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.offlinemap.City()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PolygonHoleOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.TileOverlayOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MyLocationStyle()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_LatLngCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.LatLngCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CircleHoleOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.LatLngBounds.Builder()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.NavigateArrowOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.BitmapDescriptorFactory()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MultiPointOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PoiCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PoiCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PolylineOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PolylineOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_NaviPara" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.NaviPara()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.GroundOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.GL3DModelOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MyTrafficStyle()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.TextOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PoiPara" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PoiPara()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MarkerOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MarkerOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CustomMapStyleOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.BuildingOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CrossOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.VisibleRegionCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_AMapPara" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.AMapPara()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CameraPosition.Builder()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CircleOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PolygonOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PolygonOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MyLocationStyleCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.MarkerOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.LatLngBoundsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_ArcOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.ArcOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.BitmapDescriptorCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CircleOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CircleOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.NavigateArrowOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.HeatmapTileProvider.Builder()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_BaseOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.BaseOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PolylineOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_BaseOverlay" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.BaseOverlay()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.TileOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_RoutePara" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.RoutePara()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.ArcOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.CameraPositionCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.particle.ParticleOverLifeModule()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.particle.ParticleOverlayOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_TextOptions" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.TextOptions()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.PolygonOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.TileProjectionCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.GroundOverlayOptionsCreator()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.model.IndoorBuildingInfo()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_AMapUtils" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.AMapUtils()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_maps_TextureMapFragment" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.maps.TextureMapFragment()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
+                },
+                "ObjectFactory::createcom_amap_api_trace_TraceLocation" to { registrar, args, methodResult ->
+                    // 创建对象
+                    val obj = com.amap.api.trace.TraceLocation()
+                    REF_MAP[obj.hashCode()] = obj
+                
+                    methodResult.success(obj.hashCode())
                 }
         )
     }

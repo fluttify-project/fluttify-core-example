@@ -1,3 +1,6 @@
+import 'dart:typed_data';
+
+import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
@@ -9,224 +12,207 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  
 
   // 生成setters
+  
 
   // 生成方法们
   static Future<String> getAPIKEY() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-      'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY',
-    );
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getAPIKEY', );
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<bool> isMockEnable() async {
+  
+   Future<bool> isMockEnable() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isMockEnable', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setMockEnable(bool var1) async {
+  
+   Future<String> setMockEnable(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setMockEnable', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<int> getInterval() async {
+  
+   Future<int> getInterval() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getInterval', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(
-      int var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(int var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setInterval', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<bool> isOnceLocation() async {
+  
+   Future<bool> isOnceLocation() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocation', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(
-      bool var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocation', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<bool> isNeedAddress() async {
+  
+   Future<bool> isNeedAddress() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isNeedAddress', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(
-      bool var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setNeedAddress', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<bool> isWifiActiveScan() async {
+  
+   Future<bool> isWifiActiveScan() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiActiveScan', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setWifiActiveScan(bool var1) async {
+  
+   Future<String> setWifiActiveScan(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiActiveScan', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<bool> isWifiScan() async {
+  
+   Future<bool> isWifiScan() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isWifiScan', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setWifiScan(bool var1) async {
+  
+   Future<String> setWifiScan(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setWifiScan', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
+  
 //   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
 //    // 日志打印
 //    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
@@ -286,251 +272,230 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption {
 //    // 返回值
 //    return result;
 //  }
-
-  Future<bool> isKillProcess() async {
+  
+   Future<bool> isKillProcess() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isKillProcess', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(
-      bool var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setKillProcess', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<bool> isGpsFirst() async {
+  
+   Future<bool> isGpsFirst() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isGpsFirst', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(
-      bool var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setGpsFirst', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::clone', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<int> getHttpTimeOut() async {
+  
+   Future<int> getHttpTimeOut() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::getHttpTimeOut', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setHttpTimeOut(int var1) async {
+  
+   Future<String> setHttpTimeOut(int var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setHttpTimeOut', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<bool> isOffset() async {
+  
+   Future<bool> isOffset() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOffset', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(
-      bool var1) async {
+  
+   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOffset', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption
-        .withRefId(result);
+    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(result);
   }
-
-  Future<bool> isLocationCacheEnable() async {
+  
+   Future<bool> isLocationCacheEnable() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isLocationCacheEnable', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setLocationCacheEnable(bool var1) async {
+  
+   Future<String> setLocationCacheEnable(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setLocationCacheEnable', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<bool> isOnceLocationLatest() async {
+  
+   Future<bool> isOnceLocationLatest() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isOnceLocationLatest', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setOnceLocationLatest(bool var1) async {
+  
+   Future<String> setOnceLocationLatest(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setOnceLocationLatest', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<bool> isSensorEnable() async {
+  
+   Future<bool> isSensorEnable() async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable',
-        {"refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::isSensorEnable', {"refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
-
-  Future<String> setSensorEnable(bool var1) async {
+  
+   Future<String> setSensorEnable(bool var1) async {
     // 日志打印
-    print(
-        'fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
-
+    print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable',
-        {"var1": var1, "refId": refId});
-
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.Inner_3dMap_locationOption::setSensorEnable', {"var1": var1, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
+  
 }

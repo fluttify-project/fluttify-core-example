@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'create_map/custom_map.screen.dart';
 import 'create_map/show_indoor_map.screen.dart';
+import 'create_map/show_location.screen.dart';
 import 'create_map/show_map.screen.dart';
 import 'create_map/switch_map_layer.screen.dart';
 import 'draw_on_map/draw_point.screen.dart';
@@ -27,8 +28,13 @@ class MapDemo extends StatelessWidget {
           children: <Widget>[
             FunctionItem(
               label: '显示地图',
-              sublabel: 'CreateMapScreen',
+              sublabel: 'ShowMapScreen',
               target: ShowMapScreen(),
+            ),
+            FunctionItem(
+              label: '显示定位蓝点',
+              sublabel: 'ShowLocationScreen',
+              target: ShowLocationScreen(),
             ),
             FunctionItem(
               label: '显示室内地图',
