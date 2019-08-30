@@ -2,8 +2,96 @@ import 'package:flutter/services.dart';
 
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 
+// ignore_for_file: non_constant_identifier_names, camel_case_types
 class ObjectFactory_iOS {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 }

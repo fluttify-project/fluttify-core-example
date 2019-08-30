@@ -18,21 +18,6 @@ class com_amap_api_maps_model_CrossOverlay {
   
 
   // 生成方法们
-   Future<int> setData(List<int> var1) async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setData([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CrossOverlay::setData', {"var1": var1, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');

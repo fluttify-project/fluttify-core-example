@@ -1204,72 +1204,12 @@ class com_autonavi_amap_mapcore_MapConfig {
     return result;
   }
   
-   Future<List<double>> getViewMatrix() async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getViewMatrix([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getViewMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<double>> getProjectionMatrix() async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getProjectionMatrix([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getProjectionMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<double>> getMvpMatrix() async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getMvpMatrix([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getMvpMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> updateFinalMatrix() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateFinalMatrix([])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::updateFinalMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<int>> getCurTileIds() async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::getCurTileIds([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.MapConfig::getCurTileIds', {"refId": refId});
   
   
     // 接受原生回调

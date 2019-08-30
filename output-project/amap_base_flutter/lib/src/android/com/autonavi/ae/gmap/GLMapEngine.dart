@@ -18,21 +18,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
   
 
   // 生成方法们
-   Future<List<int>> requireMapResource(String var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapResource([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapResource', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> reloadMapResource(String var2, int var1, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::reloadMapResource([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -63,66 +48,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<int> requireMapDataAsyn(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapDataAsyn([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapDataAsyn', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> requireMapData(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapData([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireMapData', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<int>> requireCharBitmap(int var1, int var2, int var3) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharBitmap([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireCharBitmap', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<int>> requireCharsWidths(List<int> var2, int var1, int var3, int var4) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireCharsWidths([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::requireCharsWidths', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> requireMapRender(int var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::requireMapRender([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
@@ -144,36 +69,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::onMapRender', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> OnIndoorBuildingActivity(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::OnIndoorBuildingActivity([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::OnIndoorBuildingActivity', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> receiveNetData(List<int> var4, int var1, int var2, int var5) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::receiveNetData([\'var1\':$var1, \'var2\':$var2, \'var4\':$var4, \'var5\':$var5])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::receiveNetData', {"var1": var1, "var2": var2, "var4": var4, "var5": var5, "refId": refId});
   
   
     // 接受原生回调
@@ -498,21 +393,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<String> setInternaltexture(List<int> var2, int var1, int var3) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setInternaltexture([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setInternaltexture', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<com_autonavi_ae_gmap_GLMapState> getMapState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapState([\'var1\':$var1])');
@@ -768,57 +648,12 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<List<int>> getMapModeState(bool var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getMapModeState([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getMapModeState', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> putResourceData(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::putResourceData([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::putResourceData', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> networkStateChanged(android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::networkStateChanged([])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::networkStateChanged', {"var1": var1.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<int>> getLabelBuffer(int var1, int var2, int var3, int var4) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getLabelBuffer([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getLabelBuffer', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "refId": refId});
   
   
     // 接受原生回调
@@ -933,66 +768,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<String> setSkyTexture(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setSkyTexture([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setSkyTexture', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> setBackgroundTexture(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setBackgroundTexture([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setBackgroundTexture', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> setCustomStyleTexture(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleTexture([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setCustomStyleTexture', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> setCustomStyleData(List<int> var2, List<int> var3, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setCustomStyleData([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setCustomStyleData', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> setTrafficEnable(bool var2, int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setTrafficEnable([\'var1\':$var1, \'var2\':$var2])');
@@ -1098,21 +873,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<String> getCurTileIDs(List<int> var2, int var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::getCurTileIDs([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::getCurTileIDs', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> setIndoorEnable(bool var2, int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setIndoorEnable([\'var1\':$var1, \'var2\':$var2])');
@@ -1179,21 +939,6 @@ class com_autonavi_ae_gmap_GLMapEngine {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::initNativeTexture', {"var1": var1, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> updateNativeArrowOverlay(List<int> var3, List<int> var4, String var2, bool var12, double var8, int var1, int var10, int var11, int var5, int var6, int var7, int var9) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::updateNativeArrowOverlay([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::updateNativeArrowOverlay', {"var1": var1, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12, "refId": refId});
   
   
     // 接受原生回调

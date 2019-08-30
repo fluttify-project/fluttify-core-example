@@ -198,21 +198,6 @@ class com_amap_api_maps_model_BuildingOverlayOptions {
     return result;
   }
   
-   Future<List<int>> getPoints() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getPoints([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlayOptions::getPoints', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingLatlngs(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingLatlngs([])');

@@ -33,19 +33,4 @@ class com_amap_api_maps_model_particle_ParticleShapeModule {
     return result;
   }
   
-   Future<List<double>> getPoint() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.particle.ParticleShapeModule@$refId::getPoint([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.particle.ParticleShapeModule::getPoint', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
 }

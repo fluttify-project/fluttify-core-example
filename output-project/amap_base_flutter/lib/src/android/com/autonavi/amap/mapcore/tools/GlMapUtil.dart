@@ -18,21 +18,6 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil {
   
 
   // 生成方法们
-  static Future<List<int>> decodeAssetResData(String var1, android_content_Context var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.GlMapUtil::decodeAssetResData', {"var0": var0.refId, "var1": var1});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
   static Future<int> dipToPixel(android_content_Context var0, int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.tools.GlMapUtil::dipToPixel([\'var1\':$var1])');

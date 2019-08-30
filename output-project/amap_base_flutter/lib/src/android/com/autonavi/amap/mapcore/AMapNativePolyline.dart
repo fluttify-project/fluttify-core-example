@@ -48,21 +48,6 @@ class com_autonavi_amap_mapcore_AMapNativePolyline {
     return result;
   }
   
-  static Future<String> nativeDrawLineByTextureID(List<double> var14, List<double> var2, bool var11, bool var12, bool var13, double var10, double var4, double var6, double var7, double var8, double var9, int var0, int var15, int var16, int var3, int var5) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7, \'var8\':$var8, \'var9\':$var9, \'var10\':$var10, \'var11\':$var11, \'var12\':$var12, \'var13\':$var13, \'var14\':$var14, \'var15\':$var15, \'var16\':$var16])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.AMapNativePolyline::nativeDrawLineByTextureID', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7, "var8": var8, "var9": var9, "var10": var10, "var11": var11, "var12": var12, "var13": var13, "var14": var14, "var15": var15, "var16": var16});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
   static Future<int> nativeDestroy(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeDestroy([\'var0\':$var0])');

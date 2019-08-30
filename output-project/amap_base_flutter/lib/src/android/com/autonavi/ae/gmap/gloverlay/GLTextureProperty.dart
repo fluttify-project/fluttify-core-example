@@ -17,11 +17,6 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty {
     return result;
   }
   
-  Future<List<int>> get_mPngBuffer() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer", {'refId': refId});
-    return result;
-  }
-  
   Future<int> get_mAnchor() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mAnchor", {'refId': refId});
     return result;
@@ -51,10 +46,6 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty {
   // 生成setters
   Future<void> set_mId(int mId) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId', {'refId': refId, "mId": mId});
-  }
-  
-  Future<void> set_mPngBuffer(List<int> mPngBuffer) async {
-    await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer', {'refId': refId, "mPngBuffer": mPngBuffer});
   }
   
   Future<void> set_mAnchor(int mAnchor) async {

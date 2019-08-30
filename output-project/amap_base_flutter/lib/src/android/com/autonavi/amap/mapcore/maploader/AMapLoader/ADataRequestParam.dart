@@ -27,11 +27,6 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam {
     return result;
   }
   
-  Future<List<int>> get_enCodeString() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString", {'refId': refId});
-    return result;
-  }
-  
   Future<int> get_nCompress() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nCompress", {'refId': refId});
     return result;
@@ -54,10 +49,6 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam {
   
   Future<void> set_nRequestType(int nRequestType) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType', {'refId': refId, "nRequestType": nRequestType});
-  }
-  
-  Future<void> set_enCodeString(List<int> enCodeString) async {
-    await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString', {'refId': refId, "enCodeString": enCodeString});
   }
   
   Future<void> set_nCompress(int nCompress) async {

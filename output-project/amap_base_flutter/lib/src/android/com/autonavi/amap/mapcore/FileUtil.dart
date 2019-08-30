@@ -48,36 +48,6 @@ class com_autonavi_amap_mapcore_FileUtil {
     return result;
   }
   
-  static Future<String> writeDatasToFile(List<int> var1, String var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::writeDatasToFile([\'var0\':$var0, \'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FileUtil::writeDatasToFile', {"var0": var0, "var1": var1});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-  static Future<List<int>> readFileContents(String var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContents([\'var0\':$var0])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContents', {"var0": var0});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
   static Future<String> createNoMediaFileIfNotExist(String var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
@@ -99,21 +69,6 @@ class com_autonavi_amap_mapcore_FileUtil {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FileUtil::saveFile', {"var0": var0, "var1": var1, "var2": var2});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-  static Future<List<int>> readFileContentsFromAssets(String var1, android_content_Context var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FileUtil::readFileContentsFromAssets', {"var0": var0.refId, "var1": var1});
   
   
     // 接受原生回调

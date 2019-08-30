@@ -25,21 +25,6 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader {
   
 
   // 生成方法们
-   Future<String> onDownload(List<int> var1, int var2) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload', {"var1": var1, "var2": var2, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> onStop() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop([])');

@@ -33,21 +33,6 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer {
     return result;
   }
   
-  static Future<String> setCurTileIDs(List<int> var2, int var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs([\'var0\':$var0, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::setCurTileIDs', {"var0": var0, "var2": var2});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
   static Future<String> nativeClearBuildingOptions(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions([\'var0\':$var0])');
@@ -69,21 +54,6 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions', {"var0": var0, "var2": var2.refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-  static Future<String> render(List<double> var2, List<double> var3, List<int> var7, double var6, int var0, int var4, int var5) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::render', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5, "var6": var6, "var7": var7});
   
   
     // 接受原生回调

@@ -4,6 +4,10 @@ import 'package:amap_base_flutter_example/widgets/setting.widget.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
 import 'package:flutter/material.dart';
 
+//const beijing = LatLng(39.90960, 116.397228);
+//const shanghai = LatLng(31.22, 121.48);
+//const guangzhou = LatLng(23.16, 113.23);
+
 class CodeInteractionScreen extends StatefulWidget {
   CodeInteractionScreen();
 
@@ -59,6 +63,23 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
                         break;
                       case '缩小':
                         _controller?.zoomOut();
+                        break;
+                    }
+                  },
+                ),
+                DiscreteSetting(
+                  head: '设置地图中心点',
+                  options: ['广州', '北京', '上海'],
+                  onSelected: (value) {
+                    switch (value) {
+                      case '广州':
+                        _controller?.setCenterCoordinate(23.16, 113.23);
+                        break;
+                      case '北京':
+                        _controller?.setCenterCoordinate(39.90960, 116.397228);
+                        break;
+                      case '上海':
+                        _controller?.setCenterCoordinate(31.22, 121.48);
                         break;
                     }
                   },

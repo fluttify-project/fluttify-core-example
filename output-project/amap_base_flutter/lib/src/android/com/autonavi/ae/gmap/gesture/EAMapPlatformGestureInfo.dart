@@ -22,11 +22,6 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo {
     return result;
   }
   
-  Future<List<double>> get_mLocation() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mLocation", {'refId': refId});
-    return result;
-  }
-  
   Future<double> get_mScale() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mScale", {'refId': refId});
     return result;
@@ -42,11 +37,6 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo {
     return result;
   }
   
-  Future<List<double>> get_mVelocityPoint() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::get_mVelocityPoint", {'refId': refId});
-    return result;
-  }
-  
 
   // 生成setters
   Future<void> set_mGestureState(int mGestureState) async {
@@ -55,10 +45,6 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo {
   
   Future<void> set_mGestureType(int mGestureType) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mGestureType', {'refId': refId, "mGestureType": mGestureType});
-  }
-  
-  Future<void> set_mLocation(List<double> mLocation) async {
-    await _channel.invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mLocation', {'refId': refId, "mLocation": mLocation});
   }
   
   Future<void> set_mScale(double mScale) async {
@@ -71,10 +57,6 @@ class com_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo {
   
   Future<void> set_mVeLocityFloat(double mVeLocityFloat) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat', {'refId': refId, "mVeLocityFloat": mVeLocityFloat});
-  }
-  
-  Future<void> set_mVelocityPoint(List<double> mVelocityPoint) async {
-    await _channel.invokeMethod('com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVelocityPoint', {'refId': refId, "mVelocityPoint": mVelocityPoint});
   }
   
 

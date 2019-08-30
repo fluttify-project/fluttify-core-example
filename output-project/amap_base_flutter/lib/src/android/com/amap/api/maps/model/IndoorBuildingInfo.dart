@@ -27,11 +27,6 @@ class com_amap_api_maps_model_IndoorBuildingInfo {
     return result;
   }
   
-  Future<List<int>> get_floor_indexs() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", {'refId': refId});
-    return result;
-  }
-  
 
   // 生成setters
   Future<void> set_activeFloorName(String activeFloorName) async {
@@ -44,10 +39,6 @@ class com_amap_api_maps_model_IndoorBuildingInfo {
   
   Future<void> set_poiid(String poiid) async {
     await _channel.invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid', {'refId': refId, "poiid": poiid});
-  }
-  
-  Future<void> set_floor_indexs(List<int> floor_indexs) async {
-    await _channel.invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs', {'refId': refId, "floor_indexs": floor_indexs});
   }
   
 

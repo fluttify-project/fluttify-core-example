@@ -258,36 +258,6 @@ class com_autonavi_ae_gmap_GLMapState {
     return result;
   }
   
-   Future<String> getViewMatrix(List<double> var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix', {"var1": var1, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> getProjectionMatrix(List<double> var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix', {"var1": var1, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<double> getSkyHeight() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getSkyHeight([])');
@@ -474,36 +444,6 @@ class com_autonavi_ae_gmap_GLMapState {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeStateDestroy', {"var0": var0});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-  static Future<String> nativeGetViewMatrix(List<double> var2, int var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix([\'var0\':$var0, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix', {"var0": var0, "var2": var2});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-  static Future<String> nativeGetProjectionMatrix(List<double> var2, int var0) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix([\'var0\':$var0, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix', {"var0": var0, "var2": var2});
   
   
     // 接受原生回调

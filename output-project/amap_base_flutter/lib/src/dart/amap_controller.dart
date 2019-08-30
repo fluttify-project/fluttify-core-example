@@ -19,7 +19,7 @@ class AmapController {
       android: () async {
         final map = await androidController.getMap();
         final locationStyle = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_MyLocationStyle();
+            .createcom_amap_api_maps_model_MyLocationStyle__();
         await locationStyle?.showMyLocation(show);
         await map.setMyLocationStyle(locationStyle);
         await map.setMyLocationEnabled(show);
@@ -295,11 +295,24 @@ class AmapController {
   }
 
   /// 设置地图中心点
-  Future setCenterCoordinate({bool animated = true}) {
+  Future setCenterCoordinate(
+    double lat,
+    double lng, {
+    double zoomLevel = 15,
+    bool animated = true,
+  }) {
     return platform(
       android: () async {
-        // todo 需要实现带有参数构造器的构造
-        return noSuchMethod(null);
+        final map = await androidController.getMap();
+
+        final latLng = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+        final cameraPosition = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+                latLng, zoomLevel, 0, 0);
+        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
+            .newCameraPosition(cameraPosition);
+        await map.moveCamera(cameraUpdate);
       },
       ios: () async {
         // todo 需要实现带有参数构造器的构造

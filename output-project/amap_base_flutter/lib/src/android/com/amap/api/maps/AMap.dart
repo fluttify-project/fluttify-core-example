@@ -1180,36 +1180,6 @@ class com_amap_api_maps_AMap {
     return com_amap_api_maps_model_RouteOverlay.withRefId(result);
   }
   
-   Future<List<double>> getViewMatrix() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.AMap@$refId::getViewMatrix([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMap::getViewMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<List<double>> getProjectionMatrix() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.AMap@$refId::getProjectionMatrix([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMap::getProjectionMatrix', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> setMapCustomEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapCustomEnable([\'var1\':$var1])');

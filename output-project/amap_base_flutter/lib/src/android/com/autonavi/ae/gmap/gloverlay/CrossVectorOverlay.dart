@@ -48,21 +48,6 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay {
     return result;
   }
   
-   Future<int> setData(List<int> var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setData([\'var1\':$var1])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setData', {"var1": var1, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> remove() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::remove([])');

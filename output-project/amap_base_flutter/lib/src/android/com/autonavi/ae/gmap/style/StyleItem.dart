@@ -17,19 +17,10 @@ class com_autonavi_ae_gmap_style_StyleItem {
     return result;
   }
   
-  Future<List<int>> get_subKey() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
-    return result;
-  }
-  
 
   // 生成setters
   Future<void> set_mainKey(int mainKey) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_mainKey', {'refId': refId, "mainKey": mainKey});
-  }
-  
-  Future<void> set_subKey(List<int> subKey) async {
-    await _channel.invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey', {'refId': refId, "subKey": subKey});
   }
   
 

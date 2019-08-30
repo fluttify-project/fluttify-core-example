@@ -18,21 +18,6 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector {
   
 
   // 生成方法们
-   Future<int> addVectorItem(List<int> var2, com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, int var3) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<String> addVectorRemainDis(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
