@@ -315,8 +315,9 @@ class AmapController {
         await map.moveCamera(cameraUpdate);
       },
       ios: () async {
-        // todo 需要实现带有参数构造器的构造
-        return noSuchMethod(null);
+        final latLng =
+            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+        await iosController.setCenterCoordinate(latLng, animated);
       },
     );
   }

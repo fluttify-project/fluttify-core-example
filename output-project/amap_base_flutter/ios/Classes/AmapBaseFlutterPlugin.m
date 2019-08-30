@@ -56,6 +56,28 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     
         methodResult(@(returnRefId));
     },
+    @"MACircle::circleWithMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* mapRectValue = (NSValue*) REF_MAP[@([args[@"mapRect"] integerValue])];
+        MAMapRect mapRect;
+        [mapRectValue getValue:&mapRect];
+    
+        // 调用对象引用
+    
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        MACircle* result = [MACircle circleWithMapRect: mapRect];
+    
+        // 调用结果
+        NSInteger returnRefId = [result hash];
+        REF_MAP[@(returnRefId)] = result;
+    
+        methodResult(@(returnRefId));
+    },
     @"MAAnimatedAnnotation::setNeedsStart": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
     
@@ -176,6 +198,26 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     
         // 调用结果
         methodResult(result);
+    },
+    @"MAAnnotationMoveAnimation::coordinates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+    
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAAnnotationMoveAnimation* ref = (MAAnnotationMoveAnimation *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        CLLocationCoordinate2D* result = [ref coordinates];
+    
+        // 调用结果
+        NSValue* resultValue = [NSValue value:&result withObjCType:@encode(CLLocationCoordinate2D*)];
+        REF_MAP[@(resultValue.hash)] = resultValue;
+    
+        methodResult(@(resultValue.hash));
     },
     @"MAAnnotationMoveAnimation::duration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
@@ -319,6 +361,26 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 调用结果
         methodResult(@"success");
     },
+    @"MATileOverlay::cancelLoadOfTileAtPath": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* pathValue = (NSValue*) REF_MAP[@([args[@"path"] integerValue])];
+        MATileOverlayPath path;
+        [pathValue getValue:&path];
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MATileOverlay* ref = (MATileOverlay *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        [ref cancelLoadOfTileAtPath : path];
+    
+        // 调用结果
+        methodResult(@"success");
+    },
     @"MAOfflineMap::sharedOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
         // 参数
     
@@ -404,6 +466,148 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
     
         // 开始调用
         [ref clearDisk ];
+    
+        // 调用结果
+        methodResult(@"success");
+    },
+    @"MAArc::arcWithStartCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* startCoordinateValue = (NSValue*) REF_MAP[@([args[@"startCoordinate"] integerValue])];
+        CLLocationCoordinate2D startCoordinate;
+        [startCoordinateValue getValue:&startCoordinate];
+        // 结构体参数
+        NSValue* passedCoordinateValue = (NSValue*) REF_MAP[@([args[@"passedCoordinate"] integerValue])];
+        CLLocationCoordinate2D passedCoordinate;
+        [passedCoordinateValue getValue:&passedCoordinate];
+        // 结构体参数
+        NSValue* endCoordinateValue = (NSValue*) REF_MAP[@([args[@"endCoordinate"] integerValue])];
+        CLLocationCoordinate2D endCoordinate;
+        [endCoordinateValue getValue:&endCoordinate];
+    
+        // 调用对象引用
+    
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        MAArc* result = [MAArc arcWithStartCoordinate: startCoordinate passedCoordinate: passedCoordinate endCoordinate: endCoordinate];
+    
+        // 调用结果
+        NSInteger returnRefId = [result hash];
+        REF_MAP[@(returnRefId)] = result;
+    
+        methodResult(@(returnRefId));
+    },
+    @"MAMapView::setRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* regionValue = (NSValue*) REF_MAP[@([args[@"region"] integerValue])];
+        MACoordinateRegion region;
+        [regionValue getValue:&region];
+        // jsonable参数
+        BOOL animated = [args[@"animated"] boolValue];;
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        [ref setRegion : region animated: animated];
+    
+        // 调用结果
+        methodResult(@"success");
+    },
+    @"MAMapView::regionThatFits": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* regionValue = (NSValue*) REF_MAP[@([args[@"region"] integerValue])];
+        MACoordinateRegion region;
+        [regionValue getValue:&region];
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        MACoordinateRegion result = [ref regionThatFits: region];
+    
+        // 调用结果
+        NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MACoordinateRegion)];
+        REF_MAP[@(resultValue.hash)] = resultValue;
+    
+        methodResult(@(resultValue.hash));
+    },
+    @"MAMapView::setVisibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* mapRectValue = (NSValue*) REF_MAP[@([args[@"mapRect"] integerValue])];
+        MAMapRect mapRect;
+        [mapRectValue getValue:&mapRect];
+        // jsonable参数
+        BOOL animated = [args[@"animated"] boolValue];;
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        [ref setVisibleMapRect : mapRect animated: animated];
+    
+        // 调用结果
+        methodResult(@"success");
+    },
+    @"MAMapView::mapRectThatFits": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* mapRectValue = (NSValue*) REF_MAP[@([args[@"mapRect"] integerValue])];
+        MAMapRect mapRect;
+        [mapRectValue getValue:&mapRect];
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        MAMapRect result = [ref mapRectThatFits: mapRect];
+    
+        // 调用结果
+        NSValue* resultValue = [NSValue value:&result withObjCType:@encode(MAMapRect)];
+        REF_MAP[@(resultValue.hash)] = resultValue;
+    
+        methodResult(@(resultValue.hash));
+    },
+    @"MAMapView::setCenterCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 参数
+        // 结构体参数
+        NSValue* coordinateValue = (NSValue*) REF_MAP[@([args[@"coordinate"] integerValue])];
+        CLLocationCoordinate2D coordinate;
+        [coordinateValue getValue:&coordinate];
+        // jsonable参数
+        BOOL animated = [args[@"animated"] boolValue];;
+    
+        // 调用对象引用
+        NSInteger refId = [args[@"refId"] integerValue];
+        MAMapView* ref = (MAMapView *) REF_MAP[@(refId)];
+    
+        // 日志打印
+    
+    
+        // 开始调用
+        [ref setCenterCoordinate : coordinate animated: animated];
     
         // 调用结果
         methodResult(@"success");
@@ -2766,14 +2970,25 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
 
   // 处理channel
   [channel setMethodCallHandler:^(FlutterMethodCall * _Nonnull methodCall, FlutterResult  _Nonnull methodResult) {
-          NSDictionary<NSString *, NSObject *> *args = (NSDictionary<NSString *, NSObject *> *) [methodCall arguments];
-          if ([@"SystemRef::release" isEqualToString:methodCall.method]) {
+          NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
+          if ([@"ObjectFactory::release" isEqualToString:methodCall.method]) {
               [REF_MAP removeObjectForKey:(NSNumber *) args[@"refId"]];
               methodResult(@"success");
-          } else if ([@"SystemRef::clearRefMap" isEqualToString:methodCall.method]) {
+          } else if ([@"ObjectFactory::clearRefMap" isEqualToString:methodCall.method]) {
               [REF_MAP removeAllObjects];
               methodResult(@"success");
-          } else {
+          } else if ([@"ObjectFactory::createCLLocationCoordinate2D" isEqualToString:methodCall.method]) {
+              CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
+              CLLocationDegrees longitude = [args[@"longitude"] doubleValue];
+
+              CLLocationCoordinate2D data = CLLocationCoordinate2DMake(latitude, longitude);
+
+              NSValue* dataValue = [NSValue value:&data withObjCType:@encode(CLLocationCoordinate2D)];
+              REF_MAP[@(dataValue.hash)] = dataValue;
+
+              methodResult(@(dataValue.hash));
+          }
+          else {
               if (_handlerMap[methodCall.method] != nil) {
                   _handlerMap[methodCall.method](registrar, args, methodResult);
               } else {

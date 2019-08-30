@@ -18,5 +18,19 @@ class MAArc {
   
 
   // 生成方法们
+  static Future<MAArc> arcWithStartCoordinate(CLLocationCoordinate2D endCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D startCoordinate) async {
+    // 日志打印
+    print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAArc::arcWithStartCoordinate', {"startCoordinate": startCoordinate.refId, "passedCoordinate": passedCoordinate.refId, "endCoordinate": endCoordinate.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAArc.withRefId(result);
+  }
   
 }

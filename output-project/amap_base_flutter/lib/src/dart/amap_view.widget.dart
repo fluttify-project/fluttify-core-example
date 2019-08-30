@@ -19,7 +19,8 @@ class AmapView extends StatelessWidget {
     if (Platform.isAndroid) {
       return com_amap_api_maps_MapView_Android(
         onViewCreated: (controller) async {
-          await controller.onCreate(await SystemRef.createandroid_os_Bundle());
+          await controller
+              .onCreate(await ObjectFactory_Android.createandroid_os_Bundle());
           if (onMapCreated != null) {
             onMapCreated(AmapController.android(controller));
           }

@@ -57,5 +57,19 @@ class MATileOverlay {
   
 
   // 生成方法们
+   Future<String> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
+    // 日志打印
+    print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

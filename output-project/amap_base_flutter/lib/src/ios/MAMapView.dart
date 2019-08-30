@@ -301,6 +301,81 @@ class MAMapView {
   
 
   // 生成方法们
+   Future<String> setRegion(MACoordinateRegion region, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setRegion', {"region": region.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::regionThatFits([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::regionThatFits', {"region": region.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MACoordinateRegion.withRefId(result);
+  }
+  
+   Future<String> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setVisibleMapRect', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<MAMapRect> mapRectThatFits(MAMapRect mapRect) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::mapRectThatFits', {"mapRect": mapRect.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAMapRect.withRefId(result);
+  }
+  
+   Future<String> setCenterCoordinate(CLLocationCoordinate2D coordinate, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setCenterCoordinate', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<String> setZoomLevel(bool animated, double zoomLevel) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
