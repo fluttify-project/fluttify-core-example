@@ -253,4 +253,44 @@ class AmapController {
       },
     );
   }
+
+  /// 放大一个等级
+  Future zoomIn({bool animated = true}) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final cameraUpdate =
+            await com_amap_api_maps_CameraUpdateFactory.zoomIn();
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
+      },
+      ios: () async {
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevel(animated, currentLevel + 1);
+      },
+    );
+  }
+
+  /// 放大一个等级
+  Future zoomOut({bool animated = true}) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+        final cameraUpdate =
+            await com_amap_api_maps_CameraUpdateFactory.zoomOut();
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
+      },
+      ios: () async {
+        final currentLevel = await iosController.get_zoomLevel();
+        await iosController.setZoomLevel(animated, currentLevel - 1);
+      },
+    );
+  }
 }

@@ -42,35 +42,25 @@ class _CodeInteractionScreenState extends State<CodeInteractionScreen> {
               scrollable: true,
               children: <Widget>[
                 ContinuousSetting(
-                  head: '是否使能缩放手势',
+                  head: '缩放大小',
                   min: 0,
                   max: 20,
                   onChanged: (value) {
                     _controller?.setZoomLevel(value);
                   },
                 ),
-                BooleanSetting(
-                  head: '是否使能滑动手势',
+                DiscreteSetting(
+                  head: '放大/缩小一个等级',
+                  options: ['放大', '缩小'],
                   onSelected: (value) {
-                    _controller?.setScrollGesturesEnabled(value);
-                  },
-                ),
-                BooleanSetting(
-                  head: '是否使能旋转手势',
-                  onSelected: (value) {
-                    _controller?.setRotateGesturesEnabled(value);
-                  },
-                ),
-                BooleanSetting(
-                  head: '是否使能倾斜手势',
-                  onSelected: (value) {
-                    _controller?.setTiltGesturesEnabled(value);
-                  },
-                ),
-                BooleanSetting(
-                  head: '是否使能所有手势',
-                  onSelected: (value) {
-                    _controller?.setAllGesturesEnabled(value);
+                    switch (value) {
+                      case '放大':
+                        _controller?.zoomIn();
+                        break;
+                      case '缩小':
+                        _controller?.zoomOut();
+                        break;
+                    }
                   },
                 ),
               ],
