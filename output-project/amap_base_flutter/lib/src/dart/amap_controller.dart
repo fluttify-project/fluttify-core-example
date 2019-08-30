@@ -293,4 +293,18 @@ class AmapController {
       },
     );
   }
+
+  /// 设置地图中心点
+  Future setCenterCoordinate({bool animated = true}) {
+    return platform(
+      android: () async {
+        // todo 需要实现带有参数构造器的构造
+        return noSuchMethod(null);
+      },
+      ios: () async {
+        // todo 需要实现带有参数构造器的构造
+        return noSuchMethod(null);
+      },
+    );
+  }
 }
