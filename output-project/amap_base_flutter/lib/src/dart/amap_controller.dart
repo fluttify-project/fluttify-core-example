@@ -7,6 +7,7 @@ import 'enums.dart';
 
 class AmapController {
   AmapController.android(this.androidController);
+
   AmapController.ios(this.iosController);
 
   com_amap_api_maps_MapView androidController;
@@ -235,15 +236,20 @@ class AmapController {
   }
 
   /// 设置缩放大小
-  Future setZoomLevel(double level) {
+  Future setZoomLevel(double level, {bool animated = true}) {
     return platform(
       android: () async {
         final map = await androidController.getMap();
-        await map.animateCamera(
-            await com_amap_api_maps_CameraUpdateFactory.zoomTo(level));
+        final cameraUpdate =
+            await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
+        if (animated) {
+          await map.animateCamera(cameraUpdate);
+        } else {
+          await map.moveCamera(cameraUpdate);
+        }
       },
       ios: () async {
-        await iosController.setZoomLevel(true, level);
+        await iosController.setZoomLevel(animated, level);
       },
     );
   }
