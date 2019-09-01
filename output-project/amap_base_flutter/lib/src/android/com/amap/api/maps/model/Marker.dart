@@ -543,7 +543,7 @@ class com_amap_api_maps_model_Marker {
     return result;
   }
   
-   Future<String> setAnimationListener() async {
+   Future<String> setAnimationListener({void onAnimationStart(), void onAnimationEnd()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
   
@@ -552,7 +552,35 @@ class com_amap_api_maps_model_Marker {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationStart':
+              if (onAnimationStart != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.Marker::setAnimationListener_onAnimationStart([])');
+        
+                // 调用回调方法
+                onAnimationStart();
+              }
+              break;
+            case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationEnd':
+              if (onAnimationEnd != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.Marker::setAnimationListener_onAnimationEnd([])');
+        
+                // 调用回调方法
+                onAnimationEnd();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

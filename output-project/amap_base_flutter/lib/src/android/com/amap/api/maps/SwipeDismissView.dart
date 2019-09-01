@@ -18,7 +18,7 @@ class com_amap_api_maps_SwipeDismissView {
   
 
   // 生成方法们
-   Future<String> setCallback() async {
+   Future<String> setCallback({void onDismiss(), void onNotifySwipe()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])');
   
@@ -27,7 +27,35 @@ class com_amap_api_maps_SwipeDismissView {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.SwipeDismissView::setCallback_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.SwipeDismissView::setCallback_Callback::onDismiss':
+              if (onDismiss != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.SwipeDismissView::setCallback_onDismiss([])');
+        
+                // 调用回调方法
+                onDismiss();
+              }
+              break;
+            case 'com.amap.api.maps.SwipeDismissView::setCallback_Callback::onNotifySwipe':
+              if (onNotifySwipe != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.SwipeDismissView::setCallback_onNotifySwipe([])');
+        
+                // 调用回调方法
+                onNotifySwipe();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

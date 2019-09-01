@@ -18,7 +18,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState {
   
 
   // 生成方法们
-   Future<String> setNetworkListener() async {
+   Future<String> setNetworkListener({void networkStateChanged(android_content_Context var1)}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
   
@@ -27,7 +27,26 @@ class com_autonavi_amap_mapcore_maploader_NetworkState {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_Callback::networkStateChanged':
+              if (networkStateChanged != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_networkStateChanged([])');
+        
+                // 调用回调方法
+                networkStateChanged(android_content_Context.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

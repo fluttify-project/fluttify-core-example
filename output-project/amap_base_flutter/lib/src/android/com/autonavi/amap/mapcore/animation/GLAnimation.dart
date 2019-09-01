@@ -543,7 +543,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation {
     return result;
   }
   
-   Future<String> setAnimationListener() async {
+   Future<String> setAnimationListener({void onAnimationStart(), void onAnimationEnd()}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setAnimationListener([])');
   
@@ -552,7 +552,35 @@ class com_autonavi_amap_mapcore_animation_GLAnimation {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationStart':
+              if (onAnimationStart != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_onAnimationStart([])');
+        
+                // 调用回调方法
+                onAnimationStart();
+              }
+              break;
+            case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationEnd':
+              if (onAnimationEnd != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_onAnimationEnd([])');
+        
+                // 调用回调方法
+                onAnimationEnd();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

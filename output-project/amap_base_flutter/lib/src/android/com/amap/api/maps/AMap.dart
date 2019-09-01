@@ -588,7 +588,7 @@ class com_amap_api_maps_AMap {
     return com_amap_api_maps_Projection.withRefId(result);
   }
   
-   Future<String> setOnCameraChangeListener() async {
+   Future<String> setOnCameraChangeListener({void onCameraChange(com_amap_api_maps_model_CameraPosition var1), void onCameraChangeFinish(com_amap_api_maps_model_CameraPosition var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnCameraChangeListener([])');
   
@@ -597,13 +597,41 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnCameraChangeListener_Callback::onCameraChange':
+              if (onCameraChange != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnCameraChangeListener_onCameraChange([])');
+        
+                // 调用回调方法
+                onCameraChange(com_amap_api_maps_model_CameraPosition.withRefId(args['var1']));
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setOnCameraChangeListener_Callback::onCameraChangeFinish':
+              if (onCameraChangeFinish != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnCameraChangeListener_onCameraChangeFinish([])');
+        
+                // 调用回调方法
+                onCameraChangeFinish(com_amap_api_maps_model_CameraPosition.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
   }
   
-   Future<String> setOnMapClickListener() async {
+   Future<String> setOnMapClickListener({void onMapClick(com_amap_api_maps_model_LatLng var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapClickListener([])');
   
@@ -612,7 +640,26 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMapClickListener_Callback::onMapClick':
+              if (onMapClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMapClickListener_onMapClick([])');
+        
+                // 调用回调方法
+                onMapClick(com_amap_api_maps_model_LatLng.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -633,7 +680,7 @@ class com_amap_api_maps_AMap {
     return result;
   }
   
-   Future<String> setOnPOIClickListener() async {
+   Future<String> setOnPOIClickListener({void onPOIClick(com_amap_api_maps_model_Poi var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnPOIClickListener([])');
   
@@ -642,7 +689,26 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnPOIClickListener_Callback::onPOIClick':
+              if (onPOIClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnPOIClickListener_onPOIClick([])');
+        
+                // 调用回调方法
+                onPOIClick(com_amap_api_maps_model_Poi.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -663,7 +729,7 @@ class com_amap_api_maps_AMap {
     return result;
   }
   
-   Future<String> setOnMapLongClickListener() async {
+   Future<String> setOnMapLongClickListener({void onMapLongClick(com_amap_api_maps_model_LatLng var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapLongClickListener([])');
   
@@ -672,7 +738,26 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMapLongClickListener_Callback::onMapLongClick':
+              if (onMapLongClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMapLongClickListener_onMapLongClick([])');
+        
+                // 调用回调方法
+                onMapLongClick(com_amap_api_maps_model_LatLng.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -694,7 +779,15 @@ class com_amap_api_maps_AMap {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMarkerClickListener_Callback::onMarkerClick':
+              if (onMarkerClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMarkerClickListener_onMarkerClick([])');
         
+                // 调用回调方法
+                onMarkerClick(com_amap_api_maps_model_Marker.withRefId(args['var1']));
+              }
+              break;
             default:
               break;
           }
@@ -704,7 +797,7 @@ class com_amap_api_maps_AMap {
     return result;
   }
   
-   Future<String> setOnPolylineClickListener() async {
+   Future<String> setOnPolylineClickListener({void onPolylineClick(com_amap_api_maps_model_Polyline var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnPolylineClickListener([])');
   
@@ -713,13 +806,32 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnPolylineClickListener_Callback::onPolylineClick':
+              if (onPolylineClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnPolylineClickListener_onPolylineClick([])');
+        
+                // 调用回调方法
+                onPolylineClick(com_amap_api_maps_model_Polyline.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
   }
   
-   Future<String> setOnMarkerDragListener() async {
+   Future<String> setOnMarkerDragListener({void onMarkerDragStart(com_amap_api_maps_model_Marker var1), void onMarkerDrag(com_amap_api_maps_model_Marker var1), void onMarkerDragEnd(com_amap_api_maps_model_Marker var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMarkerDragListener([])');
   
@@ -728,13 +840,50 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMarkerDragListener_Callback::onMarkerDragStart':
+              if (onMarkerDragStart != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMarkerDragListener_onMarkerDragStart([])');
+        
+                // 调用回调方法
+                onMarkerDragStart(com_amap_api_maps_model_Marker.withRefId(args['var1']));
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setOnMarkerDragListener_Callback::onMarkerDrag':
+              if (onMarkerDrag != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMarkerDragListener_onMarkerDrag([])');
+        
+                // 调用回调方法
+                onMarkerDrag(com_amap_api_maps_model_Marker.withRefId(args['var1']));
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setOnMarkerDragListener_Callback::onMarkerDragEnd':
+              if (onMarkerDragEnd != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMarkerDragListener_onMarkerDragEnd([])');
+        
+                // 调用回调方法
+                onMarkerDragEnd(com_amap_api_maps_model_Marker.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
   }
   
-   Future<String> setOnInfoWindowClickListener() async {
+   Future<String> setOnInfoWindowClickListener({void onInfoWindowClick(com_amap_api_maps_model_Marker var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnInfoWindowClickListener([])');
   
@@ -743,7 +892,26 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnInfoWindowClickListener_Callback::onInfoWindowClick':
+              if (onInfoWindowClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnInfoWindowClickListener_onInfoWindowClick([])');
+        
+                // 调用回调方法
+                onInfoWindowClick(com_amap_api_maps_model_Marker.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -779,7 +947,7 @@ class com_amap_api_maps_AMap {
     return result;
   }
   
-   Future<String> setOnMapLoadedListener() async {
+   Future<String> setOnMapLoadedListener({void onMapLoaded()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapLoadedListener([])');
   
@@ -788,13 +956,32 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMapLoadedListener_Callback::onMapLoaded':
+              if (onMapLoaded != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMapLoadedListener_onMapLoaded([])');
+        
+                // 调用回调方法
+                onMapLoaded();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
   }
   
-   Future<String> setOnIndoorBuildingActiveListener() async {
+   Future<String> setOnIndoorBuildingActiveListener({void OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnIndoorBuildingActiveListener([])');
   
@@ -803,7 +990,26 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener_Callback::OnIndoorBuilding':
+              if (OnIndoorBuilding != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener_OnIndoorBuilding([])');
+        
+                // 调用回调方法
+                OnIndoorBuilding(com_amap_api_maps_model_IndoorBuildingInfo.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -825,7 +1031,15 @@ class com_amap_api_maps_AMap {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setOnMultiPointClickListener_Callback::onPointClick':
+              if (onPointClick != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setOnMultiPointClickListener_onPointClick([])');
         
+                // 调用回调方法
+                onPointClick(com_amap_api_maps_model_MultiPointItem.withRefId(args['var1']));
+              }
+              break;
             default:
               break;
           }
@@ -1030,7 +1244,7 @@ class com_amap_api_maps_AMap {
     return result;
   }
   
-   Future<String> setAMapGestureListener() async {
+   Future<String> setAMapGestureListener({void onDoubleTap(double var1, double var2), void onSingleTap(double var1, double var2), void onFling(double var1, double var2), void onScroll(double var1, double var2), void onLongPress(double var1, double var2), void onDown(double var1, double var2), void onUp(double var1, double var2), void onMapStable()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setAMapGestureListener([])');
   
@@ -1039,7 +1253,89 @@ class com_amap_api_maps_AMap {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onDoubleTap':
+              if (onDoubleTap != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onDoubleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onDoubleTap(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onSingleTap':
+              if (onSingleTap != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onSingleTap([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onSingleTap(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onFling':
+              if (onFling != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onFling([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onFling(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onScroll':
+              if (onScroll != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onScroll([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onScroll(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onLongPress':
+              if (onLongPress != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onLongPress([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onLongPress(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onDown':
+              if (onDown != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onDown([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onDown(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onUp':
+              if (onUp != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onUp([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onUp(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.maps.AMap::setAMapGestureListener_Callback::onMapStable':
+              if (onMapStable != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.AMap::setAMapGestureListener_onMapStable([])');
+        
+                // 调用回调方法
+                onMapStable();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

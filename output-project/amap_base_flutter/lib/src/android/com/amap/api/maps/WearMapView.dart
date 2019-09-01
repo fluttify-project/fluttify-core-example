@@ -138,7 +138,7 @@ class com_amap_api_maps_WearMapView {
     return result;
   }
   
-   Future<String> setOnDismissCallbackListener() async {
+   Future<String> setOnDismissCallbackListener({void onDismiss(), void onNotifySwipe()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
   
@@ -147,7 +147,35 @@ class com_amap_api_maps_WearMapView {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.WearMapView::setOnDismissCallbackListener_Callback::onDismiss':
+              if (onDismiss != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.WearMapView::setOnDismissCallbackListener_onDismiss([])');
+        
+                // 调用回调方法
+                onDismiss();
+              }
+              break;
+            case 'com.amap.api.maps.WearMapView::setOnDismissCallbackListener_Callback::onNotifySwipe':
+              if (onNotifySwipe != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.WearMapView::setOnDismissCallbackListener_onNotifySwipe([])');
+        
+                // 调用回调方法
+                onNotifySwipe();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

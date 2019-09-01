@@ -18,7 +18,7 @@ class com_amap_api_maps_InfoWindowAnimationManager {
   
 
   // 生成方法们
-   Future<String> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<String> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, {void onAnimationStart(), void onAnimationEnd()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
   
@@ -27,7 +27,35 @@ class com_amap_api_maps_InfoWindowAnimationManager {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationStart':
+              if (onAnimationStart != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_onAnimationStart([])');
+        
+                // 调用回调方法
+                onAnimationStart();
+              }
+              break;
+            case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationEnd':
+              if (onAnimationEnd != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_onAnimationEnd([])');
+        
+                // 调用回调方法
+                onAnimationEnd();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

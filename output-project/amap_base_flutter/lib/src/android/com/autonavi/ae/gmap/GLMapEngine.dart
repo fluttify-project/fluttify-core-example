@@ -378,7 +378,7 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<String> setMapListener() async {
+   Future<String> setMapListener({void afterDrawFrame(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2), void beforeDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterRendererOver(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterAnimation()}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapListener([])');
   
@@ -387,7 +387,62 @@ class com_autonavi_ae_gmap_GLMapEngine {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawFrame':
+              if (afterDrawFrame != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterDrawFrame([\'var1\':$args[var1]])');
+        
+                // 调用回调方法
+                afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+              }
+              break;
+            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawLabel':
+              if (afterDrawLabel != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterDrawLabel([\'var1\':$args[var1]])');
+        
+                // 调用回调方法
+                afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+              }
+              break;
+            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::beforeDrawLabel':
+              if (beforeDrawLabel != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_beforeDrawLabel([\'var1\':$args[var1]])');
+        
+                // 调用回调方法
+                beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+              }
+              break;
+            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterRendererOver':
+              if (afterRendererOver != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterRendererOver([\'var1\':$args[var1]])');
+        
+                // 调用回调方法
+                afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+              }
+              break;
+            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterAnimation':
+              if (afterAnimation != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterAnimation([])');
+        
+                // 调用回调方法
+                afterAnimation();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
@@ -483,7 +538,7 @@ class com_autonavi_ae_gmap_GLMapEngine {
     return result;
   }
   
-   Future<String> addGroupAnimation(double var3, int var1, int var2, int var4, int var5, int var6, int var7) async {
+   Future<String> addGroupAnimation(double var3, int var1, int var2, int var4, int var5, int var6, int var7, {void onFinish(), void onCancel()}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::addGroupAnimation([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
   
@@ -492,7 +547,35 @@ class com_autonavi_ae_gmap_GLMapEngine {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onFinish':
+              if (onFinish != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_onFinish([])');
+        
+                // 调用回调方法
+                onFinish();
+              }
+              break;
+            case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onCancel':
+              if (onCancel != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_onCancel([])');
+        
+                // 调用回调方法
+                onCancel();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

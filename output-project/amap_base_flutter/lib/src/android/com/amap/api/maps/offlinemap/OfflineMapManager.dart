@@ -228,7 +228,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager {
     return result;
   }
   
-   Future<String> setOnOfflineLoadedListener() async {
+   Future<String> setOnOfflineLoadedListener({void onVerifyComplete()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::setOnOfflineLoadedListener([])');
   
@@ -237,7 +237,26 @@ class com_amap_api_maps_offlinemap_OfflineMapManager {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_Callback::onVerifyComplete':
+              if (onVerifyComplete != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_onVerifyComplete([])');
+        
+                // 调用回调方法
+                onVerifyComplete();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

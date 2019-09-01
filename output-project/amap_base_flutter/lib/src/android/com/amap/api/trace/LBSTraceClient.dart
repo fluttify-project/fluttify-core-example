@@ -33,7 +33,7 @@ class com_amap_api_trace_LBSTraceClient {
     return com_amap_api_trace_LBSTraceClient.withRefId(result);
   }
   
-   Future<String> queryProcessedTrace(com_amap_api_trace_TraceLocation var2, int var1, int var3) async {
+   Future<String> queryProcessedTrace(com_amap_api_trace_TraceLocation var2, int var1, int var3, {void onRequestFailed(int var1, String var2), void onTraceProcessing(int var1, int var2, com_amap_api_maps_model_LatLng var3), void onFinished(int var1, com_amap_api_maps_model_LatLng var2, int var3, int var4)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
   
@@ -42,13 +42,50 @@ class com_amap_api_trace_LBSTraceClient {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onRequestFailed':
+              if (onRequestFailed != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onRequestFailed([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onRequestFailed(args['var1'], args['var2']);
+              }
+              break;
+            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onTraceProcessing':
+              if (onTraceProcessing != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onTraceProcessing([\'var1\':$args[var1], \'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onTraceProcessing(args['var1'], args['var2'], com_amap_api_maps_model_LatLng.withRefId(args['var3']));
+              }
+              break;
+            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onFinished':
+              if (onFinished != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onFinished([\'var1\':$args[var1], \'var3\':$args[var3], \'var4\':$args[var4]])');
+        
+                // 调用回调方法
+                onFinished(args['var1'], com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3'], args['var4']);
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
   }
   
-   Future<String> startTrace() async {
+   Future<String> startTrace({void onTraceStatus(com_amap_api_trace_TraceLocation var1, com_amap_api_maps_model_LatLng var2, String var3)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::startTrace([])');
   
@@ -57,7 +94,26 @@ class com_amap_api_trace_LBSTraceClient {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.trace.LBSTraceClient::startTrace_Callback::onTraceStatus':
+              if (onTraceStatus != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::startTrace_onTraceStatus([\'var3\':$args[var3]])');
+        
+                // 调用回调方法
+                onTraceStatus(com_amap_api_trace_TraceLocation.withRefId(args['var1']), com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3']);
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

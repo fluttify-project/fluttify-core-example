@@ -78,7 +78,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr {
     return result;
   }
   
-   Future<String> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1) async {
+   Future<String> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1, {void onFinish(), void onCancel()}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
   
@@ -87,7 +87,35 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_Callback::onFinish':
+              if (onFinish != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_onFinish([])');
+        
+                // 调用回调方法
+                onFinish();
+              }
+              break;
+            case 'com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_Callback::onCancel':
+              if (onCancel != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_onCancel([])');
+        
+                // 调用回调方法
+                onCancel();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

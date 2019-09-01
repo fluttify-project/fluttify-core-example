@@ -213,7 +213,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay {
     return result;
   }
   
-   Future<String> setMoveListener() async {
+   Future<String> setMoveListener({void move(double var1)}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
   
@@ -222,7 +222,26 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['refId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener_Callback::move':
+              if (move != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener_move([\'var1\':$args[var1]])');
+        
+                // 调用回调方法
+                move(args['var1']);
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;
