@@ -17,24 +17,24 @@ class AmapBaseFlutterPlugin {
                 val args = methodCall.arguments as? Map<String, Any> ?: mapOf()
                 when (methodCall.method) {
                     // 获取Application对象
-                    "SystemRef::getandroid_app_Application" -> {
+                    "ObjectFactory::getandroid_app_Application" -> {
                         methodResult.success(registrar.activity().application.apply { REF_MAP[hashCode()] = this }.hashCode())
                     }
                     // 获取FlutterActivity对象
-                    "SystemRef::getandroid_app_Activity" -> {
+                    "ObjectFactory::getandroid_app_Activity" -> {
                         methodResult.success(registrar.activity().apply { REF_MAP[hashCode()] = this }.hashCode())
                     }
                     // 创建android.os.Bundle对象
-                    "SystemRef::createandroid_os_Bundle" -> {
+                    "ObjectFactory::createandroid_os_Bundle" -> {
                         methodResult.success(Bundle().apply { REF_MAP[hashCode()] = this }.hashCode())
                     }
                     // 释放一个对象
-                    "SystemRef::release" -> {
+                    "ObjectFactory::release" -> {
                         REF_MAP.remove(args["refId"] as Int)
                         methodResult.success("success")
                     }
                     // 清空REF_MAP中所有对象
-                    "SystemRef::clearRefMap" -> {
+                    "ObjectFactory::clearRefMap" -> {
                         REF_MAP.clear()
                         methodResult.success("success")
                     }
@@ -32037,7 +32037,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32047,7 +32048,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32057,7 +32059,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32068,7 +32071,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32078,7 +32082,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32093,7 +32098,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32104,7 +32110,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32115,7 +32122,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32125,7 +32133,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32136,7 +32145,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32146,7 +32156,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32157,7 +32168,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32167,7 +32179,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32177,7 +32190,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32187,7 +32201,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32200,7 +32215,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32213,7 +32229,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32223,7 +32240,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32233,7 +32251,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32243,7 +32262,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32253,7 +32273,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32270,7 +32291,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32291,7 +32313,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32301,7 +32324,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32311,7 +32335,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32321,7 +32346,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -32336,7 +32362,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32346,7 +32373,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32356,7 +32384,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32366,7 +32395,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32376,7 +32406,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32386,7 +32417,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32396,7 +32428,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32406,7 +32439,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32416,7 +32450,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32426,7 +32461,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32436,7 +32472,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32446,7 +32483,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32456,7 +32494,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32469,7 +32508,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32479,7 +32519,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32489,7 +32530,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32502,7 +32544,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32512,7 +32555,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32522,7 +32566,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -32533,7 +32578,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32552,7 +32598,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32565,7 +32612,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32582,7 +32630,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32592,7 +32641,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32603,7 +32653,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -32614,7 +32665,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32624,7 +32676,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32635,7 +32688,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32648,7 +32702,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32663,7 +32718,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32680,7 +32736,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32697,7 +32754,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -32710,7 +32768,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32720,7 +32779,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32730,7 +32790,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32740,7 +32801,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32750,7 +32812,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32767,7 +32830,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32778,7 +32842,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32788,7 +32853,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32798,7 +32864,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32813,7 +32880,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32823,7 +32891,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32833,7 +32902,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32843,7 +32913,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32853,7 +32924,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32866,7 +32938,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32876,7 +32949,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32886,7 +32960,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_autonavi_amap_mapcore_Convert__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32896,7 +32971,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32906,7 +32982,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_InfoWindowParams__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32916,7 +32993,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32926,7 +33004,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_AMapException__String" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -32937,7 +33016,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_AMapException__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32947,7 +33027,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_AMapOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32957,7 +33038,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32967,7 +33049,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -32978,7 +33061,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32988,7 +33072,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_MapFragment__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -32998,7 +33083,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_MapsInitializer__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33008,7 +33094,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33018,7 +33105,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33028,7 +33116,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33039,7 +33128,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_Province__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33049,7 +33139,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33059,7 +33150,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33069,7 +33161,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_City__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33079,7 +33172,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_DownLoadListView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33090,7 +33184,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_DownLoadExpandListView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33101,7 +33196,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_offlinemap_CityExpandView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33112,7 +33208,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33122,7 +33219,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33132,7 +33230,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33147,7 +33246,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33157,7 +33257,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33176,7 +33277,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33186,7 +33288,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33196,7 +33299,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33206,7 +33310,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33216,7 +33321,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33226,7 +33332,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33236,7 +33343,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PoiCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33246,7 +33354,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33256,7 +33365,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_NaviPara__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33266,7 +33376,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33276,7 +33387,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33286,7 +33398,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33296,7 +33409,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33313,7 +33427,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33323,7 +33438,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PoiPara__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33333,7 +33449,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33343,7 +33460,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33354,7 +33472,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33373,7 +33492,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33386,7 +33506,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33397,7 +33518,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33408,7 +33530,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33421,7 +33544,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33438,7 +33562,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33451,7 +33576,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33461,7 +33587,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33471,7 +33598,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33481,7 +33609,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33491,7 +33620,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33504,7 +33634,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33519,7 +33650,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33540,7 +33672,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_AMapPara__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33550,7 +33683,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33560,7 +33694,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33571,7 +33706,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33581,7 +33717,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33602,7 +33739,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33612,7 +33750,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33625,7 +33764,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33636,7 +33776,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33646,7 +33787,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33656,7 +33798,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -33667,7 +33810,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33677,7 +33821,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_ArcOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33687,7 +33832,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33697,7 +33843,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CircleOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33707,7 +33854,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33717,7 +33865,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33728,7 +33877,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33738,7 +33888,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_BaseOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33748,7 +33899,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33758,7 +33910,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33768,7 +33921,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33778,7 +33932,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_RoutePara__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33788,7 +33943,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33798,7 +33954,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33808,7 +33965,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33818,7 +33976,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33829,7 +33988,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33846,7 +34006,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33861,7 +34022,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33882,7 +34044,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33897,7 +34060,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33910,7 +34074,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33929,7 +34094,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -33954,7 +34120,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33964,7 +34131,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33974,7 +34142,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TextOptions__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33984,7 +34153,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -33994,7 +34164,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34004,7 +34175,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34014,7 +34186,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34024,7 +34197,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34035,7 +34209,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34048,7 +34223,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_AMapUtils__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34058,7 +34234,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_TextureMapFragment__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34068,7 +34245,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34079,7 +34257,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34092,7 +34271,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34103,7 +34283,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34116,7 +34297,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long" to { registrar, args, methodResult ->
                     // 参数
                     // jsonable参数
@@ -34135,7 +34317,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_trace_TraceLocation__" to { registrar, args, methodResult ->
                     // 参数
                 
@@ -34145,7 +34328,8 @@ class AmapBaseFlutterPlugin {
                     REF_MAP[obj.hashCode()] = obj
                 
                     methodResult.success(obj.hashCode())
-                },
+                }
+                ,
                 "ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context" to { registrar, args, methodResult ->
                     // 参数
                     // 引用参数
@@ -34157,6 +34341,7 @@ class AmapBaseFlutterPlugin {
                 
                     methodResult.success(obj.hashCode())
                 }
+                
         )
     }
 }

@@ -321,4 +321,50 @@ class AmapController {
       },
     );
   }
+
+  Future addMarker(
+    double lat,
+    double lng, {
+    String title,
+    String snippet,
+    bool draggable,
+    bool visible,
+    double alpha,
+    double anchorU,
+    double anchorV,
+  }) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+
+        final latLng = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+        final markerOption = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_MarkerOptions__();
+
+        await markerOption.position(latLng);
+        if (title != null) {
+          await markerOption.title(title);
+        }
+        if (snippet != null) {
+          await markerOption.snippet(snippet);
+        }
+        if (draggable != null) {
+          await markerOption.draggable(draggable);
+        }
+        if (visible != null) {
+          await markerOption.visible(visible);
+        }
+        if (alpha != null) {
+          await markerOption.alpha(alpha);
+        }
+        if (anchorU != null || anchorV != null) {
+          await markerOption.anchor(anchorU, anchorV);
+        }
+
+        map.addMarker(markerOption);
+      },
+      ios: () async {},
+    );
+  }
 }
