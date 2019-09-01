@@ -4,10 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAParticleOverlayOptionsFactory {
-  MAParticleOverlayOptionsFactory.withRefId(this.refId);
-
-  final int refId;
+class MAParticleOverlayOptionsFactory extends Ref_Android {
+  MAParticleOverlayOptionsFactory.withRefId(int refId): super(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
