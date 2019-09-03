@@ -1,15 +1,21 @@
 #import "AmapBaseFlutterPlugin.h"
-#import <AMapFoundationKit/AMapFoundationKit.h>
-#import <MAMapKit/MAMapKit.h>
-#import "MAAnnotationViewFactory.h"
-#import "MACustomCalloutViewFactory.h"
-#import "MAMapViewFactory.h"
 
 typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSString *, NSObject *> *, FlutterResult);
 
 NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
 
-@implementation AmapBaseFlutterPlugin
+@implementation AmapBaseFlutterPlugin {
+  NSObject <FlutterPluginRegistrar> * _registrar;
+}
+
+- (instancetype) initWithFlutterPluginRegistrar: (NSObject <FlutterPluginRegistrar> *) registrar {
+  self = [super init];
+  if (self) {
+    _registrar = registrar;
+  }
+
+  return self;
+}
 
 + (void)registerWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
   FlutterMethodChannel *channel = [FlutterMethodChannel
@@ -2966,6 +2972,1546 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         methodResult(@"success");
     },
     
+    @"RefClass::isKindOfAMapURLSearch": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[AMapURLSearch class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfAMapNaviConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[AMapNaviConfig class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfAMapRouteConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[AMapRouteConfig class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfAMapPOIConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[AMapPOIConfig class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfAMapServices": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[AMapServices class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineCity class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineItemNationWide class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiPoint class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAGroundOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPolygonRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPinAnnotationView class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAHeatMapNode class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAHeatMapGradient class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAHeatMapTileOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMapStatus class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPointAnnotation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACircle class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAArcRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMapCustomStyleOptions class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPolygon class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPolyline class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiColoredPolylineRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAAnimatedAnnotation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiTexturePolylineRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineProvince class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATileOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineItem class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAGeodesicPolyline class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATouchPoi class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineItemMunicipality class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiPolyline class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATraceManager class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiPointOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAIndoorFloorInfo class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAIndoorInfo class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAPolylineRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAAnnotationMoveAnimation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAShape class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAAnnotationView class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATileOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACustomCalloutView class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineItemCommonCity class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOfflineMap class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACircleRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleRandomVelocityGenerate class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleRandomColorGenerate class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleConstantRotationGenerate class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleCurveSizeGenerate class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleEmissionModule class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleSinglePointShapeModule class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleRectShapeModule class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleOverLifeModule class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleOverlayOptions class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAParticleOverlayOptionsFactory class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAUserLocation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiPointItem class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMultiPointOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACustomBuildingOverlayOption class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACustomBuildingOverlay class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATracePoint class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MATraceLocation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAArc class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAUserLocationRepresentation class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAMapView class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAOverlayPathRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MAGroundOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::isKindOfMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        BOOL isTargetType = [ref isKindOfClass:[MACustomBuildingOverlayRenderer class]];
+        methodResult(@(isTargetType));
+    },
+    
+    @"RefClass::asAMapURLSearch": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (AMapURLSearch *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asAMapNaviConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (AMapNaviConfig *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asAMapRouteConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (AMapRouteConfig *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asAMapPOIConfig": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (AMapPOIConfig *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asAMapServices": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (AMapServices *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineCity *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineItemNationWide": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineItemNationWide *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiPoint *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAGroundOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAGroundOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPolygonRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPolygonRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPinAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPinAnnotationView *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAHeatMapNode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAHeatMapNode *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAHeatMapGradient": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAHeatMapGradient *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAHeatMapTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAHeatMapTileOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMapStatus *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPointAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPointAnnotation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACircle *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAArcRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAArcRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMapCustomStyleOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMapCustomStyleOptions *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPolygon": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPolygon *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPolyline *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiColoredPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiColoredPolylineRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAAnimatedAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAAnimatedAnnotation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiTexturePolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiTexturePolylineRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineProvince": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineProvince *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATileOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATileOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineItem *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAGeodesicPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAGeodesicPolyline *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATouchPoi": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATouchPoi *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineItemMunicipality": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineItemMunicipality *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiPolyline": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiPolyline *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATraceManager": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATraceManager *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiPointOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiPointOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAIndoorFloorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAIndoorFloorInfo *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAIndoorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAIndoorInfo *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAPolylineRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAPolylineRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAAnnotationMoveAnimation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAAnnotationMoveAnimation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAShape": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAShape *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAAnnotationView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAAnnotationView *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATileOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACustomCalloutView *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineItemCommonCity": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineItemCommonCity *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOfflineMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOfflineMap *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACircleRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACircleRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleRandomVelocityGenerate *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleRandomColorGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleRandomColorGenerate *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleConstantRotationGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleConstantRotationGenerate *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleCurveSizeGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleCurveSizeGenerate *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleEmissionModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleEmissionModule *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleSinglePointShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleSinglePointShapeModule *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleRectShapeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleRectShapeModule *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleOverLifeModule": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleOverLifeModule *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleOverlayOptions": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleOverlayOptions *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAParticleOverlayOptionsFactory": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAParticleOverlayOptionsFactory *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAUserLocation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiPointItem": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiPointItem *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMultiPointOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMultiPointOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACustomBuildingOverlayOption": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACustomBuildingOverlayOption *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACustomBuildingOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACustomBuildingOverlay *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATracePoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATracePoint *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMATraceLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MATraceLocation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAArc": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAArc *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAUserLocationRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAUserLocationRepresentation *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAMapView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAMapView *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAOverlayPathRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAOverlayPathRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMAGroundOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MAGroundOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
+    @"RefClass::asMACustomBuildingOverlayRenderer": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+        // 引用对象
+        NSInteger refId = [args[@"refId"] integerValue];
+        id ref = REF_MAP[@(refId)];
+    
+        // 转型
+        ref = (MACustomBuildingOverlayRenderer *) ref;
+        // 放回REF_MAP
+        REF_MAP[@(refId)] = ref;
+    
+        methodResult(@(refId));
+    },
+    
   };
 
   // 处理channel
@@ -3001,6 +4547,370 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
   [registrar registerViewFactory: [[MAAnnotationViewFactory alloc] init] withId: @"me.yohom/MAAnnotationView"];
   [registrar registerViewFactory: [[MACustomCalloutViewFactory alloc] init] withId: @"me.yohom/MACustomCalloutView"];
   [registrar registerViewFactory: [[MAMapViewFactory alloc] init] withId: @"me.yohom/MAMapView"];
+}
+
+// 委托方法们
+- (void)traceManager : (MATraceManager*)manager didTrace: (NSArray<CLLocation*>*)locations correct: (NSArray<MATracePoint*>*)tracePoints distance: (double)distance withError: (NSError*)error
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"traceManager:MATraceManager*:NSArray<CLLocation*>*:NSArray<MATracePoint*>*:double:NSError*" arguments:@{@"manager": @(manager.hash), @"locations": @(locations.hash), @"tracePoints": @(tracePoints.hash), @"distance": @(distance.hash), @"error": @(error.hash)}];
+  
+}
+- (void)mapViewRequireLocationAuth : (CLLocationManager*)locationManager
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewRequireLocationAuth:CLLocationManager*" arguments:@{@"locationManager": @(locationManager.hash)}];
+  
+}
+- (void)multiPointOverlayRenderer : (MAMultiPointOverlayRenderer*)renderer didItemTapped: (MAMultiPointItem*)item
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"multiPointOverlayRenderer:MAMultiPointOverlayRenderer*:MAMultiPointItem*" arguments:@{@"renderer": @(renderer.hash), @"item": @(item.hash)}];
+  
+}
+- (void)mapViewRegionChanged : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewRegionChanged:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView regionWillChangeAnimated: (BOOL)animated
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView regionDidChangeAnimated: (BOOL)animated
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView mapWillMoveByUser: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView mapDidMoveByUser: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView mapWillZoomByUser: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView mapDidZoomByUser: (BOOL)wasUserAction
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction.hash)}];
+  
+}
+- (void)mapViewWillStartLoadingMap : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewWillStartLoadingMap:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapViewDidFinishLoadingMap : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewDidFinishLoadingMap:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapViewDidFailLoadingMap : (MAMapView*)mapView withError: (NSError*)error
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewDidFailLoadingMap:MAMapView*:NSError*" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
+  
+}
+- (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (id<MAAnnotation>)annotation
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  __block MAAnnotationView* _result = nil;
+  [channel invokeMethod:@"mapView:MAMapView*:id<MAAnnotation>"
+              arguments:@{@"mapView": @(mapView.hash), @"annotation": @(annotation.hash)}
+                 result:^(id result) {
+                   _result = (MAAnnotationView*) result;
+                 }];
+  
+  while (!_result) {
+    // _result有值前, 空转
+  }
+  
+  return _result;
+}
+- (void)mapView : (MAMapView*)mapView didAddAnnotationViews: (NSArray*)views
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:NSArray*" arguments:@{@"mapView": @(mapView.hash), @"views": @(views.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didDeselectAnnotationView: (MAAnnotationView*)view
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
+  
+}
+- (void)mapViewWillStartLocatingUser : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewWillStartLocatingUser:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapViewDidStopLocatingUser : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapViewDidStopLocatingUser:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didUpdateUserLocation: (MAUserLocation*)userLocation updatingLocation: (BOOL)updatingLocation
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAUserLocation*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"userLocation": @(userLocation.hash), @"updatingLocation": @(updatingLocation.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didFailToLocateUserWithError: (NSError*)error
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:NSError*" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView annotationView: (MAAnnotationView*)view didChangeDragState: (MAAnnotationViewDragState)newState fromOldState: (MAAnnotationViewDragState)oldState
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*:MAAnnotationViewDragState:MAAnnotationViewDragState" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"newState": @(newState.hash), @"oldState": @(oldState.hash)}];
+  
+}
+- (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (id<MAOverlay>)overlay
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  __block MAOverlayRenderer* _result = nil;
+  [channel invokeMethod:@"mapView:MAMapView*:id<MAOverlay>"
+              arguments:@{@"mapView": @(mapView.hash), @"overlay": @(overlay.hash)}
+                 result:^(id result) {
+                   _result = (MAOverlayRenderer*) result;
+                 }];
+  
+  while (!_result) {
+    // _result有值前, 空转
+  }
+  
+  return _result;
+}
+- (void)mapView : (MAMapView*)mapView didAddOverlayRenderers: (NSArray*)overlayRenderers
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:NSArray*" arguments:@{@"mapView": @(mapView.hash), @"overlayRenderers": @(overlayRenderers.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView annotationView: (MAAnnotationView*)view calloutAccessoryControlTapped: (UIControl*)control
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*:UIControl*" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"control": @(control.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didAnnotationViewCalloutTapped: (MAAnnotationView*)view
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didAnnotationViewTapped: (MAAnnotationView*)view
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAAnnotationView*" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didChangeUserTrackingMode: (MAUserTrackingMode)mode animated: (BOOL)animated
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAUserTrackingMode:BOOL" arguments:@{@"mapView": @(mapView.hash), @"mode": @(mode.hash), @"animated": @(animated.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didChangeOpenGLESDisabled: (BOOL)openGLESDisabled
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:BOOL" arguments:@{@"mapView": @(mapView.hash), @"openGLESDisabled": @(openGLESDisabled.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didTouchPois: (NSArray*)pois
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:NSArray*" arguments:@{@"mapView": @(mapView.hash), @"pois": @(pois.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:CLLocationCoordinate2D" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @(coordinate.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didLongPressedAtCoordinate: (CLLocationCoordinate2D)coordinate
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:CLLocationCoordinate2D" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @(coordinate.hash)}];
+  
+}
+- (void)mapInitComplete : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapInitComplete:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didIndoorMapShowed: (MAIndoorInfo*)indoorInfo
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAIndoorInfo*" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didIndoorMapFloorIndexChanged: (MAIndoorInfo*)indoorInfo
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAIndoorInfo*" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
+  
+}
+- (void)mapView : (MAMapView*)mapView didIndoorMapHidden: (MAIndoorInfo*)indoorInfo
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"mapView:MAMapView*:MAIndoorInfo*" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
+  
+}
+- (void)offlineDataWillReload : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"offlineDataWillReload:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
+}
+- (void)offlineDataDidReload : (MAMapView*)mapView
+{
+  FlutterMethodChannel *channel = [FlutterMethodChannel
+      methodChannelWithName:@"#__method_channel__#"
+            binaryMessenger:[_registrar messenger]];
+
+  [channel invokeMethod:@"offlineDataDidReload:MAMapView*" arguments:@{@"mapView": @(mapView.hash)}];
+  
 }
 
 @end
