@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
-  com_autonavi_ae_gmap_GLMapEngine.withRefId(int refId): super(refId);
+  com_autonavi_ae_gmap_GLMapEngine.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -388,7 +388,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
     MethodChannel('com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
@@ -548,7 +548,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
     MethodChannel('com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {

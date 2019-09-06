@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_autonavi_ae_gmap_GLMapState extends Ref_Android {
-  com_autonavi_ae_gmap_GLMapState.withRefId(int refId): super(refId);
+  com_autonavi_ae_gmap_GLMapState.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -16,57 +16,12 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android {
   
 
   // 生成方法们
-  static Future<String> lonlat2Geo(com_autonavi_amap_mapcore_IPoint var4, double var0, double var2) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::lonlat2Geo([\'var0\':$var0, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo', {"var0": var0, "var2": var2, "var4": var4.refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
   static Future<String> geo2LonLat(com_autonavi_amap_mapcore_DPoint var2, int var0, int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::geo2LonLat([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat', {"var0": var0, "var1": var1, "var2": var2.refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> p20ToScreenPoint(com_autonavi_amap_mapcore_FPoint var3, int var1, int var2) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调

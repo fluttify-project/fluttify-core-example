@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_autonavi_amap_mapcore_FPointBounds extends Ref_Android {
-  com_autonavi_amap_mapcore_FPointBounds.withRefId(int refId): super(refId);
+  com_autonavi_amap_mapcore_FPointBounds.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -29,21 +29,6 @@ class com_autonavi_amap_mapcore_FPointBounds extends Ref_Android {
   
     // 返回值
     return com_autonavi_amap_mapcore_FPointBounds_Builder.withRefId(result);
-  }
-  
-   Future<bool> contains(com_autonavi_amap_mapcore_FPoint var1) async {
-    // 日志打印
-    print('fluttify-dart: com.autonavi.amap.mapcore.FPointBounds@$refId::contains([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.FPointBounds::contains', {"var1": var1.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
   }
   
    Future<bool> intersects(com_autonavi_amap_mapcore_FPointBounds var1) async {

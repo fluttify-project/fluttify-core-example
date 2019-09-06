@@ -4,8 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAParticleRandomVelocityGenerate extends Ref_Android {
-  MAParticleRandomVelocityGenerate.withRefId(int refId): super(refId);
+class MAParticleRandomVelocityGenerate extends Ref_iOS {
+  MAParticleRandomVelocityGenerate.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

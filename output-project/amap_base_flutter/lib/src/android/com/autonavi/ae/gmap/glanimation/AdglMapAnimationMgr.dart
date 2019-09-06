@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
-  com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr.withRefId(int refId): super(refId);
+  com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -88,7 +88,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
     MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
@@ -119,7 +119,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
     return result;
   }
   
-   Future<String> setMapAnimationListener() async {
+   Future<String> setMapAnimationListener({void onMapAnimationFinish({void onFinish(), void onCancel()})}) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
   
@@ -128,7 +128,26 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
   
   
     // 接受原生回调
+    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['callerRefId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener_Callback::onMapAnimationFinish':
+              if (onMapAnimationFinish != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener_onMapAnimationFinish([])');
+        
+                // 调用回调方法
+                onMapAnimationFinish(com_amap_api_maps_AMap_CancelableCallback.withRefId(args['var1']));
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

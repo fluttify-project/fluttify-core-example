@@ -99,6 +99,20 @@ class ObjectFactory_iOS {
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 class CLLocationCoordinate2D {

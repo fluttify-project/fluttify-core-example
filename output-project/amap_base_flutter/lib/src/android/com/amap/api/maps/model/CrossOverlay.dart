@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_model_CrossOverlay extends Ref_Android {
-  com_amap_api_maps_model_CrossOverlay.withRefId(int refId): super(refId);
+  com_amap_api_maps_model_CrossOverlay.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -85,7 +85,26 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['callerRefId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener_Callback::onGenerateComplete':
+              if (onGenerateComplete != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener_onGenerateComplete([\'var2\':$args[var2]])');
+        
+                // 调用回调方法
+                onGenerateComplete(args['var2']);
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return result;

@@ -4,8 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class AMapPOIConfig extends Ref_Android {
-  AMapPOIConfig.withRefId(int refId): super(refId);
+class AMapPOIConfig extends Ref_iOS {
+  AMapPOIConfig.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

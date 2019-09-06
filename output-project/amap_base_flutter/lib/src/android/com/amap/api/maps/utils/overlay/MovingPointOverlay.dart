@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android {
-  com_amap_api_maps_utils_overlay_MovingPointOverlay.withRefId(int refId): super(refId);
+  com_amap_api_maps_utils_overlay_MovingPointOverlay.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -223,7 +223,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android {
     MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {

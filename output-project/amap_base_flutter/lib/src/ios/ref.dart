@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class Ref_iOS {
-  Ref_iOS(this.refId);
+  Ref_iOS.withRefId(this.refId);
 
   final int refId;
 

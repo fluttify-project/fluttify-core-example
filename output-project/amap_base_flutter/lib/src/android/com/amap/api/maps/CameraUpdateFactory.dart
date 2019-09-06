@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_CameraUpdateFactory extends Ref_Android {
-  com_amap_api_maps_CameraUpdateFactory.withRefId(int refId): super(refId);
+  com_amap_api_maps_CameraUpdateFactory.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -172,21 +172,6 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearing', {"var0": var0});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return com_amap_api_maps_CameraUpdate.withRefId(result);
-  }
-  
-  static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(com_autonavi_amap_mapcore_IPoint var1, double var0) async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter', {"var0": var0, "var1": var1.refId});
   
   
     // 接受原生回调

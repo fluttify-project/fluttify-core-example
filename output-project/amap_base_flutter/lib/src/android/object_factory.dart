@@ -162,11 +162,6 @@ class ObjectFactory_Android {
     return com_autonavi_amap_mapcore_maploader_NetworkState.withRefId(refId);
   }
   
-  static Future<com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest> createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String(android_content_Context var1, String var2, String var3) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest__android_content_Context__String__String', {"var1": var1.refId, "var2": var2, "var3": var3});
-    return com_autonavi_amap_mapcore_maploader_AMapLoader_AMapGridDownloadRequest.withRefId(refId);
-  }
-  
   static Future<com_autonavi_amap_mapcore_MapProjection> createcom_autonavi_amap_mapcore_MapProjection__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__');
     return com_autonavi_amap_mapcore_MapProjection.withRefId(refId);
@@ -220,16 +215,6 @@ class ObjectFactory_Android {
   static Future<com_autonavi_amap_mapcore_AMapNativePolyline> createcom_autonavi_amap_mapcore_AMapNativePolyline__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__');
     return com_autonavi_amap_mapcore_AMapNativePolyline.withRefId(refId);
-  }
-  
-  static Future<com_autonavi_amap_mapcore_IPoint> createcom_autonavi_amap_mapcore_IPoint__() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__');
-    return com_autonavi_amap_mapcore_IPoint.withRefId(refId);
-  }
-  
-  static Future<com_autonavi_amap_mapcore_IPoint> createcom_autonavi_amap_mapcore_IPoint__int__int(int var1, int var2) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int', {"var1": var1, "var2": var2});
-    return com_autonavi_amap_mapcore_IPoint.withRefId(refId);
   }
   
   static Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__() async {
@@ -352,11 +337,6 @@ class ObjectFactory_Android {
     return com_autonavi_amap_mapcore_Rectangle.withRefId(refId);
   }
   
-  static Future<com_autonavi_amap_mapcore_Inner_3dMap_location> createcom_autonavi_amap_mapcore_Inner_3dMap_location__String(String var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String', {"var1": var1});
-    return com_autonavi_amap_mapcore_Inner_3dMap_location.withRefId(refId);
-  }
-  
   static Future<com_autonavi_amap_mapcore_AMapEngineUtils> createcom_autonavi_amap_mapcore_AMapEngineUtils__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__');
     return com_autonavi_amap_mapcore_AMapEngineUtils.withRefId(refId);
@@ -385,16 +365,6 @@ class ObjectFactory_Android {
   static Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__');
     return com_autonavi_amap_mapcore_Inner_3dMap_locationOption.withRefId(refId);
-  }
-  
-  static Future<com_autonavi_amap_mapcore_FPoint> createcom_autonavi_amap_mapcore_FPoint__() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__');
-    return com_autonavi_amap_mapcore_FPoint.withRefId(refId);
-  }
-  
-  static Future<com_autonavi_amap_mapcore_FPoint> createcom_autonavi_amap_mapcore_FPoint__float__float(double var1, double var2) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float', {"var1": var1, "var2": var2});
-    return com_autonavi_amap_mapcore_FPoint.withRefId(refId);
   }
   
   static Future<com_autonavi_amap_mapcore_AMapNativeParticleSystem> createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__() async {
@@ -457,11 +427,6 @@ class ObjectFactory_Android {
     return com_amap_api_maps_utils_SpatialRelationUtil.withRefId(refId);
   }
   
-  static Future<com_amap_api_maps_MapFragment> createcom_amap_api_maps_MapFragment__() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapFragment__');
-    return com_amap_api_maps_MapFragment.withRefId(refId);
-  }
-  
   static Future<com_amap_api_maps_MapsInitializer> createcom_amap_api_maps_MapsInitializer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
     return com_amap_api_maps_MapsInitializer.withRefId(refId);
@@ -475,11 +440,6 @@ class ObjectFactory_Android {
   static Future<com_amap_api_maps_offlinemap_OfflineMapProvince> createcom_amap_api_maps_offlinemap_OfflineMapProvince__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__');
     return com_amap_api_maps_offlinemap_OfflineMapProvince.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_offlinemap_DownloadProgressView> createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_offlinemap_DownloadProgressView.withRefId(refId);
   }
   
   static Future<com_amap_api_maps_offlinemap_Province> createcom_amap_api_maps_offlinemap_Province__() async {
@@ -500,21 +460,6 @@ class ObjectFactory_Android {
   static Future<com_amap_api_maps_offlinemap_City> createcom_amap_api_maps_offlinemap_City__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_City__');
     return com_amap_api_maps_offlinemap_City.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_offlinemap_DownLoadListView> createcom_amap_api_maps_offlinemap_DownLoadListView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownLoadListView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_offlinemap_DownLoadListView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_offlinemap_DownLoadExpandListView> createcom_amap_api_maps_offlinemap_DownLoadExpandListView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownLoadExpandListView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_offlinemap_DownLoadExpandListView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_offlinemap_CityExpandView> createcom_amap_api_maps_offlinemap_CityExpandView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_CityExpandView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_offlinemap_CityExpandView.withRefId(refId);
   }
   
   static Future<com_amap_api_maps_model_PolygonHoleOptions> createcom_amap_api_maps_model_PolygonHoleOptions__() async {
@@ -902,44 +847,9 @@ class ObjectFactory_Android {
     return com_amap_api_maps_model_IndoorBuildingInfo.withRefId(refId);
   }
   
-  static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_TextureMapView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    return com_amap_api_maps_TextureMapView.withRefId(refId);
-  }
-  
   static Future<com_amap_api_maps_AMapUtils> createcom_amap_api_maps_AMapUtils__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__');
     return com_amap_api_maps_AMapUtils.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_TextureMapFragment> createcom_amap_api_maps_TextureMapFragment__() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapFragment__');
-    return com_amap_api_maps_TextureMapFragment.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_WearMapView> createcom_amap_api_maps_WearMapView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_WearMapView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_WearMapView> createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    return com_amap_api_maps_WearMapView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context(android_content_Context var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context', {"var1": var1.refId});
-    return com_amap_api_maps_MapView.withRefId(refId);
-  }
-  
-  static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
-    return com_amap_api_maps_MapView.withRefId(refId);
   }
   
   static Future<com_amap_api_trace_TraceLocation> createcom_amap_api_trace_TraceLocation__double__double__float__float__long(double var1, double var3, double var5, double var6, int var7) async {

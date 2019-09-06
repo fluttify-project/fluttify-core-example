@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_trace_LBSTraceClient extends Ref_Android {
-  com_amap_api_trace_LBSTraceClient.withRefId(int refId): super(refId);
+  com_amap_api_trace_LBSTraceClient.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -43,7 +43,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
     MethodChannel('com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
@@ -95,7 +95,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
     MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {

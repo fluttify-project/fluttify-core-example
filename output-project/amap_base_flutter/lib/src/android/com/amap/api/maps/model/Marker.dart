@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_model_Marker extends Ref_Android {
-  com_amap_api_maps_model_Marker.withRefId(int refId): super(refId);
+  com_amap_api_maps_model_Marker.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -406,21 +406,6 @@ class com_amap_api_maps_model_Marker extends Ref_Android {
     return result;
   }
   
-   Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return result;
-  }
-  
    Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');
@@ -553,7 +538,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android {
     MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['refId'] as int;
+          final refId = args['callerRefId'] as int;
           if (refId != this.refId) return;
   
           switch (methodCall.method) {

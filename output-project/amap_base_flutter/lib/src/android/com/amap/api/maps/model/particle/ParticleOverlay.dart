@@ -4,8 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class com_amap_api_maps_model_particle_ParticleOverlay extends Ref_Android {
-  com_amap_api_maps_model_particle_ParticleOverlay.withRefId(int refId): super(refId);
+class com_amap_api_maps_model_particle_ParticleOverlay extends com_amap_api_maps_model_BaseOverlay {
+  com_amap_api_maps_model_particle_ParticleOverlay.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

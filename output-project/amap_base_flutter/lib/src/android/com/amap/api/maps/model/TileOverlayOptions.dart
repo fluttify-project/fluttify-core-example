@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
-  com_amap_api_maps_model_TileOverlayOptions.withRefId(int refId): super(refId);
+  com_amap_api_maps_model_TileOverlayOptions.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -16,7 +16,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider() async {
+   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider({void getTile(int var1, int var2, int var3), void getTileWidth(), void getTileHeight()}) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider([])');
   
@@ -25,7 +25,44 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
   
   
     // 接受原生回调
+    MethodChannel('com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['callerRefId'] as int;
+          if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTile':
+              if (getTile != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTile([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+        
+                // 调用回调方法
+                getTile(args['var1'], args['var2'], args['var3']);
+              }
+              break;
+            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileWidth':
+              if (getTileWidth != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTileWidth([])');
+        
+                // 调用回调方法
+                getTileWidth();
+              }
+              break;
+            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileHeight':
+              if (getTileHeight != null) {
+                // 日志打印
+                print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTileHeight([])');
+        
+                // 调用回调方法
+                getTileHeight();
+              }
+              break;
+            default:
+              break;
+          }
+        });
   
     // 返回值
     return com_amap_api_maps_model_TileOverlayOptions.withRefId(result);

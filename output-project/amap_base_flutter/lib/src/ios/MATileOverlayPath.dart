@@ -4,8 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MATileOverlayPath extends Ref_Android {
-  MATileOverlayPath.withRefId(int refId): super(refId);
+class MATileOverlayPath extends Ref_iOS {
+  MATileOverlayPath.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
