@@ -10,6 +10,10 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<double> get_NO_DIMENSION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.GroundOverlayOptions::get_NO_DIMENSION", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

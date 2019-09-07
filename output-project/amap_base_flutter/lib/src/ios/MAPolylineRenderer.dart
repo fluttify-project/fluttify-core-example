@@ -10,6 +10,11 @@ class MAPolylineRenderer extends MAOverlayPathRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAPolyline> get_polyline() async {
+    final result = await _channel.invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_is3DArrowLine() async {
     final result = await _channel.invokeMethod("MAPolylineRenderer::get_is3DArrowLine", {'refId': refId});
     return result;

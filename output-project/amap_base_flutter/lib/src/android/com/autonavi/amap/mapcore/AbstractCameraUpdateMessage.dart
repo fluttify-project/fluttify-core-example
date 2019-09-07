@@ -25,6 +25,16 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     return result;
   }
   
+  Future<com_amap_api_maps_model_CameraPosition> get_cameraPosition() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_cameraPosition", {'refId': refId});
+    return result;
+  }
+  
+  Future<com_amap_api_maps_model_LatLngBounds> get_bounds() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bounds", {'refId': refId});
+    return result;
+  }
+  
   Future<double> get_zoom() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_zoom", {'refId': refId});
     return result;
@@ -107,6 +117,14 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   Future<void> set_amount(double amount) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount', {'refId': refId, "amount": amount});
+  }
+  
+  Future<void> set_cameraPosition(com_amap_api_maps_model_CameraPosition cameraPosition) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_cameraPosition', {'refId': refId, "cameraPosition": cameraPosition});
+  }
+  
+  Future<void> set_bounds(com_amap_api_maps_model_LatLngBounds bounds) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bounds', {'refId': refId, "bounds": bounds});
   }
   
   Future<void> set_zoom(double zoom) async {

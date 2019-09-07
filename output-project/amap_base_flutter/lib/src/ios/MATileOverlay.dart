@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MATileOverlay extends Ref_iOS {
+class MATileOverlay extends NSObject {
   MATileOverlay.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
@@ -30,6 +30,11 @@ class MATileOverlay extends Ref_iOS {
     return result;
   }
   
+  Future<MAMapRect> get_boundingMapRect() async {
+    final result = await _channel.invokeMethod("MATileOverlay::get_boundingMapRect", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_disableOffScreenTileLoading() async {
     final result = await _channel.invokeMethod("MATileOverlay::get_disableOffScreenTileLoading", {'refId': refId});
     return result;
@@ -47,6 +52,10 @@ class MATileOverlay extends Ref_iOS {
   
   Future<void> set_canReplaceMapContent(bool canReplaceMapContent) async {
     await _channel.invokeMethod('MATileOverlay::set_canReplaceMapContent', {'refId': refId, "canReplaceMapContent": canReplaceMapContent});
+  }
+  
+  Future<void> set_boundingMapRect(MAMapRect boundingMapRect) async {
+    await _channel.invokeMethod('MATileOverlay::set_boundingMapRect', {'refId': refId, "boundingMapRect": boundingMapRect});
   }
   
   Future<void> set_disableOffScreenTileLoading(bool disableOffScreenTileLoading) async {

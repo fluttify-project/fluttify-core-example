@@ -10,9 +10,41 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_FILL_MODE_FORWARDS() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_FILL_MODE_FORWARDS", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_FILL_MODE_BACKWARDS() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_FILL_MODE_BACKWARDS", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_INFINITE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_INFINITE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RESTART() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_RESTART", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_REVERSE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_REVERSE", {'refId': refId});
+    return result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_glAnimation(com_autonavi_amap_mapcore_animation_GLAnimation glAnimation) async {
+    await _channel.invokeMethod('com.amap.api.maps.model.animation.Animation::set_glAnimation', {'refId': refId, "glAnimation": glAnimation});
+  }
   
 
   // 生成方法们

@@ -4,15 +4,22 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MATraceManager extends Ref_iOS {
+class MATraceManager extends NSObject {
   MATraceManager.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MATraceDelegate> get_delegate() async {
+    final result = await _channel.invokeMethod("MATraceManager::get_delegate", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_delegate(MATraceDelegate delegate) async {
+    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate});
+  }
   
 
   // 生成方法们

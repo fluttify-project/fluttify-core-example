@@ -10,6 +10,110 @@ class com_autonavi_amap_mapcore_tools_GlMapUtil extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_1_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_2_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AMAP_ENGINE_TYPE_DISPLAY_EXTERNAL_3_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_INVALID() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_INVALID", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_MAIN() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_MAIN", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_1() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_1", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_1_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_1_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_2() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_2", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_2_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_2_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_3() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_3", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_AN_ENGINE_ID_DISPLAY_EXTERNAL_3_EAGLE_EYE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_AN_ENGINE_ID_DISPLAY_EXTERNAL_3_EAGLE_EYE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_LOW() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_LOW", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_NORMAL() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_NORMAL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_MEDIAN() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_MEDIAN", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_HIGH() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_HIGH", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_XHIGH() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_XHIGH", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DEVICE_DISPLAY_DPI_XXHIGH() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.GlMapUtil::get_DEVICE_DISPLAY_DPI_XXHIGH", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

@@ -10,6 +10,10 @@ class MACustomBuildingOverlay extends MAShape {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MACustomBuildingOverlayOption> get_defaultOption() async {
+    final result = await _channel.invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

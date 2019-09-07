@@ -115,8 +115,14 @@ class ObjectFactory_iOS {
   
 }
 
-class CLLocationCoordinate2D {
-  CLLocationCoordinate2D.withRefId(this.refId);
+class CLLocationCoordinate2D extends Ref_iOS {
+  CLLocationCoordinate2D.withRefId(int refId): super.withRefId(refId);
+}
 
-  final int refId;
+class UIView extends Ref_iOS {
+  UIView.withRefId(int refId): super.withRefId(refId);
+}
+
+class NSObject extends Ref_iOS {
+  NSObject.withRefId(int refId): super.withRefId(refId);
 }

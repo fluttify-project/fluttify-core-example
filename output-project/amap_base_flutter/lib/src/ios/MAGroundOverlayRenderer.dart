@@ -10,6 +10,10 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAGroundOverlay> get_groundOverlay() async {
+    final result = await _channel.invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

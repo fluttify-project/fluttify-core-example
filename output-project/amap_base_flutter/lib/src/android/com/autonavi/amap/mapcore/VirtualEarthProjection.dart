@@ -10,6 +10,50 @@ class com_autonavi_amap_mapcore_VirtualEarthProjection extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_MAXZOOMLEVEL() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_MAXZOOMLEVEL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_PIXELS_PER_TILE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_PIXELS_PER_TILE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_MIN_LATITUDE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_MIN_LATITUDE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_MAX_LATITUDE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_MAX_LATITUDE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_MIN_LONGITUDE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_MIN_LONGITUDE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_MAX_LONGITUDE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_MAX_LONGITUDE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_EARTH_RADIUS_IN_METERS() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_EARTH_RADIUS_IN_METERS", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_TILE_SPLIT_LEVEL() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_TILE_SPLIT_LEVEL", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_EARTH_CIRCUMFERENCE_IN_METERS() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.VirtualEarthProjection::get_EARTH_CIRCUMFERENCE_IN_METERS", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

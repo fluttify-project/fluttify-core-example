@@ -10,6 +10,35 @@ class com_amap_api_maps_model_Text extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_ALIGN_LEFT() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_LEFT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ALIGN_RIGHT() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_RIGHT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ALIGN_CENTER_HORIZONTAL() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_CENTER_HORIZONTAL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ALIGN_TOP() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_TOP", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ALIGN_BOTTOM() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_BOTTOM", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ALIGN_CENTER_VERTICAL() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.Text::get_ALIGN_CENTER_VERTICAL", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

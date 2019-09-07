@@ -20,6 +20,11 @@ class MAGroundOverlay extends MAShape {
     return result;
   }
   
+  Future<MACoordinateBounds> get_bounds() async {
+    final result = await _channel.invokeMethod("MAGroundOverlay::get_bounds", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_alpha(double alpha) async {

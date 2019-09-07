@@ -10,6 +10,25 @@ class com_autonavi_ae_gmap_AbstractMapMessage extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_GESTURE_STATE_BEGIN() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.AbstractMapMessage::get_GESTURE_STATE_BEGIN", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_GESTURE_STATE_CHANGE() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.AbstractMapMessage::get_GESTURE_STATE_CHANGE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_GESTURE_STATE_END() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.AbstractMapMessage::get_GESTURE_STATE_END", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_MSGTYPE_NAVIOVERLAY_STATE() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.AbstractMapMessage::get_MSGTYPE_NAVIOVERLAY_STATE", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

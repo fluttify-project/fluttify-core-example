@@ -10,6 +10,80 @@ class com_amap_api_maps_AMapUtils extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_DRIVING_DEFAULT() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_DEFAULT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_SAVE_MONEY() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_SAVE_MONEY", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_SHORT_DISTANCE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_SHORT_DISTANCE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_NO_HIGHWAY() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_NO_HIGHWAY", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_AVOID_CONGESTION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_AVOID_CONGESTION", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_NO_HIGHWAY_AVOID_SHORT_MONEY() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_NO_HIGHWAY_AVOID_SHORT_MONEY", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_NO_HIGHWAY_AVOID_CONGESTION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_NO_HIGHWAY_AVOID_CONGESTION", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_SAVE_MONEY_AVOID_CONGESTION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_SAVE_MONEY_AVOID_CONGESTION", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_DRIVING_NO_HIGHWAY_SAVE_MONEY_AVOID_CONGESTION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_DRIVING_NO_HIGHWAY_SAVE_MONEY_AVOID_CONGESTION", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_TIME_FIRST() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_TIME_FIRST", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_MONEY_LITTLE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_MONEY_LITTLE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_TRANSFER_LITTLE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_TRANSFER_LITTLE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_WALK_LITTLE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_WALK_LITTLE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_COMFORT() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_COMFORT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_BUS_NO_SUBWAY() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.AMapUtils::get_BUS_NO_SUBWAY", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

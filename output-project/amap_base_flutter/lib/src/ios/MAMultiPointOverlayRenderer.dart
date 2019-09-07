@@ -10,9 +10,21 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMultiPointOverlayRendererDelegate> get_delegate() async {
+    final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_delegate", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMultiPointOverlay> get_multiPointOverlay() async {
+    final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_multiPointOverlay", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
+    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate});
+  }
   
 
   // 生成方法们

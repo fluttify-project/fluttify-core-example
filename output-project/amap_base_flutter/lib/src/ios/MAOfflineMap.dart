@@ -4,12 +4,17 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAOfflineMap extends Ref_iOS {
+class MAOfflineMap extends NSObject {
   MAOfflineMap.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAOfflineItemNationWide> get_nationWide() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_nationWide", {'refId': refId});
+    return result;
+  }
+  
   Future<String> get_version() async {
     final result = await _channel.invokeMethod("MAOfflineMap::get_version", {'refId': refId});
     return result;

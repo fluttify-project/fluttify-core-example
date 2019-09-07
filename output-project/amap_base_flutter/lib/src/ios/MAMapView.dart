@@ -4,14 +4,44 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAMapView extends Ref_iOS {
+class MAMapView extends UIView {
   MAMapView.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMapViewDelegate> get_delegate() async {
+    final result = await _channel.invokeMethod("MAMapView::get_delegate", {'refId': refId});
+    return result;
+  }
+  
   Future<MAMapType> get_mapType() async {
     final result = await _channel.invokeMethod("MAMapView::get_mapType", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_centerCoordinate() async {
+    final result = await _channel.invokeMethod("MAMapView::get_centerCoordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<MACoordinateRegion> get_region() async {
+    final result = await _channel.invokeMethod("MAMapView::get_region", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMapRect> get_visibleMapRect() async {
+    final result = await _channel.invokeMethod("MAMapView::get_visibleMapRect", {'refId': refId});
+    return result;
+  }
+  
+  Future<MACoordinateRegion> get_limitRegion() async {
+    final result = await _channel.invokeMethod("MAMapView::get_limitRegion", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMapRect> get_limitMapRect() async {
+    final result = await _channel.invokeMethod("MAMapView::get_limitMapRect", {'refId': refId});
     return result;
   }
   
@@ -135,8 +165,18 @@ class MAMapView extends Ref_iOS {
     return result;
   }
   
+  Future<MAUserLocation> get_userLocation() async {
+    final result = await _channel.invokeMethod("MAMapView::get_userLocation", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_customizeUserLocationAccuracyCircleRepresentation() async {
     final result = await _channel.invokeMethod("MAMapView::get_customizeUserLocationAccuracyCircleRepresentation", {'refId': refId});
+    return result;
+  }
+  
+  Future<MACircle> get_userLocationAccuracyCircle() async {
+    final result = await _channel.invokeMethod("MAMapView::get_userLocationAccuracyCircle", {'refId': refId});
     return result;
   }
   
@@ -177,8 +217,32 @@ class MAMapView extends Ref_iOS {
   
 
   // 生成setters
+  Future<void> set_delegate(MAMapViewDelegate delegate) async {
+    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate});
+  }
+  
   Future<void> set_mapType(MAMapType mapType) async {
     await _channel.invokeMethod('MAMapView::set_mapType', {'refId': refId, "mapType": mapType.index});
+  }
+  
+  Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
+    await _channel.invokeMethod('MAMapView::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate});
+  }
+  
+  Future<void> set_region(MACoordinateRegion region) async {
+    await _channel.invokeMethod('MAMapView::set_region', {'refId': refId, "region": region});
+  }
+  
+  Future<void> set_visibleMapRect(MAMapRect visibleMapRect) async {
+    await _channel.invokeMethod('MAMapView::set_visibleMapRect', {'refId': refId, "visibleMapRect": visibleMapRect});
+  }
+  
+  Future<void> set_limitRegion(MACoordinateRegion limitRegion) async {
+    await _channel.invokeMethod('MAMapView::set_limitRegion', {'refId': refId, "limitRegion": limitRegion});
+  }
+  
+  Future<void> set_limitMapRect(MAMapRect limitMapRect) async {
+    await _channel.invokeMethod('MAMapView::set_limitMapRect', {'refId': refId, "limitMapRect": limitMapRect});
   }
   
   Future<void> set_zoomLevel(double zoomLevel) async {

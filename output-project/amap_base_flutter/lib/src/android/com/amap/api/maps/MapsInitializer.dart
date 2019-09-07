@@ -10,9 +10,26 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<String> get_sdcardDir() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.MapsInitializer::get_sdcardDir", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_HTTP() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.MapsInitializer::get_HTTP", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_HTTPS() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.MapsInitializer::get_HTTPS", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_sdcardDir(String sdcardDir) async {
+    await _channel.invokeMethod('com.amap.api.maps.MapsInitializer::set_sdcardDir', {'refId': refId, "sdcardDir": sdcardDir});
+  }
   
 
   // 生成方法们

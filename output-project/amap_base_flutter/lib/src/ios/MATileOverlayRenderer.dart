@@ -10,6 +10,10 @@ class MATileOverlayRenderer extends MAOverlayRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MATileOverlay> get_tileOverlay() async {
+    final result = await _channel.invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

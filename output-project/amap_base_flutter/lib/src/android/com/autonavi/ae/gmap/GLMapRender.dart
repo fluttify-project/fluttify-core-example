@@ -10,6 +10,51 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_NORMAL_TICK_COUNT() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_NORMAL_TICK_COUNT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ANIMATION_TICK_COUNT() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_ANIMATION_TICK_COUNT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LONG_TICK_COUNT() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_LONG_TICK_COUNT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LONG_LONG_TICK_COUNT() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_LONG_LONG_TICK_COUNT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RENDER_FPS_NAVI() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_RENDER_FPS_NAVI", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RENDER_FPS_NORMAL() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_RENDER_FPS_NORMAL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RENDER_FPS_ANIMATION() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_RENDER_FPS_ANIMATION", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RENDER_FPS_GESTURE_ACTION() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_RENDER_FPS_GESTURE_ACTION", {'refId': refId});
+    return result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_interfaces_IAMap> get_mGLMapView() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mGLMapView", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_mSurfacedestoryed() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mSurfacedestoryed", {'refId': refId});
     return result;
@@ -17,6 +62,10 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android {
   
 
   // 生成setters
+  Future<void> set_mGLMapView(com_autonavi_amap_mapcore_interfaces_IAMap mGLMapView) async {
+    await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapRender::set_mGLMapView', {'refId': refId, "mGLMapView": mGLMapView});
+  }
+  
   Future<void> set_mSurfacedestoryed(bool mSurfacedestoryed) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapRender::set_mSurfacedestoryed', {'refId': refId, "mSurfacedestoryed": mSurfacedestoryed});
   }

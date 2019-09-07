@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAParticleOverlayOptions extends Ref_iOS {
+class MAParticleOverlayOptions extends NSObject {
   MAParticleOverlayOptions.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
@@ -25,6 +25,31 @@ class MAParticleOverlayOptions extends Ref_iOS {
     return result;
   }
   
+  Future<MAParticleColorGenerate> get_particleStartColor() async {
+    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleStartColor", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAParticleVelocityGenerate> get_particleStartSpeed() async {
+    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleStartSpeed", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAParticleEmissionModule> get_particleEmissionModule() async {
+    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleEmissionModule", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAParticleShapeModule> get_particleShapeModule() async {
+    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleShapeModule", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAParticleOverLifeModule> get_particleOverLifeModule() async {
+    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleOverLifeModule", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_visibile(bool visibile) async {
@@ -37,6 +62,26 @@ class MAParticleOverlayOptions extends Ref_iOS {
   
   Future<void> set_maxParticles(int maxParticles) async {
     await _channel.invokeMethod('MAParticleOverlayOptions::set_maxParticles', {'refId': refId, "maxParticles": maxParticles});
+  }
+  
+  Future<void> set_particleStartColor(MAParticleColorGenerate particleStartColor) async {
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": particleStartColor});
+  }
+  
+  Future<void> set_particleStartSpeed(MAParticleVelocityGenerate particleStartSpeed) async {
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": particleStartSpeed});
+  }
+  
+  Future<void> set_particleEmissionModule(MAParticleEmissionModule particleEmissionModule) async {
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleEmissionModule', {'refId': refId, "particleEmissionModule": particleEmissionModule});
+  }
+  
+  Future<void> set_particleShapeModule(MAParticleShapeModule particleShapeModule) async {
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": particleShapeModule});
+  }
+  
+  Future<void> set_particleOverLifeModule(MAParticleOverLifeModule particleOverLifeModule) async {
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleOverLifeModule', {'refId': refId, "particleOverLifeModule": particleOverLifeModule});
   }
   
 

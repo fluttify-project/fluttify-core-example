@@ -10,6 +10,15 @@ class MAOverlay extends Ref_iOS {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<CLLocationCoordinate2D> get_coordinate() async {
+    final result = await _channel.invokeMethod("MAOverlay::get_coordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMapRect> get_boundingMapRect() async {
+    final result = await _channel.invokeMethod("MAOverlay::get_boundingMapRect", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

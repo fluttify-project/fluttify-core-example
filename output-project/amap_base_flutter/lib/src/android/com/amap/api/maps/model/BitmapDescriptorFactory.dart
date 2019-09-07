@@ -10,6 +10,55 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<double> get_HUE_RED() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_RED", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_ORANGE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ORANGE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_YELLOW() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_YELLOW", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_GREEN() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_GREEN", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_CYAN() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_CYAN", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_AZURE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_AZURE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_BLUE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_BLUE", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_VIOLET() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_VIOLET", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_MAGENTA() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_MAGENTA", {'refId': refId});
+    return result;
+  }
+  
+  Future<double> get_HUE_ROSE() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.BitmapDescriptorFactory::get_HUE_ROSE", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

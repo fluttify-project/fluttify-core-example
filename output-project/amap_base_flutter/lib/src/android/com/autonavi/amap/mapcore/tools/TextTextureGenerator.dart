@@ -10,6 +10,15 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_CHAR_MAX() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.TextTextureGenerator::get_CHAR_MAX", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_MIN_DIFF_SIZE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.tools.TextTextureGenerator::get_MIN_DIFF_SIZE", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

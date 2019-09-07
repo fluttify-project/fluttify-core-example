@@ -10,6 +10,11 @@ class MAMultiPoint extends MAShape {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMapPoint> get_points() async {
+    final result = await _channel.invokeMethod("MAMultiPoint::get_points", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_cross180Longitude() async {
     final result = await _channel.invokeMethod("MAMultiPoint::get_cross180Longitude", {'refId': refId});
     return result;

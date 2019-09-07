@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAParticleSinglePointShapeModule extends Ref_iOS {
+class MAParticleSinglePointShapeModule extends NSObject {
   MAParticleSinglePointShapeModule.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');

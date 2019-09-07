@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class AMapNaviConfig extends Ref_iOS {
+class AMapNaviConfig extends NSObject {
   AMapNaviConfig.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
@@ -17,6 +17,11 @@ class AMapNaviConfig extends Ref_iOS {
   
   Future<String> get_appName() async {
     final result = await _channel.invokeMethod("AMapNaviConfig::get_appName", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_destination() async {
+    final result = await _channel.invokeMethod("AMapNaviConfig::get_destination", {'refId': refId});
     return result;
   }
   
@@ -33,6 +38,10 @@ class AMapNaviConfig extends Ref_iOS {
   
   Future<void> set_appName(String appName) async {
     await _channel.invokeMethod('AMapNaviConfig::set_appName', {'refId': refId, "appName": appName});
+  }
+  
+  Future<void> set_destination(CLLocationCoordinate2D destination) async {
+    await _channel.invokeMethod('AMapNaviConfig::set_destination', {'refId': refId, "destination": destination});
   }
   
   Future<void> set_strategy(AMapDrivingStrategy strategy) async {

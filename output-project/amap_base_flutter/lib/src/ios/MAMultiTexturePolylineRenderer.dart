@@ -10,6 +10,10 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMultiPolyline> get_multiPolyline() async {
+    final result = await _channel.invokeMethod("MAMultiTexturePolylineRenderer::get_multiPolyline", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

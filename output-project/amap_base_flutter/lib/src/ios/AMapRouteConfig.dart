@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class AMapRouteConfig extends Ref_iOS {
+class AMapRouteConfig extends NSObject {
   AMapRouteConfig.withRefId(int refId): super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
@@ -17,6 +17,16 @@ class AMapRouteConfig extends Ref_iOS {
   
   Future<String> get_appName() async {
     final result = await _channel.invokeMethod("AMapRouteConfig::get_appName", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_startCoordinate() async {
+    final result = await _channel.invokeMethod("AMapRouteConfig::get_startCoordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_destinationCoordinate() async {
+    final result = await _channel.invokeMethod("AMapRouteConfig::get_destinationCoordinate", {'refId': refId});
     return result;
   }
   
@@ -43,6 +53,14 @@ class AMapRouteConfig extends Ref_iOS {
   
   Future<void> set_appName(String appName) async {
     await _channel.invokeMethod('AMapRouteConfig::set_appName', {'refId': refId, "appName": appName});
+  }
+  
+  Future<void> set_startCoordinate(CLLocationCoordinate2D startCoordinate) async {
+    await _channel.invokeMethod('AMapRouteConfig::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate});
+  }
+  
+  Future<void> set_destinationCoordinate(CLLocationCoordinate2D destinationCoordinate) async {
+    await _channel.invokeMethod('AMapRouteConfig::set_destinationCoordinate', {'refId': refId, "destinationCoordinate": destinationCoordinate});
   }
   
   Future<void> set_drivingStrategy(AMapDrivingStrategy drivingStrategy) async {

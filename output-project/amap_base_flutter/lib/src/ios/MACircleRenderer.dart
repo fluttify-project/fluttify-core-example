@@ -10,6 +10,10 @@ class MACircleRenderer extends MAOverlayPathRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MACircle> get_circle() async {
+    final result = await _channel.invokeMethod("MACircleRenderer::get_circle", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

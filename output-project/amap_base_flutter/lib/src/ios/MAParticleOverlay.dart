@@ -10,6 +10,10 @@ class MAParticleOverlay extends MAShape {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAParticleOverlayOptions> get_overlayOption() async {
+    final result = await _channel.invokeMethod("MAParticleOverlay::get_overlayOption", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

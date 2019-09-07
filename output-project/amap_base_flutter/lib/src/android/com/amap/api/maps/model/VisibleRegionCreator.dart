@@ -10,6 +10,10 @@ class com_amap_api_maps_model_VisibleRegionCreator extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_CONTENT_DESCRIPTION() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.VisibleRegionCreator::get_CONTENT_DESCRIPTION", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

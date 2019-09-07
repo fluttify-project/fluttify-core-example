@@ -427,6 +427,11 @@ class ObjectFactory_Android {
     return com_amap_api_maps_utils_SpatialRelationUtil.withRefId(refId);
   }
   
+  static Future<com_amap_api_maps_SwipeDismissCallBack> createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView(com_amap_api_maps_SwipeDismissView var1) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView', {"var1": var1.refId});
+    return com_amap_api_maps_SwipeDismissCallBack.withRefId(refId);
+  }
+  
   static Future<com_amap_api_maps_MapsInitializer> createcom_amap_api_maps_MapsInitializer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
     return com_amap_api_maps_MapsInitializer.withRefId(refId);
@@ -440,6 +445,11 @@ class ObjectFactory_Android {
   static Future<com_amap_api_maps_offlinemap_OfflineMapProvince> createcom_amap_api_maps_offlinemap_OfflineMapProvince__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__');
     return com_amap_api_maps_offlinemap_OfflineMapProvince.withRefId(refId);
+  }
+  
+  static Future<com_amap_api_maps_offlinemap_DownloadProgressView> createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context(android_content_Context var1) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context', {"var1": var1.refId});
+    return com_amap_api_maps_offlinemap_DownloadProgressView.withRefId(refId);
   }
   
   static Future<com_amap_api_maps_offlinemap_Province> createcom_amap_api_maps_offlinemap_Province__() async {
@@ -847,9 +857,29 @@ class ObjectFactory_Android {
     return com_amap_api_maps_model_IndoorBuildingInfo.withRefId(refId);
   }
   
+  static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context(android_content_Context var1) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context', {"var1": var1.refId});
+    return com_amap_api_maps_TextureMapView.withRefId(refId);
+  }
+  
+  static Future<com_amap_api_maps_TextureMapView> createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
+    return com_amap_api_maps_TextureMapView.withRefId(refId);
+  }
+  
   static Future<com_amap_api_maps_AMapUtils> createcom_amap_api_maps_AMapUtils__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_AMapUtils__');
     return com_amap_api_maps_AMapUtils.withRefId(refId);
+  }
+  
+  static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context(android_content_Context var1) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context', {"var1": var1.refId});
+    return com_amap_api_maps_MapView.withRefId(refId);
+  }
+  
+  static Future<com_amap_api_maps_MapView> createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions(android_content_Context var1, com_amap_api_maps_AMapOptions var2) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions', {"var1": var1.refId, "var2": var2.refId});
+    return com_amap_api_maps_MapView.withRefId(refId);
   }
   
   static Future<com_amap_api_trace_TraceLocation> createcom_amap_api_trace_TraceLocation__double__double__float__float__long(double var1, double var3, double var5, double var6, int var7) async {
@@ -870,22 +900,18 @@ class ObjectFactory_Android {
   
 }
 
-class android_content_Context {
-  android_content_Context.withRefId(this.refId);
-
-  final int refId;
+class android_content_Context extends Ref_Android {
+  android_content_Context.withRefId(int refId): super.withRefId(refId);
 }
 
 class android_app_Application extends android_content_Context {
-  android_app_Application.withRefId(int refId) : super.withRefId(refId);
+  android_app_Application.withRefId(int refId): super.withRefId(refId);
 }
 
 class android_app_Activity extends android_content_Context {
-  android_app_Activity.withRefId(int refId) : super.withRefId(refId);
+  android_app_Activity.withRefId(int refId): super.withRefId(refId);
 }
 
-class android_os_Bundle {
-  android_os_Bundle.withRefId(this.refId);
-
-  final int refId;
+class android_os_Bundle extends Ref_Android {
+  android_os_Bundle.withRefId(int refId): super.withRefId(refId);
 }

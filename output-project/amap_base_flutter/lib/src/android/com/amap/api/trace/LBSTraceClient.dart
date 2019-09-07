@@ -10,6 +10,35 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_TYPE_AMAP() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_TYPE_AMAP", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_TYPE_GPS() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_TYPE_GPS", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_TYPE_BAIDU() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_TYPE_BAIDU", {'refId': refId});
+    return result;
+  }
+  
+  Future<String> get_MIN_GRASP_POINT_ERROR() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_MIN_GRASP_POINT_ERROR", {'refId': refId});
+    return result;
+  }
+  
+  Future<String> get_LOCATE_TIMEOUT_ERROR() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_LOCATE_TIMEOUT_ERROR", {'refId': refId});
+    return result;
+  }
+  
+  Future<String> get_TRACE_SUCCESS() async {
+    final result = await _channel.invokeMethod("com.amap.api.trace.LBSTraceClient::get_TRACE_SUCCESS", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

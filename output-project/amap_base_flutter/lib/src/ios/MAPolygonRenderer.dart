@@ -10,6 +10,10 @@ class MAPolygonRenderer extends MAOverlayPathRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAPolygon> get_polygon() async {
+    final result = await _channel.invokeMethod("MAPolygonRenderer::get_polygon", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

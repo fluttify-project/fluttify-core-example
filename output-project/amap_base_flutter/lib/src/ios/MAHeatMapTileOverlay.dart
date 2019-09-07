@@ -20,6 +20,11 @@ class MAHeatMapTileOverlay extends MATileOverlay {
     return result;
   }
   
+  Future<MAHeatMapGradient> get_gradient() async {
+    final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_gradient", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_allowRetinaAdapting() async {
     final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_allowRetinaAdapting", {'refId': refId});
     return result;
@@ -33,6 +38,10 @@ class MAHeatMapTileOverlay extends MATileOverlay {
   
   Future<void> set_opacity(double opacity) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_opacity', {'refId': refId, "opacity": opacity});
+  }
+  
+  Future<void> set_gradient(MAHeatMapGradient gradient) async {
+    await _channel.invokeMethod('MAHeatMapTileOverlay::set_gradient', {'refId': refId, "gradient": gradient});
   }
   
   Future<void> set_allowRetinaAdapting(bool allowRetinaAdapting) async {

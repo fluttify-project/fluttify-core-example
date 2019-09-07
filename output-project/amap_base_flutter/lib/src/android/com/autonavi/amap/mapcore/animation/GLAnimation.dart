@@ -10,6 +10,55 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_INFINITE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_INFINITE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RESTART() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_RESTART", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_REVERSE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_REVERSE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_START_ON_FIRST_FRAME() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_START_ON_FIRST_FRAME", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ABSOLUTE() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_ABSOLUTE", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RELATIVE_TO_SELF() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_RELATIVE_TO_SELF", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_RELATIVE_TO_PARENT() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_RELATIVE_TO_PARENT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ZORDER_NORMAL() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_ZORDER_NORMAL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ZORDER_TOP() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_ZORDER_TOP", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_ZORDER_BOTTOM() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.animation.GLAnimation::get_ZORDER_BOTTOM", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters

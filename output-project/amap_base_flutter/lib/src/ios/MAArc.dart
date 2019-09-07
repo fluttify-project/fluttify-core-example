@@ -10,9 +10,39 @@ class MAArc extends MAShape {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<CLLocationCoordinate2D> get_startCoordinate() async {
+    final result = await _channel.invokeMethod("MAArc::get_startCoordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_passedCoordinate() async {
+    final result = await _channel.invokeMethod("MAArc::get_passedCoordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<CLLocationCoordinate2D> get_endCoordinate() async {
+    final result = await _channel.invokeMethod("MAArc::get_endCoordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMapRect> get_boundingMapRect() async {
+    final result = await _channel.invokeMethod("MAArc::get_boundingMapRect", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_startCoordinate(CLLocationCoordinate2D startCoordinate) async {
+    await _channel.invokeMethod('MAArc::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate});
+  }
+  
+  Future<void> set_passedCoordinate(CLLocationCoordinate2D passedCoordinate) async {
+    await _channel.invokeMethod('MAArc::set_passedCoordinate', {'refId': refId, "passedCoordinate": passedCoordinate});
+  }
+  
+  Future<void> set_endCoordinate(CLLocationCoordinate2D endCoordinate) async {
+    await _channel.invokeMethod('MAArc::set_endCoordinate', {'refId': refId, "endCoordinate": endCoordinate});
+  }
   
 
   // 生成方法们

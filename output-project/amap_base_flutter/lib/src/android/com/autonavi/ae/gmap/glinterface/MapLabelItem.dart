@@ -10,6 +10,31 @@ class com_autonavi_ae_gmap_glinterface_MapLabelItem extends Ref_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<int> get_LABEL_TYPE_NORMAL() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_LABEL_TYPE_NORMAL", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LABEL_TYPE_SCENIC() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_LABEL_TYPE_SCENIC", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LABEL_TYPE_INDOOR() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_LABEL_TYPE_INDOOR", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LABEL_TYPE_SEARCH_RESULT() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_LABEL_TYPE_SEARCH_RESULT", {'refId': refId});
+    return result;
+  }
+  
+  Future<int> get_LABEL_TYPE_OPENLAYER() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_LABEL_TYPE_OPENLAYER", {'refId': refId});
+    return result;
+  }
+  
   Future<String> get_name() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glinterface.MapLabelItem::get_name", {'refId': refId});
     return result;

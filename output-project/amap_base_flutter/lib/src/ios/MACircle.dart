@@ -10,9 +10,21 @@ class MACircle extends MAShape {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<CLLocationCoordinate2D> get_coordinate() async {
+    final result = await _channel.invokeMethod("MACircle::get_coordinate", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAMapRect> get_boundingMapRect() async {
+    final result = await _channel.invokeMethod("MACircle::get_boundingMapRect", {'refId': refId});
+    return result;
+  }
   
 
   // 生成setters
+  Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
+    await _channel.invokeMethod('MACircle::set_coordinate', {'refId': refId, "coordinate": coordinate});
+  }
   
 
   // 生成方法们

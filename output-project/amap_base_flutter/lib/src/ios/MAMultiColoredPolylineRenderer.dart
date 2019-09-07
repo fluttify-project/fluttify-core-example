@@ -10,6 +10,11 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<MAMultiPolyline> get_multiPolyline() async {
+    final result = await _channel.invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_gradient() async {
     final result = await _channel.invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
     return result;
