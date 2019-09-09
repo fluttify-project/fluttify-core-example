@@ -16,5 +16,34 @@ class MAPolyline extends MAMultiPoint {
   
 
   // 生成方法们
+   Future<bool> setPolylineWithPoints(MAMapPoint points, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAPolyline::setPolylineWithPoints', {"points": points.refId, "count": count, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<bool> setPolylineWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAPolyline::setPolylineWithCoordinates', {"coords": coords.refId, "count": count, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

@@ -23,6 +23,21 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android {
   
 
   // 生成方法们
+   Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::get([\'var1\':$var1])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.style.StyleItem::get', {"var1": var1, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_autonavi_ae_gmap_style_StyleElement.withRefId(result);
+  }
+  
    Future<String> put(com_autonavi_ae_gmap_style_StyleElement var2, int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');

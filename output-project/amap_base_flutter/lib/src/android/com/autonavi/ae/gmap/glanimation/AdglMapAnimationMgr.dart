@@ -76,7 +76,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
     return result;
   }
   
-   Future<String> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1, {void onFinish(), void onCancel()}) async {
+   Future<String> addAnimation(com_amap_api_maps_AMap_CancelableCallback var2, com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
   
@@ -119,7 +119,22 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android {
     return result;
   }
   
-   Future<String> setMapAnimationListener({void onMapAnimationFinish({void onFinish(), void onCancel()})}) async {
+   Future<com_amap_api_maps_AMap_CancelableCallback> getCancelCallback() async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::getCancelCallback([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::getCancelCallback', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_amap_api_maps_AMap_CancelableCallback.withRefId(result);
+  }
+  
+   Future<String> setMapAnimationListener(com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
   

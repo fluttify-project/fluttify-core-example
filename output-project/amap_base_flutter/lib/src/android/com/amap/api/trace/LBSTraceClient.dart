@@ -60,7 +60,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
     return com_amap_api_trace_LBSTraceClient.withRefId(result);
   }
   
-   Future<String> queryProcessedTrace(com_amap_api_trace_TraceLocation var2, int var1, int var3, {void onRequestFailed(int var1, String var2), void onTraceProcessing(int var1, int var2, com_amap_api_maps_model_LatLng var3), void onFinished(int var1, com_amap_api_maps_model_LatLng var2, int var3, int var4)}) async {
+   Future<String> queryProcessedTrace(com_amap_api_trace_TraceListener var4, com_amap_api_trace_TraceLocation var2, int var1, int var3) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
   
@@ -112,7 +112,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
     return result;
   }
   
-   Future<String> startTrace({void onTraceStatus(com_amap_api_trace_TraceLocation var1, com_amap_api_maps_model_LatLng var2, String var3)}) async {
+   Future<String> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::startTrace([])');
   

@@ -211,7 +211,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android {
     return result;
   }
   
-   Future<String> setMoveListener({void move(double var1)}) async {
+   Future<String> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
   

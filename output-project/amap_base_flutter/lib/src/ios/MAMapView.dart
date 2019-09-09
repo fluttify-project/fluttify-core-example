@@ -468,6 +468,21 @@ class MAMapView extends UIView {
     return MAMapStatus.withRefId(result);
   }
   
+   Future<String> setMapStatus(MAMapStatus status, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setMapStatus', {"status": status.refId, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
@@ -603,6 +618,21 @@ class MAMapView extends UIView {
     return result;
   }
   
+   Future<String> updateUserLocationRepresentation(MAUserLocationRepresentation representation) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::updateUserLocationRepresentation([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::updateUserLocationRepresentation', {"representation": representation.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<List> overlaysInLevel(MAOverlayLevel level) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
@@ -639,6 +669,21 @@ class MAMapView extends UIView {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('MAMapView::clearIndoorMapCache', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::setCustomMapStyleOptions([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::setCustomMapStyleOptions', {"styleOptions": styleOptions.refId, "refId": refId});
   
   
     // 接受原生回调

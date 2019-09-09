@@ -76,7 +76,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android {
     return result;
   }
   
-   Future<String> setGenerateCrossImageListener() async {
+   Future<String> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener([])');
   

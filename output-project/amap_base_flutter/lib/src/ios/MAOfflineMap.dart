@@ -66,6 +66,51 @@ class MAOfflineMap extends NSObject {
     return result;
   }
   
+   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::isDownloadingForItem', {"item": item.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<bool> pauseItem(MAOfflineItem item) async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::pauseItem', {"item": item.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> deleteItem(MAOfflineItem item) async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::deleteItem', {"item": item.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<String> cancelAll() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
@@ -87,6 +132,36 @@ class MAOfflineMap extends NSObject {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('MAOfflineMap::clearDisk', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<bool> isDownloadingForCity(MAOfflineCity city) async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::isDownloadingForCity', {"city": city.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> pause(MAOfflineCity city) async {
+    // 日志打印
+    print('fluttify-dart: MAOfflineMap@$refId::pause([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAOfflineMap::pause', {"city": city.refId, "refId": refId});
   
   
     // 接受原生回调

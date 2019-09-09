@@ -48,7 +48,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android {
   
 
   // 生成方法们
-   Future<String> setAnimationListener({void onAnimationStart(), void onAnimationEnd()}) async {
+   Future<String> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
   

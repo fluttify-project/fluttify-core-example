@@ -590,7 +590,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android {
     return result;
   }
   
-   Future<String> setAnimationListener({void onAnimationStart(), void onAnimationEnd()}) async {
+   Future<String> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setAnimationListener([])');
   

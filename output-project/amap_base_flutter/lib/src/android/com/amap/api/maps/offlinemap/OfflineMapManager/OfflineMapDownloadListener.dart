@@ -4,17 +4,13 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener extends Ref_Android {
+abstract class com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener extends Ref_Android {
   com_amap_api_maps_offlinemap_OfflineMapManager_OfflineMapDownloadListener.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  String onDownload(int var1, int var2, String var3);
   
-
-  // 生成setters
+  String onCheckUpdate(bool var1, String var2);
   
-
-  // 生成方法们
+  String onRemove(bool var1, String var2, String var3);
   
 }

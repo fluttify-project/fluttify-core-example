@@ -4,17 +4,11 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class com_autonavi_custom_IUnityCallback extends Ref_Android {
+abstract class com_autonavi_custom_IUnityCallback extends Ref_Android {
   com_autonavi_custom_IUnityCallback.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  String UnitySetGraphicsDevice(int var1);
   
-
-  // 生成setters
-  
-
-  // 生成方法们
+  String UnityRenderEvent(int var1);
   
 }

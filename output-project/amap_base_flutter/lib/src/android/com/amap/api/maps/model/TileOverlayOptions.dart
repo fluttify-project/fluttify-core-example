@@ -16,7 +16,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider({void getTile(int var1, int var2, int var3), void getTileWidth(), void getTileHeight()}) async {
+   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider(com_amap_api_maps_model_TileProvider var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider([])');
   
@@ -171,6 +171,21 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
   
     // 返回值
     return com_amap_api_maps_model_TileOverlayOptions.withRefId(result);
+  }
+  
+   Future<com_amap_api_maps_model_TileProvider> getTileProvider() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getTileProvider([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_amap_api_maps_model_TileProvider.withRefId(result);
   }
   
    Future<double> getZIndex() async {

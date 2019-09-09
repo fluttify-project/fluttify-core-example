@@ -20,5 +20,34 @@ class MACustomBuildingOverlay extends MAShape {
   
 
   // 生成方法们
+   Future<String> addCustomOption(MACustomBuildingOverlayOption option) async {
+    // 日志打印
+    print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MACustomBuildingOverlay::addCustomOption', {"option": option.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> removeCustomOption(MACustomBuildingOverlayOption option) async {
+    // 日志打印
+    print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MACustomBuildingOverlay::removeCustomOption', {"option": option.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

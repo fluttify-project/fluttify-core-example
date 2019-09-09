@@ -226,7 +226,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android {
     return result;
   }
   
-   Future<String> setOnOfflineLoadedListener({void onVerifyComplete()}) async {
+   Future<String> setOnOfflineLoadedListener(com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::setOnOfflineLoadedListener([])');
   

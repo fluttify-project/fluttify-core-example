@@ -16,5 +16,34 @@ class MAPolygon extends MAMultiPoint {
   
 
   // 生成方法们
+   Future<bool> setPolygonWithPoints(MAMapPoint points, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithPoints', {"points": points.refId, "count": count, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<bool> setPolygonWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithCoordinates', {"coords": coords.refId, "count": count, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

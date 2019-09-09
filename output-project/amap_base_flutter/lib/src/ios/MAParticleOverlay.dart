@@ -20,5 +20,34 @@ class MAParticleOverlay extends MAShape {
   
 
   // 生成方法们
+  static Future<MAParticleOverlay> particleOverlayWithOption(MAParticleOverlayOptions option) async {
+    // 日志打印
+    print('fluttify-dart: MAParticleOverlay::particleOverlayWithOption([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAParticleOverlay::particleOverlayWithOption', {"option": option.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAParticleOverlay.withRefId(result);
+  }
+  
+   Future<String> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {
+    // 日志打印
+    print('fluttify-dart: MAParticleOverlay@$refId::updateOverlayOption([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAParticleOverlay::updateOverlayOption', {"overlayOption": overlayOption.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

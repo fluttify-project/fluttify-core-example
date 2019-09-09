@@ -4,17 +4,79 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAMapViewDelegate extends Ref_iOS {
+abstract class MAMapViewDelegate extends Ref_iOS {
   MAMapViewDelegate.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  String mapViewRegionChanged(MAMapView mapView);
   
-
-  // 生成setters
+  String mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated);
   
-
-  // 生成方法们
+  String mapViewRegionDidChangeAnimated(MAMapView mapView, bool animated);
+  
+  String mapViewMapWillMoveByUser(MAMapView mapView, bool wasUserAction);
+  
+  String mapViewMapDidMoveByUser(MAMapView mapView, bool wasUserAction);
+  
+  String mapViewMapWillZoomByUser(MAMapView mapView, bool wasUserAction);
+  
+  String mapViewMapDidZoomByUser(MAMapView mapView, bool wasUserAction);
+  
+  String mapViewWillStartLoadingMap(MAMapView mapView);
+  
+  String mapViewDidFinishLoadingMap(MAMapView mapView);
+  
+  String mapViewDidFailLoadingMapWithError(MAMapView mapView);
+  
+  MAAnnotationView mapViewViewForAnnotation(MAMapView mapView);
+  
+  String mapViewDidAddAnnotationViews(MAMapView mapView, List views);
+  
+  String mapViewDidSelectAnnotationView(MAMapView mapView, MAAnnotationView view);
+  
+  String mapViewDidDeselectAnnotationView(MAMapView mapView, MAAnnotationView view);
+  
+  String mapViewWillStartLocatingUser(MAMapView mapView);
+  
+  String mapViewDidStopLocatingUser(MAMapView mapView);
+  
+  String mapViewDidUpdateUserLocationupdatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation);
+  
+  String mapViewRequireLocationAuth();
+  
+  String mapViewDidFailToLocateUserWithError(MAMapView mapView);
+  
+  String mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState);
+  
+  MAOverlayRenderer mapViewRendererForOverlay(MAMapView mapView);
+  
+  String mapViewDidAddOverlayRenderers(MAMapView mapView, List overlayRenderers);
+  
+  String mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view);
+  
+  String mapViewDidAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view);
+  
+  String mapViewDidAnnotationViewTapped(MAMapView mapView, MAAnnotationView view);
+  
+  String mapViewDidChangeUserTrackingModeanimated(MAMapView mapView, MAUserTrackingMode mode, bool animated);
+  
+  String mapViewDidChangeOpenGLESDisabled(MAMapView mapView, bool openGLESDisabled);
+  
+  String mapViewDidTouchPois(MAMapView mapView, List pois);
+  
+  String mapViewDidSingleTappedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate);
+  
+  String mapViewDidLongPressedAtCoordinate(MAMapView mapView, CLLocationCoordinate2D coordinate);
+  
+  String mapInitComplete(MAMapView mapView);
+  
+  String mapViewDidIndoorMapShowed(MAMapView mapView, MAIndoorInfo indoorInfo);
+  
+  String mapViewDidIndoorMapFloorIndexChanged(MAMapView mapView, MAIndoorInfo indoorInfo);
+  
+  String mapViewDidIndoorMapHidden(MAMapView mapView, MAIndoorInfo indoorInfo);
+  
+  String offlineDataWillReload(MAMapView mapView);
+  
+  String offlineDataDidReload(MAMapView mapView);
   
 }

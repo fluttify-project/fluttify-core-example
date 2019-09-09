@@ -376,7 +376,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
     return result;
   }
   
-   Future<String> setMapListener({void afterDrawFrame(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2), void beforeDrawLabel(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterRendererOver(int var1, com_autonavi_ae_gmap_GLMapState var2), void afterAnimation()}) async {
+   Future<String> setMapListener(com_autonavi_amap_mapcore_interfaces_IAMapListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapListener([])');
   
@@ -536,7 +536,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
     return result;
   }
   
-   Future<String> addGroupAnimation(double var3, int var1, int var2, int var4, int var5, int var6, int var7, {void onFinish(), void onCancel()}) async {
+   Future<String> addGroupAnimation(com_amap_api_maps_AMap_CancelableCallback var8, double var3, int var1, int var2, int var4, int var5, int var6, int var7) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::addGroupAnimation([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6, \'var7\':$var7])');
   

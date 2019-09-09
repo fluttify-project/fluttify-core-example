@@ -16,7 +16,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android {
   
 
   // 生成方法们
-   Future<String> setNetworkListener({void networkStateChanged(android_content_Context var1)}) async {
+   Future<String> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
   

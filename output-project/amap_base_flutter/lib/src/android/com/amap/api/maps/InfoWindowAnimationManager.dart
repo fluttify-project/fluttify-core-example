@@ -16,7 +16,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android {
   
 
   // 生成方法们
-   Future<String> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, {void onAnimationStart(), void onAnimationEnd()}) async {
+   Future<String> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
   

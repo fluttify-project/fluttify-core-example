@@ -4,17 +4,13 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class com_amap_api_trace_TraceListener extends Ref_Android {
+abstract class com_amap_api_trace_TraceListener extends Ref_Android {
   com_amap_api_trace_TraceListener.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  String onRequestFailed(int var1, String var2);
   
-
-  // 生成setters
+  String onTraceProcessing(int var1, int var2, com_amap_api_maps_model_LatLng var3);
   
-
-  // 生成方法们
+  String onFinished(int var1, com_amap_api_maps_model_LatLng var2, int var3, int var4);
   
 }

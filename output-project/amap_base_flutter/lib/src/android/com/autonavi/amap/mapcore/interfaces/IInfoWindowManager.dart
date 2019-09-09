@@ -4,17 +4,23 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class com_autonavi_amap_mapcore_interfaces_IInfoWindowManager extends Ref_Android {
+abstract class com_autonavi_amap_mapcore_interfaces_IInfoWindowManager extends Ref_Android {
   com_autonavi_amap_mapcore_interfaces_IInfoWindowManager.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  String setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2);
   
-
-  // 生成setters
+  String setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1);
   
-
-  // 生成方法们
+  String setInfoWindowBackColor(int var1);
+  
+  String setInfoWindowBackEnable(bool var1);
+  
+  String setInfoWindowBackScale(double var1, double var2);
+  
+  String setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1);
+  
+  String setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1);
+  
+  String startAnimation();
   
 }

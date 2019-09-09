@@ -4,17 +4,13 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAParticleSizeGenerate extends Ref_iOS {
+abstract class MAParticleSizeGenerate extends Ref_iOS {
   MAParticleSizeGenerate.withRefId(int refId): super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
-
-  // 生成getters
+  double getSizeX(double timeFrame);
   
-
-  // 生成setters
+  double getSizeY(double timeFrame);
   
-
-  // 生成方法们
+  double getSizeZ(double timeFrame);
   
 }

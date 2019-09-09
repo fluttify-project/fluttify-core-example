@@ -76,7 +76,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android {
     return result;
   }
   
-   Future<String> setGenerateCrossImageListener() async {
+   Future<String> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setGenerateCrossImageListener([])');
   
