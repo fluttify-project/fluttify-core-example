@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMultiPolyline extends MAPolyline {
-  MAMultiPolyline.withRefId(int refId): super.withRefId(refId);
+  MAMultiPolyline.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

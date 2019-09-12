@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 abstract class MAParticleSizeGenerate extends Ref_iOS {
-  MAParticleSizeGenerate.withRefId(int refId): super.withRefId(refId);
+  MAParticleSizeGenerate.withRefId(int refId) : super.withRefId(refId);
 
   double getSizeX(double timeFrame);
   

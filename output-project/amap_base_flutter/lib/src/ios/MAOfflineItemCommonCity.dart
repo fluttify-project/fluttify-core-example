@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAOfflineItemCommonCity extends MAOfflineCity {
-  MAOfflineItemCommonCity.withRefId(int refId): super.withRefId(refId);
+  MAOfflineItemCommonCity.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -18,7 +18,7 @@ class MAOfflineItemCommonCity extends MAOfflineCity {
 
   // 生成setters
   Future<void> set_province(MAOfflineItem province) async {
-    await _channel.invokeMethod('MAOfflineItemCommonCity::set_province', {'refId': refId, "province": province});
+    await _channel.invokeMethod('MAOfflineItemCommonCity::set_province', {'refId': refId, "province": province.refId});
   }
   
 

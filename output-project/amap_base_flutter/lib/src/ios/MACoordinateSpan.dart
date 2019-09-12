@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MACoordinateSpan extends Ref_iOS {
-  MACoordinateSpan.withRefId(int refId): super.withRefId(refId);
+  MACoordinateSpan.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

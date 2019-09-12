@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMultiPointOverlayRenderer extends MAOverlayRenderer {
-  MAMultiPointOverlayRenderer.withRefId(int refId): super.withRefId(refId);
+  MAMultiPointOverlayRenderer.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -23,7 +23,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer {
 
   // 生成setters
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
-    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate});
+    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate.refId});
   }
   
 

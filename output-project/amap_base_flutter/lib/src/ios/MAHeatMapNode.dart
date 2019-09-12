@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAHeatMapNode extends NSObject {
-  MAHeatMapNode.withRefId(int refId): super.withRefId(refId);
+  MAHeatMapNode.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -23,7 +23,7 @@ class MAHeatMapNode extends NSObject {
 
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
-    await _channel.invokeMethod('MAHeatMapNode::set_coordinate', {'refId': refId, "coordinate": coordinate});
+    await _channel.invokeMethod('MAHeatMapNode::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
   }
   
   Future<void> set_intensity(double intensity) async {

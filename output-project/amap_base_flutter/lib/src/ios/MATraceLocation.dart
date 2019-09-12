@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MATraceLocation extends NSObject {
-  MATraceLocation.withRefId(int refId): super.withRefId(refId);
+  MATraceLocation.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -33,7 +33,7 @@ class MATraceLocation extends NSObject {
 
   // 生成setters
   Future<void> set_loc(CLLocationCoordinate2D loc) async {
-    await _channel.invokeMethod('MATraceLocation::set_loc', {'refId': refId, "loc": loc});
+    await _channel.invokeMethod('MATraceLocation::set_loc', {'refId': refId, "loc": loc.refId});
   }
   
   Future<void> set_angle(double angle) async {

@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAParticleOverlay extends MAShape {
-  MAParticleOverlay.withRefId(int refId): super.withRefId(refId);
+  MAParticleOverlay.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

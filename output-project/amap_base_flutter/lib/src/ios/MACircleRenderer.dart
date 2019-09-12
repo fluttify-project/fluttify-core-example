@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MACircleRenderer extends MAOverlayPathRenderer {
-  MACircleRenderer.withRefId(int refId): super.withRefId(refId);
+  MACircleRenderer.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

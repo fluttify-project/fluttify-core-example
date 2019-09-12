@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMapStatus extends NSObject {
-  MAMapStatus.withRefId(int refId): super.withRefId(refId);
+  MAMapStatus.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -33,7 +33,7 @@ class MAMapStatus extends NSObject {
 
   // 生成setters
   Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
-    await _channel.invokeMethod('MAMapStatus::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate});
+    await _channel.invokeMethod('MAMapStatus::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate.refId});
   }
   
   Future<void> set_zoomLevel(double zoomLevel) async {

@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMultiPointItem extends NSObject {
-  MAMultiPointItem.withRefId(int refId): super.withRefId(refId);
+  MAMultiPointItem.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -33,7 +33,7 @@ class MAMultiPointItem extends NSObject {
 
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
-    await _channel.invokeMethod('MAMultiPointItem::set_coordinate', {'refId': refId, "coordinate": coordinate});
+    await _channel.invokeMethod('MAMultiPointItem::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
   }
   
   Future<void> set_customID(String customID) async {

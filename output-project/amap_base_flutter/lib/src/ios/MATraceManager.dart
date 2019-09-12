@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MATraceManager extends NSObject {
-  MATraceManager.withRefId(int refId): super.withRefId(refId);
+  MATraceManager.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -18,7 +18,7 @@ class MATraceManager extends NSObject {
 
   // 生成setters
   Future<void> set_delegate(MATraceDelegate delegate) async {
-    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate});
+    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
   }
   
 

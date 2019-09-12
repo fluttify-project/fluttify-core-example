@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAArc extends MAShape {
-  MAArc.withRefId(int refId): super.withRefId(refId);
+  MAArc.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -33,15 +33,15 @@ class MAArc extends MAShape {
 
   // 生成setters
   Future<void> set_startCoordinate(CLLocationCoordinate2D startCoordinate) async {
-    await _channel.invokeMethod('MAArc::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate});
+    await _channel.invokeMethod('MAArc::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate.refId});
   }
   
   Future<void> set_passedCoordinate(CLLocationCoordinate2D passedCoordinate) async {
-    await _channel.invokeMethod('MAArc::set_passedCoordinate', {'refId': refId, "passedCoordinate": passedCoordinate});
+    await _channel.invokeMethod('MAArc::set_passedCoordinate', {'refId': refId, "passedCoordinate": passedCoordinate.refId});
   }
   
   Future<void> set_endCoordinate(CLLocationCoordinate2D endCoordinate) async {
-    await _channel.invokeMethod('MAArc::set_endCoordinate', {'refId': refId, "endCoordinate": endCoordinate});
+    await _channel.invokeMethod('MAArc::set_endCoordinate', {'refId': refId, "endCoordinate": endCoordinate.refId});
   }
   
 

@@ -901,17 +901,17 @@ class ObjectFactory_Android {
 }
 
 class android_content_Context extends Ref_Android {
-  android_content_Context.withRefId(int refId): super.withRefId(refId);
+  android_content_Context.withRefId(int refId)  : super.withRefId(refId);
 }
 
 class android_app_Application extends android_content_Context {
-  android_app_Application.withRefId(int refId): super.withRefId(refId);
+  android_app_Application.withRefId(int refId) : super.withRefId(refId);
 }
 
 class android_app_Activity extends android_content_Context {
-  android_app_Activity.withRefId(int refId): super.withRefId(refId);
+  android_app_Activity.withRefId(int refId) : super.withRefId(refId);
 }
 
 class android_os_Bundle extends Ref_Android {
-  android_os_Bundle.withRefId(int refId): super.withRefId(refId);
+  android_os_Bundle.withRefId(int refId) : super.withRefId(refId);
 }

@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAParticleOverlayOptions extends NSObject {
-  MAParticleOverlayOptions.withRefId(int refId): super.withRefId(refId);
+  MAParticleOverlayOptions.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -65,23 +65,23 @@ class MAParticleOverlayOptions extends NSObject {
   }
   
   Future<void> set_particleStartColor(MAParticleColorGenerate particleStartColor) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": particleStartColor});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": particleStartColor.refId});
   }
   
   Future<void> set_particleStartSpeed(MAParticleVelocityGenerate particleStartSpeed) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": particleStartSpeed});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": particleStartSpeed.refId});
   }
   
   Future<void> set_particleEmissionModule(MAParticleEmissionModule particleEmissionModule) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleEmissionModule', {'refId': refId, "particleEmissionModule": particleEmissionModule});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleEmissionModule', {'refId': refId, "particleEmissionModule": particleEmissionModule.refId});
   }
   
   Future<void> set_particleShapeModule(MAParticleShapeModule particleShapeModule) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": particleShapeModule});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": particleShapeModule.refId});
   }
   
   Future<void> set_particleOverLifeModule(MAParticleOverLifeModule particleOverLifeModule) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleOverLifeModule', {'refId': refId, "particleOverLifeModule": particleOverLifeModule});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleOverLifeModule', {'refId': refId, "particleOverLifeModule": particleOverLifeModule.refId});
   }
   
 

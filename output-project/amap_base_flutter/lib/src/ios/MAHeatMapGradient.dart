@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAHeatMapGradient extends NSObject {
-  MAHeatMapGradient.withRefId(int refId): super.withRefId(refId);
+  MAHeatMapGradient.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 

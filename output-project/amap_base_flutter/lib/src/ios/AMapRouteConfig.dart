@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class AMapRouteConfig extends NSObject {
-  AMapRouteConfig.withRefId(int refId): super.withRefId(refId);
+  AMapRouteConfig.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -56,11 +56,11 @@ class AMapRouteConfig extends NSObject {
   }
   
   Future<void> set_startCoordinate(CLLocationCoordinate2D startCoordinate) async {
-    await _channel.invokeMethod('AMapRouteConfig::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate});
+    await _channel.invokeMethod('AMapRouteConfig::set_startCoordinate', {'refId': refId, "startCoordinate": startCoordinate.refId});
   }
   
   Future<void> set_destinationCoordinate(CLLocationCoordinate2D destinationCoordinate) async {
-    await _channel.invokeMethod('AMapRouteConfig::set_destinationCoordinate', {'refId': refId, "destinationCoordinate": destinationCoordinate});
+    await _channel.invokeMethod('AMapRouteConfig::set_destinationCoordinate', {'refId': refId, "destinationCoordinate": destinationCoordinate.refId});
   }
   
   Future<void> set_drivingStrategy(AMapDrivingStrategy drivingStrategy) async {

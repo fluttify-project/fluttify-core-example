@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAAnnotationView extends UIView {
-  MAAnnotationView.withRefId(int refId): super.withRefId(refId);
+  MAAnnotationView.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -77,11 +77,11 @@ class MAAnnotationView extends UIView {
   }
   
   Future<void> set_annotation(MAAnnotation annotation) async {
-    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": annotation});
+    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": annotation.refId});
   }
   
   Future<void> set_customCalloutView(MACustomCalloutView customCalloutView) async {
-    await _channel.invokeMethod('MAAnnotationView::set_customCalloutView', {'refId': refId, "customCalloutView": customCalloutView});
+    await _channel.invokeMethod('MAAnnotationView::set_customCalloutView', {'refId': refId, "customCalloutView": customCalloutView.refId});
   }
   
   Future<void> set_enabled(bool enabled) async {
@@ -101,11 +101,11 @@ class MAAnnotationView extends UIView {
   }
   
   Future<void> set_leftCalloutAccessoryView(UIView leftCalloutAccessoryView) async {
-    await _channel.invokeMethod('MAAnnotationView::set_leftCalloutAccessoryView', {'refId': refId, "leftCalloutAccessoryView": leftCalloutAccessoryView});
+    await _channel.invokeMethod('MAAnnotationView::set_leftCalloutAccessoryView', {'refId': refId, "leftCalloutAccessoryView": leftCalloutAccessoryView.refId});
   }
   
   Future<void> set_rightCalloutAccessoryView(UIView rightCalloutAccessoryView) async {
-    await _channel.invokeMethod('MAAnnotationView::set_rightCalloutAccessoryView', {'refId': refId, "rightCalloutAccessoryView": rightCalloutAccessoryView});
+    await _channel.invokeMethod('MAAnnotationView::set_rightCalloutAccessoryView', {'refId': refId, "rightCalloutAccessoryView": rightCalloutAccessoryView.refId});
   }
   
   Future<void> set_draggable(bool draggable) async {

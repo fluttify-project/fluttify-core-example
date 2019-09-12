@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MATileOverlay extends NSObject {
-  MATileOverlay.withRefId(int refId): super.withRefId(refId);
+  MATileOverlay.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -55,7 +55,7 @@ class MATileOverlay extends NSObject {
   }
   
   Future<void> set_boundingMapRect(MAMapRect boundingMapRect) async {
-    await _channel.invokeMethod('MATileOverlay::set_boundingMapRect', {'refId': refId, "boundingMapRect": boundingMapRect});
+    await _channel.invokeMethod('MATileOverlay::set_boundingMapRect', {'refId': refId, "boundingMapRect": boundingMapRect.refId});
   }
   
   Future<void> set_disableOffScreenTileLoading(bool disableOffScreenTileLoading) async {

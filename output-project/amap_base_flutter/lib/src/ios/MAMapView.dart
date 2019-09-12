@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMapView extends UIView {
-  MAMapView.withRefId(int refId): super.withRefId(refId);
+  MAMapView.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -218,7 +218,7 @@ class MAMapView extends UIView {
 
   // 生成setters
   Future<void> set_delegate(MAMapViewDelegate delegate) async {
-    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate});
+    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate.refId});
   }
   
   Future<void> set_mapType(MAMapType mapType) async {
@@ -226,23 +226,23 @@ class MAMapView extends UIView {
   }
   
   Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
-    await _channel.invokeMethod('MAMapView::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate});
+    await _channel.invokeMethod('MAMapView::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate.refId});
   }
   
   Future<void> set_region(MACoordinateRegion region) async {
-    await _channel.invokeMethod('MAMapView::set_region', {'refId': refId, "region": region});
+    await _channel.invokeMethod('MAMapView::set_region', {'refId': refId, "region": region.refId});
   }
   
   Future<void> set_visibleMapRect(MAMapRect visibleMapRect) async {
-    await _channel.invokeMethod('MAMapView::set_visibleMapRect', {'refId': refId, "visibleMapRect": visibleMapRect});
+    await _channel.invokeMethod('MAMapView::set_visibleMapRect', {'refId': refId, "visibleMapRect": visibleMapRect.refId});
   }
   
   Future<void> set_limitRegion(MACoordinateRegion limitRegion) async {
-    await _channel.invokeMethod('MAMapView::set_limitRegion', {'refId': refId, "limitRegion": limitRegion});
+    await _channel.invokeMethod('MAMapView::set_limitRegion', {'refId': refId, "limitRegion": limitRegion.refId});
   }
   
   Future<void> set_limitMapRect(MAMapRect limitMapRect) async {
-    await _channel.invokeMethod('MAMapView::set_limitMapRect', {'refId': refId, "limitMapRect": limitMapRect});
+    await _channel.invokeMethod('MAMapView::set_limitMapRect', {'refId': refId, "limitMapRect": limitMapRect.refId});
   }
   
   Future<void> set_zoomLevel(double zoomLevel) async {

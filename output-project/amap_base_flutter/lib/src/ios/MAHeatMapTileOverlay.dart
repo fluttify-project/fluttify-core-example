@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAHeatMapTileOverlay extends MATileOverlay {
-  MAHeatMapTileOverlay.withRefId(int refId): super.withRefId(refId);
+  MAHeatMapTileOverlay.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -41,7 +41,7 @@ class MAHeatMapTileOverlay extends MATileOverlay {
   }
   
   Future<void> set_gradient(MAHeatMapGradient gradient) async {
-    await _channel.invokeMethod('MAHeatMapTileOverlay::set_gradient', {'refId': refId, "gradient": gradient});
+    await _channel.invokeMethod('MAHeatMapTileOverlay::set_gradient', {'refId': refId, "gradient": gradient.refId});
   }
   
   Future<void> set_allowRetinaAdapting(bool allowRetinaAdapting) async {
