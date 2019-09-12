@@ -32,15 +32,15 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_Callback::networkStateChanged':
-              if (networkStateChanged != null) {
+            [case 'com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_Callback::networkStateChanged':
+              if (var1.networkStateChanged != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_networkStateChanged([])');
         
                 // 调用回调方法
-                networkStateChanged(android_content_Context.withRefId(args['var1']));
+                var1.networkStateChanged(android_content_Context.withRefId(args['var1']));
               }
-              break;
+              break;]
             default:
               break;
           }

@@ -7,6 +7,6 @@ import 'package:flutter/services.dart';
 abstract class MAParticleColorGenerate extends Ref_iOS {
   MAParticleColorGenerate.withRefId(int refId): super.withRefId(refId);
 
-  float getColor();
+  double getColor();
   
 }

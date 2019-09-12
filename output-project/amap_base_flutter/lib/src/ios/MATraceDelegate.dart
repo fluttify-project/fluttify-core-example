@@ -7,8 +7,8 @@ import 'package:flutter/services.dart';
 abstract class MATraceDelegate extends Ref_iOS {
   MATraceDelegate.withRefId(int refId): super.withRefId(refId);
 
-  String traceManagerDidTracecorrectdistancewithError(MATraceManager manager, double distance);
+  String traceManagerDidTracecorrectdistancewithError(MATraceManager manager, List<CLLocation> locations, List<MATracePoint> tracePoints, double distance, NSError error);
   
-  String mapViewRequireLocationAuth();
+  String mapViewRequireLocationAuth(CLLocationManager locationManager);
   
 }

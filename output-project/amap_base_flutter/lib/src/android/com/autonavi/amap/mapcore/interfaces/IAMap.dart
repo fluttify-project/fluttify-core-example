@@ -131,7 +131,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IAMap extends Ref_Android {
   
   String removecache(com_amap_api_maps_AMap_OnCacheRemoveListener var1);
   
-  String setCustomRenderer();
+  String setCustomRenderer(com_amap_api_maps_CustomRenderer var1);
   
   String setCenterToPixel(int var1, int var2);
   
@@ -199,7 +199,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IAMap extends Ref_Android {
   
   String onActivityResume();
   
-  String queueEvent();
+  String queueEvent(com_autonavi_amap_mapcore_interfaces_Runnable var1);
   
   int createGLOverlay(int var1);
   
@@ -217,17 +217,17 @@ abstract class com_autonavi_amap_mapcore_interfaces_IAMap extends Ref_Android {
   
   String addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2);
   
-  String renderSurface();
+  String renderSurface(javax_microedition_khronos_opengles_GL10 var1);
   
-  String changeSurface(int var2, int var3);
+  String changeSurface(javax_microedition_khronos_opengles_GL10 var1, int var2, int var3);
   
-  String createSurface();
+  String createSurface(javax_microedition_khronos_opengles_GL10 var1, javax_microedition_khronos_egl_EGLConfig var2);
   
-  bool onTouchEvent();
+  bool onTouchEvent(android_view_MotionEvent var1);
   
   bool canStopMapRender();
   
-  String getLatLngRect();
+  String getLatLngRect(com_autonavi_amap_mapcore_interfaces_DPoint[] var1);
   
   String setCustomTextureResourcePath(String var1);
   
@@ -237,7 +237,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IAMap extends Ref_Android {
   
   String destroySurface(int var1);
   
-  String drawFrame();
+  String drawFrame(javax_microedition_khronos_opengles_GL10 var1);
   
   String requestRender();
   

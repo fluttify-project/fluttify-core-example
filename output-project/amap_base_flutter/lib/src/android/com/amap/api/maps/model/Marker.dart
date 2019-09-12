@@ -542,24 +542,23 @@ class com_amap_api_maps_model_Marker extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationStart':
-              if (onAnimationStart != null) {
+            [case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationStart':
+              if (var1.onAnimationStart != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.model.Marker::setAnimationListener_onAnimationStart([])');
         
                 // 调用回调方法
-                onAnimationStart();
+                var1.onAnimationStart();
               }
-              break;
-            case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationEnd':
-              if (onAnimationEnd != null) {
+              break;, case 'com.amap.api.maps.model.Marker::setAnimationListener_Callback::onAnimationEnd':
+              if (var1.onAnimationEnd != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.model.Marker::setAnimationListener_onAnimationEnd([])');
         
                 // 调用回调方法
-                onAnimationEnd();
+                var1.onAnimationEnd();
               }
-              break;
+              break;]
             default:
               break;
           }

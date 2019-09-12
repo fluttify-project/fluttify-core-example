@@ -40,7 +40,7 @@ class MAOfflineMap extends NSObject {
     return MAOfflineMap.withRefId(result);
   }
   
-   Future<String> setupWithCompletionBlock() async {
+   Future<String> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
   
@@ -56,7 +56,15 @@ class MAOfflineMap extends NSObject {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
+            case 'MAOfflineMap::setupWithCompletionBlock_Callback::block':
+              if (block != null) {
+                // 日志打印
         
+        
+                // 调用回调方法
+                block(args['setupSuccess']);
+              }
+              break;
             default:
               break;
           }

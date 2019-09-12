@@ -7,9 +7,9 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks extends Ref_Android {
   com_amap_api_maps_SwipeDismissTouchListener_DismissCallbacks.withRefId(int refId): super.withRefId(refId);
 
-  bool canDismiss();
+  bool canDismiss(com_amap_api_maps_Object var1);
   
-  String onDismiss(android_view_View var1);
+  String onDismiss(android_view_View var1, com_amap_api_maps_Object var2);
   
   String onNotifySwipe();
   

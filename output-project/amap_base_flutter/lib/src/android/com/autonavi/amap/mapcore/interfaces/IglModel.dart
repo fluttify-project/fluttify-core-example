@@ -31,7 +31,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IglModel extends Ref_Android
   
   bool isVisible();
   
-  String setObject();
+  String setObject(com_autonavi_amap_mapcore_interfaces_Object var1);
   
   com_autonavi_amap_mapcore_interfaces_Object getObject();
   

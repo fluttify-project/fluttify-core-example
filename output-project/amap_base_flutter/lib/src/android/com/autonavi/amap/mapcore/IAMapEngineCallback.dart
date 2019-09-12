@@ -21,7 +21,7 @@ abstract class com_autonavi_amap_mapcore_IAMapEngineCallback extends Ref_Android
   
   String onMapRender(int var1, int var2);
   
-  String cancelRequireMapData();
+  String cancelRequireMapData(com_autonavi_amap_mapcore_Object var1);
   
   String OnIndoorBuildingActivity(int var1, List<int> var2);
   

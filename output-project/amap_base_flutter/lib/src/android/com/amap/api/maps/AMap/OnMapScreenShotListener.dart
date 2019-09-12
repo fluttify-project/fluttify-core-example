@@ -7,8 +7,8 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_AMap_OnMapScreenShotListener extends Ref_Android {
   com_amap_api_maps_AMap_OnMapScreenShotListener.withRefId(int refId): super.withRefId(refId);
 
-  String onMapScreenShot();
+  String onMapScreenShot(android_graphics_Bitmap var1);
   
-  String onMapScreenShot(int var2);
+  String onMapScreenShot(android_graphics_Bitmap var1, int var2);
   
 }

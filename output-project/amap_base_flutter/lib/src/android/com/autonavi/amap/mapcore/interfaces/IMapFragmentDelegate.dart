@@ -17,7 +17,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate extends
   
   String onCreate(android_os_Bundle var1);
   
-  android_view_View onCreateView(android_os_Bundle var3);
+  android_view_View onCreateView(android_view_LayoutInflater var1, android_view_ViewGroup var2, android_os_Bundle var3);
   
   String onResume();
   

@@ -32,24 +32,23 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationStart':
-              if (onAnimationStart != null) {
+            [case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationStart':
+              if (var2.onAnimationStart != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_onAnimationStart([])');
         
                 // 调用回调方法
-                onAnimationStart();
+                var2.onAnimationStart();
               }
-              break;
-            case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationEnd':
-              if (onAnimationEnd != null) {
+              break;, case 'com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback::onAnimationEnd':
+              if (var2.onAnimationEnd != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_onAnimationEnd([])');
         
                 // 调用回调方法
-                onAnimationEnd();
+                var2.onAnimationEnd();
               }
-              break;
+              break;]
             default:
               break;
           }

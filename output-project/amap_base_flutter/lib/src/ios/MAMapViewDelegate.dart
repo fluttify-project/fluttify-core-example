@@ -25,9 +25,9 @@ abstract class MAMapViewDelegate extends Ref_iOS {
   
   String mapViewDidFinishLoadingMap(MAMapView mapView);
   
-  String mapViewDidFailLoadingMapWithError(MAMapView mapView);
+  String mapViewDidFailLoadingMapWithError(MAMapView mapView, NSError error);
   
-  MAAnnotationView mapViewViewForAnnotation(MAMapView mapView);
+  MAAnnotationView mapViewViewForAnnotation(MAMapView mapView, MAAnnotation annotation);
   
   String mapViewDidAddAnnotationViews(MAMapView mapView, List views);
   
@@ -41,17 +41,17 @@ abstract class MAMapViewDelegate extends Ref_iOS {
   
   String mapViewDidUpdateUserLocationupdatingLocation(MAMapView mapView, MAUserLocation userLocation, bool updatingLocation);
   
-  String mapViewRequireLocationAuth();
+  String mapViewRequireLocationAuth(CLLocationManager locationManager);
   
-  String mapViewDidFailToLocateUserWithError(MAMapView mapView);
+  String mapViewDidFailToLocateUserWithError(MAMapView mapView, NSError error);
   
   String mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView mapView, MAAnnotationView view, MAAnnotationViewDragState newState, MAAnnotationViewDragState oldState);
   
-  MAOverlayRenderer mapViewRendererForOverlay(MAMapView mapView);
+  MAOverlayRenderer mapViewRendererForOverlay(MAMapView mapView, MAOverlay overlay);
   
   String mapViewDidAddOverlayRenderers(MAMapView mapView, List overlayRenderers);
   
-  String mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view);
+  String mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView mapView, MAAnnotationView view, UIControl control);
   
   String mapViewDidAnnotationViewCalloutTapped(MAMapView mapView, MAAnnotationView view);
   

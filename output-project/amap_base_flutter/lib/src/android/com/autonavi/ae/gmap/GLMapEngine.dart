@@ -392,51 +392,47 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawFrame':
-              if (afterDrawFrame != null) {
+            [case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawFrame':
+              if (var1.afterDrawFrame != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterDrawFrame([\'var1\':$args[var1]])');
         
                 // 调用回调方法
-                afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+                var1.afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
               }
-              break;
-            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawLabel':
-              if (afterDrawLabel != null) {
+              break;, case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterDrawLabel':
+              if (var1.afterDrawLabel != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterDrawLabel([\'var1\':$args[var1]])');
         
                 // 调用回调方法
-                afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+                var1.afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
               }
-              break;
-            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::beforeDrawLabel':
-              if (beforeDrawLabel != null) {
+              break;, case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::beforeDrawLabel':
+              if (var1.beforeDrawLabel != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_beforeDrawLabel([\'var1\':$args[var1]])');
         
                 // 调用回调方法
-                beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+                var1.beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
               }
-              break;
-            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterRendererOver':
-              if (afterRendererOver != null) {
+              break;, case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterRendererOver':
+              if (var1.afterRendererOver != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterRendererOver([\'var1\':$args[var1]])');
         
                 // 调用回调方法
-                afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
+                var1.afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState.withRefId(args['var2']));
               }
-              break;
-            case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterAnimation':
-              if (afterAnimation != null) {
+              break;, case 'com.autonavi.ae.gmap.GLMapEngine::setMapListener_Callback::afterAnimation':
+              if (var1.afterAnimation != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::setMapListener_afterAnimation([])');
         
                 // 调用回调方法
-                afterAnimation();
+                var1.afterAnimation();
               }
-              break;
+              break;]
             default:
               break;
           }
@@ -552,24 +548,23 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onFinish':
-              if (onFinish != null) {
+            [case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onFinish':
+              if (var8.onFinish != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_onFinish([])');
         
                 // 调用回调方法
-                onFinish();
+                var8.onFinish();
               }
-              break;
-            case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onCancel':
-              if (onCancel != null) {
+              break;, case 'com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback::onCancel':
+              if (var8.onCancel != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_onCancel([])');
         
                 // 调用回调方法
-                onCancel();
+                var8.onCancel();
               }
-              break;
+              break;]
             default:
               break;
           }

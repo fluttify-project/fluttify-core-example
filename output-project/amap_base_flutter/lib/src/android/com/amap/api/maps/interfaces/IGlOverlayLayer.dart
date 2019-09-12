@@ -7,11 +7,11 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_interfaces_IGlOverlayLayer extends Ref_Android {
   com_amap_api_maps_interfaces_IGlOverlayLayer.withRefId(int refId): super.withRefId(refId);
 
-  String updateOption(String var1);
+  String updateOption(String var1, com_amap_api_maps_interfaces_Object var2);
   
   bool removeOverlay(String var1);
   
-  String prepareIcon();
+  String prepareIcon(com_amap_api_maps_interfaces_Object var1);
   
   int getCurrentParticleNum(String var1);
   

@@ -7,6 +7,6 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_AMap_onMapPrintScreenListener extends Ref_Android {
   com_amap_api_maps_AMap_onMapPrintScreenListener.withRefId(int refId): super.withRefId(refId);
 
-  String onMapPrint();
+  String onMapPrint(android_graphics_drawable_Drawable var1);
   
 }

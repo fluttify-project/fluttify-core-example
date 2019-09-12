@@ -242,15 +242,15 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_Callback::onVerifyComplete':
-              if (onVerifyComplete != null) {
+            [case 'com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_Callback::onVerifyComplete':
+              if (var1.onVerifyComplete != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_onVerifyComplete([])');
         
                 // 调用回调方法
-                onVerifyComplete();
+                var1.onVerifyComplete();
               }
-              break;
+              break;]
             default:
               break;
           }

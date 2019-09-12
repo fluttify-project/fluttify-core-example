@@ -246,15 +246,15 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener_Callback::move':
-              if (move != null) {
+            [case 'com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener_Callback::move':
+              if (var1.move != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener_move([\'var1\':$args[var1]])');
         
                 // 调用回调方法
-                move(args['var1']);
+                var1.move(args['var1']);
               }
-              break;
+              break;]
             default:
               break;
           }

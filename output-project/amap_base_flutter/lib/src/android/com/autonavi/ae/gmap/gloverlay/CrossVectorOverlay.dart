@@ -92,15 +92,15 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener_Callback::onGenerateComplete':
-              if (onGenerateComplete != null) {
+            [case 'com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener_Callback::onGenerateComplete':
+              if (var1.onGenerateComplete != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener_onGenerateComplete([\'var2\':$args[var2]])');
         
                 // 调用回调方法
-                onGenerateComplete(args['var2']);
+                var1.onGenerateComplete(android_graphics_Bitmap.withRefId(args['var1']), args['var2']);
               }
-              break;
+              break;]
             default:
               break;
           }

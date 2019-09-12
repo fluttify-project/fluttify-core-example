@@ -7,6 +7,6 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener extends Ref_Android {
   com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener.withRefId(int refId): super.withRefId(refId);
 
-  String onGenerateComplete(int var2);
+  String onGenerateComplete(android_graphics_Bitmap var1, int var2);
   
 }

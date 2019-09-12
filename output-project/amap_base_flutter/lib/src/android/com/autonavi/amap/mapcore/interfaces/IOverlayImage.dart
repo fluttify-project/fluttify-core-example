@@ -33,7 +33,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IOverlayImage extends Ref_An
   
   int hashCodeRemote();
   
-  String setObject();
+  String setObject(com_autonavi_amap_mapcore_interfaces_Object var1);
   
   com_autonavi_amap_mapcore_interfaces_Object getObject();
   

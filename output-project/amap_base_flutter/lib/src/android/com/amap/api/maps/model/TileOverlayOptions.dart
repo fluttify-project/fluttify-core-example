@@ -32,33 +32,31 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTile':
-              if (getTile != null) {
+            [case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTile':
+              if (var1.getTile != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTile([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
         
                 // 调用回调方法
-                getTile(args['var1'], args['var2'], args['var3']);
+                var1.getTile(args['var1'], args['var2'], args['var3']);
               }
-              break;
-            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileWidth':
-              if (getTileWidth != null) {
+              break;, case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileWidth':
+              if (var1.getTileWidth != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTileWidth([])');
         
                 // 调用回调方法
-                getTileWidth();
+                var1.getTileWidth();
               }
-              break;
-            case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileHeight':
-              if (getTileHeight != null) {
+              break;, case 'com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback::getTileHeight':
+              if (var1.getTileHeight != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.maps.model.TileOverlayOptions::tileProvider_getTileHeight([])');
         
                 // 调用回调方法
-                getTileHeight();
+                var1.getTileHeight();
               }
-              break;
+              break;]
             default:
               break;
           }

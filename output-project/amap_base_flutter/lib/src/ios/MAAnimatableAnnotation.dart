@@ -13,6 +13,6 @@ abstract class MAAnimatableAnnotation extends Ref_iOS {
   
   bool shouldAnimationStart();
   
-  CLLocationDirection rotateDegree();
+  double rotateDegree();
   
 }

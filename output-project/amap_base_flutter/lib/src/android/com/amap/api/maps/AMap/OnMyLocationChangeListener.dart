@@ -7,6 +7,6 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_AMap_OnMyLocationChangeListener extends Ref_Android {
   com_amap_api_maps_AMap_OnMyLocationChangeListener.withRefId(int refId): super.withRefId(refId);
 
-  String onMyLocationChange();
+  String onMyLocationChange(android_location_Location var1);
   
 }

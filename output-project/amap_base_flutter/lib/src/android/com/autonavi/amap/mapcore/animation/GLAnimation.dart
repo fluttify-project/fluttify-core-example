@@ -606,24 +606,23 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationStart':
-              if (onAnimationStart != null) {
+            [case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationStart':
+              if (var1.onAnimationStart != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_onAnimationStart([])');
         
                 // 调用回调方法
-                onAnimationStart();
+                var1.onAnimationStart();
               }
-              break;
-            case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationEnd':
-              if (onAnimationEnd != null) {
+              break;, case 'com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback::onAnimationEnd':
+              if (var1.onAnimationEnd != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_onAnimationEnd([])');
         
                 // 调用回调方法
-                onAnimationEnd();
+                var1.onAnimationEnd();
               }
-              break;
+              break;]
             default:
               break;
           }

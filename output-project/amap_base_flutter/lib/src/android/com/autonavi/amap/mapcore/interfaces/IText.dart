@@ -23,7 +23,7 @@ abstract class com_autonavi_amap_mapcore_interfaces_IText extends com_autonavi_a
   
   int getFontSize();
   
-  String setTypeface();
+  String setTypeface(android_graphics_Typeface var1);
   
   android_graphics_Typeface getTypeface();
   

@@ -7,6 +7,6 @@ import 'package:flutter/services.dart';
 abstract class com_amap_api_maps_AMap_OnMapTouchListener extends Ref_Android {
   com_amap_api_maps_AMap_OnMapTouchListener.withRefId(int refId): super.withRefId(refId);
 
-  String onTouch();
+  String onTouch(android_view_MotionEvent var1);
   
 }

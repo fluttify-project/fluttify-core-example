@@ -76,33 +76,31 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onRequestFailed':
-              if (onRequestFailed != null) {
+            [case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onRequestFailed':
+              if (var4.onRequestFailed != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onRequestFailed([\'var1\':$args[var1], \'var2\':$args[var2]])');
         
                 // 调用回调方法
-                onRequestFailed(args['var1'], args['var2']);
+                var4.onRequestFailed(args['var1'], args['var2']);
               }
-              break;
-            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onTraceProcessing':
-              if (onTraceProcessing != null) {
+              break;, case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onTraceProcessing':
+              if (var4.onTraceProcessing != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onTraceProcessing([\'var1\':$args[var1], \'var2\':$args[var2]])');
         
                 // 调用回调方法
-                onTraceProcessing(args['var1'], args['var2'], com_amap_api_maps_model_LatLng.withRefId(args['var3']));
+                var4.onTraceProcessing(args['var1'], args['var2'], com_amap_api_maps_model_LatLng.withRefId(args['var3']));
               }
-              break;
-            case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onFinished':
-              if (onFinished != null) {
+              break;, case 'com.amap.api.trace.LBSTraceClient::queryProcessedTrace_Callback::onFinished':
+              if (var4.onFinished != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::queryProcessedTrace_onFinished([\'var1\':$args[var1], \'var3\':$args[var3], \'var4\':$args[var4]])');
         
                 // 调用回调方法
-                onFinished(args['var1'], com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3'], args['var4']);
+                var4.onFinished(args['var1'], com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3'], args['var4']);
               }
-              break;
+              break;]
             default:
               break;
           }
@@ -128,15 +126,15 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android {
           if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'com.amap.api.trace.LBSTraceClient::startTrace_Callback::onTraceStatus':
-              if (onTraceStatus != null) {
+            [case 'com.amap.api.trace.LBSTraceClient::startTrace_Callback::onTraceStatus':
+              if (var1.onTraceStatus != null) {
                 // 日志打印
                 print('fluttify-dart-callback: com.amap.api.trace.LBSTraceClient::startTrace_onTraceStatus([\'var3\':$args[var3]])');
         
                 // 调用回调方法
-                onTraceStatus(com_amap_api_trace_TraceLocation.withRefId(args['var1']), com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3']);
+                var1.onTraceStatus(com_amap_api_trace_TraceLocation.withRefId(args['var1']), com_amap_api_maps_model_LatLng.withRefId(args['var2']), args['var3']);
               }
-              break;
+              break;]
             default:
               break;
           }

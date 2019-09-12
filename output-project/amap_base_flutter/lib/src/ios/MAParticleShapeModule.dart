@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 abstract class MAParticleShapeModule extends Ref_iOS {
   MAParticleShapeModule.withRefId(int refId): super.withRefId(refId);
 
-  float getPoint();
+  double getPoint();
   
   bool isRatioEnable();
   

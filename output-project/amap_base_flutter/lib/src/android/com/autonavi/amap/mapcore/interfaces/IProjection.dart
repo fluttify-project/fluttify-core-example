@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 abstract class com_autonavi_amap_mapcore_interfaces_IProjection extends Ref_Android {
   com_autonavi_amap_mapcore_interfaces_IProjection.withRefId(int refId): super.withRefId(refId);
 
-  com_amap_api_maps_model_LatLng fromScreenLocation();
+  com_amap_api_maps_model_LatLng fromScreenLocation(android_graphics_Point var1);
   
   android_graphics_Point toScreenLocation(com_amap_api_maps_model_LatLng var1);
   
