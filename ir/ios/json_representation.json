@@ -15,6 +15,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -107,6 +108,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -135,6 +137,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -160,6 +163,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -182,6 +186,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -265,6 +270,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -396,6 +402,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -495,6 +502,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -522,6 +530,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -621,6 +630,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOfflineItem",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -656,6 +666,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -674,6 +685,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -773,6 +785,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -1001,6 +1016,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1058,6 +1074,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -1080,6 +1097,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAAnnotationView",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1131,6 +1149,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1182,6 +1201,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "NSCopying"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -1265,6 +1287,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MATileOverlay",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1364,6 +1387,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1586,6 +1610,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1653,6 +1678,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -1820,6 +1848,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -1877,6 +1906,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -1966,6 +1998,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -2036,6 +2071,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "UIViewController",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -2082,6 +2118,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -2165,6 +2202,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -2325,6 +2365,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -2403,6 +2446,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -2546,6 +2592,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAPolylineRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -2635,6 +2682,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAPointAnnotation",
+          "interfaces": [
+            "MAAnimatableAnnotation"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -2823,6 +2873,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "MAAnnotation"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -2874,6 +2927,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAPolylineRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -2984,6 +3038,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOfflineItem",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3019,6 +3074,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3086,6 +3142,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -3109,6 +3166,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3240,6 +3298,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -3262,6 +3321,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -3285,6 +3345,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAPolyline",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -3428,6 +3489,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3495,6 +3557,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -3513,6 +3576,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAPolyline",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3713,6 +3777,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -3814,6 +3881,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -3972,6 +4040,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -4022,6 +4093,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -4143,6 +4215,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -4226,6 +4299,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -4389,6 +4463,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -4478,6 +4553,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -4577,6 +4653,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAAnnotation"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -4628,6 +4707,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -4652,6 +4732,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "UIView",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5031,6 +5112,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -5257,6 +5341,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -5275,6 +5360,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -5293,6 +5379,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "UIView",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5366,6 +5453,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5401,6 +5489,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -5428,6 +5517,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -5451,6 +5541,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5857,6 +5948,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5914,6 +6006,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -5971,6 +6064,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -5989,6 +6083,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6007,6 +6102,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6025,6 +6121,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6043,6 +6140,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6061,6 +6159,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6079,6 +6178,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6097,6 +6197,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6115,6 +6216,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6133,6 +6235,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6151,6 +6254,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6169,6 +6273,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6187,6 +6292,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6213,6 +6319,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -6236,6 +6343,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6285,6 +6395,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleVelocityGenerate"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6375,6 +6488,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6404,6 +6520,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleColorGenerate"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6514,6 +6633,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6543,6 +6665,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleRotationGenerate"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6583,6 +6708,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6665,6 +6793,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleSizeGenerate"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6725,6 +6856,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6775,6 +6907,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6814,6 +6949,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleShapeModule"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6884,6 +7022,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "MAParticleShapeModule"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -6964,6 +7105,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -7067,6 +7209,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -7278,6 +7421,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -7318,6 +7462,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -7340,6 +7485,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -7375,6 +7521,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAAnimatedAnnotation",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -7442,6 +7589,10 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "NSCopying",
+            "MAAnnotation"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -7525,6 +7676,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -7582,6 +7736,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -7744,6 +7899,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -7838,6 +7996,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [
+            "NSCoding"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -7889,6 +8050,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -7972,6 +8134,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAShape",
+          "interfaces": [
+            "MAOverlay"
+          ],
           "constructors": [],
           "fields": [
             {
@@ -8097,6 +8262,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "NSObject",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -8260,6 +8426,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -8284,6 +8451,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -8306,6 +8474,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -8329,6 +8498,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [],
           "constructors": [],
           "fields": [],
           "methods": [],
@@ -8350,6 +8520,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "UIView",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -11105,6 +11276,9 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "",
+          "interfaces": [
+            "NSObject"
+          ],
           "constructors": [],
           "fields": [],
           "methods": [
@@ -12200,6 +12374,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -12347,6 +12522,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {
@@ -12404,6 +12580,7 @@
           "isInnerClass": false,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
+          "interfaces": [],
           "constructors": [],
           "fields": [
             {

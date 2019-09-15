@@ -4,8 +4,9 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-abstract class MAOverlay extends Ref_iOS {
-  MAOverlay.withRefId(int refId) : super.withRefId(refId);
-
-  
+mixin MAOverlay on Ref_iOS {
+  @override
+  String setCoordinate(CLLocationCoordinate2D newCoordinate) {
+    return null;
+  }
 }

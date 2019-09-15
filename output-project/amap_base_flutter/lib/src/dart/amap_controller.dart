@@ -362,7 +362,13 @@ class AmapController {
 //
 //        map.addMarker(markerOption);
       },
-      ios: () async {},
+      ios: () async {
+        iosController.addAnnotation(MarkerAnnotation.withRefId(1));
+      },
     );
   }
+}
+
+class MarkerAnnotation extends MAPointAnnotation {
+  MarkerAnnotation.withRefId(int refId) : super.withRefId(refId);
 }

@@ -145,6 +145,10 @@ class NSError extends Ref_iOS {
   NSError.withRefId(int refId) : super.withRefId(refId);
 }
 
+mixin NSCoding on Ref_iOS {}
+
+mixin NSCopying on Ref_iOS {}
+
 class UIView extends Ref_iOS {
   UIView.withRefId(int refId) : super.withRefId(refId);
 }
