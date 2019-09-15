@@ -20,6 +20,21 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
+   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
+    // 日志打印
+    print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MATileOverlayRenderer::initWithTileOverlay', {"tileOverlay": tileOverlay.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MATileOverlayRenderer.withRefId(result);
+  }
+  
    Future<String> reloadData() async {
     // 日志打印
     print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');

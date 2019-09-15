@@ -16,5 +16,19 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   
 
   // 生成方法们
+   Future<MAParticleConstantRotationGenerate> initWithRotate(double rotate) async {
+    // 日志打印
+    print('fluttify-dart: MAParticleConstantRotationGenerate@$refId::initWithRotate([\'rotate\':$rotate])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAParticleConstantRotationGenerate::initWithRotate', {"rotate": rotate, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAParticleConstantRotationGenerate.withRefId(result);
+  }
   
 }

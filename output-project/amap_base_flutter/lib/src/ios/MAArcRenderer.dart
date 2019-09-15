@@ -20,5 +20,19 @@ class MAArcRenderer extends MAOverlayPathRenderer  {
   
 
   // 生成方法们
+   Future<MAArcRenderer> initWithArc(MAArc arc) async {
+    // 日志打印
+    print('fluttify-dart: MAArcRenderer@$refId::initWithArc([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAArcRenderer::initWithArc', {"arc": arc.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAArcRenderer.withRefId(result);
+  }
   
 }

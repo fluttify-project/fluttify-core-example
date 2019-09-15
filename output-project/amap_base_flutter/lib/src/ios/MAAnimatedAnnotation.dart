@@ -23,7 +23,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
 
   // 生成方法们
-   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates(CLLocationCoordinate2D coordinates, String name, double duration, int count, void completeCallback(bool isFinished)) async {
+   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates(CLLocationCoordinate2D coordinates, int count, double duration, String name, void completeCallback(bool isFinished)) async {
     // 日志打印
     print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
   

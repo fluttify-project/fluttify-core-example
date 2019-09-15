@@ -20,5 +20,19 @@ class MAMultiTexturePolylineRenderer extends MAPolylineRenderer  {
   
 
   // 生成方法们
+   Future<MAMultiTexturePolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
+    // 日志打印
+    print('fluttify-dart: MAMultiTexturePolylineRenderer@$refId::initWithMultiPolyline([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMultiTexturePolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAMultiTexturePolylineRenderer.withRefId(result);
+  }
   
 }

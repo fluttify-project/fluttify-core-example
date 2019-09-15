@@ -20,5 +20,19 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   
 
   // 生成方法们
+   Future<MAPolygonRenderer> initWithPolygon(MAPolygon polygon) async {
+    // 日志打印
+    print('fluttify-dart: MAPolygonRenderer@$refId::initWithPolygon([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAPolygonRenderer::initWithPolygon', {"polygon": polygon.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAPolygonRenderer.withRefId(result);
+  }
   
 }

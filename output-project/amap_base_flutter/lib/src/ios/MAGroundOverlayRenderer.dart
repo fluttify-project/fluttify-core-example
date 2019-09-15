@@ -20,5 +20,19 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
+   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
+    // 日志打印
+    print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAGroundOverlayRenderer::initWithGroundOverlay', {"groundOverlay": groundOverlay.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAGroundOverlayRenderer.withRefId(result);
+  }
   
 }

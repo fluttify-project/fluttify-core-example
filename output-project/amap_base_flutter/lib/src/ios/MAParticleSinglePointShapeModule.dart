@@ -16,5 +16,19 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
   
 
   // 生成方法们
+   Future<MAParticleSinglePointShapeModule> initWithShapeX(double x, double y, double z, bool isUseRatio) async {
+    // 日志打印
+    print('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAParticleSinglePointShapeModule.withRefId(result);
+  }
   
 }

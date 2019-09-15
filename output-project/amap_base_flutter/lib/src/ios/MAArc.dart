@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAArc extends MAShape with MAOverlay {
+class MAArc extends MAShape with MAAnnotation, MAOverlay {
   MAArc.withRefId(int refId) : super.withRefId(refId);
 
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
@@ -46,7 +46,7 @@ class MAArc extends MAShape with MAOverlay {
   
 
   // 生成方法们
-  static Future<MAArc> arcWithStartCoordinate(CLLocationCoordinate2D endCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D startCoordinate) async {
+  static Future<MAArc> arcWithStartCoordinate(CLLocationCoordinate2D startCoordinate, CLLocationCoordinate2D passedCoordinate, CLLocationCoordinate2D endCoordinate) async {
     // 日志打印
     print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
   

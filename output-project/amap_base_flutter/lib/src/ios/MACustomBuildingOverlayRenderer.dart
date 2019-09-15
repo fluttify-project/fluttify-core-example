@@ -20,5 +20,19 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
+   Future<MACustomBuildingOverlayRenderer> initWithCustomBuildingOverlay(MACustomBuildingOverlay customBuildingOverlay) async {
+    // 日志打印
+    print('fluttify-dart: MACustomBuildingOverlayRenderer@$refId::initWithCustomBuildingOverlay([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MACustomBuildingOverlayRenderer::initWithCustomBuildingOverlay', {"customBuildingOverlay": customBuildingOverlay.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MACustomBuildingOverlayRenderer.withRefId(result);
+  }
   
 }

@@ -248,7 +248,7 @@ class MAMapView extends UIView  {
 
   // 生成setters
   Future<void> set_delegate(MAMapViewDelegate delegate) async {
-    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate.refId});
+    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": ""});
   }
   
   Future<void> set_mapType(MAMapType mapType) async {
@@ -488,7 +488,7 @@ class MAMapView extends UIView  {
     return result;
   }
   
-   Future<String> setZoomLevel(bool animated, double zoomLevel) async {
+   Future<String> setZoomLevel(double zoomLevel, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
   
@@ -503,7 +503,7 @@ class MAMapView extends UIView  {
     return result;
   }
   
-   Future<String> setRotationDegree(bool animated, double duration, double rotationDegree) async {
+   Future<String> setRotationDegree(double rotationDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -518,7 +518,7 @@ class MAMapView extends UIView  {
     return result;
   }
   
-   Future<String> setCameraDegree(bool animated, double cameraDegree, double duration) async {
+   Future<String> setCameraDegree(double cameraDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -943,21 +943,6 @@ class MAMapView extends UIView  {
     return result;
   }
   
-   Future<List> overlaysInLevel(MAOverlayLevel level) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::overlaysInLevel', {"level": level.index, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return (result as List).cast<List>();
-  }
-  
    Future<String> addOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addOverlay([])');
@@ -994,32 +979,6 @@ class MAMapView extends UIView  {
   
     // 接受原生回调
     MethodChannel('MAMapView::removeOverlay_Callback' + refId.toString())
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-        
-            default:
-              break;
-          }
-        });
-  
-    // 返回值
-    return result;
-  }
-  
-   Future<String> insertOverlay(MAOverlay overlay, MAOverlayLevel level, int index) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::insertOverlay', {"index": index, "level": level.index, "refId": refId});
-  
-  
-    // 接受原生回调
-    MethodChannel('MAMapView::insertOverlay_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           final refId = args['callerRefId'] as int;

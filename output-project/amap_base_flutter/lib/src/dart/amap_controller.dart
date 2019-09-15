@@ -247,7 +247,7 @@ class AmapController {
 //        }
       },
       ios: () async {
-        await iosController.setZoomLevel(animated, level);
+        await iosController.setZoomLevel(level, animated);
       },
     );
   }
@@ -267,7 +267,7 @@ class AmapController {
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(animated, currentLevel + 1);
+        await iosController.setZoomLevel(currentLevel + 1, animated);
       },
     );
   }
@@ -287,7 +287,7 @@ class AmapController {
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
-        await iosController.setZoomLevel(animated, currentLevel - 1);
+        await iosController.setZoomLevel(currentLevel - 1, animated);
       },
     );
   }
@@ -363,12 +363,27 @@ class AmapController {
 //        map.addMarker(markerOption);
       },
       ios: () async {
-        iosController.addAnnotation(MarkerAnnotation.withRefId(1));
+        await iosController.set_delegate(MyDelegate.withRefId(1));
+        final pointAnnotation =
+            await ObjectFactory_iOS.createMAPointAnnotation();
+        final coordinate = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+            39.90960, 116.397228);
+        await pointAnnotation.set_title('test title');
+        await pointAnnotation.set_coordinate(coordinate);
+        await iosController.addAnnotation(pointAnnotation);
       },
     );
   }
 }
 
-class MarkerAnnotation extends MAPointAnnotation {
-  MarkerAnnotation.withRefId(int refId) : super.withRefId(refId);
+class MyDelegate extends NSObject with MAMapViewDelegate {
+  MyDelegate.withRefId(int refId) : super.withRefId(refId);
+
+  @override
+  Future<MAAnnotationView> mapViewViewForAnnotation(
+      MAMapView mapView, MAAnnotation annotation) async {
+    final annotationView = await ObjectFactory_iOS.createMAPinAnnotationView();
+    await annotationView.set_canShowCallout(true);
+    return annotationView;
+  }
 }

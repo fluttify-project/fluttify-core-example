@@ -18,7 +18,7 @@ class MATraceManager extends NSObject  {
 
   // 生成setters
   Future<void> set_delegate(MATraceDelegate delegate) async {
-    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
+    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": ""});
   }
   
 

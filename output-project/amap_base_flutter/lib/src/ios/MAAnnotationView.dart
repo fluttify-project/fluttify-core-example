@@ -87,7 +87,7 @@ class MAAnnotationView extends UIView  {
   }
   
   Future<void> set_annotation(MAAnnotation annotation) async {
-    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": annotation.refId});
+    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": ""});
   }
   
   Future<void> set_customCalloutView(MACustomCalloutView customCalloutView) async {
@@ -136,7 +136,7 @@ class MAAnnotationView extends UIView  {
   
 
   // 生成方法们
-   Future<String> setSelected(bool animated, bool selected) async {
+   Future<String> setSelected(bool selected, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
   

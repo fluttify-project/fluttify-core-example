@@ -28,5 +28,19 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
 
   // 生成方法们
+   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
+    // 日志打印
+    print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAMultiColoredPolylineRenderer.withRefId(result);
+  }
   
 }
