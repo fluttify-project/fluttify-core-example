@@ -1,6 +1,4 @@
 import 'package:amap_base_flutter/amap_base_flutter.dart';
-import 'package:amap_base_flutter/src/android/com/amap/api/maps/MapView.dart';
-import 'package:amap_base_flutter/src/android/object_factory.dart';
 import 'package:amap_base_flutter/src/ios/MAMapView.dart';
 
 import 'enums.dart';
@@ -10,19 +8,19 @@ class AmapController {
 
   AmapController.ios(this.iosController);
 
-  com_amap_api_maps_MapView androidController;
+  Object androidController;
   MAMapView iosController;
 
   /// 是否显示我的位置
   Future showMyLocation(bool show) async {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final locationStyle = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_MyLocationStyle__();
-        await locationStyle?.showMyLocation(show);
-        await map.setMyLocationStyle(locationStyle);
-        await map.setMyLocationEnabled(show);
+//        final map = await androidController.getMap();
+//        final locationStyle = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_MyLocationStyle__();
+//        await locationStyle?.showMyLocation(show);
+//        await map.setMyLocationStyle(locationStyle);
+//        await map.setMyLocationEnabled(show);
       },
       ios: () async {
         await iosController.set_showsUserLocation(show);
@@ -39,8 +37,8 @@ class AmapController {
   Future showIndoorMap(bool show) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        await map.showIndoorMap(show);
+//        final map = await androidController.getMap();
+//        await map.showIndoorMap(show);
       },
       ios: () async {
         await iosController.set_showsIndoorMap(show);
@@ -52,24 +50,24 @@ class AmapController {
   Future setMapType(MapType mapType) async {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        switch (mapType) {
-          case MapType.Standard:
-            await map.setMapType(1);
-            break;
-          case MapType.Satellite:
-            await map.setMapType(2);
-            break;
-          case MapType.Night:
-            await map.setMapType(3);
-            break;
-          case MapType.Navi:
-            await map.setMapType(4);
-            break;
-          case MapType.Bus:
-            await map.setMapType(5);
-            break;
-        }
+//        final map = await androidController.getMap();
+//        switch (mapType) {
+//          case MapType.Standard:
+//            await map.setMapType(1);
+//            break;
+//          case MapType.Satellite:
+//            await map.setMapType(2);
+//            break;
+//          case MapType.Night:
+//            await map.setMapType(3);
+//            break;
+//          case MapType.Navi:
+//            await map.setMapType(4);
+//            break;
+//          case MapType.Bus:
+//            await map.setMapType(5);
+//            break;
+//        }
       },
       ios: () async {
         switch (mapType) {
@@ -97,8 +95,8 @@ class AmapController {
   Future showTraffic(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        await map.setTrafficEnabled(enable);
+//        final map = await androidController.getMap();
+//        await map.setTrafficEnabled(enable);
       },
       ios: () async {
         await iosController.set_showTraffic(enable);
@@ -110,9 +108,9 @@ class AmapController {
   Future showZoomControl(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setZoomControlsEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setZoomControlsEnabled(enable);
       },
       ios: () async {
         print('ios端不支持显示缩放控件');
@@ -124,9 +122,9 @@ class AmapController {
   Future showCompass(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setCompassEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setCompassEnabled(enable);
       },
       ios: () async {
         await iosController.set_showsCompass(enable);
@@ -138,9 +136,9 @@ class AmapController {
   Future showLocateControl(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setMyLocationButtonEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setMyLocationButtonEnabled(enable);
       },
       ios: () async {
         print('ios端不支持显示定位按钮');
@@ -152,9 +150,9 @@ class AmapController {
   Future showScaleControl(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setScaleControlsEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setScaleControlsEnabled(enable);
       },
       ios: () async {
         await iosController.set_showsScale(enable);
@@ -166,9 +164,9 @@ class AmapController {
   Future setZoomGesturesEnabled(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setZoomGesturesEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setZoomGesturesEnabled(enable);
       },
       ios: () async {
         await iosController.set_zoomEnabled(enable);
@@ -180,9 +178,9 @@ class AmapController {
   Future setScrollGesturesEnabled(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setScrollGesturesEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setScrollGesturesEnabled(enable);
       },
       ios: () async {
         await iosController.set_scrollEnabled(enable);
@@ -194,9 +192,9 @@ class AmapController {
   Future setRotateGesturesEnabled(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setRotateGesturesEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setRotateGesturesEnabled(enable);
       },
       ios: () async {
         await iosController.set_rotateEnabled(enable);
@@ -208,9 +206,9 @@ class AmapController {
   Future setTiltGesturesEnabled(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setTiltGesturesEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setTiltGesturesEnabled(enable);
       },
       ios: () async {
         await iosController.set_rotateCameraEnabled(enable);
@@ -222,9 +220,9 @@ class AmapController {
   Future setAllGesturesEnabled(bool enable) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final uiSetting = await map.getUiSettings();
-        await uiSetting.setAllGesturesEnabled(enable);
+//        final map = await androidController.getMap();
+//        final uiSetting = await map.getUiSettings();
+//        await uiSetting.setAllGesturesEnabled(enable);
       },
       ios: () async {
         await iosController.set_zoomEnabled(enable);
@@ -239,14 +237,14 @@ class AmapController {
   Future setZoomLevel(double level, {bool animated = true}) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final cameraUpdate =
-            await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
-        if (animated) {
-          await map.animateCamera(cameraUpdate);
-        } else {
-          await map.moveCamera(cameraUpdate);
-        }
+//        final map = await androidController.getMap();
+//        final cameraUpdate =
+//            await com_amap_api_maps_CameraUpdateFactory.zoomTo(level);
+//        if (animated) {
+//          await map.animateCamera(cameraUpdate);
+//        } else {
+//          await map.moveCamera(cameraUpdate);
+//        }
       },
       ios: () async {
         await iosController.setZoomLevel(animated, level);
@@ -258,14 +256,14 @@ class AmapController {
   Future zoomIn({bool animated = true}) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final cameraUpdate =
-            await com_amap_api_maps_CameraUpdateFactory.zoomIn();
-        if (animated) {
-          await map.animateCamera(cameraUpdate);
-        } else {
-          await map.moveCamera(cameraUpdate);
-        }
+//        final map = await androidController.getMap();
+//        final cameraUpdate =
+//            await com_amap_api_maps_CameraUpdateFactory.zoomIn();
+//        if (animated) {
+//          await map.animateCamera(cameraUpdate);
+//        } else {
+//          await map.moveCamera(cameraUpdate);
+//        }
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
@@ -278,14 +276,14 @@ class AmapController {
   Future zoomOut({bool animated = true}) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-        final cameraUpdate =
-            await com_amap_api_maps_CameraUpdateFactory.zoomOut();
-        if (animated) {
-          await map.animateCamera(cameraUpdate);
-        } else {
-          await map.moveCamera(cameraUpdate);
-        }
+//        final map = await androidController.getMap();
+//        final cameraUpdate =
+//            await com_amap_api_maps_CameraUpdateFactory.zoomOut();
+//        if (animated) {
+//          await map.animateCamera(cameraUpdate);
+//        } else {
+//          await map.moveCamera(cameraUpdate);
+//        }
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
@@ -303,16 +301,16 @@ class AmapController {
   }) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-
-        final latLng = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
-        final cameraPosition = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
-                latLng, zoomLevel, 0, 0);
-        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
-            .newCameraPosition(cameraPosition);
-        await map.moveCamera(cameraUpdate);
+//        final map = await androidController.getMap();
+//
+//        final latLng = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+//        final cameraPosition = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float(
+//                latLng, zoomLevel, 0, 0);
+//        final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
+//            .newCameraPosition(cameraPosition);
+//        await map.moveCamera(cameraUpdate);
       },
       ios: () async {
         final latLng =
@@ -335,34 +333,34 @@ class AmapController {
   }) {
     return platform(
       android: () async {
-        final map = await androidController.getMap();
-
-        final latLng = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
-        final markerOption = await ObjectFactory_Android
-            .createcom_amap_api_maps_model_MarkerOptions__();
-
-        await markerOption.position(latLng);
-        if (title != null) {
-          await markerOption.title(title);
-        }
-        if (snippet != null) {
-          await markerOption.snippet(snippet);
-        }
-        if (draggable != null) {
-          await markerOption.draggable(draggable);
-        }
-        if (visible != null) {
-          await markerOption.visible(visible);
-        }
-        if (alpha != null) {
-          await markerOption.alpha(alpha);
-        }
-        if (anchorU != null || anchorV != null) {
-          await markerOption.anchor(anchorU, anchorV);
-        }
-
-        map.addMarker(markerOption);
+//        final map = await androidController.getMap();
+//
+//        final latLng = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
+//        final markerOption = await ObjectFactory_Android
+//            .createcom_amap_api_maps_model_MarkerOptions__();
+//
+//        await markerOption.position(latLng);
+//        if (title != null) {
+//          await markerOption.title(title);
+//        }
+//        if (snippet != null) {
+//          await markerOption.snippet(snippet);
+//        }
+//        if (draggable != null) {
+//          await markerOption.draggable(draggable);
+//        }
+//        if (visible != null) {
+//          await markerOption.visible(visible);
+//        }
+//        if (alpha != null) {
+//          await markerOption.alpha(alpha);
+//        }
+//        if (anchorU != null || anchorV != null) {
+//          await markerOption.anchor(anchorU, anchorV);
+//        }
+//
+//        map.addMarker(markerOption);
       },
       ios: () async {},
     );

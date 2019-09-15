@@ -46,6 +46,21 @@ class MAAnnotationMoveAnimation extends NSObject {
     return CLLocationCoordinate2D.withRefId(result);
   }
   
+   Future<int> count() async {
+    // 日志打印
+    print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnnotationMoveAnimation::count', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<double> duration() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');

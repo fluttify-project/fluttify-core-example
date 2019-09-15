@@ -15,6 +15,11 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer {
     return result;
   }
   
+  Future<CGPoint> get_anchor() async {
+    final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_anchor", {'refId': refId});
+    return result;
+  }
+  
   Future<MAMultiPointOverlay> get_multiPointOverlay() async {
     final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_multiPointOverlay", {'refId': refId});
     return result;
@@ -24,6 +29,10 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer {
   // 生成setters
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
     await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate.refId});
+  }
+  
+  Future<void> set_anchor(CGPoint anchor) async {
+    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_anchor', {'refId': refId, "anchor": anchor.refId});
   }
   
 

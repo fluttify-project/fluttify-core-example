@@ -16,6 +16,36 @@ class MAGeodesicPolyline extends MAPolyline {
   
 
   // 生成方法们
+  static Future<MAGeodesicPolyline> polylineWithPoints(MAMapPoint points, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAGeodesicPolyline::polylineWithPoints([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAGeodesicPolyline::polylineWithPoints', {"points": points.refId, "count": count});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAGeodesicPolyline.withRefId(result);
+  }
+  
+  static Future<MAGeodesicPolyline> polylineWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+    // 日志打印
+    print('fluttify-dart: MAGeodesicPolyline::polylineWithCoordinates([\'count\':$count])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAGeodesicPolyline::polylineWithCoordinates', {"coords": coords.refId, "count": count});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAGeodesicPolyline.withRefId(result);
+  }
+  
    Future<bool> setPolylineWithPoints(MAMapPoint points, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');

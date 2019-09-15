@@ -30,6 +30,11 @@ class MAMapStatus extends NSObject {
     return result;
   }
   
+  Future<CGPoint> get_screenAnchor() async {
+    final result = await _channel.invokeMethod("MAMapStatus::get_screenAnchor", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
@@ -48,7 +53,25 @@ class MAMapStatus extends NSObject {
     await _channel.invokeMethod('MAMapStatus::set_cameraDegree', {'refId': refId, "cameraDegree": cameraDegree});
   }
   
+  Future<void> set_screenAnchor(CGPoint screenAnchor) async {
+    await _channel.invokeMethod('MAMapStatus::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
+  }
+  
 
   // 生成方法们
+  static Future<MAMapStatus> statusWithCenterCoordinate(CGPoint screenAnchor, CLLocationCoordinate2D coordinate, double cameraDegree, double rotationDegree, double zoomLevel) async {
+    // 日志打印
+    print('fluttify-dart: MAMapStatus::statusWithCenterCoordinate([\'zoomLevel\':$zoomLevel, \'rotationDegree\':$rotationDegree, \'cameraDegree\':$cameraDegree])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapStatus::statusWithCenterCoordinate', {"coordinate": coordinate.refId, "zoomLevel": zoomLevel, "rotationDegree": rotationDegree, "cameraDegree": cameraDegree, "screenAnchor": screenAnchor.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return MAMapStatus.withRefId(result);
+  }
   
 }

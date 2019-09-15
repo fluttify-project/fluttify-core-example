@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 class MAAnnotationView extends UIView {
   MAAnnotationView.withRefId(int refId) : super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
+  static final _channel = MethodChannel('me.yohom/amap_base_flutter/MAAnnotationView');
 
   // 生成getters
   Future<String> get_reuseIdentifier() async {
@@ -27,6 +27,16 @@ class MAAnnotationView extends UIView {
   
   Future<MACustomCalloutView> get_customCalloutView() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_customCalloutView", {'refId': refId});
+    return result;
+  }
+  
+  Future<CGPoint> get_centerOffset() async {
+    final result = await _channel.invokeMethod("MAAnnotationView::get_centerOffset", {'refId': refId});
+    return result;
+  }
+  
+  Future<CGPoint> get_calloutOffset() async {
+    final result = await _channel.invokeMethod("MAAnnotationView::get_calloutOffset", {'refId': refId});
     return result;
   }
   
@@ -82,6 +92,14 @@ class MAAnnotationView extends UIView {
   
   Future<void> set_customCalloutView(MACustomCalloutView customCalloutView) async {
     await _channel.invokeMethod('MAAnnotationView::set_customCalloutView', {'refId': refId, "customCalloutView": customCalloutView.refId});
+  }
+  
+  Future<void> set_centerOffset(CGPoint centerOffset) async {
+    await _channel.invokeMethod('MAAnnotationView::set_centerOffset', {'refId': refId, "centerOffset": centerOffset.refId});
+  }
+  
+  Future<void> set_calloutOffset(CGPoint calloutOffset) async {
+    await _channel.invokeMethod('MAAnnotationView::set_calloutOffset', {'refId': refId, "calloutOffset": calloutOffset.refId});
   }
   
   Future<void> set_enabled(bool enabled) async {

@@ -15,6 +15,11 @@ class MAMultiPoint extends MAShape {
     return result;
   }
   
+  Future<int> get_pointCount() async {
+    final result = await _channel.invokeMethod("MAMultiPoint::get_pointCount", {'refId': refId});
+    return result;
+  }
+  
   Future<bool> get_cross180Longitude() async {
     final result = await _channel.invokeMethod("MAMultiPoint::get_cross180Longitude", {'refId': refId});
     return result;

@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 class MACustomCalloutView extends UIView {
   MACustomCalloutView.withRefId(int refId) : super.withRefId(refId);
 
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter');
+  static final _channel = MethodChannel('me.yohom/amap_base_flutter/MACustomCalloutView');
 
   // 生成getters
   Future<UIView> get_customView() async {

@@ -23,6 +23,40 @@ class MAAnimatedAnnotation extends MAPointAnnotation {
   
 
   // 生成方法们
+   Future<MAAnnotationMoveAnimation> addMoveAnimationWithKeyCoordinates(CLLocationCoordinate2D coordinates, String name, double duration, int count, void completeCallback(bool isFinished)) async {
+    // 日志打印
+    print('fluttify-dart: MAAnimatedAnnotation@$refId::addMoveAnimationWithKeyCoordinates([\'count\':$count, \'duration\':$duration, \'name\':$name])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates', {"coordinates": coordinates.refId, "count": count, "duration": duration, "name": name, "refId": refId});
+  
+  
+    // 接受原生回调
+    MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_Callback' + refId.toString())
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          final refId = args['callerRefId'] as int;
+          if (refId != this.refId) return;
+  
+          switch (methodCall.method) {
+            case 'MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_Callback::completeCallback':
+              if (completeCallback != null) {
+                // 日志打印
+        
+        
+                // 调用回调方法
+                completeCallback(args['isFinished']);
+              }
+              break;
+            default:
+              break;
+          }
+        });
+  
+    // 返回值
+    return MAAnnotationMoveAnimation.withRefId(result);
+  }
+  
    Future<String> setNeedsStart() async {
     // 日志打印
     print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
