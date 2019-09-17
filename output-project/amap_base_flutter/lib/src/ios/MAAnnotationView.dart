@@ -82,54 +82,97 @@ class MAAnnotationView extends UIView  {
   // 生成setters
   Future<void> set_zIndex(int zIndex) async {
     await _channel.invokeMethod('MAAnnotationView::set_zIndex', {'refId': refId, "zIndex": zIndex});
+  
+  
   }
   
   Future<void> set_annotation(MAAnnotation annotation) async {
     await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": ""});
+  
+    MethodChannel('MAAnnotation::annotation_Callback' + refId.toString())
+      .setMethodCallHandler((methodCall) async {
+        final args = methodCall.arguments as Map;
+        final refId = args['callerRefId'] as int;
+        if (refId != this.refId) return;
+  
+        switch (methodCall.method) {
+          case 'MAAnnotationView::annotation_Callback::setCoordinate':
+            // 日志打印
+            print('fluttify-dart-callback: MAAnnotationView::annotation_setCoordinate([])');
+        
+              // 调用回调方法
+            annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
+            break;
+          default:
+            break;
+        }
+      });
   }
   
   Future<void> set_customCalloutView(MACustomCalloutView customCalloutView) async {
     await _channel.invokeMethod('MAAnnotationView::set_customCalloutView', {'refId': refId, "customCalloutView": customCalloutView.refId});
+  
+  
   }
   
   Future<void> set_centerOffset(CGPoint centerOffset) async {
     await _channel.invokeMethod('MAAnnotationView::set_centerOffset', {'refId': refId, "centerOffset": centerOffset.refId});
+  
+  
   }
   
   Future<void> set_calloutOffset(CGPoint calloutOffset) async {
     await _channel.invokeMethod('MAAnnotationView::set_calloutOffset', {'refId': refId, "calloutOffset": calloutOffset.refId});
+  
+  
   }
   
   Future<void> set_enabled(bool enabled) async {
     await _channel.invokeMethod('MAAnnotationView::set_enabled', {'refId': refId, "enabled": enabled});
+  
+  
   }
   
   Future<void> set_highlighted(bool highlighted) async {
     await _channel.invokeMethod('MAAnnotationView::set_highlighted', {'refId': refId, "highlighted": highlighted});
+  
+  
   }
   
   Future<void> set_selected(bool selected) async {
     await _channel.invokeMethod('MAAnnotationView::set_selected', {'refId': refId, "selected": selected});
+  
+  
   }
   
   Future<void> set_canShowCallout(bool canShowCallout) async {
     await _channel.invokeMethod('MAAnnotationView::set_canShowCallout', {'refId': refId, "canShowCallout": canShowCallout});
+  
+  
   }
   
   Future<void> set_leftCalloutAccessoryView(UIView leftCalloutAccessoryView) async {
     await _channel.invokeMethod('MAAnnotationView::set_leftCalloutAccessoryView', {'refId': refId, "leftCalloutAccessoryView": leftCalloutAccessoryView.refId});
+  
+  
   }
   
   Future<void> set_rightCalloutAccessoryView(UIView rightCalloutAccessoryView) async {
     await _channel.invokeMethod('MAAnnotationView::set_rightCalloutAccessoryView', {'refId': refId, "rightCalloutAccessoryView": rightCalloutAccessoryView.refId});
+  
+  
   }
   
   Future<void> set_draggable(bool draggable) async {
     await _channel.invokeMethod('MAAnnotationView::set_draggable', {'refId': refId, "draggable": draggable});
+  
+  
   }
   
   Future<void> set_dragState(MAAnnotationViewDragState dragState) async {
     await _channel.invokeMethod('MAAnnotationView::set_dragState', {'refId': refId, "dragState": dragState.index});
+  
+  
   }
   
 

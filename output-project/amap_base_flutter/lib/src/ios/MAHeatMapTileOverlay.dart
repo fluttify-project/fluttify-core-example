@@ -32,18 +32,26 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   // 生成setters
   Future<void> set_radius(int radius) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_radius', {'refId': refId, "radius": radius});
+  
+  
   }
   
   Future<void> set_opacity(double opacity) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_opacity', {'refId': refId, "opacity": opacity});
+  
+  
   }
   
   Future<void> set_gradient(MAHeatMapGradient gradient) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_gradient', {'refId': refId, "gradient": gradient.refId});
+  
+  
   }
   
   Future<void> set_allowRetinaAdapting(bool allowRetinaAdapting) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_allowRetinaAdapting', {'refId': refId, "allowRetinaAdapting": allowRetinaAdapting});
+  
+  
   }
   
 

@@ -17,6 +17,8 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   // 生成setters
   Future<void> set_movingDirection(double movingDirection) async {
     await _channel.invokeMethod('MAAnimatedAnnotation::set_movingDirection', {'refId': refId, "movingDirection": movingDirection});
+  
+  
   }
   
 
@@ -38,13 +40,11 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
           switch (methodCall.method) {
             case 'MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_Callback::completeCallback':
-              if (completeCallback != null) {
-                // 日志打印
+              // 日志打印
         
         
                 // 调用回调方法
-                completeCallback(args['isFinished']);
-              }
+              completeCallback(args['isFinished']);
               break;
             default:
               break;

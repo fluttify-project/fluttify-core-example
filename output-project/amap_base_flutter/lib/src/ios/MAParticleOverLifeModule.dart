@@ -31,31 +31,25 @@ class MAParticleOverLifeModule extends NSObject  {
   
           switch (methodCall.method) {
             case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getX':
-              if (velocity.getX != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getX([])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getX([])');
         
                 // 调用回调方法
-                velocity.getX();
-              }
+              velocity?.getX();
               break;
             case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getY':
-              if (velocity.getY != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getY([])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getY([])');
         
                 // 调用回调方法
-                velocity.getY();
-              }
+              velocity?.getY();
               break;
             case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getZ':
-              if (velocity.getZ != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getZ([])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getZ([])');
         
                 // 调用回调方法
-                velocity.getZ();
-              }
+              velocity?.getZ();
               break;
             default:
               break;
@@ -83,13 +77,11 @@ class MAParticleOverLifeModule extends NSObject  {
   
           switch (methodCall.method) {
             case 'MAParticleOverLifeModule::setRotationOverLife_Callback::getRotate':
-              if (rotation.getRotate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setRotationOverLife_getRotate([])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setRotationOverLife_getRotate([])');
         
                 // 调用回调方法
-                rotation.getRotate();
-              }
+              rotation?.getRotate();
               break;
             default:
               break;
@@ -117,31 +109,25 @@ class MAParticleOverLifeModule extends NSObject  {
   
           switch (methodCall.method) {
             case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeX':
-              if (size.getSizeX != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeX([\'timeFrame\':$args[timeFrame]])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeX([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
-                size.getSizeX(args['timeFrame']);
-              }
+              size?.getSizeX(args['timeFrame']);
               break;
             case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeY':
-              if (size.getSizeY != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeY([\'timeFrame\':$args[timeFrame]])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeY([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
-                size.getSizeY(args['timeFrame']);
-              }
+              size?.getSizeY(args['timeFrame']);
               break;
             case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeZ':
-              if (size.getSizeZ != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeZ([\'timeFrame\':$args[timeFrame]])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeZ([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
-                size.getSizeZ(args['timeFrame']);
-              }
+              size?.getSizeZ(args['timeFrame']);
               break;
             default:
               break;
@@ -169,13 +155,11 @@ class MAParticleOverLifeModule extends NSObject  {
   
           switch (methodCall.method) {
             case 'MAParticleOverLifeModule::setColorOverLife_Callback::getColor':
-              if (color.getColor != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAParticleOverLifeModule::setColorOverLife_getColor([])');
+              // 日志打印
+              print('fluttify-dart-callback: MAParticleOverLifeModule::setColorOverLife_getColor([])');
         
                 // 调用回调方法
-                color.getColor();
-              }
+              color?.getColor();
               break;
             default:
               break;

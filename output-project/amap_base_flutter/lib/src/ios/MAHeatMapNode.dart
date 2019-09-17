@@ -22,10 +22,14 @@ class MAHeatMapNode extends NSObject  {
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
     await _channel.invokeMethod('MAHeatMapNode::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
+  
+  
   }
   
   Future<void> set_intensity(double intensity) async {
     await _channel.invokeMethod('MAHeatMapNode::set_intensity', {'refId': refId, "intensity": intensity});
+  
+  
   }
   
 

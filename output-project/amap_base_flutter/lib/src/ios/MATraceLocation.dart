@@ -32,18 +32,26 @@ class MATraceLocation extends NSObject  {
   // 生成setters
   Future<void> set_loc(CLLocationCoordinate2D loc) async {
     await _channel.invokeMethod('MATraceLocation::set_loc', {'refId': refId, "loc": loc.refId});
+  
+  
   }
   
   Future<void> set_angle(double angle) async {
     await _channel.invokeMethod('MATraceLocation::set_angle', {'refId': refId, "angle": angle});
+  
+  
   }
   
   Future<void> set_speed(double speed) async {
     await _channel.invokeMethod('MATraceLocation::set_speed', {'refId': refId, "speed": speed});
+  
+  
   }
   
   Future<void> set_time(double time) async {
     await _channel.invokeMethod('MATraceLocation::set_time', {'refId': refId, "time": time});
+  
+  
   }
   
 

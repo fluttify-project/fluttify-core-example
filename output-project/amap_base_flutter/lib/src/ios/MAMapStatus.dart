@@ -37,22 +37,32 @@ class MAMapStatus extends NSObject  {
   // 生成setters
   Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
     await _channel.invokeMethod('MAMapStatus::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate.refId});
+  
+  
   }
   
   Future<void> set_zoomLevel(double zoomLevel) async {
     await _channel.invokeMethod('MAMapStatus::set_zoomLevel', {'refId': refId, "zoomLevel": zoomLevel});
+  
+  
   }
   
   Future<void> set_rotationDegree(double rotationDegree) async {
     await _channel.invokeMethod('MAMapStatus::set_rotationDegree', {'refId': refId, "rotationDegree": rotationDegree});
+  
+  
   }
   
   Future<void> set_cameraDegree(double cameraDegree) async {
     await _channel.invokeMethod('MAMapStatus::set_cameraDegree', {'refId': refId, "cameraDegree": cameraDegree});
+  
+  
   }
   
   Future<void> set_screenAnchor(CGPoint screenAnchor) async {
     await _channel.invokeMethod('MAMapStatus::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
+  
+  
   }
   
 

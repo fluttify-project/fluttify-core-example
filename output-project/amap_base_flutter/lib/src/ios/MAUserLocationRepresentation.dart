@@ -32,18 +32,26 @@ class MAUserLocationRepresentation extends NSObject  {
   // 生成setters
   Future<void> set_showsAccuracyRing(bool showsAccuracyRing) async {
     await _channel.invokeMethod('MAUserLocationRepresentation::set_showsAccuracyRing', {'refId': refId, "showsAccuracyRing": showsAccuracyRing});
+  
+  
   }
   
   Future<void> set_showsHeadingIndicator(bool showsHeadingIndicator) async {
     await _channel.invokeMethod('MAUserLocationRepresentation::set_showsHeadingIndicator', {'refId': refId, "showsHeadingIndicator": showsHeadingIndicator});
+  
+  
   }
   
   Future<void> set_lineWidth(double lineWidth) async {
     await _channel.invokeMethod('MAUserLocationRepresentation::set_lineWidth', {'refId': refId, "lineWidth": lineWidth});
+  
+  
   }
   
   Future<void> set_enablePulseAnnimation(bool enablePulseAnnimation) async {
     await _channel.invokeMethod('MAUserLocationRepresentation::set_enablePulseAnnimation', {'refId': refId, "enablePulseAnnimation": enablePulseAnnimation});
+  
+  
   }
   
 

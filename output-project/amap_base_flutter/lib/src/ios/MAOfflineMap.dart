@@ -55,13 +55,11 @@ class MAOfflineMap extends NSObject  {
   
           switch (methodCall.method) {
             case 'MAOfflineMap::setupWithCompletionBlock_Callback::block':
-              if (block != null) {
-                // 日志打印
+              // 日志打印
         
         
                 // 调用回调方法
-                block(args['setupSuccess']);
-              }
+              block(args['setupSuccess']);
               break;
             default:
               break;

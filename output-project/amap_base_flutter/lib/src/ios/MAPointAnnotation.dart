@@ -27,14 +27,20 @@ class MAPointAnnotation extends MAShape  {
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
     await _channel.invokeMethod('MAPointAnnotation::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
+  
+  
   }
   
   Future<void> set_lockedToScreen(bool lockedToScreen) async {
     await _channel.invokeMethod('MAPointAnnotation::set_lockedToScreen', {'refId': refId, "lockedToScreen": lockedToScreen});
+  
+  
   }
   
   Future<void> set_lockedScreenPoint(CGPoint lockedScreenPoint) async {
     await _channel.invokeMethod('MAPointAnnotation::set_lockedScreenPoint', {'refId': refId, "lockedScreenPoint": lockedScreenPoint.refId});
+  
+  
   }
   
 

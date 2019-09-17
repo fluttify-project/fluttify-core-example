@@ -22,6 +22,8 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   // 生成setters
   Future<void> set_is3DArrowLine(bool is3DArrowLine) async {
     await _channel.invokeMethod('MAPolylineRenderer::set_is3DArrowLine', {'refId': refId, "is3DArrowLine": is3DArrowLine});
+  
+  
   }
   
 

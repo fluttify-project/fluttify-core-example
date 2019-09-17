@@ -17,6 +17,8 @@ class MAOfflineItemCommonCity extends MAOfflineCity  {
   // 生成setters
   Future<void> set_province(MAOfflineItem province) async {
     await _channel.invokeMethod('MAOfflineItemCommonCity::set_province', {'refId': refId, "province": province.refId});
+  
+  
   }
   
 

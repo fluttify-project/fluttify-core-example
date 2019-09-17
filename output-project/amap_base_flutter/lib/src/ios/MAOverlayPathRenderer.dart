@@ -42,26 +42,38 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   // 生成setters
   Future<void> set_lineWidth(double lineWidth) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_lineWidth', {'refId': refId, "lineWidth": lineWidth});
+  
+  
   }
   
   Future<void> set_lineJoinType(MALineJoinType lineJoinType) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_lineJoinType', {'refId': refId, "lineJoinType": lineJoinType.index});
+  
+  
   }
   
   Future<void> set_lineCapType(MALineCapType lineCapType) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_lineCapType', {'refId': refId, "lineCapType": lineCapType.index});
+  
+  
   }
   
   Future<void> set_miterLimit(double miterLimit) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_miterLimit', {'refId': refId, "miterLimit": miterLimit});
+  
+  
   }
   
   Future<void> set_lineDash(bool lineDash) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_lineDash', {'refId': refId, "lineDash": lineDash});
+  
+  
   }
   
   Future<void> set_lineDashType(MALineDashType lineDashType) async {
     await _channel.invokeMethod('MAOverlayPathRenderer::set_lineDashType', {'refId': refId, "lineDashType": lineDashType.index});
+  
+  
   }
   
 

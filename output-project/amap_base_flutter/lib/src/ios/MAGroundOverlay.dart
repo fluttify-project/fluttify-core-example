@@ -27,6 +27,8 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   // 生成setters
   Future<void> set_alpha(double alpha) async {
     await _channel.invokeMethod('MAGroundOverlay::set_alpha', {'refId': refId, "alpha": alpha});
+  
+  
   }
   
 

@@ -42,22 +42,32 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
   // 生成setters
   Future<void> set_minimumZ(int minimumZ) async {
     await _channel.invokeMethod('MATileOverlay::set_minimumZ', {'refId': refId, "minimumZ": minimumZ});
+  
+  
   }
   
   Future<void> set_maximumZ(int maximumZ) async {
     await _channel.invokeMethod('MATileOverlay::set_maximumZ', {'refId': refId, "maximumZ": maximumZ});
+  
+  
   }
   
   Future<void> set_canReplaceMapContent(bool canReplaceMapContent) async {
     await _channel.invokeMethod('MATileOverlay::set_canReplaceMapContent', {'refId': refId, "canReplaceMapContent": canReplaceMapContent});
+  
+  
   }
   
   Future<void> set_boundingMapRect(MAMapRect boundingMapRect) async {
     await _channel.invokeMethod('MATileOverlay::set_boundingMapRect', {'refId': refId, "boundingMapRect": boundingMapRect.refId});
+  
+  
   }
   
   Future<void> set_disableOffScreenTileLoading(bool disableOffScreenTileLoading) async {
     await _channel.invokeMethod('MATileOverlay::set_disableOffScreenTileLoading', {'refId': refId, "disableOffScreenTileLoading": disableOffScreenTileLoading});
+  
+  
   }
   
 

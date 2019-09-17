@@ -37,22 +37,32 @@ class AMapPOIConfig extends NSObject  {
   // 生成setters
   Future<void> set_appScheme(String appScheme) async {
     await _channel.invokeMethod('AMapPOIConfig::set_appScheme', {'refId': refId, "appScheme": appScheme});
+  
+  
   }
   
   Future<void> set_appName(String appName) async {
     await _channel.invokeMethod('AMapPOIConfig::set_appName', {'refId': refId, "appName": appName});
+  
+  
   }
   
   Future<void> set_keywords(String keywords) async {
     await _channel.invokeMethod('AMapPOIConfig::set_keywords', {'refId': refId, "keywords": keywords});
+  
+  
   }
   
   Future<void> set_leftTopCoordinate(CLLocationCoordinate2D leftTopCoordinate) async {
     await _channel.invokeMethod('AMapPOIConfig::set_leftTopCoordinate', {'refId': refId, "leftTopCoordinate": leftTopCoordinate.refId});
+  
+  
   }
   
   Future<void> set_rightBottomCoordinate(CLLocationCoordinate2D rightBottomCoordinate) async {
     await _channel.invokeMethod('AMapPOIConfig::set_rightBottomCoordinate', {'refId': refId, "rightBottomCoordinate": rightBottomCoordinate.refId});
+  
+  
   }
   
 

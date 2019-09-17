@@ -22,6 +22,8 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
     await _channel.invokeMethod('MACircle::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
+  
+  
   }
   
 

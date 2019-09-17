@@ -27,10 +27,31 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   // 生成setters
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
     await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": ""});
+  
+    MethodChannel('MAMultiPointOverlayRendererDelegate::delegate_Callback' + refId.toString())
+      .setMethodCallHandler((methodCall) async {
+        final args = methodCall.arguments as Map;
+        final refId = args['callerRefId'] as int;
+        if (refId != this.refId) return;
+  
+        switch (methodCall.method) {
+          case 'MAMultiPointOverlayRenderer::delegate_Callback::multiPointOverlayRendererDidItemTapped':
+            // 日志打印
+            print('fluttify-dart-callback: MAMultiPointOverlayRenderer::delegate_multiPointOverlayRenderer([])');
+        
+              // 调用回调方法
+            delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer']), MAMultiPointItem()..refId = (args['item']));
+            break;
+          default:
+            break;
+        }
+      });
   }
   
   Future<void> set_anchor(CGPoint anchor) async {
     await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_anchor', {'refId': refId, "anchor": anchor.refId});
+  
+  
   }
   
 

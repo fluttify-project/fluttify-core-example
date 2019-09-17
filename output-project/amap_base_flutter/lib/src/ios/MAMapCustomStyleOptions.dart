@@ -17,6 +17,8 @@ class MAMapCustomStyleOptions extends NSObject  {
   // 生成setters
   Future<void> set_styleId(String styleId) async {
     await _channel.invokeMethod('MAMapCustomStyleOptions::set_styleId', {'refId': refId, "styleId": styleId});
+  
+  
   }
   
 

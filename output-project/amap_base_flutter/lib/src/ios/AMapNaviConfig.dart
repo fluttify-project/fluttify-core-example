@@ -32,18 +32,26 @@ class AMapNaviConfig extends NSObject  {
   // 生成setters
   Future<void> set_appScheme(String appScheme) async {
     await _channel.invokeMethod('AMapNaviConfig::set_appScheme', {'refId': refId, "appScheme": appScheme});
+  
+  
   }
   
   Future<void> set_appName(String appName) async {
     await _channel.invokeMethod('AMapNaviConfig::set_appName', {'refId': refId, "appName": appName});
+  
+  
   }
   
   Future<void> set_destination(CLLocationCoordinate2D destination) async {
     await _channel.invokeMethod('AMapNaviConfig::set_destination', {'refId': refId, "destination": destination.refId});
+  
+  
   }
   
   Future<void> set_strategy(AMapDrivingStrategy strategy) async {
     await _channel.invokeMethod('AMapNaviConfig::set_strategy', {'refId': refId, "strategy": strategy.index});
+  
+  
   }
   
 

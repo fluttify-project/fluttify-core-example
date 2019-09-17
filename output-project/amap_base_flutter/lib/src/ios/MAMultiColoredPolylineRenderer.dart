@@ -22,6 +22,8 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   // 生成setters
   Future<void> set_gradient(bool gradient) async {
     await _channel.invokeMethod('MAMultiColoredPolylineRenderer::set_gradient', {'refId': refId, "gradient": gradient});
+  
+  
   }
   
 

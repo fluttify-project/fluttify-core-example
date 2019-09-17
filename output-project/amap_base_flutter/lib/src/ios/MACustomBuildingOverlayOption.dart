@@ -27,14 +27,20 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   // 生成setters
   Future<void> set_height(double height) async {
     await _channel.invokeMethod('MACustomBuildingOverlayOption::set_height', {'refId': refId, "height": height});
+  
+  
   }
   
   Future<void> set_heightScale(double heightScale) async {
     await _channel.invokeMethod('MACustomBuildingOverlayOption::set_heightScale', {'refId': refId, "heightScale": heightScale});
+  
+  
   }
   
   Future<void> set_visibile(bool visibile) async {
     await _channel.invokeMethod('MACustomBuildingOverlayOption::set_visibile', {'refId': refId, "visibile": visibile});
+  
+  
   }
   
 

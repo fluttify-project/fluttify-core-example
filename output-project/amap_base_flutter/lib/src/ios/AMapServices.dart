@@ -32,14 +32,20 @@ class AMapServices extends NSObject  {
   // 生成setters
   Future<void> set_apiKey(String apiKey) async {
     await _channel.invokeMethod('AMapServices::set_apiKey', {'refId': refId, "apiKey": apiKey});
+  
+  
   }
   
   Future<void> set_enableHTTPS(bool enableHTTPS) async {
     await _channel.invokeMethod('AMapServices::set_enableHTTPS', {'refId': refId, "enableHTTPS": enableHTTPS});
+  
+  
   }
   
   Future<void> set_crashReportEnabled(bool crashReportEnabled) async {
     await _channel.invokeMethod('AMapServices::set_crashReportEnabled', {'refId': refId, "crashReportEnabled": crashReportEnabled});
+  
+  
   }
   
 

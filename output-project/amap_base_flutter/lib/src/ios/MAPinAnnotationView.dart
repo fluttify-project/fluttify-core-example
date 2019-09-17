@@ -22,10 +22,14 @@ class MAPinAnnotationView extends MAAnnotationView  {
   // 生成setters
   Future<void> set_pinColor(MAPinAnnotationColor pinColor) async {
     await _channel.invokeMethod('MAPinAnnotationView::set_pinColor', {'refId': refId, "pinColor": pinColor.index});
+  
+  
   }
   
   Future<void> set_animatesDrop(bool animatesDrop) async {
     await _channel.invokeMethod('MAPinAnnotationView::set_animatesDrop', {'refId': refId, "animatesDrop": animatesDrop});
+  
+  
   }
   
 
