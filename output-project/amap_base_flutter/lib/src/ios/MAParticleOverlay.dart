@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
-  MAParticleOverlay.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -32,7 +30,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAParticleOverlay.withRefId(result);
+    return MAParticleOverlay()..refId = result;
   }
   
    Future<String> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {

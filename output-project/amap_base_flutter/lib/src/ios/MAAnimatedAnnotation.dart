@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation {
-  MAAnimatedAnnotation.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -54,7 +52,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
         });
   
     // 返回值
-    return MAAnnotationMoveAnimation.withRefId(result);
+    return MAAnnotationMoveAnimation()..refId = result;
   }
   
    Future<String> setNeedsStart() async {

@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAParticleEmissionModule extends NSObject  {
-  MAParticleEmissionModule.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -28,7 +26,7 @@ class MAParticleEmissionModule extends NSObject  {
   
   
     // 返回值
-    return MAParticleEmissionModule.withRefId(result);
+    return MAParticleEmissionModule()..refId = result;
   }
   
 }

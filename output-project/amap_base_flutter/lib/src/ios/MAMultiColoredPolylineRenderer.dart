@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
-  MAMultiColoredPolylineRenderer.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -40,7 +38,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
   
     // 返回值
-    return MAMultiColoredPolylineRenderer.withRefId(result);
+    return MAMultiColoredPolylineRenderer()..refId = result;
   }
   
 }

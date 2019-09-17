@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAPolygonRenderer extends MAOverlayPathRenderer  {
-  MAPolygonRenderer.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -32,7 +30,7 @@ class MAPolygonRenderer extends MAOverlayPathRenderer  {
   
   
     // 返回值
-    return MAPolygonRenderer.withRefId(result);
+    return MAPolygonRenderer()..refId = result;
   }
   
 }

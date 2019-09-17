@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAAnnotationMoveAnimation extends NSObject  {
-  MAAnnotationMoveAnimation.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -43,7 +41,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return CLLocationCoordinate2D.withRefId(result);
+    return CLLocationCoordinate2D()..refId = result;
   }
   
    Future<int> count() async {

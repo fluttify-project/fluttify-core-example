@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MACustomBuildingOverlayOption extends MAMultiPoint  {
-  MACustomBuildingOverlayOption.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -53,7 +51,7 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
   
     // 返回值
-    return MACustomBuildingOverlayOption.withRefId(result);
+    return MACustomBuildingOverlayOption()..refId = result;
   }
   
    Future<bool> setOptionWithCoordinates(CLLocationCoordinate2D coords, int count) async {

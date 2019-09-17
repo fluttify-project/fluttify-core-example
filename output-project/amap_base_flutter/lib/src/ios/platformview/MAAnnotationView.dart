@@ -34,7 +34,7 @@ class MAAnnotationView_iOS extends StatelessWidget {
   }
 
   void _onViewCreated(int id) {
-    final controller = MAAnnotationView.withRefId(id);
+    final controller = MAAnnotationView()..refId = id;
     if (onViewCreated != null) {
       onViewCreated(controller);
     }

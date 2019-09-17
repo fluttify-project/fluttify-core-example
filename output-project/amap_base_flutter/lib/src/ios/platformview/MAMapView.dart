@@ -34,7 +34,7 @@ class MAMapView_iOS extends StatelessWidget {
   }
 
   void _onViewCreated(int id) {
-    final controller = MAMapView.withRefId(id);
+    final controller = MAMapView()..refId = id;
     if (onViewCreated != null) {
       onViewCreated(controller);
     }

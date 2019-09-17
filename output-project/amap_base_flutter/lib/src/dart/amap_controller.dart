@@ -363,7 +363,7 @@ class AmapController {
 //        map.addMarker(markerOption);
       },
       ios: () async {
-        await iosController.set_delegate(MyDelegate.withRefId(1));
+        await iosController.set_delegate(MyDelegate());
         final pointAnnotation =
             await ObjectFactory_iOS.createMAPointAnnotation();
         final coordinate = await ObjectFactory_iOS.createCLLocationCoordinate2D(
@@ -377,8 +377,6 @@ class AmapController {
 }
 
 class MyDelegate extends NSObject with MAMapViewDelegate {
-  MyDelegate.withRefId(int refId) : super.withRefId(refId);
-
   @override
   Future<MAAnnotationView> mapViewViewForAnnotation(
       MAMapView mapView, MAAnnotation annotation) async {

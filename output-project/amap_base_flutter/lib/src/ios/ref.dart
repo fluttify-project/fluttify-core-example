@@ -5,9 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class Ref_iOS {
-  Ref_iOS.withRefId(this.refId);
-
-  final int refId;
+  int refId;
 
   Future<bool> isKindOfAMapURLSearch() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfAMapURLSearch', {'refId': refId});
@@ -397,387 +395,387 @@ class Ref_iOS {
 
   Future<AMapURLSearch> asAMapURLSearch() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asAMapURLSearch', {'refId': refId});
-    return AMapURLSearch.withRefId(result);
+    return AMapURLSearch()..refId = result;
   }
   
   Future<AMapNaviConfig> asAMapNaviConfig() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asAMapNaviConfig', {'refId': refId});
-    return AMapNaviConfig.withRefId(result);
+    return AMapNaviConfig()..refId = result;
   }
   
   Future<AMapRouteConfig> asAMapRouteConfig() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asAMapRouteConfig', {'refId': refId});
-    return AMapRouteConfig.withRefId(result);
+    return AMapRouteConfig()..refId = result;
   }
   
   Future<AMapPOIConfig> asAMapPOIConfig() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asAMapPOIConfig', {'refId': refId});
-    return AMapPOIConfig.withRefId(result);
+    return AMapPOIConfig()..refId = result;
   }
   
   Future<AMapServices> asAMapServices() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asAMapServices', {'refId': refId});
-    return AMapServices.withRefId(result);
+    return AMapServices()..refId = result;
   }
   
   Future<MAOfflineCity> asMAOfflineCity() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineCity', {'refId': refId});
-    return MAOfflineCity.withRefId(result);
+    return MAOfflineCity()..refId = result;
   }
   
   Future<MAOfflineItemNationWide> asMAOfflineItemNationWide() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineItemNationWide', {'refId': refId});
-    return MAOfflineItemNationWide.withRefId(result);
+    return MAOfflineItemNationWide()..refId = result;
   }
   
   Future<MAMultiPoint> asMAMultiPoint() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiPoint', {'refId': refId});
-    return MAMultiPoint.withRefId(result);
+    return MAMultiPoint()..refId = result;
   }
   
   Future<MAGroundOverlay> asMAGroundOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAGroundOverlay', {'refId': refId});
-    return MAGroundOverlay.withRefId(result);
+    return MAGroundOverlay()..refId = result;
   }
   
   Future<MAPolygonRenderer> asMAPolygonRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPolygonRenderer', {'refId': refId});
-    return MAPolygonRenderer.withRefId(result);
+    return MAPolygonRenderer()..refId = result;
   }
   
   Future<MAPinAnnotationView> asMAPinAnnotationView() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPinAnnotationView', {'refId': refId});
-    return MAPinAnnotationView.withRefId(result);
+    return MAPinAnnotationView()..refId = result;
   }
   
   Future<MAHeatMapNode> asMAHeatMapNode() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAHeatMapNode', {'refId': refId});
-    return MAHeatMapNode.withRefId(result);
+    return MAHeatMapNode()..refId = result;
   }
   
   Future<MAHeatMapGradient> asMAHeatMapGradient() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAHeatMapGradient', {'refId': refId});
-    return MAHeatMapGradient.withRefId(result);
+    return MAHeatMapGradient()..refId = result;
   }
   
   Future<MAHeatMapTileOverlay> asMAHeatMapTileOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAHeatMapTileOverlay', {'refId': refId});
-    return MAHeatMapTileOverlay.withRefId(result);
+    return MAHeatMapTileOverlay()..refId = result;
   }
   
   Future<MAMapStatus> asMAMapStatus() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapStatus', {'refId': refId});
-    return MAMapStatus.withRefId(result);
+    return MAMapStatus()..refId = result;
   }
   
   Future<MAPointAnnotation> asMAPointAnnotation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPointAnnotation', {'refId': refId});
-    return MAPointAnnotation.withRefId(result);
+    return MAPointAnnotation()..refId = result;
   }
   
   Future<MACircle> asMACircle() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACircle', {'refId': refId});
-    return MACircle.withRefId(result);
+    return MACircle()..refId = result;
   }
   
   Future<MAArcRenderer> asMAArcRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAArcRenderer', {'refId': refId});
-    return MAArcRenderer.withRefId(result);
+    return MAArcRenderer()..refId = result;
   }
   
   Future<MAMapCustomStyleOptions> asMAMapCustomStyleOptions() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapCustomStyleOptions', {'refId': refId});
-    return MAMapCustomStyleOptions.withRefId(result);
+    return MAMapCustomStyleOptions()..refId = result;
   }
   
   Future<MAPolygon> asMAPolygon() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPolygon', {'refId': refId});
-    return MAPolygon.withRefId(result);
+    return MAPolygon()..refId = result;
   }
   
   Future<MAParticleOverlay> asMAParticleOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleOverlay', {'refId': refId});
-    return MAParticleOverlay.withRefId(result);
+    return MAParticleOverlay()..refId = result;
   }
   
   Future<MAPolyline> asMAPolyline() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPolyline', {'refId': refId});
-    return MAPolyline.withRefId(result);
+    return MAPolyline()..refId = result;
   }
   
   Future<MAMultiColoredPolylineRenderer> asMAMultiColoredPolylineRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiColoredPolylineRenderer', {'refId': refId});
-    return MAMultiColoredPolylineRenderer.withRefId(result);
+    return MAMultiColoredPolylineRenderer()..refId = result;
   }
   
   Future<MAAnimatedAnnotation> asMAAnimatedAnnotation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAAnimatedAnnotation', {'refId': refId});
-    return MAAnimatedAnnotation.withRefId(result);
+    return MAAnimatedAnnotation()..refId = result;
   }
   
   Future<MAMultiTexturePolylineRenderer> asMAMultiTexturePolylineRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiTexturePolylineRenderer', {'refId': refId});
-    return MAMultiTexturePolylineRenderer.withRefId(result);
+    return MAMultiTexturePolylineRenderer()..refId = result;
   }
   
   Future<MAOfflineProvince> asMAOfflineProvince() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineProvince', {'refId': refId});
-    return MAOfflineProvince.withRefId(result);
+    return MAOfflineProvince()..refId = result;
   }
   
   Future<MATileOverlayRenderer> asMATileOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATileOverlayRenderer', {'refId': refId});
-    return MATileOverlayRenderer.withRefId(result);
+    return MATileOverlayRenderer()..refId = result;
   }
   
   Future<MAOfflineItem> asMAOfflineItem() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineItem', {'refId': refId});
-    return MAOfflineItem.withRefId(result);
+    return MAOfflineItem()..refId = result;
   }
   
   Future<MAGeodesicPolyline> asMAGeodesicPolyline() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAGeodesicPolyline', {'refId': refId});
-    return MAGeodesicPolyline.withRefId(result);
+    return MAGeodesicPolyline()..refId = result;
   }
   
   Future<MATouchPoi> asMATouchPoi() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATouchPoi', {'refId': refId});
-    return MATouchPoi.withRefId(result);
+    return MATouchPoi()..refId = result;
   }
   
   Future<MAOfflineItemMunicipality> asMAOfflineItemMunicipality() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineItemMunicipality', {'refId': refId});
-    return MAOfflineItemMunicipality.withRefId(result);
+    return MAOfflineItemMunicipality()..refId = result;
   }
   
   Future<MAMultiPolyline> asMAMultiPolyline() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiPolyline', {'refId': refId});
-    return MAMultiPolyline.withRefId(result);
+    return MAMultiPolyline()..refId = result;
   }
   
   Future<MATraceManager> asMATraceManager() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATraceManager', {'refId': refId});
-    return MATraceManager.withRefId(result);
+    return MATraceManager()..refId = result;
   }
   
   Future<MAMultiPointOverlayRenderer> asMAMultiPointOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiPointOverlayRenderer', {'refId': refId});
-    return MAMultiPointOverlayRenderer.withRefId(result);
+    return MAMultiPointOverlayRenderer()..refId = result;
   }
   
   Future<MAIndoorFloorInfo> asMAIndoorFloorInfo() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAIndoorFloorInfo', {'refId': refId});
-    return MAIndoorFloorInfo.withRefId(result);
+    return MAIndoorFloorInfo()..refId = result;
   }
   
   Future<MAIndoorInfo> asMAIndoorInfo() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAIndoorInfo', {'refId': refId});
-    return MAIndoorInfo.withRefId(result);
+    return MAIndoorInfo()..refId = result;
   }
   
   Future<MAPolylineRenderer> asMAPolylineRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAPolylineRenderer', {'refId': refId});
-    return MAPolylineRenderer.withRefId(result);
+    return MAPolylineRenderer()..refId = result;
   }
   
   Future<MAAnnotationMoveAnimation> asMAAnnotationMoveAnimation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAAnnotationMoveAnimation', {'refId': refId});
-    return MAAnnotationMoveAnimation.withRefId(result);
+    return MAAnnotationMoveAnimation()..refId = result;
   }
   
   Future<MAShape> asMAShape() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAShape', {'refId': refId});
-    return MAShape.withRefId(result);
+    return MAShape()..refId = result;
   }
   
   Future<MAAnnotationView> asMAAnnotationView() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAAnnotationView', {'refId': refId});
-    return MAAnnotationView.withRefId(result);
+    return MAAnnotationView()..refId = result;
   }
   
   Future<MATileOverlay> asMATileOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATileOverlay', {'refId': refId});
-    return MATileOverlay.withRefId(result);
+    return MATileOverlay()..refId = result;
   }
   
   Future<MATileOverlayPath> asMATileOverlayPath() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATileOverlayPath', {'refId': refId});
-    return MATileOverlayPath.withRefId(result);
+    return MATileOverlayPath()..refId = result;
   }
   
   Future<MACustomCalloutView> asMACustomCalloutView() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACustomCalloutView', {'refId': refId});
-    return MACustomCalloutView.withRefId(result);
+    return MACustomCalloutView()..refId = result;
   }
   
   Future<MAOfflineItemCommonCity> asMAOfflineItemCommonCity() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineItemCommonCity', {'refId': refId});
-    return MAOfflineItemCommonCity.withRefId(result);
+    return MAOfflineItemCommonCity()..refId = result;
   }
   
   Future<MAOfflineMap> asMAOfflineMap() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOfflineMap', {'refId': refId});
-    return MAOfflineMap.withRefId(result);
+    return MAOfflineMap()..refId = result;
   }
   
   Future<MACircleRenderer> asMACircleRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACircleRenderer', {'refId': refId});
-    return MACircleRenderer.withRefId(result);
+    return MACircleRenderer()..refId = result;
   }
   
   Future<MAParticleOverlayRenderer> asMAParticleOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleOverlayRenderer', {'refId': refId});
-    return MAParticleOverlayRenderer.withRefId(result);
+    return MAParticleOverlayRenderer()..refId = result;
   }
   
   Future<MACoordinateBounds> asMACoordinateBounds() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACoordinateBounds', {'refId': refId});
-    return MACoordinateBounds.withRefId(result);
+    return MACoordinateBounds()..refId = result;
   }
   
   Future<MACoordinateSpan> asMACoordinateSpan() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACoordinateSpan', {'refId': refId});
-    return MACoordinateSpan.withRefId(result);
+    return MACoordinateSpan()..refId = result;
   }
   
   Future<MACoordinateRegion> asMACoordinateRegion() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACoordinateRegion', {'refId': refId});
-    return MACoordinateRegion.withRefId(result);
+    return MACoordinateRegion()..refId = result;
   }
   
   Future<MAMapPoint> asMAMapPoint() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapPoint', {'refId': refId});
-    return MAMapPoint.withRefId(result);
+    return MAMapPoint()..refId = result;
   }
   
   Future<MAMapSize> asMAMapSize() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapSize', {'refId': refId});
-    return MAMapSize.withRefId(result);
+    return MAMapSize()..refId = result;
   }
   
   Future<MAMapRect> asMAMapRect() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapRect', {'refId': refId});
-    return MAMapRect.withRefId(result);
+    return MAMapRect()..refId = result;
   }
   
   Future<MAParticleRandomVelocityGenerate> asMAParticleRandomVelocityGenerate() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleRandomVelocityGenerate', {'refId': refId});
-    return MAParticleRandomVelocityGenerate.withRefId(result);
+    return MAParticleRandomVelocityGenerate()..refId = result;
   }
   
   Future<MAParticleRandomColorGenerate> asMAParticleRandomColorGenerate() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleRandomColorGenerate', {'refId': refId});
-    return MAParticleRandomColorGenerate.withRefId(result);
+    return MAParticleRandomColorGenerate()..refId = result;
   }
   
   Future<MAParticleConstantRotationGenerate> asMAParticleConstantRotationGenerate() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleConstantRotationGenerate', {'refId': refId});
-    return MAParticleConstantRotationGenerate.withRefId(result);
+    return MAParticleConstantRotationGenerate()..refId = result;
   }
   
   Future<MAParticleCurveSizeGenerate> asMAParticleCurveSizeGenerate() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleCurveSizeGenerate', {'refId': refId});
-    return MAParticleCurveSizeGenerate.withRefId(result);
+    return MAParticleCurveSizeGenerate()..refId = result;
   }
   
   Future<MAParticleEmissionModule> asMAParticleEmissionModule() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleEmissionModule', {'refId': refId});
-    return MAParticleEmissionModule.withRefId(result);
+    return MAParticleEmissionModule()..refId = result;
   }
   
   Future<MAParticleSinglePointShapeModule> asMAParticleSinglePointShapeModule() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleSinglePointShapeModule', {'refId': refId});
-    return MAParticleSinglePointShapeModule.withRefId(result);
+    return MAParticleSinglePointShapeModule()..refId = result;
   }
   
   Future<MAParticleRectShapeModule> asMAParticleRectShapeModule() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleRectShapeModule', {'refId': refId});
-    return MAParticleRectShapeModule.withRefId(result);
+    return MAParticleRectShapeModule()..refId = result;
   }
   
   Future<MAParticleOverLifeModule> asMAParticleOverLifeModule() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleOverLifeModule', {'refId': refId});
-    return MAParticleOverLifeModule.withRefId(result);
+    return MAParticleOverLifeModule()..refId = result;
   }
   
   Future<MAParticleOverlayOptions> asMAParticleOverlayOptions() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleOverlayOptions', {'refId': refId});
-    return MAParticleOverlayOptions.withRefId(result);
+    return MAParticleOverlayOptions()..refId = result;
   }
   
   Future<MAParticleOverlayOptionsFactory> asMAParticleOverlayOptionsFactory() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAParticleOverlayOptionsFactory', {'refId': refId});
-    return MAParticleOverlayOptionsFactory.withRefId(result);
+    return MAParticleOverlayOptionsFactory()..refId = result;
   }
   
   Future<MAOverlayRenderer> asMAOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOverlayRenderer', {'refId': refId});
-    return MAOverlayRenderer.withRefId(result);
+    return MAOverlayRenderer()..refId = result;
   }
   
   Future<MAUserLocation> asMAUserLocation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAUserLocation', {'refId': refId});
-    return MAUserLocation.withRefId(result);
+    return MAUserLocation()..refId = result;
   }
   
   Future<MAMultiPointItem> asMAMultiPointItem() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiPointItem', {'refId': refId});
-    return MAMultiPointItem.withRefId(result);
+    return MAMultiPointItem()..refId = result;
   }
   
   Future<MAMultiPointOverlay> asMAMultiPointOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMultiPointOverlay', {'refId': refId});
-    return MAMultiPointOverlay.withRefId(result);
+    return MAMultiPointOverlay()..refId = result;
   }
   
   Future<MACustomBuildingOverlayOption> asMACustomBuildingOverlayOption() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACustomBuildingOverlayOption', {'refId': refId});
-    return MACustomBuildingOverlayOption.withRefId(result);
+    return MACustomBuildingOverlayOption()..refId = result;
   }
   
   Future<MACustomBuildingOverlay> asMACustomBuildingOverlay() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACustomBuildingOverlay', {'refId': refId});
-    return MACustomBuildingOverlay.withRefId(result);
+    return MACustomBuildingOverlay()..refId = result;
   }
   
   Future<MATracePoint> asMATracePoint() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATracePoint', {'refId': refId});
-    return MATracePoint.withRefId(result);
+    return MATracePoint()..refId = result;
   }
   
   Future<MATraceLocation> asMATraceLocation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMATraceLocation', {'refId': refId});
-    return MATraceLocation.withRefId(result);
+    return MATraceLocation()..refId = result;
   }
   
   Future<MAArc> asMAArc() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAArc', {'refId': refId});
-    return MAArc.withRefId(result);
+    return MAArc()..refId = result;
   }
   
   Future<MAUserLocationRepresentation> asMAUserLocationRepresentation() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAUserLocationRepresentation', {'refId': refId});
-    return MAUserLocationRepresentation.withRefId(result);
+    return MAUserLocationRepresentation()..refId = result;
   }
   
   Future<MAMapView> asMAMapView() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAMapView', {'refId': refId});
-    return MAMapView.withRefId(result);
+    return MAMapView()..refId = result;
   }
   
   Future<MAOverlayPathRenderer> asMAOverlayPathRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAOverlayPathRenderer', {'refId': refId});
-    return MAOverlayPathRenderer.withRefId(result);
+    return MAOverlayPathRenderer()..refId = result;
   }
   
   Future<MAGroundOverlayRenderer> asMAGroundOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMAGroundOverlayRenderer', {'refId': refId});
-    return MAGroundOverlayRenderer.withRefId(result);
+    return MAGroundOverlayRenderer()..refId = result;
   }
   
   Future<MACustomBuildingOverlayRenderer> asMACustomBuildingOverlayRenderer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::asMACustomBuildingOverlayRenderer', {'refId': refId});
-    return MACustomBuildingOverlayRenderer.withRefId(result);
+    return MACustomBuildingOverlayRenderer()..refId = result;
   }
   
 }

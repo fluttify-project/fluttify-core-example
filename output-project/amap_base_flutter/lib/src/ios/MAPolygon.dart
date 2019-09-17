@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
-  MAPolygon.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -28,7 +26,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolygon.withRefId(result);
+    return MAPolygon()..refId = result;
   }
   
   static Future<MAPolygon> polygonWithPoints(MAMapPoint points, int count) async {
@@ -43,7 +41,7 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolygon.withRefId(result);
+    return MAPolygon()..refId = result;
   }
   
    Future<bool> setPolygonWithPoints(MAMapPoint points, int count) async {

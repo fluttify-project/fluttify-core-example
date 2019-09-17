@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
-  MAMultiPointOverlayRenderer.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -49,7 +47,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return MAMultiPointOverlayRenderer.withRefId(result);
+    return MAMultiPointOverlayRenderer()..refId = result;
   }
   
 }

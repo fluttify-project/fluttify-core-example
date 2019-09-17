@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotationGenerate {
-  MAParticleConstantRotationGenerate.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -28,7 +26,7 @@ class MAParticleConstantRotationGenerate extends NSObject with MAParticleRotatio
   
   
     // 返回值
-    return MAParticleConstantRotationGenerate.withRefId(result);
+    return MAParticleConstantRotationGenerate()..refId = result;
   }
   
 }

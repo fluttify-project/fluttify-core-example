@@ -34,7 +34,7 @@ class MACustomCalloutView_iOS extends StatelessWidget {
   }
 
   void _onViewCreated(int id) {
-    final controller = MACustomCalloutView.withRefId(id);
+    final controller = MACustomCalloutView()..refId = id;
     if (onViewCreated != null) {
       onViewCreated(controller);
     }

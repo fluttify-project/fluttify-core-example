@@ -5,8 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
-  MAPolyline.withRefId(int refId) : super.withRefId(refId);
-
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -28,7 +26,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolyline.withRefId(result);
+    return MAPolyline()..refId = result;
   }
   
   static Future<MAPolyline> polylineWithCoordinates(CLLocationCoordinate2D coords, int count) async {
@@ -43,7 +41,7 @@ class MAPolyline extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolyline.withRefId(result);
+    return MAPolyline()..refId = result;
   }
   
    Future<bool> setPolylineWithPoints(MAMapPoint points, int count) async {

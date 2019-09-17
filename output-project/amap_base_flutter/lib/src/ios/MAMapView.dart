@@ -1,1125 +1,1269 @@
-import 'dart:typed_data';
-
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-class MAMapView extends UIView  {
-  MAMapView.withRefId(int refId) : super.withRefId(refId);
-
+class MAMapView extends UIView {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter/MAMapView');
 
   // 生成getters
   Future<MAMapViewDelegate> get_delegate() async {
-    final result = await _channel.invokeMethod("MAMapView::get_delegate", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_delegate", {'refId': refId});
     return result;
   }
-  
+
   Future<MAMapType> get_mapType() async {
-    final result = await _channel.invokeMethod("MAMapView::get_mapType", {'refId': refId});
+    final result =
+        await _channel.invokeMethod("MAMapView::get_mapType", {'refId': refId});
     return result;
   }
-  
+
   Future<CLLocationCoordinate2D> get_centerCoordinate() async {
-    final result = await _channel.invokeMethod("MAMapView::get_centerCoordinate", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_centerCoordinate", {'refId': refId});
     return result;
   }
-  
+
   Future<MACoordinateRegion> get_region() async {
-    final result = await _channel.invokeMethod("MAMapView::get_region", {'refId': refId});
+    final result =
+        await _channel.invokeMethod("MAMapView::get_region", {'refId': refId});
     return result;
   }
-  
+
   Future<MAMapRect> get_visibleMapRect() async {
-    final result = await _channel.invokeMethod("MAMapView::get_visibleMapRect", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_visibleMapRect", {'refId': refId});
     return result;
   }
-  
+
   Future<MACoordinateRegion> get_limitRegion() async {
-    final result = await _channel.invokeMethod("MAMapView::get_limitRegion", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_limitRegion", {'refId': refId});
     return result;
   }
-  
+
   Future<MAMapRect> get_limitMapRect() async {
-    final result = await _channel.invokeMethod("MAMapView::get_limitMapRect", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_limitMapRect", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_zoomLevel() async {
-    final result = await _channel.invokeMethod("MAMapView::get_zoomLevel", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_zoomLevel", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_minZoomLevel() async {
-    final result = await _channel.invokeMethod("MAMapView::get_minZoomLevel", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_minZoomLevel", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_maxZoomLevel() async {
-    final result = await _channel.invokeMethod("MAMapView::get_maxZoomLevel", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_maxZoomLevel", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_rotationDegree() async {
-    final result = await _channel.invokeMethod("MAMapView::get_rotationDegree", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_rotationDegree", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_cameraDegree() async {
-    final result = await _channel.invokeMethod("MAMapView::get_cameraDegree", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_cameraDegree", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_zoomingInPivotsAroundAnchorPoint() async {
-    final result = await _channel.invokeMethod("MAMapView::get_zoomingInPivotsAroundAnchorPoint", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_zoomingInPivotsAroundAnchorPoint", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_zoomEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isZoomEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isZoomEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_scrollEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isScrollEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isScrollEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_rotateEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isRotateEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isRotateEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_rotateCameraEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isRotateCameraEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isRotateCameraEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_skyModelEnable() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isSkyModelEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isSkyModelEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsBuildings() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isShowsBuildings", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isShowsBuildings", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsLabels() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isShowsLabels", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isShowsLabels", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showTraffic() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isShowTraffic", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isShowTraffic", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_trafficRatio() async {
-    final result = await _channel.invokeMethod("MAMapView::get_trafficRatio", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_trafficRatio", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_touchPOIEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_touchPOIEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_touchPOIEnabled", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsCompass() async {
-    final result = await _channel.invokeMethod("MAMapView::get_showsCompass", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_showsCompass", {'refId': refId});
     return result;
   }
-  
+
   Future<CGPoint> get_compassOrigin() async {
-    final result = await _channel.invokeMethod("MAMapView::get_compassOrigin", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_compassOrigin", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsScale() async {
-    final result = await _channel.invokeMethod("MAMapView::get_showsScale", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_showsScale", {'refId': refId});
     return result;
   }
-  
+
   Future<CGPoint> get_scaleOrigin() async {
-    final result = await _channel.invokeMethod("MAMapView::get_scaleOrigin", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_scaleOrigin", {'refId': refId});
     return result;
   }
-  
+
   Future<CGPoint> get_logoCenter() async {
-    final result = await _channel.invokeMethod("MAMapView::get_logoCenter", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_logoCenter", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_metersPerPointForCurrentZoom() async {
-    final result = await _channel.invokeMethod("MAMapView::get_metersPerPointForCurrentZoom", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_metersPerPointForCurrentZoom", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_isAbroad() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isAbroad", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isAbroad", {'refId': refId});
     return result;
   }
-  
+
   Future<int> get_maxRenderFrame() async {
-    final result = await _channel.invokeMethod("MAMapView::get_maxRenderFrame", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_maxRenderFrame", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_isAllowDecreaseFrame() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isAllowDecreaseFrame", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isAllowDecreaseFrame", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_openGLESDisabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_openGLESDisabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_openGLESDisabled", {'refId': refId});
     return result;
   }
-  
+
   Future<CGPoint> get_screenAnchor() async {
-    final result = await _channel.invokeMethod("MAMapView::get_screenAnchor", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_screenAnchor", {'refId': refId});
     return result;
   }
-  
+
   Future<CGRect> get_annotationVisibleRect() async {
-    final result = await _channel.invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_allowsAnnotationViewSorting() async {
-    final result = await _channel.invokeMethod("MAMapView::get_allowsAnnotationViewSorting", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_allowsAnnotationViewSorting", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsUserLocation() async {
-    final result = await _channel.invokeMethod("MAMapView::get_showsUserLocation", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_showsUserLocation", {'refId': refId});
     return result;
   }
-  
+
   Future<MAUserLocation> get_userLocation() async {
-    final result = await _channel.invokeMethod("MAMapView::get_userLocation", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_userLocation", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_customizeUserLocationAccuracyCircleRepresentation() async {
-    final result = await _channel.invokeMethod("MAMapView::get_customizeUserLocationAccuracyCircleRepresentation", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_customizeUserLocationAccuracyCircleRepresentation",
+        {'refId': refId});
     return result;
   }
-  
+
   Future<MACircle> get_userLocationAccuracyCircle() async {
-    final result = await _channel.invokeMethod("MAMapView::get_userLocationAccuracyCircle", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_userLocationAccuracyCircle", {'refId': refId});
     return result;
   }
-  
+
   Future<MAUserTrackingMode> get_userTrackingMode() async {
-    final result = await _channel.invokeMethod("MAMapView::get_userTrackingMode", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_userTrackingMode", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_userLocationVisible() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isUserLocationVisible", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isUserLocationVisible", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_pausesLocationUpdatesAutomatically() async {
-    final result = await _channel.invokeMethod("MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_pausesLocationUpdatesAutomatically", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_allowsBackgroundLocationUpdates() async {
-    final result = await _channel.invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsIndoorMap() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isShowsIndoorMap", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_isShowsIndoorMap", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_showsIndoorMapControl() async {
-    final result = await _channel.invokeMethod("MAMapView::get_isShowsIndoorMapControl", {'refId': refId});
+    final result = await _channel.invokeMethod(
+        "MAMapView::get_isShowsIndoorMapControl", {'refId': refId});
     return result;
   }
-  
+
   Future<bool> get_customMapStyleEnabled() async {
-    final result = await _channel.invokeMethod("MAMapView::get_customMapStyleEnabled", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAMapView::get_customMapStyleEnabled", {'refId': refId});
     return result;
   }
-  
 
   // 生成setters
   Future<void> set_delegate(MAMapViewDelegate delegate) async {
-    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": ""});
+    await _channel.invokeMethod(
+        'MAMapView::set_delegate', {'refId': refId, "delegate": ""});
+
+    // todo 处理MAAnnotation的问题
+    MethodChannel('name').setMethodCallHandler((call) async {
+      switch (call.method) {
+        case 'a':
+          return delegate.mapViewViewForAnnotation(
+              MAMapView()..refId = call.arguments['mapview'],
+              // 这里直接随便找一个抽象类的子类实例化, 其实不影响程序的运行, 因为回调过去类型仍然是抽象类, 也不会改变native端的类型
+              MAAnnotation_Ref()..refId = call.arguments['abc']);
+        case 'a':
+          return delegate.mapViewViewForAnnotation(
+              MAMapView()..refId = call.arguments['mapview'],
+              MAMultiPointItem()..refId = call.arguments['abc']);
+        case 'a':
+          return delegate.mapViewViewForAnnotation(
+              MAMapView()..refId = call.arguments['mapview'],
+              MAMultiPointItem()..refId = call.arguments['abc']);
+        default:
+          return delegate.mapViewViewForAnnotation(
+              MAMapView()..refId = call.arguments['mapview'],
+              MAMultiPointItem()..refId = call.arguments['abc']);
+      }
+    });
   }
-  
+
   Future<void> set_mapType(MAMapType mapType) async {
-    await _channel.invokeMethod('MAMapView::set_mapType', {'refId': refId, "mapType": mapType.index});
+    await _channel.invokeMethod(
+        'MAMapView::set_mapType', {'refId': refId, "mapType": mapType.index});
   }
-  
-  Future<void> set_centerCoordinate(CLLocationCoordinate2D centerCoordinate) async {
-    await _channel.invokeMethod('MAMapView::set_centerCoordinate', {'refId': refId, "centerCoordinate": centerCoordinate.refId});
+
+  Future<void> set_centerCoordinate(
+      CLLocationCoordinate2D centerCoordinate) async {
+    await _channel.invokeMethod('MAMapView::set_centerCoordinate',
+        {'refId': refId, "centerCoordinate": centerCoordinate.refId});
   }
-  
+
   Future<void> set_region(MACoordinateRegion region) async {
-    await _channel.invokeMethod('MAMapView::set_region', {'refId': refId, "region": region.refId});
+    await _channel.invokeMethod(
+        'MAMapView::set_region', {'refId': refId, "region": region.refId});
   }
-  
+
   Future<void> set_visibleMapRect(MAMapRect visibleMapRect) async {
-    await _channel.invokeMethod('MAMapView::set_visibleMapRect', {'refId': refId, "visibleMapRect": visibleMapRect.refId});
+    await _channel.invokeMethod('MAMapView::set_visibleMapRect',
+        {'refId': refId, "visibleMapRect": visibleMapRect.refId});
   }
-  
+
   Future<void> set_limitRegion(MACoordinateRegion limitRegion) async {
-    await _channel.invokeMethod('MAMapView::set_limitRegion', {'refId': refId, "limitRegion": limitRegion.refId});
+    await _channel.invokeMethod('MAMapView::set_limitRegion',
+        {'refId': refId, "limitRegion": limitRegion.refId});
   }
-  
+
   Future<void> set_limitMapRect(MAMapRect limitMapRect) async {
-    await _channel.invokeMethod('MAMapView::set_limitMapRect', {'refId': refId, "limitMapRect": limitMapRect.refId});
+    await _channel.invokeMethod('MAMapView::set_limitMapRect',
+        {'refId': refId, "limitMapRect": limitMapRect.refId});
   }
-  
+
   Future<void> set_zoomLevel(double zoomLevel) async {
-    await _channel.invokeMethod('MAMapView::set_zoomLevel', {'refId': refId, "zoomLevel": zoomLevel});
+    await _channel.invokeMethod(
+        'MAMapView::set_zoomLevel', {'refId': refId, "zoomLevel": zoomLevel});
   }
-  
+
   Future<void> set_minZoomLevel(double minZoomLevel) async {
-    await _channel.invokeMethod('MAMapView::set_minZoomLevel', {'refId': refId, "minZoomLevel": minZoomLevel});
+    await _channel.invokeMethod('MAMapView::set_minZoomLevel',
+        {'refId': refId, "minZoomLevel": minZoomLevel});
   }
-  
+
   Future<void> set_maxZoomLevel(double maxZoomLevel) async {
-    await _channel.invokeMethod('MAMapView::set_maxZoomLevel', {'refId': refId, "maxZoomLevel": maxZoomLevel});
+    await _channel.invokeMethod('MAMapView::set_maxZoomLevel',
+        {'refId': refId, "maxZoomLevel": maxZoomLevel});
   }
-  
+
   Future<void> set_rotationDegree(double rotationDegree) async {
-    await _channel.invokeMethod('MAMapView::set_rotationDegree', {'refId': refId, "rotationDegree": rotationDegree});
+    await _channel.invokeMethod('MAMapView::set_rotationDegree',
+        {'refId': refId, "rotationDegree": rotationDegree});
   }
-  
+
   Future<void> set_cameraDegree(double cameraDegree) async {
-    await _channel.invokeMethod('MAMapView::set_cameraDegree', {'refId': refId, "cameraDegree": cameraDegree});
+    await _channel.invokeMethod('MAMapView::set_cameraDegree',
+        {'refId': refId, "cameraDegree": cameraDegree});
   }
-  
-  Future<void> set_zoomingInPivotsAroundAnchorPoint(bool zoomingInPivotsAroundAnchorPoint) async {
-    await _channel.invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint', {'refId': refId, "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint});
+
+  Future<void> set_zoomingInPivotsAroundAnchorPoint(
+      bool zoomingInPivotsAroundAnchorPoint) async {
+    await _channel
+        .invokeMethod('MAMapView::set_zoomingInPivotsAroundAnchorPoint', {
+      'refId': refId,
+      "zoomingInPivotsAroundAnchorPoint": zoomingInPivotsAroundAnchorPoint
+    });
   }
-  
+
   Future<void> set_zoomEnabled(bool zoomEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_zoomEnabled', {'refId': refId, "zoomEnabled": zoomEnabled});
+    await _channel.invokeMethod('MAMapView::set_zoomEnabled',
+        {'refId': refId, "zoomEnabled": zoomEnabled});
   }
-  
+
   Future<void> set_scrollEnabled(bool scrollEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_scrollEnabled', {'refId': refId, "scrollEnabled": scrollEnabled});
+    await _channel.invokeMethod('MAMapView::set_scrollEnabled',
+        {'refId': refId, "scrollEnabled": scrollEnabled});
   }
-  
+
   Future<void> set_rotateEnabled(bool rotateEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_rotateEnabled', {'refId': refId, "rotateEnabled": rotateEnabled});
+    await _channel.invokeMethod('MAMapView::set_rotateEnabled',
+        {'refId': refId, "rotateEnabled": rotateEnabled});
   }
-  
+
   Future<void> set_rotateCameraEnabled(bool rotateCameraEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_rotateCameraEnabled', {'refId': refId, "rotateCameraEnabled": rotateCameraEnabled});
+    await _channel.invokeMethod('MAMapView::set_rotateCameraEnabled',
+        {'refId': refId, "rotateCameraEnabled": rotateCameraEnabled});
   }
-  
+
   Future<void> set_skyModelEnable(bool skyModelEnable) async {
-    await _channel.invokeMethod('MAMapView::set_skyModelEnable', {'refId': refId, "skyModelEnable": skyModelEnable});
+    await _channel.invokeMethod('MAMapView::set_skyModelEnable',
+        {'refId': refId, "skyModelEnable": skyModelEnable});
   }
-  
+
   Future<void> set_showsBuildings(bool showsBuildings) async {
-    await _channel.invokeMethod('MAMapView::set_showsBuildings', {'refId': refId, "showsBuildings": showsBuildings});
+    await _channel.invokeMethod('MAMapView::set_showsBuildings',
+        {'refId': refId, "showsBuildings": showsBuildings});
   }
-  
+
   Future<void> set_showsLabels(bool showsLabels) async {
-    await _channel.invokeMethod('MAMapView::set_showsLabels', {'refId': refId, "showsLabels": showsLabels});
+    await _channel.invokeMethod('MAMapView::set_showsLabels',
+        {'refId': refId, "showsLabels": showsLabels});
   }
-  
+
   Future<void> set_showTraffic(bool showTraffic) async {
-    await _channel.invokeMethod('MAMapView::set_showTraffic', {'refId': refId, "showTraffic": showTraffic});
+    await _channel.invokeMethod('MAMapView::set_showTraffic',
+        {'refId': refId, "showTraffic": showTraffic});
   }
-  
+
   Future<void> set_trafficRatio(double trafficRatio) async {
-    await _channel.invokeMethod('MAMapView::set_trafficRatio', {'refId': refId, "trafficRatio": trafficRatio});
+    await _channel.invokeMethod('MAMapView::set_trafficRatio',
+        {'refId': refId, "trafficRatio": trafficRatio});
   }
-  
+
   Future<void> set_touchPOIEnabled(bool touchPOIEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_touchPOIEnabled', {'refId': refId, "touchPOIEnabled": touchPOIEnabled});
+    await _channel.invokeMethod('MAMapView::set_touchPOIEnabled',
+        {'refId': refId, "touchPOIEnabled": touchPOIEnabled});
   }
-  
+
   Future<void> set_showsCompass(bool showsCompass) async {
-    await _channel.invokeMethod('MAMapView::set_showsCompass', {'refId': refId, "showsCompass": showsCompass});
+    await _channel.invokeMethod('MAMapView::set_showsCompass',
+        {'refId': refId, "showsCompass": showsCompass});
   }
-  
+
   Future<void> set_compassOrigin(CGPoint compassOrigin) async {
-    await _channel.invokeMethod('MAMapView::set_compassOrigin', {'refId': refId, "compassOrigin": compassOrigin.refId});
+    await _channel.invokeMethod('MAMapView::set_compassOrigin',
+        {'refId': refId, "compassOrigin": compassOrigin.refId});
   }
-  
+
   Future<void> set_showsScale(bool showsScale) async {
-    await _channel.invokeMethod('MAMapView::set_showsScale', {'refId': refId, "showsScale": showsScale});
+    await _channel.invokeMethod('MAMapView::set_showsScale',
+        {'refId': refId, "showsScale": showsScale});
   }
-  
+
   Future<void> set_scaleOrigin(CGPoint scaleOrigin) async {
-    await _channel.invokeMethod('MAMapView::set_scaleOrigin', {'refId': refId, "scaleOrigin": scaleOrigin.refId});
+    await _channel.invokeMethod('MAMapView::set_scaleOrigin',
+        {'refId': refId, "scaleOrigin": scaleOrigin.refId});
   }
-  
+
   Future<void> set_logoCenter(CGPoint logoCenter) async {
-    await _channel.invokeMethod('MAMapView::set_logoCenter', {'refId': refId, "logoCenter": logoCenter.refId});
+    await _channel.invokeMethod('MAMapView::set_logoCenter',
+        {'refId': refId, "logoCenter": logoCenter.refId});
   }
-  
+
   Future<void> set_maxRenderFrame(int maxRenderFrame) async {
-    await _channel.invokeMethod('MAMapView::set_maxRenderFrame', {'refId': refId, "maxRenderFrame": maxRenderFrame});
+    await _channel.invokeMethod('MAMapView::set_maxRenderFrame',
+        {'refId': refId, "maxRenderFrame": maxRenderFrame});
   }
-  
+
   Future<void> set_isAllowDecreaseFrame(bool isAllowDecreaseFrame) async {
-    await _channel.invokeMethod('MAMapView::set_isAllowDecreaseFrame', {'refId': refId, "isAllowDecreaseFrame": isAllowDecreaseFrame});
+    await _channel.invokeMethod('MAMapView::set_isAllowDecreaseFrame',
+        {'refId': refId, "isAllowDecreaseFrame": isAllowDecreaseFrame});
   }
-  
+
   Future<void> set_openGLESDisabled(bool openGLESDisabled) async {
-    await _channel.invokeMethod('MAMapView::set_openGLESDisabled', {'refId': refId, "openGLESDisabled": openGLESDisabled});
+    await _channel.invokeMethod('MAMapView::set_openGLESDisabled',
+        {'refId': refId, "openGLESDisabled": openGLESDisabled});
   }
-  
+
   Future<void> set_screenAnchor(CGPoint screenAnchor) async {
-    await _channel.invokeMethod('MAMapView::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
+    await _channel.invokeMethod('MAMapView::set_screenAnchor',
+        {'refId': refId, "screenAnchor": screenAnchor.refId});
   }
-  
-  Future<void> set_allowsAnnotationViewSorting(bool allowsAnnotationViewSorting) async {
-    await _channel.invokeMethod('MAMapView::set_allowsAnnotationViewSorting', {'refId': refId, "allowsAnnotationViewSorting": allowsAnnotationViewSorting});
+
+  Future<void> set_allowsAnnotationViewSorting(
+      bool allowsAnnotationViewSorting) async {
+    await _channel.invokeMethod('MAMapView::set_allowsAnnotationViewSorting', {
+      'refId': refId,
+      "allowsAnnotationViewSorting": allowsAnnotationViewSorting
+    });
   }
-  
+
   Future<void> set_showsUserLocation(bool showsUserLocation) async {
-    await _channel.invokeMethod('MAMapView::set_showsUserLocation', {'refId': refId, "showsUserLocation": showsUserLocation});
+    await _channel.invokeMethod('MAMapView::set_showsUserLocation',
+        {'refId': refId, "showsUserLocation": showsUserLocation});
   }
-  
-  Future<void> set_customizeUserLocationAccuracyCircleRepresentation(bool customizeUserLocationAccuracyCircleRepresentation) async {
-    await _channel.invokeMethod('MAMapView::set_customizeUserLocationAccuracyCircleRepresentation', {'refId': refId, "customizeUserLocationAccuracyCircleRepresentation": customizeUserLocationAccuracyCircleRepresentation});
+
+  Future<void> set_customizeUserLocationAccuracyCircleRepresentation(
+      bool customizeUserLocationAccuracyCircleRepresentation) async {
+    await _channel.invokeMethod(
+        'MAMapView::set_customizeUserLocationAccuracyCircleRepresentation', {
+      'refId': refId,
+      "customizeUserLocationAccuracyCircleRepresentation":
+          customizeUserLocationAccuracyCircleRepresentation
+    });
   }
-  
+
   Future<void> set_userTrackingMode(MAUserTrackingMode userTrackingMode) async {
-    await _channel.invokeMethod('MAMapView::set_userTrackingMode', {'refId': refId, "userTrackingMode": userTrackingMode.index});
+    await _channel.invokeMethod('MAMapView::set_userTrackingMode',
+        {'refId': refId, "userTrackingMode": userTrackingMode.index});
   }
-  
-  Future<void> set_pausesLocationUpdatesAutomatically(bool pausesLocationUpdatesAutomatically) async {
-    await _channel.invokeMethod('MAMapView::set_pausesLocationUpdatesAutomatically', {'refId': refId, "pausesLocationUpdatesAutomatically": pausesLocationUpdatesAutomatically});
+
+  Future<void> set_pausesLocationUpdatesAutomatically(
+      bool pausesLocationUpdatesAutomatically) async {
+    await _channel
+        .invokeMethod('MAMapView::set_pausesLocationUpdatesAutomatically', {
+      'refId': refId,
+      "pausesLocationUpdatesAutomatically": pausesLocationUpdatesAutomatically
+    });
   }
-  
-  Future<void> set_allowsBackgroundLocationUpdates(bool allowsBackgroundLocationUpdates) async {
-    await _channel.invokeMethod('MAMapView::set_allowsBackgroundLocationUpdates', {'refId': refId, "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates});
+
+  Future<void> set_allowsBackgroundLocationUpdates(
+      bool allowsBackgroundLocationUpdates) async {
+    await _channel
+        .invokeMethod('MAMapView::set_allowsBackgroundLocationUpdates', {
+      'refId': refId,
+      "allowsBackgroundLocationUpdates": allowsBackgroundLocationUpdates
+    });
   }
-  
+
   Future<void> set_showsIndoorMap(bool showsIndoorMap) async {
-    await _channel.invokeMethod('MAMapView::set_showsIndoorMap', {'refId': refId, "showsIndoorMap": showsIndoorMap});
+    await _channel.invokeMethod('MAMapView::set_showsIndoorMap',
+        {'refId': refId, "showsIndoorMap": showsIndoorMap});
   }
-  
+
   Future<void> set_showsIndoorMapControl(bool showsIndoorMapControl) async {
-    await _channel.invokeMethod('MAMapView::set_showsIndoorMapControl', {'refId': refId, "showsIndoorMapControl": showsIndoorMapControl});
+    await _channel.invokeMethod('MAMapView::set_showsIndoorMapControl',
+        {'refId': refId, "showsIndoorMapControl": showsIndoorMapControl});
   }
-  
+
   Future<void> set_customMapStyleEnabled(bool customMapStyleEnabled) async {
-    await _channel.invokeMethod('MAMapView::set_customMapStyleEnabled', {'refId': refId, "customMapStyleEnabled": customMapStyleEnabled});
+    await _channel.invokeMethod('MAMapView::set_customMapStyleEnabled',
+        {'refId': refId, "customMapStyleEnabled": customMapStyleEnabled});
   }
-  
 
   // 生成方法们
-   Future<String> setRegion(MACoordinateRegion region, bool animated) async {
+  Future<String> setRegion(MACoordinateRegion region, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setRegion', {"region": region.refId, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setRegion',
+        {"region": region.refId, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region) async {
+
+  Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::regionThatFits([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::regionThatFits', {"region": region.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::regionThatFits', {"region": region.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return MACoordinateRegion.withRefId(result);
+    return MACoordinateRegion()..refId = result;
   }
-  
-   Future<String> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
+
+  Future<String> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setVisibleMapRect', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setVisibleMapRect',
+        {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<MAMapRect> mapRectThatFits(MAMapRect mapRect) async {
+
+  Future<MAMapRect> mapRectThatFits(MAMapRect mapRect) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::mapRectThatFits', {"mapRect": mapRect.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::mapRectThatFits',
+        {"mapRect": mapRect.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return MAMapRect.withRefId(result);
+    return MAMapRect()..refId = result;
   }
-  
-   Future<String> setCenterCoordinate(CLLocationCoordinate2D coordinate, bool animated) async {
+
+  Future<String> setCenterCoordinate(
+      CLLocationCoordinate2D coordinate, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCenterCoordinate', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setCenterCoordinate',
+        {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> setZoomLevel(double zoomLevel, bool animated) async {
+
+  Future<String> setZoomLevel(double zoomLevel, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setZoomLevel', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setZoomLevel',
+        {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> setRotationDegree(double rotationDegree, bool animated, double duration) async {
+
+  Future<String> setRotationDegree(
+      double rotationDegree, bool animated, double duration) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setRotationDegree', {"rotationDegree": rotationDegree, "animated": animated, "duration": duration, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setRotationDegree', {
+      "rotationDegree": rotationDegree,
+      "animated": animated,
+      "duration": duration,
+      "refId": refId
+    });
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> setCameraDegree(double cameraDegree, bool animated, double duration) async {
+
+  Future<String> setCameraDegree(
+      double cameraDegree, bool animated, double duration) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCameraDegree', {"cameraDegree": cameraDegree, "animated": animated, "duration": duration, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setCameraDegree', {
+      "cameraDegree": cameraDegree,
+      "animated": animated,
+      "duration": duration,
+      "refId": refId
+    });
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<MAMapStatus> getMapStatus() async {
+
+  Future<MAMapStatus> getMapStatus() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::getMapStatus([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::getMapStatus', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::getMapStatus', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return MAMapStatus.withRefId(result);
+    return MAMapStatus()..refId = result;
   }
-  
-   Future<String> setMapStatus(MAMapStatus status, bool animated) async {
+
+  Future<String> setMapStatus(MAMapStatus status, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setMapStatus', {"status": status.refId, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setMapStatus',
+        {"status": status.refId, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
+
+  Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::metersPerPointForZoomLevel', {"zoomLevel": zoomLevel, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::metersPerPointForZoomLevel',
+        {"zoomLevel": zoomLevel, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<CGPoint> convertCoordinate(CLLocationCoordinate2D coordinate, UIView view) async {
+
+  Future<CGPoint> convertCoordinate(
+      CLLocationCoordinate2D coordinate, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertCoordinate', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::convertCoordinate',
+        {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return CGPoint.withRefId(result);
+    return CGPoint()..refId = result;
   }
-  
-   Future<CLLocationCoordinate2D> convertPoint(CGPoint point, UIView view) async {
+
+  Future<CLLocationCoordinate2D> convertPoint(
+      CGPoint point, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertPoint([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertPoint', {"point": point.refId, "view": view.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::convertPoint',
+        {"point": point.refId, "view": view.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return CLLocationCoordinate2D.withRefId(result);
+    return CLLocationCoordinate2D()..refId = result;
   }
-  
-   Future<CGRect> convertRegion(MACoordinateRegion region, UIView view) async {
+
+  Future<CGRect> convertRegion(MACoordinateRegion region, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRegion([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertRegion', {"region": region.refId, "view": view.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::convertRegion',
+        {"region": region.refId, "view": view.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return CGRect.withRefId(result);
+    return CGRect()..refId = result;
   }
-  
-   Future<MACoordinateRegion> convertRect(CGRect rect, UIView view) async {
+
+  Future<MACoordinateRegion> convertRect(CGRect rect, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRect([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertRect', {"rect": rect.refId, "view": view.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::convertRect',
+        {"rect": rect.refId, "view": view.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return MACoordinateRegion.withRefId(result);
+    return MACoordinateRegion()..refId = result;
   }
-  
-   Future<String> reloadMap() async {
+
+  Future<String> reloadMap() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::reloadMap([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::reloadMap', {"refId": refId});
-  
-  
+    final result =
+        await _channel.invokeMethod('MAMapView::reloadMap', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> clearDisk() async {
+
+  Future<String> clearDisk() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::clearDisk([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::clearDisk', {"refId": refId});
-  
-  
+    final result =
+        await _channel.invokeMethod('MAMapView::clearDisk', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> reloadInternalTexture() async {
+
+  Future<String> reloadInternalTexture() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::reloadInternalTexture([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::reloadInternalTexture', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::reloadInternalTexture', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> mapContentApprovalNumber() async {
+
+  Future<String> mapContentApprovalNumber() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::mapContentApprovalNumber([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::mapContentApprovalNumber', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::mapContentApprovalNumber', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> satelliteImageApprovalNumber() async {
+
+  Future<String> satelliteImageApprovalNumber() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::satelliteImageApprovalNumber([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::satelliteImageApprovalNumber', {"refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::satelliteImageApprovalNumber', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> forceRefresh() async {
+
+  Future<String> forceRefresh() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::forceRefresh([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::forceRefresh', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::forceRefresh', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> addAnnotation(MAAnnotation annotation) async {
+
+  Future<String> addAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addAnnotation([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addAnnotation', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::addAnnotation', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::addAnnotation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-            case 'MAMapView::addAnnotation_Callback::setCoordinate':
-              if (annotation.setCoordinate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAMapView::addAnnotation_setCoordinate([])');
-        
-                // 调用回调方法
-                annotation.setCoordinate(CLLocationCoordinate2D.withRefId(args['newCoordinate']));
-              }
-              break;
-            default:
-              break;
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        case 'MAMapView::addAnnotation_Callback::setCoordinate':
+          if (annotation.setCoordinate != null) {
+            // 日志打印
+            print(
+                'fluttify-dart-callback: MAMapView::addAnnotation_setCoordinate([])');
+
+            // 调用回调方法
+            annotation.setCoordinate(
+                CLLocationCoordinate2D()..refId = (args['newCoordinate']));
           }
-        });
-  
+          break;
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<String> removeAnnotation(MAAnnotation annotation) async {
+
+  Future<String> removeAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeAnnotation([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeAnnotation', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::removeAnnotation', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::removeAnnotation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-            case 'MAMapView::removeAnnotation_Callback::setCoordinate':
-              if (annotation.setCoordinate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAMapView::removeAnnotation_setCoordinate([])');
-        
-                // 调用回调方法
-                annotation.setCoordinate(CLLocationCoordinate2D.withRefId(args['newCoordinate']));
-              }
-              break;
-            default:
-              break;
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        case 'MAMapView::removeAnnotation_Callback::setCoordinate':
+          if (annotation.setCoordinate != null) {
+            // 日志打印
+            print(
+                'fluttify-dart-callback: MAMapView::removeAnnotation_setCoordinate([])');
+
+            // 调用回调方法
+            annotation.setCoordinate(
+                CLLocationCoordinate2D()..refId = (args['newCoordinate']));
           }
-        });
-  
+          break;
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation) async {
+
+  Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::viewForAnnotation([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::viewForAnnotation', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::viewForAnnotation', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::viewForAnnotation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-            case 'MAMapView::viewForAnnotation_Callback::setCoordinate':
-              if (annotation.setCoordinate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAMapView::viewForAnnotation_setCoordinate([])');
-        
-                // 调用回调方法
-                annotation.setCoordinate(CLLocationCoordinate2D.withRefId(args['newCoordinate']));
-              }
-              break;
-            default:
-              break;
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        case 'MAMapView::viewForAnnotation_Callback::setCoordinate':
+          if (annotation.setCoordinate != null) {
+            // 日志打印
+            print(
+                'fluttify-dart-callback: MAMapView::viewForAnnotation_setCoordinate([])');
+
+            // 调用回调方法
+            annotation.setCoordinate(
+                CLLocationCoordinate2D()..refId = (args['newCoordinate']));
           }
-        });
-  
+          break;
+        default:
+          break;
+      }
+    });
+
     // 返回值
-    return MAAnnotationView.withRefId(result);
+    return MAAnnotationView()..refId = result;
   }
-  
-   Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier) async {
+
+  Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(
+      String identifier) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::dequeueReusableAnnotationViewWithIdentifier', {"identifier": identifier, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::dequeueReusableAnnotationViewWithIdentifier',
+        {"identifier": identifier, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
-    return MAAnnotationView.withRefId(result);
+    return MAAnnotationView()..refId = result;
   }
-  
-   Future<String> selectAnnotation(MAAnnotation annotation, bool animated) async {
+
+  Future<String> selectAnnotation(
+      MAAnnotation annotation, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::selectAnnotation', {"animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::selectAnnotation', {"animated": animated, "refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::selectAnnotation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-            case 'MAMapView::selectAnnotation_Callback::setCoordinate':
-              if (annotation.setCoordinate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAMapView::selectAnnotation_setCoordinate([])');
-        
-                // 调用回调方法
-                annotation.setCoordinate(CLLocationCoordinate2D.withRefId(args['newCoordinate']));
-              }
-              break;
-            default:
-              break;
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        case 'MAMapView::selectAnnotation_Callback::setCoordinate':
+          if (annotation.setCoordinate != null) {
+            // 日志打印
+            print(
+                'fluttify-dart-callback: MAMapView::selectAnnotation_setCoordinate([])');
+
+            // 调用回调方法
+            annotation.setCoordinate(
+                CLLocationCoordinate2D()..refId = (args['newCoordinate']));
           }
-        });
-  
+          break;
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<String> deselectAnnotation(MAAnnotation annotation, bool animated) async {
+
+  Future<String> deselectAnnotation(
+      MAAnnotation annotation, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::deselectAnnotation', {"animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::deselectAnnotation',
+        {"animated": animated, "refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::deselectAnnotation_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-            case 'MAMapView::deselectAnnotation_Callback::setCoordinate':
-              if (annotation.setCoordinate != null) {
-                // 日志打印
-                print('fluttify-dart-callback: MAMapView::deselectAnnotation_setCoordinate([])');
-        
-                // 调用回调方法
-                annotation.setCoordinate(CLLocationCoordinate2D.withRefId(args['newCoordinate']));
-              }
-              break;
-            default:
-              break;
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        case 'MAMapView::deselectAnnotation_Callback::setCoordinate':
+          if (annotation.setCoordinate != null) {
+            // 日志打印
+            print(
+                'fluttify-dart-callback: MAMapView::deselectAnnotation_setCoordinate([])');
+
+            // 调用回调方法
+            annotation.setCoordinate(
+                CLLocationCoordinate2D()..refId = (args['newCoordinate']));
           }
-        });
-  
+          break;
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<String> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
+
+  Future<String> setUserTrackingMode(
+      MAUserTrackingMode mode, bool animated) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setUserTrackingMode', {"mode": mode.index, "animated": animated, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod('MAMapView::setUserTrackingMode',
+        {"mode": mode.index, "animated": animated, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> updateUserLocationRepresentation(MAUserLocationRepresentation representation) async {
+
+  Future<String> updateUserLocationRepresentation(
+      MAUserLocationRepresentation representation) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::updateUserLocationRepresentation([])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::updateUserLocationRepresentation([])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::updateUserLocationRepresentation', {"representation": representation.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::updateUserLocationRepresentation',
+        {"representation": representation.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> addOverlay(MAOverlay overlay) async {
+
+  Future<String> addOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addOverlay([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addOverlay', {"refId": refId});
-  
-  
+    final result =
+        await _channel.invokeMethod('MAMapView::addOverlay', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::addOverlay_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-        
-            default:
-              break;
-          }
-        });
-  
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<String> removeOverlay(MAOverlay overlay) async {
+
+  Future<String> removeOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeOverlay', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::removeOverlay', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::removeOverlay_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-        
-            default:
-              break;
-          }
-        });
-  
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<String> exchangeOverlayAtIndex(int index1, int index2) async {
+
+  Future<String> exchangeOverlayAtIndex(int index1, int index2) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::exchangeOverlayAtIndex', {"index1": index1, "index2": index2, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::exchangeOverlayAtIndex',
+        {"index1": index1, "index2": index2, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> exchangeOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
+
+  Future<String> exchangeOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::exchangeOverlay', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::exchangeOverlay', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::exchangeOverlay_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-        
-            default:
-              break;
-          }
-        });
-  
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        default:
+          break;
+      }
+    });
+
     // 返回值
     return result;
   }
-  
-   Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay) async {
+
+  Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::rendererForOverlay([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::rendererForOverlay', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::rendererForOverlay', {"refId": refId});
+
     // 接受原生回调
     MethodChannel('MAMapView::rendererForOverlay_Callback' + refId.toString())
         .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
-  
-          switch (methodCall.method) {
-        
-            default:
-              break;
-          }
-        });
-  
+      final args = methodCall.arguments as Map;
+      final refId = args['callerRefId'] as int;
+      if (refId != this.refId) return;
+
+      switch (methodCall.method) {
+        default:
+          break;
+      }
+    });
+
     // 返回值
-    return MAOverlayRenderer.withRefId(result);
+    return MAOverlayRenderer()..refId = result;
   }
-  
-   Future<String> setIndoorMapControlOrigin(CGPoint origin) async {
+
+  Future<String> setIndoorMapControlOrigin(CGPoint origin) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setIndoorMapControlOrigin([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setIndoorMapControlOrigin', {"origin": origin.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::setIndoorMapControlOrigin',
+        {"origin": origin.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> setCurrentIndoorMapFloorIndex(int floorIndex) async {
+
+  Future<String> setCurrentIndoorMapFloorIndex(int floorIndex) async {
     // 日志打印
-    print('fluttify-dart: MAMapView@$refId::setCurrentIndoorMapFloorIndex([\'floorIndex\':$floorIndex])');
-  
+    print(
+        'fluttify-dart: MAMapView@$refId::setCurrentIndoorMapFloorIndex([\'floorIndex\':$floorIndex])');
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCurrentIndoorMapFloorIndex', {"floorIndex": floorIndex, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::setCurrentIndoorMapFloorIndex',
+        {"floorIndex": floorIndex, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> clearIndoorMapCache() async {
+
+  Future<String> clearIndoorMapCache() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::clearIndoorMapCache([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::clearIndoorMapCache', {"refId": refId});
-  
-  
+    final result = await _channel
+        .invokeMethod('MAMapView::clearIndoorMapCache', {"refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
-   Future<String> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions) async {
+
+  Future<String> setCustomMapStyleOptions(
+      MAMapCustomStyleOptions styleOptions) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCustomMapStyleOptions([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCustomMapStyleOptions', {"styleOptions": styleOptions.refId, "refId": refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MAMapView::setCustomMapStyleOptions',
+        {"styleOptions": styleOptions.refId, "refId": refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return result;
   }
-  
 }
