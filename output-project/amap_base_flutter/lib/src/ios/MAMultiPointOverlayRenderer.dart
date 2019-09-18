@@ -28,16 +28,16 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
     await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": ""});
   
-    MethodChannel('MAMultiPointOverlayRendererDelegate::delegate_Callback' + refId.toString())
+    MethodChannel('MAMultiPointOverlayRendererDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        final refId = args['callerRefId'] as int;
-        if (refId != this.refId) return;
+        // final refId = args['callerRefId'] as int;
+        // if (refId != this.refId) return;
   
         switch (methodCall.method) {
-          case 'MAMultiPointOverlayRenderer::delegate_Callback::multiPointOverlayRendererDidItemTapped':
+          case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped':
             // 日志打印
-            print('fluttify-dart-callback: MAMultiPointOverlayRenderer::delegate_multiPointOverlayRenderer([])');
+            print('fluttify-dart-callback: multiPointOverlayRenderer([])');
         
               // 调用回调方法
             delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer']), MAMultiPointItem()..refId = (args['item']));

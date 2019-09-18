@@ -23,30 +23,30 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAParticleOverLifeModule::setVelocityOverLife_Callback' + refId.toString())
+    MethodChannel('MAParticleOverLifeModule::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getX':
+            case 'Callback::MAParticleVelocityGenerate::getX':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getX([])');
+              print('fluttify-dart-callback: getX([])');
         
                 // 调用回调方法
               velocity?.getX();
               break;
-            case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getY':
+            case 'Callback::MAParticleVelocityGenerate::getY':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getY([])');
+              print('fluttify-dart-callback: getY([])');
         
                 // 调用回调方法
               velocity?.getY();
               break;
-            case 'MAParticleOverLifeModule::setVelocityOverLife_Callback::getZ':
+            case 'Callback::MAParticleVelocityGenerate::getZ':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setVelocityOverLife_getZ([])');
+              print('fluttify-dart-callback: getZ([])');
         
                 // 调用回调方法
               velocity?.getZ();
@@ -69,16 +69,16 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAParticleOverLifeModule::setRotationOverLife_Callback' + refId.toString())
+    MethodChannel('MAParticleOverLifeModule::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAParticleOverLifeModule::setRotationOverLife_Callback::getRotate':
+            case 'Callback::MAParticleRotationGenerate::getRotate':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setRotationOverLife_getRotate([])');
+              print('fluttify-dart-callback: getRotate([])');
         
                 // 调用回调方法
               rotation?.getRotate();
@@ -101,30 +101,30 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAParticleOverLifeModule::setSizeOverLife_Callback' + refId.toString())
+    MethodChannel('MAParticleOverLifeModule::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeX':
+            case 'Callback::MAParticleSizeGenerate::getSizeX':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeX([\'timeFrame\':$args[timeFrame]])');
+              print('fluttify-dart-callback: getSizeX([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
               size?.getSizeX(args['timeFrame']);
               break;
-            case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeY':
+            case 'Callback::MAParticleSizeGenerate::getSizeY':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeY([\'timeFrame\':$args[timeFrame]])');
+              print('fluttify-dart-callback: getSizeY([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
               size?.getSizeY(args['timeFrame']);
               break;
-            case 'MAParticleOverLifeModule::setSizeOverLife_Callback::getSizeZ':
+            case 'Callback::MAParticleSizeGenerate::getSizeZ':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setSizeOverLife_getSizeZ([\'timeFrame\':$args[timeFrame]])');
+              print('fluttify-dart-callback: getSizeZ([\'timeFrame\':$args[timeFrame]])');
         
                 // 调用回调方法
               size?.getSizeZ(args['timeFrame']);
@@ -147,16 +147,16 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAParticleOverLifeModule::setColorOverLife_Callback' + refId.toString())
+    MethodChannel('MAParticleOverLifeModule::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAParticleOverLifeModule::setColorOverLife_Callback::getColor':
+            case 'Callback::MAParticleColorGenerate::getColor':
               // 日志打印
-              print('fluttify-dart-callback: MAParticleOverLifeModule::setColorOverLife_getColor([])');
+              print('fluttify-dart-callback: getColor([])');
         
                 // 调用回调方法
               color?.getColor();

@@ -32,11 +32,11 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // 接受原生回调
-    MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_Callback' + refId.toString())
+    MethodChannel('MAAnimatedAnnotation::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
             case 'MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinates_Callback::completeCallback':

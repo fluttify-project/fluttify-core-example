@@ -47,11 +47,11 @@ class MAOfflineMap extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAOfflineMap::setupWithCompletionBlock_Callback' + refId.toString())
+    MethodChannel('MAOfflineMap::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
             case 'MAOfflineMap::setupWithCompletionBlock_Callback::block':

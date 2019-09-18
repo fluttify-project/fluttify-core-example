@@ -18,23 +18,23 @@ class MATraceManager extends NSObject  {
   Future<void> set_delegate(MATraceDelegate delegate) async {
     await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": ""});
   
-    MethodChannel('MATraceDelegate::delegate_Callback' + refId.toString())
+    MethodChannel('MATraceDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        final refId = args['callerRefId'] as int;
-        if (refId != this.refId) return;
+        // final refId = args['callerRefId'] as int;
+        // if (refId != this.refId) return;
   
         switch (methodCall.method) {
-          case 'MATraceManager::delegate_Callback::traceManagerDidTracecorrectdistancewithError':
+          case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
             // 日志打印
-            print('fluttify-dart-callback: MATraceManager::delegate_traceManager([\'distance\':$args[distance]])');
+            print('fluttify-dart-callback: traceManager([\'distance\':$args[distance]])');
         
               // 调用回调方法
             delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager']), [], [], args['distance'], NSError()..refId = (args['error']));
             break;
-          case 'MATraceManager::delegate_Callback::mapViewRequireLocationAuth':
+          case 'Callback::MATraceDelegate::mapViewRequireLocationAuth':
             // 日志打印
-            print('fluttify-dart-callback: MATraceManager::delegate_mapViewRequireLocationAuth([])');
+            print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
         
               // 调用回调方法
             delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager']));

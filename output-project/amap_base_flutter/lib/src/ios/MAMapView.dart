@@ -248,261 +248,261 @@ class MAMapView extends UIView  {
   Future<void> set_delegate(MAMapViewDelegate delegate) async {
     await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": ""});
   
-    MethodChannel('MAMapViewDelegate::delegate_Callback' + refId.toString())
+    MethodChannel('MAMapViewDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
         final args = methodCall.arguments as Map;
-        final refId = args['callerRefId'] as int;
-        if (refId != this.refId) return;
+        // final refId = args['callerRefId'] as int;
+        // if (refId != this.refId) return;
   
         switch (methodCall.method) {
-          case 'MAMapView::delegate_Callback::mapViewRegionChanged':
+          case 'Callback::MAMapViewDelegate::mapViewRegionChanged':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewRegionChanged([])');
+            print('fluttify-dart-callback: mapViewRegionChanged([])');
         
               // 调用回调方法
             delegate?.mapViewRegionChanged(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewRegionWillChangeAnimated':
+          case 'Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'animated\':$args[animated]])');
+            print('fluttify-dart-callback: mapView([\'animated\':$args[animated]])');
         
               // 调用回调方法
             delegate?.mapViewRegionWillChangeAnimated(MAMapView()..refId = (args['mapView']), args['animated']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewRegionDidChangeAnimated':
+          case 'Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'animated\':$args[animated]])');
+            print('fluttify-dart-callback: mapView([\'animated\':$args[animated]])');
         
               // 调用回调方法
             delegate?.mapViewRegionDidChangeAnimated(MAMapView()..refId = (args['mapView']), args['animated']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewMapWillMoveByUser':
+          case 'Callback::MAMapViewDelegate::mapViewMapWillMoveByUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'wasUserAction\':$args[wasUserAction]])');
+            print('fluttify-dart-callback: mapView([\'wasUserAction\':$args[wasUserAction]])');
         
               // 调用回调方法
             delegate?.mapViewMapWillMoveByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewMapDidMoveByUser':
+          case 'Callback::MAMapViewDelegate::mapViewMapDidMoveByUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'wasUserAction\':$args[wasUserAction]])');
+            print('fluttify-dart-callback: mapView([\'wasUserAction\':$args[wasUserAction]])');
         
               // 调用回调方法
             delegate?.mapViewMapDidMoveByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewMapWillZoomByUser':
+          case 'Callback::MAMapViewDelegate::mapViewMapWillZoomByUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'wasUserAction\':$args[wasUserAction]])');
+            print('fluttify-dart-callback: mapView([\'wasUserAction\':$args[wasUserAction]])');
         
               // 调用回调方法
             delegate?.mapViewMapWillZoomByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewMapDidZoomByUser':
+          case 'Callback::MAMapViewDelegate::mapViewMapDidZoomByUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'wasUserAction\':$args[wasUserAction]])');
+            print('fluttify-dart-callback: mapView([\'wasUserAction\':$args[wasUserAction]])');
         
               // 调用回调方法
             delegate?.mapViewMapDidZoomByUser(MAMapView()..refId = (args['mapView']), args['wasUserAction']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewWillStartLoadingMap':
+          case 'Callback::MAMapViewDelegate::mapViewWillStartLoadingMap':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewWillStartLoadingMap([])');
+            print('fluttify-dart-callback: mapViewWillStartLoadingMap([])');
         
               // 调用回调方法
             delegate?.mapViewWillStartLoadingMap(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidFinishLoadingMap':
+          case 'Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewDidFinishLoadingMap([])');
+            print('fluttify-dart-callback: mapViewDidFinishLoadingMap([])');
         
               // 调用回调方法
             delegate?.mapViewDidFinishLoadingMap(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidFailLoadingMapWithError':
+          case 'Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewDidFailLoadingMap([])');
+            print('fluttify-dart-callback: mapViewDidFailLoadingMap([])');
         
               // 调用回调方法
             delegate?.mapViewDidFailLoadingMapWithError(MAMapView()..refId = (args['mapView']), NSError()..refId = (args['error']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewViewForAnnotation':
+          case 'Callback::MAMapViewDelegate::mapViewViewForAnnotation':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewViewForAnnotation(MAMapView()..refId = (args['mapView']), MAAnnotation_Ref()..refId = (args['annotation']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidAddAnnotationViews':
+          case 'Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'views\':$args[views]])');
+            print('fluttify-dart-callback: mapView([\'views\':$args[views]])');
         
               // 调用回调方法
             delegate?.mapViewDidAddAnnotationViews(MAMapView()..refId = (args['mapView']), args['views']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidSelectAnnotationView':
+          case 'Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidSelectAnnotationView(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidDeselectAnnotationView':
+          case 'Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidDeselectAnnotationView(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewWillStartLocatingUser':
+          case 'Callback::MAMapViewDelegate::mapViewWillStartLocatingUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewWillStartLocatingUser([])');
+            print('fluttify-dart-callback: mapViewWillStartLocatingUser([])');
         
               // 调用回调方法
             delegate?.mapViewWillStartLocatingUser(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidStopLocatingUser':
+          case 'Callback::MAMapViewDelegate::mapViewDidStopLocatingUser':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewDidStopLocatingUser([])');
+            print('fluttify-dart-callback: mapViewDidStopLocatingUser([])');
         
               // 调用回调方法
             delegate?.mapViewDidStopLocatingUser(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidUpdateUserLocationupdatingLocation':
+          case 'Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'updatingLocation\':$args[updatingLocation]])');
+            print('fluttify-dart-callback: mapView([\'updatingLocation\':$args[updatingLocation]])');
         
               // 调用回调方法
             delegate?.mapViewDidUpdateUserLocationupdatingLocation(MAMapView()..refId = (args['mapView']), MAUserLocation()..refId = (args['userLocation']), args['updatingLocation']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewRequireLocationAuth':
+          case 'Callback::MAMapViewDelegate::mapViewRequireLocationAuth':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapViewRequireLocationAuth([])');
+            print('fluttify-dart-callback: mapViewRequireLocationAuth([])');
         
               // 调用回调方法
             delegate?.mapViewRequireLocationAuth(CLLocationManager()..refId = (args['locationManager']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidFailToLocateUserWithError':
+          case 'Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidFailToLocateUserWithError(MAMapView()..refId = (args['mapView']), NSError()..refId = (args['error']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewAnnotationViewdidChangeDragStatefromOldState':
+          case 'Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewAnnotationViewdidChangeDragStatefromOldState(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']), MAAnnotationViewDragState.values[(args['newState'])], MAAnnotationViewDragState.values[(args['oldState'])]);
             break;
-          case 'MAMapView::delegate_Callback::mapViewRendererForOverlay':
+          case 'Callback::MAMapViewDelegate::mapViewRendererForOverlay':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewRendererForOverlay(MAMapView()..refId = (args['mapView']), MAOverlay_Ref()..refId = (args['overlay']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidAddOverlayRenderers':
+          case 'Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'overlayRenderers\':$args[overlayRenderers]])');
+            print('fluttify-dart-callback: mapView([\'overlayRenderers\':$args[overlayRenderers]])');
         
               // 调用回调方法
             delegate?.mapViewDidAddOverlayRenderers(MAMapView()..refId = (args['mapView']), args['overlayRenderers']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewAnnotationViewcalloutAccessoryControlTapped':
+          case 'Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewAnnotationViewcalloutAccessoryControlTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']), UIControl()..refId = (args['control']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidAnnotationViewCalloutTapped':
+          case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidAnnotationViewCalloutTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidAnnotationViewTapped':
+          case 'Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidAnnotationViewTapped(MAMapView()..refId = (args['mapView']), MAAnnotationView()..refId = (args['view']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidChangeUserTrackingModeanimated':
+          case 'Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'animated\':$args[animated]])');
+            print('fluttify-dart-callback: mapView([\'animated\':$args[animated]])');
         
               // 调用回调方法
             delegate?.mapViewDidChangeUserTrackingModeanimated(MAMapView()..refId = (args['mapView']), MAUserTrackingMode.values[(args['mode'])], args['animated']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidChangeOpenGLESDisabled':
+          case 'Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'openGLESDisabled\':$args[openGLESDisabled]])');
+            print('fluttify-dart-callback: mapView([\'openGLESDisabled\':$args[openGLESDisabled]])');
         
               // 调用回调方法
             delegate?.mapViewDidChangeOpenGLESDisabled(MAMapView()..refId = (args['mapView']), args['openGLESDisabled']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidTouchPois':
+          case 'Callback::MAMapViewDelegate::mapViewDidTouchPois':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([\'pois\':$args[pois]])');
+            print('fluttify-dart-callback: mapView([\'pois\':$args[pois]])');
         
               // 调用回调方法
             delegate?.mapViewDidTouchPois(MAMapView()..refId = (args['mapView']), args['pois']);
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidSingleTappedAtCoordinate':
+          case 'Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidSingleTappedAtCoordinate(MAMapView()..refId = (args['mapView']), CLLocationCoordinate2D()..refId = (args['coordinate']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidLongPressedAtCoordinate':
+          case 'Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidLongPressedAtCoordinate(MAMapView()..refId = (args['mapView']), CLLocationCoordinate2D()..refId = (args['coordinate']));
             break;
-          case 'MAMapView::delegate_Callback::mapInitComplete':
+          case 'Callback::MAMapViewDelegate::mapInitComplete':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapInitComplete([])');
+            print('fluttify-dart-callback: mapInitComplete([])');
         
               // 调用回调方法
             delegate?.mapInitComplete(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidIndoorMapShowed':
+          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidIndoorMapShowed(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidIndoorMapFloorIndexChanged':
+          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidIndoorMapFloorIndexChanged(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
             break;
-          case 'MAMapView::delegate_Callback::mapViewDidIndoorMapHidden':
+          case 'Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_mapView([])');
+            print('fluttify-dart-callback: mapView([])');
         
               // 调用回调方法
             delegate?.mapViewDidIndoorMapHidden(MAMapView()..refId = (args['mapView']), MAIndoorInfo()..refId = (args['indoorInfo']));
             break;
-          case 'MAMapView::delegate_Callback::offlineDataWillReload':
+          case 'Callback::MAMapViewDelegate::offlineDataWillReload':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_offlineDataWillReload([])');
+            print('fluttify-dart-callback: offlineDataWillReload([])');
         
               // 调用回调方法
             delegate?.offlineDataWillReload(MAMapView()..refId = (args['mapView']));
             break;
-          case 'MAMapView::delegate_Callback::offlineDataDidReload':
+          case 'Callback::MAMapViewDelegate::offlineDataDidReload':
             // 日志打印
-            print('fluttify-dart-callback: MAMapView::delegate_offlineDataDidReload([])');
+            print('fluttify-dart-callback: offlineDataDidReload([])');
         
               // 调用回调方法
             delegate?.offlineDataDidReload(MAMapView()..refId = (args['mapView']));
@@ -1079,16 +1079,16 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::addAnnotation_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAMapView::addAnnotation_Callback::setCoordinate':
+            case 'Callback::MAAnnotation::setCoordinate':
               // 日志打印
-              print('fluttify-dart-callback: MAMapView::addAnnotation_setCoordinate([])');
+              print('fluttify-dart-callback: setCoordinate([])');
         
                 // 调用回调方法
               annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
@@ -1111,16 +1111,16 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::removeAnnotation_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAMapView::removeAnnotation_Callback::setCoordinate':
+            case 'Callback::MAAnnotation::setCoordinate':
               // 日志打印
-              print('fluttify-dart-callback: MAMapView::removeAnnotation_setCoordinate([])');
+              print('fluttify-dart-callback: setCoordinate([])');
         
                 // 调用回调方法
               annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
@@ -1143,16 +1143,16 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::viewForAnnotation_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAMapView::viewForAnnotation_Callback::setCoordinate':
+            case 'Callback::MAAnnotation::setCoordinate':
               // 日志打印
-              print('fluttify-dart-callback: MAMapView::viewForAnnotation_setCoordinate([])');
+              print('fluttify-dart-callback: setCoordinate([])');
         
                 // 调用回调方法
               annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
@@ -1190,16 +1190,16 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::selectAnnotation_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAMapView::selectAnnotation_Callback::setCoordinate':
+            case 'Callback::MAAnnotation::setCoordinate':
               // 日志打印
-              print('fluttify-dart-callback: MAMapView::selectAnnotation_setCoordinate([])');
+              print('fluttify-dart-callback: setCoordinate([])');
         
                 // 调用回调方法
               annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
@@ -1222,16 +1222,16 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::deselectAnnotation_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
-            case 'MAMapView::deselectAnnotation_Callback::setCoordinate':
+            case 'Callback::MAAnnotation::setCoordinate':
               // 日志打印
-              print('fluttify-dart-callback: MAMapView::deselectAnnotation_setCoordinate([])');
+              print('fluttify-dart-callback: setCoordinate([])');
         
                 // 调用回调方法
               annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
@@ -1284,11 +1284,11 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::addOverlay_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
         
@@ -1310,11 +1310,11 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::removeOverlay_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
         
@@ -1351,11 +1351,11 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::exchangeOverlay_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
         
@@ -1377,11 +1377,11 @@ class MAMapView extends UIView  {
   
   
     // 接受原生回调
-    MethodChannel('MAMapView::rendererForOverlay_Callback' + refId.toString())
+    MethodChannel('MAMapView::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
-          final refId = args['callerRefId'] as int;
-          if (refId != this.refId) return;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
           switch (methodCall.method) {
         
