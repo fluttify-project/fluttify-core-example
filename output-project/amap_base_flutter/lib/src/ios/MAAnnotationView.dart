@@ -89,24 +89,7 @@ class MAAnnotationView extends UIView  {
   Future<void> set_annotation(MAAnnotation annotation) async {
     await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": ""});
   
-    MethodChannel('MAAnnotation::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
   
-        switch (methodCall.method) {
-          case 'Callback::MAAnnotation::setCoordinate':
-            // 日志打印
-            print('fluttify-dart-callback: setCoordinate([])');
-        
-              // 调用回调方法
-            annotation?.setCoordinate(CLLocationCoordinate2D()..refId = (args['newCoordinate']));
-            break;
-          default:
-            break;
-        }
-      });
   }
   
   Future<void> set_customCalloutView(MACustomCalloutView customCalloutView) async {

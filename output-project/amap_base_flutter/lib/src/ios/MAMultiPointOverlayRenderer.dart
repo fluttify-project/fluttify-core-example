@@ -37,7 +37,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
         switch (methodCall.method) {
           case 'Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped':
             // 日志打印
-            print('fluttify-dart-callback: multiPointOverlayRenderer([])');
+            print('fluttify-dart-callback: multiPointOverlayRendererDidItemTapped([])');
         
               // 调用回调方法
             delegate?.multiPointOverlayRendererDidItemTapped(MAMultiPointOverlayRenderer()..refId = (args['renderer']), MAMultiPointItem()..refId = (args['item']));

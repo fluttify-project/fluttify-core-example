@@ -71,61 +71,13 @@ class MAParticleOverlayOptions extends NSObject  {
   Future<void> set_particleStartColor(MAParticleColorGenerate particleStartColor) async {
     await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": ""});
   
-    MethodChannel('MAParticleColorGenerate::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
   
-        switch (methodCall.method) {
-          case 'Callback::MAParticleColorGenerate::getColor':
-            // 日志打印
-            print('fluttify-dart-callback: getColor([])');
-        
-              // 调用回调方法
-            particleStartColor?.getColor();
-            break;
-          default:
-            break;
-        }
-      });
   }
   
   Future<void> set_particleStartSpeed(MAParticleVelocityGenerate particleStartSpeed) async {
     await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": ""});
   
-    MethodChannel('MAParticleVelocityGenerate::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
   
-        switch (methodCall.method) {
-          case 'Callback::MAParticleVelocityGenerate::getX':
-            // 日志打印
-            print('fluttify-dart-callback: getX([])');
-        
-              // 调用回调方法
-            particleStartSpeed?.getX();
-            break;
-          case 'Callback::MAParticleVelocityGenerate::getY':
-            // 日志打印
-            print('fluttify-dart-callback: getY([])');
-        
-              // 调用回调方法
-            particleStartSpeed?.getY();
-            break;
-          case 'Callback::MAParticleVelocityGenerate::getZ':
-            // 日志打印
-            print('fluttify-dart-callback: getZ([])');
-        
-              // 调用回调方法
-            particleStartSpeed?.getZ();
-            break;
-          default:
-            break;
-        }
-      });
   }
   
   Future<void> set_particleEmissionModule(MAParticleEmissionModule particleEmissionModule) async {
@@ -137,31 +89,7 @@ class MAParticleOverlayOptions extends NSObject  {
   Future<void> set_particleShapeModule(MAParticleShapeModule particleShapeModule) async {
     await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": ""});
   
-    MethodChannel('MAParticleShapeModule::Callback')
-      .setMethodCallHandler((methodCall) async {
-        final args = methodCall.arguments as Map;
-        // final refId = args['callerRefId'] as int;
-        // if (refId != this.refId) return;
   
-        switch (methodCall.method) {
-          case 'Callback::MAParticleShapeModule::getPoint':
-            // 日志打印
-            print('fluttify-dart-callback: getPoint([])');
-        
-              // 调用回调方法
-            particleShapeModule?.getPoint();
-            break;
-          case 'Callback::MAParticleShapeModule::isRatioEnable':
-            // 日志打印
-            print('fluttify-dart-callback: isRatioEnable([])');
-        
-              // 调用回调方法
-            particleShapeModule?.isRatioEnable();
-            break;
-          default:
-            break;
-        }
-      });
   }
   
   Future<void> set_particleOverLifeModule(MAParticleOverLifeModule particleOverLifeModule) async {

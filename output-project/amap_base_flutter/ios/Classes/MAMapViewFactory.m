@@ -807,6 +807,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           methodResult(@"success");
       },
       @"MAMapView::get_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_delegate");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -815,6 +817,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_mapType");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -823,6 +827,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_centerCoordinate");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -831,6 +837,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_region");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -839,6 +847,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_visibleMapRect");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -847,6 +857,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_limitRegion");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -855,6 +867,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_limitMapRect");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -863,6 +877,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_zoomLevel");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -871,6 +887,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_minZoomLevel");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -879,6 +897,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_maxZoomLevel");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -887,6 +907,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_rotationDegree");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -895,6 +917,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_cameraDegree");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -903,6 +927,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_zoomingInPivotsAroundAnchorPoint");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -911,6 +937,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isZoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isZoomEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -919,6 +947,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isScrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isScrollEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -927,6 +957,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isRotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isRotateEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -935,6 +967,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isRotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isRotateCameraEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -943,6 +977,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isSkyModelEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isSkyModelEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -951,6 +987,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isShowsBuildings");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -959,6 +997,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isShowsLabels");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -967,6 +1007,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isShowTraffic");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -975,6 +1017,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_trafficRatio");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -983,6 +1027,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_touchPOIEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -991,6 +1037,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_showsCompass");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -999,6 +1047,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_compassOrigin");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1007,6 +1057,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_showsScale");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1015,6 +1067,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_scaleOrigin");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1023,6 +1077,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_logoCenter");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1031,6 +1087,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_metersPerPointForCurrentZoom": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_metersPerPointForCurrentZoom");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1039,6 +1097,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isAbroad": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isAbroad");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1047,6 +1107,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_maxRenderFrame");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1055,6 +1117,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isAllowDecreaseFrame");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1063,6 +1127,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_openGLESDisabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1071,6 +1137,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_screenAnchor");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1079,6 +1147,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_annotationVisibleRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_annotationVisibleRect");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1087,6 +1157,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_allowsAnnotationViewSorting");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1095,6 +1167,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_showsUserLocation");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1103,6 +1177,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_userLocation");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1111,6 +1187,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_customizeUserLocationAccuracyCircleRepresentation");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1119,6 +1197,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userLocationAccuracyCircle": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_userLocationAccuracyCircle");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1127,6 +1207,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_userTrackingMode");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1135,6 +1217,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isUserLocationVisible": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isUserLocationVisible");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1143,6 +1227,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_pausesLocationUpdatesAutomatically");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1151,6 +1237,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_allowsBackgroundLocationUpdates");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1159,6 +1247,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isShowsIndoorMap");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1167,6 +1257,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_isShowsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_isShowsIndoorMapControl");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1175,6 +1267,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::get_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::get_customMapStyleEnabled");
+      
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
@@ -1183,6 +1277,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_delegate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_delegate");
+      
           // 参数
       
       
@@ -1194,6 +1290,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_mapType": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_mapType");
+      
           // 参数
           // 枚举参数
           MAMapType mapType = (MAMapType) [args[@"mapType"] integerValue];
@@ -1206,6 +1304,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_centerCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_centerCoordinate");
+      
           // 参数
           // 结构体参数
           NSValue* centerCoordinateValue = (NSValue*) REF_MAP[@([args[@"centerCoordinate"] integerValue])];
@@ -1220,6 +1320,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_region": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_region");
+      
           // 参数
           // 结构体参数
           NSValue* regionValue = (NSValue*) REF_MAP[@([args[@"region"] integerValue])];
@@ -1234,6 +1336,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_visibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_visibleMapRect");
+      
           // 参数
           // 结构体参数
           NSValue* visibleMapRectValue = (NSValue*) REF_MAP[@([args[@"visibleMapRect"] integerValue])];
@@ -1248,6 +1352,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_limitRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_limitRegion");
+      
           // 参数
           // 结构体参数
           NSValue* limitRegionValue = (NSValue*) REF_MAP[@([args[@"limitRegion"] integerValue])];
@@ -1262,6 +1368,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_limitMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_limitMapRect");
+      
           // 参数
           // 结构体参数
           NSValue* limitMapRectValue = (NSValue*) REF_MAP[@([args[@"limitMapRect"] integerValue])];
@@ -1276,6 +1384,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_zoomLevel");
+      
           // 参数
           // jsonable参数
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
@@ -1288,6 +1398,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_minZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_minZoomLevel");
+      
           // 参数
           // jsonable参数
           CGFloat minZoomLevel = [args[@"minZoomLevel"] floatValue];
@@ -1300,6 +1412,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_maxZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_maxZoomLevel");
+      
           // 参数
           // jsonable参数
           CGFloat maxZoomLevel = [args[@"maxZoomLevel"] floatValue];
@@ -1312,6 +1426,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_rotationDegree");
+      
           // 参数
           // jsonable参数
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
@@ -1324,6 +1440,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_cameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_cameraDegree");
+      
           // 参数
           // jsonable参数
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
@@ -1336,6 +1454,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomingInPivotsAroundAnchorPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_zoomingInPivotsAroundAnchorPoint");
+      
           // 参数
           // jsonable参数
           BOOL zoomingInPivotsAroundAnchorPoint = [args[@"zoomingInPivotsAroundAnchorPoint"] boolValue];
@@ -1348,6 +1468,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_zoomEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_zoomEnabled");
+      
           // 参数
           // jsonable参数
           BOOL zoomEnabled = [args[@"zoomEnabled"] boolValue];
@@ -1360,6 +1482,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_scrollEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_scrollEnabled");
+      
           // 参数
           // jsonable参数
           BOOL scrollEnabled = [args[@"scrollEnabled"] boolValue];
@@ -1372,6 +1496,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotateEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_rotateEnabled");
+      
           // 参数
           // jsonable参数
           BOOL rotateEnabled = [args[@"rotateEnabled"] boolValue];
@@ -1384,6 +1510,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_rotateCameraEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_rotateCameraEnabled");
+      
           // 参数
           // jsonable参数
           BOOL rotateCameraEnabled = [args[@"rotateCameraEnabled"] boolValue];
@@ -1396,6 +1524,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_skyModelEnable": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_skyModelEnable");
+      
           // 参数
           // jsonable参数
           BOOL skyModelEnable = [args[@"skyModelEnable"] boolValue];
@@ -1408,6 +1538,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsBuildings": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsBuildings");
+      
           // 参数
           // jsonable参数
           BOOL showsBuildings = [args[@"showsBuildings"] boolValue];
@@ -1420,6 +1552,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsLabels": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsLabels");
+      
           // 参数
           // jsonable参数
           BOOL showsLabels = [args[@"showsLabels"] boolValue];
@@ -1432,6 +1566,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showTraffic": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showTraffic");
+      
           // 参数
           // jsonable参数
           BOOL showTraffic = [args[@"showTraffic"] boolValue];
@@ -1444,6 +1580,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_trafficRatio": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_trafficRatio");
+      
           // 参数
           // jsonable参数
           CGFloat trafficRatio = [args[@"trafficRatio"] floatValue];
@@ -1456,6 +1594,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_touchPOIEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_touchPOIEnabled");
+      
           // 参数
           // jsonable参数
           BOOL touchPOIEnabled = [args[@"touchPOIEnabled"] boolValue];
@@ -1468,6 +1608,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsCompass": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsCompass");
+      
           // 参数
           // jsonable参数
           BOOL showsCompass = [args[@"showsCompass"] boolValue];
@@ -1480,6 +1622,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_compassOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_compassOrigin");
+      
           // 参数
           // 结构体参数
           NSValue* compassOriginValue = (NSValue*) REF_MAP[@([args[@"compassOrigin"] integerValue])];
@@ -1494,6 +1638,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsScale": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsScale");
+      
           // 参数
           // jsonable参数
           BOOL showsScale = [args[@"showsScale"] boolValue];
@@ -1506,6 +1652,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_scaleOrigin": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_scaleOrigin");
+      
           // 参数
           // 结构体参数
           NSValue* scaleOriginValue = (NSValue*) REF_MAP[@([args[@"scaleOrigin"] integerValue])];
@@ -1520,6 +1668,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_logoCenter": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_logoCenter");
+      
           // 参数
           // 结构体参数
           NSValue* logoCenterValue = (NSValue*) REF_MAP[@([args[@"logoCenter"] integerValue])];
@@ -1534,6 +1684,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_maxRenderFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_maxRenderFrame");
+      
           // 参数
           // jsonable参数
           NSUInteger maxRenderFrame = [args[@"maxRenderFrame"] unsignedIntegerValue];
@@ -1546,6 +1698,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_isAllowDecreaseFrame": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_isAllowDecreaseFrame");
+      
           // 参数
           // jsonable参数
           BOOL isAllowDecreaseFrame = [args[@"isAllowDecreaseFrame"] boolValue];
@@ -1558,6 +1712,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_openGLESDisabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_openGLESDisabled");
+      
           // 参数
           // jsonable参数
           BOOL openGLESDisabled = [args[@"openGLESDisabled"] boolValue];
@@ -1570,6 +1726,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_screenAnchor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_screenAnchor");
+      
           // 参数
           // 结构体参数
           NSValue* screenAnchorValue = (NSValue*) REF_MAP[@([args[@"screenAnchor"] integerValue])];
@@ -1584,6 +1742,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_allowsAnnotationViewSorting": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_allowsAnnotationViewSorting");
+      
           // 参数
           // jsonable参数
           BOOL allowsAnnotationViewSorting = [args[@"allowsAnnotationViewSorting"] boolValue];
@@ -1596,6 +1756,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsUserLocation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsUserLocation");
+      
           // 参数
           // jsonable参数
           BOOL showsUserLocation = [args[@"showsUserLocation"] boolValue];
@@ -1608,6 +1770,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_customizeUserLocationAccuracyCircleRepresentation");
+      
           // 参数
           // jsonable参数
           BOOL customizeUserLocationAccuracyCircleRepresentation = [args[@"customizeUserLocationAccuracyCircleRepresentation"] boolValue];
@@ -1620,6 +1784,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_userTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_userTrackingMode");
+      
           // 参数
           // 枚举参数
           MAUserTrackingMode userTrackingMode = (MAUserTrackingMode) [args[@"userTrackingMode"] integerValue];
@@ -1632,6 +1798,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_pausesLocationUpdatesAutomatically": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_pausesLocationUpdatesAutomatically");
+      
           // 参数
           // jsonable参数
           BOOL pausesLocationUpdatesAutomatically = [args[@"pausesLocationUpdatesAutomatically"] boolValue];
@@ -1644,6 +1812,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_allowsBackgroundLocationUpdates": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_allowsBackgroundLocationUpdates");
+      
           // 参数
           // jsonable参数
           BOOL allowsBackgroundLocationUpdates = [args[@"allowsBackgroundLocationUpdates"] boolValue];
@@ -1656,6 +1826,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsIndoorMap": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsIndoorMap");
+      
           // 参数
           // jsonable参数
           BOOL showsIndoorMap = [args[@"showsIndoorMap"] boolValue];
@@ -1668,6 +1840,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_showsIndoorMapControl": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_showsIndoorMapControl");
+      
           // 参数
           // jsonable参数
           BOOL showsIndoorMapControl = [args[@"showsIndoorMapControl"] boolValue];
@@ -1680,6 +1854,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       },
       
       @"MAMapView::set_customMapStyleEnabled": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          NSLog(@"MAMapView::set_customMapStyleEnabled");
+      
           // 参数
           // jsonable参数
           BOOL customMapStyleEnabled = [args[@"customMapStyleEnabled"] boolValue];
@@ -1723,6 +1899,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"traceManager");
+
   // 暂不支持含有数组的方法
 }
 
@@ -1731,6 +1909,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapViewRequireLocationAuth");
 
   [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": @(locationManager.hash)}];
   
@@ -1742,6 +1922,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMultiPointOverlayRendererDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"multiPointOverlayRenderer");
+
   [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped" arguments:@{@"renderer": @(renderer.hash), @"item": @(item.hash)}];
   
 }
@@ -1751,6 +1933,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapViewRegionChanged");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -1762,6 +1946,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated)}];
   
 }
@@ -1771,6 +1957,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated)}];
   
@@ -1782,6 +1970,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
 }
@@ -1791,6 +1981,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -1802,6 +1994,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
 }
@@ -1811,6 +2005,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -1822,6 +2018,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapViewWillStartLoadingMap");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": @(mapView.hash)}];
   
 }
@@ -1831,6 +2029,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapViewDidFinishLoadingMap");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -1842,6 +2042,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapViewDidFailLoadingMap");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
   
 }
@@ -1852,21 +2054,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  __block MAAnnotationView* _callbackResult = nil;
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewViewForAnnotation"
-              arguments:@{@"mapView": @(mapView.hash), @"annotation": @(annotation.hash)}
-                 result:^(id result) {
-                   NSInteger refId = (NSInteger) result;
-                   _callbackResult = (MAAnnotationView*) REF_MAP[@(refId)];
-                 }];
-  
-  while (_callbackResult == nil) {
-    // _callbackResult有值前, 空转
-  }
-  
-  
-  
-  return _callbackResult;
+  NSLog(@"mapView");
+
+  // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
+  // 相关issue https://github.com/flutter/flutter/issues/28310
+  return nil;
 }
 
 - (void)mapView : (MAMapView*)mapView didAddAnnotationViews: (NSArray*)views
@@ -1874,6 +2066,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   // 暂不支持含有数组的方法
 }
@@ -1883,6 +2077,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -1894,6 +2090,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
 }
@@ -1903,6 +2101,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapViewWillStartLocatingUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -1914,6 +2114,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapViewDidStopLocatingUser");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": @(mapView.hash)}];
   
 }
@@ -1923,6 +2125,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": @(mapView.hash), @"userLocation": @(userLocation.hash), @"updatingLocation": @(updatingLocation)}];
   
@@ -1934,6 +2138,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
   
 }
@@ -1943,6 +2149,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"newState": @(newState), @"oldState": @(oldState)}];
   
@@ -1954,21 +2162,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  __block MAOverlayRenderer* _callbackResult = nil;
-  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRendererForOverlay"
-              arguments:@{@"mapView": @(mapView.hash), @"overlay": @(overlay.hash)}
-                 result:^(id result) {
-                   NSInteger refId = (NSInteger) result;
-                   _callbackResult = (MAOverlayRenderer*) REF_MAP[@(refId)];
-                 }];
-  
-  while (_callbackResult == nil) {
-    // _callbackResult有值前, 空转
-  }
-  
-  
-  
-  return _callbackResult;
+  NSLog(@"mapView");
+
+  // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
+  // 相关issue https://github.com/flutter/flutter/issues/28310
+  return nil;
 }
 
 - (void)mapView : (MAMapView*)mapView didAddOverlayRenderers: (NSArray*)overlayRenderers
@@ -1976,6 +2174,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   // 暂不支持含有数组的方法
 }
@@ -1985,6 +2185,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"control": @(control.hash)}];
   
@@ -1996,6 +2198,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
 }
@@ -2005,6 +2209,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -2016,6 +2222,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": @(mapView.hash), @"mode": @(mode), @"animated": @(animated)}];
   
 }
@@ -2025,6 +2233,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": @(mapView.hash), @"openGLESDisabled": @(openGLESDisabled)}];
   
@@ -2036,6 +2246,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   // 暂不支持含有数组的方法
 }
 
@@ -2044,6 +2256,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @([NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)].hash)}];
   
@@ -2055,6 +2269,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @([NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)].hash)}];
   
 }
@@ -2064,6 +2280,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapInitComplete");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2075,6 +2293,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
 }
@@ -2084,6 +2304,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"mapView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
@@ -2095,6 +2317,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"mapView");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
 }
@@ -2105,6 +2329,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
+  NSLog(@"offlineDataWillReload");
+
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": @(mapView.hash)}];
   
 }
@@ -2114,6 +2340,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
+
+  NSLog(@"offlineDataDidReload");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": @(mapView.hash)}];
   

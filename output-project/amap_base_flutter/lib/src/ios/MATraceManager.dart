@@ -27,7 +27,7 @@ class MATraceManager extends NSObject  {
         switch (methodCall.method) {
           case 'Callback::MATraceDelegate::traceManagerDidTracecorrectdistancewithError':
             // 日志打印
-            print('fluttify-dart-callback: traceManager([\'distance\':$args[distance]])');
+            print('fluttify-dart-callback: traceManagerDidTracecorrectdistancewithError([\'distance\':$args[distance]])');
         
               // 调用回调方法
             delegate?.traceManagerDidTracecorrectdistancewithError(MATraceManager()..refId = (args['manager']), [], [], args['distance'], NSError()..refId = (args['error']));
