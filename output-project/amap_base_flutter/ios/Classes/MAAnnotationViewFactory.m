@@ -108,6 +108,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.reuseIdentifier.hash));
       },
       
@@ -117,6 +119,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.zIndex));
       },
@@ -128,6 +132,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.annotation.hash));
       },
       
@@ -137,6 +143,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.customCalloutView.hash));
       },
@@ -148,6 +156,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAAnnotationView::get_centerOffset:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -157,6 +167,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+          NSLog(@"MAAnnotationView::get_calloutOffset:结构体getter暂时不支持");
       
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
@@ -168,6 +180,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isEnabled));
       },
       
@@ -177,6 +191,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isHighlighted));
       },
@@ -188,6 +204,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isSelected));
       },
       
@@ -197,6 +215,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.canShowCallout));
       },
@@ -208,6 +228,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.leftCalloutAccessoryView.hash));
       },
       
@@ -217,6 +239,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.rightCalloutAccessoryView.hash));
       },
@@ -228,6 +252,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isDraggable));
       },
       
@@ -237,6 +263,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAAnnotationView * ref = (MAAnnotationView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.dragState));
       },
@@ -618,6 +646,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 
@@ -726,6 +755,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 

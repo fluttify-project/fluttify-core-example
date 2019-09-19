@@ -51,6 +51,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MACustomCalloutView * ref = (MACustomCalloutView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.customView.hash));
       },
       
@@ -245,6 +247,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 
@@ -353,6 +356,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 

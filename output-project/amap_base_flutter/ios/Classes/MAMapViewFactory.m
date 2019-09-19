@@ -813,6 +813,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.delegate.hash));
       },
       
@@ -822,6 +824,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.mapType));
       },
@@ -833,6 +837,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_centerCoordinate:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -842,6 +848,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          NSLog(@"MAMapView::get_region:结构体getter暂时不支持");
       
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
@@ -853,6 +861,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_visibleMapRect:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -862,6 +872,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          NSLog(@"MAMapView::get_limitRegion:结构体getter暂时不支持");
       
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
@@ -873,6 +885,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_limitMapRect:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -882,6 +896,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.zoomLevel));
       },
@@ -893,6 +909,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.minZoomLevel));
       },
       
@@ -902,6 +920,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.maxZoomLevel));
       },
@@ -913,6 +933,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.rotationDegree));
       },
       
@@ -922,6 +944,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.cameraDegree));
       },
@@ -933,6 +957,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.zoomingInPivotsAroundAnchorPoint));
       },
       
@@ -942,6 +968,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isZoomEnabled));
       },
@@ -953,6 +981,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isScrollEnabled));
       },
       
@@ -962,6 +992,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isRotateEnabled));
       },
@@ -973,6 +1005,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isRotateCameraEnabled));
       },
       
@@ -982,6 +1016,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isSkyModelEnabled));
       },
@@ -993,6 +1029,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isShowsBuildings));
       },
       
@@ -1002,6 +1040,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isShowsLabels));
       },
@@ -1013,6 +1053,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isShowTraffic));
       },
       
@@ -1022,6 +1064,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.trafficRatio));
       },
@@ -1033,6 +1077,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.touchPOIEnabled));
       },
       
@@ -1042,6 +1088,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.showsCompass));
       },
@@ -1053,6 +1101,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_compassOrigin:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -1062,6 +1112,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.showsScale));
       },
@@ -1073,6 +1125,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_scaleOrigin:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -1082,6 +1136,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          NSLog(@"MAMapView::get_logoCenter:结构体getter暂时不支持");
       
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
@@ -1093,6 +1149,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.metersPerPointForCurrentZoom));
       },
       
@@ -1102,6 +1160,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isAbroad));
       },
@@ -1113,6 +1173,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.maxRenderFrame));
       },
       
@@ -1122,6 +1184,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isAllowDecreaseFrame));
       },
@@ -1133,6 +1197,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.openGLESDisabled));
       },
       
@@ -1142,6 +1208,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          NSLog(@"MAMapView::get_screenAnchor:结构体getter暂时不支持");
       
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
@@ -1153,6 +1221,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+          NSLog(@"MAMapView::get_annotationVisibleRect:结构体getter暂时不支持");
+      
           methodResult(nil/* 结构体getter暂时不支持 */);
       },
       
@@ -1162,6 +1232,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.allowsAnnotationViewSorting));
       },
@@ -1173,6 +1245,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.showsUserLocation));
       },
       
@@ -1182,6 +1256,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.userLocation.hash));
       },
@@ -1193,6 +1269,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.customizeUserLocationAccuracyCircleRepresentation));
       },
       
@@ -1202,6 +1280,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.userLocationAccuracyCircle.hash));
       },
@@ -1213,6 +1293,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.userTrackingMode));
       },
       
@@ -1222,6 +1304,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.isUserLocationVisible));
       },
@@ -1233,6 +1317,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.pausesLocationUpdatesAutomatically));
       },
       
@@ -1242,6 +1328,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.allowsBackgroundLocationUpdates));
       },
@@ -1253,6 +1341,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isShowsIndoorMap));
       },
       
@@ -1263,6 +1353,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
       
+      
+      
           methodResult(@(ref.isShowsIndoorMapControl));
       },
       
@@ -1272,6 +1364,8 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 引用对象
           NSInteger refId = [args[@"refId"] integerValue];
           MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+      
       
           methodResult(@(ref.customMapStyleEnabled));
       },
@@ -2058,6 +2152,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 
@@ -2166,6 +2261,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 

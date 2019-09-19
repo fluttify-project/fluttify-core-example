@@ -2026,6 +2026,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapNaviConfig * ref = (AMapNaviConfig *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.appScheme.hash));
     },
     
@@ -2035,6 +2037,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapNaviConfig * ref = (AMapNaviConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.appName.hash));
     },
@@ -2046,6 +2050,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapNaviConfig * ref = (AMapNaviConfig *) REF_MAP[@(refId)];
     
+        NSLog(@"AMapNaviConfig::get_destination:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2055,6 +2061,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapNaviConfig * ref = (AMapNaviConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.strategy));
     },
@@ -2066,6 +2074,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.appScheme.hash));
     },
     
@@ -2075,6 +2085,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.appName.hash));
     },
@@ -2086,6 +2098,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
     
+        NSLog(@"AMapRouteConfig::get_startCoordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2095,6 +2109,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
+    
+        NSLog(@"AMapRouteConfig::get_destinationCoordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2106,6 +2122,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.drivingStrategy));
     },
     
@@ -2115,6 +2133,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.transitStrategy));
     },
@@ -2126,6 +2146,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapRouteConfig * ref = (AMapRouteConfig *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.routeType));
     },
     
@@ -2135,6 +2157,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapPOIConfig * ref = (AMapPOIConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.appScheme.hash));
     },
@@ -2146,6 +2170,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapPOIConfig * ref = (AMapPOIConfig *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.appName.hash));
     },
     
@@ -2155,6 +2181,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapPOIConfig * ref = (AMapPOIConfig *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.keywords.hash));
     },
@@ -2166,6 +2194,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapPOIConfig * ref = (AMapPOIConfig *) REF_MAP[@(refId)];
     
+        NSLog(@"AMapPOIConfig::get_leftTopCoordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2175,6 +2205,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapPOIConfig * ref = (AMapPOIConfig *) REF_MAP[@(refId)];
+    
+        NSLog(@"AMapPOIConfig::get_rightBottomCoordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2186,6 +2218,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapServices * ref = (AMapServices *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.apiKey.hash));
     },
     
@@ -2195,6 +2229,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapServices * ref = (AMapServices *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.enableHTTPS));
     },
@@ -2206,6 +2242,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         AMapServices * ref = (AMapServices *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.crashReportEnabled));
     },
     
@@ -2215,6 +2253,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         AMapServices * ref = (AMapServices *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.identifier.hash));
     },
@@ -2226,6 +2266,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineCity * ref = (MAOfflineCity *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.cityCode.hash));
     },
     
@@ -2235,6 +2277,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPoint * ref = (MAMultiPoint *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAMultiPoint::get_points:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2246,6 +2290,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPoint * ref = (MAMultiPoint *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.pointCount));
     },
     
@@ -2255,6 +2301,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPoint * ref = (MAMultiPoint *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.cross180Longitude));
     },
@@ -2266,6 +2314,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAGroundOverlay * ref = (MAGroundOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.alpha));
     },
     
@@ -2275,6 +2325,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAGroundOverlay * ref = (MAGroundOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.zoomLevel));
     },
@@ -2286,6 +2338,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAGroundOverlay * ref = (MAGroundOverlay *) REF_MAP[@(refId)];
     
+        NSLog(@"MAGroundOverlay::get_bounds:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2295,6 +2349,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAPolygonRenderer * ref = (MAPolygonRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.polygon.hash));
     },
@@ -2306,6 +2362,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAPinAnnotationView * ref = (MAPinAnnotationView *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.pinColor));
     },
     
@@ -2315,6 +2373,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAPinAnnotationView * ref = (MAPinAnnotationView *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.animatesDrop));
     },
@@ -2326,6 +2386,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapNode * ref = (MAHeatMapNode *) REF_MAP[@(refId)];
     
+        NSLog(@"MAHeatMapNode::get_coordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2335,6 +2397,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapNode * ref = (MAHeatMapNode *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.intensity));
     },
@@ -2346,6 +2410,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapTileOverlay * ref = (MAHeatMapTileOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.radius));
     },
     
@@ -2355,6 +2421,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapTileOverlay * ref = (MAHeatMapTileOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.opacity));
     },
@@ -2366,6 +2434,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapTileOverlay * ref = (MAHeatMapTileOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.gradient.hash));
     },
     
@@ -2375,6 +2445,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAHeatMapTileOverlay * ref = (MAHeatMapTileOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.allowRetinaAdapting));
     },
@@ -2386,6 +2458,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapStatus * ref = (MAMapStatus *) REF_MAP[@(refId)];
     
+        NSLog(@"MAMapStatus::get_centerCoordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2395,6 +2469,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapStatus * ref = (MAMapStatus *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.zoomLevel));
     },
@@ -2406,6 +2482,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapStatus * ref = (MAMapStatus *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.rotationDegree));
     },
     
@@ -2415,6 +2493,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapStatus * ref = (MAMapStatus *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.cameraDegree));
     },
@@ -2426,6 +2506,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapStatus * ref = (MAMapStatus *) REF_MAP[@(refId)];
     
+        NSLog(@"MAMapStatus::get_screenAnchor:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2435,6 +2517,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAPointAnnotation * ref = (MAPointAnnotation *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAPointAnnotation::get_coordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2446,6 +2530,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAPointAnnotation * ref = (MAPointAnnotation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.isLockedToScreen));
     },
     
@@ -2455,6 +2541,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAPointAnnotation * ref = (MAPointAnnotation *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAPointAnnotation::get_lockedScreenPoint:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2466,6 +2554,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MACircle * ref = (MACircle *) REF_MAP[@(refId)];
     
+        NSLog(@"MACircle::get_coordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2475,6 +2565,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MACircle * ref = (MACircle *) REF_MAP[@(refId)];
+    
+        NSLog(@"MACircle::get_boundingMapRect:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2486,6 +2578,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAArcRenderer * ref = (MAArcRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.arc.hash));
     },
     
@@ -2495,6 +2589,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         id<MAAnnotation> ref = (id<MAAnnotation>) REF_MAP[@(refId)];
+    
+        NSLog(@"MAAnnotation::get_coordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2506,6 +2602,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         id<MAAnnotation> ref = (id<MAAnnotation>) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.title.hash));
     },
     
@@ -2515,6 +2613,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         id<MAAnnotation> ref = (id<MAAnnotation>) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.subtitle.hash));
     },
@@ -2526,6 +2626,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMapCustomStyleOptions * ref = (MAMapCustomStyleOptions *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.styleId.hash));
     },
     
@@ -2535,6 +2637,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlay * ref = (MAParticleOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.overlayOption.hash));
     },
@@ -2546,6 +2650,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiColoredPolylineRenderer * ref = (MAMultiColoredPolylineRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.multiPolyline.hash));
     },
     
@@ -2555,6 +2661,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiColoredPolylineRenderer * ref = (MAMultiColoredPolylineRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.isGradient));
     },
@@ -2566,6 +2674,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAAnimatedAnnotation * ref = (MAAnimatedAnnotation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.movingDirection));
     },
     
@@ -2575,6 +2685,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         id<MAOverlay> ref = (id<MAOverlay>) REF_MAP[@(refId)];
+    
+        NSLog(@"MAOverlay::get_coordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2586,6 +2698,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         id<MAOverlay> ref = (id<MAOverlay>) REF_MAP[@(refId)];
     
+        NSLog(@"MAOverlay::get_boundingMapRect:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -2595,6 +2709,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiTexturePolylineRenderer * ref = (MAMultiTexturePolylineRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.multiPolyline.hash));
     },
@@ -2606,6 +2722,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlayRenderer * ref = (MATileOverlayRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.tileOverlay.hash));
     },
     
@@ -2615,6 +2733,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItem * ref = (MAOfflineItem *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.name.hash));
     },
@@ -2626,6 +2746,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItem * ref = (MAOfflineItem *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.jianpin.hash));
     },
     
@@ -2635,6 +2757,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItem * ref = (MAOfflineItem *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.pinyin.hash));
     },
@@ -2646,6 +2770,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItem * ref = (MAOfflineItem *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.adcode.hash));
     },
     
@@ -2655,6 +2781,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItem * ref = (MAOfflineItem *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.itemStatus));
     },
@@ -2666,6 +2794,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATouchPoi * ref = (MATouchPoi *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.name.hash));
     },
     
@@ -2675,6 +2805,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATouchPoi * ref = (MATouchPoi *) REF_MAP[@(refId)];
+    
+        NSLog(@"MATouchPoi::get_coordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2686,6 +2818,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATouchPoi * ref = (MATouchPoi *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.uid.hash));
     },
     
@@ -2695,6 +2829,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATraceManager * ref = (MATraceManager *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.delegate.hash));
     },
@@ -2706,6 +2842,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointOverlayRenderer * ref = (MAMultiPointOverlayRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.delegate.hash));
     },
     
@@ -2715,6 +2853,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointOverlayRenderer * ref = (MAMultiPointOverlayRenderer *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAMultiPointOverlayRenderer::get_anchor:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2726,6 +2866,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointOverlayRenderer * ref = (MAMultiPointOverlayRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.multiPointOverlay.hash));
     },
     
@@ -2735,6 +2877,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorFloorInfo * ref = (MAIndoorFloorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.floorName.hash));
     },
@@ -2746,6 +2890,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorFloorInfo * ref = (MAIndoorFloorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.floorIndex));
     },
     
@@ -2755,6 +2901,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorFloorInfo * ref = (MAIndoorFloorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.floorNona.hash));
     },
@@ -2766,6 +2914,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorFloorInfo * ref = (MAIndoorFloorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.isPark));
     },
     
@@ -2775,6 +2925,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.cnName.hash));
     },
@@ -2786,6 +2938,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.enName.hash));
     },
     
@@ -2795,6 +2949,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.poiID.hash));
     },
@@ -2806,6 +2962,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.buildingType.hash));
     },
     
@@ -2815,6 +2973,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.activeFloorIndex));
     },
@@ -2826,6 +2986,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.activeFloorInfoIndex));
     },
     
@@ -2835,6 +2997,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.numberOfFloor));
     },
@@ -2846,6 +3010,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAIndoorInfo * ref = (MAIndoorInfo *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.numberOfParkFloor));
     },
     
@@ -2855,6 +3021,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAPolylineRenderer * ref = (MAPolylineRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.polyline.hash));
     },
@@ -2866,6 +3034,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAPolylineRenderer * ref = (MAPolylineRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.is3DArrowLine));
     },
     
@@ -2875,6 +3045,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAShape * ref = (MAShape *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.title.hash));
     },
@@ -2886,6 +3058,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAShape * ref = (MAShape *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.subtitle.hash));
     },
     
@@ -2895,6 +3069,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.minimumZ));
     },
@@ -2906,6 +3082,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.maximumZ));
     },
     
@@ -2915,6 +3093,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.URLTemplate.hash));
     },
@@ -2926,6 +3106,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.canReplaceMapContent));
     },
     
@@ -2935,6 +3117,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
+    
+        NSLog(@"MATileOverlay::get_boundingMapRect:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -2946,6 +3130,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATileOverlay * ref = (MATileOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.disableOffScreenTileLoading));
     },
     
@@ -2955,6 +3141,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineItemCommonCity * ref = (MAOfflineItemCommonCity *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.province.hash));
     },
@@ -2966,6 +3154,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineMap * ref = (MAOfflineMap *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.nationWide.hash));
     },
     
@@ -2975,6 +3165,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOfflineMap * ref = (MAOfflineMap *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.version.hash));
     },
@@ -2986,6 +3178,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MACircleRenderer * ref = (MACircleRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.circle.hash));
     },
     
@@ -2995,6 +3189,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayRenderer * ref = (MAParticleOverlayRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.particleOverlay.hash));
     },
@@ -3006,6 +3202,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.visibile));
     },
     
@@ -3015,6 +3213,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.loop));
     },
@@ -3026,6 +3226,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.maxParticles));
     },
     
@@ -3035,6 +3237,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.particleStartColor.hash));
     },
@@ -3046,6 +3250,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.particleStartSpeed.hash));
     },
     
@@ -3055,6 +3261,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.particleEmissionModule.hash));
     },
@@ -3066,6 +3274,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.particleShapeModule.hash));
     },
     
@@ -3075,6 +3285,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAParticleOverlayOptions * ref = (MAParticleOverlayOptions *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.particleOverLifeModule.hash));
     },
@@ -3086,6 +3298,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAUserLocation * ref = (MAUserLocation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.isUpdating));
     },
     
@@ -3095,6 +3309,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointItem * ref = (MAMultiPointItem *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAMultiPointItem::get_coordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -3106,6 +3322,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointItem * ref = (MAMultiPointItem *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.customID.hash));
     },
     
@@ -3115,6 +3333,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointItem * ref = (MAMultiPointItem *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.title.hash));
     },
@@ -3126,6 +3346,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAMultiPointItem * ref = (MAMultiPointItem *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.subtitle.hash));
     },
     
@@ -3135,6 +3357,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MACustomBuildingOverlayOption * ref = (MACustomBuildingOverlayOption *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.height));
     },
@@ -3146,6 +3370,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MACustomBuildingOverlayOption * ref = (MACustomBuildingOverlayOption *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.heightScale));
     },
     
@@ -3155,6 +3381,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MACustomBuildingOverlayOption * ref = (MACustomBuildingOverlayOption *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.visibile));
     },
@@ -3166,6 +3394,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MACustomBuildingOverlay * ref = (MACustomBuildingOverlay *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.defaultOption.hash));
     },
     
@@ -3175,6 +3405,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATraceLocation * ref = (MATraceLocation *) REF_MAP[@(refId)];
+    
+        NSLog(@"MATraceLocation::get_loc:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -3186,6 +3418,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATraceLocation * ref = (MATraceLocation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.angle));
     },
     
@@ -3195,6 +3429,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MATraceLocation * ref = (MATraceLocation *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.speed));
     },
@@ -3206,6 +3442,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MATraceLocation * ref = (MATraceLocation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.time));
     },
     
@@ -3215,6 +3453,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAArc * ref = (MAArc *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAArc::get_startCoordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -3226,6 +3466,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAArc * ref = (MAArc *) REF_MAP[@(refId)];
     
+        NSLog(@"MAArc::get_passedCoordinate:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -3235,6 +3477,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAArc * ref = (MAArc *) REF_MAP[@(refId)];
+    
+        NSLog(@"MAArc::get_endCoordinate:结构体getter暂时不支持");
     
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
@@ -3246,6 +3490,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAArc * ref = (MAArc *) REF_MAP[@(refId)];
     
+        NSLog(@"MAArc::get_boundingMapRect:结构体getter暂时不支持");
+    
         methodResult(nil/* 结构体getter暂时不支持 */);
     },
     
@@ -3255,6 +3501,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAUserLocationRepresentation * ref = (MAUserLocationRepresentation *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.showsAccuracyRing));
     },
@@ -3266,6 +3514,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAUserLocationRepresentation * ref = (MAUserLocationRepresentation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.showsHeadingIndicator));
     },
     
@@ -3275,6 +3525,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAUserLocationRepresentation * ref = (MAUserLocationRepresentation *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.lineWidth));
     },
@@ -3286,6 +3538,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAUserLocationRepresentation * ref = (MAUserLocationRepresentation *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.enablePulseAnnimation));
     },
     
@@ -3295,6 +3549,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.lineWidth));
     },
@@ -3306,6 +3562,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.lineJoinType));
     },
     
@@ -3315,6 +3573,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.lineCapType));
     },
@@ -3326,6 +3586,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.miterLimit));
     },
     
@@ -3335,6 +3597,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.lineDash));
     },
@@ -3346,6 +3610,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAOverlayPathRenderer * ref = (MAOverlayPathRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.lineDashType));
     },
     
@@ -3356,6 +3622,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         NSInteger refId = [args[@"refId"] integerValue];
         MAGroundOverlayRenderer * ref = (MAGroundOverlayRenderer *) REF_MAP[@(refId)];
     
+    
+    
         methodResult(@(ref.groundOverlay.hash));
     },
     
@@ -3365,6 +3633,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
         // 引用对象
         NSInteger refId = [args[@"refId"] integerValue];
         MACustomBuildingOverlayRenderer * ref = (MACustomBuildingOverlayRenderer *) REF_MAP[@(refId)];
+    
+    
     
         methodResult(@(ref.customBuildingOverlay.hash));
     },
@@ -6971,6 +7241,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 
@@ -7079,6 +7350,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
+  NSLog(@"暂不支持有返回值的回调方法");
   return nil;
 }
 

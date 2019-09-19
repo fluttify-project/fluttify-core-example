@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:amap_base_flutter/src/ios/MAMapView.dart';
 
@@ -366,8 +368,10 @@ class AmapController {
         await iosController.set_delegate(MyDelegate());
         final pointAnnotation =
             await ObjectFactory_iOS.createMAPointAnnotation();
+
+        final random = Random();
         final coordinate = await ObjectFactory_iOS.createCLLocationCoordinate2D(
-            39.90960, 116.397228);
+            39.90960 + random.nextDouble(), 116.397228 + random.nextDouble());
         await pointAnnotation.set_title('test title');
         await pointAnnotation.set_coordinate(coordinate);
         await iosController.addAnnotation(pointAnnotation);
@@ -376,12 +380,4 @@ class AmapController {
   }
 }
 
-class MyDelegate extends NSObject with MAMapViewDelegate {
-  @override
-  Future<MAAnnotationView> mapViewViewForAnnotation(
-      MAMapView mapView, MAAnnotation annotation) async {
-    final annotationView = await ObjectFactory_iOS.createMAPinAnnotationView();
-    await annotationView.set_canShowCallout(true);
-    return annotationView;
-  }
-}
+class MyDelegate extends NSObject with MAMapViewDelegate {}
