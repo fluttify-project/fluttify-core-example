@@ -1617,7 +1617,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.style.StyleElement::set_opacity" to { registrar, args, methodResult ->
-            val opacity = args["opacity"] as Double
+            val opacity = args["opacity"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.style.StyleElement
@@ -1707,7 +1707,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_screenScale" to { registrar, args, methodResult ->
-            val screenScale = args["screenScale"] as Double
+            val screenScale = args["screenScale"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
@@ -1716,7 +1716,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_textScale" to { registrar, args, methodResult ->
-            val textScale = args["textScale"] as Double
+            val textScale = args["textScale"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
@@ -1725,7 +1725,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam::set_mapZoomScale" to { registrar, args, methodResult ->
-            val mapZoomScale = args["mapZoomScale"] as Double
+            val mapZoomScale = args["mapZoomScale"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam
@@ -1752,7 +1752,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mScale" to { registrar, args, methodResult ->
-            val mScale = args["mScale"] as Double
+            val mScale = args["mScale"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
@@ -1761,7 +1761,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mRotation" to { registrar, args, methodResult ->
-            val mRotation = args["mRotation"] as Double
+            val mRotation = args["mRotation"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
@@ -1770,7 +1770,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo::set_mVeLocityFloat" to { registrar, args, methodResult ->
-            val mVeLocityFloat = args["mVeLocityFloat"] as Double
+            val mVeLocityFloat = args["mVeLocityFloat"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo
@@ -1797,7 +1797,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mXRatio" to { registrar, args, methodResult ->
-            val mXRatio = args["mXRatio"] as Double
+            val mXRatio = args["mXRatio"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLTextureProperty
@@ -1806,7 +1806,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mYRatio" to { registrar, args, methodResult ->
-            val mYRatio = args["mYRatio"] as Double
+            val mYRatio = args["mYRatio"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLTextureProperty
@@ -1977,7 +1977,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX1" to { registrar, args, methodResult ->
-            val mX1 = args["mX1"] as Double
+            val mX1 = args["mX1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -1986,7 +1986,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY1" to { registrar, args, methodResult ->
-            val mY1 = args["mY1"] as Double
+            val mY1 = args["mY1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -1995,7 +1995,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mX2" to { registrar, args, methodResult ->
-            val mX2 = args["mX2"] as Double
+            val mX2 = args["mX2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2004,7 +2004,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mY2" to { registrar, args, methodResult ->
-            val mY2 = args["mY2"] as Double
+            val mY2 = args["mY2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2013,7 +2013,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mGLStart" to { registrar, args, methodResult ->
-            val mGLStart = args["mGLStart"] as Double
+            val mGLStart = args["mGLStart"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2022,7 +2022,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mTextureLen" to { registrar, args, methodResult ->
-            val mTextureLen = args["mTextureLen"] as Double
+            val mTextureLen = args["mTextureLen"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2031,7 +2031,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX1" to { registrar, args, methodResult ->
-            val mSimple3DX1 = args["mSimple3DX1"] as Double
+            val mSimple3DX1 = args["mSimple3DX1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2040,7 +2040,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY1" to { registrar, args, methodResult ->
-            val mSimple3DY1 = args["mSimple3DY1"] as Double
+            val mSimple3DY1 = args["mSimple3DY1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2049,7 +2049,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DX2" to { registrar, args, methodResult ->
-            val mSimple3DX2 = args["mSimple3DX2"] as Double
+            val mSimple3DX2 = args["mSimple3DX2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2058,7 +2058,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DY2" to { registrar, args, methodResult ->
-            val mSimple3DY2 = args["mSimple3DY2"] as Double
+            val mSimple3DY2 = args["mSimple3DY2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2067,7 +2067,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DGLStart" to { registrar, args, methodResult ->
-            val mSimple3DGLStart = args["mSimple3DGLStart"] as Double
+            val mSimple3DGLStart = args["mSimple3DGLStart"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2076,7 +2076,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mSimple3DTextureLen" to { registrar, args, methodResult ->
-            val mSimple3DTextureLen = args["mSimple3DTextureLen"] as Double
+            val mSimple3DTextureLen = args["mSimple3DTextureLen"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2085,7 +2085,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX1" to { registrar, args, methodResult ->
-            val mCapX1 = args["mCapX1"] as Double
+            val mCapX1 = args["mCapX1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2094,7 +2094,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY1" to { registrar, args, methodResult ->
-            val mCapY1 = args["mCapY1"] as Double
+            val mCapY1 = args["mCapY1"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2103,7 +2103,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapX2" to { registrar, args, methodResult ->
-            val mCapX2 = args["mCapX2"] as Double
+            val mCapX2 = args["mCapX2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2112,7 +2112,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mCapY2" to { registrar, args, methodResult ->
-            val mCapY2 = args["mCapY2"] as Double
+            val mCapY2 = args["mCapY2"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
@@ -2220,7 +2220,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorXRatio" to { registrar, args, methodResult ->
-            val mAnchorXRatio = args["mAnchorXRatio"] as Double
+            val mAnchorXRatio = args["mAnchorXRatio"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlayTexture
@@ -2229,7 +2229,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLOverlayTexture::set_mAnchorYRatio" to { registrar, args, methodResult ->
-            val mAnchorYRatio = args["mAnchorYRatio"] as Double
+            val mAnchorYRatio = args["mAnchorYRatio"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.ae.gmap.gloverlay.GLOverlayTexture
@@ -2345,159 +2345,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             ref.isFinish = isFinish
             methodResult.success("success")
         },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_RENDER_FPS_NAVI" to { registrar, args, methodResult ->
-            val RENDER_FPS_NAVI = args["RENDER_FPS_NAVI"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.RENDER_FPS_NAVI = RENDER_FPS_NAVI
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_RENDER_FPS_NORMAL" to { registrar, args, methodResult ->
-            val RENDER_FPS_NORMAL = args["RENDER_FPS_NORMAL"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.RENDER_FPS_NORMAL = RENDER_FPS_NORMAL
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_RENDER_FPS_ANIMATION" to { registrar, args, methodResult ->
-            val RENDER_FPS_ANIMATION = args["RENDER_FPS_ANIMATION"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.RENDER_FPS_ANIMATION = RENDER_FPS_ANIMATION
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_RENDER_FPS_GESTURE_ACTION" to { registrar, args, methodResult ->
-            val RENDER_FPS_GESTURE_ACTION = args["RENDER_FPS_GESTURE_ACTION"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.RENDER_FPS_GESTURE_ACTION = RENDER_FPS_GESTURE_ACTION
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_RENDER_FPS_ANIMATION_WATERWAVE" to { registrar, args, methodResult ->
-            val RENDER_FPS_ANIMATION_WATERWAVE = args["RENDER_FPS_ANIMATION_WATERWAVE"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.RENDER_FPS_ANIMATION_WATERWAVE = RENDER_FPS_ANIMATION_WATERWAVE
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_LOG_NAVI_STATE" to { registrar, args, methodResult ->
-            val LOG_NAVI_STATE = args["LOG_NAVI_STATE"] as Boolean
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.LOG_NAVI_STATE = LOG_NAVI_STATE
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_MODE_NULL" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_MODE_NULL = args["ESCREEN_SHOT_MODE_NULL"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_MODE_NULL = ESCREEN_SHOT_MODE_NULL
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_MODE_BACKGROUND" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_MODE_BACKGROUND = args["ESCREEN_SHOT_MODE_BACKGROUND"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_MODE_BACKGROUND = ESCREEN_SHOT_MODE_BACKGROUND
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_MODE_FRONT" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_MODE_FRONT = args["ESCREEN_SHOT_MODE_FRONT"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_MODE_FRONT = ESCREEN_SHOT_MODE_FRONT
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CARTYPE_DEFAULT" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CARTYPE_DEFAULT = args["ESCREEN_SHOT_CARTYPE_DEFAULT"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CARTYPE_DEFAULT = ESCREEN_SHOT_CARTYPE_DEFAULT
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CARTYPE_JILI" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CARTYPE_JILI = args["ESCREEN_SHOT_CARTYPE_JILI"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CARTYPE_JILI = ESCREEN_SHOT_CARTYPE_JILI
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CARTYPE_LUCHANG" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CARTYPE_LUCHANG = args["ESCREEN_SHOT_CARTYPE_LUCHANG"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CARTYPE_LUCHANG = ESCREEN_SHOT_CARTYPE_LUCHANG
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_SCREEN_SHOT_BITMAP_COMPRESS_RATIO" to { registrar, args, methodResult ->
-            val SCREEN_SHOT_BITMAP_COMPRESS_RATIO = args["SCREEN_SHOT_BITMAP_COMPRESS_RATIO"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.SCREEN_SHOT_BITMAP_COMPRESS_RATIO = SCREEN_SHOT_BITMAP_COMPRESS_RATIO
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CALLBACK_BUFFER" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CALLBACK_BUFFER = args["ESCREEN_SHOT_CALLBACK_BUFFER"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CALLBACK_BUFFER = ESCREEN_SHOT_CALLBACK_BUFFER
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CALLBACK_BITMAP" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CALLBACK_BITMAP = args["ESCREEN_SHOT_CALLBACK_BITMAP"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CALLBACK_BITMAP = ESCREEN_SHOT_CALLBACK_BITMAP
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_ESCREEN_SHOT_CALLBACK_FILE" to { registrar, args, methodResult ->
-            val ESCREEN_SHOT_CALLBACK_FILE = args["ESCREEN_SHOT_CALLBACK_FILE"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.ESCREEN_SHOT_CALLBACK_FILE = ESCREEN_SHOT_CALLBACK_FILE
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.tools.GLMapStaticValue::set_E_DISPLAY_DEFAULT" to { registrar, args, methodResult ->
-            val E_DISPLAY_DEFAULT = args["E_DISPLAY_DEFAULT"] as Int
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.tools.GLMapStaticValue
-        
-            ref.E_DISPLAY_DEFAULT = E_DISPLAY_DEFAULT
-            methodResult.success("success")
-        },
         "com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake::set_mIsAborted" to { registrar, args, methodResult ->
             val mIsAborted = args["mIsAborted"] as Boolean
         
@@ -2562,7 +2409,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mFromAlpha" to { registrar, args, methodResult ->
-            val mFromAlpha = args["mFromAlpha"] as Double
+            val mFromAlpha = args["mFromAlpha"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
@@ -2571,7 +2418,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mToAlpha" to { registrar, args, methodResult ->
-            val mToAlpha = args["mToAlpha"] as Double
+            val mToAlpha = args["mToAlpha"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
@@ -2580,7 +2427,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.animation.GLAlphaAnimation::set_mCurAlpha" to { registrar, args, methodResult ->
-            val mCurAlpha = args["mCurAlpha"] as Double
+            val mCurAlpha = args["mCurAlpha"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.animation.GLAlphaAnimation
@@ -2634,7 +2481,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.MapConfig::set_maxZoomLevel" to { registrar, args, methodResult ->
-            val maxZoomLevel = args["maxZoomLevel"] as Double
+            val maxZoomLevel = args["maxZoomLevel"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.MapConfig
@@ -2643,7 +2490,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.MapConfig::set_minZoomLevel" to { registrar, args, methodResult ->
-            val minZoomLevel = args["minZoomLevel"] as Double
+            val minZoomLevel = args["minZoomLevel"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.MapConfig
@@ -2652,7 +2499,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.message.HoverGestureMapMessage::set_angleDelta" to { registrar, args, methodResult ->
-            val angleDelta = args["angleDelta"] as Double
+            val angleDelta = args["angleDelta"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.HoverGestureMapMessage
@@ -2661,7 +2508,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaX" to { registrar, args, methodResult ->
-            val touchDeltaX = args["touchDeltaX"] as Double
+            val touchDeltaX = args["touchDeltaX"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
@@ -2670,7 +2517,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.message.MoveGestureMapMessage::set_touchDeltaY" to { registrar, args, methodResult ->
-            val touchDeltaY = args["touchDeltaY"] as Double
+            val touchDeltaY = args["touchDeltaY"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.MoveGestureMapMessage
@@ -2679,7 +2526,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.message.ScaleGestureMapMessage::set_scaleDelta" to { registrar, args, methodResult ->
-            val scaleDelta = args["scaleDelta"] as Double
+            val scaleDelta = args["scaleDelta"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.ScaleGestureMapMessage
@@ -2778,7 +2625,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.message.RotateGestureMapMessage::set_angleDelta" to { registrar, args, methodResult ->
-            val angleDelta = args["angleDelta"] as Double
+            val angleDelta = args["angleDelta"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.message.RotateGestureMapMessage
@@ -2787,7 +2634,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.Rectangle::set_left" to { registrar, args, methodResult ->
-            val left = args["left"] as Double
+            val left = args["left"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
@@ -2796,7 +2643,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.Rectangle::set_right" to { registrar, args, methodResult ->
-            val right = args["right"] as Double
+            val right = args["right"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
@@ -2805,7 +2652,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.Rectangle::set_bottom" to { registrar, args, methodResult ->
-            val bottom = args["bottom"] as Double
+            val bottom = args["bottom"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
@@ -2814,30 +2661,12 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.Rectangle::set_top" to { registrar, args, methodResult ->
-            val top = args["top"] as Double
+            val top = args["top"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.Rectangle
         
             ref.top = top.toFloat()
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.AMapEngineUtils::set_LOGO_CUSTOM_ICON_DAY_NAME" to { registrar, args, methodResult ->
-            val LOGO_CUSTOM_ICON_DAY_NAME = args["LOGO_CUSTOM_ICON_DAY_NAME"] as String
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AMapEngineUtils
-        
-            ref.LOGO_CUSTOM_ICON_DAY_NAME = LOGO_CUSTOM_ICON_DAY_NAME
-            methodResult.success("success")
-        },
-        "com.autonavi.amap.mapcore.AMapEngineUtils::set_LOGO_CUSTOM_ICON_NIGHT_NAME" to { registrar, args, methodResult ->
-            val LOGO_CUSTOM_ICON_NIGHT_NAME = args["LOGO_CUSTOM_ICON_NIGHT_NAME"] as String
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AMapEngineUtils
-        
-            ref.LOGO_CUSTOM_ICON_NIGHT_NAME = LOGO_CUSTOM_ICON_NIGHT_NAME
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.FPoint3::set_colorIndex" to { registrar, args, methodResult ->
@@ -2850,7 +2679,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel" to { registrar, args, methodResult ->
-            val xPixel = args["xPixel"] as Double
+            val xPixel = args["xPixel"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -2859,7 +2688,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_yPixel" to { registrar, args, methodResult ->
-            val yPixel = args["yPixel"] as Double
+            val yPixel = args["yPixel"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -2868,7 +2697,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_amount" to { registrar, args, methodResult ->
-            val amount = args["amount"] as Double
+            val amount = args["amount"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -2895,7 +2724,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom" to { registrar, args, methodResult ->
-            val zoom = args["zoom"] as Double
+            val zoom = args["zoom"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -2904,7 +2733,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_tilt" to { registrar, args, methodResult ->
-            val tilt = args["tilt"] as Double
+            val tilt = args["tilt"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -2913,7 +2742,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing" to { registrar, args, methodResult ->
-            val bearing = args["bearing"] as Double
+            val bearing = args["bearing"] as Float
         
             val refId = args["refId"] as Int
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
@@ -3018,15 +2847,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = REF_MAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
             ref.height = height
-            methodResult.success("success")
-        },
-        "com.amap.api.maps.MapsInitializer::set_sdcardDir" to { registrar, args, methodResult ->
-            val sdcardDir = args["sdcardDir"] as String
-        
-            val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.MapsInitializer
-        
-            ref.sdcardDir = sdcardDir
             methodResult.success("success")
         },
         "com.amap.api.maps.model.animation.Animation::set_glAnimation" to { registrar, args, methodResult ->
@@ -3605,6 +3425,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun afterDrawLabel(var1: Int, var2: com.autonavi.ae.gmap.GLMapState): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: afterDrawLabel([\"var1\":$var1, \"var2\":$var2])")
@@ -3621,6 +3442,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun beforeDrawLabel(var1: Int, var2: com.autonavi.ae.gmap.GLMapState): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: beforeDrawLabel([\"var1\":$var1, \"var2\":$var2])")
@@ -3637,6 +3459,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun afterRendererOver(var1: Int, var2: com.autonavi.ae.gmap.GLMapState): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: afterRendererOver([\"var1\":$var1, \"var2\":$var2])")
@@ -3653,6 +3476,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun afterAnimation(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: afterAnimation([])")
@@ -3668,6 +3492,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -3843,6 +3668,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCancel(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
@@ -3858,6 +3684,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -4815,6 +4642,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCancel(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
@@ -4830,6 +4658,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -4887,6 +4716,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -4924,6 +4754,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCancel(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
@@ -4939,6 +4770,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -6839,6 +6671,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -7260,6 +7093,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -7865,6 +7699,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -7936,6 +7771,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -9269,6 +9105,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -9284,6 +9121,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -13011,7 +12849,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IOverlay::equalsRemote" to { registrar, args, methodResult ->
             // 参数
-        
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.autonavi.amap.mapcore.interfaces.IOverlay
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -13021,177 +12860,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlay@$refId::equalsRemote([])")
         
             // 开始调用
-            val result = ref.equalsRemote(object : com.autonavi.amap.mapcore.interfaces.IOverlay {
-                // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::equalsRemote_Callback" + refId)
-        
-                // 回调方法们
-                override fun remove(): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: remove([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::remove",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getId(): String {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getId([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getId",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setZIndex(var1: Double): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setZIndex([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setZIndex",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getZIndex(): Double {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getZIndex([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getZIndex",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setVisible(var1: Boolean): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setVisible([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setVisible",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun isVisible(): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: isVisible([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::isVisible",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun equalsRemote(var1: com.autonavi.amap.mapcore.interfaces.IOverlay): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: equalsRemote([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::equalsRemote",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun hashCodeRemote(): Int {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: hashCodeRemote([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::hashCodeRemote",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return 0
-                }
-                override fun destroy(): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: destroy([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::destroy",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun isAboveMaskLayer(): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: isAboveMaskLayer([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::isAboveMaskLayer",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun setAboveMaskLayer(var1: Boolean): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setAboveMaskLayer([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlay::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setAboveMaskLayer",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-            })
+            val result = ref.equalsRemote(var1)
         
             // 调用结果
             methodResult.success(result)
@@ -13526,6 +13195,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -13541,6 +13211,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -14729,7 +14400,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IOverlayImage::equalsRemote" to { registrar, args, methodResult ->
             // 参数
-        
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.autonavi.amap.mapcore.interfaces.IOverlayImage
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -14739,283 +14411,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IOverlayImage@$refId::equalsRemote([])")
         
             // 开始调用
-            val result = ref.equalsRemote(object : com.autonavi.amap.mapcore.interfaces.IOverlayImage {
-                // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::equalsRemote_Callback" + refId)
-        
-                // 回调方法们
-                override fun remove(): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: remove([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::remove",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun destroy(var1: Boolean): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: destroy([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::destroy",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setRotateAngle(var1: Double): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setRotateAngle([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setRotateAngle",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getRotateAngle(): Double {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getRotateAngle([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getRotateAngle",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setZIndex(var1: Double): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setZIndex([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setZIndex",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getZIndex(): Double {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getZIndex([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getZIndex",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getId(): String {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getId([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getId",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getPosition(): com.amap.api.maps.model.LatLng {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getPosition([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getPosition",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setPosition(var1: com.amap.api.maps.model.LatLng): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setPosition([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setPosition",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setVisible(var1: Boolean): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setVisible([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setVisible",
-                        mapOf<String, Any?>("var1" to var1)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun isVisible(): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: isVisible([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::isVisible",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun equalsRemote(var1: com.autonavi.amap.mapcore.interfaces.IOverlayImage): Boolean {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: equalsRemote([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::equalsRemote",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-                    return true
-                }
-                override fun hashCodeRemote(): Int {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: hashCodeRemote([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::hashCodeRemote",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-                    return 0
-                }
-                override fun setObject(var1: com.autonavi.amap.mapcore.interfaces.Object): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setObject([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setObject",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getObject(): com.autonavi.amap.mapcore.interfaces.Object {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getObject([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getObject",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun setAnchor(var1: Double, var2: Double): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: setAnchor([\"var1\":$var1, \"var2\":$var2])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::setAnchor",
-                        mapOf<String, Any?>("var1" to var1,
-                "var2" to var2)
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getAnchorU(): Double {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getAnchorU([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getAnchorU",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getAnchorV(): Double {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getAnchorV([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IOverlayImage::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getAnchorV",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-            })
+            val result = ref.equalsRemote(var1)
         
             // 调用结果
             methodResult.success(result)
@@ -16285,6 +15681,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -16300,6 +15697,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -16435,6 +15833,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -16450,6 +15849,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -16753,6 +16153,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun destroy(var1: Boolean): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: destroy([\"var1\":$var1])")
@@ -16768,6 +16169,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun clearTileCache(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: clearTileCache([])")
@@ -16783,7 +16185,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun getId(): String {
+        
+                override fun getId(): String? {
                     // 日志打印
                     println("fluttify-kotlin-callback: getId([])")
         
@@ -16796,9 +16199,10 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     )
         
                     // 方法返回值
-        
+                    return null
                 }
-                override fun setZIndex(var1: Double): Unit {
+        
+                override fun setZIndex(var1: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: setZIndex([\"var1\":$var1])")
         
@@ -16813,7 +16217,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun getZIndex(): Double {
+        
+                override fun getZIndex(): Float {
                     // 日志打印
                     println("fluttify-kotlin-callback: getZIndex([])")
         
@@ -16826,8 +16231,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     )
         
                     // 方法返回值
-        
+                    return 0f
                 }
+        
                 override fun setVisible(var1: Boolean): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: setVisible([\"var1\":$var1])")
@@ -16843,6 +16249,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun isVisible(): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: isVisible([])")
@@ -16858,6 +16265,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return true
                 }
+        
                 override fun equalsRemote(var1: com.autonavi.amap.mapcore.interfaces.ITileOverlay): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: equalsRemote([\"var1\":$var1])")
@@ -16873,6 +16281,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return true
                 }
+        
                 override fun hashCodeRemote(): Int {
                     // 日志打印
                     println("fluttify-kotlin-callback: hashCodeRemote([])")
@@ -16888,6 +16297,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return 0
                 }
+        
             })
         
             // 调用结果
@@ -17388,6 +16798,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCancel(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
@@ -17403,6 +16814,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -17443,6 +16855,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCancel(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
@@ -17458,6 +16871,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18005,6 +17419,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun deactivate(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: deactivate([])")
@@ -18020,6 +17435,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18115,6 +17531,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onCameraChangeFinish(var1: com.amap.api.maps.model.CameraPosition): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCameraChangeFinish([\"var1\":$var1])")
@@ -18130,6 +17547,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18167,6 +17585,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18204,6 +17623,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18241,6 +17661,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18278,6 +17699,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return true
                 }
+        
             })
         
             // 调用结果
@@ -18315,6 +17737,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18352,6 +17775,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onMarkerDrag(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDrag([\"var1\":$var1])")
@@ -18367,6 +17791,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onMarkerDragEnd(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDragEnd([\"var1\":$var1])")
@@ -18382,6 +17807,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18419,6 +17845,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18456,6 +17883,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18493,6 +17921,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18530,6 +17959,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18537,7 +17967,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter" to { registrar, args, methodResult ->
             // 参数
-        
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.AMap.InfoWindowAdapter
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -18547,42 +17978,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setInfoWindowAdapter([])")
         
             // 开始调用
-            ref.setInfoWindowAdapter(object : com.amap.api.maps.AMap.InfoWindowAdapter {
-                // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setInfoWindowAdapter_Callback" + refId)
-        
-                // 回调方法们
-                override fun getInfoWindow(var1: com.amap.api.maps.model.Marker): android.view.View {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getInfoWindow([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.InfoWindowAdapter::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getInfoWindow",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-        
-                }
-                override fun getInfoContents(var1: com.amap.api.maps.model.Marker): android.view.View {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: getInfoContents([\"var1\":$var1])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.InfoWindowAdapter::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::getInfoContents",
-                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
-                    )
-        
-                    // 方法返回值
-        
-                }
-            })
+            ref.setInfoWindowAdapter(var1)
         
             // 调用结果
             methodResult.success("success")
@@ -18619,6 +18015,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18656,6 +18053,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18693,6 +18091,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onMapScreenShot(var1: android.graphics.Bitmap, var2: Int): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1, \"var2\":$var2])")
@@ -18709,6 +18108,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -18891,7 +18291,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                 val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener_Callback" + refId)
         
                 // 回调方法们
-                override fun onDoubleTap(var1: Double, var2: Double): Unit {
+                override fun onDoubleTap(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDoubleTap([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18907,7 +18307,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onSingleTap(var1: Double, var2: Double): Unit {
+        
+                override fun onSingleTap(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onSingleTap([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18923,7 +18324,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onFling(var1: Double, var2: Double): Unit {
+        
+                override fun onFling(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFling([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18939,7 +18341,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onScroll(var1: Double, var2: Double): Unit {
+        
+                override fun onScroll(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onScroll([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18955,7 +18358,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onLongPress(var1: Double, var2: Double): Unit {
+        
+                override fun onLongPress(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onLongPress([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18971,7 +18375,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onDown(var1: Double, var2: Double): Unit {
+        
+                override fun onDown(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDown([\"var1\":$var1, \"var2\":$var2])")
         
@@ -18987,7 +18392,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
-                override fun onUp(var1: Double, var2: Double): Unit {
+        
+                override fun onUp(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onUp([\"var1\":$var1, \"var2\":$var2])")
         
@@ -19003,6 +18409,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onMapStable(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapStable([])")
@@ -19018,6 +18425,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -19770,6 +19178,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return true
                 }
+        
             })
         
             // 调用结果
@@ -20746,6 +20155,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -22769,6 +22179,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -23074,6 +22485,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -24049,6 +23461,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -28063,9 +27476,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         "com.amap.api.maps.model.GL3DModelOptions::vertexData" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
-            val var1 = args["var1"] as List<Float>
+            val var1 = args["var1"] as List<Double>
             // jsonable参数
-            val var2 = args["var2"] as List<Float>
+            val var2 = args["var2"] as List<Double>
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -28075,7 +27488,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             println("fluttify-kotlin: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData([\"var1\":$var1, \"var2\":$var2])")
         
             // 开始调用
-            val result = ref.vertexData(ArrayList(var1), ArrayList(var2))
+            val result = ref.vertexData(ArrayList(var1.map { it.toFloat() }), ArrayList(var2.map { it.toFloat() }))
         
             // 调用结果
             val returnRefId = result.hashCode()
@@ -30125,6 +29538,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -30140,6 +29554,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -33815,6 +33230,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -33830,6 +33246,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -34188,7 +33605,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                 val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.TileOverlayOptions::tileProvider_Callback" + refId)
         
                 // 回调方法们
-                override fun getTile(var1: Int, var2: Int, var3: Int): com.amap.api.maps.model.Tile {
+                override fun getTile(var1: Int, var2: Int, var3: Int): com.amap.api.maps.model.Tile? {
                     // 日志打印
                     println("fluttify-kotlin-callback: getTile([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
         
@@ -34203,8 +33620,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     )
         
                     // 方法返回值
-        
+                    return null
                 }
+        
                 override fun getTileWidth(): Int {
                     // 日志打印
                     println("fluttify-kotlin-callback: getTileWidth([])")
@@ -34220,6 +33638,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return 0
                 }
+        
                 override fun getTileHeight(): Int {
                     // 日志打印
                     println("fluttify-kotlin-callback: getTileHeight([])")
@@ -34235,6 +33654,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
                     return 0
                 }
+        
             })
         
             // 调用结果
@@ -34849,6 +34269,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -37595,6 +37016,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onAnimationEnd(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
@@ -37610,6 +37032,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -38093,6 +37516,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onTraceProcessing(var1: Int, var2: Int, var3: List<com.amap.api.maps.model.LatLng>): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTraceProcessing([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
@@ -38110,6 +37534,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onFinished(var1: Int, var2: List<com.amap.api.maps.model.LatLng>, var3: Int, var4: Int): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinished([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4])")
@@ -38128,6 +37553,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -38203,6 +37629,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -38583,6 +38010,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onTraceProcessing(var1: Int, var2: Int, var3: List<com.amap.api.maps.model.LatLng>): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTraceProcessing([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
@@ -38600,6 +38028,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
                 override fun onFinished(var1: Int, var2: List<com.amap.api.maps.model.LatLng>, var3: Int, var4: Int): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinished([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4])")
@@ -38618,6 +38047,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
@@ -38657,6 +38087,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果

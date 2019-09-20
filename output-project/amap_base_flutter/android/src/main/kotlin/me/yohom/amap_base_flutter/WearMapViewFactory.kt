@@ -185,6 +185,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                     // 方法返回值
         
                 }
+        
                 override fun onNotifySwipe(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onNotifySwipe([])")
@@ -200,6 +201,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                     // 方法返回值
         
                 }
+        
             })
         
             // 调用结果
