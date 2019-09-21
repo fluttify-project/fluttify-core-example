@@ -179,6 +179,21 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
     return com_amap_api_maps_CameraUpdate()..refId = result;
   }
   
+  static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(double var0, com_autonavi_amap_mapcore_IPoint var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter([\'var0\':$var0])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.CameraUpdateFactory::changeBearingGeoCenter', {"var0": var0, "var1": var1.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_amap_api_maps_CameraUpdate()..refId = result;
+  }
+  
   static Future<com_amap_api_maps_CameraUpdate> changeTilt(double var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.CameraUpdateFactory::changeTilt([\'var0\':$var0])');

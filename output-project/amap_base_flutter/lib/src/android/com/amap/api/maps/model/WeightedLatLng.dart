@@ -8,11 +8,6 @@ class com_amap_api_maps_model_WeightedLatLng extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<double> get_DEFAULT_INTENSITY() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_DEFAULT_INTENSITY", {'refId': refId});
-    return result;
-  }
-  
   Future<double> get_intensity() async {
     final result = await _channel.invokeMethod("com.amap.api.maps.model.WeightedLatLng::get_intensity", {'refId': refId});
     return result;

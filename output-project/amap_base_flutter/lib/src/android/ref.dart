@@ -7,6 +7,11 @@ import 'package:flutter/services.dart';
 class Ref_Android {
   int refId;
 
+  Future<bool> isKindOfcom_autonavi_ae_gmap_maploader_Pools() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_Pools', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_autonavi_ae_gmap_maploader_ProcessingTile() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_ae_gmap_maploader_ProcessingTile', {'refId': refId});
     return result;
@@ -232,6 +237,11 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_autonavi_amap_mapcore_IPoint() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_IPoint', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager', {'refId': refId});
     return result;
@@ -347,6 +357,11 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_location() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_location', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_autonavi_amap_mapcore_AMapEngineUtils() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_AMapEngineUtils', {'refId': refId});
     return result;
@@ -369,6 +384,11 @@ class Ref_Android {
   
   Future<bool> isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_locationOption() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_Inner_3dMap_locationOption', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> isKindOfcom_autonavi_amap_mapcore_FPoint() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_autonavi_amap_mapcore_FPoint', {'refId': refId});
     return result;
   }
   
@@ -452,6 +472,11 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_amap_api_maps_CameraUpdate() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_CameraUpdate', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_amap_api_maps_SwipeDismissCallBack() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissCallBack', {'refId': refId});
     return result;
@@ -509,6 +534,11 @@ class Ref_Android {
   
   Future<bool> isKindOfcom_amap_api_maps_model_Polygon() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_Polygon', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> isKindOfcom_amap_api_maps_model_BitmapDescriptor() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BitmapDescriptor', {'refId': refId});
     return result;
   }
   
@@ -582,6 +612,11 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_amap_api_maps_model_PoiCreator() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiCreator', {'refId': refId});
     return result;
@@ -649,6 +684,11 @@ class Ref_Android {
   
   Future<bool> isKindOfcom_amap_api_maps_model_MarkerOptions() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_MarkerOptions', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> isKindOfcom_amap_api_maps_model_HeatmapTileProvider() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_HeatmapTileProvider', {'refId': refId});
     return result;
   }
   
@@ -1012,6 +1052,16 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_amap_api_maps_WearMapView() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_WearMapView', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> isKindOfcom_amap_api_maps_AMap() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_AMap', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_amap_api_maps_MapView() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapView', {'refId': refId});
     return result;
@@ -1038,6 +1088,11 @@ class Ref_Android {
   }
   
 
+  Future<com_autonavi_ae_gmap_maploader_Pools> ascom_autonavi_ae_gmap_maploader_Pools() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_ae_gmap_maploader_Pools', {'refId': refId});
+    return com_autonavi_ae_gmap_maploader_Pools()..refId = result;
+  }
+  
   Future<com_autonavi_ae_gmap_maploader_ProcessingTile> ascom_autonavi_ae_gmap_maploader_ProcessingTile() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_ae_gmap_maploader_ProcessingTile', {'refId': refId});
     return com_autonavi_ae_gmap_maploader_ProcessingTile()..refId = result;
@@ -1263,6 +1318,11 @@ class Ref_Android {
     return com_autonavi_amap_mapcore_AMapNativePolyline()..refId = result;
   }
   
+  Future<com_autonavi_amap_mapcore_IPoint> ascom_autonavi_amap_mapcore_IPoint() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_IPoint', {'refId': refId});
+    return com_autonavi_amap_mapcore_IPoint()..refId = result;
+  }
+  
   Future<com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager> ascom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager', {'refId': refId});
     return com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager()..refId = result;
@@ -1378,6 +1438,11 @@ class Ref_Android {
     return com_autonavi_amap_mapcore_Rectangle()..refId = result;
   }
   
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_location> ascom_autonavi_amap_mapcore_Inner_3dMap_location() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_Inner_3dMap_location', {'refId': refId});
+    return com_autonavi_amap_mapcore_Inner_3dMap_location()..refId = result;
+  }
+  
   Future<com_autonavi_amap_mapcore_AMapEngineUtils> ascom_autonavi_amap_mapcore_AMapEngineUtils() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_AMapEngineUtils', {'refId': refId});
     return com_autonavi_amap_mapcore_AMapEngineUtils()..refId = result;
@@ -1401,6 +1466,11 @@ class Ref_Android {
   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> ascom_autonavi_amap_mapcore_Inner_3dMap_locationOption() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_Inner_3dMap_locationOption', {'refId': refId});
     return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_FPoint> ascom_autonavi_amap_mapcore_FPoint() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_autonavi_amap_mapcore_FPoint', {'refId': refId});
+    return com_autonavi_amap_mapcore_FPoint()..refId = result;
   }
   
   Future<com_autonavi_amap_mapcore_AMapNativeParticleSystem> ascom_autonavi_amap_mapcore_AMapNativeParticleSystem() async {
@@ -1483,6 +1553,11 @@ class Ref_Android {
     return com_amap_api_maps_utils_overlay_SmoothMoveMarker()..refId = result;
   }
   
+  Future<com_amap_api_maps_CameraUpdate> ascom_amap_api_maps_CameraUpdate() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_CameraUpdate', {'refId': refId});
+    return com_amap_api_maps_CameraUpdate()..refId = result;
+  }
+  
   Future<com_amap_api_maps_SwipeDismissCallBack> ascom_amap_api_maps_SwipeDismissCallBack() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_SwipeDismissCallBack', {'refId': refId});
     return com_amap_api_maps_SwipeDismissCallBack()..refId = result;
@@ -1541,6 +1616,11 @@ class Ref_Android {
   Future<com_amap_api_maps_model_Polygon> ascom_amap_api_maps_model_Polygon() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_Polygon', {'refId': refId});
     return com_amap_api_maps_model_Polygon()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_model_BitmapDescriptor> ascom_amap_api_maps_model_BitmapDescriptor() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_BitmapDescriptor', {'refId': refId});
+    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
   }
   
   Future<com_amap_api_maps_model_PolygonHoleOptions> ascom_amap_api_maps_model_PolygonHoleOptions() async {
@@ -1613,6 +1693,11 @@ class Ref_Android {
     return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
   }
   
+  Future<com_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions> ascom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions', {'refId': refId});
+    return com_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions()..refId = result;
+  }
+  
   Future<com_amap_api_maps_model_PoiCreator> ascom_amap_api_maps_model_PoiCreator() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_PoiCreator', {'refId': refId});
     return com_amap_api_maps_model_PoiCreator()..refId = result;
@@ -1681,6 +1766,11 @@ class Ref_Android {
   Future<com_amap_api_maps_model_MarkerOptions> ascom_amap_api_maps_model_MarkerOptions() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_MarkerOptions', {'refId': refId});
     return com_amap_api_maps_model_MarkerOptions()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_model_HeatmapTileProvider> ascom_amap_api_maps_model_HeatmapTileProvider() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_HeatmapTileProvider', {'refId': refId});
+    return com_amap_api_maps_model_HeatmapTileProvider()..refId = result;
   }
   
   Future<com_amap_api_maps_model_NavigateArrow> ascom_amap_api_maps_model_NavigateArrow() async {
@@ -2041,6 +2131,16 @@ class Ref_Android {
   Future<com_amap_api_maps_InfoWindowAnimationManager> ascom_amap_api_maps_InfoWindowAnimationManager() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_InfoWindowAnimationManager', {'refId': refId});
     return com_amap_api_maps_InfoWindowAnimationManager()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_WearMapView> ascom_amap_api_maps_WearMapView() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_WearMapView', {'refId': refId});
+    return com_amap_api_maps_WearMapView()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_AMap> ascom_amap_api_maps_AMap() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_AMap', {'refId': refId});
+    return com_amap_api_maps_AMap()..refId = result;
   }
   
   Future<com_amap_api_maps_MapView> ascom_amap_api_maps_MapView() async {

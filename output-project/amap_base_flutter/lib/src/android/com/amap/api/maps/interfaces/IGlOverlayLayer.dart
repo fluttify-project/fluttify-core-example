@@ -4,12 +4,8 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_amap_api_maps_interfaces_IGlOverlayLayer on Object {
-  Future<String> updateOption(String var1, com_amap_api_maps_interfaces_Object var2) {}
-  
+mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   Future<bool> removeOverlay(String var1) {}
-  
-  Future<String> prepareIcon(com_amap_api_maps_interfaces_Object var1) {}
   
   Future<int> getCurrentParticleNum(String var1) {}
   

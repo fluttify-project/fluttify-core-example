@@ -44,4 +44,34 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
     return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
   }
   
+   Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::setRes', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+  }
+  
+   Future<android_graphics_Bitmap> getRes() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.CrossOverlayOptions::getRes', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return android_graphics_Bitmap()..refId = result;
+  }
+  
 }

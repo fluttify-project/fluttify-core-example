@@ -8,60 +8,6 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<String> get_ERROR_CODE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_ERROR_CODE", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_ERROR_INFO() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_ERROR_INFO", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_LOCATION_TYPE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_SHOW() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_SHOW", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_LOCATE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_LOCATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_FOLLOW() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_FOLLOW", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_MAP_ROTATE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_MAP_ROTATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_LOCATION_ROTATE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_LOCATION_ROTATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_FOLLOW_NO_CENTER() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_FOLLOW_NO_CENTER", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOCATION_TYPE_MAP_ROTATE_NO_CENTER() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.MyLocationStyle::get_LOCATION_TYPE_MAP_ROTATE_NO_CENTER", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

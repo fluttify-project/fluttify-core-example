@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on Object {
+mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<bool> remove() {}
   
   Future<String> destroy(bool var1) {}
@@ -30,10 +30,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on Object {
   Future<bool> equalsRemote(com_autonavi_amap_mapcore_interfaces_IOverlayImage var1) {}
   
   Future<int> hashCodeRemote() {}
-  
-  Future<String> setObject(com_autonavi_amap_mapcore_interfaces_Object var1) {}
-  
-  Future<com_autonavi_amap_mapcore_interfaces_Object> getObject() {}
   
   Future<String> setAnchor(double var1, double var2) {}
   

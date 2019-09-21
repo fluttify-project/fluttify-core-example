@@ -8,45 +8,6 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_LOGO_POSITION_BOTTOM_LEFT() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_POSITION_BOTTOM_LEFT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOGO_POSITION_BOTTOM_CENTER() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_POSITION_BOTTOM_CENTER", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOGO_POSITION_BOTTOM_RIGHT() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_POSITION_BOTTOM_RIGHT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_ZOOM_POSITION_RIGHT_CENTER() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_ZOOM_POSITION_RIGHT_CENTER", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_ZOOM_POSITION_RIGHT_BUTTOM() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_ZOOM_POSITION_RIGHT_BUTTOM", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOGO_MARGIN_LEFT() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_MARGIN_LEFT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOGO_MARGIN_RIGHT() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_MARGIN_RIGHT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_LOGO_MARGIN_BOTTOM() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.AMapOptions::get_LOGO_MARGIN_BOTTOM", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

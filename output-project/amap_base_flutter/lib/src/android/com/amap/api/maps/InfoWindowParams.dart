@@ -8,15 +8,6 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_INFOWINDOW_TYPE_IMAGE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.InfoWindowParams::get_INFOWINDOW_TYPE_IMAGE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INFOWINDOW_TYPE_VIEW() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.InfoWindowParams::get_INFOWINDOW_TYPE_VIEW", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

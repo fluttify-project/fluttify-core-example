@@ -8,26 +8,6 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_CAMERA_MAX_DEGREE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_CAMERA_MAX_DEGREE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_CAMERA_MIN_DEGREE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_CAMERA_MIN_DEGREE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MAXMAPLEVEL() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_MAXMAPLEVEL", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MINMAPLEVEL() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_MINMAPLEVEL", {'refId': refId});
-    return result;
-  }
-  
   Future<bool> get_needMove() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup::get_needMove", {'refId': refId});
     return result;

@@ -14,6 +14,36 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
   
 
   // 生成方法们
+   Future<String> resumeMarker(android_graphics_Bitmap var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::resumeMarker([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::resumeMarker', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> AddOverlayTexture(android_graphics_Bitmap var1, int var2, int var3) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::AddOverlayTexture([\'var2\':$var2, \'var3\':$var3])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::AddOverlayTexture', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<int> dipToPixel(android_content_Context var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::dipToPixel([\'var2\':$var2])');

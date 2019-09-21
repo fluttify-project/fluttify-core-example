@@ -14,6 +14,21 @@ class com_autonavi_ae_gmap_gloverlay_BaseRouteOverlay extends Ref_Android  {
   
 
   // 生成方法们
+   Future<String> resumeMarker(android_graphics_Bitmap var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::resumeMarker([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay::resumeMarker', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<String> removeRouteName() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.BaseRouteOverlay@$refId::removeRouteName([])');

@@ -8,10 +8,6 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<double> get_MIN_OFFSET_DISTANCE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.utils.overlay.SmoothMoveMarker::get_MIN_OFFSET_DISTANCE", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

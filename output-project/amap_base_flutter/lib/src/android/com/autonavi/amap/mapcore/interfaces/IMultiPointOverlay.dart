@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on Object {
+mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on java_lang_Object {
   Future<String> addItems(com_amap_api_maps_model_MultiPointItem var1) {}
   
   Future<String> addItem(com_amap_api_maps_model_MultiPointItem var1) {}
@@ -12,8 +12,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IMultiPointOverlay on Object {
   Future<String> destroy(bool var1) {}
   
   Future<String> setVisible(bool var1) {}
-  
-  Future<String> draw(com_autonavi_amap_mapcore_MapConfig var1, List<double> var2, List<double> var3) {}
   
   Future<com_amap_api_maps_model_MultiPointItem> onClick(com_autonavi_amap_mapcore_IPoint var1) {}
   

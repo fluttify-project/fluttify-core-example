@@ -8,15 +8,6 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_DOTTEDLINE_TYPE_SQUARE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.PolylineOptions::get_DOTTEDLINE_TYPE_SQUARE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_DOTTEDLINE_TYPE_CIRCLE() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.model.PolylineOptions::get_DOTTEDLINE_TYPE_CIRCLE", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

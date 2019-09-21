@@ -33,6 +33,11 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     return result;
   }
   
+  Future<android_graphics_Point> get_focus() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus", {'refId': refId});
+    return result;
+  }
+  
   Future<double> get_zoom() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_zoom", {'refId': refId});
     return result;
@@ -45,6 +50,11 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   Future<double> get_bearing() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bearing", {'refId': refId});
+    return result;
+  }
+  
+  Future<android_graphics_Point> get_geoPoint() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_geoPoint", {'refId': refId});
     return result;
   }
   
@@ -135,6 +145,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   }
   
+  Future<void> set_focus(android_graphics_Point focus) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_focus', {'refId': refId, "focus": focus.refId});
+  
+  
+  }
+  
   Future<void> set_zoom(double zoom) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_zoom', {'refId': refId, "zoom": zoom});
   
@@ -149,6 +165,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   Future<void> set_bearing(double bearing) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_bearing', {'refId': refId, "bearing": bearing});
+  
+  
+  }
+  
+  Future<void> set_geoPoint(android_graphics_Point geoPoint) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_geoPoint', {'refId': refId, "geoPoint": geoPoint.refId});
   
   
   }

@@ -8,25 +8,6 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_TRACE_STATUS_PROCESSING() async {
-    final result = await _channel.invokeMethod("com.amap.api.trace.TraceOverlay::get_TRACE_STATUS_PROCESSING", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_TRACE_STATUS_FINISH() async {
-    final result = await _channel.invokeMethod("com.amap.api.trace.TraceOverlay::get_TRACE_STATUS_FINISH", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_TRACE_STATUS_FAILURE() async {
-    final result = await _channel.invokeMethod("com.amap.api.trace.TraceOverlay::get_TRACE_STATUS_FAILURE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_TRACE_STATUS_PREPARE() async {
-    final result = await _channel.invokeMethod("com.amap.api.trace.TraceOverlay::get_TRACE_STATUS_PREPARE", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

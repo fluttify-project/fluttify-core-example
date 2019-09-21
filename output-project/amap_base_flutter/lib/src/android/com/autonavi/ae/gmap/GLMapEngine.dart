@@ -379,56 +379,11 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android  {
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::setMapListener([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener', {"refId": refId});
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::setMapListener', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::Callback')
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
   
-          switch (methodCall.method) {
-            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawFrame':
-              // 日志打印
-              print('fluttify-dart-callback: afterDrawFrame([\'var1\':$args[var1]])');
-        
-                // 调用回调方法
-              var1?.afterDrawFrame(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
-              break;
-            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterDrawLabel':
-              // 日志打印
-              print('fluttify-dart-callback: afterDrawLabel([\'var1\':$args[var1]])');
-        
-                // 调用回调方法
-              var1?.afterDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
-              break;
-            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::beforeDrawLabel':
-              // 日志打印
-              print('fluttify-dart-callback: beforeDrawLabel([\'var1\':$args[var1]])');
-        
-                // 调用回调方法
-              var1?.beforeDrawLabel(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
-              break;
-            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterRendererOver':
-              // 日志打印
-              print('fluttify-dart-callback: afterRendererOver([\'var1\':$args[var1]])');
-        
-                // 调用回调方法
-              var1?.afterRendererOver(args['var1'], com_autonavi_ae_gmap_GLMapState()..refId = (args['var2']));
-              break;
-            case 'Callback::com.autonavi.amap.mapcore.interfaces.IAMapListener::afterAnimation':
-              // 日志打印
-              print('fluttify-dart-callback: afterAnimation([])');
-        
-                // 调用回调方法
-              var1?.afterAnimation();
-              break;
-            default:
-              break;
-          }
-        });
   
     // 返回值
     return result;
@@ -614,6 +569,36 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android  {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::clearAnimations', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> startMapSlidAnim(int var1, android_graphics_Point var2, double var3, double var4) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::startMapSlidAnim([\'var1\':$var1, \'var3\':$var3, \'var4\':$var4])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::startMapSlidAnim', {"var1": var1, "var2": var2.refId, "var3": var3, "var4": var4, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> startPivotZoomRotateAnim(int var1, android_graphics_Point var2, double var3, int var4, int var5) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::startPivotZoomRotateAnim([\'var1\':$var1, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::startPivotZoomRotateAnim', {"var1": var1, "var2": var2.refId, "var3": var3, "var4": var4, "var5": var5, "refId": refId});
   
   
     // 接受原生回调
@@ -1004,6 +989,21 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android  {
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::initNativeTexture', {"var1": var1, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> AddOverlayTexture(int var1, android_graphics_Bitmap var2, int var3, int var4) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapEngine@$refId::AddOverlayTexture([\'var1\':$var1, \'var3\':$var3, \'var4\':$var4])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapEngine::AddOverlayTexture', {"var1": var1, "var2": var2.refId, "var3": var3, "var4": var4, "refId": refId});
   
   
     // 接受原生回调

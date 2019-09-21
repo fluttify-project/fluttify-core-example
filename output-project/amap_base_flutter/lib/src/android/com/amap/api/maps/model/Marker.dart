@@ -404,6 +404,21 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
+   Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setGeoPoint', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
    Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::getGeoPoint([])');

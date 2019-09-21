@@ -4,14 +4,12 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_autonavi_amap_mapcore_interfaces_IMarker on com.autonavi.amap.mapcore.interfaces.IOverlayImage {
+mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_interfaces_IOverlayImage {
   Future<String> setPeriod(int var1) {}
   
   Future<int> getPeriod() {}
   
   Future<String> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) {}
-  
-  Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() {}
   
   Future<String> set2Top() {}
   
@@ -48,8 +46,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com.autonavi.amap.mapcore.
   Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {}
   
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() {}
-  
-  Future<com_autonavi_amap_mapcore_interfaces_IMarkerAction> getIMarkerAction() {}
   
   Future<String> setPositionByPixels(int var1, int var2) {}
   

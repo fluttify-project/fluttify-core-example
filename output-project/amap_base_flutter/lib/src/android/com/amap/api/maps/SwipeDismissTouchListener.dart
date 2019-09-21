@@ -8,25 +8,25 @@ class com_amap_api_maps_SwipeDismissTouchListener extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_MIN_VIEW_WIDTH() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.SwipeDismissTouchListener::get_MIN_VIEW_WIDTH", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_A_HALF() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.SwipeDismissTouchListener::get_A_HALF", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_ONE_THIRD() async {
-    final result = await _channel.invokeMethod("com.amap.api.maps.SwipeDismissTouchListener::get_ONE_THIRD", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters
   
 
   // 生成方法们
+   Future<bool> onTouch(android_view_View var1, android_view_MotionEvent var2) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.SwipeDismissTouchListener@$refId::onTouch([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.SwipeDismissTouchListener::onTouch', {"var1": var1.refId, "var2": var2.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
   
 }

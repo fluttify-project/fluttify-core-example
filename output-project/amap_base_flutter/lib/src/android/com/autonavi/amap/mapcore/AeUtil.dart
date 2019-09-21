@@ -8,45 +8,6 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<bool> get_IS_AE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_IS_AE", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_ROOTPATH() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_ROOTPATH", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_ROOT_DATA_PATH_OLD_NAME() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_ROOT_DATA_PATH_OLD_NAME", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_ROOT_DATA_PATH_NAME() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_ROOT_DATA_PATH_NAME", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_CONFIGNAME() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_CONFIGNAME", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_RESZIPNAME() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_RESZIPNAME", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_SO_FILENAME() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_SO_FILENAME", {'refId': refId});
-    return result;
-  }
-  
-  Future<String> get_SO_FILENAME_NAVI() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AeUtil::get_SO_FILENAME_NAVI", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

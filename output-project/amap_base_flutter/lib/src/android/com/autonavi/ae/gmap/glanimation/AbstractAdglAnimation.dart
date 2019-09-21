@@ -8,50 +8,6 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends Ref_Android
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_INVALIDE_VALUE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INVALIDE_VALUE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_LINEAR() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_LINEAR", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_ACCELERATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_ACCELERATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_DECELERATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_DECELERATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_ACCELERATE_DECELERATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_ACCELERATE_DECELERATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_BOUNCE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_BOUNCE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_OVERSHOOT() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_OVERSHOOT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_INTERPOLATOR_DOUBLE_RAISE() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_INTERPOLATOR_DOUBLE_RAISE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_DEFAULT_DURATION() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation::get_DEFAULT_DURATION", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

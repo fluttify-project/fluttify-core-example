@@ -8,81 +8,6 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<int> get_MSG_AUTH_FAILURE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_AUTH_FAILURE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_CAMERAUPDATE_CHANGE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_CAMERAUPDATE_CHANGE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_CAMERAUPDATE_FINISH() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_CAMERAUPDATE_FINISH", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_ZOOMVIEW_CHANGESTATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_ZOOMVIEW_CHANGESTATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_COMPASSVIEW_CHANGESTATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_COMPASSVIEW_CHANGESTATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_CALLBACK_ONTOUCHEVENT() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_CALLBACK_ONTOUCHEVENT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_CALLBACK_SCREENSHOT() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_CALLBACK_SCREENSHOT", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_CALLBACK_MAPLOADED() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_CALLBACK_MAPLOADED", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_TILEOVERLAY_REFRESH() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_TILEOVERLAY_REFRESH", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_INFOWINDOW_UPDATE() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_INFOWINDOW_UPDATE", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_ACTION_ONMAPCLICK() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_ACTION_ONMAPCLICK", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_MSG_ACTION_ONBASEPOICLICK() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MSG_ACTION_ONBASEPOICLICK", {'refId': refId});
-    return result;
-  }
-  
-  Future<double> get_MAX_ZOOM() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MAX_ZOOM", {'refId': refId});
-    return result;
-  }
-  
-  Future<double> get_MAX_ZOOM_INDOOR() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MAX_ZOOM_INDOOR", {'refId': refId});
-    return result;
-  }
-  
-  Future<double> get_MIN_ZOOM() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_MIN_ZOOM", {'refId': refId});
-    return result;
-  }
-  
   Future<double> get_maxZoomLevel() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_maxZoomLevel", {'refId': refId});
     return result;
@@ -90,11 +15,6 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
   
   Future<double> get_minZoomLevel() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_minZoomLevel", {'refId': refId});
-    return result;
-  }
-  
-  Future<int> get_DEFAULT_RATIO() async {
-    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.MapConfig::get_DEFAULT_RATIO", {'refId': refId});
     return result;
   }
   

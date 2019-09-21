@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_autonavi_amap_mapcore_interfaces_IglModel on Object {
+mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   Future<String> getTitle() {}
   
   Future<String> getSnippet() {}
@@ -28,10 +28,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on Object {
   Future<String> setVisible(bool var1) {}
   
   Future<bool> isVisible() {}
-  
-  Future<String> setObject(com_autonavi_amap_mapcore_interfaces_Object var1) {}
-  
-  Future<com_autonavi_amap_mapcore_interfaces_Object> getObject() {}
   
   Future<String> setZoomLimit(double var1) {}
   

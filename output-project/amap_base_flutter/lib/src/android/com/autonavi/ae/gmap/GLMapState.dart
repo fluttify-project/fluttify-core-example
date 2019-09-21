@@ -14,12 +14,72 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
 
   // 生成方法们
+  static Future<String> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::lonlat2Geo([\'var0\':$var0, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::lonlat2Geo', {"var0": var0, "var2": var2, "var4": var4.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
   static Future<String> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::geo2LonLat([\'var0\':$var0, \'var1\':$var1])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::geo2LonLat', {"var0": var0, "var1": var1, "var2": var2.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point([\'var1\':$var1, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::screenToP20Point', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::p20ToScreenPoint', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+   Future<String> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getMapGeoCenter', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -269,12 +329,57 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
+  static Future<String> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point', {"var0": var0, "var2": var2, "var3": var3, "var4": var4.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+  static Future<String> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint', {"var0": var0, "var2": var2, "var3": var3, "var4": var4, "var5": var5.refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
   static Future<String> nativeSetMapCenter(int var0, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter', {"var0": var0, "var2": var2, "var3": var3});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return result;
+  }
+  
+  static Future<String> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter([\'var0\':$var0])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter', {"var0": var0, "var2": var2.refId});
   
   
     // 接受原生回调

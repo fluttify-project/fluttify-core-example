@@ -14,6 +14,51 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
 
   // 生成方法们
+   Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::fromScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return com_amap_api_maps_model_LatLng()..refId = result;
+  }
+  
+   Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::toScreenLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return android_graphics_Point()..refId = result;
+  }
+  
+   Future<android_graphics_PointF> toOpenGLLocation(com_amap_api_maps_model_LatLng var1) async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.Projection::toOpenGLLocation', {"var1": var1.refId, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    return android_graphics_PointF()..refId = result;
+  }
+  
    Future<double> toOpenGLWidth(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');

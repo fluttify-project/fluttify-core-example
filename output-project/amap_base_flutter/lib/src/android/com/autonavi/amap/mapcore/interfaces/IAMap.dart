@@ -4,7 +4,7 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
+mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() {}
   
   Future<double> getMaxZoomLevel() {}
@@ -37,15 +37,11 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<com_amap_api_maps_model_Marker> addMarker(com_amap_api_maps_model_MarkerOptions var1) {}
   
-  Future<List<com_amap_api_maps_model_Marker>> addMarkers(com_amap_api_maps_model_MarkerOptions var1, bool var2) {}
-  
   Future<com_amap_api_maps_model_Text> addText(com_amap_api_maps_model_TextOptions var1) {}
   
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) {}
   
   Future<String> clear() {}
-  
-  Future<String> clear(bool var1) {}
   
   Future<int> getMapType() {}
   
@@ -70,8 +66,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   Future<String> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) {}
   
   Future<String> setMyLocationType(int var1) {}
-  
-  Future<List<com_amap_api_maps_model_Marker>> getMapScreenMarkers() {}
   
   Future<String> setMapTextEnable(bool var1) {}
   
@@ -113,8 +107,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<String> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {}
   
-  Future<String> setInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) {}
-  
   Future<String> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) {}
   
   Future<String> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) {}
@@ -126,8 +118,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   Future<String> setRunLowFrame(bool var1) {}
   
   Future<String> removecache() {}
-  
-  Future<String> removecache(com_amap_api_maps_AMap_OnCacheRemoveListener var1) {}
   
   Future<String> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) {}
   
@@ -147,8 +137,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<double> getZoomToSpanLevel(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2) {}
   
-  Future<com_autonavi_amap_mapcore_interfaces_Float,LatLng> calculateZoomToSpanLevel(int var1, int var2, int var3, int var4, com_amap_api_maps_model_LatLng var5, com_amap_api_maps_model_LatLng var6) {}
-  
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() {}
   
   Future<String> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) {}
@@ -164,8 +152,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   Future<String> setCustomMapStylePath(String var1) {}
   
   Future<String> setMapCustomEnable(bool var1) {}
-  
-  Future<android_os_Handler> getMainHandler() {}
   
   Future<String> onChangeFinish() {}
   
@@ -197,8 +183,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<String> onActivityResume() {}
   
-  Future<String> queueEvent(com_autonavi_amap_mapcore_interfaces_Runnable var1) {}
-  
   Future<int> createGLOverlay(int var1) {}
   
   Future<int> getGlOverlayMgrPtr() {}
@@ -207,25 +191,11 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() {}
   
-  Future<String> removeEngineGLOverlay(com_autonavi_ae_gmap_gloverlay_BaseMapOverlay var1) {}
-  
-  Future<List<float[]>> getViewMatrix() {}
-  
-  Future<List<float[]>> getProjectionMatrix() {}
-  
   Future<String> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) {}
-  
-  Future<String> renderSurface(javax_microedition_khronos_opengles_GL10 var1) {}
-  
-  Future<String> changeSurface(javax_microedition_khronos_opengles_GL10 var1, int var2, int var3) {}
-  
-  Future<String> createSurface(javax_microedition_khronos_opengles_GL10 var1, javax_microedition_khronos_egl_EGLConfig var2) {}
   
   Future<bool> onTouchEvent(android_view_MotionEvent var1) {}
   
   Future<bool> canStopMapRender() {}
-  
-  Future<String> getLatLngRect(com_autonavi_amap_mapcore_interfaces_DPoint[] var1) {}
   
   Future<String> setCustomTextureResourcePath(String var1) {}
   
@@ -235,13 +205,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on Object {
   
   Future<String> destroySurface(int var1) {}
   
-  Future<String> drawFrame(javax_microedition_khronos_opengles_GL10 var1) {}
-  
   Future<String> requestRender() {}
   
   Future<String> resetRenderTime() {}
-  
-  Future<String> onIndoorBuildingActivity(int var1, List<int> var2) {}
   
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() {}
   

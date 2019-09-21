@@ -13,6 +13,11 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends Ref_Android  {
     return result;
   }
   
+  Future<android_graphics_Bitmap> get_mBitmap() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mBitmap", {'refId': refId});
+    return result;
+  }
+  
   Future<int> get_mAnchor() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mAnchor", {'refId': refId});
     return result;
@@ -42,6 +47,12 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends Ref_Android  {
   // 生成setters
   Future<void> set_mId(int mId) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mId', {'refId': refId, "mId": mId});
+  
+  
+  }
+  
+  Future<void> set_mBitmap(android_graphics_Bitmap mBitmap) async {
+    await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap', {'refId': refId, "mBitmap": mBitmap.refId});
   
   
   }

@@ -19,42 +19,11 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider', {"refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.TileOverlayOptions::tileProvider', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.model.TileOverlayOptions::Callback')
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
   
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTile':
-              // 日志打印
-              print('fluttify-dart-callback: getTile([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
-        
-                // 调用回调方法
-              var1?.getTile(args['var1'], args['var2'], args['var3']);
-              break;
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTileWidth':
-              // 日志打印
-              print('fluttify-dart-callback: getTileWidth([])');
-        
-                // 调用回调方法
-              var1?.getTileWidth();
-              break;
-            case 'Callback::com.amap.api.maps.model.TileProvider::getTileHeight':
-              // 日志打印
-              print('fluttify-dart-callback: getTileHeight([])');
-        
-                // 调用回调方法
-              var1?.getTileHeight();
-              break;
-            default:
-              break;
-          }
-        });
   
     // 返回值
     return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
@@ -163,21 +132,6 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
     // 返回值
     return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
-  }
-  
-   Future<com_amap_api_maps_model_TileProvider> getTileProvider() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getTileProvider([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.TileOverlayOptions::getTileProvider', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    return com_amap_api_maps_model_TileProvider()..refId = result;
   }
   
    Future<double> getZIndex() async {
