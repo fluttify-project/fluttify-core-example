@@ -9,38 +9,35 @@ class MACircle extends MAShape with MAAnnotation, MAOverlay {
 
   // 生成getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
-    final result = await _channel.invokeMethod("MACircle::get_coordinate", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MACircle::get_coordinate", {'refId': refId});
     return result;
   }
-  
+
   Future<MAMapRect> get_boundingMapRect() async {
-    final result = await _channel.invokeMethod("MACircle::get_boundingMapRect", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MACircle::get_boundingMapRect", {'refId': refId});
     return result;
   }
-  
 
   // 生成setters
   Future<void> set_coordinate(CLLocationCoordinate2D coordinate) async {
-    await _channel.invokeMethod('MACircle::set_coordinate', {'refId': refId, "coordinate": coordinate.refId});
-  
-  
+    await _channel.invokeMethod('MACircle::set_coordinate',
+        {'refId': refId, "coordinate": coordinate.refId});
   }
-  
 
   // 生成方法们
   static Future<MACircle> circleWithMapRect(MAMapRect mapRect) async {
     // 日志打印
     print('fluttify-dart: MACircle::circleWithMapRect([])');
-  
+
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACircle::circleWithMapRect', {"mapRect": mapRect.refId});
-  
-  
+    final result = await _channel.invokeMethod(
+        'MACircle::circleWithMapRect', {"mapRect": mapRect.refId});
+
     // 接受原生回调
-  
-  
+
     // 返回值
     return MACircle()..refId = result;
   }
-  
 }

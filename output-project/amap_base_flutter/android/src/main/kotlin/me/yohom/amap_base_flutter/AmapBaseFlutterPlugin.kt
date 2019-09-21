@@ -33,22 +33,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     .platformViewRegistry()
                     .registerViewFactory("me.yohom/com.amap.api.maps.MapView", MapViewFactory(registrar))
             
-            registrar
-                    .platformViewRegistry()
-                    .registerViewFactory("me.yohom/com.amap.api.mapcore.util.fy", fyFactory(registrar))
-            
-            registrar
-                    .platformViewRegistry()
-                    .registerViewFactory("me.yohom/com.amap.api.mapcore.util.fx", fxFactory(registrar))
-            
-            registrar
-                    .platformViewRegistry()
-                    .registerViewFactory("me.yohom/com.amap.api.mapcore.util.fr", frFactory(registrar))
-            
-            registrar
-                    .platformViewRegistry()
-                    .registerViewFactory("me.yohom/com.amap.api.mapcore.util.fv", fvFactory(registrar))
-            
         }
     }
 
@@ -19354,7 +19338,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IAMap::setCustomRenderer" to { registrar, args, methodResult ->
             // 参数
-        
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.CustomRenderer
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -19364,28 +19349,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IAMap@$refId::setCustomRenderer([])")
         
             // 开始调用
-            ref.setCustomRenderer(object : com.amap.api.maps.CustomRenderer {
-                // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setCustomRenderer_Callback" + refId)
-        
-                // 回调方法们
-                override fun OnMapReferencechanged(): Unit {
-                    // 日志打印
-                    println("fluttify-kotlin-callback: OnMapReferencechanged([])")
-        
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.CustomRenderer::Callback")
-        
-                    // 开始回调
-                    callbackChannel.invokeMethod(
-                        "Callback::OnMapReferencechanged",
-                        mapOf<String, Any?>()
-                    )
-        
-                    // 方法返回值
-        
-                }
-        
-            })
+            ref.setCustomRenderer(var1)
         
             // 调用结果
             methodResult.success("success")
@@ -23809,6 +23773,26 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
+        "com.amap.api.maps.CameraUpdate::getCameraUpdateFactoryDelegate" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.CameraUpdate
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.CameraUpdate@$refId::getCameraUpdateFactoryDelegate([])")
+        
+            // 开始调用
+            val result = ref.getCameraUpdateFactoryDelegate()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
         "com.amap.api.maps.CustomRenderer::OnMapReferencechanged" to { registrar, args, methodResult ->
             // 参数
         
@@ -25766,6 +25750,97 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.contains(var1)
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.model.BitmapDescriptor::getId" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.BitmapDescriptor
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])")
+        
+            // 开始调用
+            val result = ref.getId()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.model.BitmapDescriptor::clone" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.BitmapDescriptor
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])")
+        
+            // 开始调用
+            val result = ref.clone()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.model.BitmapDescriptor::getBitmap" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.BitmapDescriptor
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])")
+        
+            // 开始调用
+            val result = ref.getBitmap()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.model.BitmapDescriptor::getWidth" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.BitmapDescriptor
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])")
+        
+            // 开始调用
+            val result = ref.getWidth()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.model.BitmapDescriptor::getHeight" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.BitmapDescriptor
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])")
+        
+            // 开始调用
+            val result = ref.getHeight()
         
             // 调用结果
             methodResult.success(result)
@@ -30626,6 +30701,65 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.isBelowMaskLayer()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.model.HeatmapTileProvider::getTile" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTile([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
+        
+            // 开始调用
+            val result = ref.getTile(var1, var2, var3)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.model.HeatmapTileProvider::getTileHeight" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileHeight([])")
+        
+            // 开始调用
+            val result = ref.getTileHeight()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.model.HeatmapTileProvider::getTileWidth" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.model.HeatmapTileProvider
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.model.HeatmapTileProvider@$refId::getTileWidth([])")
+        
+            // 开始调用
+            val result = ref.getTileWidth()
         
             // 调用结果
             methodResult.success(result)
@@ -38962,6 +39096,2170 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
+        "com.amap.api.maps.AMap::getCameraPosition" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getCameraPosition([])")
+        
+            // 开始调用
+            val result = ref.getCameraPosition()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::getMaxZoomLevel" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMaxZoomLevel([])")
+        
+            // 开始调用
+            val result = ref.getMaxZoomLevel()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::getMinZoomLevel" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMinZoomLevel([])")
+        
+            // 开始调用
+            val result = ref.getMinZoomLevel()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::moveCamera" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.CameraUpdate
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::moveCamera([])")
+        
+            // 开始调用
+            ref.moveCamera(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::animateCamera" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.CameraUpdate
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::animateCamera([])")
+        
+            // 开始调用
+            ref.animateCamera(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::stopAnimation" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::stopAnimation([])")
+        
+            // 开始调用
+            ref.stopAnimation()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::addNavigateArrow" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.NavigateArrowOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addNavigateArrow([])")
+        
+            // 开始调用
+            val result = ref.addNavigateArrow(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addPolyline" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.PolylineOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addPolyline([])")
+        
+            // 开始调用
+            val result = ref.addPolyline(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addBuildingOverlay" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addBuildingOverlay([])")
+        
+            // 开始调用
+            val result = ref.addBuildingOverlay()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addCircle" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.CircleOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addCircle([])")
+        
+            // 开始调用
+            val result = ref.addCircle(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addArc" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.ArcOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addArc([])")
+        
+            // 开始调用
+            val result = ref.addArc(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addPolygon" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.PolygonOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addPolygon([])")
+        
+            // 开始调用
+            val result = ref.addPolygon(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addGroundOverlay" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.GroundOverlayOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addGroundOverlay([])")
+        
+            // 开始调用
+            val result = ref.addGroundOverlay(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addMarker" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.MarkerOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addMarker([])")
+        
+            // 开始调用
+            val result = ref.addMarker(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addGL3DModel" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.GL3DModelOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addGL3DModel([])")
+        
+            // 开始调用
+            val result = ref.addGL3DModel(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addText" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.TextOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addText([])")
+        
+            // 开始调用
+            val result = ref.addText(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addTileOverlay" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.TileOverlayOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addTileOverlay([])")
+        
+            // 开始调用
+            val result = ref.addTileOverlay(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addMultiPointOverlay" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.MultiPointOverlayOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addMultiPointOverlay([])")
+        
+            // 开始调用
+            val result = ref.addMultiPointOverlay(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addParticleOverlay" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.particle.ParticleOverlayOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addParticleOverlay([])")
+        
+            // 开始调用
+            val result = ref.addParticleOverlay(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::clear" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::clear([])")
+        
+            // 开始调用
+            ref.clear()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMapType" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapType([])")
+        
+            // 开始调用
+            val result = ref.getMapType()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::setMapType" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapType([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMapType(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::isTrafficEnabled" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::isTrafficEnabled([])")
+        
+            // 开始调用
+            val result = ref.isTrafficEnabled()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::setTrafficEnabled" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setTrafficEnabled([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setTrafficEnabled(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::showMapText" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showMapText([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.showMapText(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::showIndoorMap" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showIndoorMap([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.showIndoorMap(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::showBuildings" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::showBuildings([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.showBuildings(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMyTrafficStyle" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.MyTrafficStyle
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyTrafficStyle([])")
+        
+            // 开始调用
+            ref.setMyTrafficStyle(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMyTrafficStyle" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyTrafficStyle([])")
+        
+            // 开始调用
+            val result = ref.getMyTrafficStyle()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::isMyLocationEnabled" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::isMyLocationEnabled([])")
+        
+            // 开始调用
+            val result = ref.isMyLocationEnabled()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::setMyLocationEnabled" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationEnabled([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMyLocationEnabled(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMyLocation" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyLocation([])")
+        
+            // 开始调用
+            val result = ref.getMyLocation()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::setLocationSource" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.LocationSource
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setLocationSource([])")
+        
+            // 开始调用
+            ref.setLocationSource(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMyLocationStyle" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.MyLocationStyle
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationStyle([])")
+        
+            // 开始调用
+            ref.setMyLocationStyle(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMyLocationStyle" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMyLocationStyle([])")
+        
+            // 开始调用
+            val result = ref.getMyLocationStyle()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::setMyLocationType" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationType([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMyLocationType(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMyLocationRotateAngle" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMyLocationRotateAngle([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMyLocationRotateAngle(var1.toFloat())
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getUiSettings" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getUiSettings([])")
+        
+            // 开始调用
+            val result = ref.getUiSettings()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::getProjection" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getProjection([])")
+        
+            // 开始调用
+            val result = ref.getProjection()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::setOnCameraChangeListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnCameraChangeListener([])")
+        
+            // 开始调用
+            ref.setOnCameraChangeListener(object : com.amap.api.maps.AMap.OnCameraChangeListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnCameraChangeListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onCameraChange(var1: com.amap.api.maps.model.CameraPosition): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onCameraChange([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onCameraChange",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onCameraChangeFinish(var1: com.amap.api.maps.model.CameraPosition): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onCameraChangeFinish([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onCameraChangeFinish",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMapClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapClickListener([])")
+        
+            // 开始调用
+            ref.setOnMapClickListener(object : com.amap.api.maps.AMap.OnMapClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMapClick(var1: com.amap.api.maps.model.LatLng): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMapTouchListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapTouchListener([])")
+        
+            // 开始调用
+            ref.setOnMapTouchListener(object : com.amap.api.maps.AMap.OnMapTouchListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapTouchListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onTouch(var1: android.view.MotionEvent): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onTouch([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapTouchListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onTouch",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnPOIClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnPOIClickListener([])")
+        
+            // 开始调用
+            ref.setOnPOIClickListener(object : com.amap.api.maps.AMap.OnPOIClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPOIClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onPOIClick(var1: com.amap.api.maps.model.Poi): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onPOIClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPOIClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onPOIClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMyLocationChangeListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMyLocationChangeListener([])")
+        
+            // 开始调用
+            ref.setOnMyLocationChangeListener(object : com.amap.api.maps.AMap.OnMyLocationChangeListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMyLocationChangeListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMyLocationChange(var1: android.location.Location): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMyLocationChange([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMyLocationChangeListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMyLocationChange",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMapLongClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapLongClickListener([])")
+        
+            // 开始调用
+            ref.setOnMapLongClickListener(object : com.amap.api.maps.AMap.OnMapLongClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLongClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMapLongClick(var1: com.amap.api.maps.model.LatLng): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapLongClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLongClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapLongClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMarkerClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMarkerClickListener([])")
+        
+            // 开始调用
+            ref.setOnMarkerClickListener(object : com.amap.api.maps.AMap.OnMarkerClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMarkerClick(var1: com.amap.api.maps.model.Marker): Boolean {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMarkerClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMarkerClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+                    return true
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnPolylineClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnPolylineClickListener([])")
+        
+            // 开始调用
+            ref.setOnPolylineClickListener(object : com.amap.api.maps.AMap.OnPolylineClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPolylineClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onPolylineClick(var1: com.amap.api.maps.model.Polyline): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onPolylineClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPolylineClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onPolylineClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMarkerDragListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMarkerDragListener([])")
+        
+            // 开始调用
+            ref.setOnMarkerDragListener(object : com.amap.api.maps.AMap.OnMarkerDragListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerDragListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMarkerDragStart(var1: com.amap.api.maps.model.Marker): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMarkerDragStart([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMarkerDragStart",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onMarkerDrag(var1: com.amap.api.maps.model.Marker): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMarkerDrag([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMarkerDrag",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onMarkerDragEnd(var1: com.amap.api.maps.model.Marker): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMarkerDragEnd([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMarkerDragEnd",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnInfoWindowClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnInfoWindowClickListener([])")
+        
+            // 开始调用
+            ref.setOnInfoWindowClickListener(object : com.amap.api.maps.AMap.OnInfoWindowClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnInfoWindowClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onInfoWindowClick(var1: com.amap.api.maps.model.Marker): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onInfoWindowClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnInfoWindowClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onInfoWindowClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setInfoWindowAdapter" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.AMap.InfoWindowAdapter
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setInfoWindowAdapter([])")
+        
+            // 开始调用
+            ref.setInfoWindowAdapter(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCommonInfoWindowAdapter" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCommonInfoWindowAdapter([])")
+        
+            // 开始调用
+            ref.setCommonInfoWindowAdapter(object : com.amap.api.maps.AMap.CommonInfoWindowAdapter {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setCommonInfoWindowAdapter_Callback" + refId)
+        
+                // 回调方法们
+                override fun getInfoWindowParams(var1: com.amap.api.maps.model.BasePointOverlay): com.amap.api.maps.InfoWindowParams? {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: getInfoWindowParams([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CommonInfoWindowAdapter::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::getInfoWindowParams",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+                    return null
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMapLoadedListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMapLoadedListener([])")
+        
+            // 开始调用
+            ref.setOnMapLoadedListener(object : com.amap.api.maps.AMap.OnMapLoadedListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLoadedListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMapLoaded(): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapLoaded([])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLoadedListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapLoaded",
+                        mapOf<String, Any?>()
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnIndoorBuildingActiveListener([])")
+        
+            // 开始调用
+            ref.setOnIndoorBuildingActiveListener(object : com.amap.api.maps.AMap.OnIndoorBuildingActiveListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun OnIndoorBuilding(var1: com.amap.api.maps.model.IndoorBuildingInfo): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: OnIndoorBuilding([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::OnIndoorBuilding",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setOnMultiPointClickListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setOnMultiPointClickListener([])")
+        
+            // 开始调用
+            ref.setOnMultiPointClickListener(object : com.amap.api.maps.AMap.OnMultiPointClickListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMultiPointClickListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onPointClick(var1: com.amap.api.maps.model.MultiPointItem): Boolean {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onPointClick([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMultiPointClickListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onPointClick",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+                    return true
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMapPrintScreen" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapPrintScreen([])")
+        
+            // 开始调用
+            ref.getMapPrintScreen(object : com.amap.api.maps.AMap.onMapPrintScreenListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapPrintScreen_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMapPrint(var1: android.graphics.drawable.Drawable): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapPrint([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.onMapPrintScreenListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapPrint",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMapScreenShot" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapScreenShot([])")
+        
+            // 开始调用
+            ref.getMapScreenShot(object : com.amap.api.maps.AMap.OnMapScreenShotListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapScreenShot_Callback" + refId)
+        
+                // 回调方法们
+                override fun onMapScreenShot(var1: android.graphics.Bitmap): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapScreenShot",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onMapScreenShot(var1: android.graphics.Bitmap, var2: Int): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapScreenShot",
+                        mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getScalePerPixel" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getScalePerPixel([])")
+        
+            // 开始调用
+            val result = ref.getScalePerPixel()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::runOnDrawFrame" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::runOnDrawFrame([])")
+        
+            // 开始调用
+            ref.runOnDrawFrame()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::removecache" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::removecache([])")
+        
+            // 开始调用
+            ref.removecache()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCustomRenderer" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.CustomRenderer
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomRenderer([])")
+        
+            // 开始调用
+            ref.setCustomRenderer(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setPointToCenter" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setPointToCenter([\"var1\":$var1, \"var2\":$var2])")
+        
+            // 开始调用
+            ref.setPointToCenter(var1, var2)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMapTextZIndex" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapTextZIndex([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMapTextZIndex(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setLoadOfflineData" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setLoadOfflineData([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setLoadOfflineData(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMapTextZIndex" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapTextZIndex([])")
+        
+            // 开始调用
+            val result = ref.getMapTextZIndex()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::reloadMap" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::reloadMap([])")
+        
+            // 开始调用
+            ref.reloadMap()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setRenderFps" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRenderFps([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setRenderFps(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setIndoorBuildingInfo" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.IndoorBuildingInfo
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setIndoorBuildingInfo([])")
+        
+            // 开始调用
+            ref.setIndoorBuildingInfo(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setAMapGestureListener" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setAMapGestureListener([])")
+        
+            // 开始调用
+            ref.setAMapGestureListener(object : com.amap.api.maps.model.AMapGestureListener {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setAMapGestureListener_Callback" + refId)
+        
+                // 回调方法们
+                override fun onDoubleTap(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onDoubleTap([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onDoubleTap",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onSingleTap(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onSingleTap([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onSingleTap",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onFling(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onFling([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onFling",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onScroll(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onScroll([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onScroll",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onLongPress(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onLongPress([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onLongPress",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onDown(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onDown([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onDown",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onUp(var1: Float, var2: Float): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onUp([\"var1\":$var1, \"var2\":$var2])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onUp",
+                        mapOf<String, Any?>("var1" to var1,
+                "var2" to var2)
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onMapStable(): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onMapStable([])")
+        
+                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::onMapStable",
+                        mapOf<String, Any?>()
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getZoomToSpanLevel" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getZoomToSpanLevel([])")
+        
+            // 开始调用
+            val result = ref.getZoomToSpanLevel(var1, var2)
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::getInfoWindowAnimationManager" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getInfoWindowAnimationManager([])")
+        
+            // 开始调用
+            val result = ref.getInfoWindowAnimationManager()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::setMaskLayerParams" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+            // jsonable参数
+            val var5 = args["var5"] as Int
+            // jsonable参数
+            val var6 = args["var6"] as Long
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMaskLayerParams([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4, \"var5\":$var5, \"var6\":$var6])")
+        
+            // 开始调用
+            ref.setMaskLayerParams(var1, var2, var3, var4, var5, var6)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMaxZoomLevel" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMaxZoomLevel([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMaxZoomLevel(var1.toFloat())
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMinZoomLevel" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMinZoomLevel([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMinZoomLevel(var1.toFloat())
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::resetMinMaxZoomPreference" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::resetMinMaxZoomPreference([])")
+        
+            // 开始调用
+            ref.resetMinMaxZoomPreference()
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setMapStatusLimits" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLngBounds
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapStatusLimits([])")
+        
+            // 开始调用
+            ref.setMapStatusLimits(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::addCrossOverlay" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.CrossOverlayOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addCrossOverlay([])")
+        
+            // 开始调用
+            val result = ref.addCrossOverlay(var1)
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::addRouteOverlay" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::addRouteOverlay([])")
+        
+            // 开始调用
+            val result = ref.addRouteOverlay()
+        
+            // 调用结果
+            val returnRefId = result.hashCode()
+            REF_MAP[returnRefId] = result
+        
+            methodResult.success(returnRefId)
+        },
+        "com.amap.api.maps.AMap::setMapCustomEnable" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapCustomEnable([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMapCustomEnable(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCustomMapStylePath" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStylePath([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setCustomMapStylePath(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCustomMapStyle" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.CustomMapStyleOptions
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStyle([])")
+        
+            // 开始调用
+            ref.setCustomMapStyle(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCustomMapStyleID" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomMapStyleID([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setCustomMapStyleID(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setCustomTextureResourcePath" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setCustomTextureResourcePath([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setCustomTextureResourcePath(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setRenderMode" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRenderMode([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setRenderMode(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getP20MapCenter" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.autonavi.amap.mapcore.IPoint
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getP20MapCenter([])")
+        
+            // 开始调用
+            ref.getP20MapCenter(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::getMapContentApprovalNumber" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getMapContentApprovalNumber([])")
+        
+            // 开始调用
+            val result = ref.getMapContentApprovalNumber()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::getSatelliteImageApprovalNumber" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::getSatelliteImageApprovalNumber([])")
+        
+            // 开始调用
+            val result = ref.getSatelliteImageApprovalNumber()
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.amap.api.maps.AMap::setMapLanguage" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setMapLanguage([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setMapLanguage(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
+        "com.amap.api.maps.AMap::setRoadArrowEnable" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = REF_MAP[refId] as com.amap.api.maps.AMap
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.AMap@$refId::setRoadArrowEnable([\"var1\":$var1])")
+        
+            // 开始调用
+            ref.setRoadArrowEnable(var1)
+        
+            // 调用结果
+            methodResult.success("success")
+        },
         "com.amap.api.maps.interfaces.IGlOverlayLayer::removeOverlay" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -39949,12 +42247,885 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
+        "ObjectFactory::createcom_autonavi_ae_gmap_maploader_ProcessingTile__String" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.maploader.ProcessingTile(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glinterface.MapLabelItem()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglAnimation2V(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglAnimationContantValues()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglMapAnimFling(var1, var2, var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglAnimation1V(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.style.StyleItem(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.style.StyleElement()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.GLMapEngine.MapViewInitParam()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gesture.EAMapPlatformGestureInfo()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Long
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.GLMapState(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Long
+            // jsonable参数
+            val var3 = args["var3"] as Long
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.GLMapState(var1, var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLTextureProperty()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLRouteProperty()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3, var4)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Int
+            // jsonable参数
+            val var6 = args["var6"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.gloverlay.GLOverlayTexture(var1, var2, var3.toFloat(), var4.toFloat(), var5, var6)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.ae.gmap.GLMapEngine.InitParam()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.maploader.NetworkState()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.MapProjection()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.tools.TextTextureGenerator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.tools.GLFileUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.tools.GlMapUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.tools.GLMapStaticValue()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.tools.GLConvertUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.MsgProcessor()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AeUtil.UnZipFileBrake()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AbstractNativeInstance()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.LinkInfo()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapNativePolyline()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
         "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__" to { registrar, args, methodResult ->
             // 参数
         
         
             // 创建对象
             val obj = com.autonavi.amap.mapcore.IPoint()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.IPoint(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.DPoint()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.DPoint(var1, var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapNativeRenderer()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FileUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLTranslateAnimation(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLRotateAnimation(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLAlphaAnimation(var1.toFloat(), var2.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLScaleAnimation(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLTransformation()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLAnimationSet(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLEmergeAnimation(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.animation.GLAnimation()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.MapConfig(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.message.HoverGestureMapMessage(var1, var2.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.message.MoveGestureMapMessage(var1, var2.toFloat(), var3.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.message.ScaleGestureMapMessage(var1, var2.toFloat(), var3, var4)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.message.RotateGestureMapMessage(var1, var2.toFloat(), var3, var4)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.autonavi.amap.mapcore.FPoint
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.autonavi.amap.mapcore.FPoint
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FPointBounds(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.CoordUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AeUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.VirtualEarthProjection()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Rectangle()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Rectangle(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Inner_3dMap_location(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.location.Location
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Inner_3dMap_location(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapEngineUtils()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FPoint3()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Int
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FPoint3(var1.toFloat(), var2.toFloat(), var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapEtaDecoder()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FPointBounds.Builder()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Inner_3dMap_locationOption()
             REF_MAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
@@ -39971,12 +43142,216 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success(obj.hashCode())
         }
         ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.FPoint(var1.toFloat(), var2.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapNativeParticleSystem()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.AMapNativeBuildingRenderer()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_autonavi_amap_mapcore_Convert__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.autonavi.amap.mapcore.Convert()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
         "ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__" to { registrar, args, methodResult ->
             // 参数
         
         
             // 创建对象
             val obj = com.amap.api.offlineservice.AMapPermissionActivity()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_InfoWindowParams__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.InfoWindowParams()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.CameraUpdateFactory()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_AMapException__String" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 创建对象
+            val obj = com.amap.api.maps.AMapException(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_AMapException__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.AMapException()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_AMapOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.AMapOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.AMapOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.maps.CoordinateConverter(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.utils.SpatialRelationUtil()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_MapsInitializer__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.MapsInitializer()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.OfflineMapStatus()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.OfflineMapProvince()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.DownloadProgressView(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_Province__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.Province()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.OfflineMapCity()
             REF_MAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
@@ -39993,6 +43368,774 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success(obj.hashCode())
         }
         ,
+        "ObjectFactory::createcom_amap_api_maps_offlinemap_City__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.offlinemap.City()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PolygonHoleOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TileOverlayOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.model.LatLng
+            // jsonable参数
+            val var3 = args["var3"] as String
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.Poi(var1, var2, var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MyLocationStyle()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var3 = REF_MAP[args["var3"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var4 = REF_MAP[args["var4"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var5 = REF_MAP[args["var5"] as Int] as com.amap.api.maps.model.LatLngBounds
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.VisibleRegion(var1, var2, var3, var4, var5)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLngCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CircleHoleOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLngBounds.Builder()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.NavigateArrowOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.BitmapDescriptorFactory()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MultiPointOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PoiCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PoiCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PolylineOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_NaviPara__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.NaviPara()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.GroundOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.GL3DModelOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MyTrafficStyle()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CameraPosition(var1, var2.toFloat(), var3.toFloat(), var4.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TextOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PoiPara__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PoiPara()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MarkerOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Boolean
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.AnimationSet(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.RotateAnimation(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.RotateAnimation(var1.toFloat(), var2.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.TranslateAnimation(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.EmergeAnimation(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.AlphaAnimation(var1.toFloat(), var2.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.animation.ScaleAnimation(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLngBounds(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CustomMapStyleOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.BuildingOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CrossOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.VisibleRegionCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLng(var1, var3)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Boolean
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLng(var1, var3, var5)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+            // jsonable参数
+            val var5 = args["var5"] as Int
+            // jsonable参数
+            val var6 = args["var6"] as Int
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TileProjection(var1, var2, var3, var4, var5, var6)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_AMapPara__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.AMapPara()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CameraPosition.Builder()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.CameraPosition
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CameraPosition.Builder(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CircleOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+            // jsonable参数
+            val var6 = args["var6"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.AMapCameraInfo(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat(), var6.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PolygonOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+            // jsonable参数
+            val var2 = args["var2"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.WeightedLatLng(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.WeightedLatLng(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MyLocationStyleCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MarkerOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as com.amap.api.maps.model.LatLng
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.MultiPointItem(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.LatLngBoundsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_ArcOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.ArcOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.BitmapDescriptorCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CircleOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CircleOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.NavigateArrowOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as String
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.RuntimeRemoteException(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.HeatmapTileProvider.Builder()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_BaseOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.BaseOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PolylineOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.BaseOverlay()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TileOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_RoutePara__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.RoutePara()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.ArcOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.CameraPositionCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__" to { registrar, args, methodResult ->
             // 参数
         
@@ -40004,12 +44147,354 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             methodResult.success(obj.hashCode())
         }
         ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.ConstantRotationOverLife(var1.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Boolean
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.SinglePointParticleShape(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.SinglePointParticleShape(var1.toFloat(), var2.toFloat(), var3.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+            // jsonable参数
+            val var6 = args["var6"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat(), var6.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.CurveSizeOverLife(var1.toFloat(), var2.toFloat(), var3.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.ParticleEmissionModule(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Boolean
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.RectParticleShape(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var2 = args["var2"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var4 = args["var4"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+            // jsonable参数
+            val var6 = args["var6"] as Double
+            // jsonable参数
+            val var7 = args["var7"] as Double
+            // jsonable参数
+            val var8 = args["var8"] as Double
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.RandomColorBetWeenTwoConstants(var1.toFloat(), var2.toFloat(), var3.toFloat(), var4.toFloat(), var5.toFloat(), var6.toFloat(), var7.toFloat(), var8.toFloat())
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.particle.ParticleOverlayOptionsFactory()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
         
             // 创建对象
             val obj = com.amap.api.maps.model.particle.ParticleOverlayOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TextOptions__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TextOptions()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.PolygonOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.TileProjectionCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.GroundOverlayOptionsCreator()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.model.IndoorBuildingInfo()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.maps.TextureMapView(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.AMapOptions
+        
+            // 创建对象
+            val obj = com.amap.api.maps.TextureMapView(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_AMapUtils__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.maps.AMapUtils()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.maps.WearMapView(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.AMapOptions
+        
+            // 创建对象
+            val obj = com.amap.api.maps.WearMapView(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.maps.MapView(var1)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+            // 引用参数
+            val var2 = REF_MAP[args["var2"] as Int] as com.amap.api.maps.AMapOptions
+        
+            // 创建对象
+            val obj = com.amap.api.maps.MapView(var1, var2)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Double
+            // jsonable参数
+            val var3 = args["var3"] as Double
+            // jsonable参数
+            val var5 = args["var5"] as Double
+            // jsonable参数
+            val var6 = args["var6"] as Double
+            // jsonable参数
+            val var7 = args["var7"] as Long
+        
+            // 创建对象
+            val obj = com.amap.api.trace.TraceLocation(var1, var3, var5.toFloat(), var6.toFloat(), var7)
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_trace_TraceLocation__" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 创建对象
+            val obj = com.amap.api.trace.TraceLocation()
+            REF_MAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        }
+        ,
+        "ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = REF_MAP[args["var1"] as Int] as android.content.Context
+        
+            // 创建对象
+            val obj = com.amap.api.trace.LBSTraceClient(var1)
             REF_MAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())

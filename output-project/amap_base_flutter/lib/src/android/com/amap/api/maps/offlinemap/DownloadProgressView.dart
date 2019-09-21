@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_View  {
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter/com.amap.api.maps.offlinemap.DownloadProgressView');
+  static final _channel = MethodChannel('me.yohom/amap_base_flutter/com_amap_api_maps_offlinemap_DownloadProgressView');
 
   // 生成getters
   

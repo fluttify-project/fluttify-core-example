@@ -1,4 +1,1 @@
-enum Level {
-  MAOverlayLevelAboveRoads,
-  MAOverlayLevelAboveLabels
-}
+enum Level { MAOverlayLevelAboveRoads, MAOverlayLevelAboveLabels }

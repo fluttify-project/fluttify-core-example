@@ -9,29 +9,29 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
 
   // 生成getters
   Future<double> get_alpha() async {
-    final result = await _channel.invokeMethod("MAGroundOverlay::get_alpha", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAGroundOverlay::get_alpha", {'refId': refId});
     return result;
   }
-  
+
   Future<double> get_zoomLevel() async {
-    final result = await _channel.invokeMethod("MAGroundOverlay::get_zoomLevel", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAGroundOverlay::get_zoomLevel", {'refId': refId});
     return result;
   }
-  
+
   Future<MACoordinateBounds> get_bounds() async {
-    final result = await _channel.invokeMethod("MAGroundOverlay::get_bounds", {'refId': refId});
+    final result = await _channel
+        .invokeMethod("MAGroundOverlay::get_bounds", {'refId': refId});
     return result;
   }
-  
 
   // 生成setters
   Future<void> set_alpha(double alpha) async {
-    await _channel.invokeMethod('MAGroundOverlay::set_alpha', {'refId': refId, "alpha": alpha});
-  
-  
+    await _channel.invokeMethod(
+        'MAGroundOverlay::set_alpha', {'refId': refId, "alpha": alpha});
   }
-  
 
   // 生成方法们
-  
+
 }

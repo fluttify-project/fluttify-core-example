@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
-  static final _channel = MethodChannel('me.yohom/amap_base_flutter/com.amap.api.maps.WearMapView');
+  static final _channel = MethodChannel('me.yohom/amap_base_flutter/com_amap_api_maps_WearMapView');
 
   // 生成getters
   

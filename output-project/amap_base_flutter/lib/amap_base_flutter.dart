@@ -291,7 +291,6 @@ export 'src/android/com/amap/api/maps/model/NavigateArrow.dart';
 export 'src/android/com/amap/api/maps/model/AMapPara.dart';
 export 'src/android/com/amap/api/maps/model/LatLng.dart';
 export 'src/android/com/amap/api/maps/model/TileProjection.dart';
-export 'src/android/com/amap/api/maps/model/BuildingOverlay/BuildingOverlayTotalOptions.dart';
 export 'src/android/com/amap/api/maps/model/VisibleRegionCreator.dart';
 export 'src/android/com/amap/api/maps/model/BuildingOverlayOptions.dart';
 export 'src/android/com/amap/api/maps/model/CrossOverlayOptions.dart';

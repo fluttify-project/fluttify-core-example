@@ -1191,28 +1191,11 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomRenderer([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.AMap::setCustomRenderer', {"refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.AMap::setCustomRenderer', {"var1": var1.refId, "refId": refId});
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
-        .setMethodCallHandler((methodCall) async {
-          final args = methodCall.arguments as Map;
-          // final refId = args['callerRefId'] as int;
-          // if (refId != this.refId) return;
   
-          switch (methodCall.method) {
-            case 'Callback::com.amap.api.maps.CustomRenderer::OnMapReferencechanged':
-              // 日志打印
-              print('fluttify-dart-callback: OnMapReferencechanged([])');
-        
-                // 调用回调方法
-              var1?.OnMapReferencechanged();
-              break;
-            default:
-              break;
-          }
-        });
   
     // 返回值
     return result;

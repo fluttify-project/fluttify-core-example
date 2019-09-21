@@ -612,11 +612,6 @@ class Ref_Android {
     return result;
   }
   
-  Future<bool> isKindOfcom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions() async {
-    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions', {'refId': refId});
-    return result;
-  }
-  
   Future<bool> isKindOfcom_amap_api_maps_model_PoiCreator() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_model_PoiCreator', {'refId': refId});
     return result;
@@ -1691,11 +1686,6 @@ class Ref_Android {
   Future<com_amap_api_maps_model_MultiPointOverlayOptions> ascom_amap_api_maps_model_MultiPointOverlayOptions() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_MultiPointOverlayOptions', {'refId': refId});
     return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
-  }
-  
-  Future<com_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions> ascom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions() async {
-    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions', {'refId': refId});
-    return com_amap_api_maps_model_BuildingOverlay_BuildingOverlayTotalOptions()..refId = result;
   }
   
   Future<com_amap_api_maps_model_PoiCreator> ascom_amap_api_maps_model_PoiCreator() async {
