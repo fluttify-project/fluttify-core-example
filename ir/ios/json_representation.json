@@ -8490,8 +8490,7 @@
         },
         {
           "platform": "iOS",
-          "name": "Level",
-
+          "name": "MAOverlayLevel",
           "genericTypes": [],
           "typeType": "Enum",
           "isPublic": true,

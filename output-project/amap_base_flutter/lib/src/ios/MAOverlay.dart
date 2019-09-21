@@ -4,4 +4,6 @@ import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
-mixin MAOverlay on MAAnnotation {}
+mixin MAOverlay on MAAnnotation {
+  
+}

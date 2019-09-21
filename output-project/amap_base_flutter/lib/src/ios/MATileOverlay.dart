@@ -9,84 +9,82 @@ class MATileOverlay extends NSObject with MAAnnotation, MAOverlay {
 
   // 生成getters
   Future<int> get_minimumZ() async {
-    final result = await _channel
-        .invokeMethod("MATileOverlay::get_minimumZ", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_minimumZ", {'refId': refId});
     return result;
   }
-
+  
   Future<int> get_maximumZ() async {
-    final result = await _channel
-        .invokeMethod("MATileOverlay::get_maximumZ", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_maximumZ", {'refId': refId});
     return result;
   }
-
+  
   Future<String> get_URLTemplate() async {
-    final result = await _channel
-        .invokeMethod("MATileOverlay::get_URLTemplate", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_URLTemplate", {'refId': refId});
     return result;
   }
-
+  
   Future<bool> get_canReplaceMapContent() async {
-    final result = await _channel.invokeMethod(
-        "MATileOverlay::get_canReplaceMapContent", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_canReplaceMapContent", {'refId': refId});
     return result;
   }
-
+  
   Future<MAMapRect> get_boundingMapRect() async {
-    final result = await _channel
-        .invokeMethod("MATileOverlay::get_boundingMapRect", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_boundingMapRect", {'refId': refId});
     return result;
   }
-
+  
   Future<bool> get_disableOffScreenTileLoading() async {
-    final result = await _channel.invokeMethod(
-        "MATileOverlay::get_disableOffScreenTileLoading", {'refId': refId});
+    final result = await _channel.invokeMethod("MATileOverlay::get_disableOffScreenTileLoading", {'refId': refId});
     return result;
   }
+  
 
   // 生成setters
   Future<void> set_minimumZ(int minimumZ) async {
-    await _channel.invokeMethod(
-        'MATileOverlay::set_minimumZ', {'refId': refId, "minimumZ": minimumZ});
+    await _channel.invokeMethod('MATileOverlay::set_minimumZ', {'refId': refId, "minimumZ": minimumZ});
+  
+  
   }
-
+  
   Future<void> set_maximumZ(int maximumZ) async {
-    await _channel.invokeMethod(
-        'MATileOverlay::set_maximumZ', {'refId': refId, "maximumZ": maximumZ});
+    await _channel.invokeMethod('MATileOverlay::set_maximumZ', {'refId': refId, "maximumZ": maximumZ});
+  
+  
   }
-
+  
   Future<void> set_canReplaceMapContent(bool canReplaceMapContent) async {
-    await _channel.invokeMethod('MATileOverlay::set_canReplaceMapContent',
-        {'refId': refId, "canReplaceMapContent": canReplaceMapContent});
+    await _channel.invokeMethod('MATileOverlay::set_canReplaceMapContent', {'refId': refId, "canReplaceMapContent": canReplaceMapContent});
+  
+  
   }
-
+  
   Future<void> set_boundingMapRect(MAMapRect boundingMapRect) async {
-    await _channel.invokeMethod('MATileOverlay::set_boundingMapRect',
-        {'refId': refId, "boundingMapRect": boundingMapRect.refId});
+    await _channel.invokeMethod('MATileOverlay::set_boundingMapRect', {'refId': refId, "boundingMapRect": boundingMapRect.refId});
+  
+  
   }
-
-  Future<void> set_disableOffScreenTileLoading(
-      bool disableOffScreenTileLoading) async {
-    await _channel.invokeMethod(
-        'MATileOverlay::set_disableOffScreenTileLoading', {
-      'refId': refId,
-      "disableOffScreenTileLoading": disableOffScreenTileLoading
-    });
+  
+  Future<void> set_disableOffScreenTileLoading(bool disableOffScreenTileLoading) async {
+    await _channel.invokeMethod('MATileOverlay::set_disableOffScreenTileLoading', {'refId': refId, "disableOffScreenTileLoading": disableOffScreenTileLoading});
+  
+  
   }
+  
 
   // 生成方法们
-  Future<String> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
+   Future<String> cancelLoadOfTileAtPath(MATileOverlayPath path) async {
     // 日志打印
     print('fluttify-dart: MATileOverlay@$refId::cancelLoadOfTileAtPath([])');
-
+  
     // 调用原生方法
-    final result = await _channel.invokeMethod(
-        'MATileOverlay::cancelLoadOfTileAtPath',
-        {"path": path.refId, "refId": refId});
-
+    final result = await _channel.invokeMethod('MATileOverlay::cancelLoadOfTileAtPath', {"path": path.refId, "refId": refId});
+  
+  
     // 接受原生回调
-
+  
+  
     // 返回值
     return result;
   }
+  
 }

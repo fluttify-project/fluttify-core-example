@@ -44,7 +44,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
   //region handlers
   _handlerMap = @{
-      @"MAMapView::setRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setRegionAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* regionValue = (NSValue*) REF_MAP[@([args[@"region"] integerValue])];
@@ -89,7 +89,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(resultValue.hash));
       },
-      @"MAMapView::setVisibleMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setVisibleMapRectAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* mapRectValue = (NSValue*) REF_MAP[@([args[@"mapRect"] integerValue])];
@@ -134,7 +134,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(resultValue.hash));
       },
-      @"MAMapView::setCenterCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setCenterCoordinateAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* coordinateValue = (NSValue*) REF_MAP[@([args[@"coordinate"] integerValue])];
@@ -156,7 +156,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::setZoomLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setZoomLevelAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // jsonable参数
           CGFloat zoomLevel = [args[@"zoomLevel"] floatValue];
@@ -176,7 +176,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::setRotationDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setRotationDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // jsonable参数
           CGFloat rotationDegree = [args[@"rotationDegree"] floatValue];
@@ -198,7 +198,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::setCameraDegree": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setCameraDegreeAnimatedduration": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // jsonable参数
           CGFloat cameraDegree = [args[@"cameraDegree"] floatValue];
@@ -240,7 +240,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(returnRefId));
       },
-      @"MAMapView::setMapStatus": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setMapStatusAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
           MAMapStatus* status = (MAMapStatus*) REF_MAP[@([args[@"status"] integerValue])];
@@ -278,7 +278,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::convertCoordinate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::convertCoordinateToPointToView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* coordinateValue = (NSValue*) REF_MAP[@([args[@"coordinate"] integerValue])];
@@ -303,7 +303,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(resultValue.hash));
       },
-      @"MAMapView::convertPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::convertPointToCoordinateFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* pointValue = (NSValue*) REF_MAP[@([args[@"point"] integerValue])];
@@ -328,7 +328,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(resultValue.hash));
       },
-      @"MAMapView::convertRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::convertRegionToRectToView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* regionValue = (NSValue*) REF_MAP[@([args[@"region"] integerValue])];
@@ -353,7 +353,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(resultValue.hash));
       },
-      @"MAMapView::convertRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::convertRectToRegionFromView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 结构体参数
           NSValue* rectValue = (NSValue*) REF_MAP[@([args[@"rect"] integerValue])];
@@ -558,7 +558,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       
           methodResult(@(returnRefId));
       },
-      @"MAMapView::selectAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::selectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
           id<MAAnnotation> annotation = (id<MAAnnotation>) REF_MAP[@([args[@"annotation"] integerValue])];
@@ -578,7 +578,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::deselectAnnotation": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::deselectAnnotationAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
           id<MAAnnotation> annotation = (id<MAAnnotation>) REF_MAP[@([args[@"annotation"] integerValue])];
@@ -598,7 +598,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::setUserTrackingMode": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::setUserTrackingModeAnimated": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 枚举参数
           MAUserTrackingMode mode = (MAUserTrackingMode) [args[@"mode"] integerValue];
@@ -636,6 +636,24 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
+      @"MAMapView::overlaysInLevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 枚举参数
+          MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::overlaysInLevel(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          NSArray* result = [ref overlaysInLevel: level];
+      
+          // 调用结果
+          methodResult(result);
+      },
       @"MAMapView::addOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -672,7 +690,29 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::exchangeOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::insertOverlayAtIndexlevel": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+          // 参数
+          // 引用参数
+          id<MAOverlay> overlay = (id<MAOverlay>) REF_MAP[@([args[@"overlay"] integerValue])];
+          // jsonable参数
+          NSUInteger index = [args[@"index"] unsignedIntegerValue];
+          // 枚举参数
+          MAOverlayLevel level = (MAOverlayLevel) [args[@"level"] integerValue];
+      
+          // 调用对象引用
+          NSInteger refId = [args[@"refId"] integerValue];
+          MAMapView * ref = (MAMapView *) REF_MAP[@(refId)];
+      
+          // 日志打印
+          NSLog(@"fluttify-objc: MAMapView@%@::insertOverlay(暂未实现参数打印)", @(refId));
+      
+          // 开始调用
+          [ref insertOverlay : overlay atIndex: index level: level];
+      
+          // 调用结果
+          methodResult(@"success");
+      },
+      @"MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // jsonable参数
           NSUInteger index1 = [args[@"index1"] unsignedIntegerValue];
@@ -692,7 +732,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
           // 调用结果
           methodResult(@"success");
       },
-      @"MAMapView::exchangeOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
+      @"MAMapView::exchangeOverlayWithOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
           id<MAOverlay> overlay1 = (id<MAOverlay>) REF_MAP[@([args[@"overlay1"] integerValue])];
@@ -1993,7 +2033,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"traceManager");
+  NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
 
   // 暂不支持含有数组的方法
 }
@@ -2004,7 +2044,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MATraceDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewRequireLocationAuth");
+  NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
 
   [channel invokeMethod:@"Callback::MATraceDelegate::mapViewRequireLocationAuth" arguments:@{@"locationManager": @(locationManager.hash)}];
   
@@ -2016,7 +2056,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMultiPointOverlayRendererDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"multiPointOverlayRenderer");
+  NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
 
   [channel invokeMethod:@"Callback::MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped" arguments:@{@"renderer": @(renderer.hash), @"item": @(item.hash)}];
   
@@ -2028,7 +2068,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewRegionChanged");
+  NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionChanged" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2040,7 +2080,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated)}];
   
@@ -2052,7 +2092,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": @(mapView.hash), @"animated": @(animated)}];
   
@@ -2064,7 +2104,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -2076,7 +2116,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -2088,7 +2128,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -2100,7 +2140,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": @(mapView.hash), @"wasUserAction": @(wasUserAction)}];
   
@@ -2112,7 +2152,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewWillStartLoadingMap");
+  NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLoadingMap" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2124,7 +2164,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewDidFinishLoadingMap");
+  NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFinishLoadingMap" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2136,7 +2176,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewDidFailLoadingMap");
+  NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailLoadingMapWithError" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
   
@@ -2148,7 +2188,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
@@ -2162,7 +2202,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
 
   // 暂不支持含有数组的方法
 }
@@ -2173,7 +2213,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSelectAnnotationView" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -2185,7 +2225,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidDeselectAnnotationView" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -2197,7 +2237,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewWillStartLocatingUser");
+  NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewWillStartLocatingUser" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2209,7 +2249,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapViewDidStopLocatingUser");
+  NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidStopLocatingUser" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2221,7 +2261,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": @(mapView.hash), @"userLocation": @(userLocation.hash), @"updatingLocation": @(updatingLocation)}];
   
@@ -2233,7 +2273,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidFailToLocateUserWithError" arguments:@{@"mapView": @(mapView.hash), @"error": @(error.hash)}];
   
@@ -2245,7 +2285,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"newState": @(newState), @"oldState": @(oldState)}];
   
@@ -2257,7 +2297,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
@@ -2271,7 +2311,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
 
   // 暂不支持含有数组的方法
 }
@@ -2282,7 +2322,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash), @"control": @(control.hash)}];
   
@@ -2294,7 +2334,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -2306,7 +2346,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAnnotationViewTapped" arguments:@{@"mapView": @(mapView.hash), @"view": @(view.hash)}];
   
@@ -2318,7 +2358,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": @(mapView.hash), @"mode": @(mode), @"animated": @(animated)}];
   
@@ -2330,7 +2370,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": @(mapView.hash), @"openGLESDisabled": @(openGLESDisabled)}];
   
@@ -2342,7 +2382,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
 
   // 暂不支持含有数组的方法
 }
@@ -2353,7 +2393,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @([NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)].hash)}];
   
@@ -2365,7 +2405,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": @(mapView.hash), @"coordinate": @([NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)].hash)}];
   
@@ -2377,7 +2417,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapInitComplete");
+  NSLog(@"MAMapViewDelegate::mapInitComplete");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapInitComplete" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2389,7 +2429,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapShowed" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
@@ -2401,7 +2441,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
@@ -2413,7 +2453,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"mapView");
+  NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidIndoorMapHidden" arguments:@{@"mapView": @(mapView.hash), @"indoorInfo": @(indoorInfo.hash)}];
   
@@ -2425,7 +2465,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"offlineDataWillReload");
+  NSLog(@"MAMapViewDelegate::offlineDataWillReload");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataWillReload" arguments:@{@"mapView": @(mapView.hash)}];
   
@@ -2437,7 +2477,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"MAMapViewDelegate::Callback"
             binaryMessenger:[_registrar messenger]];
 
-  NSLog(@"offlineDataDidReload");
+  NSLog(@"MAMapViewDelegate::offlineDataDidReload");
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::offlineDataDidReload" arguments:@{@"mapView": @(mapView.hash)}];
   

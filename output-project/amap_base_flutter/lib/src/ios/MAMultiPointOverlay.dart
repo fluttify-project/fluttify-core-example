@@ -8,9 +8,11 @@ class MAMultiPointOverlay extends MAShape with MAAnnotation, MAOverlay {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  
 
   // 生成setters
+  
 
   // 生成方法们
-
+  
 }

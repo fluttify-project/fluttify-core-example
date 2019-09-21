@@ -1,1 +1,5 @@
-enum MALineJoinType { kMALineJoinBevel, kMALineJoinMiter, kMALineJoinRound }
+enum MALineJoinType {
+  kMALineJoinBevel,
+  kMALineJoinMiter,
+  kMALineJoinRound
+}

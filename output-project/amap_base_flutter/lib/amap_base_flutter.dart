@@ -32,6 +32,7 @@ export 'src/ios/MAUserLocationRepresentation.dart';
 export 'src/ios/MAMapView.dart';
 export 'src/ios/MAParticleSinglePointShapeModule.dart';
 export 'src/ios/MACoordinateRegion.dart';
+export 'src/ios/MAOverlayLevel.dart';
 export 'src/ios/AMapURLSearch.dart';
 export 'src/ios/MACoordinateType.dart';
 export 'src/ios/MATracePoint.dart';

@@ -6,4 +6,5 @@ import 'package:flutter/services.dart';
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin MAAnnotation on NSObject {
   Future<String> setCoordinate(CLLocationCoordinate2D newCoordinate) {}
+  
 }
