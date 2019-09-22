@@ -548,7 +548,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.model.Marker::Callback')
+    MethodChannel('com.amap.api.maps.model.Marker::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

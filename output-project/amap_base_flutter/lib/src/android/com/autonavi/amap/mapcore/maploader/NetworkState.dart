@@ -23,7 +23,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.amap.mapcore.maploader.NetworkState::Callback')
+    MethodChannel('com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

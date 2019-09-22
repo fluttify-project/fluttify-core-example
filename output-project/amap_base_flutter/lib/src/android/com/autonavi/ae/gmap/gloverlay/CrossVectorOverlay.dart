@@ -113,7 +113,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::Callback')
+    MethodChannel('com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

@@ -233,7 +233,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.offlinemap.OfflineMapManager::Callback')
+    MethodChannel('com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

@@ -83,7 +83,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::Callback')
+    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -122,7 +122,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::Callback')
+    MethodChannel('com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

@@ -45,14 +45,17 @@ class DrawPointScreenState extends State<DrawPointScreen> {
               children: <Widget>[
                 ListTile(
                   title: Text('添加Marker'),
-                  onTap: () {
+                  onTap: () async {
                     final random = Random();
-                    _controller?.addMarker(
+                    await _controller?.addMarker(
                       39.90960 + random.nextDouble(),
                       116.397228 + random.nextDouble(),
                       title: '北京',
                       snippet: '描述',
                     );
+                    await _controller?.setMarkerClickListener((marker) async {
+                      print('Marker点击回调: 标题: ${await marker.getTitle()}');
+                    });
                   },
                 ),
               ],

@@ -167,18 +167,16 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             // 开始调用
             ref.setOnDismissCallbackListener(object : com.amap.api.maps.WearMapView.OnDismissCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback")
         
                 // 回调方法们
                 override fun onDismiss(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDismiss([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView.OnDismissCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDismiss",
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
                         mapOf<String, Any?>()
                     )
         
@@ -190,11 +188,9 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                     // 日志打印
                     println("fluttify-kotlin-callback: onNotifySwipe([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView.OnDismissCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onNotifySwipe",
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
                         mapOf<String, Any?>()
                     )
         

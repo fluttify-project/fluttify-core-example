@@ -3,6 +3,8 @@ import 'package:amap_base_flutter/src/ios/MAMapView.dart';
 
 import 'enums.dart';
 
+typedef void OnMarkerClick(com_amap_api_maps_model_Marker marker);
+
 class AmapController {
   AmapController.android(this.androidController);
 
@@ -362,6 +364,33 @@ class AmapController {
       },
     );
   }
+
+  Future setMarkerClickListener(OnMarkerClick onMarkerClick) async {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+
+        await map
+            .setOnMarkerClickListener(OnMarkerClickListener(onMarkerClick));
+      },
+      ios: () async {
+        // todo
+      },
+    );
+  }
 }
 
 class MyDelegate extends NSObject with MAMapViewDelegate {}
+
+class OnMarkerClickListener extends java_lang_Object
+    with com_amap_api_maps_AMap_OnMarkerClickListener {
+  final OnMarkerClick onMarkerClicked;
+
+  OnMarkerClickListener(this.onMarkerClicked);
+
+  @override
+  Future<bool> onMarkerClick(com_amap_api_maps_model_Marker var1) async {
+    onMarkerClicked(var1);
+    return true;
+  }
+}

@@ -32,7 +32,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.model.animation.Animation::Callback')
+    MethodChannel('com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

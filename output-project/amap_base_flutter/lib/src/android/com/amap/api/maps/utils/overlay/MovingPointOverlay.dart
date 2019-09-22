@@ -218,7 +218,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::Callback')
+    MethodChannel('com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

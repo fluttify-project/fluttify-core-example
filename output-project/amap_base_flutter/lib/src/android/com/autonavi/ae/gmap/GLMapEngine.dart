@@ -488,7 +488,7 @@ class com_autonavi_ae_gmap_GLMapEngine extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::Callback')
+    MethodChannel('com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

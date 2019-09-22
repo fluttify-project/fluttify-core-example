@@ -83,7 +83,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.model.CrossOverlay::Callback')
+    MethodChannel('com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

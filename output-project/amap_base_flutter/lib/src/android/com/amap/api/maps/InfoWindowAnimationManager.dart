@@ -23,7 +23,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::Callback')
+    MethodChannel('com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

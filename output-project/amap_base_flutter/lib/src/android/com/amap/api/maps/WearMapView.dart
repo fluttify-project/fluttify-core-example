@@ -143,7 +143,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.WearMapView::Callback')
+    MethodChannel('com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

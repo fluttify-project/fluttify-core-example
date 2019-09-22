@@ -53,7 +53,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.trace.LBSTraceClient::Callback')
+    MethodChannel('com.amap.api.trace.LBSTraceClient::startTrace::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

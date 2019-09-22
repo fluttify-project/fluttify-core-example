@@ -548,7 +548,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.autonavi.amap.mapcore.animation.GLAnimation::Callback')
+    MethodChannel('com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;

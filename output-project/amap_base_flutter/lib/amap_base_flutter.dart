@@ -410,4 +410,3 @@ export 'src/android/com/amap/api/trace/TraceLocation.dart';
 export 'src/android/com/amap/api/trace/TraceOverlay.dart';
 export 'src/android/com/amap/api/trace/LBSTraceClient.dart';
 export 'src/android/com/amap/api/mapcore/util/.dart';
-

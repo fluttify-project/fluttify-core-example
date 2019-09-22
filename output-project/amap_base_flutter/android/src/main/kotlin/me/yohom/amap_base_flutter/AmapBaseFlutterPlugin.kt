@@ -3610,18 +3610,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.addGroupAnimation(var1, var2, var3.toFloat(), var4, var5, var6, var7, object : com.amap.api.maps.AMap.CancelableCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.GLMapEngine::addGroupAnimation::Callback")
         
                 // 回调方法们
                 override fun onFinish(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinish([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFinish",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
                         mapOf<String, Any?>()
                     )
         
@@ -3633,11 +3631,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCancel",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
                         mapOf<String, Any?>()
                     )
         
@@ -4658,18 +4654,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.addAnimation(var1, object : com.amap.api.maps.AMap.CancelableCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::addAnimation::Callback")
         
                 // 回调方法们
                 override fun onFinish(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinish([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFinish",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
                         mapOf<String, Any?>()
                     )
         
@@ -4681,11 +4675,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCancel",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
                         mapOf<String, Any?>()
                     )
         
@@ -4712,18 +4704,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setMapAnimationListener(object : com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr::setMapAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onMapAnimationFinish(var1: com.amap.api.maps.AMap.CancelableCallback): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapAnimationFinish([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapAnimationFinish",
+                        "Callback::com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -4750,18 +4740,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.onMapAnimationFinish(object : com.amap.api.maps.AMap.CancelableCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr.MapAnimationListener::onMapAnimationFinish::Callback")
         
                 // 回调方法们
                 override fun onFinish(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinish([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFinish",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
                         mapOf<String, Any?>()
                     )
         
@@ -4773,11 +4761,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCancel",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
                         mapOf<String, Any?>()
                     )
         
@@ -6896,18 +6882,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setGenerateCrossImageListener(object : com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay::setGenerateCrossImageListener::Callback")
         
                 // 回调方法们
                 override fun onGenerateComplete(var1: android.graphics.Bitmap, var2: Int): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onGenerateComplete([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onGenerateComplete",
+                        "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2)
                     )
@@ -7319,18 +7303,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setNetworkListener(object : com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.maploader.NetworkState::setNetworkListener::Callback")
         
                 // 回调方法们
                 override fun networkStateChanged(var1: android.content.Context): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: networkStateChanged([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::networkStateChanged",
+                        "Callback::com.autonavi.amap.mapcore.maploader.NetworkState.NetworkChangeListener::networkStateChanged",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -9349,18 +9331,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAnimationListener(object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.animation.GLAnimation::setAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -9372,11 +9352,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -14448,18 +14426,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAnimationListener(object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAnimation::setAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -14471,11 +14447,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -16950,18 +16924,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAnimationListener(object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IMarker::setAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -16973,11 +16945,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -17102,18 +17072,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setInfoWindowAnimation(var1, object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IInfoWindowManager::setInfoWindowAnimation::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -17125,11 +17093,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -17966,18 +17932,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.animateCameraWithCallback(var1, object : com.amap.api.maps.AMap.CancelableCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithCallback::Callback")
         
                 // 回调方法们
                 override fun onFinish(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinish([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFinish",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
                         mapOf<String, Any?>()
                     )
         
@@ -17989,11 +17953,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCancel",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
                         mapOf<String, Any?>()
                     )
         
@@ -18023,18 +17985,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.animateCameraWithDurationAndCallback(var1, var2, object : com.amap.api.maps.AMap.CancelableCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::animateCameraWithDurationAndCallback::Callback")
         
                 // 回调方法们
                 override fun onFinish(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onFinish([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFinish",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish",
                         mapOf<String, Any?>()
                     )
         
@@ -18046,11 +18006,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCancel([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CancelableCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCancel",
+                        "Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel",
                         mapOf<String, Any?>()
                     )
         
@@ -18683,18 +18641,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnCameraChangeListener(object : com.amap.api.maps.AMap.OnCameraChangeListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnCameraChangeListener::Callback")
         
                 // 回调方法们
                 override fun onCameraChange(var1: com.amap.api.maps.model.CameraPosition): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCameraChange([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCameraChange",
+                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18706,11 +18662,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCameraChangeFinish([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCameraChangeFinish",
+                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18737,18 +18691,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapClickListener(object : com.amap.api.maps.AMap.OnMapClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapClickListener::Callback")
         
                 // 回调方法们
                 override fun onMapClick(var1: com.amap.api.maps.model.LatLng): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapClick",
+                        "Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18775,18 +18727,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapTouchListener(object : com.amap.api.maps.AMap.OnMapTouchListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapTouchListener::Callback")
         
                 // 回调方法们
                 override fun onTouch(var1: android.view.MotionEvent): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTouch([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapTouchListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onTouch",
+                        "Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18813,18 +18763,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapLongClickListener(object : com.amap.api.maps.AMap.OnMapLongClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMapLongClickListener::Callback")
         
                 // 回调方法们
                 override fun onMapLongClick(var1: com.amap.api.maps.model.LatLng): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapLongClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLongClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapLongClick",
+                        "Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18851,18 +18799,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMarkerClickListener(object : com.amap.api.maps.AMap.OnMarkerClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerClickListener::Callback")
         
                 // 回调方法们
                 override fun onMarkerClick(var1: com.amap.api.maps.model.Marker): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerClick",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18889,18 +18835,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnPolylineClickListener(object : com.amap.api.maps.AMap.OnPolylineClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPolylineClickListener::Callback")
         
                 // 回调方法们
                 override fun onPolylineClick(var1: com.amap.api.maps.model.Polyline): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPolylineClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPolylineClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPolylineClick",
+                        "Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18927,18 +18871,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMarkerDragListener(object : com.amap.api.maps.AMap.OnMarkerDragListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMarkerDragListener::Callback")
         
                 // 回调方法们
                 override fun onMarkerDragStart(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDragStart([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDragStart",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18950,11 +18892,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDrag([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDrag",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18966,11 +18906,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDragEnd([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDragEnd",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -18997,18 +18935,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMaploadedListener(object : com.amap.api.maps.AMap.OnMapLoadedListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMaploadedListener::Callback")
         
                 // 回调方法们
                 override fun onMapLoaded(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapLoaded([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLoadedListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapLoaded",
+                        "Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded",
                         mapOf<String, Any?>()
                     )
         
@@ -19035,18 +18971,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnInfoWindowClickListener(object : com.amap.api.maps.AMap.OnInfoWindowClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnInfoWindowClickListener::Callback")
         
                 // 回调方法们
                 override fun onInfoWindowClick(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onInfoWindowClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnInfoWindowClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onInfoWindowClick",
+                        "Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19073,18 +19007,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMyLocationChangeListener(object : com.amap.api.maps.AMap.OnMyLocationChangeListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMyLocationChangeListener::Callback")
         
                 // 回调方法们
                 override fun onMyLocationChange(var1: android.location.Location): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMyLocationChange([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMyLocationChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMyLocationChange",
+                        "Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19111,18 +19043,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnPOIClickListener(object : com.amap.api.maps.AMap.OnPOIClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnPOIClickListener::Callback")
         
                 // 回调方法们
                 override fun onPOIClick(var1: com.amap.api.maps.model.Poi): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPOIClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPOIClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPOIClick",
+                        "Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19167,18 +19097,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnIndoorBuildingActiveListener(object : com.amap.api.maps.AMap.OnIndoorBuildingActiveListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnIndoorBuildingActiveListener::Callback")
         
                 // 回调方法们
                 override fun OnIndoorBuilding(var1: com.amap.api.maps.model.IndoorBuildingInfo): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: OnIndoorBuilding([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::OnIndoorBuilding",
+                        "Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19205,18 +19133,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.getMapPrintScreen(object : com.amap.api.maps.AMap.onMapPrintScreenListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapPrintScreen::Callback")
         
                 // 回调方法们
                 override fun onMapPrint(var1: android.graphics.drawable.Drawable): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapPrint([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.onMapPrintScreenListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapPrint",
+                        "Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19243,18 +19169,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.getMapScreenShot(object : com.amap.api.maps.AMap.OnMapScreenShotListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::getMapScreenShot::Callback")
         
                 // 回调方法们
                 override fun onMapScreenShot(var1: android.graphics.Bitmap): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapScreenShot",
+                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -19266,11 +19190,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapScreenShot",
+                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2)
                     )
@@ -19476,18 +19398,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAMapGestureListener(object : com.amap.api.maps.model.AMapGestureListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setAMapGestureListener::Callback")
         
                 // 回调方法们
                 override fun onDoubleTap(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDoubleTap([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDoubleTap",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19500,11 +19420,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onSingleTap([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onSingleTap",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19517,11 +19435,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onFling([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFling",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onFling",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19534,11 +19450,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onScroll([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onScroll",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onScroll",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19551,11 +19465,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onLongPress([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onLongPress",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19568,11 +19480,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onDown([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDown",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDown",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19585,11 +19495,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onUp([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onUp",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onUp",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -19602,11 +19510,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapStable([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapStable",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable",
                         mapOf<String, Any?>()
                     )
         
@@ -20366,18 +20272,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMultiPointClickListener(object : com.amap.api.maps.AMap.OnMultiPointClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.autonavi.amap.mapcore.interfaces.IAMap::setOnMultiPointClickListener::Callback")
         
                 // 回调方法们
                 override fun onPointClick(var1: com.amap.api.maps.model.MultiPointItem): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPointClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMultiPointClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPointClick",
+                        "Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -21323,18 +21227,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.activate(object : com.amap.api.maps.LocationSource.OnLocationChangedListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.LocationSource::activate_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.LocationSource::activate::Callback")
         
                 // 回调方法们
                 override fun onLocationChanged(var1: android.location.Location): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onLocationChanged([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.LocationSource.OnLocationChangedListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onLocationChanged",
+                        "Callback::com.amap.api.maps.LocationSource.OnLocationChangedListener::onLocationChanged",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -23443,18 +23345,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setMoveListener(object : com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.MovingPointOverlay::setMoveListener::Callback")
         
                 // 回调方法们
                 override fun move(var1: Double): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: move([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::move",
+                        "Callback::com.amap.api.maps.utils.overlay.MovingPointOverlay.MoveListener::move",
                         mapOf<String, Any?>("var1" to var1)
                     )
         
@@ -23749,18 +23649,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setMoveListener(object : com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setMoveListener::Callback")
         
                 // 回调方法们
                 override fun move(var1: Double): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: move([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::move",
+                        "Callback::com.amap.api.maps.utils.overlay.SmoothMoveMarker.MoveListener::move",
                         mapOf<String, Any?>("var1" to var1)
                     )
         
@@ -24780,18 +24678,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnOfflineLoadedListener(object : com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.offlinemap.OfflineMapManager::setOnOfflineLoadedListener::Callback")
         
                 // 回调方法们
                 override fun onVerifyComplete(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onVerifyComplete([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onVerifyComplete",
+                        "Callback::com.amap.api.maps.offlinemap.OfflineMapManager.OfflineLoadedListener::onVerifyComplete",
                         mapOf<String, Any?>()
                     )
         
@@ -31146,18 +31042,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAnimationListener(object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation::setAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation::setAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -31169,11 +31063,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -34933,18 +34825,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAnimationListener(object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.Marker::setAnimationListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.Marker::setAnimationListener::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -34956,11 +34846,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -35897,18 +35785,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setGenerateCrossImageListener(object : com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.CrossOverlay::setGenerateCrossImageListener::Callback")
         
                 // 回调方法们
                 override fun onGenerateComplete(var1: android.graphics.Bitmap, var2: Int): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onGenerateComplete([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onGenerateComplete",
+                        "Callback::com.amap.api.maps.model.CrossOverlay.GenerateCrossImageListener::onGenerateComplete",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2)
                     )
@@ -38645,18 +38531,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setInfoWindowAnimation(var1, object : com.amap.api.maps.model.animation.Animation.AnimationListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.InfoWindowAnimationManager::setInfoWindowAnimation::Callback")
         
                 // 回调方法们
                 override fun onAnimationStart(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationStart([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationStart",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationStart",
                         mapOf<String, Any?>()
                     )
         
@@ -38668,11 +38552,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onAnimationEnd([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.animation.Animation.AnimationListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onAnimationEnd",
+                        "Callback::com.amap.api.maps.model.animation.Animation.AnimationListener::onAnimationEnd",
                         mapOf<String, Any?>()
                     )
         
@@ -38986,18 +38868,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnDismissCallbackListener(object : com.amap.api.maps.WearMapView.OnDismissCallback {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback")
         
                 // 回调方法们
                 override fun onDismiss(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDismiss([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView.OnDismissCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDismiss",
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
                         mapOf<String, Any?>()
                     )
         
@@ -39009,11 +38889,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onNotifySwipe([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView.OnDismissCallback::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onNotifySwipe",
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
                         mapOf<String, Any?>()
                     )
         
@@ -39855,18 +39733,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnCameraChangeListener(object : com.amap.api.maps.AMap.OnCameraChangeListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnCameraChangeListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnCameraChangeListener::Callback")
         
                 // 回调方法们
                 override fun onCameraChange(var1: com.amap.api.maps.model.CameraPosition): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onCameraChange([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCameraChange",
+                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChange",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -39878,11 +39754,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onCameraChangeFinish([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnCameraChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onCameraChangeFinish",
+                        "Callback::com.amap.api.maps.AMap.OnCameraChangeListener::onCameraChangeFinish",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -39909,18 +39783,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapClickListener(object : com.amap.api.maps.AMap.OnMapClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapClickListener::Callback")
         
                 // 回调方法们
                 override fun onMapClick(var1: com.amap.api.maps.model.LatLng): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapClick",
+                        "Callback::com.amap.api.maps.AMap.OnMapClickListener::onMapClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -39947,18 +39819,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapTouchListener(object : com.amap.api.maps.AMap.OnMapTouchListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapTouchListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapTouchListener::Callback")
         
                 // 回调方法们
                 override fun onTouch(var1: android.view.MotionEvent): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTouch([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapTouchListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onTouch",
+                        "Callback::com.amap.api.maps.AMap.OnMapTouchListener::onTouch",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -39985,18 +39855,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnPOIClickListener(object : com.amap.api.maps.AMap.OnPOIClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPOIClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPOIClickListener::Callback")
         
                 // 回调方法们
                 override fun onPOIClick(var1: com.amap.api.maps.model.Poi): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPOIClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPOIClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPOIClick",
+                        "Callback::com.amap.api.maps.AMap.OnPOIClickListener::onPOIClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40023,18 +39891,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMyLocationChangeListener(object : com.amap.api.maps.AMap.OnMyLocationChangeListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMyLocationChangeListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback")
         
                 // 回调方法们
                 override fun onMyLocationChange(var1: android.location.Location): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMyLocationChange([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMyLocationChangeListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMyLocationChange",
+                        "Callback::com.amap.api.maps.AMap.OnMyLocationChangeListener::onMyLocationChange",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40061,18 +39927,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapLongClickListener(object : com.amap.api.maps.AMap.OnMapLongClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLongClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLongClickListener::Callback")
         
                 // 回调方法们
                 override fun onMapLongClick(var1: com.amap.api.maps.model.LatLng): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapLongClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLongClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapLongClick",
+                        "Callback::com.amap.api.maps.AMap.OnMapLongClickListener::onMapLongClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40099,18 +39963,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMarkerClickListener(object : com.amap.api.maps.AMap.OnMarkerClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerClickListener::Callback")
         
                 // 回调方法们
                 override fun onMarkerClick(var1: com.amap.api.maps.model.Marker): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerClick",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerClickListener::onMarkerClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40137,18 +39999,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnPolylineClickListener(object : com.amap.api.maps.AMap.OnPolylineClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPolylineClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnPolylineClickListener::Callback")
         
                 // 回调方法们
                 override fun onPolylineClick(var1: com.amap.api.maps.model.Polyline): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPolylineClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnPolylineClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPolylineClick",
+                        "Callback::com.amap.api.maps.AMap.OnPolylineClickListener::onPolylineClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40175,18 +40035,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMarkerDragListener(object : com.amap.api.maps.AMap.OnMarkerDragListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerDragListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMarkerDragListener::Callback")
         
                 // 回调方法们
                 override fun onMarkerDragStart(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDragStart([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDragStart",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragStart",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40198,11 +40056,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDrag([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDrag",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDrag",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40214,11 +40070,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMarkerDragEnd([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMarkerDragListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMarkerDragEnd",
+                        "Callback::com.amap.api.maps.AMap.OnMarkerDragListener::onMarkerDragEnd",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40245,18 +40099,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnInfoWindowClickListener(object : com.amap.api.maps.AMap.OnInfoWindowClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnInfoWindowClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback")
         
                 // 回调方法们
                 override fun onInfoWindowClick(var1: com.amap.api.maps.model.Marker): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onInfoWindowClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnInfoWindowClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onInfoWindowClick",
+                        "Callback::com.amap.api.maps.AMap.OnInfoWindowClickListener::onInfoWindowClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40301,18 +40153,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setCommonInfoWindowAdapter(object : com.amap.api.maps.AMap.CommonInfoWindowAdapter {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setCommonInfoWindowAdapter_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback")
         
                 // 回调方法们
                 override fun getInfoWindowParams(var1: com.amap.api.maps.model.BasePointOverlay): com.amap.api.maps.InfoWindowParams? {
                     // 日志打印
                     println("fluttify-kotlin-callback: getInfoWindowParams([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.CommonInfoWindowAdapter::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::getInfoWindowParams",
+                        "Callback::com.amap.api.maps.AMap.CommonInfoWindowAdapter::getInfoWindowParams",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40339,18 +40189,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMapLoadedListener(object : com.amap.api.maps.AMap.OnMapLoadedListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLoadedListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMapLoadedListener::Callback")
         
                 // 回调方法们
                 override fun onMapLoaded(): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapLoaded([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapLoadedListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapLoaded",
+                        "Callback::com.amap.api.maps.AMap.OnMapLoadedListener::onMapLoaded",
                         mapOf<String, Any?>()
                     )
         
@@ -40377,18 +40225,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnIndoorBuildingActiveListener(object : com.amap.api.maps.AMap.OnIndoorBuildingActiveListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback")
         
                 // 回调方法们
                 override fun OnIndoorBuilding(var1: com.amap.api.maps.model.IndoorBuildingInfo): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: OnIndoorBuilding([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::OnIndoorBuilding",
+                        "Callback::com.amap.api.maps.AMap.OnIndoorBuildingActiveListener::OnIndoorBuilding",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40415,18 +40261,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setOnMultiPointClickListener(object : com.amap.api.maps.AMap.OnMultiPointClickListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMultiPointClickListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback")
         
                 // 回调方法们
                 override fun onPointClick(var1: com.amap.api.maps.model.MultiPointItem): Boolean {
                     // 日志打印
                     println("fluttify-kotlin-callback: onPointClick([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMultiPointClickListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onPointClick",
+                        "Callback::com.amap.api.maps.AMap.OnMultiPointClickListener::onPointClick",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40453,18 +40297,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.getMapPrintScreen(object : com.amap.api.maps.AMap.onMapPrintScreenListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapPrintScreen_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapPrintScreen::Callback")
         
                 // 回调方法们
                 override fun onMapPrint(var1: android.graphics.drawable.Drawable): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapPrint([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.onMapPrintScreenListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapPrint",
+                        "Callback::com.amap.api.maps.AMap.onMapPrintScreenListener::onMapPrint",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40491,18 +40333,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.getMapScreenShot(object : com.amap.api.maps.AMap.OnMapScreenShotListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapScreenShot_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::getMapScreenShot::Callback")
         
                 // 回调方法们
                 override fun onMapScreenShot(var1: android.graphics.Bitmap): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapScreenShot",
+                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 })
                     )
         
@@ -40514,11 +40354,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapScreenShot([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap.OnMapScreenShotListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapScreenShot",
+                        "Callback::com.amap.api.maps.AMap.OnMapScreenShotListener::onMapScreenShot",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2)
                     )
@@ -40741,18 +40579,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.setAMapGestureListener(object : com.amap.api.maps.model.AMapGestureListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setAMapGestureListener_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.AMap::setAMapGestureListener::Callback")
         
                 // 回调方法们
                 override fun onDoubleTap(var1: Float, var2: Float): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onDoubleTap([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDoubleTap",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDoubleTap",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40765,11 +40601,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onSingleTap([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onSingleTap",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onSingleTap",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40782,11 +40616,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onFling([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onFling",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onFling",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40799,11 +40631,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onScroll([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onScroll",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onScroll",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40816,11 +40646,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onLongPress([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onLongPress",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onLongPress",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40833,11 +40661,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onDown([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onDown",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onDown",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40850,11 +40676,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onUp([\"var1\":$var1, \"var2\":$var2])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onUp",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onUp",
                         mapOf<String, Any?>("var1" to var1,
                 "var2" to var2)
                     )
@@ -40867,11 +40691,9 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                     // 日志打印
                     println("fluttify-kotlin-callback: onMapStable([])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.model.AMapGestureListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onMapStable",
+                        "Callback::com.amap.api.maps.model.AMapGestureListener::onMapStable",
                         mapOf<String, Any?>()
                     )
         
@@ -41611,18 +41433,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.startTrace(object : com.amap.api.trace.TraceStatusListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceBase::startTrace_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceBase::startTrace::Callback")
         
                 // 回调方法们
                 override fun onTraceStatus(var1: List<com.amap.api.trace.TraceLocation>, var2: List<com.amap.api.maps.model.LatLng>, var3: String): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTraceStatus([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.TraceStatusListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onTraceStatus",
+                        "Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2.hashCode().apply { REF_MAP[this] = var2 },
                 "var3" to var3)
@@ -42012,18 +41832,16 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 开始调用
             ref.startTrace(object : com.amap.api.trace.TraceStatusListener {
                 // method channel
-                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceClient::startTrace_Callback" + refId)
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.LBSTraceClient::startTrace::Callback")
         
                 // 回调方法们
                 override fun onTraceStatus(var1: List<com.amap.api.trace.TraceLocation>, var2: List<com.amap.api.maps.model.LatLng>, var3: String): Unit {
                     // 日志打印
                     println("fluttify-kotlin-callback: onTraceStatus([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3])")
         
-                    val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.trace.TraceStatusListener::Callback")
-        
                     // 开始回调
                     callbackChannel.invokeMethod(
-                        "Callback::onTraceStatus",
+                        "Callback::com.amap.api.trace.TraceStatusListener::onTraceStatus",
                         mapOf<String, Any?>("var1" to var1.hashCode().apply { REF_MAP[this] = var1 },
                 "var2" to var2.hashCode().apply { REF_MAP[this] = var2 },
                 "var3" to var3)

@@ -608,7 +608,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnCameraChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -647,7 +647,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -679,7 +679,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapTouchListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -711,7 +711,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnPOIClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -743,7 +743,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMyLocationChangeListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -775,7 +775,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLongClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -807,7 +807,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -839,7 +839,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnPolylineClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -871,7 +871,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMarkerDragListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -917,7 +917,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnInfoWindowClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -964,7 +964,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setCommonInfoWindowAdapter::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -990,7 +990,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMapLoadedListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1022,7 +1022,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnIndoorBuildingActiveListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1054,7 +1054,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setOnMultiPointClickListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1086,7 +1086,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::getMapPrintScreen::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1118,7 +1118,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::getMapScreenShot::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -1315,7 +1315,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
   
   
     // 接受原生回调
-    MethodChannel('com.amap.api.maps.AMap::Callback')
+    MethodChannel('com.amap.api.maps.AMap::setAMapGestureListener::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
