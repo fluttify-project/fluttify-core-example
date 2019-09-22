@@ -19,7 +19,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
     print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleCurveSizeGenerate::initWithCurveX', {"x": x, "y": y, "z": z, "refId": refId});
+    final result = await _channel.invokeMethod('MAParticleCurveSizeGenerate::initWithCurveXYZ', {"x": x, "y": y, "z": z, "refId": refId});
   
   
     // 接受原生回调

@@ -19,7 +19,7 @@ class MAParticleSinglePointShapeModule extends NSObject with MAParticleShapeModu
     print('fluttify-dart: MAParticleSinglePointShapeModule@$refId::initWithShapeX([\'x\':$x, \'y\':$y, \'z\':$z, \'isUseRatio\':$isUseRatio])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleSinglePointShapeModule::initWithShapeX', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
+    final result = await _channel.invokeMethod('MAParticleSinglePointShapeModule::initWithShapeXYZuseRatio', {"x": x, "y": y, "z": z, "isUseRatio": isUseRatio, "refId": refId});
   
   
     // 接受原生回调

@@ -19,7 +19,7 @@ class MAParticleRandomColorGenerate extends NSObject with MAParticleColorGenerat
     print('fluttify-dart: MAParticleRandomColorGenerate@$refId::initWithBoundaryColorR1([\'r1\':$r1, \'g1\':$g1, \'b1\':$b1, \'a1\':$a1, \'r2\':$r2, \'g2\':$g2, \'b2\':$b2, \'a2\':$a2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1', {"r1": r1, "g1": g1, "b1": b1, "a1": a1, "r2": r2, "g2": g2, "b2": b2, "a2": a2, "refId": refId});
+    final result = await _channel.invokeMethod('MAParticleRandomColorGenerate::initWithBoundaryColorR1G1B1A1R2G2B2A2', {"r1": r1, "g1": g1, "b1": b1, "a1": a1, "r2": r2, "g2": g2, "b2": b2, "a2": a2, "refId": refId});
   
   
     // 接受原生回调

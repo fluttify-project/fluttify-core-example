@@ -14,12 +14,12 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
 
   // 生成方法们
-  static Future<MAPolygon> polygonWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+  static Future<MAPolygon> polygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon::polygonWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolygon::polygonWithCoordinates', {"coords": coords.refId, "count": count});
+    final result = await _channel.invokeMethod('MAPolygon::polygonWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -29,12 +29,12 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     return MAPolygon()..refId = result;
   }
   
-  static Future<MAPolygon> polygonWithPoints(MAMapPoint points, int count) async {
+  static Future<MAPolygon> polygonWithPoints(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon::polygonWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolygon::polygonWithPoints', {"points": points.refId, "count": count});
+    final result = await _channel.invokeMethod('MAPolygon::polygonWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -44,12 +44,12 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     return MAPolygon()..refId = result;
   }
   
-   Future<bool> setPolygonWithPoints(MAMapPoint points, int count) async {
+   Future<bool> setPolygonWithPoints(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithPoints', {"points": points.refId, "count": count, "refId": refId});
+    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithPointsCount', {"points": points.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调
@@ -59,12 +59,12 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
     return result;
   }
   
-   Future<bool> setPolygonWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+   Future<bool> setPolygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithCoordinates', {"coords": coords.refId, "count": count, "refId": refId});
+    final result = await _channel.invokeMethod('MAPolygon::setPolygonWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调

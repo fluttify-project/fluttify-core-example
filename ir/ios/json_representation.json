@@ -2953,7 +2953,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*strokeTextureImages",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMultiTexturePolylineRenderer",
@@ -3048,7 +3048,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*cities",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAOfflineProvince",
@@ -4405,7 +4405,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*floorInfo",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -5631,7 +5631,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -9186,7 +9186,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*annotations",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9202,7 +9202,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*selectedAnnotations",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9426,7 +9426,7 @@
               "variable": {
                 "typeName": "NSArray",
                 "name": "*overlays",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMapView",

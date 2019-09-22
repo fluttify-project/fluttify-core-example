@@ -165,7 +165,7 @@ class MAAnnotationView extends UIView  {
     print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationView::setSelected', {"selected": selected, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAAnnotationView::setSelectedAnimated', {"selected": selected, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -195,7 +195,7 @@ class MAAnnotationView extends UIView  {
     print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAAnnotationView::setDragState', {"newDragState": newDragState.index, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAAnnotationView::setDragStateAnimated', {"newDragState": newDragState.index, "animated": animated, "refId": refId});
   
   
     // 接受原生回调

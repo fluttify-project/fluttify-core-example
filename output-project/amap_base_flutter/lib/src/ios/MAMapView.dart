@@ -585,7 +585,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setRegion', {"region": region.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setRegionAnimated', {"region": region.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -615,7 +615,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setVisibleMapRect', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setVisibleMapRectAnimated', {"mapRect": mapRect.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -645,7 +645,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCenterCoordinate', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setCenterCoordinateAnimated', {"coordinate": coordinate.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -660,7 +660,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setZoomLevel', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setZoomLevelAnimated', {"zoomLevel": zoomLevel, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -675,7 +675,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setRotationDegree', {"rotationDegree": rotationDegree, "animated": animated, "duration": duration, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setRotationDegreeAnimatedduration', {"rotationDegree": rotationDegree, "animated": animated, "duration": duration, "refId": refId});
   
   
     // 接受原生回调
@@ -690,7 +690,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setCameraDegree', {"cameraDegree": cameraDegree, "animated": animated, "duration": duration, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setCameraDegreeAnimatedduration', {"cameraDegree": cameraDegree, "animated": animated, "duration": duration, "refId": refId});
   
   
     // 接受原生回调
@@ -720,7 +720,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setMapStatus', {"status": status.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setMapStatusAnimated', {"status": status.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -750,7 +750,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertCoordinate', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::convertCoordinateToPointToView', {"coordinate": coordinate.refId, "view": view.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -765,7 +765,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::convertPoint([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertPoint', {"point": point.refId, "view": view.refId, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::convertPointToCoordinateFromView', {"point": point.refId, "view": view.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -780,7 +780,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::convertRegion([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertRegion', {"region": region.refId, "view": view.refId, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::convertRegionToRectToView', {"region": region.refId, "view": view.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -795,7 +795,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::convertRect([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::convertRect', {"rect": rect.refId, "view": view.refId, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::convertRectToRegionFromView', {"rect": rect.refId, "view": view.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -960,7 +960,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::selectAnnotation', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::selectAnnotationAnimated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -975,7 +975,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::deselectAnnotation', {"annotation": annotation.refId, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::deselectAnnotationAnimated', {"annotation": annotation.refId, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -990,7 +990,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::setUserTrackingMode', {"mode": mode.index, "animated": animated, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::setUserTrackingModeAnimated', {"mode": mode.index, "animated": animated, "refId": refId});
   
   
     // 接受原生回调
@@ -1065,7 +1065,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::insertOverlay', {"overlay": overlay.refId, "index": index, "level": level.index, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::insertOverlayAtIndexlevel', {"overlay": overlay.refId, "index": index, "level": level.index, "refId": refId});
   
   
     // 接受原生回调
@@ -1080,7 +1080,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::exchangeOverlayAtIndex', {"index1": index1, "index2": index2, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::exchangeOverlayAtIndexWithOverlayAtIndex', {"index1": index1, "index2": index2, "refId": refId});
   
   
     // 接受原生回调
@@ -1095,7 +1095,7 @@ class MAMapView extends UIView  {
     print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::exchangeOverlay', {"overlay1": overlay1.refId, "overlay2": overlay2.refId, "refId": refId});
+    final result = await _channel.invokeMethod('MAMapView::exchangeOverlayWithOverlay', {"overlay1": overlay1.refId, "overlay2": overlay2.refId, "refId": refId});
   
   
     // 接受原生回调

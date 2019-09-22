@@ -402,16 +402,9 @@ class AmapController {
           latLngList.add(latLng);
         }
 
-//        MAPolyline.polylineWithCoordinates(latLngList, latLngList.length);
-//        final pointAnnotation =
-//            await ObjectFactory_iOS.createMAPointAnnotation();
-//
-//        final coordinate =
-//            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
-//        await pointAnnotation.set_coordinate(coordinate);
-//        await pointAnnotation.set_title(title);
-//        await pointAnnotation.set_subtitle(snippet);
-//        await iosController.addAnnotation(pointAnnotation);
+        final polyline = await MAPolyline.polylineWithCoordinates(
+            latLngList, latLngList.length);
+        await iosController.addOverlay(polyline);
       },
     );
   }

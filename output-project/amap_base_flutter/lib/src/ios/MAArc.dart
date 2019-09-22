@@ -55,7 +55,7 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
     print('fluttify-dart: MAArc::arcWithStartCoordinate([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAArc::arcWithStartCoordinate', {"startCoordinate": startCoordinate.refId, "passedCoordinate": passedCoordinate.refId, "endCoordinate": endCoordinate.refId});
+    final result = await _channel.invokeMethod('MAArc::arcWithStartCoordinatePassedCoordinateendCoordinate', {"startCoordinate": startCoordinate.refId, "passedCoordinate": passedCoordinate.refId, "endCoordinate": endCoordinate.refId});
   
   
     // 接受原生回调

@@ -45,12 +45,12 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
 
   // 生成方法们
-  static Future<MACustomBuildingOverlayOption> optionWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+  static Future<MACustomBuildingOverlayOption> optionWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinates', {"coords": coords.refId, "count": count});
+    final result = await _channel.invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
   
   
     // 接受原生回调
@@ -60,12 +60,12 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     return MACustomBuildingOverlayOption()..refId = result;
   }
   
-   Future<bool> setOptionWithCoordinates(CLLocationCoordinate2D coords, int count) async {
+   Future<bool> setOptionWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinates', {"coords": coords.refId, "count": count, "refId": refId});
+    final result = await _channel.invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});
   
   
     // 接受原生回调

@@ -19,7 +19,7 @@ class MAParticleEmissionModule extends NSObject  {
     print('fluttify-dart: MAParticleEmissionModule@$refId::initWithEmissionRate([\'rate\':$rate, \'rateTime\':$rateTime])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('MAParticleEmissionModule::initWithEmissionRate', {"rate": rate, "rateTime": rateTime, "refId": refId});
+    final result = await _channel.invokeMethod('MAParticleEmissionModule::initWithEmissionRateRateTime', {"rate": rate, "rateTime": rateTime, "refId": refId});
   
   
     // 接受原生回调
