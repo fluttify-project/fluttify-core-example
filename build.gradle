@@ -6,7 +6,7 @@ buildscript {
 
     dependencies {
 //        classpath('com.github.yohom:fluttify-core:0.2.0')
-        classpath('me.yohom:fluttify-core:0.3.0')
+        classpath('me.yohom:fluttify-core:0.4.0')
     }
 }
 

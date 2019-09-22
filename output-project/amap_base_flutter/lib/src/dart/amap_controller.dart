@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:amap_base_flutter/src/ios/MAMapView.dart';
 
@@ -322,16 +320,14 @@ class AmapController {
     );
   }
 
+  /// 添加marker
+  ///
+  /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet]
   Future addMarker(
     double lat,
     double lng, {
     String title,
     String snippet,
-    bool draggable,
-    bool visible,
-    double alpha,
-    double anchorU,
-    double anchorV,
   }) {
     return platform(
       android: () async {
@@ -349,18 +345,6 @@ class AmapController {
         if (snippet != null) {
           await markerOption.snippet(snippet);
         }
-        if (draggable != null) {
-          await markerOption.draggable(draggable);
-        }
-        if (visible != null) {
-          await markerOption.visible(visible);
-        }
-        if (alpha != null) {
-          await markerOption.alpha(alpha);
-        }
-        if (anchorU != null || anchorV != null) {
-          await markerOption.anchor(anchorU, anchorV);
-        }
 
         map.addMarker(markerOption);
       },
@@ -369,11 +353,11 @@ class AmapController {
         final pointAnnotation =
             await ObjectFactory_iOS.createMAPointAnnotation();
 
-        final random = Random();
-        final coordinate = await ObjectFactory_iOS.createCLLocationCoordinate2D(
-            39.90960 + random.nextDouble(), 116.397228 + random.nextDouble());
-        await pointAnnotation.set_title('test title');
+        final coordinate =
+            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
         await pointAnnotation.set_coordinate(coordinate);
+        await pointAnnotation.set_title(title);
+        await pointAnnotation.set_subtitle(snippet);
         await iosController.addAnnotation(pointAnnotation);
       },
     );

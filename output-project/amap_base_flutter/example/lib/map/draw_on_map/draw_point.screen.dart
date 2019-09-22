@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:amap_base_flutter_example/utils/misc.dart';
 import 'package:decorated_flutter/decorated_flutter.dart';
@@ -32,23 +34,24 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                 _controller = controller;
                 if (await requestPermission()) {
                   await controller.showMyLocation(false);
+                  await controller.setZoomLevel(6);
                 }
               },
             ),
           ),
           Flexible(
             child: DecoratedColumn(
+              divider: kDividerTiny,
               children: <Widget>[
                 ListTile(
                   title: Text('添加Marker'),
                   onTap: () {
+                    final random = Random();
                     _controller?.addMarker(
-                      39.90960,
-                      116.397228,
+                      39.90960 + random.nextDouble(),
+                      116.397228 + random.nextDouble(),
                       title: '北京',
                       snippet: '描述',
-                      draggable: true,
-                      alpha: 0.8,
                     );
                   },
                 ),
