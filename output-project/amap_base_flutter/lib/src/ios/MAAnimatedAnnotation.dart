@@ -32,7 +32,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
   
   
     // 接受原生回调
-    MethodChannel('MAAnimatedAnnotation::Callback')
+    MethodChannel('MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -55,7 +55,7 @@ class MAAnimatedAnnotation extends MAPointAnnotation with MAAnimatableAnnotation
     return MAAnnotationMoveAnimation()..refId = result;
   }
   
-   Future<String> setNeedsStart() async {
+   Future<void> setNeedsStart() async {
     // 日志打印
     print('fluttify-dart: MAAnimatedAnnotation@$refId::setNeedsStart([])');
   

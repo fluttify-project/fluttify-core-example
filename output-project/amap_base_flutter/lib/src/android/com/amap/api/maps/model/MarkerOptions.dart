@@ -14,12 +14,12 @@ class com_amap_api_maps_model_MarkerOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_MarkerOptions> icons(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<com_amap_api_maps_model_MarkerOptions> icons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::icons([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MarkerOptions::icons', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.MarkerOptions::icons', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -29,12 +29,12 @@ class com_amap_api_maps_model_MarkerOptions extends Ref_Android  {
     return com_amap_api_maps_model_MarkerOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_MarkerOptions> rotatingIcons(com_amap_api_maps_model_BitmapDescriptor var1, double var2) async {
+   Future<com_amap_api_maps_model_MarkerOptions> rotatingIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MarkerOptions@$refId::rotatingIcons([\'var2\':$var2])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.MarkerOptions::rotatingIcons', {"var1": var1.refId, "var2": var2, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.MarkerOptions::rotatingIcons', {"var1": var1.map((it) => it.refId).toList(), "var2": var2, "refId": refId});
   
   
     // 接受原生回调

@@ -13,7 +13,7 @@ mixin com_autonavi_amap_mapcore_interfaces_INavigateArrow on com_autonavi_amap_m
   
   Future<int> getSideColor() {}
   
-  Future<void> setPoints(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {}
   
   Future<void> setWidth(double var1) {}
   

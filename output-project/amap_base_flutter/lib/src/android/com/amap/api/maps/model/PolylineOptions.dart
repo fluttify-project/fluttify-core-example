@@ -59,12 +59,12 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureList(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureList([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureList', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::setCustomTextureList', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolylineOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureIndex(int var1) async {
+   Future<com_amap_api_maps_model_PolylineOptions> setCustomTextureIndex(List<int> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setCustomTextureIndex([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolylineOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_PolylineOptions> colorValues(int var1) async {
+   Future<com_amap_api_maps_model_PolylineOptions> colorValues(List<int> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::colorValues([\'var1\':$var1])');
   
@@ -179,12 +179,12 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolylineOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_PolylineOptions> addAll(com_amap_api_maps_model_LatLng var1) async {
+   Future<com_amap_api_maps_model_PolylineOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::addAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::addAll', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -509,12 +509,12 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return result;
   }
   
-   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::setPoints', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolylineOptions::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

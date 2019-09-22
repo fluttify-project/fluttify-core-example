@@ -27,7 +27,7 @@ mixin com_autonavi_amap_mapcore_interfaces_ICircle on com_autonavi_amap_mapcore_
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) {}
   
-  Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) {}
+  Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {}
   
   Future<int> getDottedLineType() {}
   

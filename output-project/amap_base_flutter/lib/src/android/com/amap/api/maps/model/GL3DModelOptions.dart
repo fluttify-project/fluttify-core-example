@@ -29,7 +29,7 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
     return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_GL3DModelOptions> vertexData(double var1, double var2) async {
+   Future<com_amap_api_maps_model_GL3DModelOptions> vertexData(List<double> var1, List<double> var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData([\'var1\':$var1, \'var2\':$var2])');
   

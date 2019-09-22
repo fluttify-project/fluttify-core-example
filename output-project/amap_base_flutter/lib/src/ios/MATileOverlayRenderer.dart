@@ -33,7 +33,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
     return MATileOverlayRenderer()..refId = result;
   }
   
-   Future<String> reloadData() async {
+   Future<void> reloadData() async {
     // 日志打印
     print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
   

@@ -48,8 +48,10 @@ class DrawPointScreenState extends State<DrawPointScreen> {
                   onTap: () async {
                     final random = Random();
                     await _controller?.addMarker(
-                      39.90960 + random.nextDouble(),
-                      116.397228 + random.nextDouble(),
+                      LatLng(
+                        39.90960 + random.nextDouble(),
+                        116.397228 + random.nextDouble(),
+                      ),
                       title: '北京',
                       snippet: '描述',
                     );

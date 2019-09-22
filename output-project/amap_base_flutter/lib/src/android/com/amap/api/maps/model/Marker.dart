@@ -44,12 +44,12 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<void> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.Marker::setIcons', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

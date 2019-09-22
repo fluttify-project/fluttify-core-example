@@ -44,12 +44,12 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
     return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
   }
   
-   Future<void> setCustomOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
+   Future<void> setCustomOptions(List<com_amap_api_maps_model_BuildingOverlayOptions> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlay::setCustomOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

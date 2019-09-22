@@ -14,7 +14,7 @@ class MAParticleOverLifeModule extends NSObject  {
   
 
   // 生成方法们
-   Future<String> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
+   Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
   
@@ -29,7 +29,7 @@ class MAParticleOverLifeModule extends NSObject  {
     return result;
   }
   
-   Future<String> setRotationOverLife(MAParticleRotationGenerate rotation) async {
+   Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
   
@@ -44,7 +44,7 @@ class MAParticleOverLifeModule extends NSObject  {
     return result;
   }
   
-   Future<String> setSizeOverLife(MAParticleSizeGenerate size) async {
+   Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
   
@@ -59,7 +59,7 @@ class MAParticleOverLifeModule extends NSObject  {
     return result;
   }
   
-   Future<String> setColorOverLife(MAParticleColorGenerate color) async {
+   Future<void> setColorOverLife(MAParticleColorGenerate color) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
   

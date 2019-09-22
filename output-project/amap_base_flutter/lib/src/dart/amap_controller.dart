@@ -1,3 +1,6 @@
+import 'dart:typed_data';
+import 'dart:ui';
+
 import 'package:amap_base_flutter/amap_base_flutter.dart';
 import 'package:amap_base_flutter/src/ios/MAMapView.dart';
 
@@ -325,16 +328,12 @@ class AmapController {
   /// 添加marker
   ///
   /// 在纬度[lat], 经度[lng]的位置添加marker, 并设置标题[title]和副标题[snippet]
-  Future addMarker(
-    double lat,
-    double lng, {
-    String title,
-    String snippet,
-  }) {
+  Future addMarker(LatLng point, {String title, String snippet}) {
+    final lat = point.lat;
+    final lng = point.lng;
     return platform(
       android: () async {
         final map = await androidController.getMap();
-
         final latLng = await ObjectFactory_Android
             .createcom_amap_api_maps_model_LatLng__double__double(lat, lng);
         final markerOption = await ObjectFactory_Android
@@ -361,6 +360,58 @@ class AmapController {
         await pointAnnotation.set_title(title);
         await pointAnnotation.set_subtitle(snippet);
         await iosController.addAnnotation(pointAnnotation);
+      },
+    );
+  }
+
+  /// 添加线
+  ///
+  /// 在点[points]的位置添加线, 可以设置宽度[width]和颜色[color]
+  Future addPolyline(List<LatLng> points, {double width, Color color}) {
+    return platform(
+      android: () async {
+        final map = await androidController.getMap();
+
+        List<com_amap_api_maps_model_LatLng> latLngList = [];
+        for (final point in points) {
+          final latLng = await ObjectFactory_Android
+              .createcom_amap_api_maps_model_LatLng__double__double(
+                  point.lat, point.lng);
+          latLngList.add(latLng);
+        }
+        final polylineOptions = await ObjectFactory_Android
+            .createcom_amap_api_maps_model_PolylineOptions__();
+
+        await polylineOptions.addAll(latLngList);
+        if (width != null) {
+          await polylineOptions.width(width);
+        }
+        if (color != null) {
+          await polylineOptions.color(Int32List.fromList([color.value])[0]);
+        }
+
+        await map.addPolyline(polylineOptions);
+      },
+      ios: () async {
+        await iosController.set_delegate(MyDelegate());
+
+        List<CLLocationCoordinate2D> latLngList = [];
+        for (final point in points) {
+          final latLng = await ObjectFactory_iOS.createCLLocationCoordinate2D(
+              point.lat, point.lng);
+          latLngList.add(latLng);
+        }
+
+//        MAPolyline.polylineWithCoordinates(latLngList, latLngList.length);
+//        final pointAnnotation =
+//            await ObjectFactory_iOS.createMAPointAnnotation();
+//
+//        final coordinate =
+//            await ObjectFactory_iOS.createCLLocationCoordinate2D(lat, lng);
+//        await pointAnnotation.set_coordinate(coordinate);
+//        await pointAnnotation.set_title(title);
+//        await pointAnnotation.set_subtitle(snippet);
+//        await iosController.addAnnotation(pointAnnotation);
       },
     );
   }

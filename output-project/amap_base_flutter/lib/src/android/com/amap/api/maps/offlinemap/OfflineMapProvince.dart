@@ -164,12 +164,12 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
     return result;
   }
   
-   Future<void> setCityList(com_amap_api_maps_offlinemap_OfflineMapCity var1) async {
+   Future<void> setCityList(List<com_amap_api_maps_offlinemap_OfflineMapCity> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setCityList([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.offlinemap.OfflineMapProvince::setCityList', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.offlinemap.OfflineMapProvince::setCityList', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

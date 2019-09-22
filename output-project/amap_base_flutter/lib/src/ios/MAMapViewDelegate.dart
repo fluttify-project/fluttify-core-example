@@ -5,26 +5,26 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin MAMapViewDelegate on NSObject {
-  Future<String> mapViewRegionChanged(MAMapView mapView) {}
+  Future<void> mapViewRegionChanged(MAMapView mapView) {}
   
-  Future<String> mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated) {}
+  Future<void> mapViewRegionWillChangeAnimated(MAMapView mapView, bool animated) {}
   
-  Future<String> mapViewWillStartLoadingMap(MAMapView mapView) {}
+  Future<void> mapViewWillStartLoadingMap(MAMapView mapView) {}
   
-  Future<String> mapViewDidFinishLoadingMap(MAMapView mapView) {}
+  Future<void> mapViewDidFinishLoadingMap(MAMapView mapView) {}
   
-  Future<String> mapViewDidFailLoadingMapWithError(MAMapView mapView, NSError error) {}
+  Future<void> mapViewDidFailLoadingMapWithError(MAMapView mapView, NSError error) {}
   
-  Future<String> mapViewWillStartLocatingUser(MAMapView mapView) {}
+  Future<void> mapViewWillStartLocatingUser(MAMapView mapView) {}
   
-  Future<String> mapViewDidStopLocatingUser(MAMapView mapView) {}
+  Future<void> mapViewDidStopLocatingUser(MAMapView mapView) {}
   
-  Future<String> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
+  Future<void> mapViewRequireLocationAuth(CLLocationManager locationManager) {}
   
-  Future<String> mapInitComplete(MAMapView mapView) {}
+  Future<void> mapInitComplete(MAMapView mapView) {}
   
-  Future<String> offlineDataWillReload(MAMapView mapView) {}
+  Future<void> offlineDataWillReload(MAMapView mapView) {}
   
-  Future<String> offlineDataDidReload(MAMapView mapView) {}
+  Future<void> offlineDataDidReload(MAMapView mapView) {}
   
 }

@@ -14,7 +14,7 @@ class AMapURLSearch extends NSObject  {
   
 
   // 生成方法们
-  static Future<String> getLatestAMapApp() async {
+  static Future<void> getLatestAMapApp() async {
     // 日志打印
     print('fluttify-dart: AMapURLSearch::getLatestAMapApp([])');
   

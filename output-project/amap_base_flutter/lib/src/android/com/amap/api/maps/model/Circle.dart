@@ -269,12 +269,12 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
+   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setHoleOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.Circle::setHoleOptions', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.Circle::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

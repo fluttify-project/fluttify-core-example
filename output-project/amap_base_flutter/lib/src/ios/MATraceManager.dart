@@ -55,7 +55,7 @@ class MATraceManager extends NSObject  {
     return MATraceManager()..refId = result;
   }
   
-   Future<String> stopTrace() async {
+   Future<void> stopTrace() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::stopTrace([])');
   
@@ -70,7 +70,7 @@ class MATraceManager extends NSObject  {
     return result;
   }
   
-   Future<String> start() async {
+   Future<void> start() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::start([])');
   
@@ -85,7 +85,7 @@ class MATraceManager extends NSObject  {
     return result;
   }
   
-   Future<String> stop() async {
+   Future<void> stop() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::stop([])');
   

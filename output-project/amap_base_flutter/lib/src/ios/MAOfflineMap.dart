@@ -38,7 +38,7 @@ class MAOfflineMap extends NSObject  {
     return MAOfflineMap()..refId = result;
   }
   
-   Future<String> setupWithCompletionBlock(void block(bool setupSuccess)) async {
+   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
   
@@ -47,7 +47,7 @@ class MAOfflineMap extends NSObject  {
   
   
     // 接受原生回调
-    MethodChannel('MAOfflineMap::Callback')
+    MethodChannel('MAOfflineMap::setupWithCompletionBlock::Callback')
         .setMethodCallHandler((methodCall) async {
           final args = methodCall.arguments as Map;
           // final refId = args['callerRefId'] as int;
@@ -100,7 +100,7 @@ class MAOfflineMap extends NSObject  {
     return result;
   }
   
-   Future<String> deleteItem(MAOfflineItem item) async {
+   Future<void> deleteItem(MAOfflineItem item) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
   
@@ -115,7 +115,7 @@ class MAOfflineMap extends NSObject  {
     return result;
   }
   
-   Future<String> cancelAll() async {
+   Future<void> cancelAll() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
   
@@ -130,7 +130,7 @@ class MAOfflineMap extends NSObject  {
     return result;
   }
   
-   Future<String> clearDisk() async {
+   Future<void> clearDisk() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
   
@@ -160,7 +160,7 @@ class MAOfflineMap extends NSObject  {
     return result;
   }
   
-   Future<String> pause(MAOfflineCity city) async {
+   Future<void> pause(MAOfflineCity city) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::pause([])');
   

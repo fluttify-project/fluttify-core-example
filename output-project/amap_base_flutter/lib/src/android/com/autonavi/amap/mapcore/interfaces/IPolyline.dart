@@ -13,7 +13,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   
   Future<int> getColor() {}
   
-  Future<void> setPoints(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {}
   
   Future<bool> isGeodesic() {}
   
@@ -33,7 +33,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   
   Future<com_amap_api_maps_model_PolylineOptions> getOptions() {}
   
-  Future<void> setCustemTextureIndex(int var1) {}
+  Future<void> setCustemTextureIndex(List<int> var1) {}
   
   Future<void> setShownRatio(double var1) {}
   
@@ -41,6 +41,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolyline on com_autonavi_amap_mapcor
   
   Future<double> getShownRatio() {}
   
-  Future<void> setCustomTextureList(com_amap_api_maps_model_BitmapDescriptor var1) {}
+  Future<void> setCustomTextureList(List<com_amap_api_maps_model_BitmapDescriptor> var1) {}
   
 }

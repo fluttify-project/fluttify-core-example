@@ -9,7 +9,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_
   
   Future<int> getPeriod() {}
   
-  Future<void> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) {}
+  Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) {}
   
   Future<void> set2Top() {}
   

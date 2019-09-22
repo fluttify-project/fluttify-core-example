@@ -15,12 +15,12 @@ mixin com_autonavi_amap_mapcore_interfaces_IPolygon on com_autonavi_amap_mapcore
   
   Future<void> setStrokeColor(int var1) {}
   
-  Future<void> setPoints(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) {}
   
   Future<int> getStrokeColor() {}
   
   Future<bool> contains(com_amap_api_maps_model_LatLng var1) {}
   
-  Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) {}
+  Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) {}
   
 }

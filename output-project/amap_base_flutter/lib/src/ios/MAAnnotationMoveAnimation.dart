@@ -89,7 +89,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
     return result;
   }
   
-   Future<String> cancel() async {
+   Future<void> cancel() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
   

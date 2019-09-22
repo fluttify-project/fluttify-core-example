@@ -14,12 +14,12 @@ class com_amap_api_maps_model_PolygonHoleOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_PolygonHoleOptions> addAll(com_amap_api_maps_model_LatLng var1) async {
+   Future<com_amap_api_maps_model_PolygonHoleOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonHoleOptions@$refId::addAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::addAll', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonHoleOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调

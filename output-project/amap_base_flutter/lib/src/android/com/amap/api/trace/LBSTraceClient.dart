@@ -29,12 +29,12 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
     return com_amap_api_trace_LBSTraceClient()..refId = result;
   }
   
-   Future<void> queryProcessedTrace(int var1, com_amap_api_trace_TraceLocation var2, int var3, com_amap_api_trace_TraceListener var4) async {
+   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.refId, "var3": var3, "var4": var4.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.trace.LBSTraceClient::queryProcessedTrace', {"var1": var1, "var2": var2.map((it) => it.refId).toList(), "var3": var3, "var4": var4.refId, "refId": refId});
   
   
     // 接受原生回调
@@ -65,7 +65,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
               print('fluttify-dart-callback: onTraceStatus([\'var3\':$args[var3]])');
         
                 // 调用回调方法
-              var1?.onTraceStatus(com_amap_api_trace_TraceLocation()..refId = (args['var1']), com_amap_api_maps_model_LatLng()..refId = (args['var2']), args['var3']);
+              var1?.onTraceStatus([], [], args['var3']);
               break;
             default:
               break;

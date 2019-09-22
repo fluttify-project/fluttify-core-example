@@ -33,7 +33,7 @@ class MAParticleOverlay extends MAShape with MAAnnotation, MAOverlay {
     return MAParticleOverlay()..refId = result;
   }
   
-   Future<String> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {
+   Future<void> updateOverlayOption(MAParticleOverlayOptions overlayOption) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverlay@$refId::updateOverlayOption([])');
   

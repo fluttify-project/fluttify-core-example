@@ -13846,8 +13846,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IMultiPointOverlay::addItems" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.MultiPointItem>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.MultiPointItem }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -15822,8 +15822,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.INavigateArrow::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -16196,8 +16196,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IPolyline::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -16452,8 +16452,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IPolyline::setCustomTextureList" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -16505,8 +16505,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IMarker::setIcons" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -17776,8 +17776,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.ICircle::setHoleOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BaseHoleOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BaseHoleOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -21051,8 +21051,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IPolygon::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -21104,8 +21104,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.autonavi.amap.mapcore.interfaces.IPolygon::setHoleOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BaseHoleOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BaseHoleOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -23101,8 +23101,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.utils.overlay.MovingPointOverlay::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -23387,8 +23387,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.utils.overlay.SmoothMoveMarker::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -24169,8 +24169,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.offlinemap.OfflineMapProvince::setCityList" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.offlinemap.OfflineMapCity>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.offlinemap.OfflineMapCity }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -25423,8 +25423,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Polygon::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -25441,8 +25441,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Polygon::setHoleOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BaseHoleOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BaseHoleOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -25743,8 +25743,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolygonHoleOptions::addAll" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -26686,8 +26686,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.NavigateArrowOptions::addAll" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -26935,8 +26935,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.NavigateArrowOptions::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -27350,8 +27350,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolylineOptions::setCustomTextureList" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -27506,8 +27506,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolylineOptions::addAll" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -27934,8 +27934,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolylineOptions::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -29759,8 +29759,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.MarkerOptions::icons" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -29780,8 +29780,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.MarkerOptions::rotatingIcons" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
             // jsonable参数
             val var2 = args["var2"] as Double
         
@@ -30696,8 +30696,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.NavigateArrow::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -31745,8 +31745,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.BuildingOverlayOptions::setBuildingLatlngs" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -32800,8 +32800,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Circle::setHoleOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BaseHoleOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BaseHoleOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -32874,8 +32874,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolygonOptions::addAll" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -32895,8 +32895,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolygonOptions::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -32913,8 +32913,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.PolygonOptions::setHoleOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BaseHoleOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BaseHoleOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -34102,8 +34102,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.MultiPointOverlay::setItems" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.MultiPointItem>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.MultiPointItem }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -34227,8 +34227,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Marker::setIcons" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -37563,8 +37563,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Polyline::setPoints" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -37977,8 +37977,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.Polyline::setCustomTextureList" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BitmapDescriptor>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BitmapDescriptor }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -38033,8 +38033,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.maps.model.BuildingOverlay::setCustomOptions" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.BuildingOverlayOptions>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.BuildingOverlayOptions }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -41363,8 +41363,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 参数
             // jsonable参数
             val var1 = args["var1"] as Int
-            // 引用参数
-            val var2 = REF_MAP[args["var2"] as Int] as List<com.amap.api.trace.TraceLocation>
+            // 列表参数
+            val var2 = (args["var2"] as List<Int>).map { REF_MAP[it] as com.amap.api.trace.TraceLocation }
             // jsonable参数
             val var3 = args["var3"] as Int
             // 引用参数
@@ -41493,10 +41493,10 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.trace.TraceStatusListener::onTraceStatus" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.trace.TraceLocation>
-            // 引用参数
-            val var2 = REF_MAP[args["var2"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.trace.TraceLocation }
+            // 列表参数
+            val var2 = (args["var2"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
             // jsonable参数
             val var3 = args["var3"] as String
         
@@ -41539,8 +41539,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val var1 = args["var1"] as Int
             // jsonable参数
             val var2 = args["var2"] as Int
-            // 引用参数
-            val var3 = REF_MAP[args["var3"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var3 = (args["var3"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -41559,8 +41559,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 参数
             // jsonable参数
             val var1 = args["var1"] as Int
-            // 引用参数
-            val var2 = REF_MAP[args["var2"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var2 = (args["var2"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
             // jsonable参数
             val var3 = args["var3"] as Int
             // jsonable参数
@@ -41798,8 +41798,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 参数
             // jsonable参数
             val var1 = args["var1"] as Int
-            // 引用参数
-            val var2 = REF_MAP[args["var2"] as Int] as List<com.amap.api.trace.TraceLocation>
+            // 列表参数
+            val var2 = (args["var2"] as List<Int>).map { REF_MAP[it] as com.amap.api.trace.TraceLocation }
             // jsonable参数
             val var3 = args["var3"] as Int
             // 引用参数
@@ -41892,8 +41892,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.trace.TraceOverlay::add" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int
@@ -41927,8 +41927,8 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         },
         "com.amap.api.trace.TraceOverlay::setProperCamera" to { registrar, args, methodResult ->
             // 参数
-            // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as List<com.amap.api.maps.model.LatLng>
+            // 列表参数
+            val var1 = (args["var1"] as List<Int>).map { REF_MAP[it] as com.amap.api.maps.model.LatLng }
         
             // 调用对象引用
             val refId = args["refId"] as Int

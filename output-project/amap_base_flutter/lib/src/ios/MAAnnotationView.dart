@@ -160,7 +160,7 @@ class MAAnnotationView extends UIView  {
   
 
   // 生成方法们
-   Future<String> setSelected(bool selected, bool animated) async {
+   Future<void> setSelected(bool selected, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
   
@@ -175,7 +175,7 @@ class MAAnnotationView extends UIView  {
     return result;
   }
   
-   Future<String> prepareForReuse() async {
+   Future<void> prepareForReuse() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
   
@@ -190,7 +190,7 @@ class MAAnnotationView extends UIView  {
     return result;
   }
   
-   Future<String> setDragState(MAAnnotationViewDragState newDragState, bool animated) async {
+   Future<void> setDragState(MAAnnotationViewDragState newDragState, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
   

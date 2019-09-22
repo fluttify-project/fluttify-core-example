@@ -29,12 +29,12 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolygonOptions()..refId = result;
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> addAll(com_amap_api_maps_model_LatLng var1) async {
+   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::addAll', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::addAll', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -44,12 +44,12 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolygonOptions()..refId = result;
   }
   
-   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setPoints', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setPoints', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
@@ -59,12 +59,12 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
     return result;
   }
   
-   Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
+   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
   
     // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setHoleOptions', {"var1": var1.refId, "refId": refId});
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::setHoleOptions', {"var1": var1.map((it) => it.refId).toList(), "refId": refId});
   
   
     // 接受原生回调
