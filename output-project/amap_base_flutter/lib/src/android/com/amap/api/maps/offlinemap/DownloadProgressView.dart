@@ -14,7 +14,7 @@ class com_amap_api_maps_offlinemap_DownloadProgressView extends android_view_Vie
   
 
   // 生成方法们
-   Future<String> setProgress(int var1) async {
+   Future<void> setProgress(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\'var1\':$var1])');
   

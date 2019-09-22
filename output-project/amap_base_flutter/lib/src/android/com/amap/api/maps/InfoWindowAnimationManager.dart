@@ -14,7 +14,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
+   Future<void> setInfoWindowAnimation(com_amap_api_maps_model_animation_Animation var1, com_amap_api_maps_model_animation_Animation_AnimationListener var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAnimation([])');
   
@@ -53,7 +53,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> setInfoWindowAppearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowAppearAnimation([])');
   
@@ -68,7 +68,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowBackColor(int var1) async {
+   Future<void> setInfoWindowBackColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackColor([\'var1\':$var1])');
   
@@ -83,7 +83,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowBackEnable(bool var1) async {
+   Future<void> setInfoWindowBackEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackEnable([\'var1\':$var1])');
   
@@ -98,7 +98,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowBackScale(double var1, double var2) async {
+   Future<void> setInfoWindowBackScale(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowBackScale([\'var1\':$var1, \'var2\':$var2])');
   
@@ -113,7 +113,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> setInfoWindowDisappearAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowDisappearAnimation([])');
   
@@ -128,7 +128,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> setInfoWindowMovingAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::setInfoWindowMovingAnimation([])');
   
@@ -143,7 +143,7 @@ class com_amap_api_maps_InfoWindowAnimationManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> startAnimation() async {
+   Future<void> startAnimation() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowAnimationManager@$refId::startAnimation([])');
   

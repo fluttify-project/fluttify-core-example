@@ -14,7 +14,7 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setNaviStyle(int var1) async {
+   Future<void> setNaviStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
   

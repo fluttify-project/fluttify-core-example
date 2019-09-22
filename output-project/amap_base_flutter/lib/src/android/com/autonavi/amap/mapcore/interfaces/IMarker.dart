@@ -5,56 +5,56 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_interfaces_IOverlayImage {
-  Future<String> setPeriod(int var1) {}
+  Future<void> setPeriod(int var1) {}
   
   Future<int> getPeriod() {}
   
-  Future<String> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) {}
+  Future<void> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) {}
   
-  Future<String> set2Top() {}
+  Future<void> set2Top() {}
   
-  Future<String> setFlat(bool var1) {}
+  Future<void> setFlat(bool var1) {}
   
   Future<bool> isFlat() {}
   
-  Future<String> setPerspective(bool var1) {}
+  Future<void> setPerspective(bool var1) {}
   
   Future<bool> isPerspective() {}
   
-  Future<String> setTitle(String var1) {}
+  Future<void> setTitle(String var1) {}
   
   Future<String> getTitle() {}
   
-  Future<String> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) {}
+  Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) {}
   
-  Future<String> setSnippet(String var1) {}
+  Future<void> setSnippet(String var1) {}
   
   Future<String> getSnippet() {}
   
-  Future<String> setDraggable(bool var1) {}
+  Future<void> setDraggable(bool var1) {}
   
   Future<bool> isDraggable() {}
   
   Future<bool> isRemoved() {}
   
-  Future<String> showInfoWindow() {}
+  Future<void> showInfoWindow() {}
   
-  Future<String> hideInfoWindow() {}
+  Future<void> hideInfoWindow() {}
   
   Future<bool> isInfoWindowShown() {}
   
-  Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {}
+  Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {}
   
   Future<com_autonavi_amap_mapcore_IPoint> getGeoPoint() {}
   
-  Future<String> setPositionByPixels(int var1, int var2) {}
+  Future<void> setPositionByPixels(int var1, int var2) {}
   
-  Future<String> setBelowMaskLayer(bool var1) {}
+  Future<void> setBelowMaskLayer(bool var1) {}
   
-  Future<String> setAnimation(com_amap_api_maps_model_animation_Animation var1) {}
+  Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) {}
   
   Future<bool> startAnimation() {}
   
-  Future<String> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {}
+  Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) {}
   
 }

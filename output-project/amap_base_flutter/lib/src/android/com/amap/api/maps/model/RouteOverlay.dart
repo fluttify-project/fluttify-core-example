@@ -14,7 +14,7 @@ class com_amap_api_maps_model_RouteOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> removeRouteName() async {
+   Future<void> removeRouteName() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::removeRouteName([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_RouteOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RouteOverlay@$refId::remove([])');
   

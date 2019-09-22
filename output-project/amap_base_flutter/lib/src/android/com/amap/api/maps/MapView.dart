@@ -29,7 +29,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return com_amap_api_maps_AMap()..refId = result;
   }
   
-   Future<String> onCreate(android_os_Bundle var1) async {
+   Future<void> onCreate(android_os_Bundle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onCreate([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> onResume() async {
+   Future<void> onResume() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onResume([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> onPause() async {
+   Future<void> onPause() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onPause([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> onDestroy() async {
+   Future<void> onDestroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onDestroy([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> onLowMemory() async {
+   Future<void> onLowMemory() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onLowMemory([])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> onSaveInstanceState(android_os_Bundle var1) async {
+   Future<void> onSaveInstanceState(android_os_Bundle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::onSaveInstanceState([])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_MapView extends android_widget_FrameLayout  {
     return result;
   }
   
-   Future<String> setVisibility(int var1) async {
+   Future<void> setVisibility(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapView@$refId::setVisibility([\'var1\':$var1])');
   

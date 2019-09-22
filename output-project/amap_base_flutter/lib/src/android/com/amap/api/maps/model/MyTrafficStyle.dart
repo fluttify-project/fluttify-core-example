@@ -29,7 +29,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSmoothColor(int var1) async {
+   Future<void> setSmoothColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSlowColor(int var1) async {
+   Future<void> setSlowColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCongestedColor(int var1) async {
+   Future<void> setCongestedColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSeriousCongestedColor(int var1) async {
+   Future<void> setSeriousCongestedColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRatio(double var1) async {
+   Future<void> setRatio(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTrafficRoadBackgroundColor(int var1) async {
+   Future<void> setTrafficRoadBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor([\'var1\':$var1])');
   

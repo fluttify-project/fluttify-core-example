@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setGpsAccuracyStatus(int var1) async {
+   Future<void> setGpsAccuracyStatus(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setGpsAccuracyStatus([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setLocationType(int var1) async {
+   Future<void> setLocationType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationType([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setLocationDetail(String var1) async {
+   Future<void> setLocationDetail(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLocationDetail([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setErrorCode(int var1) async {
+   Future<void> setErrorCode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorCode([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setErrorInfo(String var1) async {
+   Future<void> setErrorInfo(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setErrorInfo([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setCountry(String var1) async {
+   Future<void> setCountry(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCountry([\'var1\':$var1])');
   
@@ -209,7 +209,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setRoad(String var1) async {
+   Future<void> setRoad(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setRoad([\'var1\':$var1])');
   
@@ -239,7 +239,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setAddress(String var1) async {
+   Future<void> setAddress(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAddress([\'var1\':$var1])');
   
@@ -269,7 +269,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setProvince(String var1) async {
+   Future<void> setProvince(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setProvince([\'var1\':$var1])');
   
@@ -299,7 +299,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setCity(String var1) async {
+   Future<void> setCity(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCity([\'var1\':$var1])');
   
@@ -329,7 +329,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setDistrict(String var1) async {
+   Future<void> setDistrict(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setDistrict([\'var1\':$var1])');
   
@@ -359,7 +359,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setCityCode(String var1) async {
+   Future<void> setCityCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setCityCode([\'var1\':$var1])');
   
@@ -389,7 +389,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setAdCode(String var1) async {
+   Future<void> setAdCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAdCode([\'var1\':$var1])');
   
@@ -419,7 +419,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setPoiName(String var1) async {
+   Future<void> setPoiName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setPoiName([\'var1\':$var1])');
   
@@ -449,7 +449,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setLatitude(double var1) async {
+   Future<void> setLatitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLatitude([\'var1\':$var1])');
   
@@ -479,7 +479,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setLongitude(double var1) async {
+   Future<void> setLongitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setLongitude([\'var1\':$var1])');
   
@@ -509,7 +509,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setSatellites(int var1) async {
+   Future<void> setSatellites(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setSatellites([\'var1\':$var1])');
   
@@ -539,7 +539,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setStreet(String var1) async {
+   Future<void> setStreet(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setStreet([\'var1\':$var1])');
   
@@ -569,7 +569,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setNumber(String var1) async {
+   Future<void> setNumber(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setNumber([\'var1\':$var1])');
   
@@ -584,7 +584,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setOffset(bool var1) async {
+   Future<void> setOffset(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setOffset([\'var1\':$var1])');
   
@@ -629,7 +629,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setAoiName(String var1) async {
+   Future<void> setAoiName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setAoiName([\'var1\':$var1])');
   
@@ -659,7 +659,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setBuildingId(String var1) async {
+   Future<void> setBuildingId(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setBuildingId([\'var1\':$var1])');
   
@@ -689,7 +689,7 @@ class com_autonavi_amap_mapcore_Inner_3dMap_location extends android_location_Lo
     return result;
   }
   
-   Future<String> setFloor(String var1) async {
+   Future<void> setFloor(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_location@$refId::setFloor([\'var1\':$var1])');
   

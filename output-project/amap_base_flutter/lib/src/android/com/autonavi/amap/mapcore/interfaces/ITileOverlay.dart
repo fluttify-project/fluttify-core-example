@@ -5,19 +5,19 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_interfaces_ITileOverlay on java_lang_Object {
-  Future<String> remove() {}
+  Future<void> remove() {}
   
-  Future<String> destroy(bool var1) {}
+  Future<void> destroy(bool var1) {}
   
-  Future<String> clearTileCache() {}
+  Future<void> clearTileCache() {}
   
   Future<String> getId() {}
   
-  Future<String> setZIndex(double var1) {}
+  Future<void> setZIndex(double var1) {}
   
   Future<double> getZIndex() {}
   
-  Future<String> setVisible(bool var1) {}
+  Future<void> setVisible(bool var1) {}
   
   Future<bool> isVisible() {}
   

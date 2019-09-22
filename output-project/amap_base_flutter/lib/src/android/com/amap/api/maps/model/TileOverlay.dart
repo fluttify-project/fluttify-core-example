@@ -14,7 +14,7 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> clearTileCache() async {
+   Future<void> clearTileCache() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
   

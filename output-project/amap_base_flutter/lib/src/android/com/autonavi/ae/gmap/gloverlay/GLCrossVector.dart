@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> addVectorRemainDis(int var1) async {
+   Future<void> addVectorRemainDis(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> addVectorCar(int var1, int var2, int var3) async {
+   Future<void> addVectorCar(int var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
@@ -44,7 +44,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRoadResId(bool var1, int var2) async {
+   Future<void> setRoadResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -59,7 +59,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> setArrowResId(bool var1, int var2) async {
+   Future<void> setArrowResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCarResId(int var1) async {
+   Future<void> setCarResId(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> setBackgroundResId(int var1) async {
+   Future<void> setBackgroundResId(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSkyResId(bool var1, int var2) async {
+   Future<void> setSkyResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -134,7 +134,7 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
     return result;
   }
   
-   Future<String> initFBOTexture(int var1, int var2) async {
+   Future<void> initFBOTexture(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture([\'var1\':$var1, \'var2\':$var2])');
   

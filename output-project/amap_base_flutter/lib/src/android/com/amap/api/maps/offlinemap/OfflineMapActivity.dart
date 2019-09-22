@@ -14,7 +14,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
   
 
   // 生成方法们
-   Future<String> showScr() async {
+   Future<void> showScr() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::showScr([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     return result;
   }
   
-   Future<String> closeScr() async {
+   Future<void> closeScr() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::closeScr([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_offlinemap_OfflineMapActivity extends com_amap_api_offli
     return result;
   }
   
-   Future<String> onClick(android_view_View var1) async {
+   Future<void> onClick(android_view_View var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapActivity@$refId::onClick([])');
   

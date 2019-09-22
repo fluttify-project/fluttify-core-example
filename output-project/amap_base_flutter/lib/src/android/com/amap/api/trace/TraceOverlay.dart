@@ -14,7 +14,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> add(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> add(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setProperCamera(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setProperCamera(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> zoopToSpan() async {
+   Future<void> zoopToSpan() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTraceStatus(int var1) async {
+   Future<void> setTraceStatus(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDistance(int var1) async {
+   Future<void> setDistance(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setWaitTime(int var1) async {
+   Future<void> setWaitTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
   

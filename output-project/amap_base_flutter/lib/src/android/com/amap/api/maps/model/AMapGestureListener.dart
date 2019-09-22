@@ -5,20 +5,20 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_amap_api_maps_model_AMapGestureListener on java_lang_Object {
-  Future<String> onDoubleTap(double var1, double var2) {}
+  Future<void> onDoubleTap(double var1, double var2) {}
   
-  Future<String> onSingleTap(double var1, double var2) {}
+  Future<void> onSingleTap(double var1, double var2) {}
   
-  Future<String> onFling(double var1, double var2) {}
+  Future<void> onFling(double var1, double var2) {}
   
-  Future<String> onScroll(double var1, double var2) {}
+  Future<void> onScroll(double var1, double var2) {}
   
-  Future<String> onLongPress(double var1, double var2) {}
+  Future<void> onLongPress(double var1, double var2) {}
   
-  Future<String> onDown(double var1, double var2) {}
+  Future<void> onDown(double var1, double var2) {}
   
-  Future<String> onUp(double var1, double var2) {}
+  Future<void> onUp(double var1, double var2) {}
   
-  Future<String> onMapStable() {}
+  Future<void> onMapStable() {}
   
 }

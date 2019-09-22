@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetGLShaderManager(int var0, int var2) async {
+  static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetGLShaderManager([\'var0\':$var0, \'var2\':$var2])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setStartParticleSize(int var0, double var2, double var3) async {
+  static Future<void> setStartParticleSize(int var0, double var2, double var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartParticleSize([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
@@ -74,7 +74,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setMaxParticles(int var0, int var2) async {
+  static Future<void> setMaxParticles(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setMaxParticles([\'var0\':$var0, \'var2\':$var2])');
   
@@ -89,7 +89,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setDuration(int var0, int var2) async {
+  static Future<void> setDuration(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setDuration([\'var0\':$var0, \'var2\':$var2])');
   
@@ -104,7 +104,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setParticleLifeTime(int var0, int var2) async {
+  static Future<void> setParticleLifeTime(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleLifeTime([\'var0\':$var0, \'var2\':$var2])');
   
@@ -119,7 +119,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setParticleStartSpeed(int var0, int var2) async {
+  static Future<void> setParticleStartSpeed(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleStartSpeed([\'var0\':$var0, \'var2\':$var2])');
   
@@ -134,7 +134,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setLoop(int var0, bool var2) async {
+  static Future<void> setLoop(int var0, bool var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setLoop([\'var0\':$var0, \'var2\':$var2])');
   
@@ -149,7 +149,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setParticleShapeModule(int var0, int var2) async {
+  static Future<void> setParticleShapeModule(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleShapeModule([\'var0\':$var0, \'var2\':$var2])');
   
@@ -164,7 +164,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setParticleEmission(int var0, int var2) async {
+  static Future<void> setParticleEmission(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleEmission([\'var0\':$var0, \'var2\':$var2])');
   
@@ -194,7 +194,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setParticleOverLifeModule(int var0, int var2) async {
+  static Future<void> setParticleOverLifeModule(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setParticleOverLifeModule([\'var0\':$var0, \'var2\':$var2])');
   
@@ -209,7 +209,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setPreWram(int var0, bool var2) async {
+  static Future<void> setPreWram(int var0, bool var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setPreWram([\'var0\':$var0, \'var2\':$var2])');
   
@@ -224,7 +224,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setStartColor(int var0, int var2) async {
+  static Future<void> setStartColor(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::setStartColor([\'var0\':$var0, \'var2\':$var2])');
   
@@ -239,7 +239,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetTextureId(int var0, int var2) async {
+  static Future<void> nativeSetTextureId(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetTextureId([\'var0\':$var0, \'var2\':$var2])');
   
@@ -374,7 +374,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetOverLifeItem(int var0, int var2, int var4) async {
+  static Future<void> nativeSetOverLifeItem(int var0, int var2, int var4) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeSetOverLifeItem([\'var0\':$var0, \'var2\':$var2, \'var4\':$var4])');
   
@@ -389,7 +389,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseVelocityOverLife(int var0) async {
+  static Future<void> nativeReleaseVelocityOverLife(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseVelocityOverLife([\'var0\':$var0])');
   
@@ -404,7 +404,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseColorGenerate(int var0) async {
+  static Future<void> nativeReleaseColorGenerate(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseColorGenerate([\'var0\':$var0])');
   
@@ -419,7 +419,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseParticleEmissonModule(int var0) async {
+  static Future<void> nativeReleaseParticleEmissonModule(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleEmissonModule([\'var0\':$var0])');
   
@@ -434,7 +434,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseParticleOverLifeModule(int var0) async {
+  static Future<void> nativeReleaseParticleOverLifeModule(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleOverLifeModule([\'var0\':$var0])');
   
@@ -449,7 +449,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseParticleShapeModule(int var0) async {
+  static Future<void> nativeReleaseParticleShapeModule(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseParticleShapeModule([\'var0\':$var0])');
   
@@ -464,7 +464,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseRotationOverLife(int var0) async {
+  static Future<void> nativeReleaseRotationOverLife(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseRotationOverLife([\'var0\':$var0])');
   
@@ -479,7 +479,7 @@ class com_autonavi_amap_mapcore_AMapNativeParticleSystem extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeReleaseSizeOverLife(int var0) async {
+  static Future<void> nativeReleaseSizeOverLife(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeParticleSystem::nativeReleaseSizeOverLife([\'var0\':$var0])');
   

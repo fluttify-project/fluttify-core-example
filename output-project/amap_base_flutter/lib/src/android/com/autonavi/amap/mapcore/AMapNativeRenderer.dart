@@ -14,7 +14,7 @@ class com_autonavi_amap_mapcore_AMapNativeRenderer extends Ref_Android  {
   
 
   // 生成方法们
-  static Future<String> nativeDrawLineInit() async {
+  static Future<void> nativeDrawLineInit() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeRenderer::nativeDrawLineInit([])');
   

@@ -13,10 +13,10 @@ mixin com_amap_api_maps_interfaces_IGlOverlayLayer on java_lang_Object {
   
   Future<bool> IsPolygonContainsPoint(com_amap_api_maps_model_PolygonOptions var1, com_amap_api_maps_model_LatLng var2) {}
   
-  Future<String> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {}
+  Future<void> processPolygonHoleOption(com_amap_api_maps_model_PolygonOptions var1) {}
   
   Future<bool> IsCircleContainPoint(com_amap_api_maps_model_CircleOptions var1, com_amap_api_maps_model_LatLng var2) {}
   
-  Future<String> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {}
+  Future<void> processCircleHoleOption(com_amap_api_maps_model_CircleOptions var1) {}
   
 }

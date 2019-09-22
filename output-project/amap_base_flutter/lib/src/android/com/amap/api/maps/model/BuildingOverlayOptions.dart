@@ -29,7 +29,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setZIndex([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setVisible([\'var1\':$var1])');
   

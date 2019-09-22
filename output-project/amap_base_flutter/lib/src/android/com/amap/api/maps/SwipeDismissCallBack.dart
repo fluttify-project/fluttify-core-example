@@ -14,7 +14,7 @@ class com_amap_api_maps_SwipeDismissCallBack extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> onNotifySwipe() async {
+   Future<void> onNotifySwipe() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.SwipeDismissCallBack@$refId::onNotifySwipe([])');
   

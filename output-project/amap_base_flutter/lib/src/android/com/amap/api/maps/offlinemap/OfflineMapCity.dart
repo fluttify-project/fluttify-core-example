@@ -29,7 +29,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends Ref_Android  {
     return result;
   }
   
-   Future<String> setUrl(String var1) async {
+   Future<void> setUrl(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setUrl([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSize(int var1) async {
+   Future<void> setSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setSize([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends Ref_Android  {
     return result;
   }
   
-   Future<String> setState(int var1) async {
+   Future<void> setState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setState([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVersion(String var1) async {
+   Future<void> setVersion(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setVersion([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_offlinemap_OfflineMapCity extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCompleteCode(int var1) async {
+   Future<void> setCompleteCode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapCity@$refId::setCompleteCode([\'var1\':$var1])');
   

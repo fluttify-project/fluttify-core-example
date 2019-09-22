@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setPoints([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGeodesic(bool var1) async {
+   Future<void> setGeodesic(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setGeodesic([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDottedLine(bool var1) async {
+   Future<void> setDottedLine(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setDottedLine([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setWidth(double var1) async {
+   Future<void> setWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setWidth([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setColor(int var1) async {
+   Future<void> setColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setColor([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setZIndex([\'var1\':$var1])');
   
@@ -209,7 +209,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setVisible([\'var1\':$var1])');
   
@@ -254,7 +254,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setTransparency(double var1) async {
+   Future<void> setTransparency(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setTransparency([\'var1\':$var1])');
   
@@ -269,7 +269,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAboveMaskLayer(bool var1) async {
+   Future<void> setAboveMaskLayer(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setAboveMaskLayer([\'var1\':$var1])');
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<void> setCustomTexture(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTexture([])');
   
@@ -299,7 +299,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOptions(com_amap_api_maps_model_PolylineOptions var1) async {
+   Future<void> setOptions(com_amap_api_maps_model_PolylineOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setOptions([])');
   
@@ -329,7 +329,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return com_amap_api_maps_model_PolylineOptions()..refId = result;
   }
   
-   Future<String> setCustemTextureIndex(int var1) async {
+   Future<void> setCustemTextureIndex(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustemTextureIndex([\'var1\':$var1])');
   
@@ -344,7 +344,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setShownRatio(double var1) async {
+   Future<void> setShownRatio(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRatio([\'var1\':$var1])');
   
@@ -359,7 +359,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setShownRange(double var1, double var2) async {
+   Future<void> setShownRange(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setShownRange([\'var1\':$var1, \'var2\':$var2])');
   
@@ -389,7 +389,7 @@ class com_amap_api_maps_model_Polyline extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomTextureList(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<void> setCustomTextureList(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polyline@$refId::setCustomTextureList([])');
   

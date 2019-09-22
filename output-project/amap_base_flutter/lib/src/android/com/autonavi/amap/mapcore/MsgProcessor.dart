@@ -14,7 +14,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> nativeInitMsg() async {
+   Future<void> nativeInitMsg() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInitMsg([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends Ref_Android  {
     return result;
   }
   
-   Future<String> nativeInit(int var1, String var2) async {
+   Future<void> nativeInit(int var1, String var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeInit([\'var1\':$var1, \'var2\':$var2])');
   
@@ -44,7 +44,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends Ref_Android  {
     return result;
   }
   
-   Future<String> nativeMsgProcessor(String var1) async {
+   Future<void> nativeMsgProcessor(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeMsgProcessor([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_MsgProcessor extends Ref_Android  {
     return result;
   }
   
-   Future<String> nativeCall() async {
+   Future<void> nativeCall() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MsgProcessor@$refId::nativeCall([])');
   

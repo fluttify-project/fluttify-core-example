@@ -29,7 +29,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return com_amap_api_maps_AMap()..refId = result;
   }
   
-   Future<String> onCreate(android_os_Bundle var1) async {
+   Future<void> onCreate(android_os_Bundle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onCreate([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onResume() async {
+   Future<void> onResume() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onResume([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onPause() async {
+   Future<void> onPause() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onPause([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onDestroy() async {
+   Future<void> onDestroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDestroy([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onLowMemory() async {
+   Future<void> onLowMemory() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onLowMemory([])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onSaveInstanceState(android_os_Bundle var1) async {
+   Future<void> onSaveInstanceState(android_os_Bundle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> setVisibility(int var1) async {
+   Future<void> setVisibility(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setVisibility([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
+   Future<void> setOnDismissCallbackListener(com_amap_api_maps_WearMapView_OnDismissCallback var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])');
   
@@ -173,7 +173,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onDismiss() async {
+   Future<void> onDismiss() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onDismiss([])');
   
@@ -188,7 +188,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onEnterAmbient(android_os_Bundle var1) async {
+   Future<void> onEnterAmbient(android_os_Bundle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])');
   
@@ -203,7 +203,7 @@ class com_amap_api_maps_WearMapView extends android_view_ViewGroup  {
     return result;
   }
   
-   Future<String> onExitAmbient() async {
+   Future<void> onExitAmbient() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])');
   

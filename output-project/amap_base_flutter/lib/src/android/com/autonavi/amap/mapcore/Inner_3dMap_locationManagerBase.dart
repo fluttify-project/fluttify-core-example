@@ -5,18 +5,18 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_Inner_3dMap_locationManagerBase on java_lang_Object {
-  Future<String> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {}
+  Future<void> setLocationOption(com_autonavi_amap_mapcore_Inner_3dMap_locationOption var1) {}
   
-  Future<String> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {}
+  Future<void> setLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {}
   
-  Future<String> startLocation() {}
+  Future<void> startLocation() {}
   
-  Future<String> stopLocation() {}
+  Future<void> stopLocation() {}
   
-  Future<String> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {}
+  Future<void> unRegisterLocationListener(com_autonavi_amap_mapcore_Inner_3dMap_locationListener var1) {}
   
   Future<com_autonavi_amap_mapcore_Inner_3dMap_location> getLastKnownLocation() {}
   
-  Future<String> destroy() {}
+  Future<void> destroy() {}
   
 }

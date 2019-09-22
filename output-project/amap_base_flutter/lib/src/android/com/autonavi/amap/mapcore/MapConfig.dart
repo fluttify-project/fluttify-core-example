@@ -49,7 +49,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnchorY(int var1) async {
+   Future<void> setAnchorY(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorY([\'var1\':$var1])');
   
@@ -79,7 +79,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnchorX(int var1) async {
+   Future<void> setAnchorX(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setAnchorX([\'var1\':$var1])');
   
@@ -109,7 +109,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> resetChangedCounter() async {
+   Future<void> resetChangedCounter() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetChangedCounter([])');
   
@@ -229,7 +229,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setIndoorEnable(bool var1) async {
+   Future<void> setIndoorEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setIndoorEnable([\'var1\':$var1])');
   
@@ -259,7 +259,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setBuildingEnable(bool var1) async {
+   Future<void> setBuildingEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setBuildingEnable([\'var1\':$var1])');
   
@@ -289,7 +289,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapTextEnable(bool var1) async {
+   Future<void> setMapTextEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapTextEnable([\'var1\':$var1])');
   
@@ -319,7 +319,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTrafficEnabled(bool var1) async {
+   Future<void> setTrafficEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setTrafficEnabled([\'var1\':$var1])');
   
@@ -364,7 +364,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSX(int var1) async {
+   Future<void> setSX(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSX([\'var1\':$var1])');
   
@@ -394,7 +394,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSY(int var1) async {
+   Future<void> setSY(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSY([\'var1\':$var1])');
   
@@ -439,7 +439,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSZ(double var1) async {
+   Future<void> setSZ(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSZ([\'var1\':$var1])');
   
@@ -469,7 +469,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSC(double var1) async {
+   Future<void> setSC(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSC([\'var1\':$var1])');
   
@@ -499,7 +499,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSR(double var1) async {
+   Future<void> setSR(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSR([\'var1\':$var1])');
   
@@ -529,7 +529,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return com_autonavi_amap_mapcore_Rectangle()..refId = result;
   }
   
-   Future<String> setMaxZoomLevel(double var1) async {
+   Future<void> setMaxZoomLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMaxZoomLevel([\'var1\':$var1])');
   
@@ -544,7 +544,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMinZoomLevel(double var1) async {
+   Future<void> setMinZoomLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMinZoomLevel([\'var1\':$var1])');
   
@@ -619,7 +619,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return com_amap_api_maps_model_LatLngBounds()..refId = result;
   }
   
-   Future<String> setLimitLatLngBounds(com_amap_api_maps_model_LatLngBounds var1) async {
+   Future<void> setLimitLatLngBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setLimitLatLngBounds([])');
   
@@ -634,7 +634,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> resetMinMaxZoomPreference() async {
+   Future<void> resetMinMaxZoomPreference() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::resetMinMaxZoomPreference([])');
   
@@ -649,7 +649,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> updateMapRectNextFrame(bool var1) async {
+   Future<void> updateMapRectNextFrame(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateMapRectNextFrame([\'var1\':$var1])');
   
@@ -664,7 +664,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapPerPixelUnitLength(double var1) async {
+   Future<void> setMapPerPixelUnitLength(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapPerPixelUnitLength([\'var1\':$var1])');
   
@@ -694,7 +694,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomStylePath(String var1) async {
+   Future<void> setCustomStylePath(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStylePath([\'var1\':$var1])');
   
@@ -739,7 +739,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomStyleID(String var1) async {
+   Future<void> setCustomStyleID(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleID([\'var1\':$var1])');
   
@@ -754,7 +754,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomStyleEnable(bool var1) async {
+   Future<void> setCustomStyleEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomStyleEnable([\'var1\':$var1])');
   
@@ -799,7 +799,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapStyleTime(int var1) async {
+   Future<void> setMapStyleTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleTime([\'var1\':$var1])');
   
@@ -829,7 +829,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapStyleMode(int var1) async {
+   Future<void> setMapStyleMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleMode([\'var1\':$var1])');
   
@@ -859,7 +859,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapStyleState(int var1) async {
+   Future<void> setMapStyleState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapStyleState([\'var1\':$var1])');
   
@@ -874,7 +874,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomTextureResourcePath(String var1) async {
+   Future<void> setCustomTextureResourcePath(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
   
@@ -919,7 +919,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setProFunctionAuthEnable(bool var1) async {
+   Future<void> setProFunctionAuthEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setProFunctionAuthEnable([\'var1\':$var1])');
   
@@ -949,7 +949,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setUseProFunction(bool var1) async {
+   Future<void> setUseProFunction(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setUseProFunction([\'var1\':$var1])');
   
@@ -964,7 +964,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomBackgroundColor(int var1) async {
+   Future<void> setCustomBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setCustomBackgroundColor([\'var1\':$var1])');
   
@@ -994,7 +994,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapZoomScale(double var1) async {
+   Future<void> setMapZoomScale(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapZoomScale([\'var1\':$var1])');
   
@@ -1024,7 +1024,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapWidth(int var1) async {
+   Future<void> setMapWidth(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapWidth([\'var1\':$var1])');
   
@@ -1054,7 +1054,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapHeight(int var1) async {
+   Future<void> setMapHeight(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapHeight([\'var1\':$var1])');
   
@@ -1084,7 +1084,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapLanguage(String var1) async {
+   Future<void> setMapLanguage(String var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setMapLanguage([\'var1\':$var1])');
   
@@ -1114,7 +1114,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setHideLogoEnble(bool var1) async {
+   Future<void> setHideLogoEnble(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setHideLogoEnble([\'var1\':$var1])');
   
@@ -1144,7 +1144,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setWorldMapEnable(bool var1) async {
+   Future<void> setWorldMapEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setWorldMapEnable([\'var1\':$var1])');
   
@@ -1189,7 +1189,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSkyHeight(double var1) async {
+   Future<void> setSkyHeight(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::setSkyHeight([\'var1\':$var1])');
   
@@ -1204,7 +1204,7 @@ class com_autonavi_amap_mapcore_MapConfig extends Ref_Android  {
     return result;
   }
   
-   Future<String> updateFinalMatrix() async {
+   Future<void> updateFinalMatrix() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.MapConfig@$refId::updateFinalMatrix([])');
   

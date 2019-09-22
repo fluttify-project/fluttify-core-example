@@ -44,7 +44,7 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
     return com_amap_api_maps_model_PolygonOptions()..refId = result;
   }
   
-   Future<String> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
     return result;
   }
   
-   Future<String> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
+   Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
   

@@ -38,7 +38,7 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
     return com_autonavi_ae_gmap_style_StyleElement()..refId = result;
   }
   
-   Future<String> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
+   Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');
   

@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends Ref_Android  {
     return result;
   }
   
-   Future<String> setState(int var1) async {
+   Future<void> setState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setState([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTime(int var1) async {
+   Future<void> setTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setTime([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_autonavi_amap_mapcore_LinkInfo extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLength(int var1) async {
+   Future<void> setLength(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.LinkInfo@$refId::setLength([\'var1\':$var1])');
   

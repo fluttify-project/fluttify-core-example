@@ -5,6 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_Inner_3dMap_locationListener on java_lang_Object {
-  Future<String> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) {}
+  Future<void> onLocationChanged(com_autonavi_amap_mapcore_Inner_3dMap_location var1) {}
   
 }

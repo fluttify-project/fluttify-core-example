@@ -5,6 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_AeUtil_ZipCompressProgressListener on java_lang_Object {
-  Future<String> onFinishProgress(int var1) {}
+  Future<void> onFinishProgress(int var1) {}
   
 }

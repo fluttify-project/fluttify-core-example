@@ -29,7 +29,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDrivingRouteStyle(int var1) async {
+   Future<void> setDrivingRouteStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTransitRouteStyle(int var1) async {
+   Future<void> setTransitRouteStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setEndName(String var1) async {
+   Future<void> setEndName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStartName(String var1) async {
+   Future<void> setStartName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
   

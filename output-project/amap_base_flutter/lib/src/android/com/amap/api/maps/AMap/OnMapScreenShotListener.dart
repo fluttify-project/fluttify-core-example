@@ -5,6 +5,6 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_amap_api_maps_AMap_OnMapScreenShotListener on java_lang_Object {
-  Future<String> onMapScreenShot(android_graphics_Bitmap var1) {}
+  Future<void> onMapScreenShot(android_graphics_Bitmap var1) {}
   
 }

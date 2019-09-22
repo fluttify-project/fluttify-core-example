@@ -59,7 +59,7 @@ class com_amap_api_maps_offlinemap_Province extends Ref_Android  {
     return result;
   }
   
-   Future<String> setProvinceName(String var1) async {
+   Future<void> setProvinceName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceName([\'var1\':$var1])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_offlinemap_Province extends Ref_Android  {
     return result;
   }
   
-   Future<String> setJianpin(String var1) async {
+   Future<void> setJianpin(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setJianpin([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_offlinemap_Province extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPinyin(String var1) async {
+   Future<void> setPinyin(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setPinyin([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_offlinemap_Province extends Ref_Android  {
     return result;
   }
   
-   Future<String> setProvinceCode(String var1) async {
+   Future<void> setProvinceCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.Province@$refId::setProvinceCode([\'var1\':$var1])');
   

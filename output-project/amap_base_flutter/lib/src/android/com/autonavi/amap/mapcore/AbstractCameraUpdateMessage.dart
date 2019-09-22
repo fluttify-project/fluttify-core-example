@@ -243,7 +243,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
 
   // 生成方法们
-   Future<String> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
   
@@ -258,7 +258,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     return result;
   }
   
-   Future<String> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
+   Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
   
@@ -273,7 +273,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     return result;
   }
   
-   Future<String> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
+   Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
   

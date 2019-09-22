@@ -509,7 +509,7 @@ class com_amap_api_maps_model_PolylineOptions extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolylineOptions@$refId::setPoints([])');
   

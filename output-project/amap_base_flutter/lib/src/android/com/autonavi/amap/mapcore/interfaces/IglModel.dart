@@ -11,36 +11,36 @@ mixin com_autonavi_amap_mapcore_interfaces_IglModel on java_lang_Object {
   
   Future<String> getId() {}
   
-  Future<String> setPosition(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {}
   
-  Future<String> setRotateAngle(double var1) {}
+  Future<void> setRotateAngle(double var1) {}
   
   Future<double> getRotateAngle() {}
   
   Future<com_amap_api_maps_model_LatLng> getPosition() {}
   
-  Future<String> setAnimation(com_amap_api_maps_model_animation_Animation var1) {}
+  Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) {}
   
   Future<bool> startAnimation() {}
   
   Future<bool> remove() {}
   
-  Future<String> setVisible(bool var1) {}
+  Future<void> setVisible(bool var1) {}
   
   Future<bool> isVisible() {}
   
-  Future<String> setZoomLimit(double var1) {}
+  Future<void> setZoomLimit(double var1) {}
   
-  Future<String> destroy() {}
+  Future<void> destroy() {}
   
-  Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {}
+  Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) {}
   
-  Future<String> showInfoWindow() {}
+  Future<void> showInfoWindow() {}
   
-  Future<String> setTitle(String var1) {}
+  Future<void> setTitle(String var1) {}
   
-  Future<String> setSnippet(String var1) {}
+  Future<void> setSnippet(String var1) {}
   
-  Future<String> setModelFixedLength(int var1) {}
+  Future<void> setModelFixedLength(int var1) {}
   
 }

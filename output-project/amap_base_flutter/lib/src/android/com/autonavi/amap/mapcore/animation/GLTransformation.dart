@@ -56,7 +56,7 @@ class com_autonavi_amap_mapcore_animation_GLTransformation extends Ref_Android  
   
 
   // 生成方法们
-   Future<String> clear() async {
+   Future<void> clear() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLTransformation@$refId::clear([])');
   

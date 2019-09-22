@@ -5,11 +5,11 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_interfaces_IArc on com_autonavi_amap_mapcore_interfaces_IOverlay {
-  Future<String> setStrokeWidth(double var1) {}
+  Future<void> setStrokeWidth(double var1) {}
   
   Future<double> getStrokeWidth() {}
   
-  Future<String> setStrokeColor(int var1) {}
+  Future<void> setStrokeColor(int var1) {}
   
   Future<int> getStrokeColor() {}
   

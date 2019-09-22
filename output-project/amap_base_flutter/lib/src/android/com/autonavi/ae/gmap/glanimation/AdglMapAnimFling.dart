@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::reset([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimFling extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPositionAndVelocity(double var1, double var2) async {
+   Future<void> setPositionAndVelocity(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimFling@$refId::setPositionAndVelocity([\'var1\':$var1, \'var2\':$var2])');
   

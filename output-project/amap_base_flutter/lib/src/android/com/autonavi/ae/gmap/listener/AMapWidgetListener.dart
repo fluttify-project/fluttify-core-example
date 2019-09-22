@@ -5,12 +5,12 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_ae_gmap_listener_AMapWidgetListener on java_lang_Object {
-  Future<String> invalidateScaleView() {}
+  Future<void> invalidateScaleView() {}
   
-  Future<String> invalidateCompassView() {}
+  Future<void> invalidateCompassView() {}
   
-  Future<String> invalidateZoomController(double var1) {}
+  Future<void> invalidateZoomController(double var1) {}
   
-  Future<String> setFrontViewVisibility(bool var1) {}
+  Future<void> setFrontViewVisibility(bool var1) {}
   
 }

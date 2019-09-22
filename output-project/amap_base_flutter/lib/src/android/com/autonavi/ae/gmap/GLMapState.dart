@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
 
   // 生成方法们
-  static Future<String> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
+  static Future<void> lonlat2Geo(double var0, double var2, com_autonavi_amap_mapcore_IPoint var4) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::lonlat2Geo([\'var0\':$var0, \'var2\':$var2])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
+  static Future<void> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::geo2LonLat([\'var0\':$var0, \'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
+   Future<void> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point([\'var1\':$var1, \'var2\':$var2])');
   
@@ -59,7 +59,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
+   Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
   
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
+   Future<void> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
   
@@ -89,7 +89,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapGeoCenter(int var1, int var2) async {
+   Future<void> setMapGeoCenter(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapGeoCenter([\'var1\':$var1, \'var2\':$var2])');
   
@@ -104,7 +104,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCameraDegree(double var1) async {
+   Future<void> setCameraDegree(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapAngle(double var1) async {
+   Future<void> setMapAngle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapZoomer(double var1) async {
+   Future<void> setMapZoomer(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer([\'var1\':$var1])');
   
@@ -194,7 +194,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> recalculate() async {
+   Future<void> recalculate() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::recalculate([])');
   
@@ -209,7 +209,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::reset([])');
   
@@ -284,7 +284,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-   Future<String> setNativeMapengineState(int var1, int var2) async {
+   Future<void> setNativeMapengineState(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setNativeMapengineState([\'var1\':$var1, \'var2\':$var2])');
   
@@ -329,7 +329,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
+  static Future<void> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeScreenToP20Point([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
@@ -344,7 +344,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
+  static Future<void> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeP20ToScreenPoint([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
   
@@ -359,7 +359,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetMapCenter(int var0, int var2, int var3) async {
+  static Future<void> nativeSetMapCenter(int var0, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapCenter([\'var0\':$var0, \'var2\':$var2, \'var3\':$var3])');
   
@@ -374,7 +374,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
+  static Future<void> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetMapCenter([\'var0\':$var0])');
   
@@ -404,7 +404,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetMapZoomer(int var0, double var2) async {
+  static Future<void> nativeSetMapZoomer(int var0, double var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapZoomer([\'var0\':$var0, \'var2\':$var2])');
   
@@ -419,7 +419,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetMapAngle(int var0, double var2) async {
+  static Future<void> nativeSetMapAngle(int var0, double var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetMapAngle([\'var0\':$var0, \'var2\':$var2])');
   
@@ -464,7 +464,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetCameraDegree(int var0, double var2) async {
+  static Future<void> nativeSetCameraDegree(int var0, double var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeSetCameraDegree([\'var0\':$var0, \'var2\':$var2])');
   
@@ -479,7 +479,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeRecalculate(int var0) async {
+  static Future<void> nativeRecalculate(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeRecalculate([\'var0\':$var0])');
   
@@ -494,7 +494,7 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeStateDestroy(int var0) async {
+  static Future<void> nativeStateDestroy(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeStateDestroy([\'var0\':$var0])');
   

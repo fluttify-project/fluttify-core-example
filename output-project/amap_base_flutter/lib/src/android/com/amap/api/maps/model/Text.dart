@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPosition(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setText(String var1) async {
+   Future<void> setText(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setBackgroundColor(int var1) async {
+   Future<void> setBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFontColor(int var1) async {
+   Future<void> setFontColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFontSize(int var1) async {
+   Future<void> setFontSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
   
@@ -209,7 +209,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAlign(int var1, int var2) async {
+   Future<void> setAlign(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
   
@@ -254,7 +254,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRotate(double var1) async {
+   Future<void> setRotate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
   
@@ -314,7 +314,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
   

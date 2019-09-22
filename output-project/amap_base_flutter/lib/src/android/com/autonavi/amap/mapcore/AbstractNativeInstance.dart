@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_AbstractNativeInstance extends Ref_Android  {
     return result;
   }
   
-   Future<String> createNativeInstace() async {
+   Future<void> createNativeInstace() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractNativeInstance@$refId::createNativeInstace([])');
   

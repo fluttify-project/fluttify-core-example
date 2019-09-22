@@ -23,7 +23,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> onStop() async {
+   Future<void> onStop() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop([])');
   
@@ -38,7 +38,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
     return result;
   }
   
-   Future<String> onFinish() async {
+   Future<void> onFinish() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onFinish([])');
   
@@ -53,7 +53,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
     return result;
   }
   
-   Future<String> doRequest() async {
+   Future<void> doRequest() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doRequest([])');
   
@@ -68,7 +68,7 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
     return result;
   }
   
-   Future<String> doCancel() async {
+   Future<void> doCancel() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doCancel([])');
   

@@ -14,7 +14,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> downloadByCityCode(String var1) async {
+   Future<void> downloadByCityCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByCityCode([\'var1\':$var1])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> downloadByCityName(String var1) async {
+   Future<void> downloadByCityName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByCityName([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> downloadByProvinceName(String var1) async {
+   Future<void> downloadByProvinceName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::downloadByProvinceName([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove(String var1) async {
+   Future<void> remove(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::remove([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return com_amap_api_maps_offlinemap_OfflineMapProvince()..refId = result;
   }
   
-   Future<String> updateOfflineCityByCode(String var1) async {
+   Future<void> updateOfflineCityByCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineCityByCode([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> updateOfflineCityByName(String var1) async {
+   Future<void> updateOfflineCityByName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineCityByName([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> updateOfflineMapProvinceByName(String var1) async {
+   Future<void> updateOfflineMapProvinceByName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::updateOfflineMapProvinceByName([\'var1\':$var1])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> restart() async {
+   Future<void> restart() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::restart([])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> stop() async {
+   Future<void> stop() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::stop([])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> pause() async {
+   Future<void> pause() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::pause([])');
   
@@ -209,7 +209,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::destroy([])');
   
@@ -224,7 +224,7 @@ class com_amap_api_maps_offlinemap_OfflineMapManager extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnOfflineLoadedListener(com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener var1) async {
+   Future<void> setOnOfflineLoadedListener(com_amap_api_maps_offlinemap_OfflineMapManager_OfflineLoadedListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapManager@$refId::setOnOfflineLoadedListener([])');
   

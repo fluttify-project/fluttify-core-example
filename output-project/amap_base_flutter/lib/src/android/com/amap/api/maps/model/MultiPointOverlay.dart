@@ -14,7 +14,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setItems(com_amap_api_maps_model_MultiPointItem var1) async {
+   Future<void> setItems(com_amap_api_maps_model_MultiPointItem var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setItems([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnchor(double var1, double var2) async {
+   Future<void> setAnchor(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setEnable(bool var1) async {
+   Future<void> setEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::setEnable([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::remove([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_MultiPointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlay@$refId::destroy([])');
   

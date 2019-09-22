@@ -14,7 +14,7 @@ class com_amap_api_maps_offlinemap_City extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setCity(String var1) async {
+   Future<void> setCity(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCity([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_offlinemap_City extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCode(String var1) async {
+   Future<void> setCode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setCode([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_offlinemap_City extends Ref_Android  {
     return result;
   }
   
-   Future<String> setJianpin(String var1) async {
+   Future<void> setJianpin(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setJianpin([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_offlinemap_City extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPinyin(String var1) async {
+   Future<void> setPinyin(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setPinyin([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_offlinemap_City extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAdcode(String var1) async {
+   Future<void> setAdcode(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.City@$refId::setAdcode([\'var1\':$var1])');
   

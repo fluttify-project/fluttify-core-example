@@ -14,7 +14,7 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
+   Future<void> setDefaultOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setDefaultOptions([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
     return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
   }
   
-   Future<String> setCustomOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
+   Future<void> setCustomOptions(com_amap_api_maps_model_BuildingOverlayOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setCustomOptions([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::destroy([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setZIndex([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_BuildingOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlay@$refId::setVisible([\'var1\':$var1])');
   

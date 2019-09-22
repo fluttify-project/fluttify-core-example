@@ -14,7 +14,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setDuration(int var1) async {
+   Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::setDuration([\'var1\':$var1])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends Ref_Android  {
     return result;
   }
   
-   Future<String> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> addAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::addAnimation([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_animation_AnimationSet extends Ref_Android  {
     return result;
   }
   
-   Future<String> cleanAnimation() async {
+   Future<void> cleanAnimation() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.AnimationSet@$refId::cleanAnimation([])');
   

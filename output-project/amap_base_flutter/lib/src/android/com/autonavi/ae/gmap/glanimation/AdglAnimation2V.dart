@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_glanimation_AdglAnimation2V extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglAnimation2V@$refId::reset([])');
   

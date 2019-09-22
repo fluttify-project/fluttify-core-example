@@ -49,7 +49,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
     return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
   }
   
-  static Future<String> destory() async {
+  static Future<void> destory() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage::destory([])');
   
@@ -79,7 +79,7 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
     return result;
   }
   
-   Future<String> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate([])');
   

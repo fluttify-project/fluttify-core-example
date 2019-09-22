@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager extends Ref_Andro
     return result;
   }
   
-  static Future<String> nativeDestroyGLShaderManager(int var0) async {
+  static Future<void> nativeDestroyGLShaderManager(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.gles.AMapNativeGLShaderManager::nativeDestroyGLShaderManager([\'var0\':$var0])');
   

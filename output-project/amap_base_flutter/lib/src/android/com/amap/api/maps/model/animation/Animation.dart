@@ -23,7 +23,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
+   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
   
@@ -62,7 +62,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDuration(int var1) async {
+   Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
   
@@ -77,7 +77,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFillMode(int var1) async {
+   Future<void> setFillMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
   
@@ -107,7 +107,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRepeatCount(int var1) async {
+   Future<void> setRepeatCount(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
   
@@ -122,7 +122,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRepeatMode(int var1) async {
+   Future<void> setRepeatMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
   

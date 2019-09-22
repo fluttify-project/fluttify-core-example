@@ -34,7 +34,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setTrafficMode(bool var1) async {
+   Future<void> setTrafficMode(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode([\'var1\':$var1])');
   
@@ -49,7 +49,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> resetTickCount(int var1) async {
+   Future<void> resetTickCount(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount([\'var1\':$var1])');
   
@@ -79,7 +79,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRenderFps(double var1) async {
+   Future<void> setRenderFps(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\'var1\':$var1])');
   
@@ -94,7 +94,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> renderPause() async {
+   Future<void> renderPause() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause([])');
   
@@ -109,7 +109,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> renderResume() async {
+   Future<void> renderResume() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume([])');
   
@@ -124,7 +124,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> onAttachedToWindow() async {
+   Future<void> onAttachedToWindow() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow([])');
   
@@ -139,7 +139,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> onDetachedFromWindow() async {
+   Future<void> onDetachedFromWindow() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow([])');
   
@@ -154,7 +154,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
     return result;
   }
   
-   Future<String> onSurfaceDestory() async {
+   Future<void> onSurfaceDestory() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory([])');
   

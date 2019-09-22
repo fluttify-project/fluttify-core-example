@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> removeItem(int var1) async {
+   Future<void> removeItem(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeItem([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> removeAll() async {
+   Future<void> removeAll() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeAll([])');
   
@@ -119,7 +119,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setClickable(bool var1) async {
+   Future<void> setClickable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setClickable([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> clearFocus() async {
+   Future<void> clearFocus() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::clearFocus([])');
   
@@ -209,7 +209,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMaxCountShown(int var1) async {
+   Future<void> setMaxCountShown(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxCountShown([\'var1\':$var1])');
   
@@ -224,7 +224,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOverlayOnTop(bool var1) async {
+   Future<void> setOverlayOnTop(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayOnTop([\'var1\':$var1])');
   
@@ -239,7 +239,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMinDisplayLevel(double var1) async {
+   Future<void> setMinDisplayLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel([\'var1\':$var1])');
   
@@ -254,7 +254,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMaxDisplayLevel(double var1) async {
+   Future<void> setMaxDisplayLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel([\'var1\':$var1])');
   
@@ -269,7 +269,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOverlayPriority(int var1) async {
+   Future<void> setOverlayPriority(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayPriority([\'var1\':$var1])');
   
@@ -299,7 +299,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOverlayItemPriority(int var1) async {
+   Future<void> setOverlayItemPriority(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayItemPriority([\'var1\':$var1])');
   
@@ -314,7 +314,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> useNightStyle(bool var1) async {
+   Future<void> useNightStyle(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::useNightStyle([\'var1\':$var1])');
   

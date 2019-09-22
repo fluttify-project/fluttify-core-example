@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends Ref_Android 
   
 
   // 生成方法们
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::reset([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom extends Ref_Android 
     return result;
   }
   
-   Future<String> setToMapZoomAndPivot(double var1, int var2, android_graphics_Point var3) async {
+   Future<void> setToMapZoomAndPivot(double var1, int var2, android_graphics_Point var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimPivotZoom@$refId::setToMapZoomAndPivot([\'var1\':$var1, \'var2\':$var2])');
   

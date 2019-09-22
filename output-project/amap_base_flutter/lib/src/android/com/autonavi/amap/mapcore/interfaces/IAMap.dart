@@ -11,15 +11,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<double> getMinZoomLevel() {}
   
-  Future<String> moveCamera(com_amap_api_maps_CameraUpdate var1) {}
+  Future<void> moveCamera(com_amap_api_maps_CameraUpdate var1) {}
   
-  Future<String> animateCamera(com_amap_api_maps_CameraUpdate var1) {}
+  Future<void> animateCamera(com_amap_api_maps_CameraUpdate var1) {}
   
-  Future<String> animateCameraWithCallback(com_amap_api_maps_CameraUpdate var1, com_amap_api_maps_AMap_CancelableCallback var2) {}
+  Future<void> animateCameraWithCallback(com_amap_api_maps_CameraUpdate var1, com_amap_api_maps_AMap_CancelableCallback var2) {}
   
-  Future<String> animateCameraWithDurationAndCallback(com_amap_api_maps_CameraUpdate var1, int var2, com_amap_api_maps_AMap_CancelableCallback var4) {}
+  Future<void> animateCameraWithDurationAndCallback(com_amap_api_maps_CameraUpdate var1, int var2, com_amap_api_maps_AMap_CancelableCallback var4) {}
   
-  Future<String> stopAnimation() {}
+  Future<void> stopAnimation() {}
   
   Future<com_amap_api_maps_model_NavigateArrow> addNavigateArrow(com_amap_api_maps_model_NavigateArrowOptions var1) {}
   
@@ -41,123 +41,123 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) {}
   
-  Future<String> clear() {}
+  Future<void> clear() {}
   
   Future<int> getMapType() {}
   
-  Future<String> setMapType(int var1) {}
+  Future<void> setMapType(int var1) {}
   
   Future<bool> isTrafficEnabled() {}
   
-  Future<String> setTrafficEnabled(bool var1) {}
+  Future<void> setTrafficEnabled(bool var1) {}
   
   Future<bool> isIndoorEnabled() {}
   
-  Future<String> setIndoorEnabled(bool var1) {}
+  Future<void> setIndoorEnabled(bool var1) {}
   
-  Future<String> set3DBuildingEnabled(bool var1) {}
+  Future<void> set3DBuildingEnabled(bool var1) {}
   
   Future<bool> isMyLocationEnabled() {}
   
-  Future<String> setMyLocationEnabled(bool var1) {}
+  Future<void> setMyLocationEnabled(bool var1) {}
   
-  Future<String> setLoadOfflineData(bool var1) {}
+  Future<void> setLoadOfflineData(bool var1) {}
   
-  Future<String> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) {}
+  Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) {}
   
-  Future<String> setMyLocationType(int var1) {}
+  Future<void> setMyLocationType(int var1) {}
   
-  Future<String> setMapTextEnable(bool var1) {}
+  Future<void> setMapTextEnable(bool var1) {}
   
-  Future<String> setRoadArrowEnable(bool var1) {}
+  Future<void> setRoadArrowEnable(bool var1) {}
   
-  Future<String> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) {}
+  Future<void> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) {}
   
   Future<android_location_Location> getMyLocation() {}
   
-  Future<String> setLocationSource(com_amap_api_maps_LocationSource var1) {}
+  Future<void> setLocationSource(com_amap_api_maps_LocationSource var1) {}
   
-  Future<String> setMyLocationRotateAngle(double var1) {}
+  Future<void> setMyLocationRotateAngle(double var1) {}
   
   Future<com_amap_api_maps_UiSettings> getAMapUiSettings() {}
   
   Future<com_amap_api_maps_Projection> getAMapProjection() {}
   
-  Future<String> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) {}
+  Future<void> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) {}
   
-  Future<String> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) {}
+  Future<void> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) {}
   
-  Future<String> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) {}
+  Future<void> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) {}
   
-  Future<String> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) {}
+  Future<void> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) {}
   
-  Future<String> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) {}
+  Future<void> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) {}
   
-  Future<String> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) {}
+  Future<void> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) {}
   
-  Future<String> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) {}
+  Future<void> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) {}
   
-  Future<String> setOnMaploadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) {}
+  Future<void> setOnMaploadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) {}
   
-  Future<String> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) {}
+  Future<void> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) {}
   
-  Future<String> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) {}
+  Future<void> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) {}
   
-  Future<String> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) {}
+  Future<void> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) {}
   
-  Future<String> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {}
+  Future<void> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) {}
   
-  Future<String> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) {}
+  Future<void> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) {}
   
-  Future<String> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) {}
+  Future<void> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) {}
   
-  Future<String> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) {}
+  Future<void> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) {}
   
   Future<double> getScalePerPixel() {}
   
-  Future<String> setRunLowFrame(bool var1) {}
+  Future<void> setRunLowFrame(bool var1) {}
   
-  Future<String> removecache() {}
+  Future<void> removecache() {}
   
-  Future<String> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) {}
+  Future<void> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) {}
   
-  Future<String> setCenterToPixel(int var1, int var2) {}
+  Future<void> setCenterToPixel(int var1, int var2) {}
   
-  Future<String> setMapTextZIndex(int var1) {}
+  Future<void> setMapTextZIndex(int var1) {}
   
   Future<int> getMapTextZIndex() {}
   
-  Future<String> reloadMap() {}
+  Future<void> reloadMap() {}
   
-  Future<String> setRenderFps(int var1) {}
+  Future<void> setRenderFps(int var1) {}
   
-  Future<String> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) {}
+  Future<void> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) {}
   
-  Future<String> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) {}
+  Future<void> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) {}
   
   Future<double> getZoomToSpanLevel(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2) {}
   
   Future<com_amap_api_maps_InfoWindowAnimationManager> getInfoWindowAnimationManager() {}
   
-  Future<String> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) {}
+  Future<void> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) {}
   
-  Future<String> setMaxZoomLevel(double var1) {}
+  Future<void> setMaxZoomLevel(double var1) {}
   
-  Future<String> setMinZoomLevel(double var1) {}
+  Future<void> setMinZoomLevel(double var1) {}
   
-  Future<String> resetMinMaxZoomPreference() {}
+  Future<void> resetMinMaxZoomPreference() {}
   
-  Future<String> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) {}
+  Future<void> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) {}
   
-  Future<String> setCustomMapStylePath(String var1) {}
+  Future<void> setCustomMapStylePath(String var1) {}
   
-  Future<String> setMapCustomEnable(bool var1) {}
+  Future<void> setMapCustomEnable(bool var1) {}
   
-  Future<String> onChangeFinish() {}
+  Future<void> onChangeFinish() {}
   
-  Future<String> setZoomScaleParam(double var1) {}
+  Future<void> setZoomScaleParam(double var1) {}
   
-  Future<String> onFling() {}
+  Future<void> onFling() {}
   
   Future<int> getMapWidth() {}
   
@@ -173,15 +173,15 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<android_view_View> getView() {}
   
-  Future<String> setZOrderOnTop(bool var1) {}
+  Future<void> setZOrderOnTop(bool var1) {}
   
-  Future<String> destroy() {}
+  Future<void> destroy() {}
   
-  Future<String> setVisibilityEx(int var1) {}
+  Future<void> setVisibilityEx(int var1) {}
   
-  Future<String> onActivityPause() {}
+  Future<void> onActivityPause() {}
   
-  Future<String> onActivityResume() {}
+  Future<void> onActivityResume() {}
   
   Future<int> createGLOverlay(int var1) {}
   
@@ -191,39 +191,39 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() {}
   
-  Future<String> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) {}
+  Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) {}
   
   Future<bool> onTouchEvent(android_view_MotionEvent var1) {}
   
   Future<bool> canStopMapRender() {}
   
-  Future<String> setCustomTextureResourcePath(String var1) {}
+  Future<void> setCustomTextureResourcePath(String var1) {}
   
   Future<com_amap_api_maps_model_MyLocationStyle> getMyLocationStyle() {}
   
   Future<int> getRenderMode() {}
   
-  Future<String> destroySurface(int var1) {}
+  Future<void> destroySurface(int var1) {}
   
-  Future<String> requestRender() {}
+  Future<void> requestRender() {}
   
-  Future<String> resetRenderTime() {}
+  Future<void> resetRenderTime() {}
   
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() {}
   
-  Future<String> checkMapState(com_autonavi_ae_gmap_GLMapState var1) {}
+  Future<void> checkMapState(com_autonavi_ae_gmap_GLMapState var1) {}
   
-  Future<String> setRenderMode(int var1) {}
+  Future<void> setRenderMode(int var1) {}
   
-  Future<String> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) {}
+  Future<void> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) {}
   
   Future<String> getMapContentApprovalNumber() {}
   
   Future<String> getSatelliteImageApprovalNumber() {}
   
-  Future<String> setMapLanguage(String var1) {}
+  Future<void> setMapLanguage(String var1) {}
   
-  Future<String> setCustomMapStyleID(String var1) {}
+  Future<void> setCustomMapStyleID(String var1) {}
   
   Future<com_amap_api_maps_model_BuildingOverlay> addBuildingOverlay() {}
   
@@ -231,6 +231,6 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<com_amap_api_maps_model_particle_ParticleOverlay> addParticleOverlay(com_amap_api_maps_model_particle_ParticleOverlayOptions var1) {}
   
-  Future<String> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) {}
+  Future<void> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) {}
   
 }

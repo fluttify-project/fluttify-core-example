@@ -14,7 +14,7 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   
 
   // 生成方法们
-  static Future<String> loadLib(android_content_Context var0) async {
+  static Future<void> loadLib(android_content_Context var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::loadLib([])');
   
@@ -44,7 +44,7 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
     return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result;
   }
   
-  static Future<String> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
+  static Future<void> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AeUtil::readAssetsFileAndSave([\'var0\':$var0, \'var1\':$var1])');
   

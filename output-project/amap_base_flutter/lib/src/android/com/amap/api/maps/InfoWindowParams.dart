@@ -14,7 +14,7 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setInfoWindowUpdateTime(int var1) async {
+   Future<void> setInfoWindowUpdateTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowUpdateTime([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowType(int var1) async {
+   Future<void> setInfoWindowType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowType([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
     return android_view_View()..refId = result;
   }
   
-   Future<String> setInfoContent(android_view_View var1) async {
+   Future<void> setInfoContent(android_view_View var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoContent([])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindow(android_view_View var1) async {
+   Future<void> setInfoWindow(android_view_View var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindow([])');
   

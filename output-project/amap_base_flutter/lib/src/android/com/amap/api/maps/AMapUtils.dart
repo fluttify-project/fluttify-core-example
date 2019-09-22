@@ -44,7 +44,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> getLatestAMapApp(android_content_Context var0) async {
+  static Future<void> getLatestAMapApp(android_content_Context var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::getLatestAMapApp([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> openAMapNavi(com_amap_api_maps_model_NaviPara var0, android_content_Context var1) async {
+  static Future<void> openAMapNavi(com_amap_api_maps_model_NaviPara var0, android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapNavi([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> openAMapPoiNearbySearch(com_amap_api_maps_model_PoiPara var0, android_content_Context var1) async {
+  static Future<void> openAMapPoiNearbySearch(com_amap_api_maps_model_PoiPara var0, android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapPoiNearbySearch([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> openAMapDrivingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
+  static Future<void> openAMapDrivingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapDrivingRoute([])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> openAMapTransitRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
+  static Future<void> openAMapTransitRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapTransitRoute([])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_AMapUtils extends Ref_Android  {
     return result;
   }
   
-  static Future<String> openAMapWalkingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
+  static Future<void> openAMapWalkingRoute(com_amap_api_maps_model_RoutePara var0, android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapUtils::openAMapWalkingRoute([])');
   

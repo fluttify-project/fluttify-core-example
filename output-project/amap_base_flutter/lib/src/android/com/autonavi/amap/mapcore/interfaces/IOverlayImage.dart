@@ -7,13 +7,13 @@ import 'package:flutter/services.dart';
 mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   Future<bool> remove() {}
   
-  Future<String> destroy(bool var1) {}
+  Future<void> destroy(bool var1) {}
   
-  Future<String> setRotateAngle(double var1) {}
+  Future<void> setRotateAngle(double var1) {}
   
   Future<double> getRotateAngle() {}
   
-  Future<String> setZIndex(double var1) {}
+  Future<void> setZIndex(double var1) {}
   
   Future<double> getZIndex() {}
   
@@ -21,9 +21,9 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   
   Future<com_amap_api_maps_model_LatLng> getPosition() {}
   
-  Future<String> setPosition(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) {}
   
-  Future<String> setVisible(bool var1) {}
+  Future<void> setVisible(bool var1) {}
   
   Future<bool> isVisible() {}
   
@@ -31,7 +31,7 @@ mixin com_autonavi_amap_mapcore_interfaces_IOverlayImage on java_lang_Object {
   
   Future<int> hashCodeRemote() {}
   
-  Future<String> setAnchor(double var1, double var2) {}
+  Future<void> setAnchor(double var1, double var2) {}
   
   Future<double> getAnchorU() {}
   

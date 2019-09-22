@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> resumeMarker(android_graphics_Bitmap var1) async {
+   Future<void> resumeMarker(android_graphics_Bitmap var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::resumeMarker([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> AddOverlayTexture(android_graphics_Bitmap var1, int var2, int var3) async {
+   Future<void> AddOverlayTexture(android_graphics_Bitmap var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::AddOverlayTexture([\'var2\':$var2, \'var3\':$var3])');
   
@@ -59,7 +59,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
+   Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setAttribute([])');
   
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::remove([])');
   
@@ -89,7 +89,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setImageMode(bool var1) async {
+   Future<void> setImageMode(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setImageMode([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_autonavi_ae_gmap_gloverlay_CrossVectorOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
+   Future<void> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.CrossVectorOverlay@$refId::setGenerateCrossImageListener([])');
   

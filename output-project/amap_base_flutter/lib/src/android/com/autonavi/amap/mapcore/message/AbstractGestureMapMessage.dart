@@ -93,7 +93,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     return result;
   }
   
-   Future<String> setState(int var1) async {
+   Future<void> setState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::setState([\'var1\':$var1])');
   
@@ -108,7 +108,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     return result;
   }
   
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::reset([])');
   
@@ -123,7 +123,7 @@ class com_autonavi_amap_mapcore_message_AbstractGestureMapMessage extends com_au
     return result;
   }
   
-   Future<String> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.AbstractGestureMapMessage@$refId::runCameraUpdate([])');
   

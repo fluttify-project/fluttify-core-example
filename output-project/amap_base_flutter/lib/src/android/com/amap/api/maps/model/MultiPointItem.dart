@@ -29,7 +29,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setLatLng(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomerId(String var1) async {
+   Future<void> setCustomerId(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSnippet(String var1) async {
+   Future<void> setSnippet(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTitle(String var1) async {
+   Future<void> setTitle(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
     return com_autonavi_amap_mapcore_IPoint()..refId = result;
   }
   
-   Future<String> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
+   Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
   

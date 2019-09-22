@@ -44,7 +44,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPosition(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setPosition([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTitle(String var1) async {
+   Future<void> setTitle(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setTitle([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSnippet(String var1) async {
+   Future<void> setSnippet(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setSnippet([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRotateAngle(double var1) async {
+   Future<void> setRotateAngle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setRotateAngle([\'var1\':$var1])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setAnimation([])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
+   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::setGeoPoint([])');
   
@@ -209,7 +209,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::destroy([])');
   
@@ -224,7 +224,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::remove([])');
   
@@ -254,7 +254,7 @@ class com_amap_api_maps_model_BasePointOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> showInfoWindow() async {
+   Future<void> showInfoWindow() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BasePointOverlay@$refId::showInfoWindow([])');
   

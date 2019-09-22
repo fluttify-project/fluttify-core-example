@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   Future<double> getAlpha() {}
   
-  Future<String> setAlpha(double var1) {}
+  Future<void> setAlpha(double var1) {}
   
   Future<int> getDisplayLevel() {}
   
@@ -19,24 +19,24 @@ mixin com_autonavi_amap_mapcore_interfaces_IMarkerAction on java_lang_Object {
   
   Future<bool> isInfoWindowEnable() {}
   
-  Future<String> setInfoWindowEnable(bool var1) {}
+  Future<void> setInfoWindowEnable(bool var1) {}
   
-  Future<String> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) {}
+  Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) {}
   
-  Future<String> setAutoOverturnInfoWindow(bool var1) {}
+  Future<void> setAutoOverturnInfoWindow(bool var1) {}
   
-  Future<String> setClickable(bool var1) {}
+  Future<void> setClickable(bool var1) {}
   
-  Future<String> setDisplayLevel(int var1) {}
+  Future<void> setDisplayLevel(int var1) {}
   
-  Future<String> setFixingPointEnable(bool var1) {}
+  Future<void> setFixingPointEnable(bool var1) {}
   
-  Future<String> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) {}
+  Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) {}
   
-  Future<String> setRotateAngleNotUpdate(double var1) {}
+  Future<void> setRotateAngleNotUpdate(double var1) {}
   
-  Future<String> setSnippet(String var1) {}
+  Future<void> setSnippet(String var1) {}
   
-  Future<String> setTitle(String var1) {}
+  Future<void> setTitle(String var1) {}
   
 }

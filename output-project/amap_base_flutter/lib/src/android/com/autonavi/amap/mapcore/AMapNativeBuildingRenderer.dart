@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends Ref_Android  
     return result;
   }
   
-  static Future<String> nativeClearBuildingOptions(int var0) async {
+  static Future<void> nativeClearBuildingOptions(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeClearBuildingOptions([\'var0\':$var0])');
   
@@ -44,7 +44,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends Ref_Android  
     return result;
   }
   
-  static Future<String> addBuildingOptions(int var0, com_amap_api_maps_model_BuildingOverlayOptions var2) async {
+  static Future<void> addBuildingOptions(int var0, com_amap_api_maps_model_BuildingOverlayOptions var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::addBuildingOptions([\'var0\':$var0])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends Ref_Android  
     return result;
   }
   
-  static Future<String> nativeDestory(int var0) async {
+  static Future<void> nativeDestory(int var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeDestory([\'var0\':$var0])');
   
@@ -74,7 +74,7 @@ class com_autonavi_amap_mapcore_AMapNativeBuildingRenderer extends Ref_Android  
     return result;
   }
   
-  static Future<String> nativeSetGLShaderManager(int var0, int var2) async {
+  static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativeBuildingRenderer::nativeSetGLShaderManager([\'var0\':$var0, \'var2\':$var2])');
   

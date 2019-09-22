@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
   
 
   // 生成方法们
-   Future<String> setMapCoreListener() async {
+   Future<void> setMapCoreListener() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapCoreListener([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
     return result;
   }
   
-   Future<String> clearAnimations() async {
+   Future<void> clearAnimations() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::clearAnimations([])');
   
@@ -59,7 +59,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
     return result;
   }
   
-   Future<String> doAnimations(com_autonavi_ae_gmap_GLMapState var1) async {
+   Future<void> doAnimations(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::doAnimations([])');
   
@@ -74,7 +74,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
     return result;
   }
   
-   Future<String> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1, com_amap_api_maps_AMap_CancelableCallback var2) async {
+   Future<void> addAnimation(com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation var1, com_amap_api_maps_AMap_CancelableCallback var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::addAnimation([])');
   
@@ -113,7 +113,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr extends Ref_Android  
     return result;
   }
   
-   Future<String> setMapAnimationListener(com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener var1) async {
+   Future<void> setMapAnimationListener(com_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr_MapAnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimationMgr@$refId::setMapAnimationListener([])');
   

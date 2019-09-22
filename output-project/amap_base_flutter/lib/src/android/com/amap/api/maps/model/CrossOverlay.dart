@@ -14,7 +14,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
+   Future<void> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setAttribute([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::remove([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setImageMode(bool var1) async {
+   Future<void> setImageMode(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setImageMode([\'var1\':$var1])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_CrossOverlay extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
+   Future<void> setGenerateCrossImageListener(com_amap_api_maps_model_CrossOverlay_GenerateCrossImageListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlay@$refId::setGenerateCrossImageListener([])');
   

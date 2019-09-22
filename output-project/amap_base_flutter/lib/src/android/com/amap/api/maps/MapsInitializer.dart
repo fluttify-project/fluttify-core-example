@@ -14,7 +14,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
 
   // 生成方法们
-  static Future<String> initialize(android_content_Context var0) async {
+  static Future<void> initialize(android_content_Context var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::initialize([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setNetWorkEnable(bool var0) async {
+  static Future<void> setNetWorkEnable(bool var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setNetWorkEnable([\'var0\':$var0])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setApiKey(String var0) async {
+  static Future<void> setApiKey(String var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setApiKey([\'var0\':$var0])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> loadWorldGridMap(bool var0) async {
+  static Future<void> loadWorldGridMap(bool var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::loadWorldGridMap([\'var0\':$var0])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setBuildingHeight(int var0) async {
+  static Future<void> setBuildingHeight(int var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setBuildingHeight([\'var0\':$var0])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setDownloadCoordinateConvertLibrary(bool var0) async {
+  static Future<void> setDownloadCoordinateConvertLibrary(bool var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setDownloadCoordinateConvertLibrary([\'var0\':$var0])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setHost(String var0) async {
+  static Future<void> setHost(String var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setHost([\'var0\':$var0])');
   
@@ -179,7 +179,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> setProtocol(int var0) async {
+  static Future<void> setProtocol(int var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::setProtocol([\'var0\':$var0])');
   
@@ -209,7 +209,7 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
     return result;
   }
   
-  static Future<String> closeTileOverlay(bool var0) async {
+  static Future<void> closeTileOverlay(bool var0) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.MapsInitializer::closeTileOverlay([\'var0\':$var0])');
   

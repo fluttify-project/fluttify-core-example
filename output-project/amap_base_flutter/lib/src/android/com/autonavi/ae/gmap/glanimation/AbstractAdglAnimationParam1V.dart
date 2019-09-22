@@ -14,7 +14,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends Ref_
   
 
   // 生成方法们
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::reset([])');
   
@@ -29,7 +29,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends Ref_
     return result;
   }
   
-   Future<String> setFromValue(double var1) async {
+   Future<void> setFromValue(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setFromValue([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends Ref_
     return result;
   }
   
-   Future<String> setToValue(double var1) async {
+   Future<void> setToValue(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::setToValue([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V extends Ref_
     return result;
   }
   
-   Future<String> checkParam() async {
+   Future<void> checkParam() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam1V@$refId::checkParam([])');
   

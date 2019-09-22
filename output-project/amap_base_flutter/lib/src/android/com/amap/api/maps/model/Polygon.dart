@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setPoints([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
+   Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setHoleOptions([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeWidth(double var1) async {
+   Future<void> setStrokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setStrokeWidth([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeColor(int var1) async {
+   Future<void> setStrokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setStrokeColor([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFillColor(int var1) async {
+   Future<void> setFillColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setFillColor([\'var1\':$var1])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setZIndex([\'var1\':$var1])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_model_Polygon extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Polygon@$refId::setVisible([\'var1\':$var1])');
   

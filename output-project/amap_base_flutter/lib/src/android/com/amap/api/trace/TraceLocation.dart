@@ -29,7 +29,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLatitude(double var1) async {
+   Future<void> setLatitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLatitude([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLongitude(double var1) async {
+   Future<void> setLongitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLongitude([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSpeed(double var1) async {
+   Future<void> setSpeed(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setSpeed([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setBearing(double var1) async {
+   Future<void> setBearing(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setBearing([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTime(int var1) async {
+   Future<void> setTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setTime([\'var1\':$var1])');
   

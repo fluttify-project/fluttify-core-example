@@ -29,7 +29,7 @@ class com_amap_api_maps_model_PoiPara extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setCenter(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::setCenter([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_PoiPara extends Ref_Android  {
     return result;
   }
   
-   Future<String> setKeywords(String var1) async {
+   Future<void> setKeywords(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PoiPara@$refId::setKeywords([\'var1\':$var1])');
   

@@ -44,7 +44,7 @@ class com_autonavi_amap_mapcore_FileUtil extends Ref_Android  {
     return result;
   }
   
-  static Future<String> createNoMediaFileIfNotExist(String var0) async {
+  static Future<void> createNoMediaFileIfNotExist(String var0) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::createNoMediaFileIfNotExist([\'var0\':$var0])');
   
@@ -59,7 +59,7 @@ class com_autonavi_amap_mapcore_FileUtil extends Ref_Android  {
     return result;
   }
   
-  static Future<String> saveFile(String var0, String var1, bool var2) async {
+  static Future<void> saveFile(String var0, String var1, bool var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.FileUtil::saveFile([\'var0\':$var0, \'var1\':$var1, \'var2\':$var2])');
   

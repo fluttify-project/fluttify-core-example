@@ -29,7 +29,7 @@ class com_autonavi_amap_mapcore_AMapNativePolyline extends Ref_Android  {
     return result;
   }
   
-  static Future<String> nativeSetGLShaderManager(int var0, int var2) async {
+  static Future<void> nativeSetGLShaderManager(int var0, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AMapNativePolyline::nativeSetGLShaderManager([\'var0\':$var0, \'var2\':$var2])');
   

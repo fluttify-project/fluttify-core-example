@@ -23,7 +23,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setDuration(int var1) async {
+   Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setDuration([\'var1\':$var1])');
   
@@ -38,7 +38,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
     return result;
   }
   
-   Future<String> reset() async {
+   Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::reset([])');
   
@@ -68,7 +68,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
     return result;
   }
   
-   Future<String> setToMapAngle(double var1, int var2) async {
+   Future<void> setToMapAngle(double var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapAngle([\'var1\':$var1, \'var2\':$var2])');
   
@@ -83,7 +83,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
     return result;
   }
   
-   Future<String> setToMapCenterGeo(int var1, int var2, int var3) async {
+   Future<void> setToMapCenterGeo(int var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapCenterGeo([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
@@ -98,7 +98,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
     return result;
   }
   
-   Future<String> setToMapLevel(double var1, int var2) async {
+   Future<void> setToMapLevel(double var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToMapLevel([\'var1\':$var1, \'var2\':$var2])');
   
@@ -113,7 +113,7 @@ class com_autonavi_ae_gmap_glanimation_AdglMapAnimGroup extends Ref_Android  {
     return result;
   }
   
-   Future<String> setToCameraDegree(double var1, int var2) async {
+   Future<void> setToCameraDegree(double var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AdglMapAnimGroup@$refId::setToCameraDegree([\'var1\':$var1, \'var2\':$var2])');
   

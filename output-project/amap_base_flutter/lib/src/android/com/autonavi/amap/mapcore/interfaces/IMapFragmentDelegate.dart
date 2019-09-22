@@ -5,28 +5,28 @@ import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types
 mixin com_autonavi_amap_mapcore_interfaces_IMapFragmentDelegate on java_lang_Object {
-  Future<String> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) {}
+  Future<void> onInflate(android_app_Activity var1, com_amap_api_maps_AMapOptions var2, android_os_Bundle var3) {}
   
-  Future<String> setContext(android_content_Context var1) {}
+  Future<void> setContext(android_content_Context var1) {}
   
-  Future<String> setOptions(com_amap_api_maps_AMapOptions var1) {}
+  Future<void> setOptions(com_amap_api_maps_AMapOptions var1) {}
   
-  Future<String> onCreate(android_os_Bundle var1) {}
+  Future<void> onCreate(android_os_Bundle var1) {}
   
-  Future<String> onResume() {}
+  Future<void> onResume() {}
   
-  Future<String> onPause() {}
+  Future<void> onPause() {}
   
-  Future<String> onDestroyView() {}
+  Future<void> onDestroyView() {}
   
-  Future<String> onDestroy() {}
+  Future<void> onDestroy() {}
   
-  Future<String> onLowMemory() {}
+  Future<void> onLowMemory() {}
   
-  Future<String> onSaveInstanceState(android_os_Bundle var1) {}
+  Future<void> onSaveInstanceState(android_os_Bundle var1) {}
   
   Future<bool> isReady() {}
   
-  Future<String> setVisibility(int var1) {}
+  Future<void> setVisibility(int var1) {}
   
 }

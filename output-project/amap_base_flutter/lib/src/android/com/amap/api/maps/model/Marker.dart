@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setPeriod(int var1) async {
+   Future<void> setPeriod(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPeriod([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<void> setIcons(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcons([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::remove([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> destroy() async {
+   Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::destroy([])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPerspective(bool var1) async {
+   Future<void> setPerspective(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPerspective([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPosition(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPosition([])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setTitle(String var1) async {
+   Future<void> setTitle(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setTitle([\'var1\':$var1])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSnippet(String var1) async {
+   Future<void> setSnippet(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setSnippet([\'var1\':$var1])');
   
@@ -224,7 +224,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
+   Future<void> setIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setIcon([])');
   
@@ -239,7 +239,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnchor(double var1, double var2) async {
+   Future<void> setAnchor(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnchor([\'var1\':$var1, \'var2\':$var2])');
   
@@ -254,7 +254,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDraggable(bool var1) async {
+   Future<void> setDraggable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDraggable([\'var1\':$var1])');
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> showInfoWindow() async {
+   Future<void> showInfoWindow() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::showInfoWindow([])');
   
@@ -299,7 +299,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> hideInfoWindow() async {
+   Future<void> hideInfoWindow() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::hideInfoWindow([])');
   
@@ -329,7 +329,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setVisible([\'var1\':$var1])');
   
@@ -359,7 +359,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRotateAngle(double var1) async {
+   Future<void> setRotateAngle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngle([\'var1\':$var1])');
   
@@ -389,7 +389,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setToTop() async {
+   Future<void> setToTop() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setToTop([])');
   
@@ -404,7 +404,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
+   Future<void> setGeoPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setGeoPoint([])');
   
@@ -434,7 +434,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return com_autonavi_amap_mapcore_IPoint()..refId = result;
   }
   
-   Future<String> setFlat(bool var1) async {
+   Future<void> setFlat(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFlat([\'var1\':$var1])');
   
@@ -464,7 +464,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPositionByPixels(int var1, int var2) async {
+   Future<void> setPositionByPixels(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionByPixels([\'var1\':$var1, \'var2\':$var2])');
   
@@ -479,7 +479,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setZIndex([\'var1\':$var1])');
   
@@ -509,7 +509,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
+   Future<void> setAnimation(com_amap_api_maps_model_animation_Animation var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimation([])');
   
@@ -539,7 +539,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
+   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAnimationListener([])');
   
@@ -593,7 +593,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAlpha(double var1) async {
+   Future<void> setAlpha(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAlpha([\'var1\':$var1])');
   
@@ -683,7 +683,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowEnable(bool var1) async {
+   Future<void> setInfoWindowEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setInfoWindowEnable([\'var1\':$var1])');
   
@@ -698,7 +698,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
+   Future<void> setMarkerOptions(com_amap_api_maps_model_MarkerOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setMarkerOptions([])');
   
@@ -713,7 +713,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAutoOverturnInfoWindow(bool var1) async {
+   Future<void> setAutoOverturnInfoWindow(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setAutoOverturnInfoWindow([\'var1\':$var1])');
   
@@ -728,7 +728,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setClickable(bool var1) async {
+   Future<void> setClickable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setClickable([\'var1\':$var1])');
   
@@ -743,7 +743,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setDisplayLevel(int var1) async {
+   Future<void> setDisplayLevel(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setDisplayLevel([\'var1\':$var1])');
   
@@ -758,7 +758,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFixingPointEnable(bool var1) async {
+   Future<void> setFixingPointEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setFixingPointEnable([\'var1\':$var1])');
   
@@ -788,7 +788,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPositionNotUpdate(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setPositionNotUpdate([])');
   
@@ -803,7 +803,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRotateAngleNotUpdate(double var1) async {
+   Future<void> setRotateAngleNotUpdate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setRotateAngleNotUpdate([\'var1\':$var1])');
   
@@ -818,7 +818,7 @@ class com_amap_api_maps_model_Marker extends Ref_Android  {
     return result;
   }
   
-   Future<String> setBelowMaskLayer(bool var1) async {
+   Future<void> setBelowMaskLayer(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Marker@$refId::setBelowMaskLayer([\'var1\':$var1])');
   

@@ -14,7 +14,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setScaleControlsEnabled(bool var1) async {
+   Future<void> setScaleControlsEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScaleControlsEnabled([\'var1\':$var1])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZoomControlsEnabled(bool var1) async {
+   Future<void> setZoomControlsEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomControlsEnabled([\'var1\':$var1])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCompassEnabled(bool var1) async {
+   Future<void> setCompassEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setCompassEnabled([\'var1\':$var1])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMyLocationButtonEnabled(bool var1) async {
+   Future<void> setMyLocationButtonEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setMyLocationButtonEnabled([\'var1\':$var1])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setScrollGesturesEnabled(bool var1) async {
+   Future<void> setScrollGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setScrollGesturesEnabled([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZoomGesturesEnabled(bool var1) async {
+   Future<void> setZoomGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomGesturesEnabled([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTiltGesturesEnabled(bool var1) async {
+   Future<void> setTiltGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setTiltGesturesEnabled([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRotateGesturesEnabled(bool var1) async {
+   Future<void> setRotateGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setRotateGesturesEnabled([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAllGesturesEnabled(bool var1) async {
+   Future<void> setAllGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setAllGesturesEnabled([\'var1\':$var1])');
   
@@ -149,7 +149,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLogoPosition(int var1) async {
+   Future<void> setLogoPosition(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoPosition([\'var1\':$var1])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZoomPosition(int var1) async {
+   Future<void> setZoomPosition(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomPosition([\'var1\':$var1])');
   
@@ -344,7 +344,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setIndoorSwitchEnabled(bool var1) async {
+   Future<void> setIndoorSwitchEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setIndoorSwitchEnabled([\'var1\':$var1])');
   
@@ -359,7 +359,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLogoMarginRate(int var1, double var2) async {
+   Future<void> setLogoMarginRate(int var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoMarginRate([\'var1\':$var1, \'var2\':$var2])');
   
@@ -389,7 +389,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLogoLeftMargin(int var1) async {
+   Future<void> setLogoLeftMargin(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoLeftMargin([\'var1\':$var1])');
   
@@ -404,7 +404,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLogoBottomMargin(int var1) async {
+   Future<void> setLogoBottomMargin(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setLogoBottomMargin([\'var1\':$var1])');
   
@@ -419,7 +419,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZoomInByScreenCenter(bool var1) async {
+   Future<void> setZoomInByScreenCenter(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setZoomInByScreenCenter([\'var1\':$var1])');
   
@@ -434,7 +434,7 @@ class com_amap_api_maps_UiSettings extends Ref_Android  {
     return result;
   }
   
-   Future<String> setGestureScaleByMapCenter(bool var1) async {
+   Future<void> setGestureScaleByMapCenter(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.UiSettings@$refId::setGestureScaleByMapCenter([\'var1\':$var1])');
   

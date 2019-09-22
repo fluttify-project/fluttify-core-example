@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCenter(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setCenter(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setCenter([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return com_amap_api_maps_model_LatLng()..refId = result;
   }
   
-   Future<String> setRadius(double var1) async {
+   Future<void> setRadius(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setRadius([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeWidth(double var1) async {
+   Future<void> setStrokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeWidth([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeColor(int var1) async {
+   Future<void> setStrokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeColor([\'var1\':$var1])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setFillColor(int var1) async {
+   Future<void> setFillColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setFillColor([\'var1\':$var1])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setZIndex([\'var1\':$var1])');
   
@@ -224,7 +224,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setVisible([\'var1\':$var1])');
   
@@ -269,7 +269,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
+   Future<void> setHoleOptions(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setHoleOptions([])');
   
@@ -284,7 +284,7 @@ class com_amap_api_maps_model_Circle extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeDottedLineType(int var1) async {
+   Future<void> setStrokeDottedLineType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Circle@$refId::setStrokeDottedLineType([\'var1\':$var1])');
   

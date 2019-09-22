@@ -59,7 +59,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> moveCamera(com_amap_api_maps_CameraUpdate var1) async {
+   Future<void> moveCamera(com_amap_api_maps_CameraUpdate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::moveCamera([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> animateCamera(com_amap_api_maps_CameraUpdate var1) async {
+   Future<void> animateCamera(com_amap_api_maps_CameraUpdate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::animateCamera([])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> stopAnimation() async {
+   Future<void> stopAnimation() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::stopAnimation([])');
   
@@ -299,7 +299,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return com_amap_api_maps_model_particle_ParticleOverlay()..refId = result;
   }
   
-   Future<String> clear() async {
+   Future<void> clear() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::clear([])');
   
@@ -329,7 +329,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapType(int var1) async {
+   Future<void> setMapType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapType([\'var1\':$var1])');
   
@@ -359,7 +359,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTrafficEnabled(bool var1) async {
+   Future<void> setTrafficEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setTrafficEnabled([\'var1\':$var1])');
   
@@ -374,7 +374,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> showMapText(bool var1) async {
+   Future<void> showMapText(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::showMapText([\'var1\':$var1])');
   
@@ -389,7 +389,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> showIndoorMap(bool var1) async {
+   Future<void> showIndoorMap(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::showIndoorMap([\'var1\':$var1])');
   
@@ -404,7 +404,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> showBuildings(bool var1) async {
+   Future<void> showBuildings(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::showBuildings([\'var1\':$var1])');
   
@@ -419,7 +419,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) async {
+   Future<void> setMyTrafficStyle(com_amap_api_maps_model_MyTrafficStyle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMyTrafficStyle([])');
   
@@ -464,7 +464,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMyLocationEnabled(bool var1) async {
+   Future<void> setMyLocationEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMyLocationEnabled([\'var1\':$var1])');
   
@@ -494,7 +494,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return android_location_Location()..refId = result;
   }
   
-   Future<String> setLocationSource(com_amap_api_maps_LocationSource var1) async {
+   Future<void> setLocationSource(com_amap_api_maps_LocationSource var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setLocationSource([])');
   
@@ -509,7 +509,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) async {
+   Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMyLocationStyle([])');
   
@@ -539,7 +539,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return com_amap_api_maps_model_MyLocationStyle()..refId = result;
   }
   
-   Future<String> setMyLocationType(int var1) async {
+   Future<void> setMyLocationType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMyLocationType([\'var1\':$var1])');
   
@@ -554,7 +554,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMyLocationRotateAngle(double var1) async {
+   Future<void> setMyLocationRotateAngle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMyLocationRotateAngle([\'var1\':$var1])');
   
@@ -599,7 +599,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return com_amap_api_maps_Projection()..refId = result;
   }
   
-   Future<String> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
+   Future<void> setOnCameraChangeListener(com_amap_api_maps_AMap_OnCameraChangeListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnCameraChangeListener([])');
   
@@ -638,7 +638,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
+   Future<void> setOnMapClickListener(com_amap_api_maps_AMap_OnMapClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapClickListener([])');
   
@@ -670,7 +670,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
+   Future<void> setOnMapTouchListener(com_amap_api_maps_AMap_OnMapTouchListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapTouchListener([])');
   
@@ -702,7 +702,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
+   Future<void> setOnPOIClickListener(com_amap_api_maps_AMap_OnPOIClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnPOIClickListener([])');
   
@@ -734,7 +734,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
+   Future<void> setOnMyLocationChangeListener(com_amap_api_maps_AMap_OnMyLocationChangeListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMyLocationChangeListener([])');
   
@@ -766,7 +766,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
+   Future<void> setOnMapLongClickListener(com_amap_api_maps_AMap_OnMapLongClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapLongClickListener([])');
   
@@ -798,7 +798,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
+   Future<void> setOnMarkerClickListener(com_amap_api_maps_AMap_OnMarkerClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMarkerClickListener([])');
   
@@ -830,7 +830,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
+   Future<void> setOnPolylineClickListener(com_amap_api_maps_AMap_OnPolylineClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnPolylineClickListener([])');
   
@@ -862,7 +862,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
+   Future<void> setOnMarkerDragListener(com_amap_api_maps_AMap_OnMarkerDragListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMarkerDragListener([])');
   
@@ -908,7 +908,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
+   Future<void> setOnInfoWindowClickListener(com_amap_api_maps_AMap_OnInfoWindowClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnInfoWindowClickListener([])');
   
@@ -940,7 +940,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) async {
+   Future<void> setInfoWindowAdapter(com_amap_api_maps_AMap_InfoWindowAdapter var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setInfoWindowAdapter([])');
   
@@ -955,7 +955,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCommonInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) async {
+   Future<void> setCommonInfoWindowAdapter(com_amap_api_maps_AMap_CommonInfoWindowAdapter var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCommonInfoWindowAdapter([])');
   
@@ -981,7 +981,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMapLoadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
+   Future<void> setOnMapLoadedListener(com_amap_api_maps_AMap_OnMapLoadedListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMapLoadedListener([])');
   
@@ -1013,7 +1013,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
+   Future<void> setOnIndoorBuildingActiveListener(com_amap_api_maps_AMap_OnIndoorBuildingActiveListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnIndoorBuildingActiveListener([])');
   
@@ -1045,7 +1045,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) async {
+   Future<void> setOnMultiPointClickListener(com_amap_api_maps_AMap_OnMultiPointClickListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setOnMultiPointClickListener([])');
   
@@ -1077,7 +1077,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) async {
+   Future<void> getMapPrintScreen(com_amap_api_maps_AMap_onMapPrintScreenListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::getMapPrintScreen([])');
   
@@ -1109,7 +1109,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) async {
+   Future<void> getMapScreenShot(com_amap_api_maps_AMap_OnMapScreenShotListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::getMapScreenShot([])');
   
@@ -1156,7 +1156,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> runOnDrawFrame() async {
+   Future<void> runOnDrawFrame() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::runOnDrawFrame([])');
   
@@ -1171,7 +1171,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> removecache() async {
+   Future<void> removecache() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::removecache([])');
   
@@ -1186,7 +1186,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) async {
+   Future<void> setCustomRenderer(com_amap_api_maps_CustomRenderer var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomRenderer([])');
   
@@ -1201,7 +1201,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPointToCenter(int var1, int var2) async {
+   Future<void> setPointToCenter(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setPointToCenter([\'var1\':$var1, \'var2\':$var2])');
   
@@ -1216,7 +1216,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapTextZIndex(int var1) async {
+   Future<void> setMapTextZIndex(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapTextZIndex([\'var1\':$var1])');
   
@@ -1231,7 +1231,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setLoadOfflineData(bool var1) async {
+   Future<void> setLoadOfflineData(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setLoadOfflineData([\'var1\':$var1])');
   
@@ -1261,7 +1261,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> reloadMap() async {
+   Future<void> reloadMap() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::reloadMap([])');
   
@@ -1276,7 +1276,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRenderFps(int var1) async {
+   Future<void> setRenderFps(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setRenderFps([\'var1\':$var1])');
   
@@ -1291,7 +1291,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) async {
+   Future<void> setIndoorBuildingInfo(com_amap_api_maps_model_IndoorBuildingInfo var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setIndoorBuildingInfo([])');
   
@@ -1306,7 +1306,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) async {
+   Future<void> setAMapGestureListener(com_amap_api_maps_model_AMapGestureListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setAMapGestureListener([])');
   
@@ -1417,7 +1417,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return com_amap_api_maps_InfoWindowAnimationManager()..refId = result;
   }
   
-   Future<String> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) async {
+   Future<void> setMaskLayerParams(int var1, int var2, int var3, int var4, int var5, int var6) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMaskLayerParams([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4, \'var5\':$var5, \'var6\':$var6])');
   
@@ -1432,7 +1432,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMaxZoomLevel(double var1) async {
+   Future<void> setMaxZoomLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMaxZoomLevel([\'var1\':$var1])');
   
@@ -1447,7 +1447,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMinZoomLevel(double var1) async {
+   Future<void> setMinZoomLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMinZoomLevel([\'var1\':$var1])');
   
@@ -1462,7 +1462,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> resetMinMaxZoomPreference() async {
+   Future<void> resetMinMaxZoomPreference() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::resetMinMaxZoomPreference([])');
   
@@ -1477,7 +1477,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) async {
+   Future<void> setMapStatusLimits(com_amap_api_maps_model_LatLngBounds var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapStatusLimits([])');
   
@@ -1522,7 +1522,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return com_amap_api_maps_model_RouteOverlay()..refId = result;
   }
   
-   Future<String> setMapCustomEnable(bool var1) async {
+   Future<void> setMapCustomEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapCustomEnable([\'var1\':$var1])');
   
@@ -1537,7 +1537,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomMapStylePath(String var1) async {
+   Future<void> setCustomMapStylePath(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomMapStylePath([\'var1\':$var1])');
   
@@ -1552,7 +1552,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) async {
+   Future<void> setCustomMapStyle(com_amap_api_maps_model_CustomMapStyleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomMapStyle([])');
   
@@ -1567,7 +1567,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomMapStyleID(String var1) async {
+   Future<void> setCustomMapStyleID(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomMapStyleID([\'var1\':$var1])');
   
@@ -1582,7 +1582,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setCustomTextureResourcePath(String var1) async {
+   Future<void> setCustomTextureResourcePath(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setCustomTextureResourcePath([\'var1\':$var1])');
   
@@ -1597,7 +1597,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRenderMode(int var1) async {
+   Future<void> setRenderMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setRenderMode([\'var1\':$var1])');
   
@@ -1612,7 +1612,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> getP20MapCenter(com_autonavi_amap_mapcore_IPoint var1) async {
+   Future<void> getP20MapCenter(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::getP20MapCenter([])');
   
@@ -1657,7 +1657,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setMapLanguage(String var1) async {
+   Future<void> setMapLanguage(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setMapLanguage([\'var1\':$var1])');
   
@@ -1672,7 +1672,7 @@ class com_amap_api_maps_AMap extends Ref_Android  {
     return result;
   }
   
-   Future<String> setRoadArrowEnable(bool var1) async {
+   Future<void> setRoadArrowEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMap@$refId::setRoadArrowEnable([\'var1\':$var1])');
   

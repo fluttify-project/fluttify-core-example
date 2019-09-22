@@ -14,7 +14,7 @@ class com_amap_api_maps_model_Arc extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_Arc extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeWidth(double var1) async {
+   Future<void> setStrokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeWidth([\'var1\':$var1])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_Arc extends Ref_Android  {
     return result;
   }
   
-   Future<String> setStrokeColor(int var1) async {
+   Future<void> setStrokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setStrokeColor([\'var1\':$var1])');
   
@@ -104,7 +104,7 @@ class com_amap_api_maps_model_Arc extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setZIndex([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_model_Arc extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Arc@$refId::setVisible([\'var1\':$var1])');
   

@@ -78,7 +78,7 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends Ref_Andro
   
 
   // 生成方法们
-   Future<String> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLTranslateAnimation@$refId::setFromPoint([])');
   

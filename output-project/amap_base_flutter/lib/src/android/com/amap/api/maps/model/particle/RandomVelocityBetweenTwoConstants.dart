@@ -14,7 +14,7 @@ class com_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants extends
   
 
   // 生成方法们
-   Future<String> createNativeInstace() async {
+   Future<void> createNativeInstace() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.RandomVelocityBetweenTwoConstants@$refId::createNativeInstace([])');
   

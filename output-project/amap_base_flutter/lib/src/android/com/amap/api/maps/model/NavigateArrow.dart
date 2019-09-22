@@ -14,7 +14,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> remove() async {
+   Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::remove([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setPoints(com_amap_api_maps_model_LatLng var1) async {
+   Future<void> setPoints(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setPoints([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setWidth(double var1) async {
+   Future<void> setWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setWidth([\'var1\':$var1])');
   
@@ -89,7 +89,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setTopColor(int var1) async {
+   Future<void> setTopColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setTopColor([\'var1\':$var1])');
   
@@ -119,7 +119,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setSideColor(int var1) async {
+   Future<void> setSideColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setSideColor([\'var1\':$var1])');
   
@@ -134,7 +134,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setZIndex(double var1) async {
+   Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setZIndex([\'var1\':$var1])');
   
@@ -164,7 +164,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> setVisible(bool var1) async {
+   Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::setVisible([\'var1\':$var1])');
   
@@ -194,7 +194,7 @@ class com_amap_api_maps_model_NavigateArrow extends Ref_Android  {
     return result;
   }
   
-   Future<String> set3DModel(bool var1) async {
+   Future<void> set3DModel(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NavigateArrow@$refId::set3DModel([\'var1\':$var1])');
   

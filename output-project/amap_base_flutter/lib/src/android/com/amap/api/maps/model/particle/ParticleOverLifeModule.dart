@@ -14,7 +14,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
 
   // 生成方法们
-   Future<String> createNativeInstace() async {
+   Future<void> createNativeInstace() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::createNativeInstace([])');
   
@@ -29,7 +29,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     return result;
   }
   
-   Future<String> setVelocityOverLife(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
+   Future<void> setVelocityOverLife(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setVelocityOverLife([])');
   
@@ -44,7 +44,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     return result;
   }
   
-   Future<String> setRotateOverLife(com_amap_api_maps_model_particle_RotationOverLife var1) async {
+   Future<void> setRotateOverLife(com_amap_api_maps_model_particle_RotationOverLife var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setRotateOverLife([])');
   
@@ -59,7 +59,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     return result;
   }
   
-   Future<String> setSizeOverLife(com_amap_api_maps_model_particle_SizeOverLife var1) async {
+   Future<void> setSizeOverLife(com_amap_api_maps_model_particle_SizeOverLife var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setSizeOverLife([])');
   
@@ -74,7 +74,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
     return result;
   }
   
-   Future<String> setColorGenerate(com_amap_api_maps_model_particle_ColorGenerate var1) async {
+   Future<void> setColorGenerate(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setColorGenerate([])');
   

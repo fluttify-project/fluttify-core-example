@@ -23,7 +23,7 @@ class com_autonavi_amap_mapcore_FPoint3 extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setColorIndex(int var1) async {
+   Future<void> setColorIndex(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.FPoint3@$refId::setColorIndex([\'var1\':$var1])');
   

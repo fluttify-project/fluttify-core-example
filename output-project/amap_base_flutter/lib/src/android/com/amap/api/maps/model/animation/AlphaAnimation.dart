@@ -14,7 +14,7 @@ class com_amap_api_maps_model_animation_AlphaAnimation extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> setDuration(int var1) async {
+   Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.AlphaAnimation@$refId::setDuration([\'var1\':$var1])');
   
