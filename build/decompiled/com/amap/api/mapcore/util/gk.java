@@ -74,28 +74,28 @@ public class gk {
    private static File b(Context var0) {
       File var1 = null;
 
-      File var2;
       try {
-         if (var0 != null) {
-            if (Environment.getExternalStorageState().equals("mounted")) {
-               var1 = Environment.getExternalStorageDirectory();
-               if (!var1.canWrite()) {
-                  var1 = var0.getFilesDir();
-               } else {
-                  var1 = var0.getExternalFilesDir("LBS");
-               }
-            } else {
-               var1 = var0.getFilesDir();
-            }
-
-            var2 = var1;
+         File var2;
+         if (var0 == null) {
+            var2 = null;
             return var2;
          }
 
-         var2 = null;
+         if (Environment.getExternalStorageState().equals("mounted")) {
+            var1 = Environment.getExternalStorageDirectory();
+            if (!var1.canWrite()) {
+               var1 = var0.getFilesDir();
+            } else {
+               var1 = var0.getExternalFilesDir("LBS");
+            }
+         } else {
+            var1 = var0.getFilesDir();
+         }
+
+         var2 = var1;
+         return var2;
       } catch (Exception var7) {
          var7.printStackTrace();
-         return var1;
       } finally {
          if (var1 == null && var0 != null) {
             var1 = var0.getFilesDir();
@@ -103,7 +103,7 @@ public class gk {
 
       }
 
-      return var2;
+      return var1;
    }
 
    public static Resources a() {
@@ -138,20 +138,21 @@ public class gk {
       InputStream var1 = null;
       OutputStream var2 = null;
 
+      boolean var4;
       try {
          var1 = var0.getResources().getAssets().open(l);
-         if (b(var1)) {
-            boolean var3 = true;
-            return var3;
+         if (!b(var1)) {
+            e();
+            var2 = a(var1);
+            return true;
          }
 
-         e();
-         var2 = a(var1);
+         boolean var3 = true;
+         return var3;
       } catch (Throwable var15) {
          var15.printStackTrace();
          ht.c(var15, "ResourcesUtil", "copyResourceJarToAppFilesDir(Context ctx)");
-         boolean var4 = false;
-         return var4;
+         var4 = false;
       } finally {
          try {
             if (var1 != null) {
@@ -168,7 +169,7 @@ public class gk {
 
       }
 
-      return true;
+      return var4;
    }
 
    private static OutputStream a(InputStream var0) throws IOException {

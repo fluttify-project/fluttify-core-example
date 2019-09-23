@@ -14,36 +14,33 @@ class ae$2 implements Runnable {
    public void run() {
       try {
          ae.a(this.a, false);
-         if (ae.b(this.a)) {
-            return;
-         }
+         if (!ae.b(this.a)) {
+            int var1 = 0;
+            ae.a(this.a, 0);
 
-         int var1 = 0;
-         ae.a(this.a, 0);
+            while(!ae.b(this.a) && ae.c(this.a) < 5 && var1 < 50) {
+               ++var1;
 
-         while(true) {
-            if (ae.b(this.a) || ae.c(this.a) >= 5 || var1 >= 50) {
-               return;
-            }
-
-            ++var1;
-
-            try {
-               Thread.sleep(16L);
-            } catch (InterruptedException var7) {
-               var7.printStackTrace();
-            }
-
-            if (!ae.d(this.a)) {
-               if (ae.e(this.a) != null) {
-                  ae.e(this.a).onGenerateComplete((Bitmap)null, -1);
+               try {
+                  Thread.sleep(16L);
+               } catch (InterruptedException var7) {
+                  var7.printStackTrace();
                }
-               break;
+
+               if (!ae.d(this.a)) {
+                  if (ae.e(this.a) != null) {
+                     ae.e(this.a).onGenerateComplete((Bitmap)null, -1);
+                  }
+
+                  return;
+               }
+
+               GLES20.glViewport(0, 0, ae.f(this.a), ae.g(this.a));
+               GLES20.glClear(16640);
+               ae.h(this.a);
             }
 
-            GLES20.glViewport(0, 0, ae.f(this.a), ae.g(this.a));
-            GLES20.glClear(16640);
-            ae.h(this.a);
+            return;
          }
       } finally {
          if (!ae.i(this.a)) {

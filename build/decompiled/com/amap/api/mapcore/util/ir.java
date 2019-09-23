@@ -36,7 +36,7 @@ class ir extends ip {
    }
 
    protected Class<?> findClass(String var1) throws ClassNotFoundException {
-      Class var25;
+      Class var24;
       try {
          if (this.c == null) {
             throw new ClassNotFoundException(var1);
@@ -54,37 +54,37 @@ class ir extends ip {
             in.a(var20, "dLoader", "findCl");
          }
 
-         if (var2 != null) {
-            var25 = var2;
-            return var25;
-         }
-
-         if (this.g) {
-            throw new ClassNotFoundException(var1);
-         }
-
-         this.h = true;
-         var2 = this.c.loadClass(var1, this);
-         DexFile var24 = this.c;
-         synchronized(this.c) {
-            this.c.notify();
-         }
-
-         this.h = false;
          if (var2 == null) {
-            throw new ClassNotFoundException(var1);
-         }
-
-         try {
-            var3 = this.b;
-            synchronized(this.b) {
-               this.b.put(var1, var2);
+            if (this.g) {
+               throw new ClassNotFoundException(var1);
             }
-         } catch (Throwable var17) {
-            in.a(var17, "dLoader", "findCl");
+
+            this.h = true;
+            var2 = this.c.loadClass(var1, this);
+            DexFile var25 = this.c;
+            synchronized(this.c) {
+               this.c.notify();
+            }
+
+            this.h = false;
+            if (var2 == null) {
+               throw new ClassNotFoundException(var1);
+            }
+
+            try {
+               var3 = this.b;
+               synchronized(this.b) {
+                  this.b.put(var1, var2);
+               }
+            } catch (Throwable var17) {
+               in.a(var17, "dLoader", "findCl");
+            }
+
+            var24 = var2;
+            return var24;
          }
 
-         var25 = var2;
+         var24 = var2;
       } catch (ClassNotFoundException var21) {
          throw var21;
       } catch (Throwable var22) {
@@ -94,7 +94,7 @@ class ir extends ip {
          this.h = false;
       }
 
-      return var25;
+      return var24;
    }
 
    void a(String var1, String var2) throws Exception {
@@ -217,31 +217,29 @@ class ir extends ip {
    private boolean a(File var1) {
       JarFile var2 = null;
 
-      boolean var5;
+      boolean var4;
       try {
-         boolean var4;
-         try {
-            this.c();
-            var2 = new JarFile(var1);
-            JarEntry var3 = var2.getJarEntry("classes.dex");
-            if (null == var3) {
-               var4 = false;
-               return var4;
-            }
-
-            this.a(var2, var3);
-            Certificate[] var19 = var3.getCertificates();
-            if (var19 != null) {
-               var5 = this.a(var1, var19);
-               return var5;
-            }
-
-            var5 = false;
-         } catch (Throwable var17) {
-            in.a(var17, "DyLoader", "verify");
+         this.c();
+         var2 = new JarFile(var1);
+         JarEntry var3 = var2.getJarEntry("classes.dex");
+         if (null == var3) {
             var4 = false;
             return var4;
          }
+
+         this.a(var2, var3);
+         Certificate[] var19 = var3.getCertificates();
+         boolean var5;
+         if (var19 == null) {
+            var5 = false;
+            return var5;
+         }
+
+         var5 = this.a(var1, var19);
+         return var5;
+      } catch (Throwable var17) {
+         in.a(var17, "DyLoader", "verify");
+         var4 = false;
       } finally {
          try {
             if (var2 != null) {
@@ -253,7 +251,7 @@ class ir extends ip {
 
       }
 
-      return var5;
+      return var4;
    }
 
    private boolean a(hy var1, hf var2, String var3) {

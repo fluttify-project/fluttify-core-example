@@ -289,7 +289,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolygon::polygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -319,7 +319,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolygon::polygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -349,7 +349,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolygon::setPolygonWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -377,7 +377,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolygon::setPolygonWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -443,7 +443,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolyline::polylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -473,7 +473,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -503,7 +503,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -531,7 +531,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAPolyline::setPolylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -580,7 +580,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAAnimatedAnnotation::addMoveAnimationWithKeyCoordinatesCountwithDurationwithNamecompleteCallback": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordinatesRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordinatesRefIdArray = (NSArray*) args[@"coordinates"];
           CLLocationCoordinate2D coordinates[coordinatesRefIdArray.count];
       
           for (int i = 0; i < coordinatesRefIdArray.count; i++) {
@@ -692,7 +692,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAGeodesicPolyline::polylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -722,7 +722,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAGeodesicPolyline::polylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -752,7 +752,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAGeodesicPolyline::setPolylineWithPointsCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* pointsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* pointsRefIdArray = (NSArray*) args[@"points"];
           MAMapPoint points[pointsRefIdArray.count];
       
           for (int i = 0; i < pointsRefIdArray.count; i++) {
@@ -780,7 +780,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MAGeodesicPolyline::setPolylineWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -1721,7 +1721,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MACustomBuildingOverlayOption::optionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
@@ -1751,7 +1751,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
       @"MACustomBuildingOverlayOption::setOptionWithCoordinatesCount": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 列表参数
-          NSArray* coordsRefIdArray = (NSArray*) args[@"__arg_name__"];
+          NSArray* coordsRefIdArray = (NSArray*) args[@"coords"];
           CLLocationCoordinate2D coords[coordsRefIdArray.count];
       
           for (int i = 0; i < coordsRefIdArray.count; i++) {
