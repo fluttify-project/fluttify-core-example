@@ -1213,7 +1213,7 @@
               "variable": {
                 "typeName": "NSArray\u003cUIColor*\u003e",
                 "name": "*colors",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAHeatMapGradient",
@@ -1229,7 +1229,7 @@
               "variable": {
                 "typeName": "NSArray\u003cNSNumber*\u003e",
                 "name": "*startPoints",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAHeatMapGradient",
@@ -1297,7 +1297,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMAHeatMapNode*\u003e",
                 "name": "*data",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1690,7 +1690,7 @@
               "variable": {
                 "typeName": "NSArray\u003cid\u003cMAOverlay\u003e",
                 "name": "*hollowShapes",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MACircle",
@@ -2214,7 +2214,7 @@
               "variable": {
                 "typeName": "NSArray\u003cid\u003cMAOverlay\u003e",
                 "name": "*hollowShapes",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAPolygon",
@@ -2618,7 +2618,7 @@
               "variable": {
                 "typeName": "NSArray\u003cUIColor*\u003e",
                 "name": "*strokeColors",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMultiColoredPolylineRenderer",
@@ -2969,7 +2969,7 @@
               "variable": {
                 "typeName": "NSArray\u003cNSNumber*\u003e",
                 "name": "*strokeTextureIDs",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMultiTexturePolylineRenderer",
@@ -3586,7 +3586,7 @@
               "variable": {
                 "typeName": "NSArray\u003cNSNumber*\u003e",
                 "name": "*drawStyleIndexes",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMultiPolyline",
@@ -5551,7 +5551,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMAOfflineProvince*\u003e",
                 "name": "*provinces",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5567,7 +5567,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMAOfflineItemMunicipality*\u003e",
                 "name": "*municipalities",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5599,7 +5599,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMAOfflineCity*\u003e",
                 "name": "*cities",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -7688,7 +7688,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMAMultiPointItem*\u003e",
                 "name": "*items",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlay",
@@ -7927,7 +7927,7 @@
               "variable": {
                 "typeName": "NSArray\u003cMACustomBuildingOverlayOption*\u003e",
                 "name": "*customOptions",
-                "isList": false,
+                "isList": true,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlay",
@@ -9984,7 +9984,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": true
+              "isDeprecated": false
             },
             {
               "returnType": "void",
@@ -11174,7 +11174,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": true
+              "isDeprecated": false
             },
             {
               "returnType": "void",
@@ -11195,7 +11195,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": true
+              "isDeprecated": false
             },
             {
               "returnType": "void",
@@ -11216,7 +11216,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": true
+              "isDeprecated": false
             },
             {
               "returnType": "void",
@@ -11237,7 +11237,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": true
+              "isDeprecated": false
             },
             {
               "returnType": "void",
