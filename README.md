@@ -6,7 +6,7 @@
 
 ## 目前的状态
 - 在积极的开发中, 但是由于本人精力有限, 只能在业余时间进行维护.
-- 具体的完成度可以查看`output-project`文件夹下的flutter插件工程(可能会有延迟)以及[实验性工程](https://github.com/yohom/amap_search_fluttify)(*推荐*).
+- 具体的完成度可以查看`output-project`文件夹下的flutter插件工程(可能会有延迟)以及[实验性工程](https://github.com/yohom/amap_search_fluttify)(**推荐**).
 
 ## 如何使用Fluttify?
 - 请邮件联系我(382146139@qq.com), 并说明来源.
@@ -19,3 +19,6 @@
 ## 目前已知的问题
 - 由于Flutter的`MethodChannel`不支持同步调用, 所以当native端的方法需要同步返回对象的时候, 
 使用`MethodChannel`的机制就无法满足需求了. 目前官方repo中有相关的[issue](https://github.com/flutter/flutter/issues/28310).
+
+## QQ群
+<img src="./other/QQ群.JPG" height="740">
