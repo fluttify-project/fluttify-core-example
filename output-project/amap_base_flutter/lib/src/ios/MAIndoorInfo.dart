@@ -39,11 +39,6 @@ class MAIndoorInfo extends NSObject  {
     return result;
   }
   
-  Future<List> get_floorInfo() async {
-    final result = await _channel.invokeMethod("MAIndoorInfo::get_floorInfo", {'refId': refId});
-    return result;
-  }
-  
   Future<int> get_numberOfFloor() async {
     final result = await _channel.invokeMethod("MAIndoorInfo::get_numberOfFloor", {'refId': refId});
     return result;

@@ -87,7 +87,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
 
 
 //region delegate
-- (void)traceManager : (MATraceManager*)manager didTrace: (CLLocation*)locations correct: (MATracePoint*)tracePoints distance: (double)distance withError: (NSError*)error
+- (void)traceManager : (MATraceManager*)manager didTrace: (NSArray<CLLocation*>*)locations correct: (NSArray<MATracePoint*>*)tracePoints distance: (double)distance withError: (NSError*)error
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
@@ -96,21 +96,24 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmanager = @(manager.hash);
   HEAP[argmanager] = manager;
-  // 列表参数
-  CLLocation* arglocations[locations.count];
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
       arglocations[i] = @(locations.hash);
       HEAP[@(locations.hash)] = locations;
   }
-  // 列表参数
-  MATracePoint* argtracePoints[tracePoints.count];
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
   for (int i = 0; i < tracePoints.count; i++) {
       argtracePoints[i] = @(tracePoints.hash);
       HEAP[@(tracePoints.hash)] = tracePoints;
   }
-  NSNumber* argdistance = @(distance.hash);
+  // jsonable回调参数
+  NSNumber* argdistance = @(distance);
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -127,6 +130,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* arglocationManager = @(locationManager.hash);
   HEAP[arglocationManager] = locationManager;
 
@@ -143,8 +147,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argrenderer = @(renderer.hash);
   HEAP[argrenderer] = renderer;
+  // 引用回调参数
   NSNumber* argitem = @(item.hash);
   HEAP[argitem] = item;
 
@@ -161,6 +167,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -177,9 +184,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
@@ -194,9 +203,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
@@ -211,9 +222,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -228,9 +241,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -245,9 +260,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -262,9 +279,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -279,6 +298,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -295,6 +315,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -311,8 +332,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -320,7 +343,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (MAAnnotation)annotation
+- (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (id<MAAnnotation>)annotation
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -329,8 +352,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argannotation = @(annotation.hash);
   HEAP[argannotation] = annotation;
 
@@ -364,9 +389,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argviews = @(views.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
+  for (int i = 0; i < views.count; i++) {
+      argviews[i] = @(views.hash);
+      HEAP[@(views.hash)] = views;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -380,8 +411,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -398,8 +431,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -416,6 +451,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -432,6 +468,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -448,11 +485,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* arguserLocation = @(userLocation.hash);
   HEAP[arguserLocation] = userLocation;
-  NSNumber* argupdatingLocation = @(updatingLocation.hash);
+  // jsonable回调参数
+  NSNumber* argupdatingLocation = @(updatingLocation);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
   
@@ -467,8 +507,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -485,8 +527,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
   NSNumber* argnewState = @((NSInteger) newState);
@@ -496,7 +540,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   
 }
 
-- (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (MAOverlay)overlay
+- (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (id<MAOverlay>)overlay
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -505,8 +549,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argoverlay = @(overlay.hash);
   HEAP[argoverlay] = overlay;
 
@@ -540,9 +586,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argoverlayRenderers = @(overlayRenderers.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
+  for (int i = 0; i < overlayRenderers.count; i++) {
+      argoverlayRenderers[i] = @(overlayRenderers.hash);
+      HEAP[@(overlayRenderers.hash)] = overlayRenderers;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -556,10 +608,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
+  // 引用回调参数
   NSNumber* argcontrol = @(control.hash);
   HEAP[argcontrol] = control;
 
@@ -576,8 +631,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -594,8 +651,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -612,10 +671,12 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   NSNumber* argmode = @((NSInteger) mode);
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
   
@@ -630,9 +691,11 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argopenGLESDisabled = @(openGLESDisabled.hash);
+  // jsonable回调参数
+  NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];
   
@@ -647,9 +710,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argpois = @(pois.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
+  for (int i = 0; i < pois.count; i++) {
+      argpois[i] = @(pois.hash);
+      HEAP[@(pois.hash)] = pois;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -663,10 +732,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argcoordinate = @(coordinate.hash);
-  HEAP[argcoordinate] = coordinate;
+  // 结构体回调参数
+  NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
+  NSNumber* argcoordinate = @(coordinateValue.hash);
+  HEAP[argcoordinate] = coordinateValue;
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
@@ -681,10 +754,14 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argcoordinate = @(coordinate.hash);
-  HEAP[argcoordinate] = coordinate;
+  // 结构体回调参数
+  NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
+  NSNumber* argcoordinate = @(coordinateValue.hash);
+  HEAP[argcoordinate] = coordinateValue;
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
@@ -699,6 +776,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapInitComplete");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -715,8 +793,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -733,8 +813,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -751,8 +833,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -769,6 +853,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::offlineDataWillReload");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -785,6 +870,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::offlineDataDidReload");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 

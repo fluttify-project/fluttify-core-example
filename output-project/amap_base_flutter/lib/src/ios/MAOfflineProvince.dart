@@ -9,10 +9,6 @@ class MAOfflineProvince extends MAOfflineItem  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<List> get_cities() async {
-    final result = await _channel.invokeMethod("MAOfflineProvince::get_cities", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters

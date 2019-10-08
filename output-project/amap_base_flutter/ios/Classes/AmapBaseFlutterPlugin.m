@@ -653,25 +653,6 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(result.hash)] = result;
           methodResult(@(result.hash));
       },
-      @"MAMultiTexturePolylineRenderer::loadStrokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          // 参数
-          // jsonable参数
-          NSArray* textureImages = (NSArray*) args[@"textureImages"];
-      
-          // 调用对象引用
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
-      
-          // 日志打印
-          NSLog(@"fluttify-objc: MAMultiTexturePolylineRenderer@%@::loadStrokeTextureImages(暂未实现参数打印)", @(refId));
-      
-          // 开始调用
-          BOOL result = [ref loadStrokeTextureImages: textureImages];
-      
-          // 调用结果
-          // 返回值: Value
-          methodResult(@(result));
-      },
       @"MATileOverlayRenderer::initWithTileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           // 参数
           // 引用参数
@@ -2534,7 +2515,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           MAMultiPoint* ref = (MAMultiPoint*) HEAP[@(refId)];
       
           // 开始调用
-          MAMapPoint result = ref.points;
+          MAMapPoint* result = ref.points;
       
           NSLog(@"MAMultiPoint::get_points:结构体getter暂时不支持");
       
@@ -3207,38 +3188,6 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           methodResult(@(result.hash));
       },
       
-      @"MAMultiTexturePolylineRenderer::get_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiTexturePolylineRenderer::get_strokeTextureImages");
-      
-          // 引用对象
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
-      
-          // 开始调用
-          NSArray<NSArray>* result = ref.strokeTextureImages;
-      
-      
-      
-          // 返回值: jsonable
-          methodResult(result);
-      },
-      
-      @"MAOfflineProvince::get_cities": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineProvince::get_cities");
-      
-          // 引用对象
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineProvince* ref = (MAOfflineProvince*) HEAP[@(refId)];
-      
-          // 开始调用
-          NSArray<NSArray>* result = ref.cities;
-      
-      
-      
-          // 返回值: jsonable
-          methodResult(result);
-      },
-      
       @"MATileOverlayRenderer::get_tileOverlay": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MATileOverlayRenderer::get_tileOverlay");
       
@@ -3587,22 +3536,6 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           methodResult(@(result));
       },
       
-      @"MAIndoorInfo::get_floorInfo": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAIndoorInfo::get_floorInfo");
-      
-          // 引用对象
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAIndoorInfo* ref = (MAIndoorInfo*) HEAP[@(refId)];
-      
-          // 开始调用
-          NSArray<NSArray>* result = ref.floorInfo;
-      
-      
-      
-          // 返回值: jsonable
-          methodResult(result);
-      },
-      
       @"MAIndoorInfo::get_numberOfFloor": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
           NSLog(@"MAIndoorInfo::get_numberOfFloor");
       
@@ -3913,22 +3846,6 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
       
           // 开始调用
           NSString* result = ref.version;
-      
-      
-      
-          // 返回值: jsonable
-          methodResult(result);
-      },
-      
-      @"MAOfflineMap::get_": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAOfflineMap::get_");
-      
-          // 引用对象
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAOfflineMap* ref = (MAOfflineMap*) HEAP[@(refId)];
-      
-          // 开始调用
-          NSArray<NSArray>* result = ref.;
       
       
       
@@ -5144,9 +5061,9 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           // 参数
           // 列表参数
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-          NSMutableArray<id<MAOverlay*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+          NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
           for (int i = 0; i < hollowShapes.count; i++) {
-              id<MAOverlay* item = (id<MAOverlay*) HEAP[[hollowShapesRefArray objectAtIndex:i]];
+              id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
       
@@ -5221,9 +5138,9 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           // 参数
           // 列表参数
           NSArray<NSNumber*>* hollowShapesRefArray = (NSArray<NSNumber*> *) args[@"hollowShapes"];
-          NSMutableArray<id<MAOverlay*>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
+          NSMutableArray<id<MAOverlay>>* hollowShapes = [NSMutableArray arrayWithCapacity:hollowShapesRefArray.count];
           for (int i = 0; i < hollowShapes.count; i++) {
-              id<MAOverlay* item = (id<MAOverlay*) HEAP[[hollowShapesRefArray objectAtIndex:i]];
+              id<MAOverlay> item = (id<MAOverlay>) HEAP[[hollowShapesRefArray objectAtIndex:i]];
               [hollowShapes addObject:item];
           }
       
@@ -5259,20 +5176,6 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           MAAnimatedAnnotation* ref = (MAAnimatedAnnotation*) HEAP[@(refId)];
       
           ref.movingDirection = movingDirection;
-          methodResult(@"success");
-      },
-      
-      @"MAMultiTexturePolylineRenderer::set_strokeTextureImages": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
-          NSLog(@"MAMultiTexturePolylineRenderer::set_strokeTextureImages");
-      
-          // 参数
-          // jsonable参数
-          NSArray* strokeTextureImages = (NSArray*) args[@"strokeTextureImages"];
-      
-          NSInteger refId = [args[@"refId"] integerValue];
-          MAMultiTexturePolylineRenderer* ref = (MAMultiTexturePolylineRenderer*) HEAP[@(refId)];
-      
-          ref.strokeTextureImages = strokeTextureImages;
           methodResult(@"success");
       },
       
@@ -8126,7 +8029,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
 }
 
 // 委托方法们
-- (void)traceManager : (MATraceManager*)manager didTrace: (CLLocation*)locations correct: (MATracePoint*)tracePoints distance: (double)distance withError: (NSError*)error
+- (void)traceManager : (MATraceManager*)manager didTrace: (NSArray<CLLocation*>*)locations correct: (NSArray<MATracePoint*>*)tracePoints distance: (double)distance withError: (NSError*)error
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MATraceDelegate::Callback"
@@ -8135,21 +8038,24 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MATraceDelegate::traceManagerDidTracecorrectdistancewithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmanager = @(manager.hash);
   HEAP[argmanager] = manager;
-  // 列表参数
-  CLLocation* arglocations[locations.count];
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
       arglocations[i] = @(locations.hash);
       HEAP[@(locations.hash)] = locations;
   }
-  // 列表参数
-  MATracePoint* argtracePoints[tracePoints.count];
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
   for (int i = 0; i < tracePoints.count; i++) {
       argtracePoints[i] = @(tracePoints.hash);
       HEAP[@(tracePoints.hash)] = tracePoints;
   }
-  NSNumber* argdistance = @(distance.hash);
+  // jsonable回调参数
+  NSNumber* argdistance = @(distance);
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -8166,6 +8072,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MATraceDelegate::mapViewRequireLocationAuth");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* arglocationManager = @(locationManager.hash);
   HEAP[arglocationManager] = locationManager;
 
@@ -8182,8 +8089,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMultiPointOverlayRendererDelegate::multiPointOverlayRendererDidItemTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argrenderer = @(renderer.hash);
   HEAP[argrenderer] = renderer;
+  // 引用回调参数
   NSNumber* argitem = @(item.hash);
   HEAP[argitem] = item;
 
@@ -8200,6 +8109,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewRegionChanged");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8216,9 +8126,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewRegionWillChangeAnimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
@@ -8233,9 +8145,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewRegionDidChangeAnimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
   
@@ -8250,9 +8164,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewMapWillMoveByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -8267,9 +8183,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewMapDidMoveByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -8284,9 +8202,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewMapWillZoomByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -8301,9 +8221,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewMapDidZoomByUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argwasUserAction = @(wasUserAction.hash);
+  // jsonable回调参数
+  NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
   
@@ -8318,6 +8240,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewWillStartLoadingMap");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8334,6 +8257,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidFinishLoadingMap");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8350,8 +8274,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidFailLoadingMapWithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -8359,7 +8285,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   
 }
 
-- (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (MAAnnotation)annotation
+- (MAAnnotationView*)mapView : (MAMapView*)mapView viewForAnnotation: (id<MAAnnotation>)annotation
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -8368,8 +8294,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argannotation = @(annotation.hash);
   HEAP[argannotation] = annotation;
 
@@ -8403,9 +8331,15 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidAddAnnotationViews");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argviews = @(views.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
+  for (int i = 0; i < views.count; i++) {
+      argviews[i] = @(views.hash);
+      HEAP[@(views.hash)] = views;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -8419,8 +8353,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidSelectAnnotationView");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -8437,8 +8373,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidDeselectAnnotationView");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -8455,6 +8393,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewWillStartLocatingUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8471,6 +8410,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidStopLocatingUser");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8487,11 +8427,14 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* arguserLocation = @(userLocation.hash);
   HEAP[arguserLocation] = userLocation;
-  NSNumber* argupdatingLocation = @(updatingLocation.hash);
+  // jsonable回调参数
+  NSNumber* argupdatingLocation = @(updatingLocation);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
   
@@ -8506,8 +8449,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidFailToLocateUserWithError");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argerror = @(error.hash);
   HEAP[argerror] = error;
 
@@ -8524,8 +8469,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewdidChangeDragStatefromOldState");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
   NSNumber* argnewState = @((NSInteger) newState);
@@ -8535,7 +8482,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   
 }
 
-- (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (MAOverlay)overlay
+- (MAOverlayRenderer*)mapView : (MAMapView*)mapView rendererForOverlay: (id<MAOverlay>)overlay
 {
   FlutterMethodChannel *channel = [FlutterMethodChannel
       methodChannelWithName:@"MAMapViewDelegate::Callback"
@@ -8544,8 +8491,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argoverlay = @(overlay.hash);
   HEAP[argoverlay] = overlay;
 
@@ -8579,9 +8528,15 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidAddOverlayRenderers");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argoverlayRenderers = @(overlayRenderers.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
+  for (int i = 0; i < overlayRenderers.count; i++) {
+      argoverlayRenderers[i] = @(overlayRenderers.hash);
+      HEAP[@(overlayRenderers.hash)] = overlayRenderers;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -8595,10 +8550,13 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewAnnotationViewcalloutAccessoryControlTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
+  // 引用回调参数
   NSNumber* argcontrol = @(control.hash);
   HEAP[argcontrol] = control;
 
@@ -8615,8 +8573,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewCalloutTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -8633,8 +8593,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidAnnotationViewTapped");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argview = @(view.hash);
   HEAP[argview] = view;
 
@@ -8651,10 +8613,12 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   NSNumber* argmode = @((NSInteger) mode);
-  NSNumber* arganimated = @(animated.hash);
+  // jsonable回调参数
+  NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
   
@@ -8669,9 +8633,11 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argopenGLESDisabled = @(openGLESDisabled.hash);
+  // jsonable回调参数
+  NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];
   
@@ -8686,9 +8652,15 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidTouchPois");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argpois = @(pois.hash);
+  // 列表回调参数
+  NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
+  for (int i = 0; i < pois.count; i++) {
+      argpois[i] = @(pois.hash);
+      HEAP[@(pois.hash)] = pois;
+  }
 
   // 暂不支持含有数组的方法
 }
@@ -8702,10 +8674,14 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argcoordinate = @(coordinate.hash);
-  HEAP[argcoordinate] = coordinate;
+  // 结构体回调参数
+  NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
+  NSNumber* argcoordinate = @(coordinateValue.hash);
+  HEAP[argcoordinate] = coordinateValue;
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidSingleTappedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
@@ -8720,10 +8696,14 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidLongPressedAtCoordinate");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  NSNumber* argcoordinate = @(coordinate.hash);
-  HEAP[argcoordinate] = coordinate;
+  // 结构体回调参数
+  NSValue* coordinateValue = [NSValue value:&coordinate withObjCType:@encode(CLLocationCoordinate2D)];
+  NSNumber* argcoordinate = @(coordinateValue.hash);
+  HEAP[argcoordinate] = coordinateValue;
+  
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidLongPressedAtCoordinate" arguments:@{@"mapView": argmapView, @"coordinate": argcoordinate}];
   
@@ -8738,6 +8718,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapInitComplete");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8754,8 +8735,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapShowed");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -8772,8 +8755,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapFloorIndexChanged");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -8790,8 +8775,10 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::mapViewDidIndoorMapHidden");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
+  // 引用回调参数
   NSNumber* argindoorInfo = @(indoorInfo.hash);
   HEAP[argindoorInfo] = indoorInfo;
 
@@ -8808,6 +8795,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::offlineDataWillReload");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 
@@ -8824,6 +8812,7 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
   NSLog(@"MAMapViewDelegate::offlineDataDidReload");
 
   // 构造可以直接传输的参数
+  // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
 

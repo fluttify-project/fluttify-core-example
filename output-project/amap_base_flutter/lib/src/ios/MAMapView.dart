@@ -174,16 +174,6 @@ class MAMapView extends UIView  {
     return CGPoint()..refId = result;
   }
   
-  Future<List> get_annotations() async {
-    final result = await _channel.invokeMethod("MAMapView::get_annotations", {'refId': refId});
-    return result;
-  }
-  
-  Future<List> get_selectedAnnotations() async {
-    final result = await _channel.invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
-    return result;
-  }
-  
   Future<CGRect> get_annotationVisibleRect() async {
     final result = await _channel.invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
     return CGRect()..refId = result;
@@ -231,11 +221,6 @@ class MAMapView extends UIView  {
   
   Future<bool> get_allowsBackgroundLocationUpdates() async {
     final result = await _channel.invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
-    return result;
-  }
-  
-  Future<List> get_overlays() async {
-    final result = await _channel.invokeMethod("MAMapView::get_overlays", {'refId': refId});
     return result;
   }
   
@@ -531,12 +516,6 @@ class MAMapView extends UIView  {
   
   Future<void> set_screenAnchor(CGPoint screenAnchor) async {
     await _channel.invokeMethod('MAMapView::set_screenAnchor', {'refId': refId, "screenAnchor": screenAnchor.refId});
-  
-  
-  }
-  
-  Future<void> set_selectedAnnotations(List selectedAnnotations) async {
-    await _channel.invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations});
   
   
   }
@@ -1015,50 +994,12 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> addAnnotations(List annotations) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::addAnnotations([\'annotations\':$annotations])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addAnnotations', {"annotations": annotations, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
   Future<void> removeAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeAnnotation([])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('MAMapView::removeAnnotation', {"annotation": annotation.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
-  Future<void> removeAnnotations(List annotations) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::removeAnnotations([\'annotations\':$annotations])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations, "refId": refId});
   
   
     // 接受原生回调
@@ -1148,25 +1089,6 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> showAnnotations(List annotations, bool animated) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'annotations\':$annotations, \'animated\':$animated])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::showAnnotationsAnimated', {"annotations": annotations, "animated": animated, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
   Future<void> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
@@ -1205,25 +1127,6 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<List> overlaysInLevel(MAOverlayLevel level) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::overlaysInLevel', {"level": level.index, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return (result as List).cast<List>();
-    }
-  }
-  
   Future<void> addOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addOverlay([])');
@@ -1243,50 +1146,12 @@ class MAMapView extends UIView  {
     }
   }
   
-  Future<void> addOverlays(List overlays) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::addOverlays([\'overlays\':$overlays])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::addOverlays', {"overlays": overlays, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
   Future<void> removeOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
   
     // 调用原生方法
     final result = await _channel.invokeMethod('MAMapView::removeOverlay', {"overlay": overlay.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
-  Future<void> removeOverlays(List overlays) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::removeOverlays([\'overlays\':$overlays])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::removeOverlays', {"overlays": overlays, "refId": refId});
   
   
     // 接受原生回调
@@ -1373,25 +1238,6 @@ class MAMapView extends UIView  {
       return null;
     } else {
       return MAOverlayRenderer()..refId = result;
-    }
-  }
-  
-  Future<void> showOverlays(List overlays, bool animated) async {
-    // 日志打印
-    print('fluttify-dart: MAMapView@$refId::showOverlays([\'overlays\':$overlays, \'animated\':$animated])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAMapView::showOverlaysAnimated', {"overlays": overlays, "animated": animated, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
     }
   }
   
