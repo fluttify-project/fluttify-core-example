@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
+  Future<void> setNetworkListener(com_autonavi_amap_mapcore_maploader_NetworkState_NetworkChangeListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::setNetworkListener([])');
   
@@ -43,10 +44,14 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> registerNetChangeReceiver(android_content_Context var1, bool var2) async {
+  Future<void> registerNetChangeReceiver(android_content_Context var1, bool var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.NetworkState@$refId::registerNetChangeReceiver([\'var2\':$var2])');
   
@@ -58,7 +63,11 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<bool> isNetworkConnected(android_content_Context var0) async {
@@ -73,7 +82,11 @@ class com_autonavi_amap_mapcore_maploader_NetworkState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

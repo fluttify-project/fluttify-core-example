@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -25,17 +26,17 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   Future<com_amap_api_maps_model_CameraPosition> get_cameraPosition() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_cameraPosition", {'refId': refId});
-    return result;
+    return com_amap_api_maps_model_CameraPosition()..refId = result;
   }
   
   Future<com_amap_api_maps_model_LatLngBounds> get_bounds() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_bounds", {'refId': refId});
-    return result;
+    return com_amap_api_maps_model_LatLngBounds()..refId = result;
   }
   
   Future<android_graphics_Point> get_focus() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_focus", {'refId': refId});
-    return result;
+    return android_graphics_Point()..refId = result;
   }
   
   Future<double> get_zoom() async {
@@ -55,7 +56,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   Future<android_graphics_Point> get_geoPoint() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_geoPoint", {'refId': refId});
-    return result;
+    return android_graphics_Point()..refId = result;
   }
   
   Future<bool> get_isUseAnchor() async {
@@ -243,7 +244,7 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
 
   // 生成方法们
-   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+  Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::runCameraUpdate([])');
   
@@ -255,10 +256,14 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
+  Future<void> mergeCameraUpdateDelegate(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::mergeCameraUpdateDelegate([])');
   
@@ -270,10 +275,14 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
+  Future<void> generateMapAnimation(com_autonavi_ae_gmap_GLMapEngine var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.AbstractCameraUpdateMessage@$refId::generateMapAnimation([])');
   
@@ -285,7 +294,11 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

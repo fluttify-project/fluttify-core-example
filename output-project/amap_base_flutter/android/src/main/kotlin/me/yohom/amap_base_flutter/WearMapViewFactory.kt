@@ -17,7 +17,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap([])")
@@ -26,19 +26,23 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             val result = ref.getMap()
         
             // 调用结果
-            val returnRefId = result.hashCode()
-            REF_MAP[returnRefId] = result
+            if (result != null) {
+                val returnRefId = result.hashCode()
+                HEAP[returnRefId] = result
         
-            methodResult.success(returnRefId)
+                methodResult.success(returnRefId)
+            } else {
+                methodResult.success(null)
+            }
         }
         ,"com.amap.api.maps.WearMapView::onCreate" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate([])")
@@ -55,7 +59,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume([])")
@@ -72,7 +76,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause([])")
@@ -89,7 +93,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy([])")
@@ -106,7 +110,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory([])")
@@ -120,11 +124,11 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         ,"com.amap.api.maps.WearMapView::onSaveInstanceState" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])")
@@ -142,7 +146,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility([\"var1\":$var1])")
@@ -159,7 +163,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])")
@@ -174,10 +178,15 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                     // 日志打印
                     println("fluttify-kotlin-callback: onDismiss([])")
         
+                    // 处理成可以传输的参数
+        
+        
                     // 开始回调
                     callbackChannel.invokeMethod(
                         "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
-                        mapOf<String, Any?>()
+                        mapOf<String, Any?>(
+            
+                        )
                     )
         
                     // 方法返回值
@@ -188,10 +197,15 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                     // 日志打印
                     println("fluttify-kotlin-callback: onNotifySwipe([])")
         
+                    // 处理成可以传输的参数
+        
+        
                     // 开始回调
                     callbackChannel.invokeMethod(
                         "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
-                        mapOf<String, Any?>()
+                        mapOf<String, Any?>(
+            
+                        )
                     )
         
                     // 方法返回值
@@ -209,7 +223,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss([])")
@@ -223,11 +237,11 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         ,"com.amap.api.maps.WearMapView::onEnterAmbient" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])")
@@ -244,7 +258,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])")
@@ -269,12 +283,12 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         return object : PlatformView {
             private val view = com.amap.api.maps.WearMapView(registrar.activity())
 
-            // 构造完成后马上加入REF_MAP
-            override fun getView(): View = view.apply { REF_MAP[id] = this }
+            // 构造完成后马上加入HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
-            // dispose后从REF_MAP中删除
+            // dispose后从HEAP中删除
             override fun dispose() {
-                REF_MAP.remove(id)
+                HEAP.remove(id)
             }
         }
     }

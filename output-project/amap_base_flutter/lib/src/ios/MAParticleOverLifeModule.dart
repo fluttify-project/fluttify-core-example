@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverLifeModule extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class MAParticleOverLifeModule extends NSObject  {
   
 
   // 生成方法们
-   Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
+  Future<void> setVelocityOverLife(MAParticleVelocityGenerate velocity) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setVelocityOverLife([])');
   
@@ -26,10 +27,14 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
+  Future<void> setRotationOverLife(MAParticleRotationGenerate rotation) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setRotationOverLife([])');
   
@@ -41,10 +46,14 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
+  Future<void> setSizeOverLife(MAParticleSizeGenerate size) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setSizeOverLife([])');
   
@@ -56,10 +65,14 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setColorOverLife(MAParticleColorGenerate color) async {
+  Future<void> setColorOverLife(MAParticleColorGenerate color) async {
     // 日志打印
     print('fluttify-dart: MAParticleOverLifeModule@$refId::setColorOverLife([])');
   
@@ -71,7 +84,11 @@ class MAParticleOverLifeModule extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

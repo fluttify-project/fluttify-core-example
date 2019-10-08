@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_Text extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> remove() async {
+  Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::remove([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> destroy() async {
+  Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::destroy([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getId() async {
+  Future<String> getId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getId([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setPosition([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPosition() async {
+  Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getPosition([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<void> setText(String var1) async {
+  Future<void> setText(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setText([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getText() async {
+  Future<String> getText() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getText([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setBackgroundColor(int var1) async {
+  Future<void> setBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setBackgroundColor([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getBackgroundColor() async {
+  Future<int> getBackgroundColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getBackgroundColor([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFontColor(int var1) async {
+  Future<void> setFontColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontColor([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFontColor() async {
+  Future<int> getFontColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontColor([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFontSize(int var1) async {
+  Future<void> setFontSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setFontSize([\'var1\':$var1])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFontSize() async {
+  Future<int> getFontSize() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getFontSize([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setAlign(int var1, int var2) async {
+  Future<void> setAlign(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setAlign([\'var1\':$var1, \'var2\':$var2])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getAlignX() async {
+  Future<int> getAlignX() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignX([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getAlignY() async {
+  Future<int> getAlignY() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getAlignY([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setVisible([\'var1\':$var1])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::isVisible([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotate(double var1) async {
+  Future<void> setRotate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setRotate([\'var1\':$var1])');
   
@@ -296,10 +369,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getRotate() async {
+  Future<double> getRotate() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getRotate([])');
   
@@ -311,10 +388,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZIndex(double var1) async {
+  Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::setZIndex([\'var1\':$var1])');
   
@@ -326,10 +407,14 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Text@$refId::getZIndex([])');
   
@@ -341,7 +426,11 @@ class com_amap_api_maps_model_Text extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

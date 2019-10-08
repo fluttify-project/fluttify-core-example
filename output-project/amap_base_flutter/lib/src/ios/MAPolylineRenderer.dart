@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPolylineRenderer extends MAOverlayPathRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MAPolyline> get_polyline() async {
     final result = await _channel.invokeMethod("MAPolylineRenderer::get_polyline", {'refId': refId});
-    return result;
+    return MAPolyline()..refId = result;
   }
   
   Future<bool> get_is3DArrowLine() async {
@@ -28,7 +29,7 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   
 
   // 生成方法们
-   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
+  Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // 日志打印
     print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
   
@@ -40,7 +41,11 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   
   
     // 返回值
-    return MAPolylineRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAPolylineRenderer()..refId = result;
+    }
   }
   
 }

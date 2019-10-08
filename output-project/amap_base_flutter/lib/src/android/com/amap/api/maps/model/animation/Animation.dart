@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<com_autonavi_amap_mapcore_animation_GLAnimation> get_glAnimation() async {
     final result = await _channel.invokeMethod("com.amap.api.maps.model.animation.Animation::get_glAnimation", {'refId': refId});
-    return result;
+    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
   }
   
 
@@ -23,7 +24,7 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
+  Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setAnimationListener([])');
   
@@ -59,10 +60,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDuration(int var1) async {
+  Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setDuration([\'var1\':$var1])');
   
@@ -74,10 +79,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFillMode(int var1) async {
+  Future<void> setFillMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setFillMode([\'var1\':$var1])');
   
@@ -89,10 +98,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFillMode() async {
+  Future<int> getFillMode() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getFillMode([])');
   
@@ -104,10 +117,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRepeatCount(int var1) async {
+  Future<void> setRepeatCount(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatCount([\'var1\':$var1])');
   
@@ -119,10 +136,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRepeatMode(int var1) async {
+  Future<void> setRepeatMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::setRepeatMode([\'var1\':$var1])');
   
@@ -134,10 +155,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getRepeatMode() async {
+  Future<int> getRepeatMode() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatMode([])');
   
@@ -149,10 +174,14 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getRepeatCount() async {
+  Future<int> getRepeatCount() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.animation.Animation@$refId::getRepeatCount([])');
   
@@ -164,7 +193,11 @@ class com_amap_api_maps_model_animation_Animation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

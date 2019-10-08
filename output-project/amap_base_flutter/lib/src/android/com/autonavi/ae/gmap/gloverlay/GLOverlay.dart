@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<int> getNativeInstatnce() async {
+  Future<int> getNativeInstatnce() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getNativeInstatnce([])');
   
@@ -26,10 +27,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getCode() async {
+  Future<int> getCode() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getCode([])');
   
@@ -41,10 +46,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getType() async {
+  Future<int> getType() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getType([])');
   
@@ -56,10 +65,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getSubType() async {
+  Future<int> getSubType() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSubType([])');
   
@@ -71,10 +84,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeItem(int var1) async {
+  Future<void> removeItem(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeItem([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeAll() async {
+  Future<void> removeAll() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::removeAll([])');
   
@@ -101,10 +122,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getSize() async {
+  Future<int> getSize() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getSize([])');
   
@@ -116,10 +141,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isVisible([])');
   
@@ -146,10 +179,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setClickable(bool var1) async {
+  Future<void> setClickable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setClickable([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isClickable() async {
+  Future<bool> isClickable() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::isClickable([])');
   
@@ -176,10 +217,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> clearFocus() async {
+  Future<void> clearFocus() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::clearFocus([])');
   
@@ -191,10 +236,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getIsInBundle() async {
+  Future<bool> getIsInBundle() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getIsInBundle([])');
   
@@ -206,10 +255,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMaxCountShown(int var1) async {
+  Future<void> setMaxCountShown(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxCountShown([\'var1\':$var1])');
   
@@ -221,10 +274,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setOverlayOnTop(bool var1) async {
+  Future<void> setOverlayOnTop(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayOnTop([\'var1\':$var1])');
   
@@ -236,10 +293,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMinDisplayLevel(double var1) async {
+  Future<void> setMinDisplayLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMinDisplayLevel([\'var1\':$var1])');
   
@@ -251,10 +312,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMaxDisplayLevel(double var1) async {
+  Future<void> setMaxDisplayLevel(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setMaxDisplayLevel([\'var1\':$var1])');
   
@@ -266,10 +331,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setOverlayPriority(int var1) async {
+  Future<void> setOverlayPriority(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayPriority([\'var1\':$var1])');
   
@@ -281,10 +350,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getOverlayPriority() async {
+  Future<int> getOverlayPriority() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::getOverlayPriority([])');
   
@@ -296,10 +369,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setOverlayItemPriority(int var1) async {
+  Future<void> setOverlayItemPriority(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::setOverlayItemPriority([\'var1\':$var1])');
   
@@ -311,10 +388,14 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> useNightStyle(bool var1) async {
+  Future<void> useNightStyle(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLOverlay@$refId::useNightStyle([\'var1\':$var1])');
   
@@ -326,7 +407,11 @@ class com_autonavi_ae_gmap_gloverlay_GLOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

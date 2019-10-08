@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<com_autonavi_ae_gmap_GLMapEngine_InitParam> initResource(android_content_Context var0) async {
@@ -41,7 +46,11 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_ae_gmap_GLMapEngine_InitParam()..refId = result;
+    }
   }
   
   static Future<void> readAssetsFileAndSave(String var0, String var1, android_content_Context var2) async {
@@ -56,7 +65,11 @@ class com_autonavi_amap_mapcore_AeUtil extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   
 
   // 生成方法们
-   Future<MAParticleCurveSizeGenerate> initWithCurveX(double x, double y, double z) async {
+  Future<MAParticleCurveSizeGenerate> initWithCurveX(double x, double y, double z) async {
     // 日志打印
     print('fluttify-dart: MAParticleCurveSizeGenerate@$refId::initWithCurveX([\'x\':$x, \'y\':$y, \'z\':$z])');
   
@@ -26,7 +27,11 @@ class MAParticleCurveSizeGenerate extends NSObject with MAParticleSizeGenerate {
   
   
     // 返回值
-    return MAParticleCurveSizeGenerate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAParticleCurveSizeGenerate()..refId = result;
+    }
   }
   
 }

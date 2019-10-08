@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPointAnnotation extends MAShape  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<CLLocationCoordinate2D> get_coordinate() async {
     final result = await _channel.invokeMethod("MAPointAnnotation::get_coordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<bool> get_lockedToScreen() async {
@@ -20,7 +21,7 @@ class MAPointAnnotation extends MAShape  {
   
   Future<CGPoint> get_lockedScreenPoint() async {
     final result = await _channel.invokeMethod("MAPointAnnotation::get_lockedScreenPoint", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
 

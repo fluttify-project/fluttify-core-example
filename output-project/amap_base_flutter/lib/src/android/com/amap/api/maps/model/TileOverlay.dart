@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> remove() async {
+  Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::remove([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> clearTileCache() async {
+  Future<void> clearTileCache() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::clearTileCache([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getId() async {
+  Future<String> getId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getId([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZIndex(double var1) async {
+  Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setZIndex([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::getZIndex([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlay@$refId::isVisible([])');
   
@@ -116,7 +141,11 @@ class com_amap_api_maps_model_TileOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

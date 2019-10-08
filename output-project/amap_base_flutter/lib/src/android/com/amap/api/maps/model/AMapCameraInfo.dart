@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
 
   // 生成方法们
-   Future<double> getFov() async {
+  Future<double> getFov() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getFov([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getAspectRatio() async {
+  Future<double> getAspectRatio() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getAspectRatio([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getRotate() async {
+  Future<double> getRotate() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getRotate([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getX() async {
+  Future<double> getX() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getX([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getY() async {
+  Future<double> getY() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getY([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZ() async {
+  Future<double> getZ() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.AMapCameraInfo@$refId::getZ([])');
   
@@ -101,7 +122,11 @@ class com_amap_api_maps_model_AMapCameraInfo extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

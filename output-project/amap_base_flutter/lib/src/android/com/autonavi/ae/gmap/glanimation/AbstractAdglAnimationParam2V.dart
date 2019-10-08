@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -56,7 +57,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
 
   // 生成方法们
-   Future<void> reset() async {
+  Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::reset([])');
   
@@ -68,10 +69,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFromValue(double var1, double var3) async {
+  Future<void> setFromValue(double var1, double var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setFromValue([\'var1\':$var1, \'var3\':$var3])');
   
@@ -83,10 +88,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setToValue(double var1, double var3) async {
+  Future<void> setToValue(double var1, double var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::setToValue([\'var1\':$var1, \'var3\':$var3])');
   
@@ -98,10 +107,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getFromXValue() async {
+  Future<double> getFromXValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromXValue([])');
   
@@ -113,10 +126,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getFromYValue() async {
+  Future<double> getFromYValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getFromYValue([])');
   
@@ -128,10 +145,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getToXValue() async {
+  Future<double> getToXValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToXValue([])');
   
@@ -143,10 +164,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getToYValue() async {
+  Future<double> getToYValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getToYValue([])');
   
@@ -158,10 +183,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getCurXValue() async {
+  Future<double> getCurXValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurXValue([])');
   
@@ -173,10 +202,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getCurYValue() async {
+  Future<double> getCurYValue() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::getCurYValue([])');
   
@@ -188,10 +221,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> checkParam() async {
+  Future<void> checkParam() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimationParam2V@$refId::checkParam([])');
   
@@ -203,7 +240,11 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V extends Ref_
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

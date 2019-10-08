@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -78,7 +79,7 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends Ref_Andro
   
 
   // 生成方法们
-   Future<void> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setFromPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLTranslateAnimation@$refId::setFromPoint([])');
   
@@ -90,7 +91,11 @@ class com_autonavi_amap_mapcore_animation_GLTranslateAnimation extends Ref_Andro
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

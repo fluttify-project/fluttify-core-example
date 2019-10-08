@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
+  Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getLatLng([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setLatLng(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setLatLng([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getCustomerId() async {
+  Future<String> getCustomerId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getCustomerId([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCustomerId(String var1) async {
+  Future<void> setCustomerId(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setCustomerId([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getSnippet() async {
+  Future<String> getSnippet() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getSnippet([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSnippet(String var1) async {
+  Future<void> setSnippet(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setSnippet([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getTitle() async {
+  Future<String> getTitle() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getTitle([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTitle(String var1) async {
+  Future<void> setTitle(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setTitle([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
+  Future<com_autonavi_amap_mapcore_IPoint> getIPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::getIPoint([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_IPoint()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_IPoint()..refId = result;
+    }
   }
   
-   Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
+  Future<void> setIPoint(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointItem@$refId::setIPoint([])');
   
@@ -161,7 +198,11 @@ class com_amap_api_maps_model_MultiPointItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

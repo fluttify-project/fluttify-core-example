@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -15,6 +16,11 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends Ref_Android  {
   
   Future<android_graphics_Bitmap> get_mBitmap() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mBitmap", {'refId': refId});
+    return android_graphics_Bitmap()..refId = result;
+  }
+  
+  Future<List<int>> get_mPngBuffer() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLTextureProperty::get_mPngBuffer", {'refId': refId});
     return result;
   }
   
@@ -53,6 +59,12 @@ class com_autonavi_ae_gmap_gloverlay_GLTextureProperty extends Ref_Android  {
   
   Future<void> set_mBitmap(android_graphics_Bitmap mBitmap) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mBitmap', {'refId': refId, "mBitmap": mBitmap.refId});
+  
+  
+  }
+  
+  Future<void> set_mPngBuffer(List<int> mPngBuffer) async {
+    await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLTextureProperty::set_mPngBuffer', {'refId': refId, "mPngBuffer": mPngBuffer});
   
   
   }

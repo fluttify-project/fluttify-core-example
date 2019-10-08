@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MAGroundOverlay> get_groundOverlay() async {
     final result = await _channel.invokeMethod("MAGroundOverlayRenderer::get_groundOverlay", {'refId': refId});
-    return result;
+    return MAGroundOverlay()..refId = result;
   }
   
 
@@ -18,7 +19,7 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
-   Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
+  Future<MAGroundOverlayRenderer> initWithGroundOverlay(MAGroundOverlay groundOverlay) async {
     // 日志打印
     print('fluttify-dart: MAGroundOverlayRenderer@$refId::initWithGroundOverlay([])');
   
@@ -30,7 +31,11 @@ class MAGroundOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return MAGroundOverlayRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAGroundOverlayRenderer()..refId = result;
+    }
   }
   
 }

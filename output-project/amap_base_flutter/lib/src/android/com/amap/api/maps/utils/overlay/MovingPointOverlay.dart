@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPoints([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> resetIndex() async {
+  Future<void> resetIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::resetIndex([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTotalDuration(int var1) async {
+  Future<void> setTotalDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setTotalDuration([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> startSmoothMove() async {
+  Future<void> startSmoothMove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::startSmoothMove([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> stopMove() async {
+  Future<void> stopMove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::stopMove([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BasePointOverlay> getObject() async {
+  Future<com_amap_api_maps_model_BasePointOverlay> getObject() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getObject([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BasePointOverlay()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BasePointOverlay()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPosition() async {
+  Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getPosition([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<int> getIndex() async {
+  Future<int> getIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getIndex([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> destroy() async {
+  Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::destroy([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeMarker() async {
+  Future<void> removeMarker() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::removeMarker([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setPosition([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotate(double var1) async {
+  Future<void> setRotate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setRotate([\'var1\':$var1])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
+  Future<void> setMoveListener(com_amap_api_maps_utils_overlay_MovingPointOverlay_MoveListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::setMoveListener([])');
   
@@ -238,7 +291,11 @@ class com_amap_api_maps_utils_overlay_MovingPointOverlay extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

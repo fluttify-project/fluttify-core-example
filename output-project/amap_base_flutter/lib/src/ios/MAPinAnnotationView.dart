@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPinAnnotationView extends MAAnnotationView  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MAPinAnnotationColor> get_pinColor() async {
     final result = await _channel.invokeMethod("MAPinAnnotationView::get_pinColor", {'refId': refId});
-    return result;
+    return MAPinAnnotationColor.values[result];
   }
   
   Future<bool> get_animatesDrop() async {

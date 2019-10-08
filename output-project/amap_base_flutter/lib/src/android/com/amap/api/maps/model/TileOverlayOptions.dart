@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider(com_amap_api_maps_model_TileProvider var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> tileProvider(com_amap_api_maps_model_TileProvider var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::tileProvider([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::visible([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> memCacheSize(int var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> memCacheSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::memCacheSize([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheSize(int var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheSize([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheDir(String var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheDir(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheDir([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> memoryCacheEnabled(bool var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> memoryCacheEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::memoryCacheEnabled([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheEnabled(bool var1) async {
+  Future<com_amap_api_maps_model_TileOverlayOptions> diskCacheEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::diskCacheEnabled([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileOverlayOptions()..refId = result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getZIndex([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::isVisible([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getMemCacheSize() async {
+  Future<int> getMemCacheSize() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemCacheSize([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getDiskCacheSize() async {
+  Future<int> getDiskCacheSize() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheSize([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getDiskCacheDir() async {
+  Future<String> getDiskCacheDir() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheDir([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getMemoryCacheEnabled() async {
+  Future<bool> getMemoryCacheEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getMemoryCacheEnabled([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getDiskCacheEnabled() async {
+  Future<bool> getDiskCacheEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TileOverlayOptions@$refId::getDiskCacheEnabled([])');
   
@@ -236,7 +293,11 @@ class com_amap_api_maps_model_TileOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

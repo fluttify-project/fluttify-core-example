@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,10 +27,14 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_trace_LBSTraceClient()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_trace_LBSTraceClient()..refId = result;
+    }
   }
   
-   Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
+  Future<void> queryProcessedTrace(int var1, List<com_amap_api_trace_TraceLocation> var2, int var3, com_amap_api_trace_TraceListener var4) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::queryProcessedTrace([\'var1\':$var1, \'var3\':$var3])');
   
@@ -41,10 +46,14 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
+  Future<void> startTrace(com_amap_api_trace_TraceStatusListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::startTrace([])');
   
@@ -65,7 +74,7 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
               print('fluttify-dart-callback: onTraceStatus([\'var3\':$args[var3]])');
         
                 // 调用回调方法
-              var1?.onTraceStatus([], [], args['var3']);
+              var1?.onTraceStatus((args['var1'] as List).cast<int>().map((it) => com_amap_api_trace_TraceLocation()..refId = it).toList(), (args['var2'] as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList(), args['var3']);
               break;
             default:
               break;
@@ -73,10 +82,14 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> stopTrace() async {
+  Future<void> stopTrace() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::stopTrace([])');
   
@@ -88,10 +101,14 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> destroy() async {
+  Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.LBSTraceClient@$refId::destroy([])');
   
@@ -103,7 +120,11 @@ class com_amap_api_trace_LBSTraceClient extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

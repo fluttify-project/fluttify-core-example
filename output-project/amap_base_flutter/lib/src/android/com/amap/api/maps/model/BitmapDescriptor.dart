@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> getId() async {
+  Future<String> getId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getId([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> clone() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> clone() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::clone([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
-   Future<android_graphics_Bitmap> getBitmap() async {
+  Future<android_graphics_Bitmap> getBitmap() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getBitmap([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
   
     // 返回值
-    return android_graphics_Bitmap()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_graphics_Bitmap()..refId = result;
+    }
   }
   
-   Future<int> getWidth() async {
+  Future<int> getWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getWidth([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getHeight() async {
+  Future<int> getHeight() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BitmapDescriptor@$refId::getHeight([])');
   
@@ -86,7 +103,11 @@ class com_amap_api_maps_model_BitmapDescriptor extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

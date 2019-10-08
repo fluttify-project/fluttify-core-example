@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_AMapOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_AMapOptions> logoPosition(int var1) async {
+  Future<com_amap_api_maps_AMapOptions> logoPosition(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::logoPosition([\'var1\':$var1])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> zOrderOnTop(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> zOrderOnTop(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zOrderOnTop([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> mapType(int var1) async {
+  Future<com_amap_api_maps_AMapOptions> mapType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::mapType([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> camera(com_amap_api_maps_model_CameraPosition var1) async {
+  Future<com_amap_api_maps_AMapOptions> camera(com_amap_api_maps_model_CameraPosition var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::camera([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> scaleControlsEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> scaleControlsEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scaleControlsEnabled([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> zoomControlsEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> zoomControlsEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomControlsEnabled([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> compassEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> compassEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::compassEnabled([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> scrollGesturesEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> scrollGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::scrollGesturesEnabled([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> zoomGesturesEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> zoomGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::zoomGesturesEnabled([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> tiltGesturesEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> tiltGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::tiltGesturesEnabled([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_AMapOptions> rotateGesturesEnabled(bool var1) async {
+  Future<com_amap_api_maps_AMapOptions> rotateGesturesEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::rotateGesturesEnabled([\'var1\':$var1])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_AMapOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_AMapOptions()..refId = result;
+    }
   }
   
-   Future<int> getLogoPosition() async {
+  Future<int> getLogoPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getLogoPosition([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getZOrderOnTop() async {
+  Future<bool> getZOrderOnTop() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZOrderOnTop([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getMapType() async {
+  Future<int> getMapType() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getMapType([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CameraPosition> getCamera() async {
+  Future<com_amap_api_maps_model_CameraPosition> getCamera() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCamera([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CameraPosition()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CameraPosition()..refId = result;
+    }
   }
   
-   Future<bool> getScaleControlsEnabled() async {
+  Future<bool> getScaleControlsEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScaleControlsEnabled([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getZoomControlsEnabled() async {
+  Future<bool> getZoomControlsEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomControlsEnabled([])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getCompassEnabled() async {
+  Future<bool> getCompassEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getCompassEnabled([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getScrollGesturesEnabled() async {
+  Future<bool> getScrollGesturesEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getScrollGesturesEnabled([])');
   
@@ -296,10 +369,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getZoomGesturesEnabled() async {
+  Future<bool> getZoomGesturesEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getZoomGesturesEnabled([])');
   
@@ -311,10 +388,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getTiltGesturesEnabled() async {
+  Future<bool> getTiltGesturesEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getTiltGesturesEnabled([])');
   
@@ -326,10 +407,14 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getRotateGesturesEnabled() async {
+  Future<bool> getRotateGesturesEnabled() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.AMapOptions@$refId::getRotateGesturesEnabled([])');
   
@@ -341,7 +426,11 @@ class com_amap_api_maps_AMapOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/services.dart';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class ObjectFactory_Android {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -24,12 +24,12 @@ class ObjectFactory_Android {
     return android_os_Bundle()..refId = refId;
   }
 
-  static Future<String> release(int refId) async {
-    return await _channel.invokeMethod('ObjectFactory::release', {'refId': refId});
+  static Future<void> release(Ref_Android ref) async {
+    await _channel.invokeMethod('ObjectFactory::release', {'refId': ref.refId});
   }
 
-  static Future<android_app_Activity> clearRefMap() async {
-    return await _channel.invokeMethod('ObjectFactory::clearRefMap');
+  static Future<void> clearRefMap() async {
+    await _channel.invokeMethod('ObjectFactory::clearRefMap');
   }
 
   static Future<com_autonavi_ae_gmap_maploader_ProcessingTile> createcom_autonavi_ae_gmap_maploader_ProcessingTile__String(String var1) async {
@@ -562,6 +562,16 @@ class ObjectFactory_Android {
     return com_amap_api_maps_model_PolylineOptions()..refId = refId;
   }
   
+  static Future<com_amap_api_maps_model_Tile> createcom_amap_api_maps_model_Tile__int__int__byteArray(int var1, int var2, List<int> var3) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray', {"var1": var1, "var2": var2, "var3": var3});
+    return com_amap_api_maps_model_Tile()..refId = refId;
+  }
+  
+  static Future<com_amap_api_maps_model_Gradient> createcom_amap_api_maps_model_Gradient__intArray__floatArray(List<int> var1, List<double> var2) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray', {"var1": var1, "var2": var2});
+    return com_amap_api_maps_model_Gradient()..refId = refId;
+  }
+  
   static Future<com_amap_api_maps_model_NaviPara> createcom_amap_api_maps_model_NaviPara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_NaviPara__');
     return com_amap_api_maps_model_NaviPara()..refId = refId;
@@ -939,17 +949,17 @@ class java_lang_Object extends Ref_Android {}
 
 class android_content_Context extends java_lang_Object {}
 
-class android_app_Application extends java_lang_Object {}
+class android_app_Application extends android_content_Context {}
 
-class android_app_Activity extends java_lang_Object {}
+class android_app_Activity extends android_content_Context {}
 
 class android_os_Bundle extends java_lang_Object {}
 
 class android_view_View extends java_lang_Object {}
 
-class android_widget_FrameLayout extends java_lang_Object {}
+class android_widget_FrameLayout extends android_view_ViewGroup {}
 
-class android_view_ViewGroup extends java_lang_Object {}
+class android_view_ViewGroup extends android_view_View {}
 
 class android_graphics_Point extends java_lang_Object {}
 

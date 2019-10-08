@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATileOverlayRenderer extends MAOverlayRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MATileOverlay> get_tileOverlay() async {
     final result = await _channel.invokeMethod("MATileOverlayRenderer::get_tileOverlay", {'refId': refId});
-    return result;
+    return MATileOverlay()..refId = result;
   }
   
 
@@ -18,7 +19,7 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
-   Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
+  Future<MATileOverlayRenderer> initWithTileOverlay(MATileOverlay tileOverlay) async {
     // 日志打印
     print('fluttify-dart: MATileOverlayRenderer@$refId::initWithTileOverlay([])');
   
@@ -30,10 +31,14 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return MATileOverlayRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MATileOverlayRenderer()..refId = result;
+    }
   }
   
-   Future<void> reloadData() async {
+  Future<void> reloadData() async {
     // 日志打印
     print('fluttify-dart: MATileOverlayRenderer@$refId::reloadData([])');
   
@@ -45,7 +50,11 @@ class MATileOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

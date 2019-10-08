@@ -39,6 +39,7 @@
                     "typeName": "AMapNaviConfig*",
                     "name": "config",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -60,6 +61,7 @@
                     "typeName": "AMapRouteConfig*",
                     "name": "config",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -81,6 +83,7 @@
                     "typeName": "AMapPOIConfig*",
                     "name": "config",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -197,6 +200,7 @@
                 "typeName": "NSString",
                 "name": "*appScheme",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapNaviConfig",
@@ -213,6 +217,7 @@
                 "typeName": "NSString",
                 "name": "*appName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapNaviConfig",
@@ -229,6 +234,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "destination",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapNaviConfig",
@@ -245,6 +251,7 @@
                 "typeName": "AMapDrivingStrategy",
                 "name": "strategy",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapNaviConfig",
@@ -281,6 +288,7 @@
                 "typeName": "NSString",
                 "name": "*appScheme",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -297,6 +305,7 @@
                 "typeName": "NSString",
                 "name": "*appName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -313,6 +322,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "startCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -329,6 +339,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "destinationCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -345,6 +356,7 @@
                 "typeName": "AMapDrivingStrategy",
                 "name": "drivingStrategy",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -361,6 +373,7 @@
                 "typeName": "AMapTransitStrategy",
                 "name": "transitStrategy",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -377,6 +390,7 @@
                 "typeName": "AMapRouteSearchType",
                 "name": "routeType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapRouteConfig",
@@ -413,6 +427,7 @@
                 "typeName": "NSString",
                 "name": "*appScheme",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapPOIConfig",
@@ -429,6 +444,7 @@
                 "typeName": "NSString",
                 "name": "*appName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapPOIConfig",
@@ -445,6 +461,7 @@
                 "typeName": "NSString",
                 "name": "*keywords",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapPOIConfig",
@@ -461,6 +478,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "leftTopCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapPOIConfig",
@@ -477,6 +495,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "rightBottomCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapPOIConfig",
@@ -541,6 +560,7 @@
                 "typeName": "NSString",
                 "name": "*apiKey",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapServices",
@@ -557,6 +577,7 @@
                 "typeName": "BOOL",
                 "name": "enableHTTPS",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapServices",
@@ -573,6 +594,7 @@
                 "typeName": "BOOL",
                 "name": "crashReportEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapServices",
@@ -589,6 +611,7 @@
                 "typeName": "NSString",
                 "name": "*identifier",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "AMapServices",
@@ -641,6 +664,7 @@
                 "typeName": "NSString",
                 "name": "*cityCode",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineCity",
@@ -696,6 +720,7 @@
                 "typeName": "MAMapPoint",
                 "name": "*points",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPoint",
@@ -712,6 +737,7 @@
                 "typeName": "NSUInteger",
                 "name": "pointCount",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPoint",
@@ -728,6 +754,7 @@
                 "typeName": "BOOL",
                 "name": "cross180Longitude",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPoint",
@@ -748,6 +775,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -758,6 +786,7 @@
                     "typeName": "NSRange",
                     "name": "range",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -798,6 +827,7 @@
                 "typeName": "UIImage",
                 "name": "*icon",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAGroundOverlay",
@@ -814,6 +844,7 @@
                 "typeName": "CGFloat",
                 "name": "alpha",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAGroundOverlay",
@@ -830,6 +861,7 @@
                 "typeName": "CGFloat",
                 "name": "zoomLevel",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAGroundOverlay",
@@ -846,6 +878,7 @@
                 "typeName": "MACoordinateBounds",
                 "name": "bounds",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAGroundOverlay",
@@ -866,6 +899,7 @@
                     "typeName": "MACoordinateBounds",
                     "name": "bounds",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -876,6 +910,7 @@
                     "typeName": "UIImage*",
                     "name": "icon",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -897,6 +932,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -907,6 +943,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -917,6 +954,7 @@
                     "typeName": "UIImage*",
                     "name": "icon",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -938,6 +976,7 @@
                     "typeName": "MACoordinateBounds",
                     "name": "bounds",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -948,6 +987,7 @@
                     "typeName": "UIImage*",
                     "name": "icon",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -969,6 +1009,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -979,6 +1020,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -989,6 +1031,7 @@
                     "typeName": "UIImage*",
                     "name": "icon",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1027,6 +1070,7 @@
                 "typeName": "MAPolygon",
                 "name": "*polygon",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPolygonRenderer",
@@ -1047,6 +1091,7 @@
                     "typeName": "MAPolygon*",
                     "name": "polygon",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1108,6 +1153,7 @@
                 "typeName": "MAPinAnnotationColor",
                 "name": "pinColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPinAnnotationView",
@@ -1124,6 +1170,7 @@
                 "typeName": "BOOL",
                 "name": "animatesDrop",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPinAnnotationView",
@@ -1160,6 +1207,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapNode",
@@ -1176,6 +1224,7 @@
                 "typeName": "float",
                 "name": "intensity",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapNode",
@@ -1211,9 +1260,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cUIColor*\u003e",
+                "typeName": "UIColor*",
                 "name": "*colors",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAHeatMapGradient",
@@ -1227,9 +1277,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cNSNumber*\u003e",
+                "typeName": "NSNumber*",
                 "name": "*startPoints",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAHeatMapGradient",
@@ -1247,9 +1298,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "NSArray\u003cUIColor*\u003e*",
+                    "typeName": "UIColor*",
                     "name": "colors",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1257,9 +1309,10 @@
                 {
                   "named": "andWithStartPoints",
                   "variable": {
-                    "typeName": "NSArray\u003cNSNumber*\u003e*",
+                    "typeName": "NSNumber*",
                     "name": "startPoints",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1295,9 +1348,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMAHeatMapNode*\u003e",
+                "typeName": "MAHeatMapNode*",
                 "name": "*data",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1314,6 +1368,7 @@
                 "typeName": "NSInteger",
                 "name": "radius",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1330,6 +1385,7 @@
                 "typeName": "CGFloat",
                 "name": "opacity",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1346,6 +1402,7 @@
                 "typeName": "MAHeatMapGradient",
                 "name": "*gradient",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1362,6 +1419,7 @@
                 "typeName": "BOOL",
                 "name": "allowRetinaAdapting",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAHeatMapTileOverlay",
@@ -1398,6 +1456,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "centerCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapStatus",
@@ -1414,6 +1473,7 @@
                 "typeName": "CGFloat",
                 "name": "zoomLevel",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapStatus",
@@ -1430,6 +1490,7 @@
                 "typeName": "CGFloat",
                 "name": "rotationDegree",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapStatus",
@@ -1446,6 +1507,7 @@
                 "typeName": "CGFloat",
                 "name": "cameraDegree",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapStatus",
@@ -1462,6 +1524,7 @@
                 "typeName": "CGPoint",
                 "name": "screenAnchor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapStatus",
@@ -1482,6 +1545,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1492,6 +1556,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1502,6 +1567,7 @@
                     "typeName": "CGFloat",
                     "name": "rotationDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1512,6 +1578,7 @@
                     "typeName": "CGFloat",
                     "name": "cameraDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1522,6 +1589,7 @@
                     "typeName": "CGPoint",
                     "name": "screenAnchor",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1543,6 +1611,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1553,6 +1622,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1563,6 +1633,7 @@
                     "typeName": "CGFloat",
                     "name": "rotationDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1573,6 +1644,7 @@
                     "typeName": "CGFloat",
                     "name": "cameraDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1583,6 +1655,7 @@
                     "typeName": "CGPoint",
                     "name": "screenAnchor",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1621,6 +1694,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPointAnnotation",
@@ -1637,6 +1711,7 @@
                 "typeName": "BOOL",
                 "name": "lockedToScreen",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPointAnnotation",
@@ -1653,6 +1728,7 @@
                 "typeName": "CGPoint",
                 "name": "lockedScreenPoint",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPointAnnotation",
@@ -1688,9 +1764,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cid\u003cMAOverlay\u003e",
+                "typeName": "MAOverlay",
                 "name": "*hollowShapes",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MACircle",
@@ -1707,6 +1784,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACircle",
@@ -1723,6 +1801,7 @@
                 "typeName": "CLLocationDistance",
                 "name": "radius",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACircle",
@@ -1739,6 +1818,7 @@
                 "typeName": "MAMapRect",
                 "name": "boundingMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACircle",
@@ -1759,6 +1839,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coord",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1769,6 +1850,7 @@
                     "typeName": "CLLocationDistance",
                     "name": "radius",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1790,6 +1872,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1811,6 +1894,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coord",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1821,6 +1905,7 @@
                     "typeName": "CLLocationDistance",
                     "name": "radius",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1859,6 +1944,7 @@
                 "typeName": "MAArc",
                 "name": "*arc",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAArcRenderer",
@@ -1879,6 +1965,7 @@
                     "typeName": "MAArc*",
                     "name": "arc",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -1919,6 +2006,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotation",
@@ -1935,6 +2023,7 @@
                 "typeName": "NSString",
                 "name": "*title",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotation",
@@ -1951,6 +2040,7 @@
                 "typeName": "NSString",
                 "name": "*subtitle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotation",
@@ -1971,6 +2061,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "newCoordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2014,6 +2105,7 @@
                     "typeName": "CGFloat",
                     "name": "timeDelta",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2082,6 +2174,7 @@
                 "typeName": "MAOfflineMap",
                 "name": "*offlineMap",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineMapViewController",
@@ -2129,6 +2222,7 @@
                 "typeName": "NSData",
                 "name": "*styleData",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapCustomStyleOptions",
@@ -2145,6 +2239,7 @@
                 "typeName": "NSString",
                 "name": "*styleId",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapCustomStyleOptions",
@@ -2161,6 +2256,7 @@
                 "typeName": "NSData",
                 "name": "*styleTextureData",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapCustomStyleOptions",
@@ -2177,6 +2273,7 @@
                 "typeName": "NSData",
                 "name": "*styleExtraData",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapCustomStyleOptions",
@@ -2212,9 +2309,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cid\u003cMAOverlay\u003e",
+                "typeName": "MAOverlay",
                 "name": "*hollowShapes",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAPolygon",
@@ -2235,6 +2333,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2245,6 +2344,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2266,6 +2366,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2276,6 +2377,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2297,6 +2399,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2307,6 +2410,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2328,6 +2432,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2338,6 +2443,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2378,6 +2484,7 @@
                 "typeName": "MAParticleOverlayOptions",
                 "name": "*overlayOption",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlay",
@@ -2398,6 +2505,7 @@
                     "typeName": "MAParticleOverlayOptions*",
                     "name": "option",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2419,6 +2527,7 @@
                     "typeName": "MAParticleOverlayOptions*",
                     "name": "overlayOption",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2462,6 +2571,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2472,6 +2582,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2493,6 +2604,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2503,6 +2615,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2524,6 +2637,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2534,6 +2648,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2555,6 +2670,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2565,6 +2681,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2603,6 +2720,7 @@
                 "typeName": "MAMultiPolyline",
                 "name": "*multiPolyline",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiColoredPolylineRenderer",
@@ -2616,9 +2734,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cUIColor*\u003e",
+                "typeName": "UIColor*",
                 "name": "*strokeColors",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAMultiColoredPolylineRenderer",
@@ -2635,6 +2754,7 @@
                 "typeName": "BOOL",
                 "name": "gradient",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiColoredPolylineRenderer",
@@ -2655,6 +2775,7 @@
                     "typeName": "MAMultiPolyline*",
                     "name": "multiPolyline",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2695,6 +2816,7 @@
                 "typeName": "CLLocationDirection",
                 "name": "movingDirection",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnimatedAnnotation",
@@ -2715,6 +2837,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coordinates",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2725,6 +2848,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2735,6 +2859,7 @@
                     "typeName": "CGFloat",
                     "name": "duration",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2745,6 +2870,7 @@
                     "typeName": "NSString*",
                     "name": "name",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2755,6 +2881,7 @@
                     "typeName": "void|BOOL isFinished",
                     "name": "completeCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2776,6 +2903,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coordinates",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2786,6 +2914,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2796,6 +2925,7 @@
                     "typeName": "CGFloat",
                     "name": "duration",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2806,6 +2936,7 @@
                     "typeName": "NSString*",
                     "name": "name",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2816,6 +2947,7 @@
                     "typeName": "void|BOOL isFinished",
                     "name": "completeCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2826,6 +2958,7 @@
                     "typeName": "void|MAAnnotationMoveAnimation currentAni",
                     "name": "stepCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -2886,6 +3019,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlay",
@@ -2902,6 +3036,7 @@
                 "typeName": "MAMapRect",
                 "name": "boundingMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlay",
@@ -2938,6 +3073,7 @@
                 "typeName": "MAMultiPolyline",
                 "name": "*multiPolyline",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiTexturePolylineRenderer",
@@ -2954,6 +3090,7 @@
                 "typeName": "NSArray",
                 "name": "*strokeTextureImages",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiTexturePolylineRenderer",
@@ -2967,9 +3104,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cNSNumber*\u003e",
+                "typeName": "NSNumber*",
                 "name": "*strokeTextureIDs",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAMultiTexturePolylineRenderer",
@@ -2990,6 +3128,7 @@
                     "typeName": "MAMultiPolyline*",
                     "name": "multiPolyline",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3010,7 +3149,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "textureImages",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3049,6 +3189,7 @@
                 "typeName": "NSArray",
                 "name": "*cities",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineProvince",
@@ -3085,6 +3226,7 @@
                 "typeName": "MATileOverlay",
                 "name": "*tileOverlay",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlayRenderer",
@@ -3105,6 +3247,7 @@
                     "typeName": "MATileOverlay*",
                     "name": "tileOverlay",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3177,6 +3320,7 @@
                 "typeName": "NSString",
                 "name": "*name",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3193,6 +3337,7 @@
                 "typeName": "NSString",
                 "name": "*jianpin",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3209,6 +3354,7 @@
                 "typeName": "NSString",
                 "name": "*pinyin",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3225,6 +3371,7 @@
                 "typeName": "NSString",
                 "name": "*adcode",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3241,6 +3388,7 @@
                 "typeName": "longlong",
                 "name": "size",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3257,6 +3405,7 @@
                 "typeName": "MAOfflineItemStatus",
                 "name": "itemStatus",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3273,6 +3422,7 @@
                 "typeName": "longlong",
                 "name": "downloadedSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItem",
@@ -3359,6 +3509,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3369,6 +3520,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3390,6 +3542,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3400,6 +3553,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3421,6 +3575,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3431,6 +3586,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3452,6 +3608,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3462,6 +3619,7 @@
                     "typeName": "NSInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3500,6 +3658,7 @@
                 "typeName": "NSString",
                 "name": "*name",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATouchPoi",
@@ -3516,6 +3675,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATouchPoi",
@@ -3532,6 +3692,7 @@
                 "typeName": "NSString",
                 "name": "*uid",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATouchPoi",
@@ -3584,9 +3745,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cNSNumber*\u003e",
+                "typeName": "NSNumber*",
                 "name": "*drawStyleIndexes",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAMultiPolyline",
@@ -3607,6 +3769,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3617,6 +3780,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3624,9 +3788,10 @@
                 {
                   "named": "drawStyleIndexes",
                   "variable": {
-                    "typeName": "NSArray\u003cNSNumber*\u003e*",
+                    "typeName": "NSNumber*",
                     "name": "drawStyleIndexes",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3648,6 +3813,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3658,6 +3824,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3665,9 +3832,10 @@
                 {
                   "named": "drawStyleIndexes",
                   "variable": {
-                    "typeName": "NSArray\u003cNSNumber*\u003e*",
+                    "typeName": "NSNumber*",
                     "name": "drawStyleIndexes",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3689,6 +3857,7 @@
                     "typeName": "MAMapPoint*",
                     "name": "points",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3699,6 +3868,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3706,9 +3876,10 @@
                 {
                   "named": "drawStyleIndexes",
                   "variable": {
-                    "typeName": "NSArray\u003cNSNumber*\u003e*",
+                    "typeName": "NSNumber*",
                     "name": "drawStyleIndexes",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3730,6 +3901,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3740,6 +3912,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3747,9 +3920,10 @@
                 {
                   "named": "drawStyleIndexes",
                   "variable": {
-                    "typeName": "NSArray\u003cNSNumber*\u003e*",
+                    "typeName": "NSNumber*",
                     "name": "drawStyleIndexes",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3793,6 +3967,7 @@
                     "typeName": "MATraceManager*",
                     "name": "manager",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3800,9 +3975,10 @@
                 {
                   "named": "didTrace",
                   "variable": {
-                    "typeName": "NSArray\u003cCLLocation*\u003e*",
+                    "typeName": "CLLocation*",
                     "name": "locations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3810,9 +3986,10 @@
                 {
                   "named": "correct",
                   "variable": {
-                    "typeName": "NSArray\u003cMATracePoint*\u003e*",
+                    "typeName": "MATracePoint*",
                     "name": "tracePoints",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3823,6 +4000,7 @@
                     "typeName": "double",
                     "name": "distance",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3833,6 +4011,7 @@
                     "typeName": "NSError*",
                     "name": "error",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3854,6 +4033,7 @@
                     "typeName": "CLLocationManager*",
                     "name": "locationManager",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3892,6 +4072,7 @@
                 "typeName": "MATraceDelegate",
                 "name": "delegate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATraceManager",
@@ -3919,9 +4100,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "NSArray\u003cMATraceLocation*\u003e*",
+                    "typeName": "MATraceLocation*",
                     "name": "locations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3932,6 +4114,7 @@
                     "typeName": "AMapCoordinateType",
                     "name": "type",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3942,6 +4125,7 @@
                     "typeName": "MAProcessingCallback",
                     "name": "processingCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3952,6 +4136,7 @@
                     "typeName": "MAFinishCallback",
                     "name": "finishCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3962,6 +4147,7 @@
                     "typeName": "MAFailedCallback",
                     "name": "failedCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -3983,6 +4169,7 @@
                     "typeName": "MATraceLocationCallback",
                     "name": "locCallback",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -4056,6 +4243,7 @@
                     "typeName": "MAMultiPointOverlayRenderer*",
                     "name": "renderer",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -4066,6 +4254,7 @@
                     "typeName": "MAMultiPointItem*",
                     "name": "item",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -4104,6 +4293,7 @@
                 "typeName": "MAMultiPointOverlayRendererDelegate",
                 "name": "delegate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlayRenderer",
@@ -4120,6 +4310,7 @@
                 "typeName": "UIImage",
                 "name": "*icon",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlayRenderer",
@@ -4136,6 +4327,7 @@
                 "typeName": "CGSize",
                 "name": "pointSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlayRenderer",
@@ -4152,6 +4344,7 @@
                 "typeName": "CGPoint",
                 "name": "anchor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlayRenderer",
@@ -4168,6 +4361,7 @@
                 "typeName": "MAMultiPointOverlay",
                 "name": "*multiPointOverlay",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlayRenderer",
@@ -4188,6 +4382,7 @@
                     "typeName": "MAMultiPointOverlay*",
                     "name": "multiPointOverlay",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -4226,6 +4421,7 @@
                 "typeName": "NSString",
                 "name": "*floorName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorFloorInfo",
@@ -4242,6 +4438,7 @@
                 "typeName": "int",
                 "name": "floorIndex",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorFloorInfo",
@@ -4258,6 +4455,7 @@
                 "typeName": "NSString",
                 "name": "*floorNona",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorFloorInfo",
@@ -4274,6 +4472,7 @@
                 "typeName": "BOOL",
                 "name": "isPark",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorFloorInfo",
@@ -4310,6 +4509,7 @@
                 "typeName": "NSString",
                 "name": "*cnName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4326,6 +4526,7 @@
                 "typeName": "NSString",
                 "name": "*enName",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4342,6 +4543,7 @@
                 "typeName": "NSString",
                 "name": "*poiID",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4358,6 +4560,7 @@
                 "typeName": "NSString",
                 "name": "*buildingType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4374,6 +4577,7 @@
                 "typeName": "int",
                 "name": "activeFloorIndex",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4390,6 +4594,7 @@
                 "typeName": "int",
                 "name": "activeFloorInfoIndex",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4406,6 +4611,7 @@
                 "typeName": "NSArray",
                 "name": "*floorInfo",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4422,6 +4628,7 @@
                 "typeName": "int",
                 "name": "numberOfFloor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4438,6 +4645,7 @@
                 "typeName": "int",
                 "name": "numberOfParkFloor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAIndoorInfo",
@@ -4474,6 +4682,7 @@
                 "typeName": "MAPolyline",
                 "name": "*polyline",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPolylineRenderer",
@@ -4490,6 +4699,7 @@
                 "typeName": "BOOL",
                 "name": "is3DArrowLine",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPolylineRenderer",
@@ -4506,6 +4716,7 @@
                 "typeName": "UIColor",
                 "name": "*sideColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAPolylineRenderer",
@@ -4526,6 +4737,7 @@
                     "typeName": "MAPolyline*",
                     "name": "polyline",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -4666,6 +4878,7 @@
                 "typeName": "NSString",
                 "name": "*title",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAShape",
@@ -4682,6 +4895,7 @@
                 "typeName": "NSString",
                 "name": "*subtitle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAShape",
@@ -4743,6 +4957,7 @@
                 "typeName": "NSString",
                 "name": "*reuseIdentifier",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4759,6 +4974,7 @@
                 "typeName": "NSInteger",
                 "name": "zIndex",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4775,6 +4991,7 @@
                 "typeName": "MAAnnotation",
                 "name": "annotation",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4791,6 +5008,7 @@
                 "typeName": "UIImage",
                 "name": "*image",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4807,6 +5025,7 @@
                 "typeName": "UIImageView",
                 "name": "*imageView",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4823,6 +5042,7 @@
                 "typeName": "MACustomCalloutView",
                 "name": "*customCalloutView",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4839,6 +5059,7 @@
                 "typeName": "CGPoint",
                 "name": "centerOffset",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4855,6 +5076,7 @@
                 "typeName": "CGPoint",
                 "name": "calloutOffset",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4871,6 +5093,7 @@
                 "typeName": "BOOL",
                 "name": "enabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4887,6 +5110,7 @@
                 "typeName": "BOOL",
                 "name": "highlighted",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4903,6 +5127,7 @@
                 "typeName": "BOOL",
                 "name": "selected",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4919,6 +5144,7 @@
                 "typeName": "BOOL",
                 "name": "canShowCallout",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4935,6 +5161,7 @@
                 "typeName": "UIView",
                 "name": "*leftCalloutAccessoryView",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4951,6 +5178,7 @@
                 "typeName": "UIView",
                 "name": "*rightCalloutAccessoryView",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4967,6 +5195,7 @@
                 "typeName": "BOOL",
                 "name": "draggable",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -4983,6 +5212,7 @@
                 "typeName": "MAAnnotationViewDragState",
                 "name": "dragState",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAAnnotationView",
@@ -5003,6 +5233,7 @@
                     "typeName": "BOOL",
                     "name": "selected",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5013,6 +5244,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5031,9 +5263,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5044,6 +5277,7 @@
                     "typeName": "NSString*",
                     "name": "reuseIdentifier",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5075,6 +5309,7 @@
                     "typeName": "MAAnnotationViewDragState",
                     "name": "newDragState",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5085,6 +5320,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5125,6 +5361,7 @@
                 "typeName": "CGSize",
                 "name": "tileSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5141,6 +5378,7 @@
                 "typeName": "NSInteger",
                 "name": "minimumZ",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5157,6 +5395,7 @@
                 "typeName": "NSInteger",
                 "name": "maximumZ",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5173,6 +5412,7 @@
                 "typeName": "NSString",
                 "name": "*URLTemplate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5189,6 +5429,7 @@
                 "typeName": "BOOL",
                 "name": "canReplaceMapContent",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5205,6 +5446,7 @@
                 "typeName": "MAMapRect",
                 "name": "boundingMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5221,6 +5463,7 @@
                 "typeName": "BOOL",
                 "name": "disableOffScreenTileLoading",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATileOverlay",
@@ -5241,6 +5484,7 @@
                     "typeName": "NSString*",
                     "name": "URLTemplate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5262,6 +5506,7 @@
                     "typeName": "MATileOverlayPath",
                     "name": "path",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5283,6 +5528,7 @@
                     "typeName": "MATileOverlayPath",
                     "name": "path",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5293,6 +5539,7 @@
                     "typeName": "void|NSData tileData, NSError error",
                     "name": "result",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5314,6 +5561,7 @@
                     "typeName": "MATileOverlayPath",
                     "name": "path",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5390,6 +5638,7 @@
                 "typeName": "UIView",
                 "name": "*customView",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomCalloutView",
@@ -5406,6 +5655,7 @@
                 "typeName": "id",
                 "name": "userData",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomCalloutView",
@@ -5426,6 +5676,7 @@
                     "typeName": "UIView*",
                     "name": "customView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5464,6 +5715,7 @@
                 "typeName": "MAOfflineItem",
                 "name": "*province",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineItemCommonCity",
@@ -5549,9 +5801,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMAOfflineProvince*\u003e",
+                "typeName": "MAOfflineProvince*",
                 "name": "*provinces",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5565,9 +5818,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMAOfflineItemMunicipality*\u003e",
+                "typeName": "MAOfflineItemMunicipality*",
                 "name": "*municipalities",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5584,6 +5838,7 @@
                 "typeName": "MAOfflineItemNationWide",
                 "name": "*nationWide",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5597,9 +5852,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMAOfflineCity*\u003e",
+                "typeName": "MAOfflineCity*",
                 "name": "*cities",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5616,6 +5872,7 @@
                 "typeName": "NSString",
                 "name": "*version",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5632,6 +5889,7 @@
                 "typeName": "NSArray",
                 "name": "*",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
@@ -5662,6 +5920,7 @@
                     "typeName": "void|BOOL setupSuccess",
                     "name": "block",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5683,6 +5942,7 @@
                     "typeName": "MAOfflineItem*",
                     "name": "item",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5693,6 +5953,7 @@
                     "typeName": "BOOL",
                     "name": "shouldContinueWhenAppEntersBackground",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5703,6 +5964,7 @@
                     "typeName": "MAOfflineMapDownloadBlock",
                     "name": "downloadBlock",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5724,6 +5986,7 @@
                     "typeName": "MAOfflineItem*",
                     "name": "item",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5745,6 +6008,7 @@
                     "typeName": "MAOfflineItem*",
                     "name": "item",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5766,6 +6030,7 @@
                     "typeName": "MAOfflineItem*",
                     "name": "item",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5807,6 +6072,7 @@
                     "typeName": "MAOfflineMapNewestVersionBlock",
                     "name": "newestVersionBlock",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5828,6 +6094,7 @@
                     "typeName": "MAOfflineCity*",
                     "name": "city",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5838,6 +6105,7 @@
                     "typeName": "MAOfflineMapDownloadBlock",
                     "name": "downloadBlock",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5859,6 +6127,7 @@
                     "typeName": "MAOfflineCity*",
                     "name": "city",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5869,6 +6138,7 @@
                     "typeName": "BOOL",
                     "name": "shouldContinueWhenAppEntersBackground",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5879,6 +6149,7 @@
                     "typeName": "MAOfflineMapDownloadBlock",
                     "name": "downloadBlock",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5900,6 +6171,7 @@
                     "typeName": "MAOfflineCity*",
                     "name": "city",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5921,6 +6193,7 @@
                     "typeName": "MAOfflineCity*",
                     "name": "city",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -5959,6 +6232,7 @@
                 "typeName": "MACircle",
                 "name": "*circle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACircleRenderer",
@@ -5979,6 +6253,7 @@
                     "typeName": "MACircle*",
                     "name": "circle",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6017,6 +6292,7 @@
                 "typeName": "MAParticleOverlay",
                 "name": "*particleOverlay",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayRenderer",
@@ -6037,6 +6313,7 @@
                     "typeName": "MAParticleOverlay*",
                     "name": "particleOverlay",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6411,6 +6688,7 @@
                     "typeName": "float",
                     "name": "x1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6421,6 +6699,7 @@
                     "typeName": "float",
                     "name": "y1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6431,6 +6710,7 @@
                     "typeName": "float",
                     "name": "z1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6441,6 +6721,7 @@
                     "typeName": "float",
                     "name": "x2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6451,6 +6732,7 @@
                     "typeName": "float",
                     "name": "y2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6461,6 +6743,7 @@
                     "typeName": "float",
                     "name": "z2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6536,6 +6819,7 @@
                     "typeName": "float",
                     "name": "r1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6546,6 +6830,7 @@
                     "typeName": "float",
                     "name": "g1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6556,6 +6841,7 @@
                     "typeName": "float",
                     "name": "b1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6566,6 +6852,7 @@
                     "typeName": "float",
                     "name": "a1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6576,6 +6863,7 @@
                     "typeName": "float",
                     "name": "r2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6586,6 +6874,7 @@
                     "typeName": "float",
                     "name": "g2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6596,6 +6885,7 @@
                     "typeName": "float",
                     "name": "b2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6606,6 +6896,7 @@
                     "typeName": "float",
                     "name": "a2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6681,6 +6972,7 @@
                     "typeName": "float",
                     "name": "rotate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6724,6 +7016,7 @@
                     "typeName": "float",
                     "name": "timeFrame",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6745,6 +7038,7 @@
                     "typeName": "float",
                     "name": "timeFrame",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6766,6 +7060,7 @@
                     "typeName": "float",
                     "name": "timeFrame",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6809,6 +7104,7 @@
                     "typeName": "float",
                     "name": "x",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6819,6 +7115,7 @@
                     "typeName": "float",
                     "name": "y",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6829,6 +7126,7 @@
                     "typeName": "float",
                     "name": "z",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6870,6 +7168,7 @@
                     "typeName": "int",
                     "name": "rate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6880,6 +7179,7 @@
                     "typeName": "int",
                     "name": "rateTime",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6965,6 +7265,7 @@
                     "typeName": "float",
                     "name": "x",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6975,6 +7276,7 @@
                     "typeName": "float",
                     "name": "y",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6985,6 +7287,7 @@
                     "typeName": "float",
                     "name": "z",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -6995,6 +7298,7 @@
                     "typeName": "BOOL",
                     "name": "isUseRatio",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7038,6 +7342,7 @@
                     "typeName": "float",
                     "name": "left",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7048,6 +7353,7 @@
                     "typeName": "float",
                     "name": "top",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7058,6 +7364,7 @@
                     "typeName": "float",
                     "name": "right",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7068,6 +7375,7 @@
                     "typeName": "float",
                     "name": "bottom",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7078,6 +7386,7 @@
                     "typeName": "BOOL",
                     "name": "isUseRatio",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7116,9 +7425,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAParticleVelocityGenerate\u003e",
+                    "typeName": "MAParticleVelocityGenerate",
                     "name": "velocity",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7137,9 +7447,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAParticleRotationGenerate\u003e",
+                    "typeName": "MAParticleRotationGenerate",
                     "name": "rotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7158,9 +7469,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAParticleSizeGenerate\u003e",
+                    "typeName": "MAParticleSizeGenerate",
                     "name": "size",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7179,9 +7491,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAParticleColorGenerate\u003e",
+                    "typeName": "MAParticleColorGenerate",
                     "name": "color",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7220,6 +7533,7 @@
                 "typeName": "BOOL",
                 "name": "visibile",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7236,6 +7550,7 @@
                 "typeName": "NSTimeInterval",
                 "name": "duration",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7252,6 +7567,7 @@
                 "typeName": "BOOL",
                 "name": "loop",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7268,6 +7584,7 @@
                 "typeName": "NSInteger",
                 "name": "maxParticles",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7284,6 +7601,7 @@
                 "typeName": "UIImage",
                 "name": "*icon",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7300,6 +7618,7 @@
                 "typeName": "CGSize",
                 "name": "startParticleSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7316,6 +7635,7 @@
                 "typeName": "NSTimeInterval",
                 "name": "particleLifeTime",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7332,6 +7652,7 @@
                 "typeName": "MAParticleColorGenerate",
                 "name": "particleStartColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7348,6 +7669,7 @@
                 "typeName": "MAParticleVelocityGenerate",
                 "name": "particleStartSpeed",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7364,6 +7686,7 @@
                 "typeName": "MAParticleEmissionModule",
                 "name": "*particleEmissionModule",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7380,6 +7703,7 @@
                 "typeName": "MAParticleShapeModule",
                 "name": "particleShapeModule",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7396,6 +7720,7 @@
                 "typeName": "MAParticleOverLifeModule",
                 "name": "*particleOverLifeModule",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAParticleOverlayOptions",
@@ -7435,6 +7760,7 @@
                     "typeName": "MAParticleOverlayType",
                     "name": "particleType",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7496,6 +7822,7 @@
                 "typeName": "MAOverlayRenderDelegate",
                 "name": "rendererDelegate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayRenderer",
@@ -7532,6 +7859,7 @@
                 "typeName": "BOOL",
                 "name": "updating",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocation",
@@ -7548,6 +7876,7 @@
                 "typeName": "CLLocation",
                 "name": "*location",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocation",
@@ -7564,6 +7893,7 @@
                 "typeName": "CLHeading",
                 "name": "*heading",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocation",
@@ -7603,6 +7933,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "coordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointItem",
@@ -7619,6 +7950,7 @@
                 "typeName": "NSString",
                 "name": "*customID",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointItem",
@@ -7635,6 +7967,7 @@
                 "typeName": "NSString",
                 "name": "*title",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointItem",
@@ -7651,6 +7984,7 @@
                 "typeName": "NSString",
                 "name": "*subtitle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMultiPointItem",
@@ -7686,9 +8020,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMAMultiPointItem*\u003e",
+                "typeName": "MAMultiPointItem*",
                 "name": "*items",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAMultiPointOverlay",
@@ -7706,9 +8041,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "NSArray\u003cMAMultiPointItem*\u003e*",
+                    "typeName": "MAMultiPointItem*",
                     "name": "items",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7747,6 +8083,7 @@
                 "typeName": "CGFloat",
                 "name": "height",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayOption",
@@ -7763,6 +8100,7 @@
                 "typeName": "CGFloat",
                 "name": "heightScale",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayOption",
@@ -7779,6 +8117,7 @@
                 "typeName": "UIColor",
                 "name": "*topColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayOption",
@@ -7795,6 +8134,7 @@
                 "typeName": "UIColor",
                 "name": "*sideColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayOption",
@@ -7811,6 +8151,7 @@
                 "typeName": "BOOL",
                 "name": "visibile",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayOption",
@@ -7831,6 +8172,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7841,6 +8183,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7862,6 +8205,7 @@
                     "typeName": "CLLocationCoordinate2D*",
                     "name": "coords",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7872,6 +8216,7 @@
                     "typeName": "NSUInteger",
                     "name": "count",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7912,6 +8257,7 @@
                 "typeName": "MACustomBuildingOverlayOption",
                 "name": "*defaultOption",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlay",
@@ -7925,9 +8271,10 @@
               "isFinal": true,
               "isStatic": false,
               "variable": {
-                "typeName": "NSArray\u003cMACustomBuildingOverlayOption*\u003e",
+                "typeName": "MACustomBuildingOverlayOption*",
                 "name": "*customOptions",
                 "isList": true,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlay",
@@ -7948,6 +8295,7 @@
                     "typeName": "MACustomBuildingOverlayOption*",
                     "name": "option",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -7969,6 +8317,7 @@
                     "typeName": "MACustomBuildingOverlayOption*",
                     "name": "option",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -8009,6 +8358,7 @@
                 "typeName": "CLLocationDegrees",
                 "name": "latitude",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATracePoint",
@@ -8025,6 +8375,7 @@
                 "typeName": "CLLocationDegrees",
                 "name": "longitude",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATracePoint",
@@ -8061,6 +8412,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "loc",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATraceLocation",
@@ -8077,6 +8429,7 @@
                 "typeName": "double",
                 "name": "angle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATraceLocation",
@@ -8093,6 +8446,7 @@
                 "typeName": "double",
                 "name": "speed",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATraceLocation",
@@ -8109,6 +8463,7 @@
                 "typeName": "double",
                 "name": "time",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MATraceLocation",
@@ -8147,6 +8502,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "startCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAArc",
@@ -8163,6 +8519,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "passedCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAArc",
@@ -8179,6 +8536,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "endCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAArc",
@@ -8195,6 +8553,7 @@
                 "typeName": "MAMapRect",
                 "name": "boundingMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAArc",
@@ -8215,6 +8574,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "startCoordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -8225,6 +8585,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "passedCoordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -8235,6 +8596,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "endCoordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -8273,6 +8635,7 @@
                 "typeName": "BOOL",
                 "name": "showsAccuracyRing",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8289,6 +8652,7 @@
                 "typeName": "BOOL",
                 "name": "showsHeadingIndicator",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8305,6 +8669,7 @@
                 "typeName": "UIColor",
                 "name": "*fillColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8321,6 +8686,7 @@
                 "typeName": "UIColor",
                 "name": "*strokeColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8337,6 +8703,7 @@
                 "typeName": "CGFloat",
                 "name": "lineWidth",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8353,6 +8720,7 @@
                 "typeName": "UIColor",
                 "name": "*locationDotBgColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8369,6 +8737,7 @@
                 "typeName": "UIColor",
                 "name": "*locationDotFillColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8385,6 +8754,7 @@
                 "typeName": "BOOL",
                 "name": "enablePulseAnnimation",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8401,6 +8771,7 @@
                 "typeName": "UIImage",
                 "name": "*image",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAUserLocationRepresentation",
@@ -8531,6 +8902,7 @@
                 "typeName": "MAMapViewDelegate",
                 "name": "delegate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8547,6 +8919,7 @@
                 "typeName": "MAMapType",
                 "name": "mapType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8563,6 +8936,7 @@
                 "typeName": "CLLocationCoordinate2D",
                 "name": "centerCoordinate",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8579,6 +8953,7 @@
                 "typeName": "MACoordinateRegion",
                 "name": "region",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8595,6 +8970,7 @@
                 "typeName": "MAMapRect",
                 "name": "visibleMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8611,6 +8987,7 @@
                 "typeName": "MACoordinateRegion",
                 "name": "limitRegion",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8627,6 +9004,7 @@
                 "typeName": "MAMapRect",
                 "name": "limitMapRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8643,6 +9021,7 @@
                 "typeName": "CGFloat",
                 "name": "zoomLevel",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8659,6 +9038,7 @@
                 "typeName": "CGFloat",
                 "name": "minZoomLevel",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8675,6 +9055,7 @@
                 "typeName": "CGFloat",
                 "name": "maxZoomLevel",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8691,6 +9072,7 @@
                 "typeName": "CGFloat",
                 "name": "rotationDegree",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8707,6 +9089,7 @@
                 "typeName": "CGFloat",
                 "name": "cameraDegree",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8723,6 +9106,7 @@
                 "typeName": "BOOL",
                 "name": "zoomingInPivotsAroundAnchorPoint",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8739,6 +9123,7 @@
                 "typeName": "BOOL",
                 "name": "zoomEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8755,6 +9140,7 @@
                 "typeName": "BOOL",
                 "name": "scrollEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8771,6 +9157,7 @@
                 "typeName": "BOOL",
                 "name": "rotateEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8787,6 +9174,7 @@
                 "typeName": "BOOL",
                 "name": "rotateCameraEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8803,6 +9191,7 @@
                 "typeName": "BOOL",
                 "name": "skyModelEnable",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8819,6 +9208,7 @@
                 "typeName": "BOOL",
                 "name": "showsBuildings",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8835,6 +9225,7 @@
                 "typeName": "BOOL",
                 "name": "showsLabels",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8851,6 +9242,7 @@
                 "typeName": "BOOL",
                 "name": "showTraffic",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8864,9 +9256,10 @@
               "isFinal": false,
               "isStatic": false,
               "variable": {
-                "typeName": "NSDictionary\u003cNSNumber*,UIColor*\u003e",
+                "typeName": "NSNumber*,UIColor*",
                 "name": "*trafficStatus",
                 "isList": false,
+                "genericLevel": 1,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8883,6 +9276,7 @@
                 "typeName": "CGFloat",
                 "name": "trafficRatio",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8899,6 +9293,7 @@
                 "typeName": "BOOL",
                 "name": "touchPOIEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8915,6 +9310,7 @@
                 "typeName": "BOOL",
                 "name": "showsCompass",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8931,6 +9327,7 @@
                 "typeName": "CGPoint",
                 "name": "compassOrigin",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8947,6 +9344,7 @@
                 "typeName": "CGSize",
                 "name": "compassSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8963,6 +9361,7 @@
                 "typeName": "BOOL",
                 "name": "showsScale",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8979,6 +9378,7 @@
                 "typeName": "CGPoint",
                 "name": "scaleOrigin",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -8995,6 +9395,7 @@
                 "typeName": "CGSize",
                 "name": "scaleSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9011,6 +9412,7 @@
                 "typeName": "CGPoint",
                 "name": "logoCenter",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9027,6 +9429,7 @@
                 "typeName": "CGSize",
                 "name": "logoSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9043,6 +9446,7 @@
                 "typeName": "double",
                 "name": "metersPerPointForCurrentZoom",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9059,6 +9463,7 @@
                 "typeName": "BOOL",
                 "name": "isAbroad",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9075,6 +9480,7 @@
                 "typeName": "NSUInteger",
                 "name": "maxRenderFrame",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9091,6 +9497,7 @@
                 "typeName": "BOOL",
                 "name": "isAllowDecreaseFrame",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9107,6 +9514,7 @@
                 "typeName": "BOOL",
                 "name": "openGLESDisabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9123,6 +9531,7 @@
                 "typeName": "CGPoint",
                 "name": "screenAnchor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9139,6 +9548,7 @@
                 "typeName": "NSRunLoopMode",
                 "name": "runLoopMode",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9155,6 +9565,7 @@
                 "typeName": "NSNumber",
                 "name": "*showsWorldMap",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9171,6 +9582,7 @@
                 "typeName": "NSNumber",
                 "name": "*mapLanguage",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9187,6 +9599,7 @@
                 "typeName": "NSArray",
                 "name": "*annotations",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9203,6 +9616,7 @@
                 "typeName": "NSArray",
                 "name": "*selectedAnnotations",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9219,6 +9633,7 @@
                 "typeName": "CGRect",
                 "name": "annotationVisibleRect",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9235,6 +9650,7 @@
                 "typeName": "BOOL",
                 "name": "allowsAnnotationViewSorting",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9251,6 +9667,7 @@
                 "typeName": "BOOL",
                 "name": "showsUserLocation",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9267,6 +9684,7 @@
                 "typeName": "MAUserLocation",
                 "name": "*userLocation",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9283,6 +9701,7 @@
                 "typeName": "BOOL",
                 "name": "customizeUserLocationAccuracyCircleRepresentation",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9299,6 +9718,7 @@
                 "typeName": "MACircle",
                 "name": "*userLocationAccuracyCircle",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9315,6 +9735,7 @@
                 "typeName": "MAUserTrackingMode",
                 "name": "userTrackingMode",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9331,6 +9752,7 @@
                 "typeName": "BOOL",
                 "name": "userLocationVisible",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9347,6 +9769,7 @@
                 "typeName": "CLLocationDistance",
                 "name": "distanceFilter",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9363,6 +9786,7 @@
                 "typeName": "CLLocationAccuracy",
                 "name": "desiredAccuracy",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9379,6 +9803,7 @@
                 "typeName": "CLLocationDegrees",
                 "name": "headingFilter",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9395,6 +9820,7 @@
                 "typeName": "BOOL",
                 "name": "pausesLocationUpdatesAutomatically",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9411,6 +9837,7 @@
                 "typeName": "BOOL",
                 "name": "allowsBackgroundLocationUpdates",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9427,6 +9854,7 @@
                 "typeName": "NSArray",
                 "name": "*overlays",
                 "isList": true,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9443,6 +9871,7 @@
                 "typeName": "BOOL",
                 "name": "showsIndoorMap",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9459,6 +9888,7 @@
                 "typeName": "BOOL",
                 "name": "showsIndoorMapControl",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9475,6 +9905,7 @@
                 "typeName": "CGSize",
                 "name": "indoorMapControlSize",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9491,6 +9922,7 @@
                 "typeName": "BOOL",
                 "name": "customMapStyleEnabled",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAMapView",
@@ -9511,6 +9943,7 @@
                     "typeName": "MACoordinateRegion",
                     "name": "region",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9521,6 +9954,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9542,6 +9976,7 @@
                     "typeName": "MACoordinateRegion",
                     "name": "region",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9563,6 +9998,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9573,6 +10009,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9594,6 +10031,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9615,6 +10053,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9625,6 +10064,7 @@
                     "typeName": "UIEdgeInsets",
                     "name": "insets",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9646,6 +10086,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9656,6 +10097,7 @@
                     "typeName": "UIEdgeInsets",
                     "name": "insets",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9666,6 +10108,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9687,6 +10130,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9697,6 +10141,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9718,6 +10163,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9728,6 +10174,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9749,6 +10196,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9759,6 +10207,7 @@
                     "typeName": "CGPoint",
                     "name": "pivot",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9769,6 +10218,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9790,6 +10240,7 @@
                     "typeName": "CGFloat",
                     "name": "rotationDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9800,6 +10251,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9810,6 +10262,7 @@
                     "typeName": "CFTimeInterval",
                     "name": "duration",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9831,6 +10284,7 @@
                     "typeName": "CGFloat",
                     "name": "cameraDegree",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9841,6 +10295,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9851,6 +10306,7 @@
                     "typeName": "CFTimeInterval",
                     "name": "duration",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9882,6 +10338,7 @@
                     "typeName": "MAMapStatus*",
                     "name": "status",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9892,6 +10349,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9913,6 +10371,7 @@
                     "typeName": "MAMapStatus*",
                     "name": "status",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9923,6 +10382,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9933,6 +10393,7 @@
                     "typeName": "CFTimeInterval",
                     "name": "duration",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9954,6 +10415,7 @@
                     "typeName": "UIImage*",
                     "name": "image",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9975,6 +10437,7 @@
                     "typeName": "CGRect",
                     "name": "rect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -9984,7 +10447,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -9996,6 +10459,7 @@
                     "typeName": "CGRect",
                     "name": "rect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10006,6 +10470,7 @@
                     "typeName": "void|UIImage resultImage, NSInteger state",
                     "name": "block",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10027,6 +10492,7 @@
                     "typeName": "CGFloat",
                     "name": "zoomLevel",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10048,6 +10514,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10058,6 +10525,7 @@
                     "typeName": "UIView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10079,6 +10547,7 @@
                     "typeName": "CGPoint",
                     "name": "point",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10089,6 +10558,7 @@
                     "typeName": "UIView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10110,6 +10580,7 @@
                     "typeName": "MACoordinateRegion",
                     "name": "region",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10120,6 +10591,7 @@
                     "typeName": "UIView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10141,6 +10613,7 @@
                     "typeName": "CGRect",
                     "name": "rect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10151,6 +10624,7 @@
                     "typeName": "UIView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10222,6 +10696,7 @@
                     "typeName": "CAKeyframeAnimation*",
                     "name": "mapCenterAnimation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10232,6 +10707,7 @@
                     "typeName": "CAKeyframeAnimation*",
                     "name": "zoomAnimation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10242,6 +10718,7 @@
                     "typeName": "CAKeyframeAnimation*",
                     "name": "rotateAnimation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10252,6 +10729,7 @@
                     "typeName": "CAKeyframeAnimation*",
                     "name": "cameraDegreeAnimation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10280,9 +10758,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10303,7 +10782,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "annotations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10322,9 +10802,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10345,7 +10826,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "annotations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10367,6 +10849,7 @@
                     "typeName": "MAMapRect",
                     "name": "mapRect",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10385,9 +10868,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10409,6 +10893,7 @@
                     "typeName": "NSString*",
                     "name": "identifier",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10427,9 +10912,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10440,6 +10926,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10458,9 +10945,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10471,6 +10959,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10491,7 +10980,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "annotations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10502,6 +10992,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10522,7 +11013,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "annotations",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10533,6 +11025,7 @@
                     "typeName": "UIEdgeInsets",
                     "name": "insets",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10543,6 +11036,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10564,6 +11058,7 @@
                     "typeName": "MAUserTrackingMode",
                     "name": "mode",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10574,6 +11069,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10595,6 +11091,7 @@
                     "typeName": "MAUserLocationRepresentation*",
                     "name": "representation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10616,6 +11113,7 @@
                     "typeName": "MAOverlayLevel",
                     "name": "level",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10634,9 +11132,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10657,7 +11156,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlays",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10676,9 +11176,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10689,6 +11190,7 @@
                     "typeName": "MAOverlayLevel",
                     "name": "level",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10709,7 +11211,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlays",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10720,6 +11223,7 @@
                     "typeName": "MAOverlayLevel",
                     "name": "level",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10738,9 +11242,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10761,7 +11266,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlays",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10780,9 +11286,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10793,6 +11300,7 @@
                     "typeName": "NSUInteger",
                     "name": "index",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10803,6 +11311,7 @@
                     "typeName": "MAOverlayLevel",
                     "name": "level",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10821,9 +11330,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10831,9 +11341,10 @@
                 {
                   "named": "aboveOverlay",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "sibling",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10852,9 +11363,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10862,9 +11374,10 @@
                 {
                   "named": "belowOverlay",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "sibling",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10883,9 +11396,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10896,6 +11410,7 @@
                     "typeName": "NSUInteger",
                     "name": "index",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10917,6 +11432,7 @@
                     "typeName": "NSUInteger",
                     "name": "index1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10927,6 +11443,7 @@
                     "typeName": "NSUInteger",
                     "name": "index2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10948,6 +11465,7 @@
                     "typeName": "NSUInteger",
                     "name": "index1",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10958,6 +11476,7 @@
                     "typeName": "NSUInteger",
                     "name": "index2",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10968,6 +11487,7 @@
                     "typeName": "MAOverlayLevel",
                     "name": "level",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10986,9 +11506,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay1",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -10996,9 +11517,10 @@
                 {
                   "named": "withOverlay",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay2",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11017,9 +11539,10 @@
                 {
                   "named": "",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11040,7 +11563,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlays",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11051,6 +11575,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11071,7 +11596,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlays",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11082,6 +11608,7 @@
                     "typeName": "UIEdgeInsets",
                     "name": "insets",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11092,6 +11619,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11113,6 +11641,7 @@
                     "typeName": "CGPoint",
                     "name": "origin",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11134,6 +11663,7 @@
                     "typeName": "NSInteger",
                     "name": "floorIndex",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11165,6 +11695,7 @@
                     "typeName": "NSData*",
                     "name": "customJson",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11174,7 +11705,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -11186,6 +11717,7 @@
                     "typeName": "NSData*",
                     "name": "data",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11195,7 +11727,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -11207,6 +11739,7 @@
                     "typeName": "NSString*",
                     "name": "customTextureResourcePath",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11216,7 +11749,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -11228,6 +11761,7 @@
                     "typeName": "NSString*",
                     "name": "customMapStyleID",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11237,7 +11771,7 @@
               "isPublic": true,
               "className": "MAMapView",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -11249,6 +11783,7 @@
                     "typeName": "MAMapCustomStyleOptions*",
                     "name": "styleOptions",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11292,6 +11827,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11313,6 +11849,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11323,6 +11860,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11344,6 +11882,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11354,6 +11893,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11375,6 +11915,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11385,6 +11926,7 @@
                     "typeName": "BOOL",
                     "name": "wasUserAction",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11406,6 +11948,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11416,6 +11959,7 @@
                     "typeName": "BOOL",
                     "name": "wasUserAction",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11437,6 +11981,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11447,6 +11992,7 @@
                     "typeName": "BOOL",
                     "name": "wasUserAction",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11468,6 +12014,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11478,6 +12025,7 @@
                     "typeName": "BOOL",
                     "name": "wasUserAction",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11499,6 +12047,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11520,6 +12069,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11541,6 +12091,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11551,6 +12102,7 @@
                     "typeName": "NSError*",
                     "name": "error",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11572,6 +12124,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11579,9 +12132,10 @@
                 {
                   "named": "viewForAnnotation",
                   "variable": {
-                    "typeName": "id\u003cMAAnnotation\u003e",
+                    "typeName": "MAAnnotation",
                     "name": "annotation",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11603,6 +12157,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11612,7 +12167,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "views",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11634,6 +12190,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11644,6 +12201,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11665,6 +12223,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11675,6 +12234,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11696,6 +12256,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11717,6 +12278,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11738,6 +12300,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11748,6 +12311,7 @@
                     "typeName": "MAUserLocation*",
                     "name": "userLocation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11758,6 +12322,7 @@
                     "typeName": "BOOL",
                     "name": "updatingLocation",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11779,6 +12344,7 @@
                     "typeName": "CLLocationManager*",
                     "name": "locationManager",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11800,6 +12366,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11810,6 +12377,7 @@
                     "typeName": "NSError*",
                     "name": "error",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11831,6 +12399,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11841,6 +12410,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11851,6 +12421,7 @@
                     "typeName": "MAAnnotationViewDragState",
                     "name": "newState",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11861,6 +12432,7 @@
                     "typeName": "MAAnnotationViewDragState",
                     "name": "oldState",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11882,6 +12454,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11889,9 +12462,10 @@
                 {
                   "named": "rendererForOverlay",
                   "variable": {
-                    "typeName": "id\u003cMAOverlay\u003e",
+                    "typeName": "MAOverlay",
                     "name": "overlay",
                     "isList": false,
+                    "genericLevel": 1,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11913,6 +12487,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11922,7 +12497,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "overlayRenderers",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11944,6 +12520,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11954,6 +12531,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11964,6 +12542,7 @@
                     "typeName": "UIControl*",
                     "name": "control",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11985,6 +12564,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -11995,6 +12575,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12016,6 +12597,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12026,6 +12608,7 @@
                     "typeName": "MAAnnotationView*",
                     "name": "view",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12047,6 +12630,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12057,6 +12641,7 @@
                     "typeName": "MAUserTrackingMode",
                     "name": "mode",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12067,6 +12652,7 @@
                     "typeName": "BOOL",
                     "name": "animated",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12088,6 +12674,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12098,6 +12685,7 @@
                     "typeName": "BOOL",
                     "name": "openGLESDisabled",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12119,6 +12707,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12128,7 +12717,8 @@
                   "variable": {
                     "typeName": "NSArray*",
                     "name": "pois",
-                    "isList": false,
+                    "isList": true,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12150,6 +12740,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12160,6 +12751,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12181,6 +12773,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12191,6 +12784,7 @@
                     "typeName": "CLLocationCoordinate2D",
                     "name": "coordinate",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12212,6 +12806,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12233,6 +12828,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12243,6 +12839,7 @@
                     "typeName": "MAIndoorInfo*",
                     "name": "indoorInfo",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12264,6 +12861,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12274,6 +12872,7 @@
                     "typeName": "MAIndoorInfo*",
                     "name": "indoorInfo",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12295,6 +12894,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12305,6 +12905,7 @@
                     "typeName": "MAIndoorInfo*",
                     "name": "indoorInfo",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12326,6 +12927,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12347,6 +12949,7 @@
                     "typeName": "MAMapView*",
                     "name": "mapView",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12385,6 +12988,7 @@
                 "typeName": "UIColor",
                 "name": "*fillColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12401,6 +13005,7 @@
                 "typeName": "UIColor",
                 "name": "*strokeColor",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12417,6 +13022,7 @@
                 "typeName": "CGFloat",
                 "name": "lineWidth",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12433,6 +13039,7 @@
                 "typeName": "MALineJoinType",
                 "name": "lineJoinType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12449,6 +13056,7 @@
                 "typeName": "MALineCapType",
                 "name": "lineCapType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12465,6 +13073,7 @@
                 "typeName": "CGFloat",
                 "name": "miterLimit",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12481,6 +13090,7 @@
                 "typeName": "BOOL",
                 "name": "lineDash",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12497,6 +13107,7 @@
                 "typeName": "MALineDashType",
                 "name": "lineDashType",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOverlayPathRenderer",
@@ -12533,6 +13144,7 @@
                 "typeName": "MAGroundOverlay",
                 "name": "*groundOverlay",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAGroundOverlayRenderer",
@@ -12553,6 +13165,7 @@
                     "typeName": "MAGroundOverlay*",
                     "name": "groundOverlay",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"
@@ -12591,6 +13204,7 @@
                 "typeName": "MACustomBuildingOverlay",
                 "name": "*customBuildingOverlay",
                 "isList": false,
+                "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MACustomBuildingOverlayRenderer",
@@ -12611,6 +13225,7 @@
                     "typeName": "MACustomBuildingOverlay*",
                     "name": "customBuildingOverlay",
                     "isList": false,
+                    "genericLevel": 0,
                     "platform": "iOS"
                   },
                   "platform": "iOS"

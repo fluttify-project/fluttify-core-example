@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_autonavi_amap_mapcore_animation_GLAnimation> clone() async {
+  Future<com_autonavi_amap_mapcore_animation_GLAnimation> clone() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::clone([])');
   
@@ -26,10 +27,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_animation_GLAnimation()..refId = result;
+    }
   }
   
-   Future<void> reset() async {
+  Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::reset([])');
   
@@ -41,10 +46,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> cancel() async {
+  Future<void> cancel() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::cancel([])');
   
@@ -56,10 +65,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> detach() async {
+  Future<void> detach() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::detach([])');
   
@@ -71,10 +84,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isInitialized() async {
+  Future<bool> isInitialized() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isInitialized([])');
   
@@ -86,10 +103,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> initialize() async {
+  Future<void> initialize() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initialize([])');
   
@@ -101,10 +122,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setInterpolator(android_content_Context var1, int var2) async {
+  Future<void> setInterpolator(android_content_Context var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setInterpolator([\'var2\':$var2])');
   
@@ -116,10 +141,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setStartOffset(int var1) async {
+  Future<void> setStartOffset(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartOffset([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDuration(int var1) async {
+  Future<void> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDuration([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> restrictDuration(int var1) async {
+  Future<void> restrictDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::restrictDuration([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> scaleCurrentDuration(double var1) async {
+  Future<void> scaleCurrentDuration(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::scaleCurrentDuration([\'var1\':$var1])');
   
@@ -176,10 +217,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setStartTime(int var1) async {
+  Future<void> setStartTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setStartTime([\'var1\':$var1])');
   
@@ -191,10 +236,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> start() async {
+  Future<void> start() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::start([])');
   
@@ -206,10 +255,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> startNow() async {
+  Future<void> startNow() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::startNow([])');
   
@@ -221,10 +274,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRepeatMode(int var1) async {
+  Future<void> setRepeatMode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatMode([\'var1\':$var1])');
   
@@ -236,10 +293,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRepeatCount(int var1) async {
+  Future<void> setRepeatCount(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setRepeatCount([\'var1\':$var1])');
   
@@ -251,10 +312,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isFillEnabled() async {
+  Future<bool> isFillEnabled() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::isFillEnabled([])');
   
@@ -266,10 +331,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFillEnabled(bool var1) async {
+  Future<void> setFillEnabled(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillEnabled([\'var1\':$var1])');
   
@@ -281,10 +350,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFillBefore(bool var1) async {
+  Future<void> setFillBefore(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillBefore([\'var1\':$var1])');
   
@@ -296,10 +369,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setFillAfter(bool var1) async {
+  Future<void> setFillAfter(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setFillAfter([\'var1\':$var1])');
   
@@ -311,10 +388,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZAdjustment(int var1) async {
+  Future<void> setZAdjustment(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setZAdjustment([\'var1\':$var1])');
   
@@ -326,10 +407,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setBackgroundColor(int var1) async {
+  Future<void> setBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setBackgroundColor([\'var1\':$var1])');
   
@@ -341,10 +426,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDetachWallpaper(bool var1) async {
+  Future<void> setDetachWallpaper(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setDetachWallpaper([\'var1\':$var1])');
   
@@ -356,10 +445,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStartTime() async {
+  Future<int> getStartTime() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartTime([])');
   
@@ -371,10 +464,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getDuration() async {
+  Future<int> getDuration() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDuration([])');
   
@@ -386,10 +483,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStartOffset() async {
+  Future<int> getStartOffset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getStartOffset([])');
   
@@ -401,10 +502,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getRepeatMode() async {
+  Future<int> getRepeatMode() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatMode([])');
   
@@ -416,10 +521,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getRepeatCount() async {
+  Future<int> getRepeatCount() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getRepeatCount([])');
   
@@ -431,10 +540,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getFillBefore() async {
+  Future<bool> getFillBefore() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillBefore([])');
   
@@ -446,10 +559,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getFillAfter() async {
+  Future<bool> getFillAfter() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getFillAfter([])');
   
@@ -461,10 +578,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getZAdjustment() async {
+  Future<int> getZAdjustment() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getZAdjustment([])');
   
@@ -476,10 +597,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getBackgroundColor() async {
+  Future<int> getBackgroundColor() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getBackgroundColor([])');
   
@@ -491,10 +616,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getDetachWallpaper() async {
+  Future<bool> getDetachWallpaper() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getDetachWallpaper([])');
   
@@ -506,10 +635,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> willChangeTransformationMatrix() async {
+  Future<bool> willChangeTransformationMatrix() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeTransformationMatrix([])');
   
@@ -521,10 +654,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> willChangeBounds() async {
+  Future<bool> willChangeBounds() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::willChangeBounds([])');
   
@@ -536,10 +673,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
+  Future<void> setAnimationListener(com_amap_api_maps_model_animation_Animation_AnimationListener var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::setAnimationListener([])');
   
@@ -575,10 +716,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> computeDurationHint() async {
+  Future<int> computeDurationHint() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::computeDurationHint([])');
   
@@ -590,10 +735,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> getTransformation(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3) async {
+  Future<bool> getTransformation(int var1, com_autonavi_amap_mapcore_animation_GLTransformation var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::getTransformation([\'var1\':$var1])');
   
@@ -605,10 +754,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> hasEnded() async {
+  Future<bool> hasEnded() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasEnded([])');
   
@@ -620,10 +773,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> initializeInvalidateRegion(int var1, int var2, int var3, int var4) async {
+  Future<void> initializeInvalidateRegion(int var1, int var2, int var3, int var4) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::initializeInvalidateRegion([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3, \'var4\':$var4])');
   
@@ -635,10 +792,14 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> hasAlpha() async {
+  Future<bool> hasAlpha() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.animation.GLAnimation@$refId::hasAlpha([])');
   
@@ -650,7 +811,11 @@ class com_autonavi_amap_mapcore_animation_GLAnimation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

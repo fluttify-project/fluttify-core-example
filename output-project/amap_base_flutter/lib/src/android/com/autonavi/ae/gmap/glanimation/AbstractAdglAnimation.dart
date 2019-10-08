@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends Ref_Android
   
 
   // 生成方法们
-   Future<bool> isOver() async {
+  Future<bool> isOver() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isOver([])');
   
@@ -26,10 +27,14 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends Ref_Android
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isValid() async {
+  Future<bool> isValid() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.glanimation.AbstractAdglAnimation@$refId::isValid([])');
   
@@ -41,7 +46,11 @@ class com_autonavi_ae_gmap_glanimation_AbstractAdglAnimation extends Ref_Android
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

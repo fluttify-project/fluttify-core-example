@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
 
   // 生成方法们
-   Future<int> getDrivingRouteStyle() async {
+  Future<int> getDrivingRouteStyle() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getDrivingRouteStyle([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDrivingRouteStyle(int var1) async {
+  Future<void> setDrivingRouteStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setDrivingRouteStyle([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getTransitRouteStyle() async {
+  Future<int> getTransitRouteStyle() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getTransitRouteStyle([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTransitRouteStyle(int var1) async {
+  Future<void> setTransitRouteStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setTransitRouteStyle([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getStartPoint() async {
+  Future<com_amap_api_maps_model_LatLng> getStartPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartPoint([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setStartPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartPoint([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getEndPoint() async {
+  Future<com_amap_api_maps_model_LatLng> getEndPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndPoint([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setEndPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndPoint([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getEndName() async {
+  Future<String> getEndName() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getEndName([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setEndName(String var1) async {
+  Future<void> setEndName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setEndName([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getStartName() async {
+  Future<String> getStartName() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::getStartName([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setStartName(String var1) async {
+  Future<void> setStartName(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.RoutePara@$refId::setStartName([\'var1\':$var1])');
   
@@ -191,7 +236,11 @@ class com_amap_api_maps_model_RoutePara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

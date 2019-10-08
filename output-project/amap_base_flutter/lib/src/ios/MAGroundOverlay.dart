@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -20,7 +21,7 @@ class MAGroundOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   Future<MACoordinateBounds> get_bounds() async {
     final result = await _channel.invokeMethod("MAGroundOverlay::get_bounds", {'refId': refId});
-    return result;
+    return MACoordinateBounds()..refId = result;
   }
   
 

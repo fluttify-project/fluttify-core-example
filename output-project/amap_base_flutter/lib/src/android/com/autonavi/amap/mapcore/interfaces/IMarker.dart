@@ -1,15 +1,18 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin com_autonavi_amap_mapcore_interfaces_IMarker on com_autonavi_amap_mapcore_interfaces_IOverlayImage {
   Future<void> setPeriod(int var1) {}
   
   Future<int> getPeriod() {}
   
   Future<void> setIcons(List<com_amap_api_maps_model_BitmapDescriptor> var1) {}
+  
+  Future<List<com_amap_api_maps_model_BitmapDescriptor>> getIcons() {}
   
   Future<void> set2Top() {}
   

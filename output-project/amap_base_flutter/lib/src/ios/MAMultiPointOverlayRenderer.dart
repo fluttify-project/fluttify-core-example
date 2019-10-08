@@ -1,32 +1,28 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<MAMultiPointOverlayRendererDelegate> get_delegate() async {
-    final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_delegate", {'refId': refId});
-    return result;
-  }
-  
   Future<CGPoint> get_anchor() async {
     final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_anchor", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<MAMultiPointOverlay> get_multiPointOverlay() async {
     final result = await _channel.invokeMethod("MAMultiPointOverlayRenderer::get_multiPointOverlay", {'refId': refId});
-    return result;
+    return MAMultiPointOverlay()..refId = result;
   }
   
 
   // 生成setters
   Future<void> set_delegate(MAMultiPointOverlayRendererDelegate delegate) async {
-    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": ""});
+    await _channel.invokeMethod('MAMultiPointOverlayRenderer::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
     MethodChannel('MAMultiPointOverlayRendererDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
@@ -56,7 +52,7 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
-   Future<MAMultiPointOverlayRenderer> initWithMultiPointOverlay(MAMultiPointOverlay multiPointOverlay) async {
+  Future<MAMultiPointOverlayRenderer> initWithMultiPointOverlay(MAMultiPointOverlay multiPointOverlay) async {
     // 日志打印
     print('fluttify-dart: MAMultiPointOverlayRenderer@$refId::initWithMultiPointOverlay([])');
   
@@ -68,7 +64,11 @@ class MAMultiPointOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return MAMultiPointOverlayRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAMultiPointOverlayRenderer()..refId = result;
+    }
   }
   
 }

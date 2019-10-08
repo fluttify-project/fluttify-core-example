@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getZIndex([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZIndex(double var1) async {
+  Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setZIndex([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setVisible([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::isVisible([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeightScale(int var1) async {
+  Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeightScale(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingHeightScale([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getBuildingHeightScale() async {
+  Future<int> getBuildingHeightScale() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingHeightScale([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingTopColor(int var1) async {
+  Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingTopColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingTopColor([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingSideColor(int var1) async {
+  Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingSideColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingSideColor([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getBuildingSideColor() async {
+  Future<int> getBuildingSideColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingSideColor([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getBuildingTopColor() async {
+  Future<int> getBuildingTopColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingTopColor([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeight(int var1) async {
+  Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingHeight(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingHeight([\'var1\':$var1])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getBuildingHeight() async {
+  Future<int> getBuildingHeight() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingHeight([])');
   
@@ -191,10 +236,52 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingLatlngs(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<List<com_amap_api_maps_model_LatLng>> getBuildingLatlngs() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getBuildingLatlngs([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlayOptions::getBuildingLatlngs', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList();
+    }
+  }
+  
+  Future<List<int>> getPoints() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::getPoints([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.BuildingOverlayOptions::getPoints', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<com_amap_api_maps_model_BuildingOverlayOptions> setBuildingLatlngs(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.BuildingOverlayOptions@$refId::setBuildingLatlngs([])');
   
@@ -206,7 +293,11 @@ class com_amap_api_maps_model_BuildingOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BuildingOverlayOptions()..refId = result;
+    }
   }
   
 }

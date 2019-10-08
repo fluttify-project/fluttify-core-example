@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
 
   // 生成方法们
-   Future<int> getSmoothColor() async {
+  Future<int> getSmoothColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSmoothColor([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSmoothColor(int var1) async {
+  Future<void> setSmoothColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSmoothColor([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getSlowColor() async {
+  Future<int> getSlowColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSlowColor([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSlowColor(int var1) async {
+  Future<void> setSlowColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSlowColor([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getCongestedColor() async {
+  Future<int> getCongestedColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getCongestedColor([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCongestedColor(int var1) async {
+  Future<void> setCongestedColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setCongestedColor([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getSeriousCongestedColor() async {
+  Future<int> getSeriousCongestedColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getSeriousCongestedColor([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSeriousCongestedColor(int var1) async {
+  Future<void> setSeriousCongestedColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setSeriousCongestedColor([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getRatio() async {
+  Future<double> getRatio() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getRatio([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRatio(double var1) async {
+  Future<void> setRatio(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setRatio([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getTrafficRoadBackgroundColor() async {
+  Future<int> getTrafficRoadBackgroundColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::getTrafficRoadBackgroundColor([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTrafficRoadBackgroundColor(int var1) async {
+  Future<void> setTrafficRoadBackgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyTrafficStyle@$refId::setTrafficRoadBackgroundColor([\'var1\':$var1])');
   
@@ -191,7 +236,11 @@ class com_amap_api_maps_model_MyTrafficStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

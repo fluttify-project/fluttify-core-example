@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAAnnotationMoveAnimation extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
 
   // 生成方法们
-   Future<String> name() async {
+  Future<String> name() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::name([])');
   
@@ -26,10 +27,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<CLLocationCoordinate2D> coordinates() async {
+  Future<CLLocationCoordinate2D> coordinates() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::coordinates([])');
   
@@ -41,10 +46,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return CLLocationCoordinate2D()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return CLLocationCoordinate2D()..refId = result;
+    }
   }
   
-   Future<int> count() async {
+  Future<int> count() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::count([])');
   
@@ -56,10 +65,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> duration() async {
+  Future<double> duration() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::duration([])');
   
@@ -71,10 +84,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> elapsedTime() async {
+  Future<double> elapsedTime() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::elapsedTime([])');
   
@@ -86,10 +103,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> cancel() async {
+  Future<void> cancel() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::cancel([])');
   
@@ -101,10 +122,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isCancelled() async {
+  Future<bool> isCancelled() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::isCancelled([])');
   
@@ -116,10 +141,14 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> passedPointCount() async {
+  Future<int> passedPointCount() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationMoveAnimation@$refId::passedPointCount([])');
   
@@ -131,7 +160,11 @@ class MAAnnotationMoveAnimation extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

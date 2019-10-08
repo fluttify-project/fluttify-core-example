@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setTargetPoint(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setTargetPoint([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setNaviStyle(int var1) async {
+  Future<void> setNaviStyle(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::setNaviStyle([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getTargetPoint() async {
+  Future<com_amap_api_maps_model_LatLng> getTargetPoint() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getTargetPoint([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<int> getNaviStyle() async {
+  Future<int> getNaviStyle() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.NaviPara@$refId::getNaviStyle([])');
   
@@ -71,7 +84,11 @@ class com_amap_api_maps_model_NaviPara extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

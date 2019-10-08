@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> geo2LonLat(int var0, int var1, com_autonavi_amap_mapcore_DPoint var2) async {
@@ -41,10 +46,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
+  Future<void> screenToP20Point(int var1, int var2, android_graphics_Point var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::screenToP20Point([\'var1\':$var1, \'var2\':$var2])');
   
@@ -56,10 +65,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
+  Future<void> p20ToScreenPoint(int var1, int var2, com_autonavi_amap_mapcore_FPoint var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::p20ToScreenPoint([\'var1\':$var1, \'var2\':$var2])');
   
@@ -71,10 +84,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
+  Future<void> getMapGeoCenter(com_autonavi_amap_mapcore_IPoint var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapGeoCenter([])');
   
@@ -86,10 +103,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMapGeoCenter(int var1, int var2) async {
+  Future<void> setMapGeoCenter(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapGeoCenter([\'var1\':$var1, \'var2\':$var2])');
   
@@ -101,10 +122,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCameraDegree(double var1) async {
+  Future<void> setCameraDegree(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setCameraDegree([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMapAngle(double var1) async {
+  Future<void> setMapAngle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapAngle([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMapZoomer(double var1) async {
+  Future<void> setMapZoomer(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setMapZoomer([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getMapZoomer() async {
+  Future<double> getMapZoomer() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapZoomer([])');
   
@@ -161,10 +198,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getCameraDegree() async {
+  Future<double> getCameraDegree() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getCameraDegree([])');
   
@@ -176,10 +217,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getMapAngle() async {
+  Future<double> getMapAngle() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapAngle([])');
   
@@ -191,10 +236,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> recalculate() async {
+  Future<void> recalculate() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::recalculate([])');
   
@@ -206,10 +255,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> reset() async {
+  Future<void> reset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::reset([])');
   
@@ -221,10 +274,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getMapLenWithWin(int var1) async {
+  Future<double> getMapLenWithWin(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getMapLenWithWin([\'var1\':$var1])');
   
@@ -236,10 +293,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getGLUnitWithWin(int var1) async {
+  Future<double> getGLUnitWithWin(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getGLUnitWithWin([\'var1\':$var1])');
   
@@ -251,10 +312,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getNativeInstance() async {
+  Future<int> getNativeInstance() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getNativeInstance([])');
   
@@ -266,10 +331,52 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getSkyHeight() async {
+  Future<void> getViewMatrix(List<double> var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getViewMatrix([\'var1\':$var1])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getViewMatrix', {"var1": var1, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> getProjectionMatrix(List<double> var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getProjectionMatrix([\'var1\':$var1])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::getProjectionMatrix', {"var1": var1, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<double> getSkyHeight() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::getSkyHeight([])');
   
@@ -281,10 +388,14 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setNativeMapengineState(int var1, int var2) async {
+  Future<void> setNativeMapengineState(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapState@$refId::setNativeMapengineState([\'var1\':$var1, \'var2\':$var2])');
   
@@ -296,7 +407,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> calMapZoomScalefactor(int var0, int var1, int var2) async {
@@ -311,7 +426,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<int> nativeNewInstance(int var0, int var1) async {
@@ -326,7 +445,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeScreenToP20Point(int var0, double var2, double var3, android_graphics_Point var4) async {
@@ -341,7 +464,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeP20ToScreenPoint(int var0, int var2, int var3, int var4, android_graphics_PointF var5) async {
@@ -356,7 +483,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeSetMapCenter(int var0, int var2, int var3) async {
@@ -371,7 +502,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeGetMapCenter(int var0, android_graphics_Point var2) async {
@@ -386,7 +521,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeGetMapZoomer(int var0) async {
@@ -401,7 +540,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeSetMapZoomer(int var0, double var2) async {
@@ -416,7 +559,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeSetMapAngle(int var0, double var2) async {
@@ -431,7 +578,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeGetCameraDegree(int var0) async {
@@ -446,7 +597,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeGetMapAngle(int var0) async {
@@ -461,7 +616,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeSetCameraDegree(int var0, double var2) async {
@@ -476,7 +635,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeRecalculate(int var0) async {
@@ -491,7 +654,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> nativeStateDestroy(int var0) async {
@@ -506,7 +673,49 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  static Future<void> nativeGetViewMatrix(int var0, List<double> var2) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix([\'var0\':$var0, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetViewMatrix', {"var0": var0, "var2": var2});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  static Future<void> nativeGetProjectionMatrix(int var0, List<double> var2) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix([\'var0\':$var0, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapState::nativeGetProjectionMatrix', {"var0": var0, "var2": var2});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeGetSkyHeight(int var0) async {
@@ -521,7 +730,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeGetGLUnitWithWin(int var0, int var2) async {
@@ -536,7 +749,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<double> nativeCalMapZoomScalefactor(int var0, int var1, double var2) async {
@@ -551,7 +768,11 @@ class com_autonavi_ae_gmap_GLMapState extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

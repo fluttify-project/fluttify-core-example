@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_Projection extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
+  Future<com_amap_api_maps_model_LatLng> fromScreenLocation(android_graphics_Point var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromScreenLocation([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
+  Future<android_graphics_Point> toScreenLocation(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toScreenLocation([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return android_graphics_Point()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_graphics_Point()..refId = result;
+    }
   }
   
-   Future<android_graphics_PointF> toOpenGLLocation(com_amap_api_maps_model_LatLng var1) async {
+  Future<android_graphics_PointF> toOpenGLLocation(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLLocation([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return android_graphics_PointF()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_graphics_PointF()..refId = result;
+    }
   }
   
-   Future<double> toOpenGLWidth(int var1) async {
+  Future<double> toOpenGLWidth(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::toOpenGLWidth([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
+  Future<com_amap_api_maps_model_VisibleRegion> getVisibleRegion() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getVisibleRegion([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_VisibleRegion()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_VisibleRegion()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
+  Future<com_amap_api_maps_model_TileProjection> fromBoundsToTile(com_amap_api_maps_model_LatLngBounds var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::fromBoundsToTile([\'var2\':$var2, \'var3\':$var3])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TileProjection()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TileProjection()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
+  Future<com_amap_api_maps_model_LatLngBounds> getMapBounds(com_amap_api_maps_model_LatLng var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getMapBounds([\'var2\':$var2])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
+  Future<com_amap_api_maps_model_AMapCameraInfo> getCameraInfo() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.Projection@$refId::getCameraInfo([])');
   
@@ -131,7 +160,11 @@ class com_amap_api_maps_Projection extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_AMapCameraInfo()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_AMapCameraInfo()..refId = result;
+    }
   }
   
 }

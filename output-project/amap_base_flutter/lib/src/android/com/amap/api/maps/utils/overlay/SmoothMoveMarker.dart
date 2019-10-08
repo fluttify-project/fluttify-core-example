@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPoints([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTotalDuration(int var1) async {
+  Future<void> setTotalDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setTotalDuration([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> startSmoothMove() async {
+  Future<void> startSmoothMove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::startSmoothMove([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> stopMove() async {
+  Future<void> stopMove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::stopMove([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_Marker> getMarker() async {
+  Future<com_amap_api_maps_model_Marker> getMarker() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getMarker([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_Marker()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_Marker()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPosition() async {
+  Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getPosition([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<int> getIndex() async {
+  Future<int> getIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::getIndex([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> resetIndex() async {
+  Future<void> resetIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::resetIndex([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> destroy() async {
+  Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::destroy([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeMarker() async {
+  Future<void> removeMarker() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::removeMarker([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setPosition([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDescriptor(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<void> setDescriptor(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setDescriptor([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotate(double var1) async {
+  Future<void> setRotate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setRotate([\'var1\':$var1])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setVisible([\'var1\':$var1])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMoveListener(com_amap_api_maps_utils_overlay_SmoothMoveMarker_MoveListener var1) async {
+  Future<void> setMoveListener(com_amap_api_maps_utils_overlay_SmoothMoveMarker_MoveListener var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.utils.overlay.SmoothMoveMarker@$refId::setMoveListener([])');
   
@@ -253,7 +310,11 @@ class com_amap_api_maps_utils_overlay_SmoothMoveMarker extends Ref_Android  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_IndoorBuildingInfo extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -23,6 +24,11 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends Ref_Android  {
     return result;
   }
   
+  Future<List<int>> get_floor_indexs() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.IndoorBuildingInfo::get_floor_indexs", {'refId': refId});
+    return result;
+  }
+  
 
   // 生成setters
   Future<void> set_activeFloorName(String activeFloorName) async {
@@ -39,6 +45,12 @@ class com_amap_api_maps_model_IndoorBuildingInfo extends Ref_Android  {
   
   Future<void> set_poiid(String poiid) async {
     await _channel.invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_poiid', {'refId': refId, "poiid": poiid});
+  
+  
+  }
+  
+  Future<void> set_floor_indexs(List<int> floor_indexs) async {
+    await _channel.invokeMethod('com.amap.api.maps.model.IndoorBuildingInfo::set_floor_indexs', {'refId': refId, "floor_indexs": floor_indexs});
   
   
   }

@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACircleRenderer extends MAOverlayPathRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MACircle> get_circle() async {
     final result = await _channel.invokeMethod("MACircleRenderer::get_circle", {'refId': refId});
-    return result;
+    return MACircle()..refId = result;
   }
   
 
@@ -18,7 +19,7 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   
 
   // 生成方法们
-   Future<MACircleRenderer> initWithCircle(MACircle circle) async {
+  Future<MACircleRenderer> initWithCircle(MACircle circle) async {
     // 日志打印
     print('fluttify-dart: MACircleRenderer@$refId::initWithCircle([])');
   
@@ -30,7 +31,11 @@ class MACircleRenderer extends MAOverlayPathRenderer  {
   
   
     // 返回值
-    return MACircleRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MACircleRenderer()..refId = result;
+    }
   }
   
 }

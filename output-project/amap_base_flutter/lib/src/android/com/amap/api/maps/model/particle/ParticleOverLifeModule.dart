@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autonavi_amap_mapcore_AbstractNativeInstance  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
 
   // 生成方法们
-   Future<void> createNativeInstace() async {
+  Future<void> createNativeInstace() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::createNativeInstace([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVelocityOverLife(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
+  Future<void> setVelocityOverLife(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setVelocityOverLife([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotateOverLife(com_amap_api_maps_model_particle_RotationOverLife var1) async {
+  Future<void> setRotateOverLife(com_amap_api_maps_model_particle_RotationOverLife var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setRotateOverLife([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSizeOverLife(com_amap_api_maps_model_particle_SizeOverLife var1) async {
+  Future<void> setSizeOverLife(com_amap_api_maps_model_particle_SizeOverLife var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setSizeOverLife([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setColorGenerate(com_amap_api_maps_model_particle_ColorGenerate var1) async {
+  Future<void> setColorGenerate(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverLifeModule@$refId::setColorGenerate([])');
   
@@ -86,7 +103,11 @@ class com_amap_api_maps_model_particle_ParticleOverLifeModule extends com_autona
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

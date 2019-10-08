@@ -17,7 +17,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::getMap([])")
@@ -26,19 +26,23 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
             val result = ref.getMap()
         
             // 调用结果
-            val returnRefId = result.hashCode()
-            REF_MAP[returnRefId] = result
+            if (result != null) {
+                val returnRefId = result.hashCode()
+                HEAP[returnRefId] = result
         
-            methodResult.success(returnRefId)
+                methodResult.success(returnRefId)
+            } else {
+                methodResult.success(null)
+            }
         }
         ,"com.amap.api.maps.TextureMapView::onCreate" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onCreate([])")
@@ -55,7 +59,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onResume([])")
@@ -72,7 +76,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onPause([])")
@@ -89,7 +93,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onDestroy([])")
@@ -106,7 +110,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onLowMemory([])")
@@ -120,11 +124,11 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         ,"com.amap.api.maps.TextureMapView::onSaveInstanceState" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
-            val var1 = REF_MAP[args["var1"] as Int] as android.os.Bundle
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::onSaveInstanceState([])")
@@ -142,7 +146,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.TextureMapView
+            val ref = HEAP[refId] as com.amap.api.maps.TextureMapView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.TextureMapView@$refId::setVisibility([\"var1\":$var1])")
@@ -167,12 +171,12 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
         return object : PlatformView {
             private val view = com.amap.api.maps.TextureMapView(registrar.activity())
 
-            // 构造完成后马上加入REF_MAP
-            override fun getView(): View = view.apply { REF_MAP[id] = this }
+            // 构造完成后马上加入HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
-            // dispose后从REF_MAP中删除
+            // dispose后从HEAP中删除
             override fun dispose() {
-                REF_MAP.remove(id)
+                HEAP.remove(id)
             }
         }
     }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> zoomOut() async {
@@ -41,7 +46,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> scrollBy(double var0, double var1) async {
@@ -56,7 +65,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> zoomTo(double var0) async {
@@ -71,7 +84,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> zoomBy(double var0) async {
@@ -86,7 +103,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> newCameraPosition(com_amap_api_maps_model_CameraPosition var0) async {
@@ -101,7 +122,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLng(com_amap_api_maps_model_LatLng var0) async {
@@ -116,7 +141,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngZoom(com_amap_api_maps_model_LatLng var0, double var1) async {
@@ -131,7 +160,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBounds(com_amap_api_maps_model_LatLngBounds var0, int var1) async {
@@ -146,7 +179,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> changeLatLng(com_amap_api_maps_model_LatLng var0) async {
@@ -161,7 +198,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> changeBearing(double var0) async {
@@ -176,7 +217,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> changeBearingGeoCenter(double var0, com_autonavi_amap_mapcore_IPoint var1) async {
@@ -191,7 +236,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> changeTilt(double var0) async {
@@ -206,7 +255,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_CameraUpdate> newLatLngBoundsRect(com_amap_api_maps_model_LatLngBounds var0, int var1, int var2, int var3, int var4) async {
@@ -221,7 +274,11 @@ class com_amap_api_maps_CameraUpdateFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_CameraUpdate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_CameraUpdate()..refId = result;
+    }
   }
   
 }

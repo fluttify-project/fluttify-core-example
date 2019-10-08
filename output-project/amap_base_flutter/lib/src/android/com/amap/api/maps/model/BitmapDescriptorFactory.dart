@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromView(android_view_View var0) async {
@@ -41,7 +46,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromPath(String var0) async {
@@ -56,7 +65,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromAsset(String var0) async {
@@ -71,7 +84,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromFile(String var0) async {
@@ -86,7 +103,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> defaultMarker() async {
@@ -101,7 +122,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<com_amap_api_maps_model_BitmapDescriptor> fromBitmap(android_graphics_Bitmap var0) async {
@@ -116,7 +141,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
   static Future<android_content_Context> getContext() async {
@@ -131,7 +160,11 @@ class com_amap_api_maps_model_BitmapDescriptorFactory extends Ref_Android  {
   
   
     // 返回值
-    return android_content_Context()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_content_Context()..refId = result;
+    }
   }
   
 }

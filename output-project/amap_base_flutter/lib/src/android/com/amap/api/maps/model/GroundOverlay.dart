@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> remove() async {
+  Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::remove([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getId() async {
+  Future<String> getId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getId([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
+  Future<void> setPosition(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPosition([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPosition() async {
+  Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getPosition([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<void> setDimensions(double var1) async {
+  Future<void> setDimensions(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setDimensions([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<void> setImage(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setImage([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getWidth() async {
+  Future<double> getWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getWidth([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getHeight() async {
+  Future<double> getHeight() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getHeight([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
+  Future<void> setPositionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setPositionFromBounds([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
+  Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBounds([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    }
   }
   
-   Future<void> setBearing(double var1) async {
+  Future<void> setBearing(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setBearing([\'var1\':$var1])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getBearing() async {
+  Future<double> getBearing() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getBearing([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZIndex(double var1) async {
+  Future<void> setZIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setZIndex([\'var1\':$var1])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getZIndex([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVisible(bool var1) async {
+  Future<void> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setVisible([\'var1\':$var1])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::isVisible([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTransparency(double var1) async {
+  Future<void> setTransparency(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::setTransparency([\'var1\':$var1])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getTransparency() async {
+  Future<double> getTransparency() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::getTransparency([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> destroy() async {
+  Future<void> destroy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlay@$refId::destroy([])');
   
@@ -296,7 +369,11 @@ class com_amap_api_maps_model_GroundOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

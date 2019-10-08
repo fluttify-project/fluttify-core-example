@@ -1,3 +1,4 @@
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 enum com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture {
   AMAP_ROUTE_TEXTURE_NONAVI,
   AMAP_ROUTE_TEXTURE_NAVI,

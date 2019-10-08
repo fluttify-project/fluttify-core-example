@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAParticleOverlayOptions extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -23,29 +24,14 @@ class MAParticleOverlayOptions extends NSObject  {
     return result;
   }
   
-  Future<MAParticleColorGenerate> get_particleStartColor() async {
-    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleStartColor", {'refId': refId});
-    return result;
-  }
-  
-  Future<MAParticleVelocityGenerate> get_particleStartSpeed() async {
-    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleStartSpeed", {'refId': refId});
-    return result;
-  }
-  
   Future<MAParticleEmissionModule> get_particleEmissionModule() async {
     final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleEmissionModule", {'refId': refId});
-    return result;
-  }
-  
-  Future<MAParticleShapeModule> get_particleShapeModule() async {
-    final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleShapeModule", {'refId': refId});
-    return result;
+    return MAParticleEmissionModule()..refId = result;
   }
   
   Future<MAParticleOverLifeModule> get_particleOverLifeModule() async {
     final result = await _channel.invokeMethod("MAParticleOverlayOptions::get_particleOverLifeModule", {'refId': refId});
-    return result;
+    return MAParticleOverLifeModule()..refId = result;
   }
   
 
@@ -69,13 +55,13 @@ class MAParticleOverlayOptions extends NSObject  {
   }
   
   Future<void> set_particleStartColor(MAParticleColorGenerate particleStartColor) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": ""});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartColor', {'refId': refId, "particleStartColor": particleStartColor.refId});
   
   
   }
   
   Future<void> set_particleStartSpeed(MAParticleVelocityGenerate particleStartSpeed) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": ""});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleStartSpeed', {'refId': refId, "particleStartSpeed": particleStartSpeed.refId});
   
   
   }
@@ -87,7 +73,7 @@ class MAParticleOverlayOptions extends NSObject  {
   }
   
   Future<void> set_particleShapeModule(MAParticleShapeModule particleShapeModule) async {
-    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": ""});
+    await _channel.invokeMethod('MAParticleOverlayOptions::set_particleShapeModule', {'refId': refId, "particleShapeModule": particleShapeModule.refId});
   
   
   }

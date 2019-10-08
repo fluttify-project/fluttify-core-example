@@ -1,15 +1,21 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<int> get_mainKey() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_mainKey", {'refId': refId});
+    return result;
+  }
+  
+  Future<List<int>> get_subKey() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.style.StyleItem::get_subKey", {'refId': refId});
     return result;
   }
   
@@ -21,9 +27,15 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
   
   }
   
+  Future<void> set_subKey(List<int> subKey) async {
+    await _channel.invokeMethod('com.autonavi.ae.gmap.style.StyleItem::set_subKey', {'refId': refId, "subKey": subKey});
+  
+  
+  }
+  
 
   // 生成方法们
-   Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
+  Future<com_autonavi_ae_gmap_style_StyleElement> get(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::get([\'var1\':$var1])');
   
@@ -35,10 +47,14 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_ae_gmap_style_StyleElement()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_ae_gmap_style_StyleElement()..refId = result;
+    }
   }
   
-   Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
+  Future<void> put(int var1, com_autonavi_ae_gmap_style_StyleElement var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::put([\'var1\':$var1])');
   
@@ -50,10 +66,14 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isValid() async {
+  Future<bool> isValid() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.style.StyleItem@$refId::isValid([])');
   
@@ -65,7 +85,11 @@ class com_autonavi_ae_gmap_style_StyleItem extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

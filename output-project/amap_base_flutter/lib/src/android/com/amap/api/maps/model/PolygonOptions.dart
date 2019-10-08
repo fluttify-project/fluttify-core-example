@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_PolygonOptions> add(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> add(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::add([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> addAll(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addAll([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<void> setPoints(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setPoints([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
+  Future<void> setHoleOptions(List<com_amap_api_maps_model_BaseHoleOptions> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::setHoleOptions([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::addHoles([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> strokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeWidth([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> strokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::strokeColor([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> fillColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::fillColor([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_PolygonOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::visible([\'var1\':$var1])');
   
@@ -161,10 +198,33 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_PolygonOptions()..refId = result;
+    }
   }
   
-   Future<double> getStrokeWidth() async {
+  Future<List<com_amap_api_maps_model_LatLng>> getPoints() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getPoints([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getPoints', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_LatLng()..refId = it).toList();
+    }
+  }
+  
+  Future<double> getStrokeWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeWidth([])');
   
@@ -176,10 +236,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStrokeColor() async {
+  Future<int> getStrokeColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getStrokeColor([])');
   
@@ -191,10 +255,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFillColor() async {
+  Future<int> getFillColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getFillColor([])');
   
@@ -206,10 +274,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getZIndex([])');
   
@@ -221,10 +293,14 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::isVisible([])');
   
@@ -236,7 +312,30 @@ class com_amap_api_maps_model_PolygonOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.PolygonOptions::getHoleOptions', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_BaseHoleOptions()..refId = it).toList();
+    }
   }
   
 }

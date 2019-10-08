@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,26 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> addVectorRemainDis(int var1) async {
+  Future<int> addVectorItem(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1, List<int> var2, int var3) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorItem([\'var2\':$var2, \'var3\':$var3])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLCrossVector::addVectorItem', {"var1": var1.refId, "var2": var2, "var3": var3, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> addVectorRemainDis(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorRemainDis([\'var1\':$var1])');
   
@@ -26,10 +46,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> addVectorCar(int var1, int var2, int var3) async {
+  Future<void> addVectorCar(int var1, int var2, int var3) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::addVectorCar([\'var1\':$var1, \'var2\':$var2, \'var3\':$var3])');
   
@@ -41,10 +65,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRoadResId(bool var1, int var2) async {
+  Future<void> setRoadResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setRoadResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -56,10 +84,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setArrowResId(bool var1, int var2) async {
+  Future<void> setArrowResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setArrowResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -71,10 +103,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCarResId(int var1) async {
+  Future<void> setCarResId(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setCarResId([\'var1\':$var1])');
   
@@ -86,10 +122,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setBackgroundResId(int var1) async {
+  Future<void> setBackgroundResId(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setBackgroundResId([\'var1\':$var1])');
   
@@ -101,10 +141,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSkyResId(bool var1, int var2) async {
+  Future<void> setSkyResId(bool var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::setSkyResId([\'var1\':$var1, \'var2\':$var2])');
   
@@ -116,10 +160,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFBOTextureId() async {
+  Future<int> getFBOTextureId() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::getFBOTextureId([])');
   
@@ -131,10 +179,14 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> initFBOTexture(int var1, int var2) async {
+  Future<void> initFBOTexture(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.gloverlay.GLCrossVector@$refId::initFBOTexture([\'var1\':$var1, \'var2\':$var2])');
   
@@ -146,7 +198,11 @@ class com_autonavi_ae_gmap_gloverlay_GLCrossVector extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

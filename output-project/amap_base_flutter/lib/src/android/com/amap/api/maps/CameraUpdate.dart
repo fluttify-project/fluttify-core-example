@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_CameraUpdate extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_CameraUpdate extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> getCameraUpdateFactoryDelegate() async {
+  Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage> getCameraUpdateFactoryDelegate() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.CameraUpdate@$refId::getCameraUpdateFactoryDelegate([])');
   
@@ -26,7 +27,11 @@ class com_amap_api_maps_CameraUpdate extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_AbstractCameraUpdateMessage()..refId = result;
+    }
   }
   
 }

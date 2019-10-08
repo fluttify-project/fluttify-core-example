@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -46,7 +47,11 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_message_MoveGestureMapMessage()..refId = result;
+    }
   }
   
   static Future<void> destory() async {
@@ -61,10 +66,14 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getType() async {
+  Future<int> getType() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::getType([])');
   
@@ -76,10 +85,14 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
+  Future<void> runCameraUpdate(com_autonavi_ae_gmap_GLMapState var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.message.MoveGestureMapMessage@$refId::runCameraUpdate([])');
   
@@ -91,7 +104,11 @@ class com_autonavi_amap_mapcore_message_MoveGestureMapMessage extends Ref_Androi
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

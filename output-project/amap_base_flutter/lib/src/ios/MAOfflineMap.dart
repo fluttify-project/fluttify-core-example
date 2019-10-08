@@ -1,20 +1,41 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOfflineMap extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<List<MAOfflineProvince>> get_provinces() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_provinces", {'refId': refId});
+    return (result as List).cast<int>().map((it) => MAOfflineProvince()..refId = it).toList();
+  }
+  
+  Future<List<MAOfflineItemMunicipality>> get_municipalities() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_municipalities", {'refId': refId});
+    return (result as List).cast<int>().map((it) => MAOfflineItemMunicipality()..refId = it).toList();
+  }
+  
   Future<MAOfflineItemNationWide> get_nationWide() async {
     final result = await _channel.invokeMethod("MAOfflineMap::get_nationWide", {'refId': refId});
-    return result;
+    return MAOfflineItemNationWide()..refId = result;
+  }
+  
+  Future<List<MAOfflineCity>> get_cities() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_cities", {'refId': refId});
+    return (result as List).cast<int>().map((it) => MAOfflineCity()..refId = it).toList();
   }
   
   Future<String> get_version() async {
     final result = await _channel.invokeMethod("MAOfflineMap::get_version", {'refId': refId});
+    return result;
+  }
+  
+  Future<List> get_() async {
+    final result = await _channel.invokeMethod("MAOfflineMap::get_", {'refId': refId});
     return result;
   }
   
@@ -35,10 +56,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return MAOfflineMap()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAOfflineMap()..refId = result;
+    }
   }
   
-   Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
+  Future<void> setupWithCompletionBlock(void block(bool setupSuccess)) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::setupWithCompletionBlock([])');
   
@@ -67,10 +92,14 @@ class MAOfflineMap extends NSObject  {
         });
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isDownloadingForItem(MAOfflineItem item) async {
+  Future<bool> isDownloadingForItem(MAOfflineItem item) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForItem([])');
   
@@ -82,10 +111,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> pauseItem(MAOfflineItem item) async {
+  Future<bool> pauseItem(MAOfflineItem item) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::pauseItem([])');
   
@@ -97,10 +130,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> deleteItem(MAOfflineItem item) async {
+  Future<void> deleteItem(MAOfflineItem item) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::deleteItem([])');
   
@@ -112,10 +149,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> cancelAll() async {
+  Future<void> cancelAll() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::cancelAll([])');
   
@@ -127,10 +168,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> clearDisk() async {
+  Future<void> clearDisk() async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::clearDisk([])');
   
@@ -142,10 +187,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isDownloadingForCity(MAOfflineCity city) async {
+  Future<bool> isDownloadingForCity(MAOfflineCity city) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
   
@@ -157,10 +206,14 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> pause(MAOfflineCity city) async {
+  Future<void> pause(MAOfflineCity city) async {
     // 日志打印
     print('fluttify-dart: MAOfflineMap@$refId::pause([])');
   
@@ -172,7 +225,11 @@ class MAOfflineMap extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

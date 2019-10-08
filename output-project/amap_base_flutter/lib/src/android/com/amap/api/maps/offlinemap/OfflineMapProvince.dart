@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> getUrl() async {
+  Future<String> getUrl() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getUrl([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setUrl(String var1) async {
+  Future<void> setUrl(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setUrl([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getState() async {
+  Future<int> getState() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getState([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setState(int var1) async {
+  Future<void> setState(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setState([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getSize() async {
+  Future<int> getSize() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getSize([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSize(int var1) async {
+  Future<void> setSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setSize([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getVersion() async {
+  Future<String> getVersion() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getVersion([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setVersion(String var1) async {
+  Future<void> setVersion(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setVersion([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getcompleteCode() async {
+  Future<int> getcompleteCode() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getcompleteCode([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCompleteCode(int var1) async {
+  Future<void> setCompleteCode(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setCompleteCode([\'var1\':$var1])');
   
@@ -161,10 +198,52 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCityList(List<com_amap_api_maps_offlinemap_OfflineMapCity> var1) async {
+  Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getCityList() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getCityList([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.offlinemap.OfflineMapProvince::getCityList', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList();
+    }
+  }
+  
+  Future<List<com_amap_api_maps_offlinemap_OfflineMapCity>> getDownloadedCityList() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::getDownloadedCityList([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.offlinemap.OfflineMapProvince::getDownloadedCityList', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_offlinemap_OfflineMapCity()..refId = it).toList();
+    }
+  }
+  
+  Future<void> setCityList(List<com_amap_api_maps_offlinemap_OfflineMapCity> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.offlinemap.OfflineMapProvince@$refId::setCityList([])');
   
@@ -176,7 +255,11 @@ class com_amap_api_maps_offlinemap_OfflineMapProvince extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

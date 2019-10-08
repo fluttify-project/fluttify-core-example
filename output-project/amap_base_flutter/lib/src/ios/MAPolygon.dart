@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -11,6 +12,11 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
 
   // 生成setters
+  Future<void> set_hollowShapes(List<MAOverlay> hollowShapes) async {
+    await _channel.invokeMethod('MAPolygon::set_hollowShapes', {'refId': refId, "hollowShapes": hollowShapes.map((it) => it.refId).toList()});
+  
+  
+  }
   
 
   // 生成方法们
@@ -26,7 +32,11 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolygon()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAPolygon()..refId = result;
+    }
   }
   
   static Future<MAPolygon> polygonWithPoints(List<MAMapPoint> points, int count) async {
@@ -41,10 +51,14 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAPolygon()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAPolygon()..refId = result;
+    }
   }
   
-   Future<bool> setPolygonWithPoints(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolygonWithPoints(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithPoints([\'count\':$count])');
   
@@ -56,10 +70,14 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> setPolygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolygonWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAPolygon@$refId::setPolygonWithCoordinates([\'count\':$count])');
   
@@ -71,7 +89,11 @@ class MAPolygon extends MAMultiPoint with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

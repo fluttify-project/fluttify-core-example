@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setInfoWindowUpdateTime(int var1) async {
+  Future<void> setInfoWindowUpdateTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowUpdateTime([\'var1\':$var1])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getInfoWindowUpdateTime() async {
+  Future<int> getInfoWindowUpdateTime() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowUpdateTime([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setInfoWindowType(int var1) async {
+  Future<void> setInfoWindowType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindowType([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getInfoWindowType() async {
+  Future<int> getInfoWindowType() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindowType([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<android_view_View> getInfoWindow() async {
+  Future<android_view_View> getInfoWindow() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoWindow([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return android_view_View()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_view_View()..refId = result;
+    }
   }
   
-   Future<void> setInfoContent(android_view_View var1) async {
+  Future<void> setInfoContent(android_view_View var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoContent([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setInfoWindow(android_view_View var1) async {
+  Future<void> setInfoWindow(android_view_View var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::setInfoWindow([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<android_view_View> getInfoContents() async {
+  Future<android_view_View> getInfoContents() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.InfoWindowParams@$refId::getInfoContents([])');
   
@@ -131,7 +160,11 @@ class com_amap_api_maps_InfoWindowParams extends Ref_Android  {
   
   
     // 返回值
-    return android_view_View()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_view_View()..refId = result;
+    }
   }
   
 }

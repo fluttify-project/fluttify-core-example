@@ -1,46 +1,42 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapView extends UIView  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter/MAMapView');
 
   // 生成getters
-  Future<MAMapViewDelegate> get_delegate() async {
-    final result = await _channel.invokeMethod("MAMapView::get_delegate", {'refId': refId});
-    return result;
-  }
-  
   Future<MAMapType> get_mapType() async {
     final result = await _channel.invokeMethod("MAMapView::get_mapType", {'refId': refId});
-    return result;
+    return MAMapType.values[result];
   }
   
   Future<CLLocationCoordinate2D> get_centerCoordinate() async {
     final result = await _channel.invokeMethod("MAMapView::get_centerCoordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<MACoordinateRegion> get_region() async {
     final result = await _channel.invokeMethod("MAMapView::get_region", {'refId': refId});
-    return result;
+    return MACoordinateRegion()..refId = result;
   }
   
   Future<MAMapRect> get_visibleMapRect() async {
     final result = await _channel.invokeMethod("MAMapView::get_visibleMapRect", {'refId': refId});
-    return result;
+    return MAMapRect()..refId = result;
   }
   
   Future<MACoordinateRegion> get_limitRegion() async {
     final result = await _channel.invokeMethod("MAMapView::get_limitRegion", {'refId': refId});
-    return result;
+    return MACoordinateRegion()..refId = result;
   }
   
   Future<MAMapRect> get_limitMapRect() async {
     final result = await _channel.invokeMethod("MAMapView::get_limitMapRect", {'refId': refId});
-    return result;
+    return MAMapRect()..refId = result;
   }
   
   Future<double> get_zoomLevel() async {
@@ -130,7 +126,7 @@ class MAMapView extends UIView  {
   
   Future<CGPoint> get_compassOrigin() async {
     final result = await _channel.invokeMethod("MAMapView::get_compassOrigin", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<bool> get_showsScale() async {
@@ -140,12 +136,12 @@ class MAMapView extends UIView  {
   
   Future<CGPoint> get_scaleOrigin() async {
     final result = await _channel.invokeMethod("MAMapView::get_scaleOrigin", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<CGPoint> get_logoCenter() async {
     final result = await _channel.invokeMethod("MAMapView::get_logoCenter", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<double> get_metersPerPointForCurrentZoom() async {
@@ -175,12 +171,22 @@ class MAMapView extends UIView  {
   
   Future<CGPoint> get_screenAnchor() async {
     final result = await _channel.invokeMethod("MAMapView::get_screenAnchor", {'refId': refId});
+    return CGPoint()..refId = result;
+  }
+  
+  Future<List> get_annotations() async {
+    final result = await _channel.invokeMethod("MAMapView::get_annotations", {'refId': refId});
+    return result;
+  }
+  
+  Future<List> get_selectedAnnotations() async {
+    final result = await _channel.invokeMethod("MAMapView::get_selectedAnnotations", {'refId': refId});
     return result;
   }
   
   Future<CGRect> get_annotationVisibleRect() async {
     final result = await _channel.invokeMethod("MAMapView::get_annotationVisibleRect", {'refId': refId});
-    return result;
+    return CGRect()..refId = result;
   }
   
   Future<bool> get_allowsAnnotationViewSorting() async {
@@ -195,7 +201,7 @@ class MAMapView extends UIView  {
   
   Future<MAUserLocation> get_userLocation() async {
     final result = await _channel.invokeMethod("MAMapView::get_userLocation", {'refId': refId});
-    return result;
+    return MAUserLocation()..refId = result;
   }
   
   Future<bool> get_customizeUserLocationAccuracyCircleRepresentation() async {
@@ -205,12 +211,12 @@ class MAMapView extends UIView  {
   
   Future<MACircle> get_userLocationAccuracyCircle() async {
     final result = await _channel.invokeMethod("MAMapView::get_userLocationAccuracyCircle", {'refId': refId});
-    return result;
+    return MACircle()..refId = result;
   }
   
   Future<MAUserTrackingMode> get_userTrackingMode() async {
     final result = await _channel.invokeMethod("MAMapView::get_userTrackingMode", {'refId': refId});
-    return result;
+    return MAUserTrackingMode.values[result];
   }
   
   Future<bool> get_userLocationVisible() async {
@@ -225,6 +231,11 @@ class MAMapView extends UIView  {
   
   Future<bool> get_allowsBackgroundLocationUpdates() async {
     final result = await _channel.invokeMethod("MAMapView::get_allowsBackgroundLocationUpdates", {'refId': refId});
+    return result;
+  }
+  
+  Future<List> get_overlays() async {
+    final result = await _channel.invokeMethod("MAMapView::get_overlays", {'refId': refId});
     return result;
   }
   
@@ -246,7 +257,7 @@ class MAMapView extends UIView  {
 
   // 生成setters
   Future<void> set_delegate(MAMapViewDelegate delegate) async {
-    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": ""});
+    await _channel.invokeMethod('MAMapView::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
     MethodChannel('MAMapViewDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
@@ -524,6 +535,12 @@ class MAMapView extends UIView  {
   
   }
   
+  Future<void> set_selectedAnnotations(List selectedAnnotations) async {
+    await _channel.invokeMethod('MAMapView::set_selectedAnnotations', {'refId': refId, "selectedAnnotations": selectedAnnotations});
+  
+  
+  }
+  
   Future<void> set_allowsAnnotationViewSorting(bool allowsAnnotationViewSorting) async {
     await _channel.invokeMethod('MAMapView::set_allowsAnnotationViewSorting', {'refId': refId, "allowsAnnotationViewSorting": allowsAnnotationViewSorting});
   
@@ -580,7 +597,7 @@ class MAMapView extends UIView  {
   
 
   // 生成方法们
-   Future<void> setRegion(MACoordinateRegion region, bool animated) async {
+  Future<void> setRegion(MACoordinateRegion region, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setRegion([\'animated\':$animated])');
   
@@ -592,10 +609,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region) async {
+  Future<MACoordinateRegion> regionThatFits(MACoordinateRegion region) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::regionThatFits([])');
   
@@ -607,10 +628,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MACoordinateRegion()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MACoordinateRegion()..refId = result;
+    }
   }
   
-   Future<void> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
+  Future<void> setVisibleMapRect(MAMapRect mapRect, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setVisibleMapRect([\'animated\':$animated])');
   
@@ -622,10 +647,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<MAMapRect> mapRectThatFits(MAMapRect mapRect) async {
+  Future<MAMapRect> mapRectThatFits(MAMapRect mapRect) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::mapRectThatFits([])');
   
@@ -637,10 +666,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MAMapRect()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAMapRect()..refId = result;
+    }
   }
   
-   Future<void> setCenterCoordinate(CLLocationCoordinate2D coordinate, bool animated) async {
+  Future<void> setCenterCoordinate(CLLocationCoordinate2D coordinate, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCenterCoordinate([\'animated\':$animated])');
   
@@ -652,10 +685,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setZoomLevel(double zoomLevel, bool animated) async {
+  Future<void> setZoomLevel(double zoomLevel, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setZoomLevel([\'zoomLevel\':$zoomLevel, \'animated\':$animated])');
   
@@ -667,10 +704,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRotationDegree(double rotationDegree, bool animated, double duration) async {
+  Future<void> setRotationDegree(double rotationDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setRotationDegree([\'rotationDegree\':$rotationDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -682,10 +723,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCameraDegree(double cameraDegree, bool animated, double duration) async {
+  Future<void> setCameraDegree(double cameraDegree, bool animated, double duration) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCameraDegree([\'cameraDegree\':$cameraDegree, \'animated\':$animated, \'duration\':$duration])');
   
@@ -697,10 +742,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<MAMapStatus> getMapStatus() async {
+  Future<MAMapStatus> getMapStatus() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::getMapStatus([])');
   
@@ -712,10 +761,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MAMapStatus()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAMapStatus()..refId = result;
+    }
   }
   
-   Future<void> setMapStatus(MAMapStatus status, bool animated) async {
+  Future<void> setMapStatus(MAMapStatus status, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setMapStatus([\'animated\':$animated])');
   
@@ -727,10 +780,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
+  Future<double> metersPerPointForZoomLevel(double zoomLevel) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::metersPerPointForZoomLevel([\'zoomLevel\':$zoomLevel])');
   
@@ -742,10 +799,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<CGPoint> convertCoordinate(CLLocationCoordinate2D coordinate, UIView view) async {
+  Future<CGPoint> convertCoordinate(CLLocationCoordinate2D coordinate, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertCoordinate([])');
   
@@ -757,10 +818,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return CGPoint()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return CGPoint()..refId = result;
+    }
   }
   
-   Future<CLLocationCoordinate2D> convertPoint(CGPoint point, UIView view) async {
+  Future<CLLocationCoordinate2D> convertPoint(CGPoint point, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertPoint([])');
   
@@ -772,10 +837,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return CLLocationCoordinate2D()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return CLLocationCoordinate2D()..refId = result;
+    }
   }
   
-   Future<CGRect> convertRegion(MACoordinateRegion region, UIView view) async {
+  Future<CGRect> convertRegion(MACoordinateRegion region, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRegion([])');
   
@@ -787,10 +856,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return CGRect()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return CGRect()..refId = result;
+    }
   }
   
-   Future<MACoordinateRegion> convertRect(CGRect rect, UIView view) async {
+  Future<MACoordinateRegion> convertRect(CGRect rect, UIView view) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::convertRect([])');
   
@@ -802,10 +875,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MACoordinateRegion()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MACoordinateRegion()..refId = result;
+    }
   }
   
-   Future<void> reloadMap() async {
+  Future<void> reloadMap() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::reloadMap([])');
   
@@ -817,10 +894,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> clearDisk() async {
+  Future<void> clearDisk() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::clearDisk([])');
   
@@ -832,10 +913,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> reloadInternalTexture() async {
+  Future<void> reloadInternalTexture() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::reloadInternalTexture([])');
   
@@ -847,10 +932,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> mapContentApprovalNumber() async {
+  Future<String> mapContentApprovalNumber() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::mapContentApprovalNumber([])');
   
@@ -862,10 +951,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> satelliteImageApprovalNumber() async {
+  Future<String> satelliteImageApprovalNumber() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::satelliteImageApprovalNumber([])');
   
@@ -877,10 +970,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> forceRefresh() async {
+  Future<void> forceRefresh() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::forceRefresh([])');
   
@@ -892,10 +989,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> addAnnotation(MAAnnotation annotation) async {
+  Future<void> addAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addAnnotation([])');
   
@@ -907,10 +1008,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeAnnotation(MAAnnotation annotation) async {
+  Future<void> addAnnotations(List annotations) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addAnnotations([\'annotations\':$annotations])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::addAnnotations', {"annotations": annotations, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> removeAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeAnnotation([])');
   
@@ -922,10 +1046,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation) async {
+  Future<void> removeAnnotations(List annotations) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeAnnotations([\'annotations\':$annotations])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::removeAnnotations', {"annotations": annotations, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<MAAnnotationView> viewForAnnotation(MAAnnotation annotation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::viewForAnnotation([])');
   
@@ -937,10 +1084,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MAAnnotationView()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAAnnotationView()..refId = result;
+    }
   }
   
-   Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier) async {
+  Future<MAAnnotationView> dequeueReusableAnnotationViewWithIdentifier(String identifier) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::dequeueReusableAnnotationViewWithIdentifier([\'identifier\':$identifier])');
   
@@ -952,10 +1103,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MAAnnotationView()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAAnnotationView()..refId = result;
+    }
   }
   
-   Future<void> selectAnnotation(MAAnnotation annotation, bool animated) async {
+  Future<void> selectAnnotation(MAAnnotation annotation, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::selectAnnotation([\'animated\':$animated])');
   
@@ -967,10 +1122,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> deselectAnnotation(MAAnnotation annotation, bool animated) async {
+  Future<void> deselectAnnotation(MAAnnotation annotation, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::deselectAnnotation([\'animated\':$animated])');
   
@@ -982,10 +1141,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
+  Future<void> showAnnotations(List annotations, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showAnnotations([\'annotations\':$annotations, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::showAnnotationsAnimated', {"annotations": annotations, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> setUserTrackingMode(MAUserTrackingMode mode, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setUserTrackingMode([\'animated\':$animated])');
   
@@ -997,10 +1179,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> updateUserLocationRepresentation(MAUserLocationRepresentation representation) async {
+  Future<void> updateUserLocationRepresentation(MAUserLocationRepresentation representation) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::updateUserLocationRepresentation([])');
   
@@ -1012,10 +1198,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<List> overlaysInLevel(MAOverlayLevel level) async {
+  Future<List> overlaysInLevel(MAOverlayLevel level) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::overlaysInLevel([])');
   
@@ -1027,10 +1217,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return (result as List).cast<List>();
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<List>();
+    }
   }
   
-   Future<void> addOverlay(MAOverlay overlay) async {
+  Future<void> addOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::addOverlay([])');
   
@@ -1042,10 +1236,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeOverlay(MAOverlay overlay) async {
+  Future<void> addOverlays(List overlays) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::addOverlays([\'overlays\':$overlays])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::addOverlays', {"overlays": overlays, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> removeOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::removeOverlay([])');
   
@@ -1057,10 +1274,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> insertOverlay(MAOverlay overlay, int index, MAOverlayLevel level) async {
+  Future<void> removeOverlays(List overlays) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::removeOverlays([\'overlays\':$overlays])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::removeOverlays', {"overlays": overlays, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> insertOverlay(MAOverlay overlay, int index, MAOverlayLevel level) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::insertOverlay([\'index\':$index])');
   
@@ -1072,10 +1312,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> exchangeOverlayAtIndex(int index1, int index2) async {
+  Future<void> exchangeOverlayAtIndex(int index1, int index2) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::exchangeOverlayAtIndex([\'index1\':$index1, \'index2\':$index2])');
   
@@ -1087,10 +1331,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> exchangeOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
+  Future<void> exchangeOverlay(MAOverlay overlay1, MAOverlay overlay2) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::exchangeOverlay([])');
   
@@ -1102,10 +1350,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay) async {
+  Future<MAOverlayRenderer> rendererForOverlay(MAOverlay overlay) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::rendererForOverlay([])');
   
@@ -1117,10 +1369,33 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return MAOverlayRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAOverlayRenderer()..refId = result;
+    }
   }
   
-   Future<void> setIndoorMapControlOrigin(CGPoint origin) async {
+  Future<void> showOverlays(List overlays, bool animated) async {
+    // 日志打印
+    print('fluttify-dart: MAMapView@$refId::showOverlays([\'overlays\':$overlays, \'animated\':$animated])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('MAMapView::showOverlaysAnimated', {"overlays": overlays, "animated": animated, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> setIndoorMapControlOrigin(CGPoint origin) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setIndoorMapControlOrigin([])');
   
@@ -1132,10 +1407,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCurrentIndoorMapFloorIndex(int floorIndex) async {
+  Future<void> setCurrentIndoorMapFloorIndex(int floorIndex) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCurrentIndoorMapFloorIndex([\'floorIndex\':$floorIndex])');
   
@@ -1147,10 +1426,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> clearIndoorMapCache() async {
+  Future<void> clearIndoorMapCache() async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::clearIndoorMapCache([])');
   
@@ -1162,10 +1445,14 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions) async {
+  Future<void> setCustomMapStyleOptions(MAMapCustomStyleOptions styleOptions) async {
     // 日志打印
     print('fluttify-dart: MAMapView@$refId::setCustomMapStyleOptions([])');
   
@@ -1177,7 +1464,11 @@ class MAMapView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

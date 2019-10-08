@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,49 @@ class com_autonavi_amap_mapcore_tools_TextTextureGenerator extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<List<int>> getTextPixelBuffer(int var1, int var2) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getTextPixelBuffer([\'var1\':$var1, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getTextPixelBuffer', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<List<int>> getCharsWidths(List<int> var1) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.tools.TextTextureGenerator@$refId::getCharsWidths([\'var1\':$var1])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.tools.TextTextureGenerator::getCharsWidths', {"var1": var1, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

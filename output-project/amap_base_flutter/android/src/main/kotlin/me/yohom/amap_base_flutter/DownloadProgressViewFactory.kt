@@ -18,7 +18,7 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         
             // 调用对象引用
             val refId = args["refId"] as Int
-            val ref = REF_MAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
+            val ref = HEAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
             // 日志打印
             println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\"var1\":$var1])")
@@ -43,12 +43,12 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         return object : PlatformView {
             private val view = com.amap.api.maps.offlinemap.DownloadProgressView(registrar.activity())
 
-            // 构造完成后马上加入REF_MAP
-            override fun getView(): View = view.apply { REF_MAP[id] = this }
+            // 构造完成后马上加入HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
-            // dispose后从REF_MAP中删除
+            // dispose后从HEAP中删除
             override fun dispose() {
-                REF_MAP.remove(id)
+                HEAP.remove(id)
             }
         }
     }

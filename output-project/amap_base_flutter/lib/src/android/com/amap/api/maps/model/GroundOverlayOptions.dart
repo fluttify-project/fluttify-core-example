@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_GroundOverlayOptions> image(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> image(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::image([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> anchor(double var1, double var2) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> anchor(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> position(com_amap_api_maps_model_LatLng var1, double var2) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> position(com_amap_api_maps_model_LatLng var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::position([\'var2\':$var2])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> positionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> positionFromBounds(com_amap_api_maps_model_LatLngBounds var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::positionFromBounds([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> bearing(double var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> bearing(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::bearing([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::visible([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GroundOverlayOptions> transparency(double var1) async {
+  Future<com_amap_api_maps_model_GroundOverlayOptions> transparency(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::transparency([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GroundOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> getImage() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> getImage() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getImage([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getLocation() async {
+  Future<com_amap_api_maps_model_LatLng> getLocation() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getLocation([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<double> getWidth() async {
+  Future<double> getWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getWidth([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getHeight() async {
+  Future<double> getHeight() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getHeight([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
+  Future<com_amap_api_maps_model_LatLngBounds> getBounds() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getBounds([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLngBounds()..refId = result;
+    }
   }
   
-   Future<double> getBearing() async {
+  Future<double> getBearing() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getBearing([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getZIndex([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getTransparency() async {
+  Future<double> getTransparency() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getTransparency([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getAnchorU() async {
+  Future<double> getAnchorU() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getAnchorU([])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getAnchorV() async {
+  Future<double> getAnchorV() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::getAnchorV([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GroundOverlayOptions@$refId::isVisible([])');
   
@@ -296,7 +369,11 @@ class com_amap_api_maps_model_GroundOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

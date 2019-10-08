@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_GL3DModelOptions> textureDrawable(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<com_amap_api_maps_model_GL3DModelOptions> textureDrawable(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::textureDrawable([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GL3DModelOptions> vertexData(List<double> var1, List<double> var2) async {
+  Future<com_amap_api_maps_model_GL3DModelOptions> vertexData(List<double> var1, List<double> var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::vertexData([\'var1\':$var1, \'var2\':$var2])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GL3DModelOptions> position(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_GL3DModelOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::position([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GL3DModelOptions> angle(double var1) async {
+  Future<com_amap_api_maps_model_GL3DModelOptions> angle(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::angle([\'var1\':$var1])');
   
@@ -71,10 +84,52 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    }
   }
   
-   Future<double> getAngle() async {
+  Future<List<double>> getVertext() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getVertext([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getVertext', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<double>();
+    }
+  }
+  
+  Future<List<double>> getTextrue() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getTextrue([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.GL3DModelOptions::getTextrue', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<double>();
+    }
+  }
+  
+  Future<double> getAngle() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getAngle([])');
   
@@ -86,10 +141,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getLatLng() async {
+  Future<com_amap_api_maps_model_LatLng> getLatLng() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getLatLng([])');
   
@@ -101,10 +160,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> getBitmapDescriptor() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> getBitmapDescriptor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getBitmapDescriptor([])');
   
@@ -116,10 +179,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_GL3DModelOptions> setModelFixedLength(int var1) async {
+  Future<com_amap_api_maps_model_GL3DModelOptions> setModelFixedLength(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::setModelFixedLength([\'var1\':$var1])');
   
@@ -131,10 +198,14 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_GL3DModelOptions()..refId = result;
+    }
   }
   
-   Future<int> getModelFixedLength() async {
+  Future<int> getModelFixedLength() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.GL3DModelOptions@$refId::getModelFixedLength([])');
   
@@ -146,7 +217,11 @@ class com_amap_api_maps_model_GL3DModelOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

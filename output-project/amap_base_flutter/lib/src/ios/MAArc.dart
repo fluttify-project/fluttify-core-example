@@ -1,31 +1,32 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAArc extends MAShape with MAAnnotation, MAOverlay {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<CLLocationCoordinate2D> get_startCoordinate() async {
     final result = await _channel.invokeMethod("MAArc::get_startCoordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<CLLocationCoordinate2D> get_passedCoordinate() async {
     final result = await _channel.invokeMethod("MAArc::get_passedCoordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<CLLocationCoordinate2D> get_endCoordinate() async {
     final result = await _channel.invokeMethod("MAArc::get_endCoordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<MAMapRect> get_boundingMapRect() async {
     final result = await _channel.invokeMethod("MAArc::get_boundingMapRect", {'refId': refId});
-    return result;
+    return MAMapRect()..refId = result;
   }
   
 
@@ -62,7 +63,11 @@ class MAArc extends MAShape with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return MAArc()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAArc()..refId = result;
+    }
   }
   
 }

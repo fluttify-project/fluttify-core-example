@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_api_maps_model_BaseOptions  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::icon([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getIcon([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
-   Future<int> getMaxParticles() async {
+  Future<int> getMaxParticles() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getMaxParticles([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setMaxParticles(int var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setMaxParticles(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setMaxParticles([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<bool> isLoop() async {
+  Future<bool> isLoop() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isLoop([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setLoop(bool var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setLoop(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setLoop([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getDuration() async {
+  Future<int> getDuration() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getDuration([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setDuration(int var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setDuration(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setDuration([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getParticleLifeTime() async {
+  Future<int> getParticleLifeTime() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleLifeTime([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleLifeTime(int var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleLifeTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleLifeTime([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleEmissionModule> getParticleEmissionModule() async {
+  Future<com_amap_api_maps_model_particle_ParticleEmissionModule> getParticleEmissionModule() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleEmissionModule([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleEmissionModule()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleEmissionModule(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleEmissionModule(com_amap_api_maps_model_particle_ParticleEmissionModule var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleEmissionModule([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleShapeModule> getParticleShapeModule() async {
+  Future<com_amap_api_maps_model_particle_ParticleShapeModule> getParticleShapeModule() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleShapeModule([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleShapeModule()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleShapeModule()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleShapeModule(com_amap_api_maps_model_particle_ParticleShapeModule var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleShapeModule([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_VelocityGenerate> getParticleStartSpeed() async {
+  Future<com_amap_api_maps_model_particle_VelocityGenerate> getParticleStartSpeed() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartSpeed([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_VelocityGenerate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_VelocityGenerate()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartSpeed(com_amap_api_maps_model_particle_VelocityGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartSpeed([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleStartColor(com_amap_api_maps_model_particle_ColorGenerate var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleStartColor([])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ColorGenerate> getParticleStartColor() async {
+  Future<com_amap_api_maps_model_particle_ColorGenerate> getParticleStartColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartColor([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ColorGenerate()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ColorGenerate()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setParticleOverLifeModule(com_amap_api_maps_model_particle_ParticleOverLifeModule var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setParticleOverLifeModule([])');
   
@@ -296,10 +369,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverLifeModule> getParticleOverLifeModule() async {
+  Future<com_amap_api_maps_model_particle_ParticleOverLifeModule> getParticleOverLifeModule() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleOverLifeModule([])');
   
@@ -311,10 +388,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverLifeModule()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setStartParticleSize(int var1, int var2) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setStartParticleSize(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setStartParticleSize([\'var1\':$var1, \'var2\':$var2])');
   
@@ -326,10 +407,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<int> getStartParticleW() async {
+  Future<int> getStartParticleW() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getStartParticleW([])');
   
@@ -341,10 +426,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getstartParticleH() async {
+  Future<int> getstartParticleH() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getstartParticleH([])');
   
@@ -356,10 +445,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -371,10 +464,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getZIndex([])');
   
@@ -386,10 +483,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setVisible(bool var1) async {
+  Future<com_amap_api_maps_model_particle_ParticleOverlayOptions> setVisible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::setVisible([\'var1\':$var1])');
   
@@ -401,10 +502,14 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_particle_ParticleOverlayOptions()..refId = result;
+    }
   }
   
-   Future<bool> isVisibile() async {
+  Future<bool> isVisibile() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::isVisibile([])');
   
@@ -416,7 +521,11 @@ class com_amap_api_maps_model_particle_ParticleOverlayOptions extends com_amap_a
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

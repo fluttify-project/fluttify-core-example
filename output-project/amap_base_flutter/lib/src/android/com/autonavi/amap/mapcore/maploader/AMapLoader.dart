@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -23,7 +24,26 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> onStop() async {
+  Future<void> onDownload(List<int> var1, int var2) async {
+    // 日志打印
+    print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onDownload([\'var1\':$var1, \'var2\':$var2])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader::onDownload', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
+  }
+  
+  Future<void> onStop() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onStop([])');
   
@@ -35,10 +55,14 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> onFinish() async {
+  Future<void> onFinish() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::onFinish([])');
   
@@ -50,10 +74,14 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> doRequest() async {
+  Future<void> doRequest() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doRequest([])');
   
@@ -65,10 +93,14 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> doCancel() async {
+  Future<void> doCancel() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::doCancel([])');
   
@@ -80,10 +112,14 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<String> getDeviceId(android_content_Context var1) async {
+  Future<String> getDeviceId(android_content_Context var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.maploader.AMapLoader@$refId::getDeviceId([])');
   
@@ -95,7 +131,11 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

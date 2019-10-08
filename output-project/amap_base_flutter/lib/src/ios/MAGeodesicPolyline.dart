@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAGeodesicPolyline extends MAPolyline  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   
     // 返回值
-    return MAGeodesicPolyline()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAGeodesicPolyline()..refId = result;
+    }
   }
   
   static Future<MAGeodesicPolyline> polylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
@@ -41,10 +46,14 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   
     // 返回值
-    return MAGeodesicPolyline()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAGeodesicPolyline()..refId = result;
+    }
   }
   
-   Future<bool> setPolylineWithPoints(List<MAMapPoint> points, int count) async {
+  Future<bool> setPolylineWithPoints(List<MAMapPoint> points, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithPoints([\'count\':$count])');
   
@@ -56,10 +65,14 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> setPolylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
+  Future<bool> setPolylineWithCoordinates(List<CLLocationCoordinate2D> coords, int count) async {
     // 日志打印
     print('fluttify-dart: MAGeodesicPolyline@$refId::setPolylineWithCoordinates([\'count\':$count])');
   
@@ -71,7 +84,11 @@ class MAGeodesicPolyline extends MAPolyline  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<void> add(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::add([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> remove() async {
+  Future<void> remove() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::remove([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
+  Future<void> setProperCamera(List<com_amap_api_maps_model_LatLng> var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setProperCamera([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> zoopToSpan() async {
+  Future<void> zoopToSpan() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::zoopToSpan([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getTraceStatus() async {
+  Future<int> getTraceStatus() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getTraceStatus([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTraceStatus(int var1) async {
+  Future<void> setTraceStatus(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setTraceStatus([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getDistance() async {
+  Future<int> getDistance() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getDistance([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDistance(int var1) async {
+  Future<void> setDistance(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setDistance([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getWaitTime() async {
+  Future<int> getWaitTime() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::getWaitTime([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setWaitTime(int var1) async {
+  Future<void> setWaitTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceOverlay@$refId::setWaitTime([\'var1\':$var1])');
   
@@ -161,7 +198,11 @@ class com_amap_api_trace_TraceOverlay extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_MultiPointOverlayOptions> anchor(double var1, double var2) async {
+  Future<com_amap_api_maps_model_MultiPointOverlayOptions> anchor(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
+    }
   }
   
-   Future<double> getAnchorU() async {
+  Future<double> getAnchorU() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorU([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getAnchorV() async {
+  Future<double> getAnchorV() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getAnchorV([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MultiPointOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<com_amap_api_maps_model_MultiPointOverlayOptions> icon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::icon([])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MultiPointOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> getIcon() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MultiPointOverlayOptions@$refId::getIcon([])');
   
@@ -86,7 +103,11 @@ class com_amap_api_maps_model_MultiPointOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
 }

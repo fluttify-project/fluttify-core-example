@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<com_amap_api_maps_model_CameraPosition> getCameraPosition() {}
   
@@ -37,6 +38,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<com_amap_api_maps_model_Marker> addMarker(com_amap_api_maps_model_MarkerOptions var1) {}
   
+  Future<List<com_amap_api_maps_model_Marker>> addMarkers(List<com_amap_api_maps_model_MarkerOptions> var1, bool var2) {}
+  
   Future<com_amap_api_maps_model_Text> addText(com_amap_api_maps_model_TextOptions var1) {}
   
   Future<com_amap_api_maps_model_TileOverlay> addTileOverlay(com_amap_api_maps_model_TileOverlayOptions var1) {}
@@ -66,6 +69,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> setMyLocationStyle(com_amap_api_maps_model_MyLocationStyle var1) {}
   
   Future<void> setMyLocationType(int var1) {}
+  
+  Future<List<com_amap_api_maps_model_Marker>> getMapScreenMarkers() {}
   
   Future<void> setMapTextEnable(bool var1) {}
   
@@ -191,6 +196,10 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   
   Future<com_amap_api_maps_model_RouteOverlay> addNaviRouteOverlay() {}
   
+  Future<List<double>> getViewMatrix() {}
+  
+  Future<List<double>> getProjectionMatrix() {}
+  
   Future<void> addOverlayTexture(int var1, com_autonavi_ae_gmap_gloverlay_GLTextureProperty var2) {}
   
   Future<bool> onTouchEvent(android_view_MotionEvent var1) {}
@@ -208,6 +217,8 @@ mixin com_autonavi_amap_mapcore_interfaces_IAMap on java_lang_Object {
   Future<void> requestRender() {}
   
   Future<void> resetRenderTime() {}
+  
+  Future<void> onIndoorBuildingActivity(int var1, List<int> var2) {}
   
   Future<com_amap_api_maps_model_AMapCameraInfo> getCamerInfo() {}
   

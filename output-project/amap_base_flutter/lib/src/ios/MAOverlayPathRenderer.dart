@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAOverlayPathRenderer extends MAOverlayRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -15,12 +16,12 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   
   Future<MALineJoinType> get_lineJoinType() async {
     final result = await _channel.invokeMethod("MAOverlayPathRenderer::get_lineJoinType", {'refId': refId});
-    return result;
+    return MALineJoinType.values[result];
   }
   
   Future<MALineCapType> get_lineCapType() async {
     final result = await _channel.invokeMethod("MAOverlayPathRenderer::get_lineCapType", {'refId': refId});
-    return result;
+    return MALineCapType.values[result];
   }
   
   Future<double> get_miterLimit() async {
@@ -35,7 +36,7 @@ class MAOverlayPathRenderer extends MAOverlayRenderer  {
   
   Future<MALineDashType> get_lineDashType() async {
     final result = await _channel.invokeMethod("MAOverlayPathRenderer::get_lineDashType", {'refId': refId});
-    return result;
+    return MALineDashType.values[result];
   }
   
 

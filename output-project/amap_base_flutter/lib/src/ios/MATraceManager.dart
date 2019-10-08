@@ -1,22 +1,19 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MATraceManager extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<MATraceDelegate> get_delegate() async {
-    final result = await _channel.invokeMethod("MATraceManager::get_delegate", {'refId': refId});
-    return result;
-  }
   
 
   // 生成setters
   Future<void> set_delegate(MATraceDelegate delegate) async {
-    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": ""});
+    await _channel.invokeMethod('MATraceManager::set_delegate', {'refId': refId, "delegate": delegate.refId});
   
     MethodChannel('MATraceDelegate::Callback')
       .setMethodCallHandler((methodCall) async {
@@ -52,10 +49,14 @@ class MATraceManager extends NSObject  {
   
   
     // 返回值
-    return MATraceManager()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MATraceManager()..refId = result;
+    }
   }
   
-   Future<void> stopTrace() async {
+  Future<void> stopTrace() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::stopTrace([])');
   
@@ -67,10 +68,14 @@ class MATraceManager extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> start() async {
+  Future<void> start() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::start([])');
   
@@ -82,10 +87,14 @@ class MATraceManager extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> stop() async {
+  Future<void> stop() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::stop([])');
   
@@ -97,7 +106,11 @@ class MATraceManager extends NSObject  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

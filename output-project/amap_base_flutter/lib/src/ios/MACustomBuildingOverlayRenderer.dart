@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MACustomBuildingOverlay> get_customBuildingOverlay() async {
     final result = await _channel.invokeMethod("MACustomBuildingOverlayRenderer::get_customBuildingOverlay", {'refId': refId});
-    return result;
+    return MACustomBuildingOverlay()..refId = result;
   }
   
 
@@ -18,7 +19,7 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   
 
   // 生成方法们
-   Future<MACustomBuildingOverlayRenderer> initWithCustomBuildingOverlay(MACustomBuildingOverlay customBuildingOverlay) async {
+  Future<MACustomBuildingOverlayRenderer> initWithCustomBuildingOverlay(MACustomBuildingOverlay customBuildingOverlay) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlayRenderer@$refId::initWithCustomBuildingOverlay([])');
   
@@ -30,7 +31,11 @@ class MACustomBuildingOverlayRenderer extends MAOverlayRenderer  {
   
   
     // 返回值
-    return MACustomBuildingOverlayRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MACustomBuildingOverlayRenderer()..refId = result;
+    }
   }
   
 }

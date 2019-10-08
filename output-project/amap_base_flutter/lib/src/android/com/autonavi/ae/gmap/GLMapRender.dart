@@ -1,18 +1,14 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
-  Future<com_autonavi_amap_mapcore_interfaces_IAMap> get_mGLMapView() async {
-    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mGLMapView", {'refId': refId});
-    return result;
-  }
-  
   Future<bool> get_mSurfacedestoryed() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.GLMapRender::get_mSurfacedestoryed", {'refId': refId});
     return result;
@@ -21,7 +17,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
 
   // 生成setters
   Future<void> set_mGLMapView(com_autonavi_amap_mapcore_interfaces_IAMap mGLMapView) async {
-    await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapRender::set_mGLMapView', {'refId': refId, "mGLMapView": ""});
+    await _channel.invokeMethod('com.autonavi.ae.gmap.GLMapRender::set_mGLMapView', {'refId': refId, "mGLMapView": mGLMapView.refId});
   
   
   }
@@ -34,7 +30,7 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
 
   // 生成方法们
-   Future<void> setTrafficMode(bool var1) async {
+  Future<void> setTrafficMode(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setTrafficMode([\'var1\':$var1])');
   
@@ -46,10 +42,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> resetTickCount(int var1) async {
+  Future<void> resetTickCount(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::resetTickCount([\'var1\':$var1])');
   
@@ -61,10 +61,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isRenderPause() async {
+  Future<bool> isRenderPause() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::isRenderPause([])');
   
@@ -76,10 +80,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setRenderFps(double var1) async {
+  Future<void> setRenderFps(double var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::setRenderFps([\'var1\':$var1])');
   
@@ -91,10 +99,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> renderPause() async {
+  Future<void> renderPause() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderPause([])');
   
@@ -106,10 +118,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> renderResume() async {
+  Future<void> renderResume() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::renderResume([])');
   
@@ -121,10 +137,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> onAttachedToWindow() async {
+  Future<void> onAttachedToWindow() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onAttachedToWindow([])');
   
@@ -136,10 +156,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> onDetachedFromWindow() async {
+  Future<void> onDetachedFromWindow() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onDetachedFromWindow([])');
   
@@ -151,10 +175,14 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> onSurfaceDestory() async {
+  Future<void> onSurfaceDestory() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.ae.gmap.GLMapRender@$refId::onSurfaceDestory([])');
   
@@ -166,7 +194,11 @@ class com_autonavi_ae_gmap_GLMapRender extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

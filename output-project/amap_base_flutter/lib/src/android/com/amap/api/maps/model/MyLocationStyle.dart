@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> myLocationIcon(com_amap_api_maps_model_BitmapDescriptor var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationIcon([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> anchor(double var1, double var2) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> anchor(double var1, double var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::anchor([\'var1\':$var1, \'var2\':$var2])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> radiusFillColor(int var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> radiusFillColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::radiusFillColor([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> strokeColor(int var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> strokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeColor([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> strokeWidth(double var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> strokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::strokeWidth([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> myLocationType(int var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> myLocationType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::myLocationType([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> interval(int var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> interval(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::interval([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_MyLocationStyle> showMyLocation(bool var1) async {
+  Future<com_amap_api_maps_model_MyLocationStyle> showMyLocation(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::showMyLocation([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_MyLocationStyle()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_BitmapDescriptor> getMyLocationIcon() async {
+  Future<com_amap_api_maps_model_BitmapDescriptor> getMyLocationIcon() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationIcon([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_BitmapDescriptor()..refId = result;
+    }
   }
   
-   Future<double> getAnchorU() async {
+  Future<double> getAnchorU() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorU([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getAnchorV() async {
+  Future<double> getAnchorV() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getAnchorV([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getRadiusFillColor() async {
+  Future<int> getRadiusFillColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getRadiusFillColor([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStrokeColor() async {
+  Future<int> getStrokeColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeColor([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getStrokeWidth() async {
+  Future<double> getStrokeWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getStrokeWidth([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getMyLocationType() async {
+  Future<int> getMyLocationType() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getMyLocationType([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getInterval() async {
+  Future<int> getInterval() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::getInterval([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isMyLocationShowing() async {
+  Future<bool> isMyLocationShowing() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.MyLocationStyle@$refId::isMyLocationShowing([])');
   
@@ -266,7 +331,11 @@ class com_amap_api_maps_model_MyLocationStyle extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

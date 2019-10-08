@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_CircleOptions> center(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> center(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::center([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> radius(double var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> radius(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::radius([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> strokeWidth(double var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> strokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeWidth([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> strokeColor(int var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> strokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::strokeColor([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> fillColor(int var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> fillColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::fillColor([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::visible([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getCenter() async {
+  Future<com_amap_api_maps_model_LatLng> getCenter() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getCenter([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<double> getRadius() async {
+  Future<double> getRadius() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getRadius([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getStrokeWidth() async {
+  Future<double> getStrokeWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeWidth([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStrokeColor() async {
+  Future<int> getStrokeColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeColor([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFillColor() async {
+  Future<int> getFillColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getFillColor([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getZIndex([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::isVisible([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
+  Future<com_amap_api_maps_model_CircleOptions> addHoles(com_amap_api_maps_model_BaseHoleOptions var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::addHoles([])');
   
@@ -236,10 +293,33 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
+  Future<List<com_amap_api_maps_model_BaseHoleOptions>> getHoleOptions() async {
+    // 日志打印
+    print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getHoleOptions([])');
+  
+    // 调用原生方法
+    final result = await _channel.invokeMethod('com.amap.api.maps.model.CircleOptions::getHoleOptions', {"refId": refId});
+  
+  
+    // 接受原生回调
+  
+  
+    // 返回值
+    if (result == null) {
+      return null;
+    } else {
+      return (result as List).cast<int>().map((it) => com_amap_api_maps_model_BaseHoleOptions()..refId = it).toList();
+    }
+  }
+  
+  Future<com_amap_api_maps_model_CircleOptions> setStrokeDottedLineType(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::setStrokeDottedLineType([\'var1\':$var1])');
   
@@ -251,10 +331,14 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CircleOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CircleOptions()..refId = result;
+    }
   }
   
-   Future<int> getStrokeDottedLineType() async {
+  Future<int> getStrokeDottedLineType() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CircleOptions@$refId::getStrokeDottedLineType([])');
   
@@ -266,7 +350,11 @@ class com_amap_api_maps_model_CircleOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

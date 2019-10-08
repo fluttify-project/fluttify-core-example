@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAAnnotationView extends UIView  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter/MAAnnotationView');
 
@@ -18,24 +19,19 @@ class MAAnnotationView extends UIView  {
     return result;
   }
   
-  Future<MAAnnotation> get_annotation() async {
-    final result = await _channel.invokeMethod("MAAnnotationView::get_annotation", {'refId': refId});
-    return result;
-  }
-  
   Future<MACustomCalloutView> get_customCalloutView() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_customCalloutView", {'refId': refId});
-    return result;
+    return MACustomCalloutView()..refId = result;
   }
   
   Future<CGPoint> get_centerOffset() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_centerOffset", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<CGPoint> get_calloutOffset() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_calloutOffset", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
   Future<bool> get_enabled() async {
@@ -60,12 +56,12 @@ class MAAnnotationView extends UIView  {
   
   Future<UIView> get_leftCalloutAccessoryView() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_leftCalloutAccessoryView", {'refId': refId});
-    return result;
+    return UIView()..refId = result;
   }
   
   Future<UIView> get_rightCalloutAccessoryView() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_rightCalloutAccessoryView", {'refId': refId});
-    return result;
+    return UIView()..refId = result;
   }
   
   Future<bool> get_draggable() async {
@@ -75,7 +71,7 @@ class MAAnnotationView extends UIView  {
   
   Future<MAAnnotationViewDragState> get_dragState() async {
     final result = await _channel.invokeMethod("MAAnnotationView::get_dragState", {'refId': refId});
-    return result;
+    return MAAnnotationViewDragState.values[result];
   }
   
 
@@ -87,7 +83,7 @@ class MAAnnotationView extends UIView  {
   }
   
   Future<void> set_annotation(MAAnnotation annotation) async {
-    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": ""});
+    await _channel.invokeMethod('MAAnnotationView::set_annotation', {'refId': refId, "annotation": annotation.refId});
   
   
   }
@@ -160,7 +156,7 @@ class MAAnnotationView extends UIView  {
   
 
   // 生成方法们
-   Future<void> setSelected(bool selected, bool animated) async {
+  Future<void> setSelected(bool selected, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::setSelected([\'selected\':$selected, \'animated\':$animated])');
   
@@ -172,10 +168,14 @@ class MAAnnotationView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> prepareForReuse() async {
+  Future<void> prepareForReuse() async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::prepareForReuse([])');
   
@@ -187,10 +187,14 @@ class MAAnnotationView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setDragState(MAAnnotationViewDragState newDragState, bool animated) async {
+  Future<void> setDragState(MAAnnotationViewDragState newDragState, bool animated) async {
     // 日志打印
     print('fluttify-dart: MAAnnotationView@$refId::setDragState([\'animated\':$animated])');
   
@@ -202,7 +206,11 @@ class MAAnnotationView extends UIView  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

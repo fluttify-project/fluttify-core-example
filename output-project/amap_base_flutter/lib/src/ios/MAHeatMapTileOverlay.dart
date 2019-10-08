@@ -1,13 +1,19 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAHeatMapTileOverlay extends MATileOverlay  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<List<MAHeatMapNode>> get_data() async {
+    final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_data", {'refId': refId});
+    return (result as List).cast<int>().map((it) => MAHeatMapNode()..refId = it).toList();
+  }
+  
   Future<int> get_radius() async {
     final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_radius", {'refId': refId});
     return result;
@@ -20,7 +26,7 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   
   Future<MAHeatMapGradient> get_gradient() async {
     final result = await _channel.invokeMethod("MAHeatMapTileOverlay::get_gradient", {'refId': refId});
-    return result;
+    return MAHeatMapGradient()..refId = result;
   }
   
   Future<bool> get_allowRetinaAdapting() async {
@@ -30,6 +36,12 @@ class MAHeatMapTileOverlay extends MATileOverlay  {
   
 
   // 生成setters
+  Future<void> set_data(List<MAHeatMapNode> data) async {
+    await _channel.invokeMethod('MAHeatMapTileOverlay::set_data', {'refId': refId, "data": data.map((it) => it.refId).toList()});
+  
+  
+  }
+  
   Future<void> set_radius(int radius) async {
     await _channel.invokeMethod('MAHeatMapTileOverlay::set_radius', {'refId': refId, "radius": radius});
   

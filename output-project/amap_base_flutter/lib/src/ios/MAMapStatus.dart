@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMapStatus extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<CLLocationCoordinate2D> get_centerCoordinate() async {
     final result = await _channel.invokeMethod("MAMapStatus::get_centerCoordinate", {'refId': refId});
-    return result;
+    return CLLocationCoordinate2D()..refId = result;
   }
   
   Future<double> get_zoomLevel() async {
@@ -30,7 +31,7 @@ class MAMapStatus extends NSObject  {
   
   Future<CGPoint> get_screenAnchor() async {
     final result = await _channel.invokeMethod("MAMapStatus::get_screenAnchor", {'refId': refId});
-    return result;
+    return CGPoint()..refId = result;
   }
   
 
@@ -79,7 +80,11 @@ class MAMapStatus extends NSObject  {
   
   
     // 返回值
-    return MAMapStatus()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAMapStatus()..refId = result;
+    }
   }
   
 }

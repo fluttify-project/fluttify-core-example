@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,7 +27,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setNetWorkEnable(bool var0) async {
@@ -41,7 +46,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<bool> getNetWorkEnable() async {
@@ -56,7 +65,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setApiKey(String var0) async {
@@ -71,7 +84,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<String> getVersion() async {
@@ -86,7 +103,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> loadWorldGridMap(bool var0) async {
@@ -101,7 +122,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<bool> isLoadWorldGridMap() async {
@@ -116,7 +141,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setBuildingHeight(int var0) async {
@@ -131,7 +160,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setDownloadCoordinateConvertLibrary(bool var0) async {
@@ -146,7 +179,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<bool> isDownloadCoordinateConvertLibrary() async {
@@ -161,7 +198,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setHost(String var0) async {
@@ -176,7 +217,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> setProtocol(int var0) async {
@@ -191,7 +236,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<int> getProtocol() async {
@@ -206,7 +255,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<void> closeTileOverlay(bool var0) async {
@@ -221,7 +274,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
   static Future<bool> isTileOverlayClosed() async {
@@ -236,7 +293,11 @@ class com_amap_api_maps_MapsInitializer extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

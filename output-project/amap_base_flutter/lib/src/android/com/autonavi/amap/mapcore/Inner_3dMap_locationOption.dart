@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -26,10 +27,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isMockEnable() async {
+  Future<bool> isMockEnable() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isMockEnable([])');
   
@@ -41,10 +46,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setMockEnable(bool var1) async {
+  Future<void> setMockEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setMockEnable([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getInterval() async {
+  Future<int> getInterval() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getInterval([])');
   
@@ -71,10 +84,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(int var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setInterval(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setInterval([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<bool> isOnceLocation() async {
+  Future<bool> isOnceLocation() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocation([])');
   
@@ -101,10 +122,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(bool var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOnceLocation(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocation([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<bool> isNeedAddress() async {
+  Future<bool> isNeedAddress() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isNeedAddress([])');
   
@@ -131,10 +160,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(bool var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setNeedAddress(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setNeedAddress([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<bool> isWifiActiveScan() async {
+  Future<bool> isWifiActiveScan() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiActiveScan([])');
   
@@ -161,10 +198,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setWifiActiveScan(bool var1) async {
+  Future<void> setWifiActiveScan(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiActiveScan([\'var1\':$var1])');
   
@@ -176,10 +217,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isWifiScan() async {
+  Future<bool> isWifiScan() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isWifiScan([])');
   
@@ -191,10 +236,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setWifiScan(bool var1) async {
+  Future<void> setWifiScan(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setWifiScan([\'var1\':$var1])');
   
@@ -206,10 +255,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode> getLocationMode() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationMode([])');
   
@@ -221,10 +274,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result];
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode.values[result];
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol> getLocationProtocol() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getLocationProtocol([])');
   
@@ -236,10 +293,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result];
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol.values[result];
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setLocationMode(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationMode var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationMode([])');
   
@@ -251,7 +312,11 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
   static Future<void> setLocationProtocol(com_autonavi_amap_mapcore_Inner_3dMap_locationOption_Inner_3dMap_Enum_LocationProtocol var0) async {
@@ -266,10 +331,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isKillProcess() async {
+  Future<bool> isKillProcess() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isKillProcess([])');
   
@@ -281,10 +350,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(bool var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setKillProcess(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setKillProcess([\'var1\':$var1])');
   
@@ -296,10 +369,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<bool> isGpsFirst() async {
+  Future<bool> isGpsFirst() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isGpsFirst([])');
   
@@ -311,10 +388,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(bool var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setGpsFirst(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setGpsFirst([\'var1\':$var1])');
   
@@ -326,10 +407,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> clone() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::clone([])');
   
@@ -341,10 +426,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<int> getHttpTimeOut() async {
+  Future<int> getHttpTimeOut() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::getHttpTimeOut([])');
   
@@ -356,10 +445,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setHttpTimeOut(int var1) async {
+  Future<void> setHttpTimeOut(int var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setHttpTimeOut([\'var1\':$var1])');
   
@@ -371,10 +464,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isOffset() async {
+  Future<bool> isOffset() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOffset([])');
   
@@ -386,10 +483,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(bool var1) async {
+  Future<com_autonavi_amap_mapcore_Inner_3dMap_locationOption> setOffset(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOffset([\'var1\':$var1])');
   
@@ -401,10 +502,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_amap_mapcore_Inner_3dMap_locationOption()..refId = result;
+    }
   }
   
-   Future<bool> isLocationCacheEnable() async {
+  Future<bool> isLocationCacheEnable() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isLocationCacheEnable([])');
   
@@ -416,10 +521,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setLocationCacheEnable(bool var1) async {
+  Future<void> setLocationCacheEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setLocationCacheEnable([\'var1\':$var1])');
   
@@ -431,10 +540,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isOnceLocationLatest() async {
+  Future<bool> isOnceLocationLatest() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isOnceLocationLatest([])');
   
@@ -446,10 +559,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setOnceLocationLatest(bool var1) async {
+  Future<void> setOnceLocationLatest(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setOnceLocationLatest([\'var1\':$var1])');
   
@@ -461,10 +578,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isSensorEnable() async {
+  Future<bool> isSensorEnable() async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::isSensorEnable([])');
   
@@ -476,10 +597,14 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSensorEnable(bool var1) async {
+  Future<void> setSensorEnable(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.autonavi.amap.mapcore.Inner_3dMap_locationOption@$refId::setSensorEnable([\'var1\':$var1])');
   
@@ -491,7 +616,11 @@ class com_autonavi_amap_mapcore_Inner_3dMap_locationOption extends Ref_Android  
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

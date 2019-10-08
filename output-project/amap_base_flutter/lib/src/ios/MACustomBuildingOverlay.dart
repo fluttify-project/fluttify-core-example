@@ -1,16 +1,22 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MACustomBuildingOverlayOption> get_defaultOption() async {
     final result = await _channel.invokeMethod("MACustomBuildingOverlay::get_defaultOption", {'refId': refId});
-    return result;
+    return MACustomBuildingOverlayOption()..refId = result;
+  }
+  
+  Future<List<MACustomBuildingOverlayOption>> get_customOptions() async {
+    final result = await _channel.invokeMethod("MACustomBuildingOverlay::get_customOptions", {'refId': refId});
+    return (result as List).cast<int>().map((it) => MACustomBuildingOverlayOption()..refId = it).toList();
   }
   
 
@@ -18,7 +24,7 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   
 
   // 生成方法们
-   Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
+  Future<void> addCustomOption(MACustomBuildingOverlayOption option) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlay@$refId::addCustomOption([])');
   
@@ -30,10 +36,14 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
+  Future<void> removeCustomOption(MACustomBuildingOverlayOption option) async {
     // 日志打印
     print('fluttify-dart: MACustomBuildingOverlay@$refId::removeCustomOption([])');
   
@@ -45,7 +55,11 @@ class MACustomBuildingOverlay extends MAShape with MAAnnotation, MAOverlay {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

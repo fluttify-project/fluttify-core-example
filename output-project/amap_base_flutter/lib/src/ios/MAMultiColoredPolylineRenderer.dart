@@ -1,16 +1,17 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
   Future<MAMultiPolyline> get_multiPolyline() async {
     final result = await _channel.invokeMethod("MAMultiColoredPolylineRenderer::get_multiPolyline", {'refId': refId});
-    return result;
+    return MAMultiPolyline()..refId = result;
   }
   
   Future<bool> get_gradient() async {
@@ -28,7 +29,7 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
 
   // 生成方法们
-   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
+  Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // 日志打印
     print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
   
@@ -40,7 +41,11 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
   
     // 返回值
-    return MAMultiColoredPolylineRenderer()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return MAMultiColoredPolylineRenderer()..refId = result;
+    }
   }
   
 }

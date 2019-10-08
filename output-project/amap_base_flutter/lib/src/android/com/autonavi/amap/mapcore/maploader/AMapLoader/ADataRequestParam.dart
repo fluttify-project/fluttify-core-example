@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -20,6 +21,11 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends R
   
   Future<int> get_nRequestType() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_nRequestType", {'refId': refId});
+    return result;
+  }
+  
+  Future<List<int>> get_enCodeString() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::get_enCodeString", {'refId': refId});
     return result;
   }
   
@@ -49,6 +55,12 @@ class com_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam extends R
   
   Future<void> set_nRequestType(int nRequestType) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_nRequestType', {'refId': refId, "nRequestType": nRequestType});
+  
+  
+  }
+  
+  Future<void> set_enCodeString(List<int> enCodeString) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.maploader.AMapLoader.ADataRequestParam::set_enCodeString', {'refId': refId, "enCodeString": enCodeString});
   
   
   }

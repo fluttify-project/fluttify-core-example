@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_Poi extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_Poi extends Ref_Android  {
   
 
   // 生成方法们
-   Future<String> getName() async {
+  Future<String> getName() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getName([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_Poi extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getCoordinate() async {
+  Future<com_amap_api_maps_model_LatLng> getCoordinate() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getCoordinate([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_Poi extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<String> getPoiId() async {
+  Future<String> getPoiId() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.Poi@$refId::getPoiId([])');
   
@@ -56,7 +65,11 @@ class com_amap_api_maps_model_Poi extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

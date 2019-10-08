@@ -2,7 +2,7 @@
 #import <Flutter/Flutter.h>
 #import <MAMapKit/MAMapKit.h>
 
-extern NSMutableDictionary<NSNumber *, NSObject *> *REF_MAP;
+extern NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
 
 @interface MACustomCalloutViewFactory : NSObject <FlutterPlatformViewFactory>
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar;

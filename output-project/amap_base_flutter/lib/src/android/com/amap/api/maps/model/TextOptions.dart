@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_TextOptions> position(com_amap_api_maps_model_LatLng var1) async {
+  Future<com_amap_api_maps_model_TextOptions> position(com_amap_api_maps_model_LatLng var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::position([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> text(String var1) async {
+  Future<com_amap_api_maps_model_TextOptions> text(String var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::text([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_TextOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::visible([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_TextOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> rotate(double var1) async {
+  Future<com_amap_api_maps_model_TextOptions> rotate(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::rotate([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> align(int var1, int var2) async {
+  Future<com_amap_api_maps_model_TextOptions> align(int var1, int var2) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::align([\'var1\':$var1, \'var2\':$var2])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> backgroundColor(int var1) async {
+  Future<com_amap_api_maps_model_TextOptions> backgroundColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::backgroundColor([\'var1\':$var1])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> fontColor(int var1) async {
+  Future<com_amap_api_maps_model_TextOptions> fontColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontColor([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_TextOptions> fontSize(int var1) async {
+  Future<com_amap_api_maps_model_TextOptions> fontSize(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::fontSize([\'var1\':$var1])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_TextOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_TextOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPosition() async {
+  Future<com_amap_api_maps_model_LatLng> getPosition() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getPosition([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<String> getText() async {
+  Future<String> getText() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getText([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getRotate() async {
+  Future<double> getRotate() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getRotate([])');
   
@@ -191,10 +236,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getAlignX() async {
+  Future<int> getAlignX() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignX([])');
   
@@ -206,10 +255,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getAlignY() async {
+  Future<int> getAlignY() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getAlignY([])');
   
@@ -221,10 +274,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getBackgroundColor() async {
+  Future<int> getBackgroundColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getBackgroundColor([])');
   
@@ -236,10 +293,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFontColor() async {
+  Future<int> getFontColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontColor([])');
   
@@ -251,10 +312,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getFontSize() async {
+  Future<int> getFontSize() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getFontSize([])');
   
@@ -266,10 +331,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::getZIndex([])');
   
@@ -281,10 +350,14 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.TextOptions@$refId::isVisible([])');
   
@@ -296,7 +369,11 @@ class com_amap_api_maps_model_TextOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
 }

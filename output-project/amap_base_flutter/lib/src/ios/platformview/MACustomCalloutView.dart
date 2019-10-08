@@ -6,10 +6,11 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 
 typedef void MACustomCalloutViewCreatedCallback(MACustomCalloutView controller);
 
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MACustomCalloutView_iOS extends StatelessWidget {
   const MACustomCalloutView_iOS({
     Key key,

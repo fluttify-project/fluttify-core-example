@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> getAttribute() async {
+  Future<com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr> getAttribute() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getAttribute([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CrossOverlayOptions> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
+  Future<com_amap_api_maps_model_CrossOverlayOptions> setAttribute(com_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setAttribute([])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
+  Future<com_amap_api_maps_model_CrossOverlayOptions> setRes(android_graphics_Bitmap var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::setRes([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_CrossOverlayOptions()..refId = result;
+    }
   }
   
-   Future<android_graphics_Bitmap> getRes() async {
+  Future<android_graphics_Bitmap> getRes() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.CrossOverlayOptions@$refId::getRes([])');
   
@@ -71,7 +84,11 @@ class com_amap_api_maps_model_CrossOverlayOptions extends Ref_Android  {
   
   
     // 返回值
-    return android_graphics_Bitmap()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return android_graphics_Bitmap()..refId = result;
+    }
   }
   
 }

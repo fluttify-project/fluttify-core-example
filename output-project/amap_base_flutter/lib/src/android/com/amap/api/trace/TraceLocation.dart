@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_trace_TraceLocation extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
 
   // 生成方法们
-   Future<double> getLatitude() async {
+  Future<double> getLatitude() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLatitude([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setLatitude(double var1) async {
+  Future<void> setLatitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLatitude([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getLongitude() async {
+  Future<double> getLongitude() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getLongitude([])');
   
@@ -56,10 +65,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setLongitude(double var1) async {
+  Future<void> setLongitude(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setLongitude([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getSpeed() async {
+  Future<double> getSpeed() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getSpeed([])');
   
@@ -86,10 +103,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setSpeed(double var1) async {
+  Future<void> setSpeed(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setSpeed([\'var1\':$var1])');
   
@@ -101,10 +122,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getBearing() async {
+  Future<double> getBearing() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getBearing([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setBearing(double var1) async {
+  Future<void> setBearing(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setBearing([\'var1\':$var1])');
   
@@ -131,10 +160,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getTime() async {
+  Future<int> getTime() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::getTime([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<void> setTime(int var1) async {
+  Future<void> setTime(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::setTime([\'var1\':$var1])');
   
@@ -161,10 +198,14 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_trace_TraceLocation> copy() async {
+  Future<com_amap_api_trace_TraceLocation> copy() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.trace.TraceLocation@$refId::copy([])');
   
@@ -176,7 +217,11 @@ class com_amap_api_trace_TraceLocation extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_trace_TraceLocation()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_trace_TraceLocation()..refId = result;
+    }
   }
   
 }

@@ -1,9 +1,10 @@
 import 'dart:typed_data';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
@@ -14,7 +15,7 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
 
   // 生成方法们
-   Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
+  Future<com_amap_api_maps_model_ArcOptions> point(com_amap_api_maps_model_LatLng var1, com_amap_api_maps_model_LatLng var2, com_amap_api_maps_model_LatLng var3) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::point([])');
   
@@ -26,10 +27,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_ArcOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_ArcOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
+  Future<com_amap_api_maps_model_ArcOptions> strokeWidth(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeWidth([\'var1\':$var1])');
   
@@ -41,10 +46,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_ArcOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_ArcOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
+  Future<com_amap_api_maps_model_ArcOptions> strokeColor(int var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::strokeColor([\'var1\':$var1])');
   
@@ -56,10 +65,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_ArcOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_ArcOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
+  Future<com_amap_api_maps_model_ArcOptions> zIndex(double var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::zIndex([\'var1\':$var1])');
   
@@ -71,10 +84,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_ArcOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_ArcOptions()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
+  Future<com_amap_api_maps_model_ArcOptions> visible(bool var1) async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::visible([\'var1\':$var1])');
   
@@ -86,10 +103,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_ArcOptions()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_ArcOptions()..refId = result;
+    }
   }
   
-   Future<double> getStrokeWidth() async {
+  Future<double> getStrokeWidth() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeWidth([])');
   
@@ -101,10 +122,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<int> getStrokeColor() async {
+  Future<int> getStrokeColor() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStrokeColor([])');
   
@@ -116,10 +141,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<double> getZIndex() async {
+  Future<double> getZIndex() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getZIndex([])');
   
@@ -131,10 +160,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<bool> isVisible() async {
+  Future<bool> isVisible() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::isVisible([])');
   
@@ -146,10 +179,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return result;
+    if (result == null) {
+      return null;
+    } else {
+      return result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getStart() async {
+  Future<com_amap_api_maps_model_LatLng> getStart() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getStart([])');
   
@@ -161,10 +198,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getPassed() async {
+  Future<com_amap_api_maps_model_LatLng> getPassed() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getPassed([])');
   
@@ -176,10 +217,14 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
-   Future<com_amap_api_maps_model_LatLng> getEnd() async {
+  Future<com_amap_api_maps_model_LatLng> getEnd() async {
     // 日志打印
     print('fluttify-dart: com.amap.api.maps.model.ArcOptions@$refId::getEnd([])');
   
@@ -191,7 +236,11 @@ class com_amap_api_maps_model_ArcOptions extends Ref_Android  {
   
   
     // 返回值
-    return com_amap_api_maps_model_LatLng()..refId = result;
+    if (result == null) {
+      return null;
+    } else {
+      return com_amap_api_maps_model_LatLng()..refId = result;
+    }
   }
   
 }

@@ -1,14 +1,22 @@
 import 'package:flutter/services.dart';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 
-// ignore_for_file: non_constant_identifier_names, camel_case_types
+// ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class ObjectFactory_iOS {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   static Future<CLLocationCoordinate2D> createCLLocationCoordinate2D(double latitude, double longitude) async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createCLLocationCoordinate2D', {'latitude': latitude, 'longitude': longitude});
     return CLLocationCoordinate2D()..refId = refId;
+  }
+
+  static Future<void> release(Ref_iOS ref) async {
+    await _channel.invokeMethod('ObjectFactory::release', {'refId': ref.refId});
+  }
+
+  static Future<void> clearRefMap() async {
+    await _channel.invokeMethod('ObjectFactory::clearRefMap');
   }
 
   static Future<AMapURLSearch> createAMapURLSearch() async {
