@@ -59,8 +59,8 @@ public final class li {
             if (var9) {
                try {
                   a((Closeable)var0);
-               } catch (Throwable var11) {
-                  var11.printStackTrace();
+               } catch (Throwable var10) {
+                  var10.printStackTrace();
                }
 
             }
@@ -68,8 +68,8 @@ public final class li {
 
          try {
             a((Closeable)var0);
-         } catch (Throwable var10) {
-            var10.printStackTrace();
+         } catch (Throwable var11) {
+            var11.printStackTrace();
          }
 
          return null;

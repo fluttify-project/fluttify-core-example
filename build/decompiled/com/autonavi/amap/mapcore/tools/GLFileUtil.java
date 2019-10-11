@@ -102,26 +102,28 @@ public class GLFileUtil {
          if (!var2.exists()) {
             Object var13 = null;
             return (byte[])var13;
-         } else {
-            var1 = new FileInputStream(var2);
-            byte[] var3 = new byte[1024];
-            ByteArrayOutputStream var4 = new ByteArrayOutputStream();
-            boolean var5 = false;
-
-            int var14;
-            while((var14 = var1.read(var3)) != -1) {
-               var4.write(var3, 0, var14);
-            }
-
-            var4.close();
-            byte[] var6 = var4.toByteArray();
-            return var6;
          }
+
+         var1 = new FileInputStream(var2);
+         byte[] var3 = new byte[1024];
+         ByteArrayOutputStream var4 = new ByteArrayOutputStream();
+         boolean var5 = false;
+
+         int var14;
+         while((var14 = var1.read(var3)) != -1) {
+            var4.write(var3, 0, var14);
+         }
+
+         var4.close();
+         byte[] var6 = var4.toByteArray();
+         return var6;
       } catch (Exception var11) {
-         return null;
+         ;
       } finally {
          closeQuietly(var1);
       }
+
+      return null;
    }
 
    public static File getCacheDir(Context var0) {

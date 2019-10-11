@@ -12,38 +12,36 @@ public class hc {
    public static String a(String var0) {
       FileInputStream var1 = null;
 
-      File var2;
+      MessageDigest var3;
       try {
-         MessageDigest var3;
-         try {
-            if (!TextUtils.isEmpty(var0)) {
-               var2 = new File(var0);
-               if (var2.isFile() && var2.exists()) {
-                  var3 = null;
-                  byte[] var4 = new byte[2048];
-                  var3 = MessageDigest.getInstance("MD5");
-                  var1 = new FileInputStream(var2);
+         File var2;
+         if (TextUtils.isEmpty(var0)) {
+            var2 = null;
+            return var2;
+         }
 
-                  int var5;
-                  while((var5 = var1.read(var4)) != -1) {
-                     var3.update(var4, 0, var5);
-                  }
+         var2 = new File(var0);
+         if (var2.isFile() && var2.exists()) {
+            var3 = null;
+            byte[] var4 = new byte[2048];
+            var3 = MessageDigest.getInstance("MD5");
+            var1 = new FileInputStream(var2);
 
-                  byte[] var6 = var3.digest();
-                  String var7 = hg.e(var6);
-                  return var7;
-               }
-
-               var3 = null;
-               return var3;
+            int var5;
+            while((var5 = var1.read(var4)) != -1) {
+               var3.update(var4, 0, var5);
             }
 
-            var2 = null;
-         } catch (Throwable var19) {
-            hq.a(var19, "MD5", "gfm");
-            var3 = null;
-            return var3;
+            byte[] var6 = var3.digest();
+            String var7 = hg.e(var6);
+            return var7;
          }
+
+         var3 = null;
+         return var3;
+      } catch (Throwable var19) {
+         hq.a(var19, "MD5", "gfm");
+         var3 = null;
       } finally {
          try {
             if (var1 != null) {
@@ -55,7 +53,7 @@ public class hc {
 
       }
 
-      return var2;
+      return var3;
    }
 
    public static String b(String var0) {

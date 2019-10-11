@@ -176,7 +176,12 @@ class MapViewFactory(private val registrar: Registrar) : PlatformViewFactory(Sta
 
             // dispose后从HEAP中删除
             override fun dispose() {
+                Log.d("MapViewFactory", "释放Viewcom.amap.api.maps.MapView@${id}")
+
                 HEAP.remove(id)
+
+                // 打印当前HEAP
+                Log.d("MapViewFactory", "HEAP: $HEAP")
             }
         }
     }

@@ -151,6 +151,7 @@ public abstract class je extends ji {
    private byte[] k() {
       ByteArrayOutputStream var1 = new ByteArrayOutputStream();
 
+      byte[] var4;
       try {
          byte[] var2 = this.d();
          byte[] var3;
@@ -164,10 +165,10 @@ public abstract class je extends ji {
          var3 = this.a(var2);
          var1.write(var3);
          var1.write(var2);
-         byte[] var4 = var1.toByteArray();
-         return var4;
+         var4 = var1.toByteArray();
       } catch (Throwable var15) {
          hq.a(var15, "bre", "grrd");
+         return new byte[]{0};
       } finally {
          try {
             var1.close();
@@ -177,7 +178,7 @@ public abstract class je extends ji {
 
       }
 
-      return new byte[]{0};
+      return var4;
    }
 
    private byte[] l() {
@@ -186,19 +187,19 @@ public abstract class je extends ji {
       try {
          byte[] var2 = this.e();
          byte[] var3;
-         if (var2 != null && var2.length != 0) {
-            var1.write(new byte[]{1});
-            var3 = gx.a(this.d, var2);
-            byte[] var4 = this.a(var3);
-            var1.write(var4);
-            var1.write(var3);
-            byte[] var5 = var1.toByteArray();
-            return var5;
+         if (var2 == null || var2.length == 0) {
+            var1.write(new byte[]{0});
+            var3 = var1.toByteArray();
+            return var3;
          }
 
-         var1.write(new byte[]{0});
-         var3 = var1.toByteArray();
-         return var3;
+         var1.write(new byte[]{1});
+         var3 = gx.a(this.d, var2);
+         byte[] var4 = this.a(var3);
+         var1.write(var4);
+         var1.write(var3);
+         byte[] var5 = var1.toByteArray();
+         return var5;
       } catch (Throwable var16) {
          hq.a(var16, "bre", "gred");
       } finally {

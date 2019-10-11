@@ -2258,10 +2258,13 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       methodChannelWithName:@"me.yohom/amap_base_flutter/MAMapView"
             binaryMessenger:[_registrar messenger]];
 
+  __weak __typeof(self)weakSelf = self;
   [channel setMethodCallHandler:^(FlutterMethodCall *methodCall, FlutterResult methodResult) {
     NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
-    if (_handlerMap[methodCall.method] != nil) {
-      _handlerMap[methodCall.method](_registrar, args, methodResult);
+
+    __strong __typeof(weakSelf)strongSelf = weakSelf;
+    if (strongSelf->_handlerMap[methodCall.method] != nil) {
+      strongSelf->_handlerMap[methodCall.method](strongSelf->_registrar, args, methodResult);
     } else {
       methodResult(FlutterMethodNotImplemented);
     }
@@ -2269,11 +2272,6 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   //endregion
   return view;
 }
-
-- (void)dealloc {
-  [HEAP removeObjectForKey:@(_viewId)];
-}
-
 
 //region delegate
 - (void)traceManager : (MATraceManager*)manager didTrace: (NSArray<CLLocation*>*)locations correct: (NSArray<MATracePoint*>*)tracePoints distance: (double)distance withError: (NSError*)error

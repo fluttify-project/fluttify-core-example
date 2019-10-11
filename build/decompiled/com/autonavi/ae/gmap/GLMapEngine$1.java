@@ -13,22 +13,22 @@ class GLMapEngine$1 implements Runnable {
       boolean var16 = false;
 
       AMapLoader var1;
-      label251: {
-         label236: {
+      label236: {
+         label251: {
             label247: {
                try {
                   var16 = true;
                   if (this.this$0.mRequestDestroy) {
                      var16 = false;
-                     break label251;
-                  }
-
-                  if (this.val$mapLoader != null) {
-                     this.val$mapLoader.doRequest();
-                     var16 = false;
                      break label236;
                   }
 
+                  if (this.val$mapLoader == null) {
+                     var16 = false;
+                     break label251;
+                  }
+
+                  this.val$mapLoader.doRequest();
                   var16 = false;
                   break label247;
                } catch (Throwable var22) {

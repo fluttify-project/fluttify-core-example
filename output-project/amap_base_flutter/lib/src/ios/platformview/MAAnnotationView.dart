@@ -1,23 +1,31 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:amap_base_flutter/src/ios/ios.export.dart';
 
 typedef void MAAnnotationViewCreatedCallback(MAAnnotationView controller);
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class MAAnnotationView_iOS extends StatelessWidget {
+class MAAnnotationView_iOS extends StatefulWidget {
   const MAAnnotationView_iOS({
     Key key,
     this.onViewCreated,
   }) : super(key: key);
 
   final MAAnnotationViewCreatedCallback onViewCreated;
+
+  @override
+  _MAAnnotationView_iOSState createState() =>
+      _MAAnnotationView_iOSState();
+}
+
+class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {
+  MAAnnotationView _controller;
 
   @override
   Widget build(BuildContext context) {
@@ -35,9 +43,15 @@ class MAAnnotationView_iOS extends StatelessWidget {
   }
 
   void _onViewCreated(int id) {
-    final controller = MAAnnotationView()..refId = id;
-    if (onViewCreated != null) {
-      onViewCreated(controller);
+    _controller = MAAnnotationView()..refId = id;
+    if (widget.onViewCreated != null) {
+      widget.onViewCreated(_controller);
     }
+  }
+
+  @override
+  void dispose() {
+    ObjectFactory_iOS.release(_controller);
+    super.dispose();
   }
 }
