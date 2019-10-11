@@ -20,8 +20,7 @@ class MAAnnotationView_iOS extends StatefulWidget {
   final MAAnnotationViewCreatedCallback onViewCreated;
 
   @override
-  _MAAnnotationView_iOSState createState() =>
-      _MAAnnotationView_iOSState();
+  _MAAnnotationView_iOSState createState() => _MAAnnotationView_iOSState();
 }
 
 class _MAAnnotationView_iOSState extends State<MAAnnotationView_iOS> {

@@ -8094,6 +8094,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACustomCalloutView": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8160,6 +8162,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACoordinateSpan": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8171,6 +8175,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMACoordinateRegion": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8182,6 +8188,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapPoint": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8193,6 +8201,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapSize": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8204,6 +8214,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAMapRect": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8215,6 +8227,8 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
           HEAP[@(dataValue.hash)] = dataValue;
       
           methodResult(@(dataValue.hash));
+      
+          NSLog(@"HEAP: %@", HEAP);
       },
       
       @"ObjectFactory::createMAParticleRandomVelocityGenerate": ^(NSObject <FlutterPluginRegistrar> * registrar, NSDictionary<NSString *, id> * args, FlutterResult methodResult) {
@@ -8508,11 +8522,19 @@ NSMutableDictionary<NSNumber *, NSObject *> *HEAP;
 - (void)handleMethodCall:(FlutterMethodCall *)methodCall result:(FlutterResult)methodResult {
   NSDictionary<NSString *, id> *args = (NSDictionary<NSString *, id> *) [methodCall arguments];
   if ([@"ObjectFactory::release" isEqualToString:methodCall.method]) {
+    NSLog(@"ObjectFactory::释放对象: %@", (NSNumber *) args[@"refId"]);
+
     [HEAP removeObjectForKey:(NSNumber *) args[@"refId"]];
     methodResult(@"success");
+
+    NSLog(@"HEAP: %@", HEAP);
   } else if ([@"ObjectFactory::clearRefMap" isEqualToString:methodCall.method]) {
+    NSLog(@"ObjectFactory::清空堆");
+
     [HEAP removeAllObjects];
     methodResult(@"success");
+
+    NSLog(@"HEAP: %@", HEAP);
   } else if ([@"ObjectFactory::createCLLocationCoordinate2D" isEqualToString:methodCall.method]) {
     CLLocationDegrees latitude = [args[@"latitude"] doubleValue];
     CLLocationDegrees longitude = [args[@"longitude"] doubleValue];

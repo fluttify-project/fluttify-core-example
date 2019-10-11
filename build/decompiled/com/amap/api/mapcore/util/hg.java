@@ -424,19 +424,20 @@ public class hg {
       Certificate var2 = null;
       KeyFactory var3 = null;
 
-      X509EncodedKeySpec var5;
+      PublicKey var6;
       try {
          var1 = new ByteArrayInputStream(ha.b(var0));
          CertificateFactory var4 = CertificateFactory.getInstance("X.509");
          var3 = KeyFactory.getInstance("RSA");
          var2 = var4.generateCertificate(var1);
-         if (var2 != null && var3 != null) {
-            var5 = new X509EncodedKeySpec(var2.getPublicKey().getEncoded());
-            PublicKey var6 = var3.generatePublic(var5);
-            return var6;
+         X509EncodedKeySpec var5;
+         if (var2 == null || var3 == null) {
+            var5 = null;
+            return var5;
          }
 
-         var5 = null;
+         var5 = new X509EncodedKeySpec(var2.getPublicKey().getEncoded());
+         var6 = var3.generatePublic(var5);
       } catch (Throwable var17) {
          var17.printStackTrace();
          return null;
@@ -451,7 +452,7 @@ public class hg {
 
       }
 
-      return var5;
+      return var6;
    }
 
    public static byte[] d(byte[] var0) {

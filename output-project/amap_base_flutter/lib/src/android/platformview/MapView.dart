@@ -20,12 +20,10 @@ class com_amap_api_maps_MapView_Android extends StatefulWidget {
   final MapViewCreatedCallback onViewCreated;
 
   @override
-  _com_amap_api_maps_MapView_AndroidState createState() =>
-      _com_amap_api_maps_MapView_AndroidState();
+  _com_amap_api_maps_MapView_AndroidState createState() => _com_amap_api_maps_MapView_AndroidState();
 }
 
-class _com_amap_api_maps_MapView_AndroidState
-    extends State<com_amap_api_maps_MapView_Android> {
+class _com_amap_api_maps_MapView_AndroidState extends State<com_amap_api_maps_MapView_Android> {
   com_amap_api_maps_MapView _controller;
 
   @override

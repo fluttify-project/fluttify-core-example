@@ -21,23 +21,22 @@ public class jo {
       OutputStream var4 = null;
 
       try {
-         if (a(var2.a, var0)) {
+         if (!a(var2.a, var0)) {
+            File var5 = new File(var2.a);
+            if (!var5.exists()) {
+               var5.mkdirs();
+            }
+
+            var3 = iy.a(var5, 1, 1, var2.b);
+            var3.a(var2.d);
+            byte[] var6 = var2.e.b(var1);
+            iy$a var7 = var3.b(var0);
+            var4 = var7.a(0);
+            var4.write(var6);
+            var7.a();
+            var3.e();
             return;
          }
-
-         File var5 = new File(var2.a);
-         if (!var5.exists()) {
-            var5.mkdirs();
-         }
-
-         var3 = iy.a(var5, 1, 1, var2.b);
-         var3.a(var2.d);
-         byte[] var6 = var2.e.b(var1);
-         iy$a var7 = var3.b(var0);
-         var4 = var7.a(0);
-         var4.write(var6);
-         var7.a();
-         var3.e();
       } finally {
          if (var4 != null) {
             try {
@@ -63,15 +62,15 @@ public class jo {
       iy var1 = null;
 
       try {
-         if (!var0.f.c()) {
-            return;
-         }
+         if (var0.f.c()) {
+            var0.f.a(true);
+            var1 = iy.a(new File(var0.a), 1, 1, var0.b);
+            ArrayList var2 = new ArrayList();
+            byte[] var3 = a((iy)var1, (jn)var0, (List)var2);
+            if (var3 == null || var3.length == 0) {
+               return;
+            }
 
-         var0.f.a(true);
-         var1 = iy.a(new File(var0.a), 1, 1, var0.b);
-         ArrayList var2 = new ArrayList();
-         byte[] var3 = a((iy)var1, (jn)var0, (List)var2);
-         if (var3 != null && var3.length != 0) {
             hs var4 = new hs(var3, var0.c);
             byte[] var5 = jd.a().b(var4);
             JSONObject var6 = new JSONObject(new String(var5));
@@ -88,12 +87,9 @@ public class jo {
 
                var1 = null;
             }
-
-            return;
          }
       } catch (Throwable var17) {
          ht.c(var17, "leg", "uts");
-         return;
       } finally {
          if (var1 != null) {
             try {

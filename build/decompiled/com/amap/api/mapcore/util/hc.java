@@ -38,10 +38,10 @@ public class hc {
          }
 
          var3 = null;
-         return var3;
       } catch (Throwable var19) {
          hq.a(var19, "MD5", "gfm");
          var3 = null;
+         return var3;
       } finally {
          try {
             if (var1 != null) {

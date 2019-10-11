@@ -288,12 +288,7 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
 
             // dispose后从HEAP中删除
             override fun dispose() {
-                Log.d("WearMapViewFactory", "释放Viewcom.amap.api.maps.WearMapView@${id}")
 
-                HEAP.remove(id)
-
-                // 打印当前HEAP
-                Log.d("WearMapViewFactory", "HEAP: $HEAP")
             }
         }
     }

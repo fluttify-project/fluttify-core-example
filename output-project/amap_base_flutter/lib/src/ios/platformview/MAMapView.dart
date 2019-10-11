@@ -20,8 +20,7 @@ class MAMapView_iOS extends StatefulWidget {
   final MAMapViewCreatedCallback onViewCreated;
 
   @override
-  _MAMapView_iOSState createState() =>
-      _MAMapView_iOSState();
+  _MAMapView_iOSState createState() => _MAMapView_iOSState();
 }
 
 class _MAMapView_iOSState extends State<MAMapView_iOS> {

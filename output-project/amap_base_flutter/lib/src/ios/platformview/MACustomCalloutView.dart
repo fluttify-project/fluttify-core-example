@@ -20,8 +20,7 @@ class MACustomCalloutView_iOS extends StatefulWidget {
   final MACustomCalloutViewCreatedCallback onViewCreated;
 
   @override
-  _MACustomCalloutView_iOSState createState() =>
-      _MACustomCalloutView_iOSState();
+  _MACustomCalloutView_iOSState createState() => _MACustomCalloutView_iOSState();
 }
 
 class _MACustomCalloutView_iOSState extends State<MACustomCalloutView_iOS> {

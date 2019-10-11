@@ -74,28 +74,28 @@ public class gk {
    private static File b(Context var0) {
       File var1 = null;
 
+      File var2;
       try {
-         File var2;
-         if (var0 == null) {
-            var2 = null;
+         if (var0 != null) {
+            if (Environment.getExternalStorageState().equals("mounted")) {
+               var1 = Environment.getExternalStorageDirectory();
+               if (!var1.canWrite()) {
+                  var1 = var0.getFilesDir();
+               } else {
+                  var1 = var0.getExternalFilesDir("LBS");
+               }
+            } else {
+               var1 = var0.getFilesDir();
+            }
+
+            var2 = var1;
             return var2;
          }
 
-         if (Environment.getExternalStorageState().equals("mounted")) {
-            var1 = Environment.getExternalStorageDirectory();
-            if (!var1.canWrite()) {
-               var1 = var0.getFilesDir();
-            } else {
-               var1 = var0.getExternalFilesDir("LBS");
-            }
-         } else {
-            var1 = var0.getFilesDir();
-         }
-
-         var2 = var1;
-         return var2;
+         var2 = null;
       } catch (Exception var7) {
          var7.printStackTrace();
+         return var1;
       } finally {
          if (var1 == null && var0 != null) {
             var1 = var0.getFilesDir();
@@ -103,7 +103,7 @@ public class gk {
 
       }
 
-      return var1;
+      return var2;
    }
 
    public static Resources a() {
@@ -138,7 +138,7 @@ public class gk {
       InputStream var1 = null;
       OutputStream var2 = null;
 
-      boolean var4;
+      boolean var3;
       try {
          var1 = var0.getResources().getAssets().open(l);
          if (!b(var1)) {
@@ -147,12 +147,12 @@ public class gk {
             return true;
          }
 
-         boolean var3 = true;
-         return var3;
+         var3 = true;
       } catch (Throwable var15) {
          var15.printStackTrace();
          ht.c(var15, "ResourcesUtil", "copyResourceJarToAppFilesDir(Context ctx)");
-         var4 = false;
+         boolean var4 = false;
+         return var4;
       } finally {
          try {
             if (var1 != null) {
@@ -169,7 +169,7 @@ public class gk {
 
       }
 
-      return var4;
+      return var3;
    }
 
    private static OutputStream a(InputStream var0) throws IOException {

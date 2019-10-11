@@ -176,12 +176,7 @@ class TextureMapViewFactory(private val registrar: Registrar) : PlatformViewFact
 
             // dispose后从HEAP中删除
             override fun dispose() {
-                Log.d("TextureMapViewFactory", "释放Viewcom.amap.api.maps.TextureMapView@${id}")
 
-                HEAP.remove(id)
-
-                // 打印当前HEAP
-                Log.d("TextureMapViewFactory", "HEAP: $HEAP")
             }
         }
     }

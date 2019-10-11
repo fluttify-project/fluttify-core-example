@@ -48,12 +48,7 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
 
             // dispose后从HEAP中删除
             override fun dispose() {
-                Log.d("DownloadProgressViewFactory", "释放Viewcom.amap.api.maps.offlinemap.DownloadProgressView@${id}")
 
-                HEAP.remove(id)
-
-                // 打印当前HEAP
-                Log.d("DownloadProgressViewFactory", "HEAP: $HEAP")
             }
         }
     }
