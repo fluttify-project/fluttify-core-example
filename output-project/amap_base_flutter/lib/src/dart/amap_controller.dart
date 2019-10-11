@@ -414,12 +414,13 @@ class AmapController {
           await markerOption.snippet(snippet);
         }
 
-        await map.addMarker(markerOption);
+        final marker = await map.addMarker(markerOption);
 
         // 释放局部变量
         ObjectFactory_Android.release(map);
         ObjectFactory_Android.release(latLng);
         ObjectFactory_Android.release(markerOption);
+        ObjectFactory_Android.release(marker);
       },
       ios: () async {
         await iosController.set_delegate(MyDelegate());
