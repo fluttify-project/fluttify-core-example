@@ -561,7 +561,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
       argtracePoints[i] = @(tracePoints.hash);
       HEAP[@(tracePoints.hash)] = tracePoints;
   }
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argdistance = @(distance);
   // 引用回调参数
   NSNumber* argerror = @(error.hash);
@@ -637,7 +637,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionWillChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
@@ -656,7 +656,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewRegionDidChangeAnimated" arguments:@{@"mapView": argmapView, @"animated": arganimated}];
@@ -675,7 +675,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -694,7 +694,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidMoveByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -713,7 +713,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapWillZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -732,7 +732,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argwasUserAction = @(wasUserAction);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewMapDidZoomByUser" arguments:@{@"mapView": argmapView, @"wasUserAction": argwasUserAction}];
@@ -827,6 +827,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
+  
   return nil;
 }
 
@@ -941,7 +942,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* arguserLocation = @(userLocation.hash);
   HEAP[arguserLocation] = userLocation;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argupdatingLocation = @(updatingLocation);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidUpdateUserLocationupdatingLocation" arguments:@{@"mapView": argmapView, @"userLocation": arguserLocation, @"updatingLocation": argupdatingLocation}];
@@ -1024,6 +1025,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 由于flutter无法同步调用method channel, 所以暂不支持有返回值的回调方法
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
+  
   return nil;
 }
 
@@ -1125,7 +1127,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
   NSNumber* argmode = @((NSInteger) mode);
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* arganimated = @(animated);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeUserTrackingModeanimated" arguments:@{@"mapView": argmapView, @"mode": argmode, @"animated": arganimated}];
@@ -1144,7 +1146,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 引用回调参数
   NSNumber* argmapView = @(mapView.hash);
   HEAP[argmapView] = mapView;
-  // jsonable回调参数
+  // primitive回调参数
   NSNumber* argopenGLESDisabled = @(openGLESDisabled);
 
   [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidChangeOpenGLESDisabled" arguments:@{@"mapView": argmapView, @"openGLESDisabled": argopenGLESDisabled}];

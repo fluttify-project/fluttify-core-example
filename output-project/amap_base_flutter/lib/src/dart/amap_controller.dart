@@ -2,7 +2,8 @@ import 'dart:typed_data';
 import 'dart:ui';
 
 import 'package:amap_base_flutter/amap_base_flutter.dart';
-import 'package:amap_base_flutter/src/ios/MAMapView.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 
 import 'enums.dart';
 

@@ -189,42 +189,4 @@ class MAOfflineMap extends NSObject  {
     }
   }
   
-  Future<bool> isDownloadingForCity(MAOfflineCity city) async {
-    // 日志打印
-    print('fluttify-dart: MAOfflineMap@$refId::isDownloadingForCity([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::isDownloadingForCity', {"city": city.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
-  Future<void> pause(MAOfflineCity city) async {
-    // 日志打印
-    print('fluttify-dart: MAOfflineMap@$refId::pause([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MAOfflineMap::pause', {"city": city.refId, "refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
 }

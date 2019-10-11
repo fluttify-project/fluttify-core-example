@@ -5,10 +5,19 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_amap_mapcore_FPointBounds extends Ref_Android  {
+class com_autonavi_amap_mapcore_FPointBounds extends java_lang_Object  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<com_autonavi_amap_mapcore_FPoint> get_southwest() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_southwest", {'refId': refId});
+    return com_autonavi_amap_mapcore_FPoint()..refId = result;
+  }
+  
+  Future<com_autonavi_amap_mapcore_FPoint> get_northeast() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.FPointBounds::get_northeast", {'refId': refId});
+    return com_autonavi_amap_mapcore_FPoint()..refId = result;
+  }
   
 
   // 生成setters

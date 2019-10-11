@@ -14,6 +14,21 @@ class MAOfflineCity extends MAOfflineItem  {
     return result;
   }
   
+  Future<String> get_cityName() async {
+    final result = await _channel.invokeMethod("MAOfflineCity::get_cityName", {'refId': refId});
+    return result;
+  }
+  
+  Future<String> get_urlString() async {
+    final result = await _channel.invokeMethod("MAOfflineCity::get_urlString", {'refId': refId});
+    return result;
+  }
+  
+  Future<MAOfflineCityStatus> get_status() async {
+    final result = await _channel.invokeMethod("MAOfflineCity::get_status", {'refId': refId});
+    return MAOfflineCityStatus.values[result];
+  }
+  
 
   // 生成setters
   

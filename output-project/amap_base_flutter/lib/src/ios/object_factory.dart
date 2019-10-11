@@ -417,18 +417,20 @@ class CGRect extends Ref_iOS {}
 
 class CGPoint extends Ref_iOS {}
 
+class UIEdgeInsets extends Ref_iOS {}
+
 // 类
-class CLLocationManager extends Ref_iOS {}
+class CLLocationManager extends NSObject {}
 
-class NSError extends Ref_iOS {}
+class NSError extends NSObject {}
 
-mixin NSCoding on Ref_iOS {}
+mixin NSCoding on NSObject {}
 
-mixin NSCopying on Ref_iOS {}
+mixin NSCopying on NSObject {}
 
-class UIView extends Ref_iOS {}
+class UIView extends NSObject {}
 
-class UIControl extends UIView {}
+class UIControl extends NSObject {}
 
 class MAAnnotation_Ref = NSObject with MAAnnotation;
 class MAAnimatableAnnotation_Ref = NSObject with MAAnimatableAnnotation;

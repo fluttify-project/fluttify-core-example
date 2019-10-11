@@ -13,6 +13,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -109,6 +110,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -138,6 +140,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -164,6 +167,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -187,6 +191,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -275,6 +280,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -414,6 +420,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -519,6 +526,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -547,6 +555,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -645,12 +654,38 @@
       "types": [
         {
           "platform": "iOS",
+          "name": "MAOfflineCityStatus",
+          "genericTypes": [],
+          "typeType": "Enum",
+          "isPublic": true,
+          "isAbstract": false,
+          "isInnerClass": false,
+          "isStaticType": true,
+          "isJsonable": false,
+          "superClass": "",
+          "interfaces": [],
+          "constructors": [],
+          "fields": [],
+          "methods": [],
+          "constants": [
+            "MAOfflineCityStatusNone",
+            "MAOfflineCityStatusCached",
+            "MAOfflineCityStatusInstalled",
+            "MAOfflineCityStatusExpired"
+          ],
+          "returnType": "",
+          "formalParams": [],
+          "deprecated": false
+        },
+        {
+          "platform": "iOS",
           "name": "MAOfflineCity",
           "genericTypes": [],
           "typeType": "Class",
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOfflineItem",
           "interfaces": [],
@@ -672,6 +707,57 @@
               "setterName": "cityCode",
               "platform": "iOS",
               "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSString",
+                "name": "*cityName",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOfflineCity",
+              "getterName": "cityName",
+              "setterName": "cityName",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSString",
+                "name": "*urlString",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOfflineCity",
+              "getterName": "urlString",
+              "setterName": "urlString",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "MAOfflineCityStatus",
+                "name": "status",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOfflineCity",
+              "getterName": "status",
+              "setterName": "status",
+              "platform": "iOS",
+              "isDeprecated": false
             }
           ],
           "methods": [],
@@ -688,6 +774,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
           "interfaces": [],
@@ -707,6 +794,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [],
@@ -812,6 +900,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -1057,6 +1146,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
           "interfaces": [],
@@ -1117,6 +1207,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -1140,6 +1231,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAAnnotationView",
           "interfaces": [],
@@ -1194,6 +1286,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -1248,6 +1341,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -1338,6 +1432,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MATileOverlay",
           "interfaces": [],
@@ -1443,6 +1538,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -1681,6 +1777,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [],
@@ -1752,6 +1849,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -1931,6 +2029,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
           "interfaces": [],
@@ -1991,6 +2090,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -2087,6 +2187,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -2161,6 +2262,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "UIViewController",
           "interfaces": [],
@@ -2209,6 +2311,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -2297,6 +2400,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
           "interfaces": [
@@ -2469,6 +2573,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -2553,6 +2658,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
           "interfaces": [
@@ -2707,6 +2813,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAPolylineRenderer",
           "interfaces": [],
@@ -2801,6 +2908,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAPointAnnotation",
           "interfaces": [
@@ -3004,6 +3112,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -3060,6 +3169,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAPolylineRenderer",
           "interfaces": [],
@@ -3160,7 +3270,7 @@
               "isPublic": true,
               "className": "MAMultiTexturePolylineRenderer",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             }
           ],
           "constants": [],
@@ -3176,6 +3286,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOfflineItem",
           "interfaces": [],
@@ -3213,6 +3324,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],
@@ -3283,6 +3395,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -3307,6 +3420,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -3446,6 +3560,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -3469,6 +3584,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -3493,6 +3609,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAPolyline",
           "interfaces": [],
@@ -3645,6 +3762,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -3716,6 +3834,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
           "interfaces": [],
@@ -3735,6 +3854,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAPolyline",
           "interfaces": [],
@@ -3949,6 +4069,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -4059,6 +4180,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -4179,7 +4301,7 @@
               "isPublic": true,
               "className": "MATraceManager",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -4189,7 +4311,7 @@
               "isPublic": true,
               "className": "MATraceManager",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -4225,6 +4347,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -4280,6 +4403,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],
@@ -4408,6 +4532,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -4496,6 +4621,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -4669,6 +4795,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
           "interfaces": [],
@@ -4763,6 +4890,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -4863,6 +4991,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -4919,6 +5048,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -4944,6 +5074,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "UIView",
           "interfaces": [],
@@ -5346,6 +5477,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -5587,6 +5719,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -5606,6 +5739,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -5625,6 +5759,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "UIView",
           "interfaces": [],
@@ -5702,6 +5837,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOfflineCity",
           "interfaces": [],
@@ -5739,6 +5875,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -5767,6 +5904,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -5791,6 +5929,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -5887,14 +6026,14 @@
               "isStatic": false,
               "variable": {
                 "typeName": "NSArray",
-                "name": "*",
+                "name": "*offlineCities",
                 "isList": true,
                 "genericLevel": 0,
                 "platform": "iOS"
               },
               "className": "MAOfflineMap",
-              "getterName": "",
-              "setterName": "",
+              "getterName": "offlineCities",
+              "setterName": "offlineCities",
               "platform": "iOS",
               "isDeprecated": false
             }
@@ -6115,7 +6254,7 @@
               "isPublic": true,
               "className": "MAOfflineMap",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -6159,7 +6298,7 @@
               "isPublic": true,
               "className": "MAOfflineMap",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "BOOL",
@@ -6181,7 +6320,7 @@
               "isPublic": true,
               "className": "MAOfflineMap",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             },
             {
               "returnType": "void",
@@ -6203,7 +6342,7 @@
               "isPublic": true,
               "className": "MAOfflineMap",
               "platform": "iOS",
-              "isDeprecated": false
+              "isDeprecated": true
             }
           ],
           "constants": [],
@@ -6219,6 +6358,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayPathRenderer",
           "interfaces": [],
@@ -6279,6 +6419,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],
@@ -6339,6 +6480,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6358,6 +6500,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6377,6 +6520,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6396,6 +6540,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6415,6 +6560,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6434,6 +6580,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6453,6 +6600,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6472,6 +6620,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6491,6 +6640,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6510,6 +6660,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6529,6 +6680,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6548,6 +6700,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6567,6 +6720,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6594,6 +6748,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -6618,6 +6773,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -6670,6 +6826,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -6769,6 +6926,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -6801,6 +6959,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -6922,6 +7081,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -6954,6 +7114,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -6998,6 +7159,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -7086,6 +7248,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -7152,6 +7315,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -7205,6 +7369,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -7247,6 +7412,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -7324,6 +7490,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -7412,6 +7579,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -7520,6 +7688,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -7744,6 +7913,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -7786,6 +7956,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -7809,6 +7980,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -7830,9 +8002,1189 @@
               "setterName": "rendererDelegate",
               "platform": "iOS",
               "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "MAOverlay",
+                "name": "overlay",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "overlay",
+              "setterName": "overlay",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CGPoint",
+                "name": "*glPoints",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "glPoints",
+              "setterName": "glPoints",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "NSUInteger",
+                "name": "glPointCount",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "glPointCount",
+              "setterName": "glPointCount",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "UIImage",
+                "name": "*strokeImage",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "strokeImage",
+              "setterName": "strokeImage",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "GLuint",
+                "name": "strokeTextureID",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "strokeTextureID",
+              "setterName": "strokeTextureID",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": false,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CGFloat",
+                "name": "alpha",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "alpha",
+              "setterName": "alpha",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "isPublic": true,
+              "isFinal": true,
+              "isStatic": false,
+              "variable": {
+                "typeName": "CGFloat",
+                "name": "contentScale",
+                "isList": false,
+                "genericLevel": 0,
+                "platform": "iOS"
+              },
+              "className": "MAOverlayRenderer",
+              "getterName": "contentScale",
+              "setterName": "contentScale",
+              "platform": "iOS",
+              "isDeprecated": false
             }
           ],
-          "methods": [],
+          "methods": [
+            {
+              "returnType": "MAOverlayRenderer*",
+              "name": "initWithOverlay",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAOverlay",
+                    "name": "overlay",
+                    "isList": false,
+                    "genericLevel": 1,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "float*",
+              "name": "getViewMatrix",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "float*",
+              "name": "getProjectionMatrix",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "MAMapPoint",
+              "name": "getOffsetPoint",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "CGFloat",
+              "name": "getMapZoomLevel",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "CGPoint",
+              "name": "pointForMapPoint",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAMapPoint",
+                    "name": "mapPoint",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "MAMapPoint",
+              "name": "mapPointForPoint",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint",
+                    "name": "point",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "CGRect",
+              "name": "rectForMapRect",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAMapRect",
+                    "name": "mapRect",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "MAMapRect",
+              "name": "mapRectForRect",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGRect",
+                    "name": "rect",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "CGPoint",
+              "name": "glPointForMapPoint",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAMapPoint",
+                    "name": "mapPoint",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "CGPoint*",
+              "name": "glPointsForMapPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "MAMapPoint*",
+                    "name": "mapPoints",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "count",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "count",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "CGFloat",
+              "name": "glWidthForWindowWidth",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "windowWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "referenceDidChange",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "void",
+              "name": "renderLinesWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "strokeColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "lineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "looped",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "looped",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderLinesWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "strokeColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "lineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "looped",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "looped",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "LineJoinType",
+                  "variable": {
+                    "typeName": "MALineJoinType",
+                    "name": "lineJoinType",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "LineCapType",
+                  "variable": {
+                    "typeName": "MALineCapType",
+                    "name": "lineCapType",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineDash",
+                  "variable": {
+                    "typeName": "MALineDashType",
+                    "name": "lineDash",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderTexturedLinesWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "lineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "textureID",
+                  "variable": {
+                    "typeName": "GLuint",
+                    "name": "textureID",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "looped",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "looped",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderTexturedLinesWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "lineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "textureIDs",
+                  "variable": {
+                    "typeName": "NSArray*",
+                    "name": "textureIDs",
+                    "isList": true,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "drawStyleIndexes",
+                  "variable": {
+                    "typeName": "NSArray*",
+                    "name": "drawStyleIndexes",
+                    "isList": true,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "looped",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "looped",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderLinesWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeColors",
+                  "variable": {
+                    "typeName": "NSArray*",
+                    "name": "strokeColors",
+                    "isList": true,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "drawStyleIndexes",
+                  "variable": {
+                    "typeName": "NSArray*",
+                    "name": "drawStyleIndexes",
+                    "isList": true,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "isGradient",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "isGradient",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "lineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "looped",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "looped",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "LineJoinType",
+                  "variable": {
+                    "typeName": "MALineJoinType",
+                    "name": "lineJoinType",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "LineCapType",
+                  "variable": {
+                    "typeName": "MALineCapType",
+                    "name": "lineCapType",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "lineDash",
+                  "variable": {
+                    "typeName": "MALineDashType",
+                    "name": "lineDash",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderRegionWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "fillColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "fillColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "usingTriangleFan",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "usingTriangleFan",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderStrokedRegionWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "fillColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "fillColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "strokeColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeLineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "strokeLineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeLineJoinType",
+                  "variable": {
+                    "typeName": "MALineJoinType",
+                    "name": "strokeLineJoinType",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeLineDash",
+                  "variable": {
+                    "typeName": "MALineDashType",
+                    "name": "strokeLineDash",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "usingTriangleFan",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "usingTriangleFan",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderTextureStrokedRegionWithPoints",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "pointCount",
+                  "variable": {
+                    "typeName": "NSUInteger",
+                    "name": "pointCount",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "fillColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "fillColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeTineWidth",
+                  "variable": {
+                    "typeName": "CGFloat",
+                    "name": "strokeLineWidth",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "strokeTextureID",
+                  "variable": {
+                    "typeName": "GLuint",
+                    "name": "strokeTexture",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "usingTriangleFan",
+                  "variable": {
+                    "typeName": "BOOL",
+                    "name": "usingTriangleFan",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderIconWithTextureID",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "GLuint",
+                    "name": "textureID",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "points",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "renderIconWithTextureID",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "GLuint",
+                    "name": "textureID",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "points",
+                  "variable": {
+                    "typeName": "CGPoint*",
+                    "name": "points",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                },
+                {
+                  "named": "modulateColor",
+                  "variable": {
+                    "typeName": "UIColor*",
+                    "name": "modulateColor",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "glRender",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "GLuint",
+              "name": "loadStrokeTextureImage",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "UIImage*",
+                    "name": "textureImage",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": true
+            },
+            {
+              "returnType": "GLuint",
+              "name": "loadTexture",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "UIImage*",
+                    "name": "textureImage",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "deleteTexture",
+              "formalParams": [
+                {
+                  "named": "",
+                  "variable": {
+                    "typeName": "GLuint",
+                    "name": "textureId",
+                    "isList": false,
+                    "genericLevel": 0,
+                    "platform": "iOS"
+                  },
+                  "platform": "iOS"
+                }
+              ],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            },
+            {
+              "returnType": "void",
+              "name": "setNeedsUpdate",
+              "formalParams": [],
+              "isStatic": false,
+              "isPublic": true,
+              "className": "MAOverlayRenderer",
+              "platform": "iOS",
+              "isDeprecated": false
+            }
+          ],
           "constants": [],
           "returnType": "",
           "formalParams": [],
@@ -7846,6 +9198,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAAnimatedAnnotation",
           "interfaces": [],
@@ -7917,6 +9270,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -8008,6 +9362,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -8070,6 +9425,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAMultiPoint",
           "interfaces": [],
@@ -8242,6 +9598,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -8343,6 +9700,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [
@@ -8399,6 +9757,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -8487,6 +9846,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAShape",
           "interfaces": [
@@ -8622,6 +9982,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "NSObject",
           "interfaces": [],
@@ -8795,6 +10156,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -8820,6 +10182,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -8843,6 +10206,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -8867,6 +10231,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [],
@@ -8889,6 +10254,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "UIView",
           "interfaces": [],
@@ -11809,6 +13175,7 @@
           "isPublic": true,
           "isAbstract": true,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "",
           "interfaces": [
@@ -12975,6 +14342,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],
@@ -13131,6 +14499,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],
@@ -13191,6 +14560,7 @@
           "isPublic": true,
           "isAbstract": false,
           "isInnerClass": false,
+          "isStaticType": true,
           "isJsonable": false,
           "superClass": "MAOverlayRenderer",
           "interfaces": [],

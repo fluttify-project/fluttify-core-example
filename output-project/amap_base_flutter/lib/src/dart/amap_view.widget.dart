@@ -1,7 +1,9 @@
 import 'dart:io';
 
 import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:amap_base_flutter/src/dart/amap_controller.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 import 'package:flutter/material.dart';
 
 typedef void OnMapCreated(AmapController controller);

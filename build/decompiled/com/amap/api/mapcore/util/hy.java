@@ -229,22 +229,26 @@ public class hy {
          }
 
          if (this.b != null && !TextUtils.isEmpty(var8) && var1 != null) {
+            ArrayList var9;
             try {
                var6 = this.b.query(var8, (String[])null, var1, (String[])null, (String)null, (String)null, (String)null);
-               if (var6 == null) {
-                  this.b.close();
-                  this.b = null;
-                  ArrayList var9 = var5;
-                  return var9;
+               if (var6 != null) {
+                  while(var6.moveToNext()) {
+                     var5.add(this.a(var6, var2, var7));
+                  }
+
+                  return var5;
                }
 
-               while(var6.moveToNext()) {
-                  var5.add(this.a(var6, var2, var7));
-               }
+               this.b.close();
+               this.b = null;
+               var9 = var5;
             } catch (Throwable var27) {
                if (!var3) {
                   hq.a(var27, "dbs", "sld");
                }
+
+               return var5;
             } finally {
                try {
                   if (var6 != null) {
@@ -269,7 +273,7 @@ public class hy {
 
             }
 
-            return var5;
+            return var9;
          } else {
             return var5;
          }

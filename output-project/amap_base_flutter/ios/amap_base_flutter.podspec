@@ -4,7 +4,7 @@
 Pod::Spec.new do |s|
   s.name             = 'amap_base_flutter'
   s.version          = '0.0.1'
-  s.summary          = 'A new flutter plugin project.'
+  s.summary          = '{{description}}'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
@@ -23,22 +23,15 @@ A new flutter plugin project.
   s.static_framework = true
   # 系统framework
   s.frameworks = [
-        "QuartzCore",
-		"CoreLocation",
-		"SystemConfiguration",
-		"CoreTelephony",
-		"Security",
-		"OpenGLES",
-		"CoreText",
-		"CoreGraphics",
-		"GLKit"
+        "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
   ]
   # 系统library
   s.libraries = [
-        "z",
-		"c++"
+        "z", "c++"
   ]
-  # 需要引入的资源文件
-  s.resource = "MAMapKit.framework/AMap.bundle"
+  # 需要添加的资源文件
+  s.resources = [
+        
+  ]
 end
 

@@ -5,7 +5,7 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class MAMapRect extends Ref_iOS  {
+class MAMapRect extends NSObject  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters

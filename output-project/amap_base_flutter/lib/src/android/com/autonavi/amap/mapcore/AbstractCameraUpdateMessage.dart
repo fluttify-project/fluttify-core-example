@@ -5,10 +5,15 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android  {
+class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends java_lang_Object  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type> get_nowType() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_nowType", {'refId': refId});
+    return com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type.values[result];
+  }
+  
   Future<double> get_xPixel() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_xPixel", {'refId': refId});
     return result;
@@ -79,6 +84,11 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     return result;
   }
   
+  Future<com_autonavi_amap_mapcore_MapConfig> get_mapConfig() async {
+    final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mapConfig", {'refId': refId});
+    return com_autonavi_amap_mapcore_MapConfig()..refId = result;
+  }
+  
   Future<int> get_paddingLeft() async {
     final result = await _channel.invokeMethod("com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft", {'refId': refId});
     return result;
@@ -116,6 +126,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
 
   // 生成setters
+  Future<void> set_nowType(com_autonavi_amap_mapcore_AbstractCameraUpdateMessage_Type nowType) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType', {'refId': refId, "nowType": nowType.index});
+  
+  
+  }
+  
   Future<void> set_xPixel(double xPixel) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel', {'refId': refId, "xPixel": xPixel});
   
@@ -200,6 +216,12 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
   
   }
   
+  Future<void> set_mapConfig(com_autonavi_amap_mapcore_MapConfig mapConfig) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig', {'refId': refId, "mapConfig": mapConfig.refId});
+  
+  
+  }
+  
   Future<void> set_paddingLeft(int paddingLeft) async {
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft', {'refId': refId, "paddingLeft": paddingLeft});
   
@@ -222,6 +244,36 @@ class com_autonavi_amap_mapcore_AbstractCameraUpdateMessage extends Ref_Android 
     await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingBottom', {'refId': refId, "paddingBottom": paddingBottom});
   
   
+  }
+  
+  Future<void> set_mCallback(com_amap_api_maps_AMap_CancelableCallback mCallback) async {
+    await _channel.invokeMethod('com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mCallback', {'refId': refId, "mCallback": mCallback.refId});
+  
+    MethodChannel('com.amap.api.maps.AMap.CancelableCallback::Callback')
+      .setMethodCallHandler((methodCall) async {
+        final args = methodCall.arguments as Map;
+        // final refId = args['callerRefId'] as int;
+        // if (refId != this.refId) return;
+  
+        switch (methodCall.method) {
+          case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onFinish':
+            // 日志打印
+            print('fluttify-dart-callback: onFinish([])');
+        
+              // 调用回调方法
+            mCallback?.onFinish();
+            break;
+          case 'Callback::com.amap.api.maps.AMap.CancelableCallback::onCancel':
+            // 日志打印
+            print('fluttify-dart-callback: onCancel([])');
+        
+              // 调用回调方法
+            mCallback?.onCancel();
+            break;
+          default:
+            break;
+        }
+      });
   }
   
   Future<void> set_mDuration(int mDuration) async {

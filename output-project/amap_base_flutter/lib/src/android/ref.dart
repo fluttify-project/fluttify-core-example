@@ -483,6 +483,11 @@ class Ref_Android {
     return result;
   }
   
+  Future<bool> isKindOfcom_amap_api_maps_SwipeDismissView() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_SwipeDismissView', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> isKindOfcom_amap_api_maps_MapsInitializer() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::isKindOfcom_amap_api_maps_MapsInitializer', {'refId': refId});
     return result;
@@ -1557,6 +1562,11 @@ class Ref_Android {
   Future<com_amap_api_maps_SwipeDismissCallBack> ascom_amap_api_maps_SwipeDismissCallBack() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_SwipeDismissCallBack', {'refId': refId});
     return com_amap_api_maps_SwipeDismissCallBack()..refId = result;
+  }
+  
+  Future<com_amap_api_maps_SwipeDismissView> ascom_amap_api_maps_SwipeDismissView() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('RefClass::ascom_amap_api_maps_SwipeDismissView', {'refId': refId});
+    return com_amap_api_maps_SwipeDismissView()..refId = result;
   }
   
   Future<com_amap_api_maps_MapsInitializer> ascom_amap_api_maps_MapsInitializer() async {

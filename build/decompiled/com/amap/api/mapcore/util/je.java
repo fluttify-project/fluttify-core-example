@@ -154,18 +154,18 @@ public abstract class je extends ji {
       try {
          byte[] var2 = this.d();
          byte[] var3;
-         if (var2 != null && var2.length != 0) {
-            var1.write(new byte[]{1});
-            var3 = this.a(var2);
-            var1.write(var3);
-            var1.write(var2);
-            byte[] var4 = var1.toByteArray();
-            return var4;
+         if (var2 == null || var2.length == 0) {
+            var1.write(new byte[]{0});
+            var3 = var1.toByteArray();
+            return var3;
          }
 
-         var1.write(new byte[]{0});
-         var3 = var1.toByteArray();
-         return var3;
+         var1.write(new byte[]{1});
+         var3 = this.a(var2);
+         var1.write(var3);
+         var1.write(var2);
+         byte[] var4 = var1.toByteArray();
+         return var4;
       } catch (Throwable var15) {
          hq.a(var15, "bre", "grrd");
       } finally {

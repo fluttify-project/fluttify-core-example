@@ -9,6 +9,7 @@ export 'MAParticleEmissionModule.dart';
 export 'MAOfflineItemStatus.dart';
 export 'MAGroundOverlay.dart';
 export 'MAIndoorFloorInfo.dart';
+export 'MAOfflineCityStatus.dart';
 export 'MAParticleShapeModule.dart';
 export 'MAIndoorInfo.dart';
 export 'MATileOverlayPath.dart';

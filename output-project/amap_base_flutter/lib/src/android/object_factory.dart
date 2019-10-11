@@ -457,6 +457,16 @@ class ObjectFactory_Android {
     return com_amap_api_maps_utils_SpatialRelationUtil()..refId = refId;
   }
   
+  static Future<com_amap_api_maps_SwipeDismissCallBack> createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView(com_amap_api_maps_SwipeDismissView var1) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView', {"var1": var1.refId});
+    return com_amap_api_maps_SwipeDismissCallBack()..refId = refId;
+  }
+  
+  static Future<com_amap_api_maps_SwipeDismissView> createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View(android_content_Context var1, android_view_View var2) async {
+    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View', {"var1": var1.refId, "var2": var2.refId});
+    return com_amap_api_maps_SwipeDismissView()..refId = refId;
+  }
+  
   static Future<com_amap_api_maps_MapsInitializer> createcom_amap_api_maps_MapsInitializer__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_MapsInitializer__');
     return com_amap_api_maps_MapsInitializer()..refId = refId;
@@ -690,16 +700,6 @@ class ObjectFactory_Android {
   static Future<com_amap_api_maps_model_AMapPara> createcom_amap_api_maps_model_AMapPara__() async {
     final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_AMapPara__');
     return com_amap_api_maps_model_AMapPara()..refId = refId;
-  }
-  
-  static Future<com_amap_api_maps_model_CameraPosition_Builder> createcom_amap_api_maps_model_CameraPosition_Builder__() async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__');
-    return com_amap_api_maps_model_CameraPosition_Builder()..refId = refId;
-  }
-  
-  static Future<com_amap_api_maps_model_CameraPosition_Builder> createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition(com_amap_api_maps_model_CameraPosition var1) async {
-    final int refId = await _channel.invokeMethod('ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition', {"var1": var1.refId});
-    return com_amap_api_maps_model_CameraPosition_Builder()..refId = refId;
   }
   
   static Future<com_amap_api_maps_model_CircleOptionsCreator> createcom_amap_api_maps_model_CircleOptionsCreator__() async {
@@ -972,3 +972,13 @@ class android_location_Location extends java_lang_Object {}
 class android_view_MotionEvent extends java_lang_Object {}
 
 class android_graphics_drawable_Drawable extends java_lang_Object {}
+
+class android_widget_ImageView extends android_view_View {}
+
+class android_widget_TextView extends android_view_View {}
+
+class android_widget_LinearLayout extends android_view_ViewGroup {}
+
+class android_widget_RelativeLayout extends android_view_ViewGroup {}
+
+mixin android_os_Parcelable on java_lang_Object {}

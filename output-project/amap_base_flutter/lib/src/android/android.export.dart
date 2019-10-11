@@ -278,6 +278,7 @@ export 'com/amap/api/maps/AMap/OnMarkerClickListener.dart';
 export 'com/amap/api/maps/AMap/InfoWindowAdapter.dart';
 export 'com/amap/api/maps/AMap/OnMultiPointClickListener.dart';
 export 'com/amap/api/maps/AMap/OnPolylineClickListener.dart';
+export 'com/amap/api/maps/SwipeDismissView.dart';
 export 'com/amap/api/maps/MapsInitializer.dart';
 export 'com/amap/api/maps/WearMapView.dart';
 export 'com/amap/api/maps/MapView.dart';

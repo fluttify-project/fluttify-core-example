@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:amap_base_flutter/amap_base_flutter.dart';
+import 'package:amap_base_flutter/src/ios/ios.export.dart';
 
 typedef Future FutureCallback();
 

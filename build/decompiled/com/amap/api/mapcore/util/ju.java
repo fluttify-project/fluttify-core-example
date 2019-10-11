@@ -29,13 +29,13 @@ public class ju {
       byte[] var6;
       try {
          var3 = var0.a(var1);
-         if (var3 != null) {
-            var4 = var3.a(0);
-            if (var4 == null) {
-               var6 = var5;
-               return var6;
-            }
+         if (var3 == null) {
+            var6 = var5;
+            return var6;
+         }
 
+         var4 = var3.a(0);
+         if (var4 != null) {
             var5 = new byte[var4.available()];
             var4.read(var5);
             if (var2) {

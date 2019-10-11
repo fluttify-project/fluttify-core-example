@@ -5,7 +5,7 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_amap_api_maps_model_CameraPosition_Builder extends Ref_Android  {
+class com_amap_api_maps_model_CameraPosition_Builder extends java_lang_Object  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
@@ -15,23 +15,5 @@ class com_amap_api_maps_model_CameraPosition_Builder extends Ref_Android  {
   
 
   // 生成方法们
-  Future<com_amap_api_maps_model_CameraPosition> build() async {
-    // 日志打印
-    print('fluttify-dart: com.amap.api.maps.model.CameraPosition.Builder@$refId::build([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('com.amap.api.maps.model.CameraPosition.Builder::build', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return com_amap_api_maps_model_CameraPosition()..refId = result;
-    }
-  }
   
 }

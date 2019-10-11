@@ -5,7 +5,7 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends Ref_Android  {
+class com_autonavi_amap_mapcore_message_RotateGestureMapMessage extends java_lang_Object  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters

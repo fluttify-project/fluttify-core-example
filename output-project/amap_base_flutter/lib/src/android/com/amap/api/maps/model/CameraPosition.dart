@@ -5,10 +5,15 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_amap_api_maps_model_CameraPosition extends Ref_Android  {
+class com_amap_api_maps_model_CameraPosition extends java_lang_Object with android_os_Parcelable {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<com_amap_api_maps_model_LatLng> get_target() async {
+    final result = await _channel.invokeMethod("com.amap.api.maps.model.CameraPosition::get_target", {'refId': refId});
+    return com_amap_api_maps_model_LatLng()..refId = result;
+  }
+  
   Future<double> get_zoom() async {
     final result = await _channel.invokeMethod("com.amap.api.maps.model.CameraPosition::get_zoom", {'refId': refId});
     return result;

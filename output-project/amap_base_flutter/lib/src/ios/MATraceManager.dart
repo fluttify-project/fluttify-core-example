@@ -56,25 +56,6 @@ class MATraceManager extends NSObject  {
     }
   }
   
-  Future<void> stopTrace() async {
-    // 日志打印
-    print('fluttify-dart: MATraceManager@$refId::stopTrace([])');
-  
-    // 调用原生方法
-    final result = await _channel.invokeMethod('MATraceManager::stopTrace', {"refId": refId});
-  
-  
-    // 接受原生回调
-  
-  
-    // 返回值
-    if (result == null) {
-      return null;
-    } else {
-      return result;
-    }
-  }
-  
   Future<void> start() async {
     // 日志打印
     print('fluttify-dart: MATraceManager@$refId::start([])');

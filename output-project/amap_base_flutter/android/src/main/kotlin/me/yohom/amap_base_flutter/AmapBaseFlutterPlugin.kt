@@ -506,6 +506,13 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             methodResult.success(ref.dayMode)
         },
+        "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
+        
+            methodResult.success(ref.euRouteTexture)
+        },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId" to { registrar, args, methodResult ->
             // 引用对象
             val refId = args["refId"] as Int
@@ -1073,6 +1080,20 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             methodResult.success(ref.angleDelta)
         },
+        "com.autonavi.amap.mapcore.FPointBounds::get_southwest" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
+        
+            methodResult.success(ref.southwest)
+        },
+        "com.autonavi.amap.mapcore.FPointBounds::get_northeast" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPointBounds
+        
+            methodResult.success(ref.northeast)
+        },
         "com.autonavi.amap.mapcore.Rectangle::get_left" to { registrar, args, methodResult ->
             // 引用对象
             val refId = args["refId"] as Int
@@ -1107,6 +1128,13 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.FPoint3
         
             methodResult.success(ref.colorIndex)
+        },
+        "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_nowType" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
+        
+            methodResult.success(ref.nowType)
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_xPixel" to { registrar, args, methodResult ->
             // 引用对象
@@ -1206,6 +1234,13 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             methodResult.success(ref.isChangeFinished)
         },
+        "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_mapConfig" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
+        
+            methodResult.success(ref.mapConfig)
+        },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::get_paddingLeft" to { registrar, args, methodResult ->
             // 引用对象
             val refId = args["refId"] as Int
@@ -1255,6 +1290,41 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             methodResult.success(ref.height)
         },
+        "com.amap.api.maps.model.VisibleRegion::get_nearLeft" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
+        
+            methodResult.success(ref.nearLeft)
+        },
+        "com.amap.api.maps.model.VisibleRegion::get_nearRight" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
+        
+            methodResult.success(ref.nearRight)
+        },
+        "com.amap.api.maps.model.VisibleRegion::get_farLeft" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
+        
+            methodResult.success(ref.farLeft)
+        },
+        "com.amap.api.maps.model.VisibleRegion::get_farRight" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
+        
+            methodResult.success(ref.farRight)
+        },
+        "com.amap.api.maps.model.VisibleRegion::get_latLngBounds" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.VisibleRegion
+        
+            methodResult.success(ref.latLngBounds)
+        },
         "com.amap.api.maps.model.Tile::get_width" to { registrar, args, methodResult ->
             // 引用对象
             val refId = args["refId"] as Int
@@ -1275,6 +1345,13 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.Tile
         
             methodResult.success(ref.data)
+        },
+        "com.amap.api.maps.model.CameraPosition::get_target" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.CameraPosition
+        
+            methodResult.success(ref.target)
         },
         "com.amap.api.maps.model.CameraPosition::get_zoom" to { registrar, args, methodResult ->
             // 引用对象
@@ -1310,6 +1387,20 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.animation.Animation
         
             methodResult.success(ref.glAnimation)
+        },
+        "com.amap.api.maps.model.LatLngBounds::get_southwest" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
+        
+            methodResult.success(ref.southwest)
+        },
+        "com.amap.api.maps.model.LatLngBounds::get_northeast" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.LatLngBounds
+        
+            methodResult.success(ref.northeast)
         },
         "com.amap.api.maps.model.LatLng::get_latitude" to { registrar, args, methodResult ->
             // 引用对象
@@ -1373,6 +1464,13 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.amap.api.maps.model.WeightedLatLng
         
             methodResult.success(ref.intensity)
+        },
+        "com.amap.api.maps.model.WeightedLatLng::get_latLng" to { registrar, args, methodResult ->
+            // 引用对象
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.model.WeightedLatLng
+        
+            methodResult.success(ref.latLng)
         },
         "com.amap.api.maps.model.particle.SizeOverLife::get_DEFAULT_SIZE" to { registrar, args, methodResult ->
             // 引用对象
@@ -2019,6 +2117,15 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLCrossVector.AVectorCrossAttr
         
             ref.dayMode = dayMode
+            methodResult.success("success")
+        },
+        "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture" to { registrar, args, methodResult ->
+            val euRouteTexture = args["euRouteTexture"] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty.EAMapRouteTexture
+        
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.ae.gmap.gloverlay.GLRouteProperty
+        
+            ref.euRouteTexture = euRouteTexture
             methodResult.success("success")
         },
         "com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId" to { registrar, args, methodResult ->
@@ -2795,6 +2902,15 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             ref.colorIndex = colorIndex
             methodResult.success("success")
         },
+        "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_nowType" to { registrar, args, methodResult ->
+            val nowType = args["nowType"] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage.Type
+        
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
+        
+            ref.nowType = nowType
+            methodResult.success("success")
+        },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_xPixel" to { registrar, args, methodResult ->
             val xPixel = args["xPixel"] as Float
         
@@ -2921,6 +3037,15 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             ref.isChangeFinished = isChangeFinished
             methodResult.success("success")
         },
+        "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mapConfig" to { registrar, args, methodResult ->
+            val mapConfig = args["mapConfig"] as com.autonavi.amap.mapcore.MapConfig
+        
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
+        
+            ref.mapConfig = mapConfig
+            methodResult.success("success")
+        },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_paddingLeft" to { registrar, args, methodResult ->
             val paddingLeft = args["paddingLeft"] as Int
         
@@ -2955,6 +3080,15 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
         
             ref.paddingBottom = paddingBottom
+            methodResult.success("success")
+        },
+        "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mCallback" to { registrar, args, methodResult ->
+            val mCallback = args["mCallback"] as com.amap.api.maps.AMap.CancelableCallback
+        
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.AbstractCameraUpdateMessage
+        
+            ref.mCallback = mCallback
             methodResult.success("success")
         },
         "com.autonavi.amap.mapcore.AbstractCameraUpdateMessage::set_mDuration" to { registrar, args, methodResult ->
@@ -13029,6 +13163,30 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.contains(var1, var2)
+        
+            // 调用结果
+            methodResult.success(result)
+        },
+        "com.autonavi.amap.mapcore.Rectangle::isOverlap" to { registrar, args, methodResult ->
+            // 参数
+            // jsonable参数
+            val var1 = args["var1"] as Int
+            // jsonable参数
+            val var2 = args["var2"] as Int
+            // jsonable参数
+            val var3 = args["var3"] as Int
+            // jsonable参数
+            val var4 = args["var4"] as Int
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.autonavi.amap.mapcore.Rectangle
+        
+            // 日志打印
+            println("fluttify-kotlin: com.autonavi.amap.mapcore.Rectangle@$refId::isOverlap([\"var1\":$var1, \"var2\":$var2, \"var3\":$var3, \"var4\":$var4])")
+        
+            // 开始调用
+            val result = ref.isOverlap(var1, var2, var3, var4)
         
             // 调用结果
             methodResult.success(result)
@@ -26536,6 +26694,66 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
+        "com.amap.api.maps.SwipeDismissView::setCallback" to { registrar, args, methodResult ->
+            // 参数
+        
+        
+            // 调用对象引用
+            val refId = args["refId"] as Int
+            val ref = HEAP[refId] as com.amap.api.maps.SwipeDismissView
+        
+            // 日志打印
+            println("fluttify-kotlin: com.amap.api.maps.SwipeDismissView@$refId::setCallback([])")
+        
+            // 开始调用
+            ref.setCallback(object : com.amap.api.maps.WearMapView.OnDismissCallback {
+                // method channel
+                val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.SwipeDismissView::setCallback::Callback")
+        
+                // 回调方法们
+                override fun onDismiss(): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onDismiss([])")
+        
+                    // 处理成可以传输的参数
+        
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
+                        mapOf<String, Any?>(
+            
+                        )
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+                override fun onNotifySwipe(): Unit {
+                    // 日志打印
+                    println("fluttify-kotlin-callback: onNotifySwipe([])")
+        
+                    // 处理成可以传输的参数
+        
+        
+                    // 开始回调
+                    callbackChannel.invokeMethod(
+                        "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
+                        mapOf<String, Any?>(
+            
+                        )
+                    )
+        
+                    // 方法返回值
+        
+                }
+        
+            })
+        
+            // 调用结果
+            methodResult.success("success")
+        },
         "com.amap.api.maps.MapsInitializer::initialize" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -32584,14 +32802,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val result = ref.getVertext()
         
             // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
+            methodResult.success(result)
         },
         "com.amap.api.maps.model.GL3DModelOptions::getTextrue" to { registrar, args, methodResult ->
             // 参数
@@ -32608,14 +32819,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             val result = ref.getTextrue()
         
             // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
+            methodResult.success(result)
         },
         "com.amap.api.maps.model.GL3DModelOptions::getAngle" to { registrar, args, methodResult ->
             // 参数
@@ -35892,30 +36096,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.clone()
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
-        "com.amap.api.maps.model.CameraPosition.Builder::build" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.CameraPosition.Builder
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.CameraPosition.Builder@$refId::build([])")
-        
-            // 开始调用
-            val result = ref.build()
         
             // 调用结果
             if (result != null) {
@@ -47118,8 +47298,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glinterface_MapLabelItem__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47129,8 +47308,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimationMgr__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47140,8 +47318,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation2V__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47152,8 +47329,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimationContantValues__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47163,8 +47339,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimFling__int__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47179,8 +47354,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglAnimation1V__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47191,8 +47365,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimPivotZoom__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47203,8 +47376,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam1V__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47214,8 +47386,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AdglMapAnimGroup__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47226,8 +47397,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_glanimation_AbstractAdglAnimationParam2V__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47237,8 +47407,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleItem__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47249,8 +47418,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_style_StyleElement__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47260,8 +47428,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_MapViewInitParam__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47271,8 +47438,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gesture_EAMapPlatformGestureInfo__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47282,8 +47448,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__int__long" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47296,8 +47461,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_GLMapState__long__long" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47310,8 +47474,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLTextureProperty__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47321,8 +47484,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayBundle_GLAmapFocusHits__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47332,8 +47494,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLCrossVector_AVectorCrossAttr__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47343,8 +47504,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLRouteProperty__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47354,8 +47514,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47372,8 +47531,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_gloverlay_GLOverlayTexture__int__int__float__float__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47394,8 +47552,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_ae_gmap_GLMapEngine_InitParam__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47405,8 +47562,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_AMapLoader_ADataRequestParam__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47416,8 +47572,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_maploader_NetworkState__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47427,8 +47582,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_MapProjection__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47438,8 +47592,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_tools_TextTextureGenerator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47449,8 +47602,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLFileUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47460,8 +47612,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GlMapUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47471,8 +47622,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLMapStaticValue__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47482,8 +47632,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_tools_GLConvertUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47493,8 +47642,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_MsgProcessor__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47504,8 +47652,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil_UnZipFileBrake__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47515,8 +47662,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AbstractNativeInstance__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47526,8 +47672,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_LinkInfo__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47537,8 +47682,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativePolyline__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47548,8 +47692,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47559,8 +47702,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_IPoint__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47573,8 +47715,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_gles_AMapNativeGLShaderManager__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47584,8 +47725,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47595,8 +47735,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_DPoint__double__double" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47609,8 +47748,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeRenderer__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47620,8 +47758,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FileUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47631,8 +47768,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -47643,8 +47779,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLRotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47663,8 +47798,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAlphaAnimation__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47677,8 +47811,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47695,8 +47828,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLTransformation__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47706,8 +47838,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimationSet__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47718,8 +47849,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLEmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -47730,8 +47860,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_animation_GLAnimation__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47741,8 +47870,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_MapConfig__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47753,8 +47881,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_message_HoverGestureMapMessage__int__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47767,8 +47894,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_message_MoveGestureMapMessage__int__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47783,8 +47909,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_message_ScaleGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47801,8 +47926,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_message_RotateGestureMapMessage__int__float__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47819,8 +47943,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds__com_autonavi_amap_mapcore_FPoint__com_autonavi_amap_mapcore_FPoint" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -47833,8 +47956,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_CoordUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47844,8 +47966,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AeUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47855,8 +47976,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_VirtualEarthProjection__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47866,8 +47986,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47877,8 +47996,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Rectangle__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47895,8 +48013,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__String" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47907,8 +48024,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_location__android_location_Location" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -47919,8 +48035,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEngineUtils__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47930,8 +48045,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47941,8 +48055,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint3__float__float__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -47957,8 +48070,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapEtaDecoder__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47968,8 +48080,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPointBounds_Builder__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47979,8 +48090,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Inner_3dMap_locationOption__" to { registrar, args, methodResult ->
             // 参数
         
@@ -47990,8 +48100,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48001,8 +48110,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_FPoint__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48015,8 +48123,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeParticleSystem__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48026,8 +48133,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_AMapNativeBuildingRenderer__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48037,8 +48143,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_autonavi_amap_mapcore_Convert__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48048,8 +48153,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_offlineservice_AMapPermissionActivity__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48059,8 +48163,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_InfoWindowParams__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48070,8 +48173,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_CameraUpdateFactory__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48081,8 +48183,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_AMapException__String" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48093,8 +48194,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_AMapException__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48104,8 +48204,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_AMapOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48115,8 +48214,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_AMapOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48126,8 +48224,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_CoordinateConverter__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48138,8 +48235,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_utils_SpatialRelationUtil__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48149,8 +48245,31 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
+        "ObjectFactory::createcom_amap_api_maps_SwipeDismissCallBack__com_amap_api_maps_SwipeDismissView" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = HEAP[args["var1"] as Int] as com.amap.api.maps.SwipeDismissView
+        
+            // 创建对象
+            val obj = com.amap.api.maps.SwipeDismissCallBack(var1)
+            HEAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        },
+        "ObjectFactory::createcom_amap_api_maps_SwipeDismissView__android_content_Context__android_view_View" to { registrar, args, methodResult ->
+            // 参数
+            // 引用参数
+            val var1 = HEAP[args["var1"] as Int] as android.content.Context
+            // 引用参数
+            val var2 = HEAP[args["var2"] as Int] as android.view.View
+        
+            // 创建对象
+            val obj = com.amap.api.maps.SwipeDismissView(var1, var2)
+            HEAP[obj.hashCode()] = obj
+        
+            methodResult.success(obj.hashCode())
+        },
         "ObjectFactory::createcom_amap_api_maps_MapsInitializer__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48160,8 +48279,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapStatus__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48171,8 +48289,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapProvince__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48182,8 +48299,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_DownloadProgressView__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48194,8 +48310,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_Province__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48205,8 +48320,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapCity__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48216,8 +48330,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_OfflineMapActivity__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48227,8 +48340,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_offlinemap_City__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48238,8 +48350,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PolygonHoleOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48249,8 +48360,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48260,8 +48370,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_Poi__String__com_amap_api_maps_model_LatLng__String" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48276,8 +48385,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyle__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48287,8 +48395,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_VisibleRegion__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLngBounds" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48307,8 +48414,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLngCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48318,8 +48424,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CircleHoleOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48329,8 +48434,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds_Builder__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48340,8 +48444,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48351,8 +48454,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorFactory__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48362,8 +48464,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MultiPointOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48373,8 +48474,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PoiCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48384,8 +48484,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PolylineOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48395,8 +48494,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_Tile__int__int__byteArray" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48411,8 +48509,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_Gradient__intArray__floatArray" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48425,8 +48522,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_NaviPara__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48436,8 +48532,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48447,8 +48542,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_GL3DModelOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48458,8 +48552,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MyTrafficStyle__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48469,8 +48562,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CameraPosition__com_amap_api_maps_model_LatLng__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48487,8 +48579,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TextOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48498,8 +48589,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PoiPara__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48509,8 +48599,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MarkerOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48520,8 +48609,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_AnimationSet__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48532,8 +48620,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48552,8 +48639,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_RotateAnimation__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48566,8 +48652,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_TranslateAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48578,8 +48663,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_EmergeAnimation__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48590,8 +48674,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_AlphaAnimation__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48604,8 +48687,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_animation_ScaleAnimation__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48622,8 +48704,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLngBounds__com_amap_api_maps_model_LatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48636,8 +48717,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CustomMapStyleOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48647,8 +48727,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_BuildingOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48658,8 +48737,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CrossOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48669,8 +48747,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_VisibleRegionCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48680,8 +48757,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48694,8 +48770,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLng__double__double__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48710,8 +48785,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TileProjection__int__int__int__int__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48732,8 +48806,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_AMapPara__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48743,31 +48816,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
-        "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 创建对象
-            val obj = com.amap.api.maps.model.CameraPosition.Builder()
-            HEAP[obj.hashCode()] = obj
-        
-            methodResult.success(obj.hashCode())
-        }
-        ,
-        "ObjectFactory::createcom_amap_api_maps_model_CameraPosition_Builder__com_amap_api_maps_model_CameraPosition" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
-            val var1 = HEAP[args["var1"] as Int] as com.amap.api.maps.model.CameraPosition
-        
-            // 创建对象
-            val obj = com.amap.api.maps.model.CameraPosition.Builder(var1)
-            HEAP[obj.hashCode()] = obj
-        
-            methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CircleOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48777,8 +48826,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_AMapCameraInfo__float__float__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48799,8 +48847,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PolygonOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48810,8 +48857,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng__double" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48824,8 +48870,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_WeightedLatLng__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48836,8 +48881,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MyLocationStyleCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48847,8 +48891,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MarkerOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48858,8 +48901,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_MultiPointItem__com_amap_api_maps_model_LatLng" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -48870,8 +48912,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_LatLngBoundsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48881,8 +48922,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_ArcOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48892,8 +48932,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_BitmapDescriptorCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48903,8 +48942,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CircleOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48914,8 +48952,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_NavigateArrowOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48925,8 +48962,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_RuntimeRemoteException__String" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -48937,8 +48973,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_HeatmapTileProvider_Builder__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48948,8 +48983,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_BaseOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48959,8 +48993,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PolylineOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48970,8 +49003,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_BaseOverlay__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48981,8 +49013,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TileOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -48992,8 +49023,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_RoutePara__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49003,8 +49033,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_ArcOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49014,8 +49043,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_CameraPositionCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49025,8 +49053,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverLifeModule__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49036,8 +49063,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_ConstantRotationOverLife__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49048,8 +49074,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49066,8 +49091,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_SinglePointParticleShape__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49082,8 +49106,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_RandomVelocityBetweenTwoConstants__float__float__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49104,8 +49127,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_CurveSizeOverLife__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49120,8 +49142,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleEmissionModule__int__int" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49134,8 +49155,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_RectParticleShape__float__float__float__float__boolean" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49154,8 +49174,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_RandomColorBetWeenTwoConstants__float__float__float__float__float__float__float__float" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49180,8 +49199,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptionsFactory__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49191,8 +49209,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_particle_ParticleOverlayOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49202,8 +49219,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TextOptions__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49213,8 +49229,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_PolygonOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49224,8 +49239,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_TileProjectionCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49235,8 +49249,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_GroundOverlayOptionsCreator__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49246,8 +49259,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_model_IndoorBuildingInfo__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49257,8 +49269,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49269,8 +49280,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_TextureMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49283,8 +49293,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_AMapUtils__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49294,8 +49303,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49306,8 +49314,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_WearMapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49320,8 +49327,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49332,8 +49338,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_maps_MapView__android_content_Context__com_amap_api_maps_AMapOptions" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49346,8 +49351,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_trace_TraceLocation__double__double__float__float__long" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -49366,8 +49370,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_trace_TraceLocation__" to { registrar, args, methodResult ->
             // 参数
         
@@ -49377,8 +49380,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             HEAP[obj.hashCode()] = obj
         
             methodResult.success(obj.hashCode())
-        }
-        ,
+        },
         "ObjectFactory::createcom_amap_api_trace_LBSTraceClient__android_content_Context" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -49390,7 +49392,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             methodResult.success(obj.hashCode())
         }
-        
     )
 
     override fun onMethodCall(methodCall: MethodCall, methodResult: MethodChannel.Result) {

@@ -5,10 +5,15 @@ import 'package:amap_base_flutter/src/android/android.export.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
-class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends Ref_Android  {
+class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends java_lang_Object  {
   static final _channel = MethodChannel('me.yohom/amap_base_flutter');
 
   // 生成getters
+  Future<com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture> get_euRouteTexture() async {
+    final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_euRouteTexture", {'refId': refId});
+    return com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture.values[result];
+  }
+  
   Future<int> get_mFilledResId() async {
     final result = await _channel.invokeMethod("com.autonavi.ae.gmap.gloverlay.GLRouteProperty::get_mFilledResId", {'refId': refId});
     return result;
@@ -156,6 +161,12 @@ class com_autonavi_ae_gmap_gloverlay_GLRouteProperty extends Ref_Android  {
   
 
   // 生成setters
+  Future<void> set_euRouteTexture(com_autonavi_ae_gmap_gloverlay_GLRouteProperty_EAMapRouteTexture euRouteTexture) async {
+    await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_euRouteTexture', {'refId': refId, "euRouteTexture": euRouteTexture.index});
+  
+  
+  }
+  
   Future<void> set_mFilledResId(int mFilledResId) async {
     await _channel.invokeMethod('com.autonavi.ae.gmap.gloverlay.GLRouteProperty::set_mFilledResId', {'refId': refId, "mFilledResId": mFilledResId});
   
