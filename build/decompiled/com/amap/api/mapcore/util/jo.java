@@ -62,15 +62,15 @@ public class jo {
       iy var1 = null;
 
       try {
-         if (var0.f.c()) {
-            var0.f.a(true);
-            var1 = iy.a(new File(var0.a), 1, 1, var0.b);
-            ArrayList var2 = new ArrayList();
-            byte[] var3 = a((iy)var1, (jn)var0, (List)var2);
-            if (var3 == null || var3.length == 0) {
-               return;
-            }
+         if (!var0.f.c()) {
+            return;
+         }
 
+         var0.f.a(true);
+         var1 = iy.a(new File(var0.a), 1, 1, var0.b);
+         ArrayList var2 = new ArrayList();
+         byte[] var3 = a((iy)var1, (jn)var0, (List)var2);
+         if (var3 != null && var3.length != 0) {
             hs var4 = new hs(var3, var0.c);
             byte[] var5 = jd.a().b(var4);
             JSONObject var6 = new JSONObject(new String(var5));
@@ -87,9 +87,12 @@ public class jo {
 
                var1 = null;
             }
+
+            return;
          }
       } catch (Throwable var17) {
          ht.c(var17, "leg", "uts");
+         return;
       } finally {
          if (var1 != null) {
             try {

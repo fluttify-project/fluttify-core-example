@@ -1,6 +1,7 @@
 package me.yohom.amap_base_flutter
 
 import android.os.Bundle
+import android.util.Log
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar

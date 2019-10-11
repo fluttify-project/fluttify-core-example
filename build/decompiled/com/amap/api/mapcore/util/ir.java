@@ -231,12 +231,12 @@ class ir extends ip {
 
             this.a(var2, var3);
             Certificate[] var19 = var3.getCertificates();
-            if (var19 == null) {
-               var5 = false;
+            if (var19 != null) {
+               var5 = this.a(var1, var19);
                return var5;
             }
 
-            var5 = this.a(var1, var19);
+            var5 = false;
          } catch (Throwable var17) {
             in.a(var17, "DyLoader", "verify");
             var4 = false;

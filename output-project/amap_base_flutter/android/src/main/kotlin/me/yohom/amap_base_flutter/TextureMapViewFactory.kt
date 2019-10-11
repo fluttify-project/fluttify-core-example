@@ -2,6 +2,7 @@ package me.yohom.amap_base_flutter
 
 import android.content.Context
 import android.view.View
+import android.util.Log
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec

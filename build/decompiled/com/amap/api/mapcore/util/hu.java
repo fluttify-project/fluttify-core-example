@@ -210,67 +210,66 @@ public class hu {
       FileInputStream var1 = null;
       ja var2 = null;
 
-      Object var4;
       try {
          File var3 = new File("/data/anr/traces.txt");
-         if (var3.exists()) {
-            var1 = new FileInputStream(var3);
-            int var32 = var1.available();
-            if (var32 > 1024000) {
-               var1.skip((long)(var32 - 1024000));
-            }
-
-            var2 = new ja(var1, jb.a);
-            boolean var5 = false;
-
-            while(true) {
-               try {
-                  String var6 = var2.a().trim();
-                  if (var6.contains("pid")) {
-                     while(!var6.startsWith("\"main\"")) {
-                        var6 = var2.a();
-                     }
-
-                     var5 = true;
-                  }
-
-                  if (var6.equals("") && var5) {
-                     return g ? b() : null;
-                  }
-
-                  if (var5) {
-                     a(var6);
-                     if (h == 5) {
-                        return g ? b() : null;
-                     }
-
-                     if (!g) {
-                        Iterator var7 = var0.iterator();
-
-                        while(var7.hasNext()) {
-                           hf var8 = (hf)var7.next();
-                           g = hr.b(var8.g(), var6);
-                           if (g) {
-                              i = var8;
-                              break;
-                           }
-                        }
-                     } else {
-                        ++h;
-                     }
-                  }
-               } catch (EOFException var28) {
-                  return g ? b() : null;
-               }
-            }
+         if (!var3.exists()) {
+            Object var32 = null;
+            return (String)var32;
          }
 
-         var4 = null;
+         var1 = new FileInputStream(var3);
+         int var4 = var1.available();
+         if (var4 > 1024000) {
+            var1.skip((long)(var4 - 1024000));
+         }
+
+         var2 = new ja(var1, jb.a);
+         boolean var5 = false;
+
+         while(true) {
+            try {
+               String var6 = var2.a().trim();
+               if (var6.contains("pid")) {
+                  while(!var6.startsWith("\"main\"")) {
+                     var6 = var2.a();
+                  }
+
+                  var5 = true;
+               }
+
+               if (var6.equals("") && var5) {
+                  break;
+               }
+
+               if (var5) {
+                  a(var6);
+                  if (h == 5) {
+                     break;
+                  }
+
+                  if (!g) {
+                     Iterator var7 = var0.iterator();
+
+                     while(var7.hasNext()) {
+                        hf var8 = (hf)var7.next();
+                        g = hr.b(var8.g(), var6);
+                        if (g) {
+                           i = var8;
+                           break;
+                        }
+                     }
+                  } else {
+                     ++h;
+                  }
+               }
+            } catch (EOFException var28) {
+               break;
+            }
+         }
       } catch (FileNotFoundException var29) {
-         return g ? b() : null;
+         ;
       } catch (Throwable var30) {
          ht.c(var30, "alg", "getA");
-         return g ? b() : null;
       } finally {
          try {
             if (var2 != null) {
@@ -290,7 +289,11 @@ public class hu {
 
       }
 
-      return (String)var4;
+      if (g) {
+         return b();
+      } else {
+         return null;
+      }
    }
 
    private static void a(String var0) {

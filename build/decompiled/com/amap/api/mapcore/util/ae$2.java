@@ -21,7 +21,11 @@ class ae$2 implements Runnable {
          int var1 = 0;
          ae.a(this.a, 0);
 
-         while(!ae.b(this.a) && ae.c(this.a) < 5 && var1 < 50) {
+         while(true) {
+            if (ae.b(this.a) || ae.c(this.a) >= 5 || var1 >= 50) {
+               return;
+            }
+
             ++var1;
 
             try {
@@ -34,8 +38,7 @@ class ae$2 implements Runnable {
                if (ae.e(this.a) != null) {
                   ae.e(this.a).onGenerateComplete((Bitmap)null, -1);
                }
-
-               return;
+               break;
             }
 
             GLES20.glViewport(0, 0, ae.f(this.a), ae.g(this.a));

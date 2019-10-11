@@ -27,6 +27,10 @@ class AmapController {
         await locationStyle?.showMyLocation(show);
         await map.setMyLocationStyle(locationStyle);
         await map.setMyLocationEnabled(show);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(locationStyle);
       },
       ios: () async {
         await iosController.set_showsUserLocation(show);
@@ -45,6 +49,9 @@ class AmapController {
       android: () async {
         final map = await androidController.getMap();
         await map.showIndoorMap(show);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
       },
       ios: () async {
         await iosController.set_showsIndoorMap(show);
@@ -74,6 +81,9 @@ class AmapController {
             await map.setMapType(5);
             break;
         }
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
       },
       ios: () async {
         switch (mapType) {
@@ -103,6 +113,9 @@ class AmapController {
       android: () async {
         final map = await androidController.getMap();
         await map.setTrafficEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
       },
       ios: () async {
         await iosController.set_showTraffic(enable);
@@ -117,6 +130,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomControlsEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         print('ios端不支持显示缩放控件');
@@ -131,6 +148,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setCompassEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_showsCompass(enable);
@@ -145,6 +166,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setMyLocationButtonEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         print('ios端不支持显示定位按钮');
@@ -159,6 +184,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScaleControlsEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_showsScale(enable);
@@ -173,6 +202,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setZoomGesturesEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_zoomEnabled(enable);
@@ -187,6 +220,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setScrollGesturesEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_scrollEnabled(enable);
@@ -201,6 +238,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setRotateGesturesEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_rotateEnabled(enable);
@@ -215,6 +256,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setTiltGesturesEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_rotateCameraEnabled(enable);
@@ -229,6 +274,10 @@ class AmapController {
         final map = await androidController.getMap();
         final uiSetting = await map.getUiSettings();
         await uiSetting.setAllGesturesEnabled(enable);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(uiSetting);
       },
       ios: () async {
         await iosController.set_zoomEnabled(enable);
@@ -251,6 +300,10 @@ class AmapController {
         } else {
           await map.moveCamera(cameraUpdate);
         }
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(cameraUpdate);
       },
       ios: () async {
         await iosController.setZoomLevel(level, animated);
@@ -270,6 +323,10 @@ class AmapController {
         } else {
           await map.moveCamera(cameraUpdate);
         }
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(cameraUpdate);
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
@@ -290,6 +347,10 @@ class AmapController {
         } else {
           await map.moveCamera(cameraUpdate);
         }
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(cameraUpdate);
       },
       ios: () async {
         final currentLevel = await iosController.get_zoomLevel();
@@ -317,6 +378,11 @@ class AmapController {
         final cameraUpdate = await com_amap_api_maps_CameraUpdateFactory
             .newCameraPosition(cameraPosition);
         await map.moveCamera(cameraUpdate);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(latLng);
+        ObjectFactory_Android.release(cameraUpdate);
       },
       ios: () async {
         final latLng =
@@ -348,7 +414,12 @@ class AmapController {
           await markerOption.snippet(snippet);
         }
 
-        map.addMarker(markerOption);
+        await map.addMarker(markerOption);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(latLng);
+        ObjectFactory_Android.release(markerOption);
       },
       ios: () async {
         await iosController.set_delegate(MyDelegate());
@@ -361,6 +432,10 @@ class AmapController {
         await pointAnnotation.set_title(title);
         await pointAnnotation.set_subtitle(snippet);
         await iosController.addAnnotation(pointAnnotation);
+
+        // 释放局部变量
+        ObjectFactory_iOS.release(pointAnnotation);
+        ObjectFactory_iOS.release(coordinate);
       },
     );
   }
@@ -392,6 +467,11 @@ class AmapController {
         }
 
         await map.addPolyline(polylineOptions);
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
+        ObjectFactory_Android.release(polylineOptions);
+        latLngList.forEach((it) => ObjectFactory_Android.release(it));
       },
       ios: () async {
         await iosController.set_delegate(MyDelegate());
@@ -406,6 +486,10 @@ class AmapController {
         final polyline = await MAPolyline.polylineWithCoordinates(
             latLngList, latLngList.length);
         await iosController.addOverlay(polyline);
+
+        // 释放局部变量
+        ObjectFactory_iOS.release(polyline);
+        latLngList.forEach((it) => ObjectFactory_iOS.release(it));
       },
     );
   }
@@ -417,6 +501,9 @@ class AmapController {
 
         await map
             .setOnMarkerClickListener(OnMarkerClickListener(onMarkerClick));
+
+        // 释放局部变量
+        ObjectFactory_Android.release(map);
       },
       ios: () async {
         // todo

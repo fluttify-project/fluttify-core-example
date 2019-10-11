@@ -138,16 +138,15 @@ public class gk {
       InputStream var1 = null;
       OutputStream var2 = null;
 
-      boolean var3;
       try {
          var1 = var0.getResources().getAssets().open(l);
-         if (!b(var1)) {
-            e();
-            var2 = a(var1);
-            return true;
+         if (b(var1)) {
+            boolean var3 = true;
+            return var3;
          }
 
-         var3 = true;
+         e();
+         var2 = a(var1);
       } catch (Throwable var15) {
          var15.printStackTrace();
          ht.c(var15, "ResourcesUtil", "copyResourceJarToAppFilesDir(Context ctx)");
@@ -169,7 +168,7 @@ public class gk {
 
       }
 
-      return var3;
+      return true;
    }
 
    private static OutputStream a(InputStream var0) throws IOException {

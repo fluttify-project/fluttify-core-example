@@ -47,11 +47,4 @@ class _AmapViewState extends State<AmapView> {
       return Center(child: Text('未实现的平台'));
     }
   }
-
-  @override
-  void dispose() {
-    ObjectFactory_iOS.release(Ref_iOS()..refId = _iosId);
-
-    super.dispose();
-  }
 }
