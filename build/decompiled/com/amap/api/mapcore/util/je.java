@@ -151,23 +151,23 @@ public abstract class je extends ji {
    private byte[] k() {
       ByteArrayOutputStream var1 = new ByteArrayOutputStream();
 
-      byte[] var3;
       try {
          byte[] var2 = this.d();
-         if (var2 != null && var2.length != 0) {
-            var1.write(new byte[]{1});
-            var3 = this.a(var2);
-            var1.write(var3);
-            var1.write(var2);
-            byte[] var4 = var1.toByteArray();
-            return var4;
+         byte[] var3;
+         if (var2 == null || var2.length == 0) {
+            var1.write(new byte[]{0});
+            var3 = var1.toByteArray();
+            return var3;
          }
 
-         var1.write(new byte[]{0});
-         var3 = var1.toByteArray();
+         var1.write(new byte[]{1});
+         var3 = this.a(var2);
+         var1.write(var3);
+         var1.write(var2);
+         byte[] var4 = var1.toByteArray();
+         return var4;
       } catch (Throwable var15) {
          hq.a(var15, "bre", "grrd");
-         return new byte[]{0};
       } finally {
          try {
             var1.close();
@@ -177,7 +177,7 @@ public abstract class je extends ji {
 
       }
 
-      return var3;
+      return new byte[]{0};
    }
 
    private byte[] l() {

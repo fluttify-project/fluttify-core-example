@@ -104,54 +104,53 @@ public class jg {
       HttpURLConnection var9 = null;
 
       try {
-         if (var7 != null) {
-            String var10 = a(var5);
-            StringBuffer var11 = new StringBuffer();
-            var11.append(var1);
-            if (var10 != null) {
-               var11.append("?").append(var10);
-            }
-
-            boolean var12 = var6 != null && var6.length > 0;
-            var9 = this.a(var11.toString(), var2, var3, var4, var12);
-            String var13 = "bytes=" + this.h + "-";
-            var9.setRequestProperty("RANGE", var13);
-            if (var12) {
-               DataOutputStream var14 = new DataOutputStream(var9.getOutputStream());
-               var14.write(var6);
-               var14.close();
-            }
-
-            var9.connect();
-            int var39 = var9.getResponseCode();
-            if (var39 != 200 & var39 != 206) {
-               var7.onException(new gt("网络异常原因：" + var9.getResponseMessage() + " 网络异常状态码：" + var39));
-            }
-
-            var8 = var9.getInputStream();
-
-            int var16;
-            for(byte[] var15 = new byte[1024]; !Thread.interrupted() && !this.f && (var16 = var8.read(var15, 0, 1024)) > 0 && (this.g == -1L || this.h < this.g); this.h += (long)var16) {
-               if (var16 == 1024) {
-                  var7.onDownload(var15, this.h);
-               } else {
-                  byte[] var17 = new byte[var16];
-                  System.arraycopy(var15, 0, var17, 0, var16);
-                  var7.onDownload(var17, this.h);
-               }
-            }
-
-            if (this.f) {
-               var7.onStop();
-            } else {
-               var7.onFinish();
-            }
-
+         if (var7 == null) {
             return;
+         }
+
+         String var10 = a(var5);
+         StringBuffer var11 = new StringBuffer();
+         var11.append(var1);
+         if (var10 != null) {
+            var11.append("?").append(var10);
+         }
+
+         boolean var12 = var6 != null && var6.length > 0;
+         var9 = this.a(var11.toString(), var2, var3, var4, var12);
+         String var13 = "bytes=" + this.h + "-";
+         var9.setRequestProperty("RANGE", var13);
+         if (var12) {
+            DataOutputStream var14 = new DataOutputStream(var9.getOutputStream());
+            var14.write(var6);
+            var14.close();
+         }
+
+         var9.connect();
+         int var39 = var9.getResponseCode();
+         if (var39 != 200 & var39 != 206) {
+            var7.onException(new gt("网络异常原因：" + var9.getResponseMessage() + " 网络异常状态码：" + var39));
+         }
+
+         var8 = var9.getInputStream();
+
+         int var16;
+         for(byte[] var15 = new byte[1024]; !Thread.interrupted() && !this.f && (var16 = var8.read(var15, 0, 1024)) > 0 && (this.g == -1L || this.h < this.g); this.h += (long)var16) {
+            if (var16 == 1024) {
+               var7.onDownload(var15, this.h);
+            } else {
+               byte[] var17 = new byte[var16];
+               System.arraycopy(var15, 0, var17, 0, var16);
+               var7.onDownload(var17, this.h);
+            }
+         }
+
+         if (this.f) {
+            var7.onStop();
+         } else {
+            var7.onFinish();
          }
       } catch (Throwable var37) {
          var7.onException(var37);
-         return;
       } finally {
          if (var8 != null) {
             try {

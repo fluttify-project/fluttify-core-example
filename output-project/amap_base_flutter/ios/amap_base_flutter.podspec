@@ -23,15 +23,15 @@ A new flutter plugin project.
   s.static_framework = true
   # 系统framework
   s.frameworks = [
-        #__frameworks__#
+        "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
   ]
   # 系统library
   s.libraries = [
-        #__libraries__#
+        "z", "c++"
   ]
   # 需要添加的资源文件
   s.resources = [
-        #__resources__#
+        
   ]
 end
 

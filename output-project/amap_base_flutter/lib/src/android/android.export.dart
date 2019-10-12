@@ -295,3 +295,4 @@ export 'com/amap/api/trace/TraceLocation.dart';
 export 'com/amap/api/trace/TraceOverlay.dart';
 export 'com/amap/api/trace/LBSTraceClient.dart';
 export 'com/amap/api/mapcore/util/.dart';
+export '../utils.dart';

@@ -110,3 +110,4 @@ export 'MACircleRenderer.dart';
 export 'MAMapCustomStyleOptions.dart';
 export 'MAHeatMapGradient.dart';
 export 'MAShape.dart';
+export '../utils.dart';
