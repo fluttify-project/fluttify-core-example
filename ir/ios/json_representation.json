@@ -21,6 +21,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getLatestAMapApp",
               "returnType": "void",
               "name": "getLatestAMapApp",
               "formalParams": [],
@@ -31,6 +32,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "openAMapNavigation",
               "returnType": "BOOL",
               "name": "openAMapNavigation",
               "formalParams": [
@@ -53,6 +55,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "openAMapRouteSearch",
               "returnType": "BOOL",
               "name": "openAMapRouteSearch",
               "formalParams": [
@@ -75,6 +78,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "openAMapPOISearch",
               "returnType": "BOOL",
               "name": "openAMapPOISearch",
               "formalParams": [
@@ -632,6 +636,7 @@
           ],
           "methods": [
             {
+              "exactName": "sharedServices",
               "returnType": "AMapServices*",
               "name": "sharedServices",
               "formalParams": [],
@@ -854,6 +859,7 @@
           ],
           "methods": [
             {
+              "exactName": "getCoordinates:range",
               "returnType": "void",
               "name": "getCoordinates",
               "formalParams": [
@@ -979,6 +985,7 @@
           ],
           "methods": [
             {
+              "exactName": "groundOverlayWithBounds:icon",
               "returnType": "MAGroundOverlay*",
               "name": "groundOverlayWithBounds",
               "formalParams": [
@@ -1012,6 +1019,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "groundOverlayWithCoordinate:zoomLevel:icon",
               "returnType": "MAGroundOverlay*",
               "name": "groundOverlayWithCoordinate",
               "formalParams": [
@@ -1056,6 +1064,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setGroundOverlayWithBounds:icon",
               "returnType": "BOOL",
               "name": "setGroundOverlayWithBounds",
               "formalParams": [
@@ -1089,6 +1098,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setGroundOverlayWithCoordinate:zoomLevel:icon",
               "returnType": "BOOL",
               "name": "setGroundOverlayWithCoordinate",
               "formalParams": [
@@ -1172,6 +1182,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithPolygon",
               "returnType": "MAPolygonRenderer*",
               "name": "initWithPolygon",
               "formalParams": [
@@ -1386,6 +1397,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithColor:andWithStartPoints",
               "returnType": "MAHeatMapGradient*",
               "name": "initWithColor",
               "formalParams": [
@@ -1632,6 +1644,7 @@
           ],
           "methods": [
             {
+              "exactName": "statusWithCenterCoordinate:zoomLevel:rotationDegree:cameraDegree:screenAnchor",
               "returnType": "MAMapStatus*",
               "name": "statusWithCenterCoordinate",
               "formalParams": [
@@ -1698,6 +1711,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "initWithCenterCoordinate:zoomLevel:rotationDegree:cameraDegree:screenAnchor",
               "returnType": "id",
               "name": "initWithCenterCoordinate",
               "formalParams": [
@@ -1928,6 +1942,7 @@
           ],
           "methods": [
             {
+              "exactName": "circleWithCenterCoordinate:radius",
               "returnType": "MACircle*",
               "name": "circleWithCenterCoordinate",
               "formalParams": [
@@ -1961,6 +1976,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "circleWithMapRect",
               "returnType": "MACircle*",
               "name": "circleWithMapRect",
               "formalParams": [
@@ -1983,6 +1999,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCircleWithCenterCoordinate:radius",
               "returnType": "BOOL",
               "name": "setCircleWithCenterCoordinate",
               "formalParams": [
@@ -2055,6 +2072,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithArc",
               "returnType": "MAArcRenderer*",
               "name": "initWithArc",
               "formalParams": [
@@ -2152,6 +2170,7 @@
           ],
           "methods": [
             {
+              "exactName": "setCoordinate",
               "returnType": "void",
               "name": "setCoordinate",
               "formalParams": [
@@ -2197,6 +2216,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "step",
               "returnType": "void",
               "name": "step",
               "formalParams": [
@@ -2219,6 +2239,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "isAnimationFinished",
               "returnType": "BOOL",
               "name": "isAnimationFinished",
               "formalParams": [],
@@ -2229,6 +2250,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "shouldAnimationStart",
               "returnType": "BOOL",
               "name": "shouldAnimationStart",
               "formalParams": [],
@@ -2239,6 +2261,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "rotateDegree",
               "returnType": "CLLocationDirection",
               "name": "rotateDegree",
               "formalParams": [],
@@ -2288,6 +2311,7 @@
           ],
           "methods": [
             {
+              "exactName": "sharedInstance",
               "returnType": "MAOfflineMapViewController*",
               "name": "sharedInstance",
               "formalParams": [],
@@ -2428,6 +2452,7 @@
           ],
           "methods": [
             {
+              "exactName": "polygonWithCoordinates:count",
               "returnType": "MAPolygon*",
               "name": "polygonWithCoordinates",
               "formalParams": [
@@ -2461,6 +2486,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "polygonWithPoints:count",
               "returnType": "MAPolygon*",
               "name": "polygonWithPoints",
               "formalParams": [
@@ -2494,6 +2520,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolygonWithPoints:count",
               "returnType": "BOOL",
               "name": "setPolygonWithPoints",
               "formalParams": [
@@ -2527,6 +2554,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolygonWithCoordinates:count",
               "returnType": "BOOL",
               "name": "setPolygonWithCoordinates",
               "formalParams": [
@@ -2601,6 +2629,7 @@
           ],
           "methods": [
             {
+              "exactName": "particleOverlayWithOption",
               "returnType": "MAParticleOverlay*",
               "name": "particleOverlayWithOption",
               "formalParams": [
@@ -2623,6 +2652,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "updateOverlayOption",
               "returnType": "void",
               "name": "updateOverlayOption",
               "formalParams": [
@@ -2668,6 +2698,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "polylineWithPoints:count",
               "returnType": "MAPolyline*",
               "name": "polylineWithPoints",
               "formalParams": [
@@ -2701,6 +2732,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "polylineWithCoordinates:count",
               "returnType": "MAPolyline*",
               "name": "polylineWithCoordinates",
               "formalParams": [
@@ -2734,6 +2766,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithPoints:count",
               "returnType": "BOOL",
               "name": "setPolylineWithPoints",
               "formalParams": [
@@ -2767,6 +2800,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithCoordinates:count",
               "returnType": "BOOL",
               "name": "setPolylineWithCoordinates",
               "formalParams": [
@@ -2873,6 +2907,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithMultiPolyline",
               "returnType": "MAMultiColoredPolylineRenderer*",
               "name": "initWithMultiPolyline",
               "formalParams": [
@@ -2936,6 +2971,7 @@
           ],
           "methods": [
             {
+              "exactName": "addMoveAnimationWithKeyCoordinates:count:withDuration:withName:completeCallback",
               "returnType": "MAAnnotationMoveAnimation*",
               "name": "addMoveAnimationWithKeyCoordinates",
               "formalParams": [
@@ -3002,6 +3038,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addMoveAnimationWithKeyCoordinates:count:withDuration:withName:completeCallback:stepCallback",
               "returnType": "MAAnnotationMoveAnimation*",
               "name": "addMoveAnimationWithKeyCoordinates",
               "formalParams": [
@@ -3079,6 +3116,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "allMoveAnimations",
               "returnType": "NSArray\u003cMAAnnotationMoveAnimation*\u003e*",
               "name": "allMoveAnimations",
               "formalParams": [],
@@ -3089,6 +3127,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setNeedsStart",
               "returnType": "void",
               "name": "setNeedsStart",
               "formalParams": [],
@@ -3229,6 +3268,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithMultiPolyline",
               "returnType": "MAMultiTexturePolylineRenderer*",
               "name": "initWithMultiPolyline",
               "formalParams": [
@@ -3251,6 +3291,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "loadStrokeTextureImages",
               "returnType": "BOOL",
               "name": "loadStrokeTextureImages",
               "formalParams": [
@@ -3350,6 +3391,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithTileOverlay",
               "returnType": "MATileOverlayRenderer*",
               "name": "initWithTileOverlay",
               "formalParams": [
@@ -3372,6 +3414,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "reloadData",
               "returnType": "void",
               "name": "reloadData",
               "formalParams": [],
@@ -3617,6 +3660,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "polylineWithPoints:count",
               "returnType": "MAGeodesicPolyline*",
               "name": "polylineWithPoints",
               "formalParams": [
@@ -3650,6 +3694,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "polylineWithCoordinates:count",
               "returnType": "MAGeodesicPolyline*",
               "name": "polylineWithCoordinates",
               "formalParams": [
@@ -3683,6 +3728,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithPoints:count",
               "returnType": "BOOL",
               "name": "setPolylineWithPoints",
               "formalParams": [
@@ -3716,6 +3762,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithCoordinates:count",
               "returnType": "BOOL",
               "name": "setPolylineWithCoordinates",
               "formalParams": [
@@ -3880,6 +3927,7 @@
           ],
           "methods": [
             {
+              "exactName": "polylineWithPoints:count:drawStyleIndexes",
               "returnType": "MAMultiPolyline*",
               "name": "polylineWithPoints",
               "formalParams": [
@@ -3924,6 +3972,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "polylineWithCoordinates:count:drawStyleIndexes",
               "returnType": "MAMultiPolyline*",
               "name": "polylineWithCoordinates",
               "formalParams": [
@@ -3968,6 +4017,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithPoints:count:drawStyleIndexes",
               "returnType": "BOOL",
               "name": "setPolylineWithPoints",
               "formalParams": [
@@ -4012,6 +4062,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setPolylineWithCoordinates:count:drawStyleIndexes",
               "returnType": "BOOL",
               "name": "setPolylineWithCoordinates",
               "formalParams": [
@@ -4079,6 +4130,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "traceManager:didTrace:correct:distance:withError",
               "returnType": "void",
               "name": "traceManager",
               "formalParams": [
@@ -4145,6 +4197,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewRequireLocationAuth",
               "returnType": "void",
               "name": "mapViewRequireLocationAuth",
               "formalParams": [
@@ -4206,6 +4259,7 @@
           ],
           "methods": [
             {
+              "exactName": "sharedInstance",
               "returnType": "MATraceManager*",
               "name": "sharedInstance",
               "formalParams": [],
@@ -4216,6 +4270,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "queryProcessedTraceWith:type:processingCallback:finishCallback:failedCallback",
               "returnType": "NSOperation*",
               "name": "queryProcessedTraceWith",
               "formalParams": [
@@ -4282,6 +4337,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "startTraceWith",
               "returnType": "void",
               "name": "startTraceWith",
               "formalParams": [
@@ -4304,6 +4360,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "stopTrace",
               "returnType": "void",
               "name": "stopTrace",
               "formalParams": [],
@@ -4314,6 +4371,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "start",
               "returnType": "void",
               "name": "start",
               "formalParams": [],
@@ -4324,6 +4382,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "stop",
               "returnType": "void",
               "name": "stop",
               "formalParams": [],
@@ -4357,6 +4416,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "multiPointOverlayRenderer:didItemTapped",
               "returnType": "void",
               "name": "multiPointOverlayRenderer",
               "formalParams": [
@@ -4497,6 +4557,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithMultiPointOverlay",
               "returnType": "MAMultiPointOverlayRenderer*",
               "name": "initWithMultiPointOverlay",
               "formalParams": [
@@ -4855,6 +4916,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithPolyline",
               "returnType": "MAPolylineRenderer*",
               "name": "initWithPolyline",
               "formalParams": [
@@ -4898,6 +4960,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "name",
               "returnType": "NSString*",
               "name": "name",
               "formalParams": [],
@@ -4908,6 +4971,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "coordinates",
               "returnType": "CLLocationCoordinate2D*",
               "name": "coordinates",
               "formalParams": [],
@@ -4918,6 +4982,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "count",
               "returnType": "NSUInteger",
               "name": "count",
               "formalParams": [],
@@ -4928,6 +4993,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "duration",
               "returnType": "CGFloat",
               "name": "duration",
               "formalParams": [],
@@ -4938,6 +5004,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "elapsedTime",
               "returnType": "CGFloat",
               "name": "elapsedTime",
               "formalParams": [],
@@ -4948,6 +5015,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "cancel",
               "returnType": "void",
               "name": "cancel",
               "formalParams": [],
@@ -4958,6 +5026,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "isCancelled",
               "returnType": "BOOL",
               "name": "isCancelled",
               "formalParams": [],
@@ -4968,6 +5037,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "passedPointCount",
               "returnType": "NSInteger",
               "name": "passedPointCount",
               "formalParams": [],
@@ -5355,6 +5425,7 @@
           ],
           "methods": [
             {
+              "exactName": "setSelected:animated",
               "returnType": "void",
               "name": "setSelected",
               "formalParams": [
@@ -5388,6 +5459,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "initWithAnnotation:reuseIdentifier",
               "returnType": "id",
               "name": "initWithAnnotation",
               "formalParams": [
@@ -5421,6 +5493,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "prepareForReuse",
               "returnType": "void",
               "name": "prepareForReuse",
               "formalParams": [],
@@ -5431,6 +5504,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setDragState:animated",
               "returnType": "void",
               "name": "setDragState",
               "formalParams": [
@@ -5607,6 +5681,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithURLTemplate",
               "returnType": "id",
               "name": "initWithURLTemplate",
               "formalParams": [
@@ -5629,6 +5704,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "URLForTilePath",
               "returnType": "NSURL*",
               "name": "URLForTilePath",
               "formalParams": [
@@ -5651,6 +5727,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "loadTileAtPath:result",
               "returnType": "void",
               "name": "loadTileAtPath",
               "formalParams": [
@@ -5684,6 +5761,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "cancelLoadOfTileAtPath",
               "returnType": "void",
               "name": "cancelLoadOfTileAtPath",
               "formalParams": [
@@ -5802,6 +5880,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithCustomView",
               "returnType": "id",
               "name": "initWithCustomView",
               "formalParams": [
@@ -6040,6 +6119,7 @@
           ],
           "methods": [
             {
+              "exactName": "sharedOfflineMap",
               "returnType": "MAOfflineMap*",
               "name": "sharedOfflineMap",
               "formalParams": [],
@@ -6050,6 +6130,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setupWithCompletionBlock",
               "returnType": "void",
               "name": "setupWithCompletionBlock",
               "formalParams": [
@@ -6072,6 +6153,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "downloadItem:shouldContinueWhenAppEntersBackground:downloadBlock",
               "returnType": "void",
               "name": "downloadItem",
               "formalParams": [
@@ -6116,6 +6198,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "isDownloadingForItem",
               "returnType": "BOOL",
               "name": "isDownloadingForItem",
               "formalParams": [
@@ -6138,6 +6221,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "pauseItem",
               "returnType": "BOOL",
               "name": "pauseItem",
               "formalParams": [
@@ -6160,6 +6244,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "deleteItem",
               "returnType": "void",
               "name": "deleteItem",
               "formalParams": [
@@ -6182,6 +6267,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "cancelAll",
               "returnType": "void",
               "name": "cancelAll",
               "formalParams": [],
@@ -6192,6 +6278,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "clearDisk",
               "returnType": "void",
               "name": "clearDisk",
               "formalParams": [],
@@ -6202,6 +6289,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "checkNewestVersion",
               "returnType": "void",
               "name": "checkNewestVersion",
               "formalParams": [
@@ -6224,6 +6312,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "downloadCity:downloadBlock",
               "returnType": "void",
               "name": "downloadCity",
               "formalParams": [
@@ -6257,6 +6346,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "downloadCity:shouldContinueWhenAppEntersBackground:downloadBlock",
               "returnType": "void",
               "name": "downloadCity",
               "formalParams": [
@@ -6301,6 +6391,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "isDownloadingForCity",
               "returnType": "BOOL",
               "name": "isDownloadingForCity",
               "formalParams": [
@@ -6323,6 +6414,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "pause",
               "returnType": "void",
               "name": "pause",
               "formalParams": [
@@ -6384,6 +6476,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithCircle",
               "returnType": "MACircleRenderer*",
               "name": "initWithCircle",
               "formalParams": [
@@ -6445,6 +6538,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithParticleOverlay",
               "returnType": "MAParticleOverlayRenderer*",
               "name": "initWithParticleOverlay",
               "formalParams": [
@@ -6783,6 +6877,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getX",
               "returnType": "CGFloat",
               "name": "getX",
               "formalParams": [],
@@ -6793,6 +6888,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getY",
               "returnType": "CGFloat",
               "name": "getY",
               "formalParams": [],
@@ -6803,6 +6899,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getZ",
               "returnType": "CGFloat",
               "name": "getZ",
               "formalParams": [],
@@ -6836,6 +6933,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithBoundaryValueX1:Y1:Z1:X2:Y2:Z2",
               "returnType": "MAParticleRandomVelocityGenerate*",
               "name": "initWithBoundaryValueX1",
               "formalParams": [
@@ -6936,6 +7034,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getColor",
               "returnType": "float*",
               "name": "getColor",
               "formalParams": [],
@@ -6969,6 +7068,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithBoundaryColorR1:G1:B1:A1:R2:G2:B2:A2",
               "returnType": "MAParticleRandomColorGenerate*",
               "name": "initWithBoundaryColorR1",
               "formalParams": [
@@ -7091,6 +7191,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getRotate",
               "returnType": "float",
               "name": "getRotate",
               "formalParams": [],
@@ -7124,6 +7225,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithRotate",
               "returnType": "MAParticleConstantRotationGenerate*",
               "name": "initWithRotate",
               "formalParams": [
@@ -7169,6 +7271,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getSizeX",
               "returnType": "float",
               "name": "getSizeX",
               "formalParams": [
@@ -7191,6 +7294,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getSizeY",
               "returnType": "float",
               "name": "getSizeY",
               "formalParams": [
@@ -7213,6 +7317,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getSizeZ",
               "returnType": "float",
               "name": "getSizeZ",
               "formalParams": [
@@ -7258,6 +7363,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithCurveX:Y:Z",
               "returnType": "MAParticleCurveSizeGenerate*",
               "name": "initWithCurveX",
               "formalParams": [
@@ -7323,6 +7429,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithEmissionRate:rateTime",
               "returnType": "MAParticleEmissionModule*",
               "name": "initWithEmissionRate",
               "formalParams": [
@@ -7379,6 +7486,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "getPoint",
               "returnType": "float*",
               "name": "getPoint",
               "formalParams": [],
@@ -7389,6 +7497,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "isRatioEnable",
               "returnType": "BOOL",
               "name": "isRatioEnable",
               "formalParams": [],
@@ -7422,6 +7531,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithShapeX:Y:Z:useRatio",
               "returnType": "MAParticleSinglePointShapeModule*",
               "name": "initWithShapeX",
               "formalParams": [
@@ -7500,6 +7610,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "initWithLeft:top:right:bottom:useRatio",
               "returnType": "MAParticleRectShapeModule*",
               "name": "initWithLeft",
               "formalParams": [
@@ -7587,6 +7698,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "setVelocityOverLife",
               "returnType": "void",
               "name": "setVelocityOverLife",
               "formalParams": [
@@ -7609,6 +7721,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setRotationOverLife",
               "returnType": "void",
               "name": "setRotationOverLife",
               "formalParams": [
@@ -7631,6 +7744,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setSizeOverLife",
               "returnType": "void",
               "name": "setSizeOverLife",
               "formalParams": [
@@ -7653,6 +7767,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setColorOverLife",
               "returnType": "void",
               "name": "setColorOverLife",
               "formalParams": [
@@ -7921,6 +8036,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "particleOverlayOptionsWithType",
               "returnType": "NSArray\u003cMAParticleOverlayOptions*\u003e*",
               "name": "particleOverlayOptionsWithType",
               "formalParams": [
@@ -8125,6 +8241,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithOverlay",
               "returnType": "MAOverlayRenderer*",
               "name": "initWithOverlay",
               "formalParams": [
@@ -8147,6 +8264,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getViewMatrix",
               "returnType": "float*",
               "name": "getViewMatrix",
               "formalParams": [],
@@ -8157,6 +8275,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getProjectionMatrix",
               "returnType": "float*",
               "name": "getProjectionMatrix",
               "formalParams": [],
@@ -8167,6 +8286,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getOffsetPoint",
               "returnType": "MAMapPoint",
               "name": "getOffsetPoint",
               "formalParams": [],
@@ -8177,6 +8297,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getMapZoomLevel",
               "returnType": "CGFloat",
               "name": "getMapZoomLevel",
               "formalParams": [],
@@ -8187,6 +8308,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "pointForMapPoint",
               "returnType": "CGPoint",
               "name": "pointForMapPoint",
               "formalParams": [
@@ -8209,6 +8331,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "mapPointForPoint",
               "returnType": "MAMapPoint",
               "name": "mapPointForPoint",
               "formalParams": [
@@ -8231,6 +8354,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "rectForMapRect",
               "returnType": "CGRect",
               "name": "rectForMapRect",
               "formalParams": [
@@ -8253,6 +8377,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "mapRectForRect",
               "returnType": "MAMapRect",
               "name": "mapRectForRect",
               "formalParams": [
@@ -8275,6 +8400,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "glPointForMapPoint",
               "returnType": "CGPoint",
               "name": "glPointForMapPoint",
               "formalParams": [
@@ -8297,6 +8423,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "glPointsForMapPoints:count",
               "returnType": "CGPoint*",
               "name": "glPointsForMapPoints",
               "formalParams": [
@@ -8330,6 +8457,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "glWidthForWindowWidth",
               "returnType": "CGFloat",
               "name": "glWidthForWindowWidth",
               "formalParams": [
@@ -8352,6 +8480,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "referenceDidChange",
               "returnType": "void",
               "name": "referenceDidChange",
               "formalParams": [],
@@ -8362,6 +8491,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped",
               "returnType": "void",
               "name": "renderLinesWithPoints",
               "formalParams": [
@@ -8428,6 +8558,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderLinesWithPoints:pointCount:strokeColor:lineWidth:looped:LineJoinType:LineCapType:lineDash",
               "returnType": "void",
               "name": "renderLinesWithPoints",
               "formalParams": [
@@ -8527,6 +8658,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderTexturedLinesWithPoints:pointCount:lineWidth:textureID:looped",
               "returnType": "void",
               "name": "renderTexturedLinesWithPoints",
               "formalParams": [
@@ -8593,6 +8725,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderTexturedLinesWithPoints:pointCount:lineWidth:textureIDs:drawStyleIndexes:looped",
               "returnType": "void",
               "name": "renderTexturedLinesWithPoints",
               "formalParams": [
@@ -8670,6 +8803,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderLinesWithPoints:pointCount:strokeColors:drawStyleIndexes:isGradient:lineWidth:looped:LineJoinType:LineCapType:lineDash",
               "returnType": "void",
               "name": "renderLinesWithPoints",
               "formalParams": [
@@ -8791,6 +8925,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderRegionWithPoints:pointCount:fillColor:usingTriangleFan",
               "returnType": "void",
               "name": "renderRegionWithPoints",
               "formalParams": [
@@ -8846,6 +8981,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderStrokedRegionWithPoints:pointCount:fillColor:strokeColor:strokeLineWidth:strokeLineJoinType:strokeLineDash:usingTriangleFan",
               "returnType": "void",
               "name": "renderStrokedRegionWithPoints",
               "formalParams": [
@@ -8945,6 +9081,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderTextureStrokedRegionWithPoints:pointCount:fillColor:strokeTineWidth:strokeTextureID:usingTriangleFan",
               "returnType": "void",
               "name": "renderTextureStrokedRegionWithPoints",
               "formalParams": [
@@ -9022,6 +9159,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderIconWithTextureID:points",
               "returnType": "void",
               "name": "renderIconWithTextureID",
               "formalParams": [
@@ -9055,6 +9193,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "renderIconWithTextureID:points:modulateColor",
               "returnType": "void",
               "name": "renderIconWithTextureID",
               "formalParams": [
@@ -9099,6 +9238,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "glRender",
               "returnType": "void",
               "name": "glRender",
               "formalParams": [],
@@ -9109,6 +9249,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "loadStrokeTextureImage",
               "returnType": "GLuint",
               "name": "loadStrokeTextureImage",
               "formalParams": [
@@ -9131,6 +9272,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "loadTexture",
               "returnType": "GLuint",
               "name": "loadTexture",
               "formalParams": [
@@ -9153,6 +9295,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "deleteTexture",
               "returnType": "void",
               "name": "deleteTexture",
               "formalParams": [
@@ -9175,6 +9318,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setNeedsUpdate",
               "returnType": "void",
               "name": "setNeedsUpdate",
               "formalParams": [],
@@ -9390,6 +9534,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithMultiPointItems",
               "returnType": "MAMultiPointOverlay*",
               "name": "initWithMultiPointItems",
               "formalParams": [
@@ -9519,6 +9664,7 @@
           ],
           "methods": [
             {
+              "exactName": "optionWithCoordinates:count",
               "returnType": "MACustomBuildingOverlayOption*",
               "name": "optionWithCoordinates",
               "formalParams": [
@@ -9552,6 +9698,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setOptionWithCoordinates:count",
               "returnType": "BOOL",
               "name": "setOptionWithCoordinates",
               "formalParams": [
@@ -9643,6 +9790,7 @@
           ],
           "methods": [
             {
+              "exactName": "addCustomOption",
               "returnType": "void",
               "name": "addCustomOption",
               "formalParams": [
@@ -9665,6 +9813,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "removeCustomOption",
               "returnType": "void",
               "name": "removeCustomOption",
               "formalParams": [
@@ -9925,6 +10074,7 @@
           ],
           "methods": [
             {
+              "exactName": "arcWithStartCoordinate:passedCoordinate:endCoordinate",
               "returnType": "MAArc*",
               "name": "arcWithStartCoordinate",
               "formalParams": [
@@ -11300,6 +11450,7 @@
           ],
           "methods": [
             {
+              "exactName": "setRegion:animated",
               "returnType": "void",
               "name": "setRegion",
               "formalParams": [
@@ -11333,6 +11484,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "regionThatFits",
               "returnType": "MACoordinateRegion",
               "name": "regionThatFits",
               "formalParams": [
@@ -11355,6 +11507,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setVisibleMapRect:animated",
               "returnType": "void",
               "name": "setVisibleMapRect",
               "formalParams": [
@@ -11388,6 +11541,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapRectThatFits",
               "returnType": "MAMapRect",
               "name": "mapRectThatFits",
               "formalParams": [
@@ -11410,6 +11564,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapRectThatFits:edgePadding",
               "returnType": "MAMapRect",
               "name": "mapRectThatFits",
               "formalParams": [
@@ -11443,6 +11598,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setVisibleMapRect:edgePadding:animated",
               "returnType": "void",
               "name": "setVisibleMapRect",
               "formalParams": [
@@ -11487,6 +11643,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCenterCoordinate:animated",
               "returnType": "void",
               "name": "setCenterCoordinate",
               "formalParams": [
@@ -11520,6 +11677,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setZoomLevel:animated",
               "returnType": "void",
               "name": "setZoomLevel",
               "formalParams": [
@@ -11553,6 +11711,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setZoomLevel:atPivot:animated",
               "returnType": "void",
               "name": "setZoomLevel",
               "formalParams": [
@@ -11597,6 +11756,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setRotationDegree:animated:duration",
               "returnType": "void",
               "name": "setRotationDegree",
               "formalParams": [
@@ -11641,6 +11801,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCameraDegree:animated:duration",
               "returnType": "void",
               "name": "setCameraDegree",
               "formalParams": [
@@ -11685,6 +11846,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "getMapStatus",
               "returnType": "MAMapStatus*",
               "name": "getMapStatus",
               "formalParams": [],
@@ -11695,6 +11857,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setMapStatus:animated",
               "returnType": "void",
               "name": "setMapStatus",
               "formalParams": [
@@ -11728,6 +11891,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setMapStatus:animated:duration",
               "returnType": "void",
               "name": "setMapStatus",
               "formalParams": [
@@ -11772,6 +11936,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCompassImage",
               "returnType": "void",
               "name": "setCompassImage",
               "formalParams": [
@@ -11794,6 +11959,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "takeSnapshotInRect",
               "returnType": "UIImage*",
               "name": "takeSnapshotInRect",
               "formalParams": [
@@ -11816,6 +11982,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "takeSnapshotInRect:withCompletionBlock",
               "returnType": "void",
               "name": "takeSnapshotInRect",
               "formalParams": [
@@ -11849,6 +12016,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "metersPerPointForZoomLevel",
               "returnType": "double",
               "name": "metersPerPointForZoomLevel",
               "formalParams": [
@@ -11871,6 +12039,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "convertCoordinate:toPointToView",
               "returnType": "CGPoint",
               "name": "convertCoordinate",
               "formalParams": [
@@ -11904,6 +12073,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "convertPoint:toCoordinateFromView",
               "returnType": "CLLocationCoordinate2D",
               "name": "convertPoint",
               "formalParams": [
@@ -11937,6 +12107,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "convertRegion:toRectToView",
               "returnType": "CGRect",
               "name": "convertRegion",
               "formalParams": [
@@ -11970,6 +12141,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "convertRect:toRegionFromView",
               "returnType": "MACoordinateRegion",
               "name": "convertRect",
               "formalParams": [
@@ -12003,6 +12175,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "reloadMap",
               "returnType": "void",
               "name": "reloadMap",
               "formalParams": [],
@@ -12013,6 +12186,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "clearDisk",
               "returnType": "void",
               "name": "clearDisk",
               "formalParams": [],
@@ -12023,6 +12197,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "reloadInternalTexture",
               "returnType": "void",
               "name": "reloadInternalTexture",
               "formalParams": [],
@@ -12033,6 +12208,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapContentApprovalNumber",
               "returnType": "NSString*",
               "name": "mapContentApprovalNumber",
               "formalParams": [],
@@ -12043,6 +12219,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "satelliteImageApprovalNumber",
               "returnType": "NSString*",
               "name": "satelliteImageApprovalNumber",
               "formalParams": [],
@@ -12053,6 +12230,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addAnimationWith:zoomAnimation:rotateAnimation:cameraDegreeAnimation",
               "returnType": "void",
               "name": "addAnimationWith",
               "formalParams": [
@@ -12108,6 +12286,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "forceRefresh",
               "returnType": "void",
               "name": "forceRefresh",
               "formalParams": [],
@@ -12118,6 +12297,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addAnnotation",
               "returnType": "void",
               "name": "addAnnotation",
               "formalParams": [
@@ -12140,6 +12320,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addAnnotations",
               "returnType": "void",
               "name": "addAnnotations",
               "formalParams": [
@@ -12162,6 +12343,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "removeAnnotation",
               "returnType": "void",
               "name": "removeAnnotation",
               "formalParams": [
@@ -12184,6 +12366,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "removeAnnotations",
               "returnType": "void",
               "name": "removeAnnotations",
               "formalParams": [
@@ -12206,6 +12389,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "annotationsInMapRect",
               "returnType": "NSSet*",
               "name": "annotationsInMapRect",
               "formalParams": [
@@ -12228,6 +12412,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "viewForAnnotation",
               "returnType": "MAAnnotationView*",
               "name": "viewForAnnotation",
               "formalParams": [
@@ -12250,6 +12435,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "dequeueReusableAnnotationViewWithIdentifier",
               "returnType": "MAAnnotationView*",
               "name": "dequeueReusableAnnotationViewWithIdentifier",
               "formalParams": [
@@ -12272,6 +12458,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "selectAnnotation:animated",
               "returnType": "void",
               "name": "selectAnnotation",
               "formalParams": [
@@ -12305,6 +12492,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "deselectAnnotation:animated",
               "returnType": "void",
               "name": "deselectAnnotation",
               "formalParams": [
@@ -12338,6 +12526,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "showAnnotations:animated",
               "returnType": "void",
               "name": "showAnnotations",
               "formalParams": [
@@ -12371,6 +12560,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "showAnnotations:edgePadding:animated",
               "returnType": "void",
               "name": "showAnnotations",
               "formalParams": [
@@ -12415,6 +12605,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setUserTrackingMode:animated",
               "returnType": "void",
               "name": "setUserTrackingMode",
               "formalParams": [
@@ -12448,6 +12639,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "updateUserLocationRepresentation",
               "returnType": "void",
               "name": "updateUserLocationRepresentation",
               "formalParams": [
@@ -12470,6 +12662,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "overlaysInLevel",
               "returnType": "NSArray*",
               "name": "overlaysInLevel",
               "formalParams": [
@@ -12492,6 +12685,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addOverlay",
               "returnType": "void",
               "name": "addOverlay",
               "formalParams": [
@@ -12514,6 +12708,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addOverlays",
               "returnType": "void",
               "name": "addOverlays",
               "formalParams": [
@@ -12536,6 +12731,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addOverlay:level",
               "returnType": "void",
               "name": "addOverlay",
               "formalParams": [
@@ -12569,6 +12765,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "addOverlays:level",
               "returnType": "void",
               "name": "addOverlays",
               "formalParams": [
@@ -12602,6 +12799,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "removeOverlay",
               "returnType": "void",
               "name": "removeOverlay",
               "formalParams": [
@@ -12624,6 +12822,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "removeOverlays",
               "returnType": "void",
               "name": "removeOverlays",
               "formalParams": [
@@ -12646,6 +12845,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "insertOverlay:atIndex:level",
               "returnType": "void",
               "name": "insertOverlay",
               "formalParams": [
@@ -12690,6 +12890,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "insertOverlay:aboveOverlay",
               "returnType": "void",
               "name": "insertOverlay",
               "formalParams": [
@@ -12723,6 +12924,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "insertOverlay:belowOverlay",
               "returnType": "void",
               "name": "insertOverlay",
               "formalParams": [
@@ -12756,6 +12958,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "insertOverlay:atIndex",
               "returnType": "void",
               "name": "insertOverlay",
               "formalParams": [
@@ -12789,6 +12992,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "exchangeOverlayAtIndex:withOverlayAtIndex",
               "returnType": "void",
               "name": "exchangeOverlayAtIndex",
               "formalParams": [
@@ -12822,6 +13026,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "exchangeOverlayAtIndex:withOverlayAtIndex:atLevel",
               "returnType": "void",
               "name": "exchangeOverlayAtIndex",
               "formalParams": [
@@ -12866,6 +13071,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "exchangeOverlay:withOverlay",
               "returnType": "void",
               "name": "exchangeOverlay",
               "formalParams": [
@@ -12899,6 +13105,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "rendererForOverlay",
               "returnType": "MAOverlayRenderer*",
               "name": "rendererForOverlay",
               "formalParams": [
@@ -12921,6 +13128,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "showOverlays:animated",
               "returnType": "void",
               "name": "showOverlays",
               "formalParams": [
@@ -12954,6 +13162,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "showOverlays:edgePadding:animated",
               "returnType": "void",
               "name": "showOverlays",
               "formalParams": [
@@ -12998,6 +13207,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setIndoorMapControlOrigin",
               "returnType": "void",
               "name": "setIndoorMapControlOrigin",
               "formalParams": [
@@ -13020,6 +13230,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCurrentIndoorMapFloorIndex",
               "returnType": "void",
               "name": "setCurrentIndoorMapFloorIndex",
               "formalParams": [
@@ -13042,6 +13253,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "clearIndoorMapCache",
               "returnType": "void",
               "name": "clearIndoorMapCache",
               "formalParams": [],
@@ -13052,6 +13264,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "setCustomMapStyle",
               "returnType": "void",
               "name": "setCustomMapStyle",
               "formalParams": [
@@ -13074,6 +13287,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "setCustomMapStyleWithWebData",
               "returnType": "void",
               "name": "setCustomMapStyleWithWebData",
               "formalParams": [
@@ -13096,6 +13310,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "setCustomTextureResourcePath",
               "returnType": "void",
               "name": "setCustomTextureResourcePath",
               "formalParams": [
@@ -13118,6 +13333,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "setCustomMapStyleID",
               "returnType": "void",
               "name": "setCustomMapStyleID",
               "formalParams": [
@@ -13140,6 +13356,7 @@
               "isDeprecated": true
             },
             {
+              "exactName": "setCustomMapStyleOptions",
               "returnType": "void",
               "name": "setCustomMapStyleOptions",
               "formalParams": [
@@ -13185,6 +13402,7 @@
           "fields": [],
           "methods": [
             {
+              "exactName": "mapViewRegionChanged",
               "returnType": "void",
               "name": "mapViewRegionChanged",
               "formalParams": [
@@ -13207,6 +13425,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:regionWillChangeAnimated",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13240,6 +13459,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:regionDidChangeAnimated",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13273,6 +13493,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:mapWillMoveByUser",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13306,6 +13527,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:mapDidMoveByUser",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13339,6 +13561,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:mapWillZoomByUser",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13372,6 +13595,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:mapDidZoomByUser",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13405,6 +13629,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewWillStartLoadingMap",
               "returnType": "void",
               "name": "mapViewWillStartLoadingMap",
               "formalParams": [
@@ -13427,6 +13652,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewDidFinishLoadingMap",
               "returnType": "void",
               "name": "mapViewDidFinishLoadingMap",
               "formalParams": [
@@ -13449,6 +13675,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewDidFailLoadingMap:withError",
               "returnType": "void",
               "name": "mapViewDidFailLoadingMap",
               "formalParams": [
@@ -13482,6 +13709,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:viewForAnnotation",
               "returnType": "MAAnnotationView*",
               "name": "mapView",
               "formalParams": [
@@ -13515,6 +13743,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didAddAnnotationViews",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13548,6 +13777,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didSelectAnnotationView",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13581,6 +13811,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didDeselectAnnotationView",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13614,6 +13845,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewWillStartLocatingUser",
               "returnType": "void",
               "name": "mapViewWillStartLocatingUser",
               "formalParams": [
@@ -13636,6 +13868,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewDidStopLocatingUser",
               "returnType": "void",
               "name": "mapViewDidStopLocatingUser",
               "formalParams": [
@@ -13658,6 +13891,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didUpdateUserLocation:updatingLocation",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13702,6 +13936,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapViewRequireLocationAuth",
               "returnType": "void",
               "name": "mapViewRequireLocationAuth",
               "formalParams": [
@@ -13724,6 +13959,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didFailToLocateUserWithError",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13757,6 +13993,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:annotationView:didChangeDragState:fromOldState",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13812,6 +14049,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:rendererForOverlay",
               "returnType": "MAOverlayRenderer*",
               "name": "mapView",
               "formalParams": [
@@ -13845,6 +14083,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didAddOverlayRenderers",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13878,6 +14117,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:annotationView:calloutAccessoryControlTapped",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13922,6 +14162,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didAnnotationViewCalloutTapped",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13955,6 +14196,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didAnnotationViewTapped",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -13988,6 +14230,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didChangeUserTrackingMode:animated",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14032,6 +14275,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didChangeOpenGLESDisabled",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14065,6 +14309,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didTouchPois",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14098,6 +14343,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didSingleTappedAtCoordinate",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14131,6 +14377,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didLongPressedAtCoordinate",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14164,6 +14411,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapInitComplete",
               "returnType": "void",
               "name": "mapInitComplete",
               "formalParams": [
@@ -14186,6 +14434,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didIndoorMapShowed",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14219,6 +14468,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didIndoorMapFloorIndexChanged",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14252,6 +14502,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "mapView:didIndoorMapHidden",
               "returnType": "void",
               "name": "mapView",
               "formalParams": [
@@ -14285,6 +14536,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "offlineDataWillReload",
               "returnType": "void",
               "name": "offlineDataWillReload",
               "formalParams": [
@@ -14307,6 +14559,7 @@
               "isDeprecated": false
             },
             {
+              "exactName": "offlineDataDidReload",
               "returnType": "void",
               "name": "offlineDataDidReload",
               "formalParams": [
@@ -14525,6 +14778,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithGroundOverlay",
               "returnType": "MAGroundOverlayRenderer*",
               "name": "initWithGroundOverlay",
               "formalParams": [
@@ -14586,6 +14840,7 @@
           ],
           "methods": [
             {
+              "exactName": "initWithCustomBuildingOverlay",
               "returnType": "MACustomBuildingOverlayRenderer*",
               "name": "initWithCustomBuildingOverlay",
               "formalParams": [

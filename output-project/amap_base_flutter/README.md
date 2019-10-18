@@ -1,8 +1,14 @@
-# 高德地图Fluttify版
-- [x] 显示地图
-- [ ] 显示定位蓝点
-- [ ] 显示室内地图
-- [ ] 切换地图图层
-- [ ] 使用离线地图
-- [ ] 显示英文地图
-- [ ] 自定义地图
+# amap_base_flutter
+
+A new flutter plugin project.
+
+## Getting Started
+
+This project is a starting point for a Flutter
+[plug-in package](https://flutter.dev/developing-packages/),
+a specialized package that includes platform-specific implementation code for
+Android and/or iOS.
+
+For help getting started with Flutter, view our 
+[online documentation](https://flutter.dev/docs), which offers tutorials, 
+samples, guidance on mobile development, and a full API reference.

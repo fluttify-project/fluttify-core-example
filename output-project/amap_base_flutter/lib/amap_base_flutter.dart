@@ -1,5 +1,13 @@
-export 'src/dart/amap_controller.dart';
-export 'src/dart/amap_service.dart';
-export 'src/dart/amap_view.widget.dart';
-export 'src/dart/enums.dart';
-export 'src/dart/model/lat_lng.dart';
+import 'dart:async';
+
+import 'package:flutter/services.dart';
+
+class AmapBaseFlutter {
+  static const MethodChannel _channel =
+      const MethodChannel('amap_base_flutter');
+
+  static Future<String> get platformVersion async {
+    final String version = await _channel.invokeMethod('getPlatformVersion');
+    return version;
+  }
+}

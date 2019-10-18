@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<config>
-	<dirs>
-		<data>./data_v6/</data>
-		<diff>./diff/</diff>
-		<res>./res/</res>
-		<log>./log/</log>
-	</dirs>
-</config>

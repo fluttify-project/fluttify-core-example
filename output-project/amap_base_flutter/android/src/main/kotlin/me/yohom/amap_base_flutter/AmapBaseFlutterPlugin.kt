@@ -10,6 +10,9 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
+// Dart端一次方法调用所存在的栈, 只有当MethodChannel传递参数受限时, 再启用这个容器
+val STACK = mutableMapOf<String, Any>()
+// Dart端随机存取对象的容器
 val HEAP = mutableMapOf<Int, Any>()
 
 @Suppress("FunctionName", "UsePropertyAccessSyntax", "RedundantUnitReturnType", "UNUSED_PARAMETER", "SpellCheckingInspection", "ConvertToStringTemplate", "DEPRECATION", "UNUSED_VARIABLE")
@@ -4242,30 +4245,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 调用结果
             methodResult.success("success")
-        },
-        "com.autonavi.ae.gmap.GLMapEngine::getStateMessage" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.autonavi.ae.gmap.GLMapEngine
-        
-            // 日志打印
-            println("fluttify-kotlin: com.autonavi.ae.gmap.GLMapEngine@$refId::getStateMessage([])")
-        
-            // 开始调用
-            val result = ref.getStateMessage()
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
         },
         "com.autonavi.ae.gmap.GLMapEngine::setMapOpenLayer" to { registrar, args, methodResult ->
             // 参数
@@ -20137,30 +20116,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
-        "com.autonavi.amap.mapcore.interfaces.ICircle::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.ICircle
-        
-            // 日志打印
-            println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.ICircle@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
-        },
         "com.autonavi.amap.mapcore.interfaces.ICircle::getDottedLineType" to { registrar, args, methodResult ->
             // 参数
         
@@ -23881,30 +23836,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
-        "com.autonavi.amap.mapcore.interfaces.IPolygon::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.autonavi.amap.mapcore.interfaces.IPolygon
-        
-            // 日志打印
-            println("fluttify-kotlin: com.autonavi.amap.mapcore.interfaces.IPolygon@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
-        },
         "com.autonavi.custom.IUnityCallback::UnitySetGraphicsDevice" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -26112,30 +26043,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
-        "com.amap.api.maps.utils.overlay.MovingPointOverlay::getObject" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.utils.overlay.MovingPointOverlay
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.utils.overlay.MovingPointOverlay@$refId::getObject([])")
-        
-            // 开始调用
-            val result = ref.getObject()
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
         "com.amap.api.maps.utils.overlay.MovingPointOverlay::getPosition" to { registrar, args, methodResult ->
             // 参数
         
@@ -26622,30 +26529,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 调用结果
             methodResult.success("success")
-        },
-        "com.amap.api.maps.CameraUpdate::getCameraUpdateFactoryDelegate" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.CameraUpdate
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.CameraUpdate@$refId::getCameraUpdateFactoryDelegate([])")
-        
-            // 开始调用
-            val result = ref.getCameraUpdateFactoryDelegate()
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
         },
         "com.amap.api.maps.CustomRenderer::OnMapReferencechanged" to { registrar, args, methodResult ->
             // 参数
@@ -28745,30 +28628,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 调用结果
             methodResult.success("success")
-        },
-        "com.amap.api.maps.model.Polygon::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.Polygon
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.Polygon@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
         },
         "com.amap.api.maps.model.Polygon::setStrokeWidth" to { registrar, args, methodResult ->
             // 参数
@@ -37054,30 +36913,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             // 调用结果
             methodResult.success("success")
         },
-        "com.amap.api.maps.model.Circle::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.Circle
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.Circle@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
-        },
         "com.amap.api.maps.model.Circle::setStrokeDottedLineType" to { registrar, args, methodResult ->
             // 参数
             // jsonable参数
@@ -37457,30 +37292,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 调用结果
             methodResult.success(result)
-        },
-        "com.amap.api.maps.model.PolygonOptions::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.PolygonOptions
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.PolygonOptions@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
-            } else {
-                methodResult.success(null)
-            }
         },
         "com.amap.api.maps.model.MultiPointItem::getLatLng" to { registrar, args, methodResult ->
             // 参数
@@ -38262,30 +38073,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                 HEAP[returnRefId] = result
         
                 methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
-        "com.amap.api.maps.model.CircleOptions::getHoleOptions" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.CircleOptions
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.CircleOptions@$refId::getHoleOptions([])")
-        
-            // 开始调用
-            val result = ref.getHoleOptions()
-        
-            // 调用结果
-            if (result != null) {
-                for (item in result) {
-                    HEAP[item.hashCode()] = item
-                }
-                methodResult.success(result.map { it.hashCode() })
             } else {
                 methodResult.success(null)
             }
@@ -41216,30 +41003,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                 methodResult.success(null)
             }
         },
-        "com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleShapeModule" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleShapeModule([])")
-        
-            // 开始调用
-            val result = ref.getParticleShapeModule()
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
         "com.amap.api.maps.model.particle.ParticleOverlayOptions::setParticleShapeModule" to { registrar, args, methodResult ->
             // 参数
             // 引用参数
@@ -41254,30 +41017,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.setParticleShapeModule(var1)
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
-        "com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartSpeed" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartSpeed([])")
-        
-            // 开始调用
-            val result = ref.getParticleStartSpeed()
         
             // 调用结果
             if (result != null) {
@@ -41328,30 +41067,6 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
         
             // 开始调用
             val result = ref.setParticleStartColor(var1)
-        
-            // 调用结果
-            if (result != null) {
-                val returnRefId = result.hashCode()
-                HEAP[returnRefId] = result
-        
-                methodResult.success(returnRefId)
-            } else {
-                methodResult.success(null)
-            }
-        },
-        "com.amap.api.maps.model.particle.ParticleOverlayOptions::getParticleStartColor" to { registrar, args, methodResult ->
-            // 参数
-        
-        
-            // 调用对象引用
-            val refId = args["refId"] as Int
-            val ref = HEAP[refId] as com.amap.api.maps.model.particle.ParticleOverlayOptions
-        
-            // 日志打印
-            println("fluttify-kotlin: com.amap.api.maps.model.particle.ParticleOverlayOptions@$refId::getParticleStartColor([])")
-        
-            // 开始调用
-            val result = ref.getParticleStartColor()
         
             // 调用结果
             if (result != null) {
@@ -50324,9 +50039,18 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
             "ObjectFactory::createandroid_os_Bundle" -> {
                 methodResult.success(Bundle().apply { HEAP[hashCode()] = this }.hashCode())
             }
+            // 创建bitmap对象
+            "ObjectFactory::createandroid_graphics_Bitmap" -> {
+                val bitmapBytes = args["bitmapBytes"] as ByteArray
+                val bitmap = android.graphics.BitmapFactory.decodeByteArray(bitmapBytes, 0, bitmapBytes.size)
+
+                HEAP[bitmap.hashCode()] = bitmap
+
+                methodResult.success(bitmap.hashCode())
+            }
             // 释放一个对象
             "ObjectFactory::release" -> {
-                Log.d("ObjectFactory", "释放对象: ${args["refId"]}")
+                Log.d("ObjectFactory", "释放对象: ${HEAP[args["refId"] as Int]?.javaClass}@${args["refId"]}")
 
                 HEAP.remove(args["refId"] as Int)
 
@@ -50336,7 +50060,7 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
                 Log.d("ObjectFactory", "HEAP: $HEAP")
             }
             // 清空HEAP中所有对象
-            "ObjectFactory::clearRefMap" -> {
+            "ObjectFactory::clearHeap" -> {
                 Log.d("ObjectFactory", "清空堆")
 
                 HEAP.clear()
@@ -50344,6 +50068,43 @@ class AmapBaseFlutterPlugin(private val registrar: Registrar): MethodChannel.Met
 
                 // 打印当前HEAP
                 Log.d("ObjectFactory", "HEAP: $HEAP")
+            }
+            // 压入栈
+            "ObjectFactory::pushStack" -> {
+                val name = args["name"] as String
+                val refId = args["refId"] as Int
+
+                Log.d("ObjectFactory", "压入对象: ${HEAP[refId]?.javaClass}@${refId}")
+
+                HEAP[refId]?.run { STACK[name] = this }
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
+            }
+            // 压入栈 jsonable
+            "ObjectFactory::pushStackJsonable" -> {
+                val name = args["name"] as String
+                val data = args["data"]
+
+                Log.d("ObjectFactory", "压入jsonable: ${data?.javaClass}@${data}")
+
+                STACK[name] = data!!
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
+            }
+            // 清空栈
+            "ObjectFactory::clearStack" -> {
+                STACK.clear()
+
+                methodResult.success("success")
+
+                // 打印当前STACK
+                Log.d("ObjectFactory", "STACK: $STACK")
             }
             else -> {
                 handlerMap[methodCall.method]?.invoke(registrar, args, methodResult) ?: methodResult.notImplemented()

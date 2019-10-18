@@ -31,19 +31,17 @@ class bg$1 implements Runnable {
          bg.b(this.b);
          bi var25 = new bi(bg.c(this.b), bg.d);
          bh var26 = (bh)var25.c();
-         if (bg.d(this.b) == null) {
-            return;
-         }
+         if (bg.d(this.b) != null) {
+            if (var26 == null) {
+               return;
+            }
 
-         if (var26 != null) {
             if (var26.a()) {
                this.b.b();
             }
-
-            return;
          }
       } catch (Exception var23) {
-         return;
+         ;
       } finally {
          if (bg.d(this.b) != null) {
             bg var6 = this.b;

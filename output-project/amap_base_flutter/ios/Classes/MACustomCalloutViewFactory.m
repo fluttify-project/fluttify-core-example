@@ -104,14 +104,20 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 列表回调参数
   NSMutableArray<NSNumber*>* arglocations = [NSMutableArray arrayWithCapacity:locations.count];
   for (int i = 0; i < locations.count; i++) {
-      arglocations[i] = @(locations.hash);
-      HEAP[@(locations.hash)] = locations;
+      NSObject* item = ((NSObject*) [locations objectAtIndex:i]);
+      // 返回给dart端的数据
+      arglocations[i] = @(item.hash);
+      // 放到HEAP中的数据
+      HEAP[@(item.hash)] = item;
   }
   // 列表回调参数
   NSMutableArray<NSNumber*>* argtracePoints = [NSMutableArray arrayWithCapacity:tracePoints.count];
   for (int i = 0; i < tracePoints.count; i++) {
-      argtracePoints[i] = @(tracePoints.hash);
-      HEAP[@(tracePoints.hash)] = tracePoints;
+      NSObject* item = ((NSObject*) [tracePoints objectAtIndex:i]);
+      // 返回给dart端的数据
+      argtracePoints[i] = @(item.hash);
+      // 放到HEAP中的数据
+      HEAP[@(item.hash)] = item;
   }
   // primitive回调参数
   NSNumber* argdistance = @(distance);
@@ -354,12 +360,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewViewForAnnotation");
 
   // 构造可以直接传输的参数
-  // 引用回调参数
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
-  // 引用回调参数
-  NSNumber* argannotation = @(annotation.hash);
-  HEAP[argannotation] = annotation;
+  
 
   // __block #__callback_result_type__# _callbackResult = nil;
   // [channel invokeMethod:@"#__callback_method__#"
@@ -380,6 +381,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
   
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
+  
   return nil;
 }
 
@@ -398,11 +403,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 列表回调参数
   NSMutableArray<NSNumber*>* argviews = [NSMutableArray arrayWithCapacity:views.count];
   for (int i = 0; i < views.count; i++) {
-      argviews[i] = @(views.hash);
-      HEAP[@(views.hash)] = views;
+      NSObject* item = ((NSObject*) [views objectAtIndex:i]);
+      // 返回给dart端的数据
+      argviews[i] = @(item.hash);
+      // 放到HEAP中的数据
+      HEAP[@(item.hash)] = item;
   }
 
-  // 暂不支持含有数组的方法
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddAnnotationViews" arguments:@{@"mapView": argmapView, @"views": argviews}];
+  
 }
 
 - (void)mapView : (MAMapView*)mapView didSelectAnnotationView: (MAAnnotationView*)view
@@ -552,12 +561,7 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   NSLog(@"MAMapViewDelegate::mapViewRendererForOverlay");
 
   // 构造可以直接传输的参数
-  // 引用回调参数
-  NSNumber* argmapView = @(mapView.hash);
-  HEAP[argmapView] = mapView;
-  // 引用回调参数
-  NSNumber* argoverlay = @(overlay.hash);
-  HEAP[argoverlay] = overlay;
+  
 
   // __block #__callback_result_type__# _callbackResult = nil;
   // [channel invokeMethod:@"#__callback_method__#"
@@ -578,6 +582,10 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 相关issue https://github.com/flutter/flutter/issues/28310
   NSLog(@"暂不支持有返回值的回调方法");
   
+  ////////////////////////////如果需要手写代码, 请写在这里/////////////////////////////
+  
+  ////////////////////////////////////////////////////////////////////////////////
+  
   return nil;
 }
 
@@ -596,11 +604,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 列表回调参数
   NSMutableArray<NSNumber*>* argoverlayRenderers = [NSMutableArray arrayWithCapacity:overlayRenderers.count];
   for (int i = 0; i < overlayRenderers.count; i++) {
-      argoverlayRenderers[i] = @(overlayRenderers.hash);
-      HEAP[@(overlayRenderers.hash)] = overlayRenderers;
+      NSObject* item = ((NSObject*) [overlayRenderers objectAtIndex:i]);
+      // 返回给dart端的数据
+      argoverlayRenderers[i] = @(item.hash);
+      // 放到HEAP中的数据
+      HEAP[@(item.hash)] = item;
   }
 
-  // 暂不支持含有数组的方法
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidAddOverlayRenderers" arguments:@{@"mapView": argmapView, @"overlayRenderers": argoverlayRenderers}];
+  
 }
 
 - (void)mapView : (MAMapView*)mapView annotationView: (MAAnnotationView*)view calloutAccessoryControlTapped: (UIControl*)control
@@ -720,11 +732,15 @@ typedef void (^Handler)(NSObject <FlutterPluginRegistrar> *, NSDictionary<NSStri
   // 列表回调参数
   NSMutableArray<NSNumber*>* argpois = [NSMutableArray arrayWithCapacity:pois.count];
   for (int i = 0; i < pois.count; i++) {
-      argpois[i] = @(pois.hash);
-      HEAP[@(pois.hash)] = pois;
+      NSObject* item = ((NSObject*) [pois objectAtIndex:i]);
+      // 返回给dart端的数据
+      argpois[i] = @(item.hash);
+      // 放到HEAP中的数据
+      HEAP[@(item.hash)] = item;
   }
 
-  // 暂不支持含有数组的方法
+  [channel invokeMethod:@"Callback::MAMapViewDelegate::mapViewDidTouchPois" arguments:@{@"mapView": argmapView, @"pois": argpois}];
+  
 }
 
 - (void)mapView : (MAMapView*)mapView didSingleTappedAtCoordinate: (CLLocationCoordinate2D)coordinate

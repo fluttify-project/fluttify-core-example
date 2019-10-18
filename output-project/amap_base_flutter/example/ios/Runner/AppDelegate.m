@@ -1,6 +1,6 @@
 #include "AppDelegate.h"
 #include "GeneratedPluginRegistrant.h"
-#import <MAMapKit/MAMapKit.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application

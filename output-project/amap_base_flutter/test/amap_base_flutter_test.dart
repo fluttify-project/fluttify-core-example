@@ -14,4 +14,8 @@ void main() {
   tearDown(() {
     channel.setMockMethodCallHandler(null);
   });
+
+  test('getPlatformVersion', () async {
+    expect(await AmapBaseFlutter.platformVersion, '42');
+  });
 }
