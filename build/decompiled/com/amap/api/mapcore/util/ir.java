@@ -36,7 +36,7 @@ class ir extends ip {
    }
 
    protected Class<?> findClass(String var1) throws ClassNotFoundException {
-      Class var24;
+      Class var25;
       try {
          if (this.c == null) {
             throw new ClassNotFoundException(var1);
@@ -54,37 +54,37 @@ class ir extends ip {
             in.a(var20, "dLoader", "findCl");
          }
 
-         if (var2 == null) {
-            if (this.g) {
-               throw new ClassNotFoundException(var1);
-            }
-
-            this.h = true;
-            var2 = this.c.loadClass(var1, this);
-            DexFile var25 = this.c;
-            synchronized(this.c) {
-               this.c.notify();
-            }
-
-            this.h = false;
-            if (var2 == null) {
-               throw new ClassNotFoundException(var1);
-            }
-
-            try {
-               var3 = this.b;
-               synchronized(this.b) {
-                  this.b.put(var1, var2);
-               }
-            } catch (Throwable var17) {
-               in.a(var17, "dLoader", "findCl");
-            }
-
-            var24 = var2;
-            return var24;
+         if (var2 != null) {
+            var25 = var2;
+            return var25;
          }
 
-         var24 = var2;
+         if (this.g) {
+            throw new ClassNotFoundException(var1);
+         }
+
+         this.h = true;
+         var2 = this.c.loadClass(var1, this);
+         DexFile var24 = this.c;
+         synchronized(this.c) {
+            this.c.notify();
+         }
+
+         this.h = false;
+         if (var2 == null) {
+            throw new ClassNotFoundException(var1);
+         }
+
+         try {
+            var3 = this.b;
+            synchronized(this.b) {
+               this.b.put(var1, var2);
+            }
+         } catch (Throwable var17) {
+            in.a(var17, "dLoader", "findCl");
+         }
+
+         var25 = var2;
       } catch (ClassNotFoundException var21) {
          throw var21;
       } catch (Throwable var22) {
@@ -94,7 +94,7 @@ class ir extends ip {
          this.h = false;
       }
 
-      return var24;
+      return var25;
    }
 
    void a(String var1, String var2) throws Exception {
@@ -236,10 +236,10 @@ class ir extends ip {
          }
 
          var4 = false;
+         return var4;
       } catch (Throwable var17) {
          in.a(var17, "DyLoader", "verify");
          var4 = false;
-         return var4;
       } finally {
          try {
             if (var2 != null) {

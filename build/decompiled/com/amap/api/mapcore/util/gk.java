@@ -76,23 +76,23 @@ public class gk {
 
       File var2;
       try {
-         if (var0 != null) {
-            if (Environment.getExternalStorageState().equals("mounted")) {
-               var1 = Environment.getExternalStorageDirectory();
-               if (!var1.canWrite()) {
-                  var1 = var0.getFilesDir();
-               } else {
-                  var1 = var0.getExternalFilesDir("LBS");
-               }
-            } else {
-               var1 = var0.getFilesDir();
-            }
-
-            var2 = var1;
+         if (var0 == null) {
+            var2 = null;
             return var2;
          }
 
-         var2 = null;
+         if (Environment.getExternalStorageState().equals("mounted")) {
+            var1 = Environment.getExternalStorageDirectory();
+            if (!var1.canWrite()) {
+               var1 = var0.getFilesDir();
+            } else {
+               var1 = var0.getExternalFilesDir("LBS");
+            }
+         } else {
+            var1 = var0.getFilesDir();
+         }
+
+         var2 = var1;
       } catch (Exception var7) {
          var7.printStackTrace();
          return var1;
@@ -138,7 +138,7 @@ public class gk {
       InputStream var1 = null;
       OutputStream var2 = null;
 
-      boolean var4;
+      boolean var3;
       try {
          var1 = var0.getResources().getAssets().open(l);
          if (!b(var1)) {
@@ -147,12 +147,12 @@ public class gk {
             return true;
          }
 
-         boolean var3 = true;
-         return var3;
+         var3 = true;
       } catch (Throwable var15) {
          var15.printStackTrace();
          ht.c(var15, "ResourcesUtil", "copyResourceJarToAppFilesDir(Context ctx)");
-         var4 = false;
+         boolean var4 = false;
+         return var4;
       } finally {
          try {
             if (var1 != null) {
@@ -169,7 +169,7 @@ public class gk {
 
       }
 
-      return var4;
+      return var3;
    }
 
    private static OutputStream a(InputStream var0) throws IOException {

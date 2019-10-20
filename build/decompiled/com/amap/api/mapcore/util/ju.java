@@ -26,30 +26,30 @@ public class ju {
       InputStream var4 = null;
       byte[] var5 = new byte[0];
 
+      byte[] var6;
       try {
          var3 = var0.a(var1);
-         byte[] var6;
-         if (var3 == null) {
+         if (var3 != null) {
+            var4 = var3.a(0);
+            if (var4 == null) {
+               var6 = var5;
+               return var6;
+            }
+
+            var5 = new byte[var4.available()];
+            var4.read(var5);
+            if (var2) {
+               var0.c(var1);
+            }
+
             var6 = var5;
             return var6;
-         }
-
-         var4 = var3.a(0);
-         if (var4 == null) {
-            var6 = var5;
-            return var6;
-         }
-
-         var5 = new byte[var4.available()];
-         var4.read(var5);
-         if (var2) {
-            var0.c(var1);
          }
 
          var6 = var5;
-         return var6;
       } catch (Throwable var24) {
          ht.c(var24, "sui", "rdS");
+         return var5;
       } finally {
          try {
             if (var4 != null) {
@@ -69,7 +69,7 @@ public class ju {
 
       }
 
-      return var5;
+      return var6;
    }
 
    public static String a() {

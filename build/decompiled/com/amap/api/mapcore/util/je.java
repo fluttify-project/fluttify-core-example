@@ -151,7 +151,6 @@ public abstract class je extends ji {
    private byte[] k() {
       ByteArrayOutputStream var1 = new ByteArrayOutputStream();
 
-      byte[] var4;
       try {
          byte[] var2 = this.d();
          byte[] var3;
@@ -165,10 +164,10 @@ public abstract class je extends ji {
          var3 = this.a(var2);
          var1.write(var3);
          var1.write(var2);
-         var4 = var1.toByteArray();
+         byte[] var4 = var1.toByteArray();
+         return var4;
       } catch (Throwable var15) {
          hq.a(var15, "bre", "grrd");
-         return new byte[]{0};
       } finally {
          try {
             var1.close();
@@ -178,7 +177,7 @@ public abstract class je extends ji {
 
       }
 
-      return var4;
+      return new byte[]{0};
    }
 
    private byte[] l() {
