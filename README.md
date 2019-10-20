@@ -1,3 +1,5 @@
+<img src="./other/fluttify-logo-landscape.png" height="100">
+
 # Fluttify示例工程
 
 ## 什么是Fluttify以及解决什么问题?
