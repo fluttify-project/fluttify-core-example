@@ -24,4 +24,4 @@
 使用`MethodChannel`的机制就无法满足需求了. 目前官方repo中有相关的[issue](https://github.com/flutter/flutter/issues/28310).
 
 ## QQ群
-<img src="./other/QQ群.JPG" height="300">
+<img src="./other/QQ群.png" height="300">
