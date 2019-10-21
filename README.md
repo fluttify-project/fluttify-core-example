@@ -1,4 +1,4 @@
-<img src="./other/fluttify-logo-landscape.png" height="100">
+<center><img src="./other/fluttify-logo-landscape.png" height="100"></center>
 
 # Fluttify示例工程
 
