@@ -375,18 +375,16 @@ public class GLMapEngine implements IAMapEngineCallback, NetworkState$NetworkCha
    public GLMapState getNewMapState(int var1) {
       this.mLock.lock();
 
-      GLMapState var2;
       try {
-         if (this.mNativeMapengineInstance == 0L) {
-            return null;
+         if (this.mNativeMapengineInstance != 0L) {
+            GLMapState var2 = new GLMapState(var1, this.mNativeMapengineInstance);
+            return var2;
          }
-
-         var2 = new GLMapState(var1, this.mNativeMapengineInstance);
       } finally {
          this.mLock.unlock();
       }
 
-      return var2;
+      return null;
    }
 
    public synchronized GLMapState getCloneMapState() {

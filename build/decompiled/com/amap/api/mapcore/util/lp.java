@@ -220,8 +220,6 @@ public class lp implements Inner_3dMap_locationManagerBase {
          if (this.h != null) {
             this.h.a();
          }
-
-         return;
       } catch (Throwable var4) {
          mg.a(var4, "MapLocationManager", "doGetLocation");
       } finally {

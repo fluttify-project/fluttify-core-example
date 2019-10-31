@@ -12,26 +12,27 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
+import me.yohom.foundation_fluttify.HEAP
 
 class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
     private val handlerMap = mapOf<String, (Registrar, Map<String, Any>, MethodChannel.Result) -> Unit>(
         "com.amap.api.maps.offlinemap.DownloadProgressView::setProgress" to { registrar, args, methodResult ->
-            // 参数
-            // jsonable参数
+            // args
+            // jsonable arg
             val var1 = args["var1"] as Int
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
+            val ref = HEAP[refId] as com.amap.api.maps.offlinemap.DownloadProgressView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.offlinemap.DownloadProgressView@$refId::setProgress([\"var1\":$var1])")
         
-            // 开始调用
+            // invoke native method
             ref.setProgress(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
     )
@@ -48,8 +49,8 @@ class DownloadProgressViewFactory(private val registrar: Registrar) : PlatformVi
         return object : PlatformView {
             private val view = com.amap.api.maps.offlinemap.DownloadProgressView(registrar.activity())
 
-            // 构造完成后马上加入HEAP_AmapBaseFlutter
-            override fun getView(): View = view.apply { HEAP_AmapBaseFlutter[id] = this }
+            // add to HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
             override fun dispose() {}
         }

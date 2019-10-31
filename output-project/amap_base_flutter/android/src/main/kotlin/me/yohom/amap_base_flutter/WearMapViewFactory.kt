@@ -12,28 +12,29 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 import io.flutter.plugin.common.StandardMessageCodec
 import io.flutter.plugin.platform.PlatformView
 import io.flutter.plugin.platform.PlatformViewFactory
+import me.yohom.foundation_fluttify.HEAP
 
 class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory(StandardMessageCodec.INSTANCE) {
 
     private val handlerMap = mapOf<String, (Registrar, Map<String, Any>, MethodChannel.Result) -> Unit>(
         "com.amap.api.maps.WearMapView::getMap" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::getMap([])")
         
-            // 开始调用
+            // invoke native method
             val result = ref.getMap()
         
-            // 调用结果
+            // result
             if (result != null) {
                 val returnRefId = result.hashCode()
-                HEAP_AmapBaseFlutter[returnRefId] = result
+                HEAP[returnRefId] = result
         
                 methodResult.success(returnRefId)
             } else {
@@ -41,152 +42,152 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
             }
         }
         ,"com.amap.api.maps.WearMapView::onCreate" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
-            val var1 = HEAP_AmapBaseFlutter[args["var1"] as Int] as android.os.Bundle
+            // args
+            // ref arg
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onCreate([])")
         
-            // 开始调用
+            // invoke native method
             ref.onCreate(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onResume" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onResume([])")
         
-            // 开始调用
+            // invoke native method
             ref.onResume()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onPause" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onPause([])")
         
-            // 开始调用
+            // invoke native method
             ref.onPause()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onDestroy" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDestroy([])")
         
-            // 开始调用
+            // invoke native method
             ref.onDestroy()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onLowMemory" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onLowMemory([])")
         
-            // 开始调用
+            // invoke native method
             ref.onLowMemory()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onSaveInstanceState" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
-            val var1 = HEAP_AmapBaseFlutter[args["var1"] as Int] as android.os.Bundle
+            // args
+            // ref arg
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onSaveInstanceState([])")
         
-            // 开始调用
+            // invoke native method
             ref.onSaveInstanceState(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::setVisibility" to { registrar, args, methodResult ->
-            // 参数
-            // jsonable参数
+            // args
+            // jsonable arg
             val var1 = args["var1"] as Int
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setVisibility([\"var1\":$var1])")
         
-            // 开始调用
+            // invoke native method
             ref.setVisibility(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::setOnDismissCallbackListener" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::setOnDismissCallbackListener([])")
         
-            // 开始调用
+            // invoke native method
             ref.setOnDismissCallbackListener(object : com.amap.api.maps.WearMapView.OnDismissCallback {
                 // method channel
                 val callbackChannel = MethodChannel(registrar.messenger(), "com.amap.api.maps.WearMapView::setOnDismissCallbackListener::Callback")
         
-                // 回调方法们
+                // call dart method
                 override fun onDismiss(): Unit {
-                    // 日志打印
+                    // print log
                     println("fluttify-kotlin-callback: onDismiss([])")
         
-                    // 处理成可以传输的参数
+                    // convert to jsonable data
         
         
-                    // 开始回调
+                    // call dart method
                     callbackChannel.invokeMethod(
                         "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onDismiss",
                         mapOf<String, Any?>(
@@ -194,18 +195,18 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                         )
                     )
         
-                    // 方法返回值
+                    // method result
         
                 }
         
                 override fun onNotifySwipe(): Unit {
-                    // 日志打印
+                    // print log
                     println("fluttify-kotlin-callback: onNotifySwipe([])")
         
-                    // 处理成可以传输的参数
+                    // convert to jsonable data
         
         
-                    // 开始回调
+                    // call dart method
                     callbackChannel.invokeMethod(
                         "Callback::com.amap.api.maps.WearMapView.OnDismissCallback::onNotifySwipe",
                         mapOf<String, Any?>(
@@ -213,65 +214,65 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
                         )
                     )
         
-                    // 方法返回值
+                    // method result
         
                 }
         
             })
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onDismiss" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onDismiss([])")
         
-            // 开始调用
+            // invoke native method
             ref.onDismiss()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onEnterAmbient" to { registrar, args, methodResult ->
-            // 参数
-            // 引用参数
-            val var1 = HEAP_AmapBaseFlutter[args["var1"] as Int] as android.os.Bundle
+            // args
+            // ref arg
+            val var1 = HEAP[args["var1"] as Int] as android.os.Bundle
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onEnterAmbient([])")
         
-            // 开始调用
+            // invoke native method
             ref.onEnterAmbient(var1)
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
         ,"com.amap.api.maps.WearMapView::onExitAmbient" to { registrar, args, methodResult ->
-            // 参数
+            // args
         
         
-            // 调用对象引用
+            // ref
             val refId = args["refId"] as Int
-            val ref = HEAP_AmapBaseFlutter[refId] as com.amap.api.maps.WearMapView
+            val ref = HEAP[refId] as com.amap.api.maps.WearMapView
         
-            // 日志打印
+            // print log
             println("fluttify-kotlin: com.amap.api.maps.WearMapView@$refId::onExitAmbient([])")
         
-            // 开始调用
+            // invoke native method
             ref.onExitAmbient()
         
-            // 调用结果
+            // result
             methodResult.success("success")
         }
     )
@@ -288,8 +289,8 @@ class WearMapViewFactory(private val registrar: Registrar) : PlatformViewFactory
         return object : PlatformView {
             private val view = com.amap.api.maps.WearMapView(registrar.activity())
 
-            // 构造完成后马上加入HEAP_AmapBaseFlutter
-            override fun getView(): View = view.apply { HEAP_AmapBaseFlutter[id] = this }
+            // add to HEAP
+            override fun getView(): View = view.apply { HEAP[id] = this }
 
             override fun dispose() {}
         }

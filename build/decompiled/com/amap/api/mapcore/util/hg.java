@@ -424,7 +424,6 @@ public class hg {
       Certificate var2 = null;
       KeyFactory var3 = null;
 
-      PublicKey var6;
       try {
          var1 = new ByteArrayInputStream(ha.b(var0));
          CertificateFactory var4 = CertificateFactory.getInstance("X.509");
@@ -437,10 +436,10 @@ public class hg {
          }
 
          var5 = new X509EncodedKeySpec(var2.getPublicKey().getEncoded());
-         var6 = var3.generatePublic(var5);
+         PublicKey var6 = var3.generatePublic(var5);
+         return var6;
       } catch (Throwable var17) {
          var17.printStackTrace();
-         return null;
       } finally {
          try {
             if (var1 != null) {
@@ -452,7 +451,7 @@ public class hg {
 
       }
 
-      return var6;
+      return null;
    }
 
    public static byte[] d(byte[] var0) {

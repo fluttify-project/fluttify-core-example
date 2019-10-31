@@ -217,29 +217,31 @@ class ir extends ip {
    private boolean a(File var1) {
       JarFile var2 = null;
 
-      boolean var4;
+      boolean var5;
       try {
-         this.c();
-         var2 = new JarFile(var1);
-         JarEntry var3 = var2.getJarEntry("classes.dex");
-         if (null != var3) {
+         boolean var4;
+         try {
+            this.c();
+            var2 = new JarFile(var1);
+            JarEntry var3 = var2.getJarEntry("classes.dex");
+            if (null == var3) {
+               var4 = false;
+               return var4;
+            }
+
             this.a(var2, var3);
             Certificate[] var19 = var3.getCertificates();
-            boolean var5;
             if (var19 == null) {
                var5 = false;
                return var5;
             }
 
             var5 = this.a(var1, var19);
-            return var5;
+         } catch (Throwable var17) {
+            in.a(var17, "DyLoader", "verify");
+            var4 = false;
+            return var4;
          }
-
-         var4 = false;
-         return var4;
-      } catch (Throwable var17) {
-         in.a(var17, "DyLoader", "verify");
-         var4 = false;
       } finally {
          try {
             if (var2 != null) {
@@ -251,7 +253,7 @@ class ir extends ip {
 
       }
 
-      return var4;
+      return var5;
    }
 
    private boolean a(hy var1, hf var2, String var3) {
