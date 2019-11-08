@@ -12,19 +12,13 @@ public class hc {
    public static String a(String var0) {
       FileInputStream var1 = null;
 
+      File var2;
       try {
          MessageDigest var3;
          try {
-            File var2;
-            if (TextUtils.isEmpty(var0)) {
-               var2 = null;
-               return var2;
-            } else {
+            if (!TextUtils.isEmpty(var0)) {
                var2 = new File(var0);
-               if (!var2.isFile() || !var2.exists()) {
-                  var3 = null;
-                  return var3;
-               } else {
+               if (var2.isFile() && var2.exists()) {
                   var3 = null;
                   byte[] var4 = new byte[2048];
                   var3 = MessageDigest.getInstance("MD5");
@@ -39,7 +33,12 @@ public class hc {
                   String var7 = hg.e(var6);
                   return var7;
                }
+
+               var3 = null;
+               return var3;
             }
+
+            var2 = null;
          } catch (Throwable var19) {
             hq.a(var19, "MD5", "gfm");
             var3 = null;
@@ -55,6 +54,8 @@ public class hc {
          }
 
       }
+
+      return var2;
    }
 
    public static String b(String var0) {

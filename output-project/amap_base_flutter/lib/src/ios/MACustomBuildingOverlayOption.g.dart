@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -21,6 +22,18 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MACustomBuildingOverlayOption::get_heightScale", {'refId': refId});
   
     return result;
+  }
+  
+  Future<UIColor> get_topColor() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MACustomBuildingOverlayOption::get_topColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_base_flutter');
+    return UIColor()..refId = result..tag = 'amap_base_flutter';
+  }
+  
+  Future<UIColor> get_sideColor() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MACustomBuildingOverlayOption::get_sideColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_base_flutter');
+    return UIColor()..refId = result..tag = 'amap_base_flutter';
   }
   
   Future<bool> get_visibile() async {
@@ -43,6 +56,18 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
   }
   
+  Future<void> set_topColor(UIColor topColor) async {
+    await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MACustomBuildingOverlayOption::set_topColor', {'refId': refId, "topColor": topColor.refId});
+  
+  
+  }
+  
+  Future<void> set_sideColor(UIColor sideColor) async {
+    await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MACustomBuildingOverlayOption::set_sideColor', {'refId': refId, "sideColor": sideColor.refId});
+  
+  
+  }
+  
   Future<void> set_visibile(bool visibile) async {
     await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MACustomBuildingOverlayOption::set_visibile', {'refId': refId, "visibile": visibile});
   
@@ -53,7 +78,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   // generate methods
   static Future<MACustomBuildingOverlayOption> optionWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlayOption::optionWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MACustomBuildingOverlayOption::optionWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count});
@@ -73,7 +100,9 @@ class MACustomBuildingOverlayOption extends MAMultiPoint  {
   
   Future<bool> setOptionWithCoordinatesCount(List<CLLocationCoordinate2D> coords, int count) async {
     // print log
-    print('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MACustomBuildingOverlayOption@$refId::setOptionWithCoordinates([\'count\':$count])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MACustomBuildingOverlayOption::setOptionWithCoordinatesCount', {"coords": coords.map((it) => it.refId).toList(), "count": count, "refId": refId});

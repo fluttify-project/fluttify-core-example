@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -17,6 +18,12 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
     return MAMultiPolyline()..refId = result..tag = 'amap_base_flutter';
   }
   
+  Future<List<UIColor>> get_strokeColors() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MAMultiColoredPolylineRenderer::get_strokeColors", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_base_flutter').toList());
+    return (result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_base_flutter').toList();
+  }
+  
   Future<bool> get_gradient() async {
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MAMultiColoredPolylineRenderer::get_isGradient", {'refId': refId});
   
@@ -25,6 +32,12 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   
 
   // generate setters
+  Future<void> set_strokeColors(List<UIColor> strokeColors) async {
+    await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MAMultiColoredPolylineRenderer::set_strokeColors', {'refId': refId, "strokeColors": strokeColors.map((it) => it.refId).toList()});
+  
+  
+  }
+  
   Future<void> set_gradient(bool gradient) async {
     await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MAMultiColoredPolylineRenderer::set_gradient', {'refId': refId, "gradient": gradient});
   
@@ -35,7 +48,9 @@ class MAMultiColoredPolylineRenderer extends MAPolylineRenderer  {
   // generate methods
   Future<MAMultiColoredPolylineRenderer> initWithMultiPolyline(MAMultiPolyline multiPolyline) async {
     // print log
-    print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAMultiColoredPolylineRenderer@$refId::initWithMultiPolyline([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MAMultiColoredPolylineRenderer::initWithMultiPolyline', {"multiPolyline": multiPolyline.refId, "refId": refId});

@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -59,7 +60,9 @@ class AMapServices extends NSObject  {
   // generate methods
   static Future<AMapServices> sharedServices() async {
     // print log
-    print('fluttify-dart: AMapServices::sharedServices([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: AMapServices::sharedServices([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('AMapServices::sharedServices', );

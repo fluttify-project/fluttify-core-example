@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -23,6 +24,12 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
     return result;
   }
   
+  Future<UIColor> get_sideColor() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MAPolylineRenderer::get_sideColor", {'refId': refId});
+    kNativeObjectPool.add(UIColor()..refId = result..tag = 'amap_base_flutter');
+    return UIColor()..refId = result..tag = 'amap_base_flutter';
+  }
+  
 
   // generate setters
   Future<void> set_is3DArrowLine(bool is3DArrowLine) async {
@@ -31,11 +38,19 @@ class MAPolylineRenderer extends MAOverlayPathRenderer  {
   
   }
   
+  Future<void> set_sideColor(UIColor sideColor) async {
+    await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MAPolylineRenderer::set_sideColor', {'refId': refId, "sideColor": sideColor.refId});
+  
+  
+  }
+  
 
   // generate methods
   Future<MAPolylineRenderer> initWithPolyline(MAPolyline polyline) async {
     // print log
-    print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: MAPolylineRenderer@$refId::initWithPolyline([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('MAPolylineRenderer::initWithPolyline', {"polyline": polyline.refId, "refId": refId});

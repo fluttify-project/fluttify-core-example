@@ -6,11 +6,17 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
 class MAHeatMapGradient extends NSObject with NSCopying {
   // generate getters
+  Future<List<UIColor>> get_colors() async {
+    final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod("MAHeatMapGradient::get_colors", {'refId': refId});
+    kNativeObjectPool.addAll((result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_base_flutter').toList());
+    return (result as List).cast<int>().map((it) => UIColor()..refId = it..tag = 'amap_base_flutter').toList();
+  }
   
 
   // generate setters

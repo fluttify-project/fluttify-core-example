@@ -430,14 +430,14 @@ public class hg {
          var3 = KeyFactory.getInstance("RSA");
          var2 = var4.generateCertificate(var1);
          X509EncodedKeySpec var5;
-         if (var2 == null || var3 == null) {
-            var5 = null;
-            return var5;
+         if (var2 != null && var3 != null) {
+            var5 = new X509EncodedKeySpec(var2.getPublicKey().getEncoded());
+            PublicKey var6 = var3.generatePublic(var5);
+            return var6;
          }
 
-         var5 = new X509EncodedKeySpec(var2.getPublicKey().getEncoded());
-         PublicKey var6 = var3.generatePublic(var5);
-         return var6;
+         var5 = null;
+         return var5;
       } catch (Throwable var17) {
          var17.printStackTrace();
       } finally {

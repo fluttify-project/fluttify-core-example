@@ -6,6 +6,7 @@ import 'dart:typed_data';
 
 import 'package:amap_base_flutter/src/ios/ios.export.g.dart';
 import 'package:amap_base_flutter/src/android/android.export.g.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 // ignore_for_file: non_constant_identifier_names, camel_case_types, missing_return, unused_import
@@ -19,7 +20,9 @@ class AMapURLSearch extends NSObject  {
   // generate methods
   static Future<void> getLatestAMapApp() async {
     // print log
-    print('fluttify-dart: AMapURLSearch::getLatestAMapApp([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: AMapURLSearch::getLatestAMapApp([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('AMapURLSearch::getLatestAMapApp', );
@@ -39,7 +42,9 @@ class AMapURLSearch extends NSObject  {
   
   static Future<bool> openAMapNavigation(AMapNaviConfig config) async {
     // print log
-    print('fluttify-dart: AMapURLSearch::openAMapNavigation([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: AMapURLSearch::openAMapNavigation([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('AMapURLSearch::openAMapNavigation', {"config": config.refId});
@@ -59,7 +64,9 @@ class AMapURLSearch extends NSObject  {
   
   static Future<bool> openAMapRouteSearch(AMapRouteConfig config) async {
     // print log
-    print('fluttify-dart: AMapURLSearch::openAMapRouteSearch([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: AMapURLSearch::openAMapRouteSearch([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('AMapURLSearch::openAMapRouteSearch', {"config": config.refId});
@@ -79,7 +86,9 @@ class AMapURLSearch extends NSObject  {
   
   static Future<bool> openAMapPOISearch(AMapPOIConfig config) async {
     // print log
-    print('fluttify-dart: AMapURLSearch::openAMapPOISearch([])');
+    if (!kReleaseMode) {
+      print('fluttify-dart: AMapURLSearch::openAMapPOISearch([])');
+    }
   
     // invoke native method
     final result = await MethodChannel('me.yohom/amap_base_flutter').invokeMethod('AMapURLSearch::openAMapPOISearch', {"config": config.refId});
