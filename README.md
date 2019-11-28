@@ -1,27 +1,20 @@
-<center><img src="./other/fluttify-logo-landscape.png" height="100"></center>
+![Logo](https://github.com/fluttify-project/fluttify-core-example/blob/develop/other/Logo-Landscape.png?raw=true)
 
-# Fluttify示例工程
+[![Gitter](https://badges.gitter.im/fluttify_project/community.svg)](https://gitter.im/fluttify_project/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-## 什么是Fluttify以及解决什么问题?
-- `Fluttify`是一个可以为原生SDK生成dart接口的工具.
-- 普通flutter插件的开发过程需要开发者同时懂Android和iOS原生(以及之后的flutter for web和desktop), 这对开发者是一个非常大的挑战, 因为大多数开发者都
-只精通一个端, 而`Fluttify`的目标是**让不懂原生或者只懂一个原生端的开发者可以无障碍地使用Flutter开发插件和应用**.
+[中文文档](https://github.com/fluttify-project/fluttify-core-example/blob/develop/README_CN.md)
 
-## 目前的状态
-- 在积极的开发中, 但是由于本人精力有限, 只能在业余时间进行维护.
-- 具体的完成度可以查看`output-project`文件夹下的flutter插件工程(可能会有延迟)以及[实验性工程](https://github.com/yohom/amap_search_fluttify)(**推荐**).
+# Fluttify Example Project
 
-## 如何使用Fluttify?
-- 请邮件联系我(382146139@qq.com), 并说明来源.
+## What is `Fluttify` and what problems does it solve?
+- `Fluttify` is a tool that generates the dart interface for the native(currently Android/iOS) SDK.
+- The development process of ordinary flutter requires developers to understand both Android and iOS natively (and later `Flutter for web` and `Desktop`), which is a big challenge for developers because most developers are proficient with only one platform, `Fluttify`'s goal is to **make it easy to develop flutter plugins for who do not master or only master one platform**.
 
-## 路线图
-- `Fluttify`的第一步是在`高德地图`sdk上实现大部分功能.
-- 第二步是建立一个网站(如果可以的话使用Flutter构建)开始进行内测.
-- 第三步开放使用.
+## Current Status
+- In active development, but due to my limited energy, I can only do maintenance in my spare time.
 
-## 目前已知的问题
-- 由于Flutter的`MethodChannel`不支持同步调用, 所以当native端的方法需要同步返回对象的时候, 
-使用`MethodChannel`的机制就无法满足需求了. 目前官方repo中有相关的[issue](https://github.com/flutter/flutter/issues/28310).
+## How to use Fluttify?
+- Please contact me by email (382146139@qq.com) and explain the source.
 
-## QQ群
-<img src="./other/QQ群.png" height="300">
+## Known Issue
+Since Flutter's `MethodChannel` does not support synchronous calls, when methods on the native side need to return objects synchronously, The mechanism for using `MethodChannel` does not meet the requirements. There is currently a [issue](https://github.com/flutter/flutter/issues/28310) related to this in the official repo.
