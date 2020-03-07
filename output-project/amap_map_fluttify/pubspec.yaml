@@ -1,0 +1,29 @@
+name: amap_map_fluttify
+description: An `Amap` Map Component, Powered By `Fluttify` Engine, Which Generates Dart Interface For Native SDK.
+version: 0.0.1
+author: yohom <yohombao@qq.com>
+homepage: https://github.com/fluttify-project/amap_map_fluttify
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+  flutter: ">=1.12.13 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  amap_core_fluttify: ^0.5.5+008cc2f
+  url_launcher: ^5.4.2
+  foundation_fluttify: ^0.4.12+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: me.yohom.amap_map_fluttify
+        pluginClass: AmapMapFluttifyPlugin
+      ios:
+        pluginClass: AmapMapFluttifyPlugin

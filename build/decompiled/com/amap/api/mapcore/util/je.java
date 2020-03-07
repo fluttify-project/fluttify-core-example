@@ -154,18 +154,18 @@ public abstract class je extends ji {
       try {
          byte[] var2 = this.d();
          byte[] var3;
-         if (var2 != null && var2.length != 0) {
-            var1.write(new byte[]{1});
-            var3 = this.a(var2);
-            var1.write(var3);
-            var1.write(var2);
-            byte[] var4 = var1.toByteArray();
-            return var4;
+         if (var2 == null || var2.length == 0) {
+            var1.write(new byte[]{0});
+            var3 = var1.toByteArray();
+            return var3;
          }
 
-         var1.write(new byte[]{0});
-         var3 = var1.toByteArray();
-         return var3;
+         var1.write(new byte[]{1});
+         var3 = this.a(var2);
+         var1.write(var3);
+         var1.write(var2);
+         byte[] var4 = var1.toByteArray();
+         return var4;
       } catch (Throwable var15) {
          hq.a(var15, "bre", "grrd");
       } finally {
@@ -186,19 +186,19 @@ public abstract class je extends ji {
       try {
          byte[] var2 = this.e();
          byte[] var3;
-         if (var2 != null && var2.length != 0) {
-            var1.write(new byte[]{1});
-            var3 = gx.a(this.d, var2);
-            byte[] var4 = this.a(var3);
-            var1.write(var4);
-            var1.write(var3);
-            byte[] var5 = var1.toByteArray();
-            return var5;
+         if (var2 == null || var2.length == 0) {
+            var1.write(new byte[]{0});
+            var3 = var1.toByteArray();
+            return var3;
          }
 
-         var1.write(new byte[]{0});
-         var3 = var1.toByteArray();
-         return var3;
+         var1.write(new byte[]{1});
+         var3 = gx.a(this.d, var2);
+         byte[] var4 = this.a(var3);
+         var1.write(var4);
+         var1.write(var3);
+         byte[] var5 = var1.toByteArray();
+         return var5;
       } catch (Throwable var16) {
          hq.a(var16, "bre", "gred");
       } finally {

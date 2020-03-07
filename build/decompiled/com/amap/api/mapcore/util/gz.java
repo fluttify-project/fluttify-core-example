@@ -197,9 +197,7 @@ public class gz {
       FileInputStream var1 = null;
 
       try {
-         if (!hg.a(var0, "android.permission.READ_EXTERNAL_STORAGE") || !"mounted".equals(Environment.getExternalStorageState())) {
-            return "";
-         } else {
+         if (hg.a(var0, "android.permission.READ_EXTERNAL_STORAGE") && "mounted".equals(Environment.getExternalStorageState())) {
             String var2 = Environment.getExternalStorageDirectory().getAbsolutePath();
             String var3 = var2 + "/.UTSystemConfig/Global/Alvin2.xml";
             File var4 = new File(var3);
@@ -239,11 +237,9 @@ public class gz {
                   }
                }
             }
-
-            return "";
          }
       } catch (Throwable var21) {
-         return "";
+         ;
       } finally {
          try {
             if (var1 != null) {
@@ -254,6 +250,8 @@ public class gz {
          }
 
       }
+
+      return "";
    }
 
    public static String h(Context var0) {

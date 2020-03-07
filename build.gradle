@@ -1,31 +1,38 @@
 buildscript {
     repositories {
-        ivy { url '../fluttify-core/build/plugin' }
+        mavenLocal()
         jcenter()
     }
 
     dependencies {
-        classpath('me.yohom:fluttify-core:0.4.0')
+        classpath('me.yohom:fluttify-core:0.+')
     }
 }
 
 apply plugin: 'me.yohom.fluttify'
 
 fluttify {
-    transitiveDependencies = [
-            "android": [],
-            "iOS"    : ["QuartzCore.framework",
-                        "CoreLocation.framework",
-                        "SystemConfiguration.framework",
-                        "CoreTelephony.framework",
-                        "Security.framework",
-                        "OpenGLES.framework",
-                        "CoreText.framework",
-                        "CoreGraphics.framework",
-                        "GLKit.framework",
-                        "libz.tbd",
-                        "libc++.tbd"]
-    ]
-    outputOrg = "me.yohom"
-    outputProjectName = "amap_base_flutter"
+    projectName = "amap_map_fluttify"
+    org = "me.yohom"
+    desc = "An `Amap` Map Component, Powered By `Fluttify` Engine, Which Generates Dart Interface For Native SDK."
+    author = "yohom"
+    email = "yohombao@qq.com"
+    homepage = "https://github.com/fluttify-project/amap_map_fluttify"
+    foundationVersion = "^0.4.12+1"
+    pluginDependencies = ["amap_core_fluttify": "^0.5.5+008cc2f",
+                          "url_launcher": "^5.4.2"]
+    android {
+        remote {
+            org = "com.amap.api"
+            name = "3dmap"
+            version = "6.9.2"
+        }
+    }
+
+    ios {
+        remote {
+            name = "AMap3DMap"
+            version = "6.9.0"
+        }
+    }
 }

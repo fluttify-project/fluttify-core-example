@@ -76,23 +76,23 @@ public class gk {
 
       File var2;
       try {
-         if (var0 == null) {
-            var2 = null;
+         if (var0 != null) {
+            if (Environment.getExternalStorageState().equals("mounted")) {
+               var1 = Environment.getExternalStorageDirectory();
+               if (!var1.canWrite()) {
+                  var1 = var0.getFilesDir();
+               } else {
+                  var1 = var0.getExternalFilesDir("LBS");
+               }
+            } else {
+               var1 = var0.getFilesDir();
+            }
+
+            var2 = var1;
             return var2;
          }
 
-         if (Environment.getExternalStorageState().equals("mounted")) {
-            var1 = Environment.getExternalStorageDirectory();
-            if (!var1.canWrite()) {
-               var1 = var0.getFilesDir();
-            } else {
-               var1 = var0.getExternalFilesDir("LBS");
-            }
-         } else {
-            var1 = var0.getFilesDir();
-         }
-
-         var2 = var1;
+         var2 = null;
       } catch (Exception var7) {
          var7.printStackTrace();
          return var1;
